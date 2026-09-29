@@ -1,0 +1,66 @@
+---
+/* Original schematic: dermatomes of the right upper limb, anterior view (anatomical
+   position, thumb lateral = viewer's left). Dermatome maps differ between sources
+   and adjacent dermatomes overlap; this follows the commonly taught pattern. */
+import Label from '../components/Label.astro';
+
+const outline =
+  'M120 50 Q185 20 262 48 L258 110 L250 270 L240 440 L248 470 L250 520 ' +
+  'L252 585 Q244 596 236 585 L234 528 L232 605 Q223 616 214 605 L213 530 ' +
+  'L211 615 Q202 626 193 615 L192 530 L190 600 Q181 611 172 600 L171 522 ' +
+  'L168 500 L150 552 Q140 560 132 550 L142 485 L160 448 L170 440 L152 270 L118 110 Z';
+
+const regions = [
+  { id: 'C5', color: '#e07a5f', points: '90,0 190,0 201,272 90,272' },
+  { id: 'T2', color: '#c06c84', points: '190,0 300,0 300,180 196,180' },
+  { id: 'T1', color: '#9b72cf', points: '196,180 300,180 300,370 203,370' },
+  { id: 'C6', color: '#f2cc8f', points: '90,272 201,272 204,440 191,470 191,660 90,660' },
+  { id: 'C7', color: '#81b29a', points: '191,470 205,442 212,470 212,660 191,660' },
+  { id: 'C8', color: '#6fa8dc', points: '203,370 300,370 300,660 212,660 212,470 205,440' },
+  { id: 'C4', color: '#9aa5b8', points: '90,0 300,0 300,35 90,72' },
+];
+// ASIA key sensory points (C6–C8 are dorsal on the real exam; shown approximately here)
+const keyPoints = [
+  [165, 258], [240, 258], [142, 530], [202, 585], [243, 565], [252, 78],
+];
+---
+
+<svg viewBox="0 0 360 660" role="img" aria-labelledby="der-title der-desc">
+  <title id="der-title">Upper limb dermatomes, anterior view</title>
+  <desc id="der-desc">
+    C4 over the top of the shoulder; C5 lateral arm; C6 lateral forearm, thumb and index finger; C7 middle finger; C8
+    ring and little fingers and medial hand and distal forearm; T1 medial forearm; T2 medial arm and axilla.
+  </desc>
+  <defs>
+    <clipPath id="der-limb"><path d={outline}></path></clipPath>
+  </defs>
+  <g clip-path="url(#der-limb)">
+    {regions.map((r) => <polygon points={r.points} fill={r.color} fill-opacity="0.75"></polygon>)}
+  </g>
+  <path d={outline} fill="none" stroke="var(--text)" stroke-width="1.5" stroke-linejoin="round"></path>
+  {keyPoints.map(([x, y]) => <circle cx={x} cy={y} r="4.5" fill="#fff" stroke="#222" stroke-width="1.5"></circle>)}
+
+  <g stroke="var(--muted)" stroke-width="1">
+    <line x1="80" y1="46" x2="132" y2="50"></line>
+    <line x1="80" y1="166" x2="150" y2="170"></line>
+    <line x1="80" y1="376" x2="172" y2="380"></line>
+    <line x1="288" y1="106" x2="232" y2="110"></line>
+    <line x1="288" y1="296" x2="232" y2="300"></line>
+    <line x1="288" y1="476" x2="240" y2="480"></line>
+    <line x1="202" y1="630" x2="202" y2="640"></line>
+  </g>
+
+  <Label x={74} y={51} anchor="end" size="lg">C4</Label>
+  <Label x={74} y={171} anchor="end" size="lg" to="brachial-plexus">C5</Label>
+  <Label x={74} y={381} anchor="end" size="lg" to="brachial-plexus">C6</Label>
+  <Label x={202} y={655} anchor="middle" size="lg" to="brachial-plexus">C7</Label>
+  <Label x={294} y={481} size="lg" to="brachial-plexus">C8</Label>
+  <Label x={294} y={301} size="lg" to="brachial-plexus">T1</Label>
+  <Label x={294} y={111} size="lg">T2</Label>
+  <Label x={12} y={600} size="sm">Lateral</Label>
+  <Label x={12} y={614} size="sm">(thumb side)</Label>
+  <Label x={348} y={600} anchor="end" size="sm">Medial</Label>
+  <Label x={348} y={614} anchor="end" size="sm">(little finger)</Label>
+  <circle cx="18" cy="24" r="4.5" fill="#fff" stroke="#222" stroke-width="1.5"></circle>
+  <Label x={28} y={28} size="sm">ASIA key sensory point</Label>
+</svg>

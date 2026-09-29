@@ -14,7 +14,7 @@ if (!Component) throw new Error(`Diagram "${id}" is registered but src/diagrams/
 <figure class="fig diagram" data-diagram={id}>
   <Component />
   <figcaption>
-    <strong>{meta.title}.</strong>
+    <strong>{meta.title}.</strong>{' '}
     {meta.description}
     <div class="attribution">Original schematic, created for this atlas.</div>
   </figcaption>

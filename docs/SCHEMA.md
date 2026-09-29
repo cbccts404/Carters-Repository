@@ -16,7 +16,7 @@ content/structures/<region>/<id>.md
 
 | You write | You get |
 |---|---|
-| `[[median-nerve]]` | A link showing the entry's name ("Median nerve") |
+| `[[median-nerve]]` | A link showing the entry's name: "Median nerve" at the start of a sentence, "median nerve" mid-sentence. Names starting with an eponym or acronym keep their case. |
 | `[[median-nerve\|median n.]]` | A link with your own text |
 | `{{verify}}` | A yellow **VERIFY** badge |
 | `{{verify: some texts say C5–T1}}` | A badge that shows the reason when tapped |

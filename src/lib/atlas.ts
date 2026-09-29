@@ -53,16 +53,16 @@ export const ANATOMY_FIELDS: Record<StructureType, [key: string, label: string][
  * Backlink rules: when entry S links to entry T inside field F, T's page shows
  * S under this heading. Checked in order; first match wins.
  */
-const RELATION_RULES: { from?: StructureType; field: RegExp; label: string; order: number }[] = [
-  { from: 'muscle', field: /^anatomy\.innervation$/, label: 'Muscles innervated', order: 1 },
-  { from: 'nerve', field: /^anatomy\.origin$/, label: 'Branches', order: 2 },
-  { from: 'artery', field: /^anatomy\.origin$/, label: 'Branches', order: 2 },
-  { from: 'vein', field: /^anatomy\.drainage$/, label: 'Tributaries', order: 2 },
-  { field: /^anatomy\.innervation$/, label: 'Other structures innervated', order: 3 },
-  { field: /^anatomy\.bloodSupply$/, label: 'Structures supplied', order: 3 },
-  { from: 'muscle', field: /^anatomy\.(origin|insertion)$/, label: 'Muscle attachments', order: 4 },
-  { from: 'joint', field: /^anatomy\.bones$/, label: 'Joints', order: 5 },
-  { from: 'ligament', field: /^anatomy\.attachments$/, label: 'Ligament attachments', order: 5 },
+const RELATION_RULES: { from?: StructureType; to?: StructureType; field: RegExp; label: string; order: number }[] = [
+  { from: 'muscle', to: 'nerve', field: /^anatomy\.innervation$/, label: 'Muscles innervated', order: 1 },
+  { from: 'nerve', to: 'nerve', field: /^anatomy\.origin$/, label: 'Branches', order: 2 },
+  { from: 'artery', to: 'artery', field: /^anatomy\.origin$/, label: 'Branches', order: 2 },
+  { from: 'vein', to: 'vein', field: /^anatomy\.drainage$/, label: 'Tributaries', order: 2 },
+  { to: 'nerve', field: /^anatomy\.innervation$/, label: 'Other structures innervated', order: 3 },
+  { to: 'artery', field: /^anatomy\.bloodSupply$/, label: 'Structures supplied', order: 3 },
+  { from: 'muscle', to: 'bone', field: /^anatomy\.(origin|insertion)$/, label: 'Muscle attachments', order: 4 },
+  { from: 'joint', to: 'bone', field: /^anatomy\.bones$/, label: 'Joints', order: 5 },
+  { from: 'ligament', to: 'bone', field: /^anatomy\.attachments$/, label: 'Ligament attachments', order: 5 },
   { from: 'space', field: /^anatomy\.contents/, label: 'Found in', order: 6 },
   { from: 'space', field: /^anatomy\.boundaries/, label: 'Forms a boundary of', order: 6 },
 ];
@@ -155,7 +155,10 @@ async function build(): Promise<Atlas> {
         }
         if (target === s.id) continue;
         const field = fieldKey(path);
-        const rule = RELATION_RULES.find((r) => (!r.from || r.from === s.data.type) && r.field.test(field));
+        const targetType = byId.get(target)!.data.type;
+        const rule = RELATION_RULES.find(
+          (r) => (!r.from || r.from === s.data.type) && (!r.to || r.to === targetType) && r.field.test(field),
+        );
         const label = rule?.label ?? MENTION_LABEL;
         const key = `${target}|${s.id}|${label}`;
         if (seen.has(key)) continue;
@@ -180,15 +183,32 @@ async function build(): Promise<Atlas> {
 const escapeAttr = (s: string) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 const marked = new Marked({ gfm: true, breaks: false });
 
+/** True when the text before `index` ends a sentence (or is empty), so a name keeps its capital. */
+function startsSentence(text: string, index: number): boolean {
+  const before = text.slice(0, index).replace(/[\s*_"'(]+$/, '');
+  return before === '' || /[.!?:\n]$/.test(before);
+}
+
+/**
+ * Default link text: the entry name, lower-cased mid-sentence ("the radial artery").
+ * Names whose first word is an eponym or acronym (e.g. "Guyon's canal", "TFCC") keep their case;
+ * use [[id|Custom text]] for anything else.
+ */
+function linkText(name: string, text: string, index: number): string {
+  const first = name.split(/\s/)[0];
+  const keep = /'|’/.test(first) || (first.length > 1 && first === first.toUpperCase());
+  return keep || startsSentence(text, index) ? name : name[0].toLowerCase() + name.slice(1);
+}
+
 function expandInline(text: string, atlas: Atlas): string {
   return text
-    .replace(LINK_RE, (_, target: string, label?: string) => {
+    .replace(LINK_RE, (_, target: string, label: string | undefined, index: number) => {
       const s = atlas.byId.get(target);
       if (!s) {
         const shown = label ?? target.replace(/-/g, ' ');
         return `<span class="xref missing" title="Entry “${target}” not written yet">${shown}</span>`;
       }
-      return `<a class="xref t-${s.data.type}" href="${structureUrl(s)}">${label ?? s.data.name}</a>`;
+      return `<a class="xref t-${s.data.type}" href="${structureUrl(s)}">${label ?? linkText(s.data.name, text, index)}</a>`;
     })
     .replace(VERIFY_RE, (_, note?: string) => {
       const n = note?.trim();

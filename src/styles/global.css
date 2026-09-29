@@ -297,3 +297,17 @@ code { background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-
 #theme-btn .moon { display: none; }
 :root[data-theme='light'] #theme-btn .sun { display: none; }
 :root[data-theme='light'] #theme-btn .moon { display: inline; }
+
+/* ---------- diagrams ---------- */
+.diagram svg { display: block; width: 100%; height: auto; font-family: inherit; }
+.diagram .scroll { overflow-x: auto; }
+.diagram .scroll svg { min-width: 560px; }
+.diagram .lbl { fill: var(--text); }
+.diagram .lbl-sm { font-size: 11px; fill: var(--muted); }
+.diagram .lbl-md { font-size: 14px; }
+.diagram .lbl-lg { font-size: 15px; font-weight: 700; }
+.diagram .lbl-head { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; fill: var(--muted); text-transform: uppercase; }
+.diagram a.lbl-link .lbl { fill: var(--t); font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.diagram a.lbl-link:hover .lbl, .diagram a.lbl-link:focus .lbl { fill: var(--accent); }
+.diagram .scroll-hint { font-size: 0.75rem; color: var(--muted); margin: 4px 0 0; }
+@media (min-width: 620px) { .diagram .scroll-hint { display: none; } }

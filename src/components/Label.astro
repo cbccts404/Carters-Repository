@@ -1,0 +1,35 @@
+---
+/**
+ * A diagram label. With `to`, it links to that structure's page; the link is
+ * checked at build time (a missing target renders as plain text and warns).
+ * Labels carry class "lbl" so hide-labels mode can target them.
+ */
+import { loadAtlas, structureUrl } from '../lib/atlas';
+
+interface Props {
+  x: number;
+  y: number;
+  to?: string;
+  anchor?: 'start' | 'middle' | 'end';
+  size?: 'sm' | 'md' | 'lg';
+  class?: string;
+}
+const { x, y, to, anchor = 'start', size = 'md', class: extra } = Astro.props;
+const target = to ? (await loadAtlas()).byId.get(to) : undefined;
+if (to && !target) console.warn(`[diagram] label links to missing entry "${to}"`);
+const cls = ['lbl', `lbl-${size}`, extra].filter(Boolean).join(' ');
+---
+
+{
+  target ? (
+    <a href={structureUrl(target)} class={`lbl-link t-${target.data.type}`}>
+      <text x={x} y={y} text-anchor={anchor} class={cls}>
+        <slot />
+      </text>
+    </a>
+  ) : (
+    <text x={x} y={y} text-anchor={anchor} class={cls}>
+      <slot />
+    </text>
+  )
+}

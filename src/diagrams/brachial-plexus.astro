@@ -1,0 +1,102 @@
+---
+/* Original schematic of the brachial plexus (roots → trunks → divisions → cords → branches).
+   Posterior divisions, the posterior cord and its branches are dashed. */
+import Label from '../components/Label.astro';
+
+// y positions
+const R = { C5: 90, C6: 140, C7: 200, C8: 260, T1: 310 };
+const TR = { sup: 115, mid: 200, inf: 285 };
+const CORD = { lat: 140, med: 240, post: 350 };
+---
+
+<div class="scroll">
+  <svg viewBox="0 0 760 420" role="img" aria-labelledby="bp-title bp-desc">
+    <title id="bp-title">Brachial plexus schematic</title>
+    <desc id="bp-desc">
+      Ventral rami C5 to T1 form superior, middle and inferior trunks; each trunk splits into anterior and posterior
+      divisions; these form lateral, medial and posterior cords, which give the terminal branches.
+    </desc>
+    <style>
+      .bp-a { stroke: var(--t-nerve); stroke-width: 5; stroke-linecap: round; fill: none; }
+      .bp-p { stroke: var(--t-nerve); stroke-width: 4; stroke-linecap: round; stroke-dasharray: 7 6; fill: none; opacity: 0.85; }
+      .bp-c { stroke: var(--muted); stroke-width: 1.5; fill: none; stroke-dasharray: 2 4; }
+      .bp-n { fill: var(--bg); stroke: var(--t-nerve); stroke-width: 2; }
+    </style>
+
+    <!-- column headers -->
+    <text class="lbl lbl-head" x="36" y="26" text-anchor="middle">Roots</text>
+    <text class="lbl lbl-head" x="235" y="26" text-anchor="middle">Trunks</text>
+    <text class="lbl lbl-head" x="325" y="26" text-anchor="middle">Divisions</text>
+    <text class="lbl lbl-head" x="420" y="26" text-anchor="middle">Cords</text>
+    <text class="lbl lbl-head" x="640" y="26" text-anchor="middle">Terminal branches</text>
+
+    <!-- roots -> trunks -->
+    <path class="bp-a" d={`M56 ${R.C5} L200 ${TR.sup}`}></path>
+    <path class="bp-a" d={`M56 ${R.C6} L200 ${TR.sup}`}></path>
+    <path class="bp-a" d={`M56 ${R.C7} L200 ${TR.mid}`}></path>
+    <path class="bp-a" d={`M56 ${R.C8} L200 ${TR.inf}`}></path>
+    <path class="bp-a" d={`M56 ${R.T1} L200 ${TR.inf}`}></path>
+
+    <!-- trunks -->
+    <path class="bp-a" d={`M200 ${TR.sup} H270 M200 ${TR.mid} H270 M200 ${TR.inf} H270`}></path>
+
+    <!-- posterior divisions (dashed) -> posterior cord -->
+    <path class="bp-p" d={`M270 ${TR.sup} L380 ${CORD.post} M270 ${TR.mid} L380 ${CORD.post} M270 ${TR.inf} L380 ${CORD.post}`}></path>
+    <!-- anterior divisions -> lateral & medial cords -->
+    <path class="bp-a" d={`M270 ${TR.sup} L380 ${CORD.lat} M270 ${TR.mid} L380 ${CORD.lat} M270 ${TR.inf} L380 ${CORD.med}`}></path>
+
+    <!-- cords -->
+    <path class="bp-a" d={`M380 ${CORD.lat} H460 M380 ${CORD.med} H460`}></path>
+    <path class="bp-p" d={`M380 ${CORD.post} H460`}></path>
+
+    <!-- terminal branches -->
+    <path class="bp-a" d={`M460 ${CORD.lat} L600 95`}></path>
+    <path class="bp-a" d={`M460 ${CORD.lat} L540 190 M460 ${CORD.med} L540 190 M540 190 H600`}></path>
+    <path class="bp-a" d={`M460 ${CORD.med} L600 255`}></path>
+    <path class="bp-p" d={`M460 ${CORD.post} L600 320 M460 ${CORD.post} L600 380`}></path>
+
+    <!-- selected collateral branches -->
+    <path class="bp-c" d="M100 98 V62"></path>
+    <path class="bp-c" d={`M95 97 V372`}></path>
+    <path class="bp-c" d={`M240 ${TR.sup} L262 80`}></path>
+    <path class="bp-c" d={`M430 ${CORD.post} L440 392`}></path>
+    <circle class="bp-n" cx="95" cy="97" r="3"></circle>
+    <circle class="bp-n" cx="95" cy="133" r="3"></circle>
+    <circle class="bp-n" cx="95" cy="200" r="3"></circle>
+    <circle class="bp-n" cx="540" cy="190" r="4"></circle>
+
+    <!-- root labels -->
+    <Label x={46} y={R.C5 + 5} anchor="end" size="lg">C5</Label>
+    <Label x={46} y={R.C6 + 5} anchor="end" size="lg">C6</Label>
+    <Label x={46} y={R.C7 + 5} anchor="end" size="lg">C7</Label>
+    <Label x={46} y={R.C8 + 5} anchor="end" size="lg">C8</Label>
+    <Label x={46} y={R.T1 + 5} anchor="end" size="lg">T1</Label>
+
+    <!-- trunk & cord labels -->
+    <Label x={235} y={TR.sup - 9} anchor="middle" size="sm">Superior</Label>
+    <Label x={235} y={TR.mid - 9} anchor="middle" size="sm">Middle</Label>
+    <Label x={235} y={TR.inf + 20} anchor="middle" size="sm">Inferior</Label>
+    <Label x={420} y={CORD.lat - 9} anchor="middle" size="sm">Lateral cord</Label>
+    <Label x={420} y={CORD.med - 9} anchor="middle" size="sm">Medial cord</Label>
+    <Label x={420} y={CORD.post - 9} anchor="middle" size="sm">Posterior cord</Label>
+
+    <!-- terminal branch labels -->
+    <Label x={608} y={99} to="musculocutaneous-nerve">Musculocutaneous</Label>
+    <Label x={608} y={113} size="sm">C5–C7</Label>
+    <Label x={608} y={194} to="median-nerve">Median</Label>
+    <Label x={608} y={208} size="sm">C6–T1 (± C5)</Label>
+    <Label x={608} y={259} to="ulnar-nerve">Ulnar</Label>
+    <Label x={608} y={273} size="sm">C8–T1 (± C7)</Label>
+    <Label x={608} y={324} to="axillary-nerve">Axillary</Label>
+    <Label x={608} y={338} size="sm">C5–C6</Label>
+    <Label x={608} y={384} to="radial-nerve">Radial</Label>
+    <Label x={608} y={398} size="sm">C5–T1</Label>
+
+    <!-- collateral labels -->
+    <Label x={60} y={56} size="sm">Dorsal scapular (C5)</Label>
+    <Label x={266} y={76} size="sm">Suprascapular (C5–C6)</Label>
+    <Label x={100} y={392} to="long-thoracic-nerve">Long thoracic (C5–C7)</Label>
+    <Label x={446} y={404} size="sm">Thoracodorsal (C6–C8)</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>
