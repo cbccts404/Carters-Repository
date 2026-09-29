@@ -1,5 +1,42 @@
 /* ---------- tokens ---------- */
+/* Dark is the default theme; the header toggle sets data-theme="light". */
 :root {
+  --bg: #121418;
+  --surface: #1b1e24;
+  --surface-2: #242830;
+  --text: #e6e8eb;
+  --muted: #9aa1ad;
+  --border: #323741;
+  --accent: #7fb0ea;
+  --accent-soft: #213149;
+  --warn-bg: #4a3b00;
+  --warn-text: #ffe28a;
+  --good: #5fcf8c;
+  --bad: #ff8a80;
+  --radius: 10px;
+  --shadow: none;
+  --header-h: 56px;
+  --fig-bg: #e9e7e2; /* Gray's plates are black-on-white; soften them in dark mode */
+
+  /* structure-type colours (badges, link underlines, diagrams) */
+  --t-bone: #d2b47c;
+  --t-muscle: #ef7f8c;
+  --t-nerve: #f2c14e;
+  --t-artery: #ff7b72;
+  --t-vein: #79a8ff;
+  --t-lymphatic: #6ccf9e;
+  --t-organ: #c49be6;
+  --t-joint: #a9b6c3;
+  --t-ligament: #b5c97a;
+  --t-space: #5ccfdd;
+
+  color-scheme: dark;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.55;
+  -webkit-text-size-adjust: 100%;
+}
+
+:root[data-theme='light'] {
   --bg: #f7f6f3;
   --surface: #ffffff;
   --surface-2: #f0eee9;
@@ -12,14 +49,11 @@
   --warn-text: #6b4e00;
   --good: #1f7a44;
   --bad: #b3261e;
-  --radius: 10px;
   --shadow: 0 1px 2px rgb(0 0 0 / 6%), 0 2px 8px rgb(0 0 0 / 4%);
-  --header-h: 56px;
-
-  /* structure-type colours (badges, link underlines) */
+  --fig-bg: #ffffff;
   --t-bone: #8a6d3b;
   --t-muscle: #b03a48;
-  --t-nerve: #c28a00;
+  --t-nerve: #a87700;
   --t-artery: #c62828;
   --t-vein: #1e56b0;
   --t-lymphatic: #2e7d5b;
@@ -27,40 +61,7 @@
   --t-joint: #5b6b7a;
   --t-ligament: #6d7f3a;
   --t-space: #0f7c8c;
-
   color-scheme: light;
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.55;
-  -webkit-text-size-adjust: 100%;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #15171b;
-    --surface: #1d2025;
-    --surface-2: #252930;
-    --text: #e7e8ea;
-    --muted: #9aa1ad;
-    --border: #343941;
-    --accent: #7fb0ea;
-    --accent-soft: #22324a;
-    --warn-bg: #4a3b00;
-    --warn-text: #ffe28a;
-    --good: #5fcf8c;
-    --bad: #ff8a80;
-    --shadow: none;
-    --t-bone: #d2b47c;
-    --t-muscle: #ef7f8c;
-    --t-nerve: #f2c14e;
-    --t-artery: #ff7b72;
-    --t-vein: #79a8ff;
-    --t-lymphatic: #6ccf9e;
-    --t-organ: #c49be6;
-    --t-joint: #a9b6c3;
-    --t-ligament: #b5c97a;
-    --t-space: #5ccfdd;
-    color-scheme: dark;
-  }
 }
 
 /* ---------- base ---------- */
@@ -234,7 +235,8 @@ a.xref:hover { border-bottom-color: var(--t, var(--accent)); background: var(--a
 .empty-note { color: var(--muted); font-style: italic; }
 
 figure.fig { margin: 12px 0; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px; }
-figure.fig img { display: block; margin: 0 auto; background: #fff; }
+figure.fig img { display: block; margin: 0 auto; background: var(--fig-bg); border-radius: 6px; }
+:root:not([data-theme='light']) figure.fig img { filter: brightness(0.92); }
 figure.fig figcaption { font-size: 0.875rem; margin-top: 8px; }
 .attribution { font-size: 0.75rem; color: var(--muted); margin-top: 4px; }
 
@@ -289,3 +291,9 @@ table.qa th, table.qa td { text-align: left; padding: 8px 6px; border-bottom: 1p
 .table-scroll { overflow-x: auto; }
 code { background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-size: 0.875em; }
 .q .stem > p:first-of-type { display: inline; }
+
+/* theme toggle: show the icon for the theme you'd switch TO */
+#theme-btn .sun { display: inline; }
+#theme-btn .moon { display: none; }
+:root[data-theme='light'] #theme-btn .sun { display: none; }
+:root[data-theme='light'] #theme-btn .moon { display: inline; }

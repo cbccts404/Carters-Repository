@@ -19,7 +19,13 @@ const fullTitle = title === 'Anatomy Atlas' ? title : `${title} · Anatomy Atlas
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#1d5fa8" />
+    <meta name="theme-color" content="#1b1e24" />
+    <script is:inline>
+      // apply saved theme before first paint (dark is the default)
+      try {
+        if (localStorage.getItem('theme') === 'light') document.documentElement.dataset.theme = 'light';
+      } catch {}
+    </script>
     <title>{fullTitle}</title>
     {description && <meta name="description" content={description} />}
     <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
@@ -31,6 +37,10 @@ const fullTitle = title === 'Anatomy Atlas' ? title : `${title} · Anatomy Atlas
         <button class="icon-btn" id="search-btn" aria-controls="search-panel" aria-expanded="false" title="Search (press /)">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
           <span class="label">Search</span>
+        </button>
+        <button class="icon-btn" id="theme-btn" title="Switch light / dark" aria-label="Switch light or dark theme">
+          <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+          <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
         </button>
         <button class="icon-btn" id="menu-btn" aria-controls="drawer" aria-expanded="false" title="Regions">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -117,6 +127,17 @@ const fullTitle = title === 'Anatomy Atlas' ? title : `${title} · Anatomy Atlas
       document.addEventListener('click', (e) => {
         const t = e.target as Node;
         if (!panel.contains(t) && !searchBtn.contains(t) && !drawer.contains(t) && !menuBtn.contains(t)) closeAll();
+      });
+
+      $('theme-btn').addEventListener('click', () => {
+        const root = document.documentElement;
+        const light = root.dataset.theme !== 'light';
+        if (light) root.dataset.theme = 'light';
+        else delete root.dataset.theme;
+        document.querySelector('meta[name="theme-color"]')!.setAttribute('content', light ? '#ffffff' : '#1b1e24');
+        try {
+          localStorage.setItem('theme', light ? 'light' : 'dark');
+        } catch {}
       });
 
       initSearchUI($('q') as HTMLInputElement, $('quick-results'), { limit: 8 });
