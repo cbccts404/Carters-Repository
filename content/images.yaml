@@ -322,3 +322,173 @@
   license: Public domain
   licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
   alt: "Anterior view of the bony thoracic cage"
+
+- id: gray-531-abdominal-aorta
+  file: images/gray-531-abdominal-aorta.png
+  title: "The abdominal aorta and its branches"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 531"
+  source: https://commons.wikimedia.org/wiki/File:Gray531.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior abdominal wall showing the abdominal aorta, IVC, kidneys and their vessels"
+
+- id: gray-532-celiac-artery
+  file: images/gray-532-celiac-artery.png
+  title: "The celiac artery and its branches"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 532"
+  source: https://commons.wikimedia.org/wiki/File:Gray532.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Stomach and liver with the celiac trunk and its branches, including the cystic artery"
+
+- id: gray-534-superior-mesenteric-artery
+  file: images/gray-534-superior-mesenteric-artery.png
+  title: "The superior mesenteric artery and its branches"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 534"
+  source: https://commons.wikimedia.org/wiki/File:Gray534.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Colon reflected upward showing the superior mesenteric artery supplying the small intestine and right colon"
+
+- id: gray-537-inferior-mesenteric-artery
+  file: images/gray-537-inferior-mesenteric-artery.png
+  title: "The inferior mesenteric artery and its branches"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 537"
+  source: https://commons.wikimedia.org/wiki/File:Gray537.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Colon showing the inferior mesenteric artery with left colic, sigmoid and superior rectal branches"
+
+- id: gray-591-portal-vein
+  file: images/gray-591-portal-vein.png
+  title: "The portal vein and its tributaries"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 591"
+  source: https://commons.wikimedia.org/wiki/File:Gray591.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Abdominal viscera showing the portal vein formed from the splenic and superior mesenteric veins with their tributaries"
+
+- id: gray-1046-stomach-outline
+  file: images/gray-1046-stomach-outline.png
+  title: "Outline of the stomach showing its anatomical landmarks"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1046"
+  source: https://commons.wikimedia.org/wiki/File:Gray1046.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Diagram of the stomach labelling fundus, body, lesser and greater curvatures, angular incisure and pyloric part"
+
+- id: gray-1057-duodenal-papilla
+  file: images/gray-1057-duodenal-papilla.png
+  title: "Interior of the descending duodenum showing the bile papilla"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1057"
+  source: https://commons.wikimedia.org/wiki/File:Gray1057.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Opened second part of the duodenum with probes in the common bile duct and pancreatic duct at the papilla"
+
+- id: gray-1098-duodenum-pancreas
+  file: images/gray-1098-duodenum-pancreas.png
+  title: "The duodenum and pancreas"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1098"
+  source: https://commons.wikimedia.org/wiki/File:Gray1098.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "The duodenal C-loop around the head of the pancreas with surrounding viscera"
+
+- id: gray-1085-liver-superior
+  file: images/gray-1085-liver-superior.png
+  title: "The superior surface of the liver"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1085"
+  source: https://commons.wikimedia.org/wiki/File:Gray1085.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Liver seen from above showing right and left lobes, falciform ligament and inferior vena cava"
+
+- id: gray-1122-kidney-relations
+  file: images/gray-1122-kidney-relations.png
+  title: "Anterior surfaces of the kidneys showing contact areas"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1122"
+  source: https://commons.wikimedia.org/wiki/File:Gray1122.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Diagram of both kidneys marking the hepatic, duodenal, colic, gastric, splenic, pancreatic and jejunal contact areas"
+
+- id: gray-1121-posterior-abdominal-wall
+  file: images/gray-1121-posterior-abdominal-wall.png
+  title: "Posterior abdominal wall showing kidneys, suprarenal glands and great vessels"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1121"
+  source: https://commons.wikimedia.org/wiki/File:Gray1121.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior abdominal wall with peritoneum removed showing kidneys, suprarenal glands, aorta, IVC and ureters"
+
+- id: gray-1146-spermatic-cord
+  file: images/gray-1146-spermatic-cord.png
+  title: "The spermatic cord in the inguinal canal"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1146"
+  source: https://commons.wikimedia.org/wiki/File:Gray1146.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Dissection of the right groin showing the spermatic cord leaving the superficial ring near the femoral vessels"
+
+- id: gray-1036-anterior-wall-posterior-view
+  file: images/gray-1036-anterior-wall-posterior-view.png
+  title: "Posterior view of the lower anterior abdominal wall"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1036"
+  source: https://commons.wikimedia.org/wiki/File:Gray1036.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Internal view of the lower anterior abdominal wall showing the inguinal fossae and the inferior epigastric vessels"
+
+- id: gray-824-lumbar-plexus-dissection
+  file: images/gray-824-lumbar-plexus-dissection.png
+  title: "Deep and superficial dissection of the lumbar plexus"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 824"
+  source: https://commons.wikimedia.org/wiki/File:Gray824.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior abdominal wall showing the lumbar plexus branches emerging around psoas major"
+
+- id: gray-822-lumbar-plexus-plan
+  file: images/gray-822-lumbar-plexus-plan.png
+  title: "Plan of the lumbar plexus"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 822"
+  source: https://commons.wikimedia.org/wiki/File:Gray822.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Schematic of the lumbar plexus from T12–L5 roots to its named branches"
+
+- id: gray-1073-cecum-appendix
+  file: images/gray-1073-cecum-appendix.png
+  title: "The cecum and vermiform process with their arteries"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1073"
+  source: https://commons.wikimedia.org/wiki/File:Gray1073.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Cecum, terminal ileum and appendix with the ileocolic and appendicular arteries"
+
+- id: gray-1035-peritoneum-sagittal
+  file: images/gray-1035-peritoneum-sagittal.png
+  title: "Vertical disposition of the peritoneum"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1035"
+  source: https://commons.wikimedia.org/wiki/File:Gray1035.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Sagittal diagram of the female abdomen and pelvis showing the greater sac in red and the omental bursa in blue"

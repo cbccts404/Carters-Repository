@@ -1,0 +1,92 @@
+---
+/* Original schematic: the three unpaired gut arteries of the abdominal aorta, their vertebral
+   levels, and the foregut / midgut / hindgut territories. */
+import Label from '../components/Label.astro';
+const levels = [
+  ['T12', 60],
+  ['L1', 120],
+  ['L2', 170],
+  ['L3', 230],
+  ['L4', 290],
+] as const;
+const box = (y: number, h: number) => `M270 ${y} h300 v${h} h-300 Z`;
+---
+
+<div class="scroll">
+  <svg viewBox="0 0 600 400" role="img" aria-labelledby="ga-title ga-desc">
+    <title id="ga-title">Arterial supply of the gut</title>
+    <desc id="ga-desc">
+      Celiac trunk at T12 supplies the foregut, the superior mesenteric artery at L1 the midgut, and the inferior
+      mesenteric artery at L3 the hindgut. The aorta bifurcates at L4.
+    </desc>
+    <style>
+      .ga-aorta { fill: none; stroke: var(--t-artery); stroke-width: 12; stroke-linecap: round; }
+      .ga-branch { fill: none; stroke: var(--t-artery); stroke-width: 5; stroke-linecap: round; }
+      .ga-thin { fill: none; stroke: var(--t-artery); stroke-width: 3; stroke-linecap: round; }
+      .ga-fore { fill: color-mix(in srgb, #f59e0b 22%, var(--surface)); stroke: #f59e0b; stroke-width: 1.5; }
+      .ga-mid { fill: color-mix(in srgb, #22c55e 18%, var(--surface)); stroke: #22c55e; stroke-width: 1.5; }
+      .ga-hind { fill: color-mix(in srgb, #60a5fa 20%, var(--surface)); stroke: #60a5fa; stroke-width: 1.5; }
+      .ga-tick { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 2 4; }
+    </style>
+
+    <!-- vertebral levels -->
+    {levels.map(([t, y]) => (
+      <>
+        <line class="ga-tick" x1="44" y1={y} x2="250" y2={y}></line>
+        <Label x={36} y={y + 4} anchor="end" size="sm">{t}</Label>
+      </>
+    ))}
+
+    <!-- aorta, renals, iliacs -->
+    <path class="ga-aorta" d="M120 30 V290"></path>
+    <path class="ga-branch" d="M120 290 L88 350 M120 290 L152 350"></path>
+    <path class="ga-thin" d="M120 145 H70 M120 145 H170"></path>
+
+    <!-- gut branches -->
+    <path class="ga-branch" d="M120 60 H270"></path>
+    <path class="ga-branch" d="M120 120 C180 120 220 150 270 150"></path>
+    <path class="ga-branch" d="M120 230 C180 230 230 260 270 260"></path>
+
+    <!-- territories -->
+    <path class="ga-fore" d={box(20, 90)}></path>
+    <path class="ga-mid" d={box(120, 100)}></path>
+    <path class="ga-hind" d={box(230, 112)}></path>
+
+    <!-- labels: arteries -->
+    <Label x={128} y={24} size="sm" to="abdominal-aorta">Abdominal aorta</Label>
+    <Label x={160} y={54} size="sm" to="celiac-trunk">Celiac trunk</Label>
+    <Label x={160} y={112} size="sm" to="superior-mesenteric-artery">SMA</Label>
+    <Label x={160} y={222} size="sm" to="inferior-mesenteric-artery">IMA</Label>
+    <Label x={176} y={149} size="sm" to="kidney">Renal aa.</Label>
+    <Label x={120} y={372} anchor="middle" size="sm">Common iliac aa. (L4)</Label>
+
+    <!-- foregut -->
+    <Label x={280} y={40} size="lg">Foregut</Label>
+    <Label x={380} y={40} size="sm">pain → epigastric</Label>
+    <Label x={280} y={62} to="stomach">Stomach</Label>
+    <Label x={370} y={62} to="duodenum">Duodenum (to papilla)</Label>
+    <Label x={280} y={82} to="liver">Liver</Label>
+    <Label x={330} y={82} to="gallbladder">Gallbladder</Label>
+    <Label x={430} y={82} to="pancreas">Pancreas</Label>
+    <Label x={280} y={102} to="spleen">Spleen*</Label>
+    <Label x={350} y={102} size="sm">*mesoderm; celiac supply</Label>
+
+    <!-- midgut -->
+    <Label x={280} y={140} size="lg">Midgut</Label>
+    <Label x={370} y={140} size="sm">pain → periumbilical</Label>
+    <Label x={280} y={162} size="sm">Distal duodenum,</Label>
+    <Label x={390} y={162} to="small-intestine">jejunum and ileum</Label>
+    <Label x={280} y={184} to="appendix">Appendix</Label>
+    <Label x={360} y={184} size="sm">cecum, ascending colon,</Label>
+    <Label x={280} y={206} to="colon">proximal 2/3 of transverse colon</Label>
+
+    <!-- hindgut -->
+    <Label x={280} y={250} size="lg">Hindgut</Label>
+    <Label x={374} y={250} size="sm">pain → suprapubic</Label>
+    <Label x={280} y={274} to="colon">Distal 1/3 transverse colon,</Label>
+    <Label x={280} y={294} to="colon">descending and sigmoid colon</Label>
+    <Label x={280} y={314} size="sm">Upper rectum (superior rectal a.)</Label>
+    <Label x={280} y={332} size="sm">Watershed: splenic flexure, rectosigmoid</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>
