@@ -1,0 +1,68 @@
+---
+/* Original schematic: coronary arteries, anterior view (patient's left = viewer's right).
+   Solid = anterior surface; dashed = vessels on the posterior/inferior surface (right dominance shown). */
+import Label from '../components/Label.astro';
+const heart =
+  'M160 160 C112 200 104 292 168 350 C228 402 330 436 402 424 C436 384 444 300 414 232 C392 182 330 146 272 146 Z';
+---
+
+<svg viewBox="-44 0 628 484" role="img" aria-labelledby="cor-title cor-desc">
+  <title id="cor-title">Coronary arteries, anterior view</title>
+  <desc id="cor-desc">
+    The right coronary artery runs in the right atrioventricular groove and, in right dominance, gives the posterior
+    interventricular artery. The left main divides into the anterior interventricular (LAD) artery in the anterior
+    interventricular groove and the circumflex artery in the left atrioventricular groove.
+  </desc>
+  <style>
+    .co-heart { fill: color-mix(in srgb, var(--t-muscle) 18%, var(--surface)); stroke: var(--muted); stroke-width: 1.5; }
+    .co-vessel { fill: none; stroke: var(--t-artery); stroke-width: 6; stroke-linecap: round; }
+    .co-post { fill: none; stroke: var(--t-artery); stroke-width: 4; stroke-linecap: round; stroke-dasharray: 6 6; opacity: 0.75; }
+    .co-small { fill: none; stroke: var(--t-artery); stroke-width: 3.5; stroke-linecap: round; }
+    .co-great { fill: color-mix(in srgb, var(--t-artery) 22%, var(--surface)); stroke: var(--muted); stroke-width: 1.5; }
+    .co-lead { stroke: var(--muted); stroke-width: 1; fill: none; }
+  </style>
+
+  <!-- great arteries -->
+  <path class="co-great" d="M300 150 C302 120 318 96 344 86 L358 110 C340 118 330 132 326 152 Z"></path>
+  <path class="co-great" d="M236 152 C232 110 236 70 262 50 C292 28 350 30 382 52 L370 72 C344 56 300 56 282 74 C266 92 264 122 268 152 Z"></path>
+  <path class="co-heart" d={heart}></path>
+
+  <!-- right coronary artery (AV groove), marginal, posterior continuation + PDA -->
+  <path class="co-vessel" d="M244 156 C212 166 176 196 160 246 C150 290 160 330 196 362"></path>
+  <path class="co-small" d="M166 318 C188 340 212 360 232 384"></path>
+  <path class="co-post" d="M196 362 C228 388 262 402 296 410 C330 414 362 416 392 418"></path>
+
+  <!-- left main, LAD with diagonal, circumflex with obtuse marginal -->
+  <path class="co-vessel" d="M262 156 L286 176"></path>
+  <path class="co-vessel" d="M286 176 C300 244 336 338 398 420"></path>
+  <path class="co-small" d="M306 238 C330 250 352 262 378 276"></path>
+  <path class="co-vessel" d="M286 176 C326 170 380 188 410 226"></path>
+  <path class="co-small" d="M404 218 C418 250 426 280 428 314"></path>
+  <path class="co-post" d="M410 226 C430 256 440 290 442 330"></path>
+
+  <!-- leader lines -->
+  <g class="co-lead">
+    <line x1="120" y1="212" x2="168" y2="222"></line>
+    <line x1="120" y1="392" x2="218" y2="370"></line>
+    <line x1="430" y1="150" x2="278" y2="168"></line>
+    <line x1="150" y1="452" x2="330" y2="340"></line>
+    <line x1="470" y1="200" x2="400" y2="210"></line>
+    <line x1="470" y1="282" x2="372" y2="272"></line>
+    <line x1="470" y1="330" x2="428" y2="306"></line>
+    <line x1="360" y1="456" x2="330" y2="414"></line>
+  </g>
+
+  <Label x={116} y={208} anchor="end" to="right-coronary-artery">Right coronary</Label>
+  <Label x={116} y={224} anchor="end" size="sm">(RCA)</Label>
+  <Label x={116} y={396} anchor="end" size="sm">Right (acute) marginal</Label>
+  <Label x={434} y={146} to="left-coronary-artery">Left main</Label>
+  <Label x={146} y={458} anchor="end" to="anterior-interventricular-artery">LAD</Label>
+  <Label x={146} y={474} anchor="end" size="sm">(anterior interventricular)</Label>
+  <Label x={474} y={204} to="circumflex-artery">Circumflex</Label>
+  <Label x={474} y={286} size="sm">Diagonal</Label>
+  <Label x={474} y={334} size="sm">Obtuse marginal</Label>
+  <Label x={364} y={462} size="sm">Posterior interventricular (PDA)</Label>
+  <Label x={364} y={476} size="sm">— dashed = posterior surface</Label>
+  <Label x={206} y={40} anchor="end" to="thoracic-aorta">Aorta</Label>
+  <Label x={366} y={124} size="sm" to="pulmonary-arteries">Pulmonary trunk</Label>
+</svg>

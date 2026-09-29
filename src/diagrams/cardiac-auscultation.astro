@@ -1,0 +1,77 @@
+---
+/* Original schematic: classic cardiac auscultation areas on the anterior chest
+   (patient's right = viewer's left). */
+import Label from '../components/Label.astro';
+
+const rib = (n: number) => 110 + (n - 2) * 40; // y of costal cartilage n at the sternal edge
+const ribs = [2, 3, 4, 5, 6];
+const MCL_L = 272; // patient's left midclavicular line (x)
+const points = [
+  { x: 172, y: 130, to: 'aortic-valve' },
+  { x: 228, y: 130, to: 'pulmonary-valve' },
+  { x: 228, y: 170 },
+  { x: 228, y: 226, to: 'tricuspid-valve' },
+  { x: MCL_L, y: 252, to: 'mitral-valve' },
+];
+---
+
+<svg viewBox="-64 0 548 380" role="img" aria-labelledby="aus-title aus-desc">
+  <title id="aus-title">Cardiac auscultation areas</title>
+  <desc id="aus-desc">
+    Aortic: right 2nd intercostal space at the sternal border. Pulmonic: left 2nd intercostal space at the sternal
+    border. Erb's point: left 3rd intercostal space. Tricuspid: left lower sternal border. Mitral: apex, left 5th
+    intercostal space in the midclavicular line.
+  </desc>
+  <style>
+    .au-bone { fill: color-mix(in srgb, var(--t-bone) 25%, var(--surface)); stroke: var(--t-bone); stroke-width: 1.5; }
+    .au-rib { fill: none; stroke: var(--t-bone); stroke-width: 2; opacity: 0.8; }
+    .au-heart { fill: color-mix(in srgb, var(--t-muscle) 16%, transparent); stroke: var(--t-muscle); stroke-width: 1.2; stroke-dasharray: 4 4; }
+    .au-pt { fill: var(--accent); stroke: var(--bg); stroke-width: 2; }
+    .au-lead { stroke: var(--muted); stroke-width: 1; }
+    .au-mcl { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 5; }
+  </style>
+
+  <!-- clavicles and sternum -->
+  <path class="au-bone" d="M186 64 L84 50 L80 60 L184 76 Z"></path>
+  <path class="au-bone" d="M214 64 L316 50 L320 60 L216 76 Z"></path>
+  <path class="au-bone" d="M186 62 H214 L216 108 H184 Z"></path>
+  <path class="au-bone" d="M184 112 H216 L214 300 L200 322 L186 300 Z"></path>
+
+  <!-- costal cartilages / ribs -->
+  {ribs.map((n) => (
+    <>
+      <path class="au-rib" d={`M184 ${rib(n)} C150 ${rib(n) + 4} 110 ${rib(n) + 14} 72 ${rib(n) + 30}`}></path>
+      <path class="au-rib" d={`M216 ${rib(n)} C250 ${rib(n) + 4} 290 ${rib(n) + 14} 328 ${rib(n) + 30}`}></path>
+    </>
+  ))}
+
+  <!-- heart outline and midclavicular line -->
+  <path class="au-heart" d="M186 124 C170 150 166 200 180 244 C200 272 244 272 280 262 C288 230 272 176 238 136 C224 124 202 118 186 124 Z"></path>
+  <line class="au-mcl" x1={MCL_L} y1="40" x2={MCL_L} y2="330"></line>
+
+  <!-- points -->
+  {points.map((p) => <circle class="au-pt" cx={p.x} cy={p.y} r="8"></circle>)}
+
+  <!-- leaders -->
+  <line class="au-lead" x1="108" y1="126" x2="164" y2="130"></line>
+  <line class="au-lead" x1="312" y1="118" x2="236" y2="128"></line>
+  <line class="au-lead" x1="312" y1="166" x2="236" y2="170"></line>
+  <line class="au-lead" x1="312" y1="214" x2="236" y2="224"></line>
+  <line class="au-lead" x1="312" y1="290" x2={MCL_L + 6} y2="258"></line>
+  <line class="au-lead" x1="108" y1="110" x2="184" y2="110"></line>
+
+  <Label x={104} y={124} anchor="end" to="aortic-valve">Aortic</Label>
+  <Label x={104} y={139} anchor="end" size="sm">R 2nd ICS, sternal border</Label>
+  <Label x={104} y={105} anchor="end" size="sm">Sternal angle (2nd rib)</Label>
+  <Label x={316} y={116} to="pulmonary-valve">Pulmonic</Label>
+  <Label x={316} y={131} size="sm">L 2nd ICS</Label>
+  <Label x={316} y={164}>Erb's point</Label>
+  <Label x={316} y={179} size="sm">L 3rd ICS</Label>
+  <Label x={316} y={212} to="tricuspid-valve">Tricuspid</Label>
+  <Label x={316} y={227} size="sm">L lower sternal border</Label>
+  <Label x={316} y={292} to="mitral-valve">Mitral (apex)</Label>
+  <Label x={316} y={307} size="sm">L 5th ICS, MCL</Label>
+  <Label x={MCL_L} y={346} anchor="middle" size="sm">Midclavicular line</Label>
+  <Label x={40} y={362} size="sm">Patient's right</Label>
+  <Label x={380} y={362} anchor="end" size="sm">Patient's left</Label>
+</svg>

@@ -23,4 +23,16 @@ export const diagrams: Record<string, DiagramMeta> = {
     description:
       'Schematic of the commonly taught pattern. Adjacent dermatomes overlap and published maps disagree at the borders, so check against your textbook. The C6–C8 ASIA key points are tested on the dorsal surface of the digits.',
   },
+  'coronary-arteries': {
+    title: 'Coronary arteries (anterior view)',
+    region: 'thorax',
+    description:
+      'Right-dominant pattern shown; dashed vessels run on the posterior/inferior surface. ECG territories: LAD → V1–V4 (anteroseptal); circumflex → I, aVL, V5–V6 (lateral); RCA → II, III, aVF (inferior).',
+  },
+  'cardiac-auscultation': {
+    title: 'Cardiac auscultation areas',
+    region: 'thorax',
+    description:
+      'Classic listening posts. These are where each valve is heard best, not where the valves lie anatomically. Count interspaces down from the 2nd rib at the sternal angle.',
+  },
 };
