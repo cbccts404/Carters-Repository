@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+import { loadAtlas, url } from '../lib/atlas';
+const atlas = await loadAtlas();
+const images = [...atlas.images.values()];
+const usedBy = (id: string) => atlas.structures.filter((s) => s.data.images.some((i) => i.image === id));
+---
+
+<Base title="Image credits" description="Sources and licenses for every image in the atlas.">
+  <div class="hero">
+    <h1>Image credits &amp; licenses</h1>
+    <p>
+      This atlas only uses public-domain images, mainly plates from <em>Gray's Anatomy of the Human Body</em> (20th
+      ed., 1918) hosted on Wikimedia Commons, plus original SVG schematics made for this project. The build
+      rejects any image whose license isn't public domain or CC0.
+    </p>
+  </div>
+  {
+    images.length ? (
+      <div class="table-scroll">
+        <table class="qa">
+          <thead>
+            <tr><th>Image</th><th>Author / work</th><th>License</th><th>Used in</th></tr>
+          </thead>
+          <tbody>
+            {images.map((i) => (
+              <tr>
+                <td><a href={url(i.data.file)}>{i.data.title}</a></td>
+                <td>{i.data.author}{i.data.work && <>, <em>{i.data.work}</em></>}<br /><a href={i.data.source}>Source</a></td>
+                <td>{i.data.license}{i.data.licenseNote && <div class="muted small">{i.data.licenseNote}</div>}</td>
+                <td>{usedBy(i.id).map((s) => s.data.name).join(', ')}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    ) : (
+      <p class="empty-note">No images added yet.</p>
+    )
+  }
+</Base>

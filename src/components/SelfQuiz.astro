@@ -1,0 +1,71 @@
+---
+import { md, mdInline, type Structure } from '../lib/atlas';
+
+interface Props {
+  entry: Structure;
+}
+const { entry } = Astro.props;
+const LETTERS = ['A', 'B', 'C', 'D', 'E'];
+const questions = await Promise.all(
+  entry.data.quiz.map(async (q) => ({
+    stem: await md(q.stem),
+    choices: await Promise.all(q.choices.map((c) => mdInline(c))),
+    answer: LETTERS.indexOf(q.answer),
+    explanation: await md(q.explanation),
+  })),
+);
+---
+
+{
+  questions.map((q, qi) => (
+    <div class="q" data-answer={q.answer}>
+      <div class="stem">
+        <span class="muted small">Q{qi + 1}. </span>
+        <Fragment set:html={q.stem} />
+      </div>
+      <ol>
+        {q.choices.map((c, ci) => (
+          <li>
+            <button class="choice" type="button" data-i={ci}>
+              <span class="letter">{LETTERS[ci]}</span>
+              <span set:html={c} />
+            </button>
+          </li>
+        ))}
+      </ol>
+      <div class="explain" hidden>
+        <p>
+          <strong class="verdict" />
+          <span class="muted"> Correct answer: {LETTERS[q.answer]}</span>
+        </p>
+        <Fragment set:html={q.explanation} />
+      </div>
+      <details>
+        <summary>Show answer</summary>
+        <p>
+          <strong>{LETTERS[q.answer]}</strong>
+        </p>
+        <Fragment set:html={q.explanation} />
+      </details>
+    </div>
+  ))
+}
+
+<script>
+  for (const q of document.querySelectorAll<HTMLElement>('.q')) {
+    q.classList.add('js');
+    const answer = Number(q.dataset.answer);
+    const buttons = [...q.querySelectorAll<HTMLButtonElement>('.choice')];
+    const explain = q.querySelector<HTMLElement>('.explain')!;
+    for (const b of buttons) {
+      b.addEventListener('click', () => {
+        const picked = Number(b.dataset.i);
+        buttons.forEach((x) => (x.disabled = true));
+        buttons[answer].classList.add('correct');
+        if (picked !== answer) b.classList.add('wrong');
+        explain.querySelector('.verdict')!.textContent = picked === answer ? '✓ Correct.' : '✗ Not quite.';
+        explain.hidden = false;
+      });
+    }
+  }
+</script>

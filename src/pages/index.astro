@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+import { loadAtlas, regionUrl, url } from '../lib/atlas';
+
+const atlas = await loadAtlas();
+const count = (id: string) => atlas.structures.filter((s) => s.data.region === id).length;
+const quizCount = atlas.structures.reduce((n, s) => n + s.data.quiz.length, 0);
+const cardCount = atlas.structures.reduce((n, s) => n + s.data.flashcards.length, 0);
+---
+
+<Base title="Anatomy Atlas" description="Interactive regional human anatomy atlas for PA students.">
+  <div class="hero">
+    <h1>Regional Anatomy Atlas</h1>
+    <p>
+      Every structure has core anatomy, clinical correlations, imaging, physical exam, and a self-quiz, all
+      cross-linked. Press <code>/</code> or tap Search to jump to any structure.
+    </p>
+    <div class="stats">
+      <span><b>{atlas.structures.length}</b> structures</span>
+      <span><b>{quizCount}</b> questions</span>
+      <span><b>{cardCount}</b> flashcards</span>
+      <span><a href={url('review/')}><b>{atlas.verifyFlags.length}</b> verify flags</a></span>
+    </div>
+  </div>
+
+  <div class="grid">
+    {
+      atlas.regions.map((r) => (
+        <a class="card" href={regionUrl(r.id)}>
+          <h3>{r.data.name}</h3>
+          <p>{r.data.blurb}</p>
+          <p class="small" style="margin-top:8px">
+            {count(r.id) ? `${count(r.id)} entries` : 'Coming soon'}
+          </p>
+        </a>
+      ))
+    }
+  </div>
+</Base>

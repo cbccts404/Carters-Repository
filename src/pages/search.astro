@@ -1,0 +1,53 @@
+---
+import Base from '../layouts/Base.astro';
+import { TYPE_LABELS, TYPE_ORDER, loadAtlas } from '../lib/atlas';
+const atlas = await loadAtlas();
+---
+
+<Base title="Search" description="Search every structure in the atlas.">
+  <div class="hero">
+    <h1>Search</h1>
+    <p>Matches names, synonyms and eponyms, Latin terms, tags, clinical conditions and special tests. Typos are tolerated.</p>
+  </div>
+  <label class="sr-only" for="full-q">Search</label>
+  <input id="full-q" class="search-input" type="search" autocomplete="off" placeholder="e.g. wrist drop, Erb, scaphoid, Phalen" />
+  <div class="filters">
+    <select id="f-region" aria-label="Filter by region">
+      <option value="">All regions</option>
+      {atlas.regions.map((r) => <option value={r.id}>{r.data.name}</option>)}
+    </select>
+    <select id="f-type" aria-label="Filter by type">
+      <option value="">All types</option>
+      {TYPE_ORDER.map((t) => <option value={t}>{TYPE_LABELS[t][1]}</option>)}
+    </select>
+    <label class="small" style="align-self:center"><input type="checkbox" id="f-hy" /> High-yield only</label>
+  </div>
+  <p class="small muted" id="count"></p>
+  <ul class="results" id="full-results"></ul>
+
+  <script>
+    import { initSearchUI } from '../scripts/search';
+    const q = document.getElementById('full-q') as HTMLInputElement;
+    const region = document.getElementById('f-region') as HTMLSelectElement;
+    const type = document.getElementById('f-type') as HTMLSelectElement;
+    const hy = document.getElementById('f-hy') as HTMLInputElement;
+    const list = document.getElementById('full-results')!;
+    const count = document.getElementById('count')!;
+
+    const run = initSearchUI(q, list, {
+      filter: () =>
+        region.value || type.value || hy.checked
+          ? (d) => (!region.value || d.region === region.value) && (!type.value || d.type === type.value) && (!hy.checked || d.highYield)
+          : undefined,
+    });
+    list.addEventListener('results', (e) => {
+      const { count: n, q: text } = (e as CustomEvent).detail;
+      count.textContent = text.trim() ? `${n} result${n === 1 ? '' : 's'}` : '';
+    });
+    for (const el of [region, type, hy]) el.addEventListener('change', run);
+
+    const initial = new URLSearchParams(location.search).get('q');
+    if (initial) (q.value = initial), run();
+    q.focus();
+  </script>
+</Base>

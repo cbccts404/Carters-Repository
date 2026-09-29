@@ -1,0 +1,368 @@
+---
+import Base from '../../layouts/Base.astro';
+import SelfQuiz from '../../components/SelfQuiz.astro';
+import Flashcards from '../../components/Flashcards.astro';
+import Figure from '../../components/Figure.astro';
+import Diagram from '../../components/Diagram.astro';
+import {
+  ANATOMY_FIELDS,
+  TYPE_LABELS,
+  backlinksFor,
+  completeness,
+  loadAtlas,
+  md,
+  mdInline,
+  plain,
+  regionUrl,
+  structureUrl,
+  type Structure,
+} from '../../lib/atlas';
+
+export async function getStaticPaths() {
+  const atlas = await loadAtlas();
+  return atlas.structures.map((entry) => ({ params: { region: entry.data.region, id: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props as { entry: Structure };
+const d = entry.data;
+const atlas = await loadAtlas();
+const region = atlas.regionById.get(d.region)!;
+
+// ----- core anatomy fields -----
+const isEmpty = (v: unknown) =>
+  v == null || v === '' || (Array.isArray(v) ? v.length === 0 : typeof v === 'object' && Object.keys(v).length === 0);
+const listHtml = async (items: string[]) =>
+  '<ul>' + (await Promise.all(items.map(async (x) => `<li>${await mdInline(x)}</li>`))).join('') + '</ul>';
+
+const anatomy = d.anatomy as Record<string, unknown>;
+const fields: { label: string; html: string }[] = [];
+for (const [key, label] of ANATOMY_FIELDS[d.type]) {
+  const v = anatomy[key];
+  if (isEmpty(v)) continue;
+  let html: string;
+  if (typeof v === 'string') html = await md(v);
+  else if (Array.isArray(v)) html = await listHtml(v as string[]);
+  else {
+    const rows = await Promise.all(
+      Object.entries(v as Record<string, string>).map(async ([k, x]) => `<dt>${k}</dt><dd>${await mdInline(x)}</dd>`),
+    );
+    html = `<dl class="boundaries">${rows.join('')}</dl>`;
+  }
+  fields.push({ label, html });
+}
+
+// ----- derived relationships (backlinks) -----
+const groups = await backlinksFor(entry.id);
+const derived: { label: string; items: { s: Structure; note?: string }[] }[] = [];
+for (const [label, links] of groups) {
+  derived.push({
+    label,
+    items: links.map((b) => ({
+      s: b.source,
+      note:
+        label === 'Muscle attachments'
+          ? b.field.endsWith('origin') ? 'origin' : 'insertion'
+          : label === 'Muscles innervated'
+            ? plain((b.source.data.anatomy as Record<string, string>).innervation)
+            : undefined,
+    })),
+  });
+}
+// Nerves: also list muscles supplied through named branches (one level down).
+if (d.type === 'nerve') {
+  const viaBranches: { s: Structure; note?: string }[] = [];
+  for (const b of groups.get('Branches') ?? []) {
+    for (const m of (await backlinksFor(b.source.id)).get('Muscles innervated') ?? [])
+      viaBranches.push({ s: m.source, note: `via ${b.source.data.name}` });
+  }
+  if (viaBranches.length) {
+    const at = derived.findIndex((g) => g.label === 'Muscles innervated');
+    derived.splice(at + 1, 0, { label: 'Muscles innervated via branches', items: viaBranches });
+  }
+}
+
+// ----- other sections -----
+const clinical = await Promise.all(
+  d.clinical.map(async (c) => ({
+    ...c,
+    mechanism: await md(c.mechanism),
+    presentation: await md(c.presentation),
+    notes: await md(c.notes),
+  })),
+);
+const pance = await Promise.all(d.pance.map((p) => mdInline(p)));
+
+const MODALITIES = [
+  ['xray', 'X-ray'],
+  ['ct', 'CT'],
+  ['mri', 'MRI'],
+  ['ultrasound', 'Ultrasound'],
+] as const;
+const imaging = d.imaging
+  ? {
+      rows: (
+        await Promise.all(MODALITIES.map(async ([k, label]) => ({ label, html: await md(d.imaging![k]) })))
+      ).filter((r) => r.html),
+      keyViews: d.imaging.keyViews.length ? await listHtml(d.imaging.keyViews) : '',
+    }
+  : undefined;
+
+const exam = d.exam
+  ? {
+      rows: (
+        await Promise.all(
+          (
+            [
+              ['landmarks', 'Surface landmarks'],
+              ['palpation', 'Palpation'],
+              ['testing', 'Strength / function testing'],
+            ] as const
+          ).map(async ([k, label]) => ({ label, html: await md(d.exam![k]) })),
+        )
+      ).filter((r) => r.html),
+      tests: await Promise.all(
+        d.exam.specialTests.map(async (t) => ({
+          name: t.name,
+          technique: await md(t.technique),
+          positive: await md(t.positive),
+          significance: await md(t.significance),
+        })),
+      ),
+    }
+  : undefined;
+
+const related = d.related.map((r) => atlas.byId.get(r)).filter(Boolean) as Structure[];
+const { sections, done, total } = completeness(entry);
+const summary = await mdInline(d.summary);
+---
+
+<Base title={d.name} description={plain(d.summary)} region={d.region}>
+  <nav class="crumbs">
+    <a href={regionUrl(region.id)}>{region.data.name}</a>
+    {d.subregion && <> › {d.subregion}</>} › {TYPE_LABELS[d.type][1]}
+  </nav>
+
+  <header class="entry-head">
+    <h1>{d.name}</h1>
+    {d.taName && <div class="ta">{d.taName}</div>}
+    {d.aka.length > 0 && <div class="muted small">Also: {d.aka.join(' · ')}</div>}
+    <div class="badges">
+      <span class={`badge type t-${d.type}`}>{TYPE_LABELS[d.type][0]}</span>
+      {d.highYield && <span class="badge hy">High-yield</span>}
+      <span class={`badge ${d.status}`}>{d.status}</span>
+    </div>
+    <p class="summary" set:html={summary} />
+  </header>
+
+  <nav class="section-nav" aria-label="Sections">
+    <a href="#anatomy" class:list={{ empty: !sections.Anatomy }}>Anatomy</a>
+    <a href="#clinical" class:list={{ empty: !sections.Clinical }}>Clinical</a>
+    <a href="#imaging" class:list={{ empty: !sections.Imaging }}>Imaging</a>
+    <a href="#exam" class:list={{ empty: !sections.Exam }}>Exam</a>
+    <a href="#quiz" class:list={{ empty: !sections.Quiz }}>Self-quiz</a>
+  </nav>
+
+  <!-- 1. CORE ANATOMY -->
+  <section id="anatomy">
+    <h2>Core anatomy</h2>
+    {
+      fields.length ? (
+        <dl class="fields">
+          {fields.map((f) => (
+            <div>
+              <dt>{f.label}</dt>
+              <dd set:html={f.html} />
+            </div>
+          ))}
+        </dl>
+      ) : (
+        <p class="empty-note">Not written yet.</p>
+      )
+    }
+
+    {
+      derived.length > 0 && (
+        <div class="derived">
+          {derived.map((g) => (
+            <>
+              <h3>{g.label}</h3>
+              <ul>
+                {g.items.map((i) => (
+                  <li>
+                    <a class={`xref t-${i.s.data.type}`} href={structureUrl(i.s)}>
+                      {i.s.data.name}
+                    </a>
+                    {i.note && <span class="muted small"> — {i.note}</span>}
+                  </li>
+                ))}
+              </ul>
+            </>
+          ))}
+          <p class="muted small">Generated automatically from links in other entries.</p>
+        </div>
+      )
+    }
+
+    {d.diagrams.map((id) => <Diagram id={id} />)}
+    {d.images.map((i) => <Figure image={i.image} caption={i.caption} />)}
+  </section>
+
+  <!-- 2. CLINICAL -->
+  <section id="clinical">
+    <h2>Clinical correlations</h2>
+    {
+      clinical.map((c) => (
+        <div class:list={['panel', { hy: c.highYield }]}>
+          <h3>
+            {c.title} {c.highYield && <span class="badge hy">PANCE</span>}
+          </h3>
+          <dl class="kv">
+            {c.mechanism && (
+              <>
+                <dt>Mechanism / lesion</dt>
+                <dd set:html={c.mechanism} />
+              </>
+            )}
+            {c.presentation && (
+              <>
+                <dt>Classic presentation</dt>
+                <dd set:html={c.presentation} />
+              </>
+            )}
+            {c.notes && (
+              <>
+                <dt>Notes</dt>
+                <dd set:html={c.notes} />
+              </>
+            )}
+          </dl>
+        </div>
+      ))
+    }
+    {
+      pance.length > 0 && (
+        <div class="panel">
+          <h3>High-yield PANCE pearls</h3>
+          <ul class="pearls">
+            {pance.map((p) => (
+              <li set:html={p} />
+            ))}
+          </ul>
+        </div>
+      )
+    }
+    {!sections.Clinical && <p class="empty-note">Not written yet.</p>}
+  </section>
+
+  <!-- 3. IMAGING -->
+  <section id="imaging">
+    <h2>Imaging anatomy</h2>
+    {
+      imaging && (imaging.rows.length > 0 || imaging.keyViews) ? (
+        <dl class="fields">
+          {imaging.rows.map((r) => (
+            <div>
+              <dt>{r.label}</dt>
+              <dd set:html={r.html} />
+            </div>
+          ))}
+          {imaging.keyViews && (
+            <div>
+              <dt>Key views &amp; landmarks</dt>
+              <dd set:html={imaging.keyViews} />
+            </div>
+          )}
+        </dl>
+      ) : (
+        <p class="empty-note">Not written yet.</p>
+      )
+    }
+  </section>
+
+  <!-- 4. PHYSICAL EXAM -->
+  <section id="exam">
+    <h2>Physical exam</h2>
+    {
+      exam && (exam.rows.length > 0 || exam.tests.length > 0) ? (
+        <>
+          <dl class="fields">
+            {exam.rows.map((r) => (
+              <div>
+                <dt>{r.label}</dt>
+                <dd set:html={r.html} />
+              </div>
+            ))}
+          </dl>
+          {exam.tests.map((t) => (
+            <div class="panel">
+              <h3>{t.name}</h3>
+              <dl class="kv">
+                <dt>Technique</dt>
+                <dd set:html={t.technique} />
+                {t.positive && (
+                  <>
+                    <dt>Positive test</dt>
+                    <dd set:html={t.positive} />
+                  </>
+                )}
+                {t.significance && (
+                  <>
+                    <dt>Significance</dt>
+                    <dd set:html={t.significance} />
+                  </>
+                )}
+              </dl>
+            </div>
+          ))}
+        </>
+      ) : (
+        <p class="empty-note">Not written yet.</p>
+      )
+    }
+  </section>
+
+  <!-- 5. SELF-QUIZ -->
+  <section id="quiz">
+    <h2>Self-quiz</h2>
+    {d.quiz.length > 0 && <SelfQuiz entry={entry} />}
+    {
+      d.flashcards.length > 0 && (
+        <>
+          <h3>Flashcards</h3>
+          <Flashcards entry={entry} />
+        </>
+      )
+    }
+    {!sections.Quiz && <p class="empty-note">Not written yet.</p>}
+  </section>
+
+  {
+    related.length > 0 && (
+      <section>
+        <h2>See also</h2>
+        <ul>
+          {related.map((r) => (
+            <li>
+              <a class={`xref t-${r.data.type}`} href={structureUrl(r)}>
+                {r.data.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  <footer class="meta-foot">
+    <p>
+      Completeness:
+      <span class="progress" aria-label={`${done} of ${total} sections`}>
+        {Object.values(sections).map((on) => <i class:list={{ on }} />)}
+      </span>
+      {done}/{total} · Status: {d.status}
+      {d.netterPlate && <> · Netter plate: {d.netterPlate}</>}
+    </p>
+    {d.sources.length > 0 && <p>Sources: {d.sources.join('; ')}</p>}
+    <p>Edit this entry: <code>content/structures/{d.region}/{entry.id}.md</code></p>
+  </footer>
+</Base>

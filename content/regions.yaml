@@ -1,0 +1,49 @@
+# Regions of the atlas, in display order.
+# `subregions` controls grouping on the region page (structures set `subregion:`).
+- id: back
+  name: Back
+  order: 1
+  blurb: Vertebral column, spinal cord and meninges, and the intrinsic and extrinsic back muscles.
+  subregions: [Vertebral column, Muscles of the back, Spinal cord & meninges, Suboccipital region]
+
+- id: thorax
+  name: Thorax
+  order: 2
+  blurb: Thoracic wall, breast, pleura and lungs, heart and pericardium, and the mediastinum.
+  subregions: [Thoracic wall, Breast, Pleura & lungs, Heart & pericardium, Mediastinum]
+
+- id: abdomen
+  name: Abdomen
+  order: 3
+  blurb: Anterior abdominal wall, inguinal region, peritoneum, GI viscera, the portal system, kidneys, and posterior abdominal wall.
+  subregions: [Abdominal wall, Inguinal region, Peritoneum, GI viscera, Accessory organs, Kidneys & suprarenals, Posterior abdominal wall]
+
+- id: pelvis-perineum
+  name: Pelvis & Perineum
+  order: 4
+  blurb: Bony pelvis, pelvic floor, pelvic viscera, and the urogenital and anal triangles.
+  subregions: [Bony pelvis, Pelvic floor, Pelvic viscera, Perineum]
+
+- id: upper-limb
+  name: Upper Limb
+  order: 5
+  blurb: Pectoral girdle, axilla and brachial plexus, arm, forearm, and hand.
+  subregions: [Pectoral & scapular region, Axilla, Arm, Elbow & cubital fossa, Forearm, Wrist & hand]
+
+- id: lower-limb
+  name: Lower Limb
+  order: 6
+  blurb: Gluteal region, thigh, knee, leg, ankle, and foot, including the lumbosacral plexus.
+  subregions: [Gluteal region, Thigh, Knee & popliteal fossa, Leg, Ankle & foot]
+
+- id: head-neck
+  name: Head & Neck
+  order: 7
+  blurb: Skull, face, orbit, ear, oral and nasal cavities, pharynx, larynx, and the triangles of the neck.
+  subregions: [Skull, Face & scalp, Orbit, Ear, Oral & nasal cavities, Pharynx & larynx, Neck]
+
+- id: neuroanatomy
+  name: Neuroanatomy
+  order: 8
+  blurb: Brain, brainstem, cranial nerves, spinal tracts, ventricles, and cerebral vasculature.
+  subregions: [Cerebrum, Brainstem & cerebellum, Cranial nerves, Spinal tracts, Ventricles & CSF, Cerebral vasculature]

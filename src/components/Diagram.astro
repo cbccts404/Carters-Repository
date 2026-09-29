@@ -1,0 +1,21 @@
+---
+import { diagrams } from '../diagrams/registry';
+
+interface Props {
+  id: string;
+}
+const { id } = Astro.props;
+const meta = diagrams[id];
+const modules = import.meta.glob<{ default: any }>('../diagrams/*.astro', { eager: true });
+const Component = modules[`../diagrams/${id}.astro`]?.default;
+if (!Component) throw new Error(`Diagram "${id}" is registered but src/diagrams/${id}.astro does not exist`);
+---
+
+<figure class="fig diagram" data-diagram={id}>
+  <Component />
+  <figcaption>
+    <strong>{meta.title}.</strong>
+    {meta.description}
+    <div class="attribution">Original schematic, created for this atlas.</div>
+  </figcaption>
+</figure>

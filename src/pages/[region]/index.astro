@@ -1,0 +1,64 @@
+---
+import Base from '../../layouts/Base.astro';
+import { TYPE_LABELS, TYPE_ORDER, completeness, loadAtlas, mdInline, structureUrl, type Region } from '../../lib/atlas';
+
+export async function getStaticPaths() {
+  const atlas = await loadAtlas();
+  return atlas.regions.map((region) => ({ params: { region: region.id }, props: { region } }));
+}
+const { region } = Astro.props as { region: Region };
+const atlas = await loadAtlas();
+const entries = atlas.structures.filter((s) => s.data.region === region.id);
+
+// Group by type (in TYPE_ORDER), each list alphabetical.
+const byType = await Promise.all(
+  TYPE_ORDER.map(async (t) => ({
+    type: t,
+    items: await Promise.all(
+      entries
+        .filter((s) => s.data.type === t)
+        .map(async (s) => ({ s, summary: await mdInline(s.data.summary), c: completeness(s) })),
+    ),
+  })),
+).then((g) => g.filter((x) => x.items.length));
+
+const sub = region.data.subregions.map((name) => ({ name, n: entries.filter((s) => s.data.subregion === name).length }));
+---
+
+<Base title={region.data.name} description={region.data.blurb} region={region.id}>
+  <div class="hero">
+    <h1>{region.data.name}</h1>
+    <p>{region.data.blurb}</p>
+    <div class="stats">
+      <span><b>{entries.length}</b> entries</span>
+      {sub.filter((s) => s.n).map((s) => <span>{s.name}: <b>{s.n}</b></span>)}
+    </div>
+  </div>
+
+  {entries.length === 0 && <p class="empty-note">No entries in this region yet.</p>}
+
+  {
+    byType.map((g) => (
+      <section>
+        <h2 class={`t-${g.type}`}>
+          <span class="dot" /> {TYPE_LABELS[g.type][1]} <span class="muted small">({g.items.length})</span>
+        </h2>
+        <ul class="list">
+          {g.items.map(({ s, summary, c }) => (
+            <li>
+              <a href={structureUrl(s)}>
+                <span class="grow">
+                  <strong>{s.data.name}</strong> {s.data.highYield && <span class="badge hy">HY</span>}
+                  <span class="sum" set:html={summary} />
+                </span>
+                <span class="progress" title={`${c.done}/5 sections written`}>
+                  {Object.values(c.sections).map((on) => <i class:list={{ on }} />)}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Base>

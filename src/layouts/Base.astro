@@ -1,0 +1,125 @@
+---
+import '../styles/global.css';
+import { loadAtlas, regionUrl, url } from '../lib/atlas';
+
+interface Props {
+  title: string;
+  description?: string;
+  region?: string;
+}
+const { title, description, region } = Astro.props;
+const atlas = await loadAtlas();
+const counts = new Map<string, number>();
+for (const s of atlas.structures) counts.set(s.data.region, (counts.get(s.data.region) ?? 0) + 1);
+const fullTitle = title === 'Anatomy Atlas' ? title : `${title} · Anatomy Atlas`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#1d5fa8" />
+    <title>{fullTitle}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
+  </head>
+  <body data-base={url()}>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href={url()}>Anatomy <span>Atlas</span></a>
+        <button class="icon-btn" id="search-btn" aria-controls="search-panel" aria-expanded="false" title="Search (press /)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+          <span class="label">Search</span>
+        </button>
+        <button class="icon-btn" id="menu-btn" aria-controls="drawer" aria-expanded="false" title="Regions">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          <span class="label">Regions</span>
+        </button>
+      </div>
+    </header>
+
+    <div class="search-panel" id="search-panel" hidden>
+      <div class="wrap">
+        <label class="sr-only" for="q">Search the atlas</label>
+        <input id="q" class="search-input" type="search" autocomplete="off" placeholder="Search structures, eponyms, lesions…" />
+        <ul class="results" id="quick-results" role="listbox"></ul>
+        <p class="small muted" id="quick-foot"><a href={url('search/')}>Advanced search with filters →</a></p>
+      </div>
+    </div>
+
+    <nav class="drawer" id="drawer" hidden aria-label="Regions">
+      {
+        atlas.regions.map((r) => (
+          <a href={regionUrl(r.id)} aria-current={r.id === region ? 'page' : undefined}>
+            {r.data.name}
+            <span class="count">{counts.get(r.id) ?? 0}</span>
+          </a>
+        ))
+      }
+      <hr />
+      <a href={url('search/')}>Search</a>
+      <a href={url('review/')}>Review queue (verify flags)</a>
+      <a href={url('credits/')}>Image credits &amp; licenses</a>
+    </nav>
+
+    <main class="wrap">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          A study aid written for PA education. Not a substitute for your course textbook or clinical judgement. Facts
+          marked <span class="verify">verify</span> should be checked against your reference text.
+        </p>
+        <p>Images are public domain only. <a href={url('credits/')}>See credits &amp; licenses.</a></p>
+      </div>
+    </footer>
+
+    <script>
+      import { initSearchUI } from '../scripts/search';
+
+      const $ = (id: string) => document.getElementById(id)!;
+      const menuBtn = $('menu-btn');
+      const drawer = $('drawer');
+      const searchBtn = $('search-btn');
+      const panel = $('search-panel');
+
+      function toggle(btn: HTMLElement, el: HTMLElement, open?: boolean) {
+        const next = open ?? el.hidden;
+        el.hidden = !next;
+        btn.setAttribute('aria-expanded', String(next));
+        return next;
+      }
+      function closeAll() {
+        toggle(menuBtn, drawer, false);
+        toggle(searchBtn, panel, false);
+      }
+      menuBtn.addEventListener('click', () => {
+        toggle(searchBtn, panel, false);
+        toggle(menuBtn, drawer);
+      });
+      searchBtn.addEventListener('click', () => {
+        toggle(menuBtn, drawer, false);
+        if (toggle(searchBtn, panel)) ($('q') as HTMLInputElement).focus();
+      });
+      document.addEventListener('keydown', (e) => {
+        const typing = e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement;
+        if (e.key === 'Escape') closeAll();
+        else if (e.key === '/' && !typing) {
+          e.preventDefault();
+          toggle(menuBtn, drawer, false);
+          toggle(searchBtn, panel, true);
+          ($('q') as HTMLInputElement).focus();
+        }
+      });
+      document.addEventListener('click', (e) => {
+        const t = e.target as Node;
+        if (!panel.contains(t) && !searchBtn.contains(t) && !drawer.contains(t) && !menuBtn.contains(t)) closeAll();
+      });
+
+      initSearchUI($('q') as HTMLInputElement, $('quick-results'), { limit: 8 });
+    </script>
+  </body>
+</html>

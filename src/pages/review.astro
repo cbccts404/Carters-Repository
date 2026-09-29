@@ -1,0 +1,64 @@
+---
+import Base from '../layouts/Base.astro';
+import { completeness, loadAtlas, structureUrl } from '../lib/atlas';
+const atlas = await loadAtlas();
+const incomplete = atlas.structures.filter((s) => completeness(s).done < 5);
+const missing = [...new Set(atlas.missingLinks.map((m) => m.target))].sort();
+---
+
+<Base title="Review queue" description="Facts flagged for verification and content gaps.">
+  <div class="hero">
+    <h1>Review queue</h1>
+    <p>
+      Everything in the atlas marked <span class="verify">verify</span>, so you can check it against Netter or your
+      course text. After you've checked a fact, delete the <code>{'{{verify}}'}</code> tag from the file. Once an entry
+      has been fully checked, set <code>status: reviewed</code>.
+    </p>
+  </div>
+
+  <h2>Verify flags ({atlas.verifyFlags.length})</h2>
+  {
+    atlas.verifyFlags.length ? (
+      <div class="table-scroll">
+        <table class="qa">
+          <thead>
+            <tr><th>Entry</th><th>Field</th><th>Context / reason</th></tr>
+          </thead>
+          <tbody>
+            {atlas.verifyFlags.map((f) => (
+              <tr>
+                <td><a href={structureUrl(f.entry)}>{f.entry.data.name}</a></td>
+                <td><code>{f.field}</code></td>
+                <td>
+                  {f.snippet && <div>{f.snippet}</div>}
+                  {f.note && <div class="muted">Why: {f.note}</div>}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    ) : (
+      <p class="empty-note">No verify flags.</p>
+    )
+  }
+
+  <h2>Links to entries not yet written ({missing.length})</h2>
+  <p class="small muted">These show as dashed text until the target entry exists. A misspelled id will also appear here.</p>
+  {missing.length ? <p>{missing.map((m, i) => <>{i > 0 && ' · '}<code>{m}</code></>)}</p> : <p class="empty-note">None.</p>}
+
+  <h2>Incomplete entries ({incomplete.length})</h2>
+  <ul>
+    {
+      incomplete.map((s) => {
+        const c = completeness(s);
+        const gaps = Object.entries(c.sections).filter(([, on]) => !on).map(([k]) => k);
+        return (
+          <li>
+            <a href={structureUrl(s)}>{s.data.name}</a> <span class="muted small">— missing {gaps.join(', ')}</span>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Base>

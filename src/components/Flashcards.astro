@@ -1,0 +1,31 @@
+---
+import { mdInline, type Structure } from '../lib/atlas';
+
+interface Props {
+  entry: Structure;
+}
+const cards = await Promise.all(
+  Astro.props.entry.data.flashcards.map(async (c) => ({ front: await mdInline(c.front), back: await mdInline(c.back) })),
+);
+---
+
+<div class="cards">
+  {
+    cards.map((c) => (
+      <button class="flash" type="button" aria-pressed="false">
+        <span class="front" set:html={c.front} />
+        <span class="back" set:html={c.back} />
+        <span class="hint">tap to flip</span>
+      </button>
+    ))
+  }
+</div>
+
+<script>
+  for (const card of document.querySelectorAll<HTMLButtonElement>('.flash')) {
+    card.addEventListener('click', (e) => {
+      if ((e.target as HTMLElement).closest('a')) return; // let cross-links work
+      card.setAttribute('aria-pressed', String(card.getAttribute('aria-pressed') !== 'true'));
+    });
+  }
+</script>

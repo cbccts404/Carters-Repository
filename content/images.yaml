@@ -1,0 +1,15 @@
+# Image registry. PUBLIC-DOMAIN ONLY (license must be "Public domain" or "CC0",
+# anything else fails the build). Put the file in public/images/ and reference
+# it from a structure with:  images: [{ image: <id>, caption: "..." }]
+#
+# Example:
+# - id: gray-humerus-anterior
+#   file: images/gray-humerus-anterior.png
+#   title: "Left humerus. Anterior view."
+#   author: Henry Vandyke Carter
+#   work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 207"
+#   source: https://commons.wikimedia.org/wiki/File:Gray207.png
+#   license: Public domain
+#   licenseNote: "Published in the US before 1931"
+#   alt: "Anterior view of the left humerus with labelled landmarks"
+[]

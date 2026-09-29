@@ -1,0 +1,22 @@
+---
+import { loadAtlas, mdInline, url } from '../lib/atlas';
+
+interface Props {
+  image: string;
+  caption?: string;
+}
+const atlas = await loadAtlas();
+const img = atlas.images.get(Astro.props.image)!.data;
+const caption = await mdInline(Astro.props.caption ?? img.title);
+---
+
+<figure class="fig">
+  <img src={url(img.file)} alt={img.alt} loading="lazy" decoding="async" />
+  <figcaption>
+    <span set:html={caption} />
+    <div class="attribution">
+      {img.author}{img.work && <>, <em>{img.work}</em></>}. <a href={img.source} rel="noopener">Source</a> · {img.license}
+      {img.licenseNote && <> ({img.licenseNote})</>}
+    </div>
+  </figcaption>
+</figure>
