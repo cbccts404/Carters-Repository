@@ -94,4 +94,7 @@ flashcards:
   - front: Serratus anterior — nerve and actions?
     back: Long thoracic nerve (C5–C7); protraction, upward rotation, holds scapula to chest wall
 related: [long-thoracic-nerve, scapula, axilla]
+images:
+  - image: gray-809-axilla-plexus
+    caption: "Serratus anterior (old name \"serratus magnus\") forming the medial wall of the axilla, with the long thoracic nerve on its surface."
 ---

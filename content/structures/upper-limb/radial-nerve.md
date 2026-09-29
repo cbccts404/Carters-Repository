@@ -164,4 +164,7 @@ flashcards:
     back: Supinator (under the arcade of Frohse) → becomes posterior interosseous nerve
 diagrams: [brachial-plexus]
 related: [humerus, triceps-brachii]
+images:
+  - image: gray-525-brachial-artery
+    caption: "The radial nerve leaving the medial arm with the profunda brachii artery."
 ---

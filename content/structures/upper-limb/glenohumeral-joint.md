@@ -174,4 +174,7 @@ flashcards:
   - front: Weakest part of the shoulder capsule?
     back: Inferior (no rotator cuff support)
 related: [humerus, scapula, supraspinatus, axillary-nerve]
+images:
+  - image: gray-326-shoulder-joint
+    caption: "Left shoulder and acromioclavicular joints: capsule, coracohumeral and coracoacromial ligaments, and the long head of biceps tendon."
 ---

@@ -99,4 +99,7 @@ flashcards:
     back: Tricuspid (apically displaced leaflets); maternal lithium
 diagrams: [cardiac-auscultation]
 related: [pulmonary-valve, heart]
+images:
+  - image: gray-493-right-heart-interior
+    caption: "Interior of the right atrium and ventricle: tricuspid valve, chordae tendineae, papillary muscles, coronary sinus opening."
 ---

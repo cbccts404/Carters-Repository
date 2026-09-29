@@ -113,4 +113,7 @@ flashcards:
   - front: Mediastinal mass differential by compartment?
     back: "Anterior: 4 T's. Middle: lymph nodes, cysts. Posterior: neurogenic tumors"
 related: [sternum, thymus, heart, esophagus]
+images:
+  - image: gray-968-thorax-section
+    caption: "Transverse section of the thorax through the middle and posterior mediastinum."
 ---

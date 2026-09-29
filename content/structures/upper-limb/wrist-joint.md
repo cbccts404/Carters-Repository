@@ -150,4 +150,7 @@ flashcards:
   - front: Kienböck disease?
     back: Avascular necrosis of the lunate (associated with negative ulnar variance)
 related: [scaphoid, radius, carpal-tunnel]
+images:
+  - image: gray-334-wrist-ligaments
+    caption: "Ligaments of the wrist, anterior (palmar) view."
 ---

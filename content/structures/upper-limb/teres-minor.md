@@ -100,4 +100,7 @@ flashcards:
   - front: Test for teres minor?
     back: Hornblower's sign (external rotation in 90° abduction)
 related: [infraspinatus, axillary-nerve]
+images:
+  - image: gray-412-scapular-muscles
+    caption: "Posterior scapular muscles and triceps brachii."
 ---

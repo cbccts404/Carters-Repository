@@ -112,4 +112,7 @@ flashcards:
   - front: Tracheal deviation — away vs toward?
     back: "Away: tension pneumothorax, large effusion. Toward: atelectasis, pneumonectomy, fibrosis"
 related: [main-bronchi, esophagus, mediastinum]
+images:
+  - image: gray-961-trachea-bronchi
+    caption: "Laryngeal cartilages, trachea and bronchi, anterior view."
 ---

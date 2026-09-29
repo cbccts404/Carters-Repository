@@ -95,4 +95,9 @@ flashcards:
   - front: Radiographic sign of a check-valve foreign body?
     back: Unilateral hyperinflation (air trapping) on expiratory or decubitus films
 related: [trachea, lungs]
+images:
+  - image: gray-962-bronchi
+    caption: "The bronchial tree dissected in both lungs."
+  - image: gray-961-trachea-bronchi
+    caption: "Trachea and bronchi, anterior view: the right main bronchus is shorter and more vertical."
 ---

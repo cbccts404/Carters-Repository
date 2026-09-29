@@ -100,4 +100,7 @@ flashcards:
     back: Lateral cutaneous nerve of the forearm (lateral forearm skin)
   - front: Which reflex tests the musculocutaneous nerve?
     back: Biceps reflex (C5–C6)
+images:
+  - image: gray-809-axilla-plexus
+    caption: "The musculocutaneous nerve leaving the lateral cord to pierce coracobrachialis."
 ---

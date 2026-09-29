@@ -106,4 +106,7 @@ flashcards:
   - front: Suprascapular notch vs spinoglenoid notch lesion?
     back: "Suprascapular notch: supraspinatus + infraspinatus. Spinoglenoid notch: infraspinatus only"
 related: [supraspinatus, teres-minor, subscapularis]
+images:
+  - image: gray-412-scapular-muscles
+    caption: "Posterior scapular muscles and triceps brachii."
 ---

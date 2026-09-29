@@ -120,4 +120,7 @@ flashcards:
   - front: Volkmann ischemic contracture?
     back: Wrist and finger flexion contracture after forearm ischemia (compartment syndrome), classically after supracondylar fracture
 related: [cubital-fossa, humerus]
+images:
+  - image: gray-525-brachial-artery
+    caption: "The brachial artery in the arm with its branches (profunda brachii, superior and inferior ulnar collateral arteries)."
 ---

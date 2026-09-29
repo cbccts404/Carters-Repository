@@ -96,4 +96,7 @@ flashcards:
   - front: Region drained by the right lymphatic duct?
     back: Right head and neck, right upper limb, right thorax
 related: [azygos-vein, thoracic-aorta, pleural-cavity]
+images:
+  - image: gray-1032-esophagus
+    caption: "Posterior mediastinum from behind: the thoracic duct between the aorta and azygos vein."
 ---

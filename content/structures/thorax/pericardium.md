@@ -123,4 +123,7 @@ flashcards:
   - front: Transverse vs oblique pericardial sinus?
     back: "Transverse: behind aorta and pulmonary trunk (surgical clamp). Oblique: behind left atrium"
 related: [heart, phrenic-nerve]
+images:
+  - image: gray-970-heart-lungs
+    caption: "Heart and lungs from the front, showing the cut edge of the pericardium."
 ---

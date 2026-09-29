@@ -150,4 +150,9 @@ flashcards:
   - front: Consolidation vs effusion on exam?
     back: "Both dull. Consolidation ↑ fremitus, bronchial sounds. Effusion ↓ fremitus, ↓ breath sounds"
 related: [pleural-cavity, main-bronchi, pulmonary-arteries]
+images:
+  - image: gray-972-right-lung-mediastinal
+    caption: "Mediastinal surface of the right lung: hilum (pulmonary artery, eparterial and hyparterial bronchi, pulmonary veins) and grooves for the SVC, azygos vein and esophagus."
+  - image: gray-962-bronchi
+    caption: "Lobes and bronchial tree of both lungs."
 ---

@@ -163,4 +163,7 @@ flashcards:
   - front: Rotator cuff muscles?
     back: SITS — Supraspinatus, Infraspinatus, Teres minor, Subscapularis
 related: [infraspinatus, teres-minor, subscapularis, glenohumeral-joint]
+images:
+  - image: gray-412-scapular-muscles
+    caption: "Posterior scapular muscles and triceps brachii."
 ---

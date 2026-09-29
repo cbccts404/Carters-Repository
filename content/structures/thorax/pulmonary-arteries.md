@@ -119,4 +119,7 @@ flashcards:
   - front: Classic CXR signs of PE?
     back: Hampton hump, Westermark sign (both uncommon; CXR often normal)
 related: [lungs, thoracic-aorta, pulmonary-valve]
+images:
+  - image: gray-971-pulmonary-vessels
+    caption: "Pulmonary arteries and veins seen from behind."
 ---

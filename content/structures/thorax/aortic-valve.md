@@ -120,4 +120,7 @@ flashcards:
     back: "Right aortic sinus → RCA; left aortic sinus → LCA"
 diagrams: [cardiac-auscultation]
 related: [mitral-valve, thoracic-aorta, heart]
+images:
+  - image: gray-497-aortic-valve
+    caption: "Aortic valve opened: three semilunar cusps, aortic sinuses, and the coronary artery origins."
 ---

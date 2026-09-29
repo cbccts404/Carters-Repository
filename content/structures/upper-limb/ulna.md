@@ -104,4 +104,7 @@ flashcards:
   - front: What separates the ulnar head from the carpal bones?
     back: The articular disc of the triangular fibrocartilage complex (TFCC)
 related: [radius, elbow-joint]
+images:
+  - image: gray-213-forearm-bones
+    caption: "Left radius and ulna, anterior aspect."
 ---

@@ -311,3 +311,11 @@ code { background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-
 .diagram a.lbl-link:hover .lbl, .diagram a.lbl-link:focus .lbl { fill: var(--accent); }
 .diagram .scroll-hint { font-size: 0.75rem; color: var(--muted); margin: 4px 0 0; }
 @media (min-width: 620px) { .diagram .scroll-hint { display: none; } }
+
+/* credits */
+.credits .credit { display: grid; grid-template-columns: 72px 1fr; gap: 12px; padding: 12px 14px; }
+.credits img { width: 72px; height: 72px; object-fit: contain; background: var(--fig-bg); border-radius: 6px; }
+.credits .small { margin-top: 2px; }
+.list.credits a { display: inline; padding: 0; color: var(--accent); }
+.list.credits a:hover { background: none; }
+.list.credits .credit > a { display: block; }

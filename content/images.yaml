@@ -12,4 +12,313 @@
 #   license: Public domain
 #   licenseNote: "Published in the US before 1931"
 #   alt: "Anterior view of the left humerus with labelled landmarks"
-[]
+
+- id: gray-808-brachial-plexus
+  file: images/gray-808-brachial-plexus.png
+  title: "Right brachial plexus with its short branches, anterior view"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 808"
+  source: https://commons.wikimedia.org/wiki/File:Gray808.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Dissection of the right brachial plexus in the neck and axilla with clavicle partly removed"
+
+- id: gray-809-axilla-plexus
+  file: images/gray-809-axilla-plexus.png
+  title: "Right brachial plexus (infraclavicular part) in the axilla, from below and in front"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 809"
+  source: https://commons.wikimedia.org/wiki/File:Gray809.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Axilla viewed from below showing cords and branches of the brachial plexus, long thoracic nerve on serratus anterior"
+
+- id: gray-200-clavicle
+  file: images/gray-200-clavicle.png
+  title: "Left clavicle, superior surface"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 200"
+  source: https://commons.wikimedia.org/wiki/File:Gray200.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Left clavicle seen from above with muscle attachment areas outlined"
+
+- id: gray-203-scapula-posterior
+  file: images/gray-203-scapula-posterior.png
+  title: "Left scapula, posterior surface (dorsum)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 203"
+  source: https://commons.wikimedia.org/wiki/File:Gray203.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior surface of the left scapula with spine, acromion, fossae and muscle attachments"
+
+- id: gray-207-humerus-anterior
+  file: images/gray-207-humerus-anterior.png
+  title: "Left humerus, anterior view"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 207"
+  source: https://commons.wikimedia.org/wiki/File:Gray207.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the left humerus with muscle attachments"
+
+- id: gray-213-forearm-bones
+  file: images/gray-213-forearm-bones.png
+  title: "Bones of the left forearm, anterior aspect"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 213"
+  source: https://commons.wikimedia.org/wiki/File:Gray213.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the left radius and ulna"
+
+- id: gray-219-hand-bones-volar
+  file: images/gray-219-hand-bones-volar.png
+  title: "Bones of the left hand, volar surface"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 219"
+  source: https://commons.wikimedia.org/wiki/File:Gray219.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Palmar view of the carpal bones, metacarpals and phalanges of the left hand"
+
+- id: gray-523-axillary-artery
+  file: images/gray-523-axillary-artery.png
+  title: "The axillary artery and its branches"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 523"
+  source: https://commons.wikimedia.org/wiki/File:Gray523.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Dissection of the axilla showing the axillary artery and its branches"
+
+- id: gray-525-brachial-artery
+  file: images/gray-525-brachial-artery.png
+  title: "The brachial artery in the arm, medial view"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 525"
+  source: https://commons.wikimedia.org/wiki/File:Gray525.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Medial view of the arm showing the brachial artery with the radial nerve, profunda brachii and ulnar collateral arteries labelled"
+
+- id: gray-527-forearm-arteries
+  file: images/gray-527-forearm-arteries.png
+  title: "Arteries of the front of the right forearm and hand"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 527"
+  source: https://commons.wikimedia.org/wiki/File:Gray527.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Superficial dissection of the right forearm showing the radial and ulnar arteries and superficial palmar arch"
+
+- id: gray-326-shoulder-joint
+  file: images/gray-326-shoulder-joint.png
+  title: "Left shoulder and acromioclavicular joints and the ligaments of the scapula"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 326"
+  source: https://commons.wikimedia.org/wiki/File:Gray326.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the left shoulder joint capsule, coracoacromial arch and biceps tendon"
+
+- id: gray-329-elbow-joint
+  file: images/gray-329-elbow-joint.png
+  title: "Left elbow joint, anterior and internal (medial) ligaments"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 329"
+  source: https://commons.wikimedia.org/wiki/File:Gray329.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Left elbow joint showing the anterior capsule and ulnar collateral ligament"
+
+- id: gray-334-wrist-ligaments
+  file: images/gray-334-wrist-ligaments.png
+  title: "Ligaments of the wrist, anterior view"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 334"
+  source: https://commons.wikimedia.org/wiki/File:Gray334.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the wrist ligaments including the palmar radiocarpal ligament"
+
+- id: gray-412-scapular-muscles
+  file: images/gray-412-scapular-muscles.png
+  title: "Dorsal muscles of the scapula and triceps brachii"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 412"
+  source: https://commons.wikimedia.org/wiki/File:Gray412.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of supraspinatus, infraspinatus, teres minor, teres major and triceps brachii"
+
+- id: gray-1233-flexor-sheaths
+  file: images/gray-1233-flexor-sheaths.png
+  title: "Synovial sheaths of the tendons on the front of the wrist and digits"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1233"
+  source: https://commons.wikimedia.org/wiki/File:Gray1233.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Palmar view of the hand showing flexor tendon sheaths passing deep to the transverse carpal ligament"
+
+- id: gray-970-heart-lungs
+  file: images/gray-970-heart-lungs.png
+  title: "Front view of heart and lungs"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 970"
+  source: https://commons.wikimedia.org/wiki/File:Gray970.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the heart, great vessels and both lungs with the pericardium opened"
+
+- id: gray-493-right-heart-interior
+  file: images/gray-493-right-heart-interior.png
+  title: "Interior of the right side of the heart"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 493"
+  source: https://commons.wikimedia.org/wiki/File:Gray493.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Right atrium and right ventricle opened to show the fossa ovalis, coronary sinus opening and tricuspid valve"
+
+- id: gray-497-aortic-valve
+  file: images/gray-497-aortic-valve.png
+  title: "Aortic valve cusps and sinuses with the origins of the coronary arteries"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 497"
+  source: https://commons.wikimedia.org/wiki/File:Gray497.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Opened aortic root showing three semilunar cusps, aortic sinuses and coronary ostia"
+
+- id: gray-506-aortic-arch
+  file: images/gray-506-aortic-arch.png
+  title: "Arch of the aorta and its branches"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 506"
+  source: https://commons.wikimedia.org/wiki/File:Gray506.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Schematic of the ascending aorta, arch and descending aorta with arch branches and coronary origins"
+
+- id: gray-972-right-lung-mediastinal
+  file: images/gray-972-right-lung-mediastinal.png
+  title: "Mediastinal surface of the right lung"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 972"
+  source: https://commons.wikimedia.org/wiki/File:Gray972.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Medial surface of the right lung showing the hilum and impressions"
+
+- id: gray-962-bronchi
+  file: images/gray-962-bronchi.png
+  title: "Bronchi and bronchioles"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 962"
+  source: https://commons.wikimedia.org/wiki/File:Gray962.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Both lungs separated and dissected to show the bronchial tree and lobes"
+
+- id: gray-961-trachea-bronchi
+  file: images/gray-961-trachea-bronchi.png
+  title: "Front view of the cartilages of the larynx, trachea and bronchi"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 961"
+  source: https://commons.wikimedia.org/wiki/File:Gray961.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the laryngeal cartilages, trachea and branching bronchi"
+
+- id: gray-971-pulmonary-vessels
+  file: images/gray-971-pulmonary-vessels.png
+  title: "Pulmonary vessels, dorsal view of the heart and lungs"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 971"
+  source: https://commons.wikimedia.org/wiki/File:Gray971.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the heart and lungs showing the pulmonary arteries and veins"
+
+- id: gray-968-thorax-section
+  file: images/gray-968-thorax-section.png
+  title: "Transverse section of the thorax"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 968"
+  source: https://commons.wikimedia.org/wiki/File:Gray968.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Cross-section of the thorax showing the heart, lungs, pleura, great vessels and posterior mediastinal structures"
+
+- id: gray-1032-esophagus
+  file: images/gray-1032-esophagus.png
+  title: "The esophagus in the neck and posterior mediastinum, from behind"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1032"
+  source: https://commons.wikimedia.org/wiki/File:Gray1032.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the esophagus with trachea, aorta, azygos vein, thoracic duct and vagus nerves"
+
+- id: gray-577-venae-cavae
+  file: images/gray-577-venae-cavae.png
+  title: "The superior and inferior venae cavae and their tributaries"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 577"
+  source: https://commons.wikimedia.org/wiki/File:Gray577.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior abdominal and thoracic wall showing the venae cavae and azygos system"
+
+- id: gray-806-phrenic-nerve
+  file: images/gray-806-phrenic-nerve.png
+  title: "The phrenic nerve and its relations with the vagus nerve"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 806"
+  source: https://commons.wikimedia.org/wiki/File:Gray806.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the thorax with the phrenic and vagus nerves descending to the diaphragm"
+
+- id: gray-819-intercostal-nerve
+  file: images/gray-819-intercostal-nerve.png
+  title: "Course and branches of a typical intercostal nerve"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 819"
+  source: https://commons.wikimedia.org/wiki/File:Gray819.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Diagram of a thoracic spinal nerve running around the chest wall with its branches"
+
+- id: gray-391-diaphragm
+  file: images/gray-391-diaphragm.png
+  title: "The diaphragm, under (abdominal) surface"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 391"
+  source: https://commons.wikimedia.org/wiki/File:Gray391.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Inferior view of the diaphragm showing the central tendon, crura and openings"
+
+- id: gray-115-sternum
+  file: images/gray-115-sternum.png
+  title: "Anterior surface of the sternum and costal cartilages"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 115"
+  source: https://commons.wikimedia.org/wiki/File:Gray115.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the sternum and costal cartilages with muscle attachments"
+
+- id: gray-112-thorax
+  file: images/gray-112-thorax.png
+  title: "The thorax from in front"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 112"
+  source: https://commons.wikimedia.org/wiki/File:Gray112.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the bony thoracic cage"

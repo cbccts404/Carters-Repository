@@ -86,4 +86,7 @@ flashcards:
     back: ST elevation in aVR with diffuse ST depression (in the right clinical context)
 diagrams: [coronary-arteries]
 related: [right-coronary-artery, anterior-interventricular-artery, circumflex-artery]
+images:
+  - image: gray-497-aortic-valve
+    caption: "Origins of the coronary arteries from the aortic sinuses."
 ---

@@ -136,4 +136,7 @@ flashcards:
     back: "Anterior: pectorals. Posterior: subscapularis, teres major, latissimus. Medial: serratus anterior. Lateral: intertubercular groove"
 diagrams: [brachial-plexus]
 related: [axillary-artery, brachial-plexus]
+images:
+  - image: gray-809-axilla-plexus
+    caption: "Infraclavicular brachial plexus in the axillary fossa, pectoral muscles reflected. Note the long thoracic nerve on serratus anterior (medial wall)."
 ---

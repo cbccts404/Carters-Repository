@@ -111,4 +111,7 @@ flashcards:
   - front: Hand position for chest compressions?
     back: Lower half of the sternum (center of chest), avoiding the xiphoid
 related: [ribs, mediastinum]
+images:
+  - image: gray-115-sternum
+    caption: "Anterior surface of the sternum and costal cartilages, with muscle attachments."
 ---

@@ -191,4 +191,7 @@ flashcards:
     back: "Upper subscapular, Lower subscapular, Thoracodorsal, Radial, Axillary (mnemonic: ULTRA)"
 diagrams: [brachial-plexus, upper-limb-dermatomes]
 related: [axilla, axillary-artery]
+images:
+  - image: gray-808-brachial-plexus
+    caption: "Right brachial plexus and its short branches, anterior view (sternocleidomastoid and trapezius removed, clavicle partly sawn out)."
 ---

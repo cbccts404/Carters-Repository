@@ -87,4 +87,7 @@ flashcards:
   - front: Clinical importance of the azygos system?
     back: Collateral pathway between SVC and IVC; systemic side of esophageal varices
 related: [superior-vena-cava, thoracic-duct, mediastinum]
+images:
+  - image: gray-577-venae-cavae
+    caption: "The azygos system connecting the inferior and superior venae cavae."
 ---

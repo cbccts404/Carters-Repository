@@ -139,4 +139,7 @@ flashcards:
   - front: Volkmann ischemic contracture?
     back: Flexion contracture of the wrist and fingers after forearm ischemia/compartment syndrome (e.g. supracondylar fracture)
 related: [radial-nerve, axillary-nerve, elbow-joint, glenohumeral-joint]
+images:
+  - image: gray-207-humerus-anterior
+    caption: "Left humerus, anterior view, with muscle attachments."
 ---

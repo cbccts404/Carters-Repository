@@ -114,4 +114,7 @@ flashcards:
   - front: Imaging of choice for sternoclavicular dislocation?
     back: CT
 related: [scapula, brachial-plexus]
+images:
+  - image: gray-200-clavicle
+    caption: "Left clavicle, superior surface, with muscle attachments outlined."
 ---

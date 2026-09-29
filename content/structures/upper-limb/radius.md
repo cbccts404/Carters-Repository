@@ -135,4 +135,7 @@ flashcards:
   - front: Radiocapitellar line?
     back: A line along the radial neck should pass through the capitellum in all views; disruption = radial head dislocation
 related: [ulna, wrist-joint, elbow-joint]
+images:
+  - image: gray-213-forearm-bones
+    caption: "Left radius and ulna, anterior aspect."
 ---

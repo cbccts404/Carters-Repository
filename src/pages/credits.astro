@@ -1,8 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
-import { loadAtlas, url } from '../lib/atlas';
+import { loadAtlas, structureUrl, url } from '../lib/atlas';
 const atlas = await loadAtlas();
-const images = [...atlas.images.values()];
+const images = [...atlas.images.values()].sort((a, b) => a.data.title.localeCompare(b.data.title));
 const usedBy = (id: string) => atlas.structures.filter((s) => s.data.images.some((i) => i.image === id));
 ---
 
@@ -17,23 +17,33 @@ const usedBy = (id: string) => atlas.structures.filter((s) => s.data.images.some
   </div>
   {
     images.length ? (
-      <div class="table-scroll">
-        <table class="qa">
-          <thead>
-            <tr><th>Image</th><th>Author / work</th><th>License</th><th>Used in</th></tr>
-          </thead>
-          <tbody>
-            {images.map((i) => (
-              <tr>
-                <td><a href={url(i.data.file)}>{i.data.title}</a></td>
-                <td>{i.data.author}{i.data.work && <>, <em>{i.data.work}</em></>}<br /><a href={i.data.source}>Source</a></td>
-                <td>{i.data.license}{i.data.licenseNote && <div class="muted small">{i.data.licenseNote}</div>}</td>
-                <td>{usedBy(i.id).map((s) => s.data.name).join(', ')}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      <ul class="list credits">
+        {images.map((i) => (
+          <li>
+            <div class="credit">
+              <a href={url(i.data.file)}><img src={url(i.data.file)} alt={i.data.alt} loading="lazy" /></a>
+              <div>
+                <strong>{i.data.title}</strong>
+                <div class="small">
+                  {i.data.author}{i.data.work && <>, <em>{i.data.work}</em></>}. <a href={i.data.source} rel="noopener">Source</a>
+                </div>
+                <div class="small muted">
+                  {i.data.license}{i.data.licenseNote && <> · {i.data.licenseNote}</>}
+                </div>
+                <div class="small">
+                  Used in:{' '}
+                  {usedBy(i.id).map((s, n) => (
+                    <>
+                      {n > 0 && ', '}
+                      <a href={structureUrl(s)}>{s.data.name}</a>
+                    </>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </li>
+        ))}
+      </ul>
     ) : (
       <p class="empty-note">No images added yet.</p>
     )

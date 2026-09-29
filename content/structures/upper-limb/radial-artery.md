@@ -117,4 +117,7 @@ flashcards:
   - front: Purpose of the Allen test?
     back: Assess ulnar collateral flow before radial artery puncture, cannulation or harvest
 related: [ulnar-artery, scaphoid, wrist-joint]
+images:
+  - image: gray-527-forearm-arteries
+    caption: "Arteries of the front of the right forearm and hand."
 ---

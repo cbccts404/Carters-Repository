@@ -139,4 +139,7 @@ flashcards:
     back: Mainly during diastole
 diagrams: [coronary-arteries, cardiac-auscultation]
 related: [pericardium, cardiac-conduction-system, mediastinum]
+images:
+  - image: gray-970-heart-lungs
+    caption: "Heart and lungs from the front (pericardium opened). The right ventricle forms most of the anterior surface."
 ---

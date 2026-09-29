@@ -107,4 +107,7 @@ flashcards:
   - front: Dermatomes at the nipple and umbilicus?
     back: T4 and T10
 related: [ribs, pleural-cavity]
+images:
+  - image: gray-819-intercostal-nerve
+    caption: "Course of a typical intercostal nerve with its lateral and anterior cutaneous branches."
 ---

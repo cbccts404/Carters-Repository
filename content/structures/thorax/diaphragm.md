@@ -130,4 +130,7 @@ flashcards:
   - front: Sniff test?
     back: Fluoroscopy; paralyzed hemidiaphragm moves paradoxically upward on a sharp sniff
 related: [phrenic-nerve, esophagus]
+images:
+  - image: gray-391-diaphragm
+    caption: "The diaphragm from below: central tendon, crura, and the caval, esophageal and aortic openings."
 ---

@@ -118,4 +118,7 @@ flashcards:
   - front: Anatomical snuffbox — borders and floor?
     back: EPL (ulnar), APL + EPB (radial); floor = scaphoid + trapezium; radial artery crosses it
 related: [wrist-joint, radial-artery]
+images:
+  - image: gray-219-hand-bones-volar
+    caption: "Bones of the left hand, palmar (volar) surface. The scaphoid is the lateral bone of the proximal carpal row."
 ---

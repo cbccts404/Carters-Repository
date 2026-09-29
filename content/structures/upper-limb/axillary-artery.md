@@ -123,4 +123,7 @@ flashcards:
     back: Pectoralis minor
 diagrams: []
 related: [axilla, brachial-plexus]
+images:
+  - image: gray-523-axillary-artery
+    caption: "The axillary artery and its branches."
 ---

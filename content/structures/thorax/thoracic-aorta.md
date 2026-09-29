@@ -143,4 +143,7 @@ flashcards:
   - front: Most common site of blunt aortic injury?
     back: Aortic isthmus (just distal to left subclavian artery)
 related: [aortic-valve, internal-thoracic-artery, mediastinum]
+images:
+  - image: gray-506-aortic-arch
+    caption: "Ascending aorta (with coronary origins), arch and its three branches, and the descending aorta."
 ---

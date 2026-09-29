@@ -146,4 +146,7 @@ flashcards:
   - front: Terrible triad of the elbow?
     back: Elbow dislocation + radial head fracture + coronoid process fracture
 related: [humerus, radius, ulna, cubital-fossa]
+images:
+  - image: gray-329-elbow-joint
+    caption: "Left elbow joint, anterior and medial ligaments."
 ---

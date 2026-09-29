@@ -152,4 +152,7 @@ flashcards:
   - front: Light's criteria?
     back: "Exudate if: protein ratio >0.5, LDH ratio >0.6, or pleural LDH >2/3 upper normal serum LDH"
 related: [lungs, intercostal-space]
+images:
+  - image: gray-968-thorax-section
+    caption: "Transverse section of the thorax: pulmonary (visceral) and costal (parietal) pleura. (The pleural and pericardial cavities are exaggerated.)"
 ---

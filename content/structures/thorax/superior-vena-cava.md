@@ -107,4 +107,7 @@ flashcards:
   - front: Pemberton sign?
     back: Facial plethora/distress on raising both arms — thoracic inlet or SVC obstruction
 related: [azygos-vein, heart, mediastinum]
+images:
+  - image: gray-577-venae-cavae
+    caption: "The superior and inferior venae cavae with their tributaries (heart removed)."
 ---

@@ -97,4 +97,7 @@ flashcards:
   - front: Triceps brachii — insertion, nerve, reflex?
     back: Olecranon; radial nerve (C6–C8); triceps reflex C7
 related: [radial-nerve]
+images:
+  - image: gray-412-scapular-muscles
+    caption: "Triceps brachii and the posterior scapular muscles."
 ---

@@ -141,4 +141,7 @@ flashcards:
   - front: Systemic conditions associated with carpal tunnel syndrome?
     back: Pregnancy, hypothyroidism, diabetes, rheumatoid arthritis, acromegaly, amyloidosis
 related: [median-nerve, wrist-joint]
+images:
+  - image: gray-1233-flexor-sheaths
+    caption: "Flexor tendon sheaths passing through the carpal tunnel deep to the transverse carpal ligament (flexor retinaculum)."
 ---

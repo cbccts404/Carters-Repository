@@ -136,4 +136,7 @@ flashcards:
   - front: Esophageal cancer types by location and risk?
     back: "Squamous: upper/middle, smoking + alcohol. Adenocarcinoma: distal, GERD/Barrett, obesity"
 related: [mediastinum, azygos-vein, diaphragm, heart]
+images:
+  - image: gray-1032-esophagus
+    caption: "The esophagus in the neck and posterior mediastinum, from behind, with its relations."
 ---

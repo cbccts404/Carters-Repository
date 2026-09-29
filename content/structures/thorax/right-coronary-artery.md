@@ -106,4 +106,7 @@ flashcards:
     back: Avoid nitrates (preload dependent); give IV fluids
 diagrams: [coronary-arteries]
 related: [left-coronary-artery, cardiac-conduction-system, heart]
+images:
+  - image: gray-497-aortic-valve
+    caption: "Origins of the coronary arteries from the aortic sinuses."
 ---

@@ -104,4 +104,7 @@ flashcards:
   - front: Hypothenar hammer syndrome?
     back: Ulnar artery injury at the hook of hamate from repetitive palm trauma → ischemia of 4th/5th digits
 related: [radial-artery, ulnar-nerve]
+images:
+  - image: gray-527-forearm-arteries
+    caption: "Arteries of the front of the right forearm and hand, including the superficial palmar arch."
 ---

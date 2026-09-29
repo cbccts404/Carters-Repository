@@ -112,4 +112,7 @@ flashcards:
   - front: Rib notching on CXR?
     back: Coarctation of the aorta (collateral intercostal arteries)
 related: [sternum, intercostal-space]
+images:
+  - image: gray-112-thorax
+    caption: "The thoracic cage from the front."
 ---

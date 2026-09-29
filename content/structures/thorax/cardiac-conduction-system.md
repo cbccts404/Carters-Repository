@@ -121,4 +121,7 @@ flashcards:
   - front: Why does inferior MI cause bradycardia?
     back: The RCA usually supplies the SA and AV nodes
 related: [heart, right-coronary-artery]
+images:
+  - image: gray-493-right-heart-interior
+    caption: "Interior of the right atrium: crista terminalis, SVC and coronary sinus openings, the landmarks for the SA and AV nodes."
 ---

@@ -115,4 +115,7 @@ flashcards:
   - front: Supraglenoid vs infraglenoid tubercle attachments?
     back: "Supraglenoid: long head of biceps. Infraglenoid: long head of triceps"
 related: [clavicle, glenohumeral-joint, serratus-anterior]
+images:
+  - image: gray-203-scapula-posterior
+    caption: "Left scapula, posterior surface, with muscle attachments."
 ---

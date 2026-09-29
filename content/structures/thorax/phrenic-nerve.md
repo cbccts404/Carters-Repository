@@ -112,4 +112,7 @@ flashcards:
   - front: Sensory territory of the phrenic nerve?
     back: Pericardium, mediastinal pleura, central diaphragm (referred pain to shoulder, C3–C5)
 related: [diaphragm, pericardium, brachial-plexus]
+images:
+  - image: gray-806-phrenic-nerve
+    caption: "The phrenic nerves descending on the pericardium to the diaphragm, and their relation to the vagus nerves."
 ---

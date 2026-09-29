@@ -106,4 +106,7 @@ flashcards:
   - front: Classic iatrogenic cause of long thoracic nerve injury?
     back: Axillary lymph node dissection / mastectomy
 related: [brachial-plexus, axilla]
+images:
+  - image: gray-809-axilla-plexus
+    caption: "The long thoracic nerve descending on serratus anterior (labelled \"serratus magnus\") on the medial wall of the axilla."
 ---
