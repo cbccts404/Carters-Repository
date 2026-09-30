@@ -71,4 +71,16 @@ export const diagrams: Record<string, DiagramMeta> = {
     description:
       'Inferior view with the patient in lithotomy (anterior at the top). A line between the ischial tuberosities divides the urogenital triangle from the anal triangle; the pudendal canal runs in the lateral wall of each ischioanal fossa.',
   },
+  'lower-limb-dermatomes': {
+    title: 'Lower limb dermatomes and key muscles',
+    region: 'lower-limb',
+    description:
+      'Right lower limb, anterior view (medial = your right). Dots are ASIA key sensory points; the table gives the key muscle action and reflex for each root. Dermatome maps differ between sources.',
+  },
+  'leg-compartments': {
+    title: 'Compartments of the leg',
+    region: 'lower-limb',
+    description:
+      'Schematic mid-leg cross-section: four compartments separated by bone, the interosseous membrane and intermuscular septa, each with its own nerve. Compartment syndrome most often affects the anterior compartment.',
+  },
 };

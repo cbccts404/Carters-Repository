@@ -20,7 +20,7 @@ anatomy:
     The rami converge toward the greater sciatic foramen; most branches leave the pelvis through it, above or below
     piriformis.
   branches:
-    - "**Sciatic nerve** (L4–S3): the largest nerve in the body; leaves **below piriformis** (usually), supplies the posterior thigh and, through the tibial and common fibular nerves, all muscles below the knee"
+    - "[[sciatic-nerve]] (L4–S3): the largest nerve in the body; leaves **below piriformis** (usually), supplies the posterior thigh and, through the [[tibial-nerve|tibial]] and [[common-fibular-nerve|common fibular]] nerves, all muscles below the knee"
     - "**Superior gluteal nerve** (L4–S1): leaves **above piriformis**; supplies gluteus medius, gluteus minimus and tensor fasciae latae"
     - "**Inferior gluteal nerve** (L5–S2): below piriformis; supplies gluteus maximus"
     - "**Posterior femoral cutaneous nerve** (S1–S3): skin of the posterior thigh and part of the perineum"

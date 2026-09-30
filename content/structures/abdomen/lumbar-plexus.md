@@ -18,8 +18,8 @@ anatomy:
     - "**Ilioinguinal nerve (L1)**: through the [[inguinal-canal]]; skin of the medial thigh, root of the penis and anterior scrotum or mons pubis and labia majora"
     - "**Genitofemoral nerve (L1–L2)**: genital branch (cremaster, scrotal skin) and femoral branch (skin over the femoral triangle)"
     - "**Lateral femoral cutaneous nerve (L2–L3)**: skin of the lateral thigh; passes under or through the inguinal ligament near the ASIS"
-    - "**Femoral nerve (L2–L4, posterior divisions)**: anterior thigh muscles (quadriceps, sartorius, pectineus, with iliacus); skin of the anterior thigh and medial leg (saphenous nerve)"
-    - "**Obturator nerve (L2–L4, anterior divisions)**: medial thigh adductors; skin of the medial thigh"
+    - "[[femoral-nerve]] **(L2–L4, posterior divisions)**: anterior thigh muscles (quadriceps, sartorius, pectineus, with iliacus); skin of the anterior thigh and medial leg (saphenous nerve)"
+    - "[[obturator-nerve]] **(L2–L4, anterior divisions)**: medial thigh adductors; skin of the medial thigh"
     - "**Lumbosacral trunk (L4–L5)**: joins the sacral plexus"
   motor: Lower abdominal wall muscles (iliohypogastric, ilioinguinal), cremaster, hip flexors, knee extensors (femoral), and hip adductors (obturator).
   sensory: Lower abdominal wall, groin, genitalia (anterior), and the anterior, lateral and medial thigh; medial leg (saphenous).
