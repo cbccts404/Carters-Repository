@@ -128,6 +128,29 @@ quiz:
     explanation: >-
       The female pelvis is adapted for childbirth: a **wider subpubic angle**, an oval inlet, a larger outlet, and less
       prominent ischial spines. A heart-shaped inlet and narrow subpubic angle are male (android) features.
+  - stem: In a hemodynamically unstable patient with a pelvic ring fracture, where does most of the bleeding come from?
+    choices:
+      - The superior gluteal artery
+      - The presacral and vesical venous plexuses and the fracture surfaces
+      - The external iliac artery
+      - The inferior epigastric artery
+      - The femoral vein
+    answer: B
+    explanation: >-
+      Pelvic fracture bleeding is mostly **venous** (presacral and vesical plexuses) and from the fracture surfaces.
+      Arterial bleeding from internal iliac branches (superior gluteal, internal pudendal, obturator) is less common but
+      may need angioembolization. A pelvic binder over the greater trochanters reduces pelvic volume.
+  - stem: During labor, fetal station 0 is defined by the level of which bony landmark?
+    choices:
+      - Ischial spines
+      - Sacral promontory
+      - Ischial tuberosities
+      - Pubic crest
+      - Tip of the coccyx
+    answer: A
+    explanation: >-
+      The **ischial spines** mark fetal **station 0**. The distance between them (the interspinous diameter) is usually
+      the narrowest diameter of the midpelvis, and they are also the landmark for a pudendal nerve block.
 flashcards:
   - front: Boundaries of the pelvic inlet?
     back: Sacral promontory, sacral ala, arcuate line, pectineal line, pubic crest, upper symphysis

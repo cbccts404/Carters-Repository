@@ -103,6 +103,32 @@ quiz:
     explanation: >-
       The **posterior fornix**, the deepest fornix, is separated from the rectouterine pouch only by the vaginal wall
       and peritoneum — the historical route for culdocentesis.
+  - stem: >-
+      A 23-year-old woman has a frothy yellow-green vaginal discharge. Exam shows a "strawberry" cervix, and the wet
+      mount shows motile flagellated organisms. What is the most appropriate management?
+    choices:
+      - Fluconazole
+      - Reassurance and repeat testing in 3 months
+      - Metronidazole for the patient only
+      - Metronidazole for the patient and her sexual partners
+      - Ceftriaxone
+    answer: D
+    explanation: >-
+      This is **trichomoniasis** (frothy yellow-green discharge, strawberry cervix, motile trichomonads, pH > 4.5).
+      Treat with **metronidazole** and **treat partners**.
+  - stem: >-
+      A 30-year-old woman has vulvar itching and a thick white "cottage cheese" discharge. Vaginal pH is 4.0, and a KOH
+      preparation shows pseudohyphae. What is the most appropriate treatment?
+    choices:
+      - Metronidazole
+      - Ceftriaxone
+      - Metronidazole for her partner
+      - Doxycycline
+      - Fluconazole
+    answer: E
+    explanation: >-
+      **Vulvovaginal candidiasis** has a thick white discharge, itching, a **normal pH (≤ 4.5)** and pseudohyphae on
+      KOH. Treat with **fluconazole** or a topical azole. Bacterial vaginosis and trichomoniasis have a pH above 4.5.
 flashcards:
   - front: Vaginal pH normal vs BV/trichomonas?
     back: Normal ≤ 4.5 (also candida); BV and trichomonas > 4.5

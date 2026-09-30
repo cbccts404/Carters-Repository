@@ -122,6 +122,33 @@ quiz:
     explanation: >-
       The **intermediate (membranous) urethra** (about 1–1.5 cm), surrounded by the external urethral sphincter in the
       deep perineal pouch, is the shortest and least distensible part (apart from the external orifice).
+  - stem: >-
+      A newborn boy's urethral meatus opens on the ventral surface of the penile shaft, and he has a dorsal hooded
+      foreskin. What should the parents be advised?
+    choices:
+      - Routine circumcision can be done before discharge
+      - The defect is epispadias and needs a bladder exstrophy workup
+      - Avoid circumcision because the foreskin is used in the repair
+      - No follow-up is needed
+      - Urgent retrograde urethrogram is required
+    answer: C
+    explanation: >-
+      This is **hypospadias** (incomplete fusion of the urethral folds, ventral meatus), often with a dorsal hooded
+      foreskin and chordee. **Circumcision is avoided** because the foreskin is used in the repair. Epispadias is a
+      **dorsal** opening associated with bladder exstrophy.
+  - stem: >-
+      A male newborn had bilateral hydronephrosis and oligohydramnios on prenatal ultrasound and now has a weak urinary
+      stream. Which study confirms the most likely diagnosis?
+    choices:
+      - Renal biopsy
+      - Retrograde urethrogram
+      - Plain abdominal radiograph
+      - Scrotal ultrasound
+      - Voiding cystourethrogram
+    answer: E
+    explanation: >-
+      **Posterior urethral valves** (an obstructing membrane in the prostatic urethra) are the most common cause of
+      bladder outlet obstruction in male newborns and are diagnosed by **VCUG**.
 flashcards:
   - front: Parts of the male urethra (proximal to distal)?
     back: Preprostatic → prostatic → intermediate (membranous) → spongy (penile)

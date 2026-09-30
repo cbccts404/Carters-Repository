@@ -126,6 +126,34 @@ quiz:
     explanation: >-
       The **dorsal nerve of the penis**, a branch of the pudendal nerve, provides sensation to the glans and most of the
       skin of the shaft — the target of a dorsal penile nerve block. The cavernous nerves are autonomic.
+  - stem: >-
+      A 35-year-old man hears a "pop" during intercourse, followed by rapid loss of erection and marked swelling and
+      bruising of the shaft ("eggplant deformity"). Which structure is torn?
+    choices:
+      - Tunica albuginea of a corpus cavernosum
+      - Suspensory ligament of the penis
+      - Dorsal nerve of the penis
+      - Superficial dorsal vein only
+      - Dartos fascia only
+    answer: A
+    explanation: >-
+      **Penile fracture** is rupture of the **tunica albuginea** of a corpus cavernosum when the erect penis is bent
+      forcibly. If Buck fascia is intact the hematoma stays on the shaft; if torn, bruising spreads to the perineum.
+      Treatment is prompt surgical repair; blood at the meatus suggests an associated urethral injury.
+  - stem: >-
+      A 40-year-old man retracted his foreskin several hours ago and cannot return it over the glans. The glans is
+      swollen and painful, with a tight band behind it. What is the diagnosis?
+    choices:
+      - Phimosis
+      - Peyronie disease
+      - Paraphimosis
+      - Ischemic priapism
+      - Penile fracture
+    answer: C
+    explanation: >-
+      **Paraphimosis** is a retracted foreskin that cannot be returned over the glans, constricting it. It is a
+      **urologic emergency**, managed with manual reduction after compression and analgesia, and incision if that fails.
+      Phimosis is a foreskin that cannot be retracted.
 flashcards:
   - front: Three erectile bodies of the penis?
     back: Two corpora cavernosa (dorsal) + corpus spongiosum (ventral, with urethra)

@@ -130,6 +130,35 @@ quiz:
     explanation: >-
       **Painless gross hematuria** in an older smoker is highly concerning for **urothelial carcinoma**. Evaluation needs
       **cystoscopy** (bladder) plus **CT urography** (upper tracts).
+  - stem: >-
+      A 40-year-old man with a pelvic fracture has gross hematuria. A retrograde urethrogram is normal. CT cystography
+      shows contrast leaking into the tissues around the bladder but not into the peritoneal cavity. What is the most
+      appropriate management?
+    choices:
+      - Immediate laparotomy and bladder repair
+      - Suprapubic needle aspiration only
+      - Nephrostomy tubes
+      - Urethral catheter drainage
+      - Observation without drainage
+    answer: D
+    explanation: >-
+      **Extraperitoneal** rupture is the most common type and is associated with pelvic fractures; it is usually managed
+      with **catheter drainage**. **Intraperitoneal** rupture (a blow to a full bladder bursting the dome) needs
+      surgical repair.
+  - stem: >-
+      A 72-year-old woman has a sudden, strong urge to void followed by leakage, with frequency and nocturia. Urinalysis
+      is normal. What is the first-line treatment?
+    choices:
+      - Behavioral therapy (bladder training and reducing fluid and caffeine)
+      - Midurethral sling surgery
+      - Indwelling urinary catheter
+      - Tamsulosin
+      - Radical cystectomy
+    answer: A
+    explanation: >-
+      **Urge incontinence** (overactive bladder) is due to detrusor overactivity. First-line treatment is **behavioral
+      therapy**; next are **antimuscarinics** (e.g. oxybutynin, with caution in older adults) or the **β3-agonist
+      mirabegron**. A midurethral sling treats stress incontinence.
 flashcards:
   - front: Blood supply of the bladder?
     back: Superior vesical (from umbilical a.) + inferior vesical (male) or vaginal (female), from internal iliac

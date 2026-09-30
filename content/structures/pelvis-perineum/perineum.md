@@ -110,6 +110,32 @@ quiz:
     explanation: >-
       The **perineal body** (central tendon of the perineum) is the meeting point of these muscles and supports the
       pelvic floor. It is torn in second-degree and higher perineal lacerations.
+  - stem: >-
+      A 58-year-old man with poorly controlled diabetes has severe perineal and scrotal pain out of proportion to the
+      exam, dusky skin with crepitus, and a fever of 39.2 °C. What is the most appropriate management?
+    choices:
+      - Oral antibiotics and review in 48 hours
+      - Scrotal ultrasound and observation
+      - Emergency surgical debridement plus broad-spectrum IV antibiotics
+      - Incision and drainage in the clinic
+      - Warm sitz baths and analgesia
+    answer: C
+    explanation: >-
+      This is **Fournier gangrene**, a polymicrobial necrotizing fasciitis spreading along Colles, dartos and Scarpa
+      fascia. Diabetes is a major risk factor. Treatment is emergency **surgical debridement** plus broad-spectrum IV
+      antibiotics.
+  - stem: A line between which landmarks divides the perineum into the urogenital and anal triangles?
+    choices:
+      - The anterior superior iliac spines
+      - The ischial tuberosities
+      - The ischial spines
+      - The pubic tubercles
+      - The posterior superior iliac spines
+    answer: B
+    explanation: >-
+      A line between the **ischial tuberosities** divides the diamond-shaped perineum into the anterior **urogenital
+      triangle** (external genitalia, urethra, perineal pouches) and the posterior **anal triangle** (anal canal,
+      ischioanal fossae).
 flashcards:
   - front: Boundaries of the perineum?
     back: Pubic symphysis, ischiopubic rami, ischial tuberosities, sacrotuberous ligaments, coccyx

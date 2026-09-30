@@ -117,6 +117,32 @@ quiz:
     explanation: >-
       Levator ani arises from the pubic body anteriorly, the **tendinous arch of levator ani** (a thickening of the
       obturator internus fascia) laterally, and the ischial spine posteriorly.
+  - stem: In a woman, which structures pass through the urogenital hiatus of levator ani?
+    choices:
+      - The rectum only
+      - The urethra and vagina
+      - The pudendal nerve and internal pudendal vessels
+      - The ureters
+      - The obturator nerve and vessels
+    answer: B
+    explanation: >-
+      The **urogenital hiatus** between the medial borders of levator ani transmits the **urethra and vagina**. The
+      rectum passes through posteriorly, held by the puborectalis sling. A widened hiatus (e.g. after levator ani
+      avulsion) is a risk factor for prolapse.
+  - stem: >-
+      A 61-year-old woman with four vaginal deliveries has a vaginal bulge and must press on the posterior vaginal wall
+      to complete a bowel movement. What is the most likely diagnosis?
+    choices:
+      - Cystocele
+      - Apical (vault) prolapse
+      - Anal fissure
+      - Stress urinary incontinence
+      - Rectocele
+    answer: E
+    explanation: >-
+      A **rectocele** is a posterior vaginal wall prolapse; patients may need to **splint** the vagina to defecate. A
+      cystocele (anterior wall) causes incomplete bladder emptying and UTIs. Vaginal delivery is the key risk factor;
+      options include pelvic floor muscle training, a pessary or surgical repair.
 flashcards:
   - front: Components of the pelvic diaphragm?
     back: Levator ani (puborectalis, pubococcygeus, iliococcygeus) + coccygeus

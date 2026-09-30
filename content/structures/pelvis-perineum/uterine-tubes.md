@@ -110,6 +110,30 @@ quiz:
       **Fitz-Hugh–Curtis syndrome** is perihepatitis (inflammation of the liver capsule, "violin-string" adhesions)
       after PID; the infection spreads from the open abdominal ostium of the tube through the peritoneal cavity. Liver
       tests are usually normal.
+  - stem: >-
+      A hemodynamically stable woman has an unruptured tubal ectopic pregnancy and meets the criteria for medical
+      management. What is the most appropriate treatment?
+    choices:
+      - Expectant management with a repeat ultrasound in 6 weeks
+      - Dilation and curettage
+      - Emergency salpingectomy
+      - Mifepristone and misoprostol
+      - Methotrexate
+    answer: E
+    explanation: >-
+      A stable, unruptured ectopic pregnancy that meets criteria is treated with **methotrexate**; an unstable or
+      ruptured ectopic needs **surgery** (salpingostomy or salpingectomy). Rh-negative women should receive anti-D.
+  - stem: Why does salpingectomy for sterilization also lower the risk of ovarian cancer?
+    choices:
+      - Many high-grade serous cancers begin in the fimbriae
+      - It removes the ovarian blood supply
+      - It removes BRCA mutations
+      - It lowers estrogen levels
+      - It removes the para-aortic lymph nodes
+    answer: A
+    explanation: >-
+      Many **high-grade serous** "ovarian" cancers originate in the **fimbriae** of the uterine tube, so removing the
+      tubes (salpingectomy) lowers ovarian cancer risk as well as providing permanent contraception.
 flashcards:
   - front: Four parts of the uterine tube (lateral → medial)?
     back: Infundibulum (fimbriae) → ampulla → isthmus → uterine (intramural) part

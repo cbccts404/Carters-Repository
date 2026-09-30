@@ -128,6 +128,29 @@ quiz:
     explanation: >-
       In **acute bacterial prostatitis**, vigorous prostatic massage can cause **bacteremia** and is contraindicated. A
       gentle DRE is acceptable; send urine (and blood) cultures and STI testing in younger men.
+  - stem: Which zone of the prostate is the site of most carcinomas and is the part palpated on digital rectal exam?
+    choices:
+      - Peripheral zone
+      - Transition zone
+      - Central zone
+      - Anterior fibromuscular stroma
+      - Median lobe
+    answer: A
+    explanation: >-
+      The **peripheral zone** (about 70% of glandular tissue, posterior and lateral) is where most prostate cancers
+      arise and is felt on DRE as a hard nodule. BPH arises in the **transition zone** around the proximal urethra.
+  - stem: A man starts finasteride for benign prostatic hyperplasia. What effect on his PSA should be expected?
+    choices:
+      - PSA roughly doubles
+      - No change in PSA
+      - PSA rises by about a quarter
+      - PSA falls by about half
+      - PSA becomes undetectable
+    answer: D
+    explanation: >-
+      **5-α-reductase inhibitors** (finasteride) shrink the gland over months and **roughly halve** the PSA, which must
+      be taken into account when interpreting PSA values. α1-blockers (tamsulosin) give faster relief by relaxing smooth
+      muscle.
 flashcards:
   - front: Prostate zone for BPH vs cancer?
     back: BPH — transition zone; cancer — peripheral zone

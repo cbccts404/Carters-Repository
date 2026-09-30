@@ -132,6 +132,31 @@ quiz:
     explanation: >-
       The fundus and upper body drain along the **ovarian vessels to the lumbar (para-aortic) nodes**. Some fundal lymph
       follows the round ligament to the superficial inguinal nodes, and the cervix drains to the iliac and sacral nodes.
+  - stem: >-
+      A 44-year-old woman who has had three children has worsening dysmenorrhea and heavy menstrual bleeding. The uterus
+      is symmetrically enlarged, boggy and tender. What is the most likely diagnosis?
+    choices:
+      - Leiomyoma
+      - Adenomyosis
+      - Endometrial cancer
+      - Cervical cancer
+      - Ectopic pregnancy
+    answer: B
+    explanation: >-
+      **Adenomyosis** (endometrial glands and stroma within the myometrium) causes dysmenorrhea and heavy bleeding in
+      parous women in their 40s, with a **symmetrically enlarged, boggy, tender** uterus. Fibroids give an **enlarged,
+      irregular, firm** uterus.
+  - stem: At about how many weeks of gestation does the uterine fundus reach the level of the umbilicus?
+    choices:
+      - 12 weeks
+      - 16 weeks
+      - 20 weeks
+      - 28 weeks
+      - 36 weeks
+    answer: C
+    explanation: >-
+      The fundus reaches the **umbilicus at about 20 weeks**. From about 20 to 36 weeks, fundal height in centimeters
+      roughly equals the weeks of gestation.
 flashcards:
   - front: Normal position of the uterus?
     back: Anteverted (cervix on vagina) and anteflexed (body on cervix)

@@ -119,6 +119,31 @@ quiz:
     explanation: >-
       **Internal hemorrhoids** arise above the pectinate line, where the mucosa has **visceral innervation**, so they
       usually cause **painless bleeding**. They drain via the superior rectal veins into the portal system.
+  - stem: An anorectal abscess most often begins as infection of which structure?
+    choices:
+      - The superior rectal vein
+      - A transverse rectal fold
+      - An anal gland opening into an anal sinus
+      - The internal anal sphincter muscle
+      - The anococcygeal body
+    answer: C
+    explanation: >-
+      Most anorectal abscesses are **cryptoglandular**: an anal gland opening into an anal sinus (behind the anal
+      valves) becomes infected, and the infection spreads into the perianal, ischioanal, intersphincteric or
+      supralevator spaces. Treatment is incision and drainage; a persistent tract afterward is a fistula-in-ano.
+  - stem: Which statement about the internal anal sphincter is correct?
+    choices:
+      - It is voluntary skeletal muscle supplied by the inferior rectal nerve
+      - Parasympathetic stimulation maintains its contraction
+      - It has subcutaneous, superficial and deep parts
+      - It blends above with puborectalis
+      - It is involuntary smooth muscle that provides most of the resting tone
+    answer: E
+    explanation: >-
+      The internal sphincter is a thickening of the **circular smooth muscle**, is involuntary, provides most resting
+      tone, and is kept contracted by **sympathetic** stimulation (it relaxes with parasympathetic activity during
+      defecation). The other statements describe the **external** sphincter (voluntary, three parts, blends with
+      puborectalis, inferior rectal nerve).
 flashcards:
   - front: Pectinate line — embryologic significance?
     back: Junction of hindgut endoderm (above) and proctodeum ectoderm (below)

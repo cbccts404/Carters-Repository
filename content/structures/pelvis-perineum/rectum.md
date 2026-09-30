@@ -115,6 +115,31 @@ quiz:
     explanation: >-
       At the rectosigmoid junction the **taeniae coli spread out** into a continuous longitudinal layer; the rectum has
       no taeniae, haustra, epiploic appendices or mesentery.
+  - stem: >-
+      A 75-year-old woman has a mass protruding from the anus with concentric mucosal folds, mucus discharge and fecal
+      incontinence. What is the most likely diagnosis?
+    choices:
+      - Prolapsed internal hemorrhoids
+      - Anal fissure
+      - Thrombosed external hemorrhoid
+      - Rectal prolapse
+      - Anal cancer
+    answer: D
+    explanation: >-
+      **Rectal prolapse** is a full-thickness protrusion with **concentric** mucosal folds; prolapsed hemorrhoids show
+      **radial** folds. It is associated with chronic straining and pelvic floor weakness.
+  - stem: Why is the rectal venous plexus a site of portosystemic anastomosis?
+    choices:
+      - The rectum has no venous drainage below the peritoneal reflection
+      - The superior rectal vein drains to the portal system, while the middle and inferior rectal veins drain to systemic veins
+      - The superior rectal vein drains directly into the inferior vena cava
+      - The inferior rectal veins drain into the inferior mesenteric vein
+      - The rectum drains only to the internal iliac veins
+    answer: B
+    explanation: >-
+      The **superior rectal vein** → inferior mesenteric vein → **portal** system, whereas the **middle and inferior
+      rectal veins** → internal iliac/internal pudendal veins (**systemic**). The plexus joining them is a portosystemic
+      anastomosis that can dilate in portal hypertension.
 flashcards:
   - front: Where does the rectum begin and end?
     back: Rectosigmoid junction (≈ S3) → anorectal junction (puborectalis sling)

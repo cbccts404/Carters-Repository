@@ -141,6 +141,35 @@ quiz:
       The **left testicular vein** drains at a **right angle** into the **left renal vein** (a longer course with higher
       pressure, which can be compressed between the aorta and SMA — "nutcracker"). The right vein enters the IVC
       obliquely.
+  - stem: >-
+      A 24-year-old sexually active man has 3 days of gradually worsening right posterior scrotal pain, dysuria and
+      fever. The cremasteric reflex is present and elevating the testis eases the pain. What is the most likely
+      diagnosis?
+    choices:
+      - Testicular torsion
+      - Epididymitis
+      - Testicular cancer
+      - Varicocele
+      - Hydrocele
+    answer: B
+    explanation: >-
+      **Epididymitis** has a **gradual** onset with posterior scrotal pain, fever and dysuria; the cremasteric reflex is
+      present and pain may ease on elevation (**Prehn sign**). In sexually active men under about 35 it is usually from
+      chlamydia or gonorrhea. Torsion is sudden, with an absent cremasteric reflex.
+  - stem: >-
+      A 55-year-old man has a new right-sided varicocele that does not decompress when he lies supine. What is the most
+      appropriate next step?
+    choices:
+      - Abdominal imaging to look for inferior vena cava or renal vein obstruction
+      - Reassurance and no follow-up
+      - Scrotal support only
+      - A course of antibiotics
+      - Radical orchiectomy
+    answer: A
+    explanation: >-
+      Varicoceles are usually **left-sided** because the left testicular vein enters the left renal vein at a right
+      angle. A **right-sided** or non-collapsing varicocele suggests IVC or renal vein obstruction (for example renal
+      cell carcinoma), so the abdomen should be imaged.
 flashcards:
   - front: Testicular torsion — key signs?
     back: Sudden severe pain, high-riding horizontal testis, absent cremasteric reflex, no relief with elevation

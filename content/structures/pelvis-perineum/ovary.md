@@ -113,6 +113,30 @@ quiz:
     explanation: >-
       Ovarian lymph follows the ovarian vessels in the suspensory ligament to the **lumbar (para-aortic) nodes**,
       reflecting the gonad's embryologic origin high on the posterior abdominal wall.
+  - stem: >-
+      Ovarian disease can refer pain to the medial thigh because which nerve runs across the floor of the ovarian fossa?
+    choices:
+      - Femoral nerve
+      - Obturator nerve
+      - Genitofemoral nerve
+      - Pudendal nerve
+      - Lateral femoral cutaneous nerve
+    answer: B
+    explanation: >-
+      The ovary sits in the ovarian fossa on the lateral pelvic wall, and the **obturator nerve** runs across the floor
+      of the fossa. The obturator nerve supplies skin of the medial thigh, so ovarian disease may refer pain there.
+  - stem: Which structure carries the ovarian artery and vein to the ovary?
+    choices:
+      - Ligament of the ovary
+      - Round ligament of the uterus
+      - Suspensory (infundibulopelvic) ligament
+      - Cardinal ligament
+      - Uterosacral ligament
+    answer: C
+    explanation: >-
+      The **suspensory ligament of the ovary** (infundibulopelvic ligament) is a peritoneal fold from the ovary to the
+      pelvic wall carrying the ovarian vessels, nerves and lymphatics. The ureter crosses the pelvic brim close to these
+      vessels. The ligament of the ovary (utero-ovarian ligament) runs from the ovary to the uterus.
 flashcards:
   - front: Which ligament carries the ovarian vessels?
     back: Suspensory (infundibulopelvic) ligament of the ovary
