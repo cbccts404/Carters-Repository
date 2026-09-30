@@ -1,0 +1,84 @@
+---
+/* Original schematic of the hepatic portal system and the four portosystemic anastomoses.
+   Portal veins in purple, systemic veins in blue. Patient's right = viewer's left. */
+import Label from '../components/Label.astro';
+---
+
+<div class="scroll">
+  <svg viewBox="0 0 600 600" role="img" aria-labelledby="ps-title ps-desc">
+    <title id="ps-title">Hepatic portal system and portosystemic anastomoses</title>
+    <desc id="ps-desc">
+      The splenic vein (joined by the inferior mesenteric vein) and the superior mesenteric vein unite behind the neck
+      of the pancreas to form the portal vein, which enters the liver. Portal and systemic veins meet at the lower
+      esophagus, the umbilicus, the rectum and the retroperitoneum.
+    </desc>
+    <style>
+      .ps-portal { fill: none; stroke: var(--t-organ); stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+      .ps-portal-s { fill: none; stroke: var(--t-organ); stroke-width: 4; stroke-linecap: round; }
+      .ps-sys { fill: none; stroke: var(--t-vein); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+      .ps-sys-s { fill: none; stroke: var(--t-vein); stroke-width: 3; stroke-linecap: round; }
+      .ps-organ { fill: color-mix(in srgb, var(--t-muscle) 20%, var(--surface)); stroke: var(--muted); stroke-width: 1.5; }
+      .ps-site { fill: #f59e0b; stroke: var(--bg); stroke-width: 2; }
+      .ps-num { fill: #111; font-size: 12px; font-weight: 700; text-anchor: middle; }
+    </style>
+
+    <!-- organs -->
+    <path class="ps-organ" d="M112 70 C150 38 300 36 330 70 C342 96 318 140 270 150 C210 162 140 158 112 128 Z"></path>
+    <rect class="ps-organ" x="330" y="18" width="22" height="100" rx="8"></rect>
+    <path class="ps-organ" d="M508 206 C540 196 566 222 560 256 C552 284 520 290 506 270 C496 252 494 222 508 206 Z"></path>
+    <ellipse class="ps-organ" cx="446" cy="478" rx="22" ry="16"></ellipse>
+    <circle class="ps-organ" cx="160" cy="300" r="9"></circle>
+
+    <!-- systemic: IVC, hepatic veins, azygos, epigastric, rectal -> iliac -->
+    <path class="ps-sys" d="M86 30 V520"></path>
+    <path class="ps-sys-s" d="M112 96 H88 M118 116 H88"></path>
+    <path class="ps-sys-s" d="M341 58 V10"></path>
+    <path class="ps-sys-s" d="M160 300 L118 268 M160 300 L202 268 M160 300 L118 332 M160 300 L202 332"></path>
+    <path class="ps-sys-s" d="M436 490 C380 512 200 518 90 506"></path>
+    <path class="ps-sys-s" d="M288 430 H92" stroke-dasharray="5 5"></path>
+
+    <!-- portal: portal vein, splenic, SMV, IMV, left gastric, paraumbilical, superior rectal -->
+    <path class="ps-portal" d="M262 150 C268 190 286 226 300 252"></path>
+    <path class="ps-portal" d="M300 252 H504"></path>
+    <path class="ps-portal" d="M300 252 V440"></path>
+    <path class="ps-portal-s" d="M300 300 L250 318 M300 340 L250 358 M300 380 L250 400 M300 420 L350 440"></path>
+    <path class="ps-portal-s" d="M420 252 C424 320 432 400 442 462"></path>
+    <path class="ps-portal-s" d="M288 222 C300 180 326 140 340 112"></path>
+    <path class="ps-portal-s" d="M190 156 C184 210 170 260 162 290"></path>
+
+    <!-- anastomosis sites -->
+    <circle class="ps-site" cx="341" cy="96" r="11"></circle><text class="ps-num" x="341" y="100">1</text>
+    <circle class="ps-site" cx="160" cy="300" r="11"></circle><text class="ps-num" x="160" y="304">2</text>
+    <circle class="ps-site" cx="446" cy="478" r="11"></circle><text class="ps-num" x="446" y="482">3</text>
+    <circle class="ps-site" cx="300" cy="430" r="11"></circle><text class="ps-num" x="300" y="434">4</text>
+
+    <!-- labels -->
+    <Label x={210} y={104} anchor="middle" size="lg" to="liver">Liver</Label>
+    <Label x={360} y={40} to="esophagus">Esophagus</Label>
+    <Label x={352} y={14} size="sm" to="azygos-vein">→ azygos vein → SVC</Label>
+    <Label x={540} y={306} anchor="middle" to="spleen">Spleen</Label>
+    <Label x={76} y={300} anchor="end" to="inferior-vena-cava">IVC</Label>
+    <Label x={96} y={26} size="sm">to right atrium</Label>
+    <Label x={96} y={176} size="sm">hepatic veins</Label>
+    <Label x={312} y={238} to="hepatic-portal-vein">Portal vein</Label>
+    <Label x={430} y={274} size="sm">Splenic vein</Label>
+    <Label x={346} y={170} size="sm">Left gastric v.</Label>
+    <Label x={308} y={470} size="sm">SMV</Label>
+    <Label x={244} y={378} anchor="end" size="sm" to="small-intestine">Small intestine</Label>
+    <Label x={356} y={454} size="sm" to="colon">Colon</Label>
+    <Label x={442} y={372} size="sm">IMV</Label>
+    <Label x={196} y={214} size="sm">Paraumbilical</Label>
+    <Label x={196} y={228} size="sm">(lig. teres)</Label>
+    <Label x={454} y={512} size="sm">Superior rectal v. (portal)</Label>
+    <Label x={120} y={526} size="sm">Middle/inferior rectal vv. → internal iliac → IVC (systemic)</Label>
+    <Label x={120} y={424} size="sm">retroperitoneal veins</Label>
+
+    <!-- legend -->
+    <line x1="20" y1="556" x2="50" y2="556" class="ps-portal-s"></line>
+    <Label x={56} y={560} size="sm">Portal</Label>
+    <line x1="110" y1="556" x2="140" y2="556" class="ps-sys-s"></line>
+    <Label x={146} y={560} size="sm">Systemic</Label>
+    <Label x={20} y={584} size="sm">① esophageal varices  ② caput medusae  ③ rectal varices  ④ retroperitoneal</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

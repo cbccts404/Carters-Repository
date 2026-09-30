@@ -35,4 +35,28 @@ export const diagrams: Record<string, DiagramMeta> = {
     description:
       'Classic listening posts. These are where each valve is heard best, not where the valves lie anatomically. Count interspaces down from the 2nd rib at the sternal angle.',
   },
+  'portal-system': {
+    title: 'Hepatic portal system',
+    region: 'abdomen',
+    description:
+      'Portal veins (purple) drain the gut, spleen and pancreas to the liver; systemic veins in blue. Numbered sites are portosystemic anastomoses that dilate in portal hypertension. Tap a label to open its page.',
+  },
+  'gut-arterial-supply': {
+    title: 'Arterial supply of the gut',
+    region: 'abdomen',
+    description:
+      'The three unpaired anterior branches of the abdominal aorta and their territories, with vertebral levels and where visceral pain from each region is felt.',
+  },
+  'lumbar-disc-herniation': {
+    title: 'Lumbar disc herniation and nerve roots',
+    region: 'back',
+    description:
+      'Posterior view of L4–S1 (right-sided roots shown). Lumbar roots exit below their own pedicle, so a posterolateral L4–L5 herniation (1) compresses the traversing L5 root and a far-lateral herniation (2) compresses the exiting L4 root.',
+  },
+  'lumbar-puncture': {
+    title: 'Lumbar puncture anatomy',
+    region: 'back',
+    description:
+      'Sagittal schematic (not to scale): the cord ends at about L1–L2, the dural sac at about S2. The needle enters at L3–L4, just above the intercristal line (≈ L4), well below the conus.',
+  },
 };
