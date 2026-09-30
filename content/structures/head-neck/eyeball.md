@@ -95,6 +95,43 @@ quiz:
     explanation: >-
       **Central retinal artery occlusion** makes the inner retina pale and ischemic; the thin fovea lets the underlying
       choroidal circulation show through as a **cherry-red spot**. It is a stroke equivalent.
+  - stem: >-
+      A 58-year-old with high myopia sees sudden flashes of light, many new floaters, and a shadow spreading across part
+      of the visual field. What is the most likely diagnosis?
+    choices:
+      - Retinal detachment
+      - Acute angle-closure glaucoma
+      - Central retinal artery occlusion
+      - Migraine aura
+      - Open-angle glaucoma
+    answer: A
+    explanation: >-
+      **Flashes (photopsia), new floaters and a curtain or shadow** over the field indicate **retinal detachment** (risk
+      factors: myopia, trauma, older age), which needs urgent ophthalmology.
+  - stem: Through which structure does aqueous humor normally leave the anterior chamber?
+    choices:
+      - Ciliary processes
+      - Vitreous body
+      - Trabecular meshwork and canal of Schlemm
+      - Central retinal vein
+      - Nasolacrimal duct
+    answer: C
+    explanation: >-
+      Aqueous is secreted by the **ciliary processes** into the posterior chamber, flows through the pupil into the
+      anterior chamber, and drains through the **trabecular meshwork** at the iridocorneal angle into the **canal of
+      Schlemm**. Blocking the angle causes angle-closure glaucoma.
+  - stem: What is a common first-line medical treatment for primary open-angle glaucoma?
+    choices:
+      - Oral acetazolamide long-term
+      - Mydriatic drops
+      - Topical corticosteroid drops
+      - Prostaglandin analog eye drops (e.g. latanoprost)
+      - Oral antibiotics
+    answer: D
+    explanation: >-
+      Open-angle glaucoma is a painless, chronic optic neuropathy with peripheral field loss. It is commonly treated
+      with **prostaglandin analog** or beta-blocker drops, then laser or surgery. Mydriatics can precipitate angle
+      closure.
 flashcards:
   - front: Pathway of aqueous humor?
     back: Ciliary body → posterior chamber → pupil → anterior chamber → trabecular meshwork → canal of Schlemm

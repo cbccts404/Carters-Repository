@@ -87,6 +87,43 @@ quiz:
     explanation: >-
       **Asymmetric sensorineural hearing loss** needs **MRI with gadolinium** to exclude a **vestibular schwannoma**
       (acoustic neuroma) at the cerebellopontine angle.
+  - stem: Which triad, with episodic vertigo, characterizes Ménière disease?
+    choices:
+      - Vertigo only with head position changes, and normal hearing
+      - Fever, ear pain and a bulging drum
+      - Fluctuating low-frequency sensorineural hearing loss, tinnitus and aural fullness
+      - Sudden bilateral hearing loss
+      - Facial palsy with ear vesicles
+    answer: C
+    explanation: >-
+      **Ménière disease** (endolymphatic hydrops) causes episodic vertigo lasting 20 minutes to hours with **fluctuating
+      low-frequency SNHL, tinnitus and aural fullness**. Positional vertigo with normal hearing is BPPV.
+  - stem: >-
+      A patient has several days of continuous vertigo after a viral illness. Which additional finding indicates
+      labyrinthitis rather than vestibular neuritis?
+    choices:
+      - Horizontal nystagmus
+      - Hearing loss
+      - Nausea
+      - Improvement over days
+      - Vertigo on head movement
+    answer: B
+    explanation: >-
+      Both cause days of vertigo with nausea and nystagmus, but **labyrinthitis also causes hearing loss** because the
+      cochlea is involved. The HINTS exam helps exclude a posterior circulation stroke.
+  - stem: >-
+      A 40-year-old wakes with sudden hearing loss in one ear. Audiometry confirms unilateral sensorineural loss. What
+      is the most appropriate management?
+    choices:
+      - Reassurance and follow-up in 3 months
+      - Oral antibiotics
+      - Ear irrigation
+      - Hearing aid fitting now
+      - Urgent audiology/ENT evaluation and oral corticosteroids
+    answer: E
+    explanation: >-
+      **Sudden sensorineural hearing loss** is an otologic emergency treated with **urgent evaluation and oral
+      steroids**. Unilateral SNHL also warrants MRI to exclude vestibular schwannoma.
 flashcards:
   - front: Where in the cochlea are high frequencies detected?
     back: Base (near the oval window)

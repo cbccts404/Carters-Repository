@@ -99,6 +99,32 @@ quiz:
     explanation: >-
       The **carotid triangle** (omohyoid, posterior digastric, SCM) contains the **carotid bifurcation**, carotid sinus
       and body, internal jugular vein, and the vagus and hypoglossal nerves.
+  - stem: >-
+      A newborn girl with Turner syndrome has a soft, transilluminating mass in the posterior triangle of the neck. What
+      is it most likely to be?
+    choices:
+      - Branchial cleft cyst
+      - Thyroglossal duct cyst
+      - Cystic hygroma (lymphatic malformation)
+      - Carotid body tumor
+      - Lymphoma
+    answer: C
+    explanation: >-
+      A **cystic hygroma** is a lymphatic malformation, typically a soft, **transilluminating posterior triangle** mass
+      in an infant, associated with **Turner syndrome**. Branchial cleft cysts lie along the anterior border of SCM.
+  - stem: >-
+      A painless, pulsatile mass at the carotid bifurcation moves side to side but not up and down. What is the most
+      likely diagnosis?
+    choices:
+      - Carotid body tumor (paraganglioma)
+      - Branchial cleft cyst
+      - Thyroid nodule
+      - Reactive lymph node
+      - Thyroglossal duct cyst
+    answer: A
+    explanation: >-
+      A **carotid body tumor** lies at the bifurcation in the **carotid triangle**; it is pulsatile and moves
+      **horizontally but not vertically** (Fontaine sign). Thyroid and thyroglossal lesions move with swallowing.
 flashcards:
   - front: Boundaries of the posterior triangle?
     back: Posterior border of SCM, anterior border of trapezius, middle third of the clavicle

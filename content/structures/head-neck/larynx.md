@@ -100,6 +100,29 @@ quiz:
     explanation: >-
       Moderate-to-severe **croup** (stridor at rest) is treated with **corticosteroids (dexamethasone)** plus **nebulized
       racemic epinephrine**, observing for rebound. It is viral, so antibiotics don't help.
+  - stem: Which nerve supplies the cricothyroid muscle?
+    choices:
+      - Recurrent laryngeal nerve
+      - Internal laryngeal nerve
+      - Hypoglossal nerve
+      - External laryngeal nerve (branch of the superior laryngeal)
+      - Glossopharyngeal nerve
+    answer: D
+    explanation: >-
+      **Cricothyroid** (tenses the cords; pitch) is the only intrinsic laryngeal muscle supplied by the **external
+      laryngeal nerve**. All others, including the posterior cricoarytenoid, are supplied by the recurrent laryngeal
+      nerve.
+  - stem: On an AP neck radiograph, what sign is typical of croup?
+    choices:
+      - Thumbprint sign
+      - Steeple sign
+      - Double bubble sign
+      - Sail sign
+      - Widened prevertebral soft tissue
+    answer: B
+    explanation: >-
+      **Croup** (parainfluenza) causes subglottic narrowing, the **steeple sign** on an AP film. **Epiglottitis** shows
+      the **thumbprint sign** on a lateral film; retropharyngeal abscess widens the prevertebral soft tissue.
 flashcards:
   - front: Only complete cartilage ring of the airway?
     back: Cricoid cartilage (C6)

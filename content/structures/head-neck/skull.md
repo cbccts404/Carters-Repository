@@ -99,6 +99,31 @@ quiz:
     explanation: >-
       The **middle meningeal artery** enters the skull through the **foramen spinosum**. V3 passes through the foramen
       ovale, V2 through the foramen rotundum.
+  - stem: >-
+      After head trauma, a patient has bruising over the mastoid process. What is this sign called, and what does it
+      suggest?
+    choices:
+      - Raccoon eyes; orbital fracture
+      - Battle sign; basilar skull fracture
+      - Cullen sign; intra-abdominal bleeding
+      - Kehr sign; splenic injury
+      - Grey Turner sign; retroperitoneal bleeding
+    answer: B
+    explanation: >-
+      **Battle sign** (mastoid ecchymosis), **raccoon eyes**, hemotympanum and CSF rhinorrhea or otorrhea suggest a
+      **basilar skull fracture**. Avoid nasogastric tubes and nasotracheal intubation.
+  - stem: >-
+      A febrile 4-month-old has a tense, bulging anterior fontanelle while calm and upright. What does this indicate?
+    choices:
+      - Dehydration
+      - Normal finding in infants
+      - Premature suture fusion
+      - Hypothyroidism
+      - Raised intracranial pressure, e.g. meningitis
+    answer: E
+    explanation: >-
+      A **bulging** fontanelle indicates **raised intracranial pressure** (meningitis, hydrocephalus); a **sunken**
+      fontanelle suggests dehydration.
 flashcards:
   - front: Four bones meeting at the pterion?
     back: Frontal, parietal, temporal, greater wing of sphenoid

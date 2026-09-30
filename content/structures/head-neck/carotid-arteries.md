@@ -105,6 +105,30 @@ quiz:
     explanation: >-
       The bifurcation is usually at the **upper border of the thyroid cartilage (C3–C4)**, in the carotid triangle,
       although it varies.
+  - stem: Which cranial nerve carries afferent signals from the carotid sinus baroreceptor?
+    choices:
+      - Facial nerve (CN VII)
+      - Vagus nerve (CN X)
+      - Glossopharyngeal nerve (CN IX)
+      - Hypoglossal nerve (CN XII)
+      - Accessory nerve (CN XI)
+    answer: C
+    explanation: >-
+      The **carotid sinus** (baroreceptor, at the origin of the ICA) and the **carotid body** (chemoreceptor, at the
+      bifurcation) are both supplied by the **glossopharyngeal nerve (CN IX)**.
+  - stem: >-
+      A 70-year-old had a right-hand weakness TIA 5 days ago. Carotid duplex shows 80% stenosis of the left internal
+      carotid artery. What is the most appropriate management?
+    choices:
+      - Aspirin alone, with repeat ultrasound in 1 year
+      - Warfarin
+      - Observation only
+      - Thrombolysis
+      - Carotid endarterectomy within about 2 weeks, plus antiplatelet and statin therapy
+    answer: E
+    explanation: >-
+      **Symptomatic 70–99% ICA stenosis** is treated with **carotid endarterectomy** (or stenting), ideally **within
+      about 2 weeks**, along with antiplatelet therapy and a statin. A left ICA lesion causes right-sided symptoms.
 flashcards:
   - front: Contents of the carotid sheath?
     back: Common/internal carotid artery (medial), internal jugular vein (lateral), vagus nerve (posterior)

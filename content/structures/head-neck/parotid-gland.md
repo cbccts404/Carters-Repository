@@ -85,6 +85,42 @@ quiz:
     explanation: >-
       Parasympathetic fibers from **CN IX** travel in the lesser petrosal nerve to the otic ganglion, then hitch a ride on
       the auriculotemporal nerve (V3) to the parotid. The facial nerve passes through the gland without supplying it.
+  - stem: Opposite which tooth does the parotid (Stensen) duct open?
+    choices:
+      - Lower first molar
+      - Upper first premolar
+      - Lower central incisor
+      - Upper canine
+      - Upper second molar
+    answer: E
+    explanation: >-
+      The parotid duct crosses masseter, pierces buccinator and opens opposite the **upper second molar**, where pus can
+      be expressed in bacterial parotitis.
+  - stem: >-
+      A year after a parotidectomy, a patient notices sweating and flushing over the cheek whenever he eats. What is
+      this called, and why does it happen?
+    choices:
+      - Frey syndrome; regenerating parasympathetic fibers innervate sweat glands
+      - Horner syndrome; sympathetic fibers are cut
+      - Bell palsy; the facial nerve is inflamed
+      - Sialolithiasis; the duct is blocked
+      - First bite syndrome; the facial nerve regenerates
+    answer: A
+    explanation: >-
+      In **Frey syndrome (gustatory sweating)**, regenerating **parasympathetic** secretomotor fibers of the
+      auriculotemporal nerve grow into the **sweat glands** of the overlying skin, so eating causes sweating and
+      flushing.
+  - stem: What is the pathway of the parasympathetic secretomotor fibers to the parotid gland?
+    choices:
+      - Facial nerve → chorda tympani → submandibular ganglion
+      - Vagus nerve → pharyngeal plexus
+      - Glossopharyngeal nerve → lesser petrosal nerve → otic ganglion → auriculotemporal nerve
+      - Facial nerve → greater petrosal nerve → pterygopalatine ganglion
+      - Sympathetic chain → superior cervical ganglion
+    answer: C
+    explanation: >-
+      Parotid secretomotor fibers come from the **inferior salivatory nucleus (CN IX)** → lesser petrosal nerve → **otic
+      ganglion** → **auriculotemporal nerve (V3)**. The facial nerve passes through the gland but doesn't supply it.
 flashcards:
   - front: Structures within the parotid (superficial → deep)?
     back: Facial nerve, retromandibular vein, external carotid artery

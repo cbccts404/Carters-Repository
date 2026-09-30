@@ -83,6 +83,43 @@ quiz:
     explanation: >-
       The ECA ends in the parotid gland by dividing into the **maxillary** and **superficial temporal** arteries. The
       ophthalmic artery is a branch of the **internal** carotid.
+  - stem: >-
+      An older patient on anticoagulation has heavy epistaxis flowing into the pharynx despite anterior packing. Which
+      artery is the most likely source?
+    choices:
+      - Superior labial artery
+      - Anterior ethmoidal artery
+      - Sphenopalatine artery
+      - Facial artery
+      - Superficial temporal artery
+    answer: C
+    explanation: >-
+      **Posterior epistaxis** comes from the **sphenopalatine artery**, a branch of the **maxillary** (from the external
+      carotid). It may need posterior packing and ligation or embolization. Most anterior bleeds arise from Kiesselbach
+      plexus.
+  - stem: Which cranial nerve passes between the external and internal carotid arteries?
+    choices:
+      - Glossopharyngeal nerve
+      - Hypoglossal nerve
+      - Facial nerve
+      - Vagus nerve
+      - Accessory nerve
+    answer: A
+    explanation: >-
+      The **glossopharyngeal nerve** and stylopharyngeus pass **between** the external and internal carotids. The
+      **hypoglossal nerve** crosses superficially to both, above the bifurcation.
+  - stem: What is the first branch of the external carotid artery?
+    choices:
+      - Lingual artery
+      - Facial artery
+      - Maxillary artery
+      - Superior thyroid artery
+      - Occipital artery
+    answer: D
+    explanation: >-
+      The branches, in order: **S**uperior thyroid, **A**scending pharyngeal, **L**ingual, **F**acial, **O**ccipital,
+      **P**osterior auricular, **S**uperficial temporal and **M**axillary. The internal carotid has no branches in the
+      neck.
 flashcards:
   - front: Eight branches of the external carotid (in order)?
     back: Superior thyroid, ascending pharyngeal, lingual, facial, occipital, posterior auricular, superficial temporal, maxillary

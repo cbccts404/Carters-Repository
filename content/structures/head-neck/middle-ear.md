@@ -99,6 +99,43 @@ quiz:
     explanation: >-
       In **conductive** loss, Weber lateralizes **to** the affected ear and Rinne shows **BC > AC** on that side (e.g.
       cerumen, effusion, otosclerosis). In sensorineural loss, Weber lateralizes to the good ear and AC > BC.
+  - stem: >-
+      A swimmer has ear pain that worsens when the examiner pulls on the auricle or presses the tragus. What is the most
+      likely diagnosis?
+    choices:
+      - Acute otitis media
+      - Mastoiditis
+      - Otitis externa
+      - Cholesteatoma
+      - Temporomandibular joint dysfunction
+    answer: C
+    explanation: >-
+      **Otitis externa** (usually *Pseudomonas* or *S. aureus*) causes pain on **auricle traction or tragal pressure**
+      with canal edema and discharge. Treat with topical antibiotic drops.
+  - stem: >-
+      A 74-year-old man with poorly controlled diabetes has severe ear pain and granulation tissue in the ear canal.
+      Which organism and condition are most likely?
+    choices:
+      - Streptococcus pneumoniae; acute otitis media
+      - Candida; otomycosis
+      - Staphylococcus aureus; furuncle
+      - Moraxella; otitis media with effusion
+      - Pseudomonas aeruginosa; malignant (necrotizing) otitis externa
+    answer: E
+    explanation: >-
+      **Malignant otitis externa** is *Pseudomonas* osteomyelitis of the skull base in diabetic or immunocompromised
+      older adults. It needs IV antipseudomonal antibiotics and imaging.
+  - stem: Paralysis of which middle ear muscle causes hyperacusis in a facial nerve palsy?
+    choices:
+      - Stapedius
+      - Tensor tympani
+      - Tensor veli palatini
+      - Levator veli palatini
+      - Salpingopharyngeus
+    answer: A
+    explanation: >-
+      **Stapedius** (CN VII) dampens loud sounds; its paralysis causes **hyperacusis**. Tensor tympani is supplied by
+      V3.
 flashcards:
   - front: Three ossicles in order?
     back: Malleus → incus → stapes (oval window)

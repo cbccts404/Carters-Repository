@@ -77,6 +77,42 @@ quiz:
       **Bilateral recurrent laryngeal nerve injury** leaves both cords near the midline, narrowing the airway and causing
       **stridor**, while the voice may be relatively preserved. Neck hematoma and hypocalcemic laryngospasm are other
       causes of post-thyroidectomy airway compromise to consider.
+  - stem: The left recurrent laryngeal nerve hooks under which structure?
+    choices:
+      - Aortic arch, just lateral to the ligamentum arteriosum
+      - Left subclavian artery
+      - Left main bronchus only
+      - Left common carotid artery
+      - Pulmonary trunk
+    answer: A
+    explanation: >-
+      The **left** RLN hooks under the **aortic arch** lateral to the ligamentum arteriosum, giving it a thoracic
+      course; the **right** hooks under the right subclavian artery. Thoracic lesions (lung cancer, aneurysm) can
+      therefore cause left-sided hoarseness.
+  - stem: >-
+      After a thyroidectomy, a professional singer can speak normally but can no longer reach high notes. Which nerve
+      was most likely injured?
+    choices:
+      - Recurrent laryngeal nerve
+      - Internal laryngeal nerve
+      - Hypoglossal nerve
+      - External laryngeal nerve
+      - Ansa cervicalis
+    answer: D
+    explanation: >-
+      The **external laryngeal nerve** runs near the **superior thyroid vessels** and supplies **cricothyroid**, which
+      tenses the cords. Injury causes loss of **high pitch** and voice fatigue rather than hoarseness.
+  - stem: A patient with severe mitral stenosis develops hoarseness. What is the most likely mechanism?
+    choices:
+      - Laryngeal edema from heart failure
+      - Vocal cord nodules
+      - An enlarged left atrium compressing the left recurrent laryngeal nerve
+      - Aspiration pneumonia
+      - Hypocalcemia
+    answer: C
+    explanation: >-
+      In **Ortner syndrome**, a massively enlarged **left atrium** (e.g. mitral stenosis) compresses the **left
+      recurrent laryngeal nerve**, which runs near the left atrium and aortopulmonary window.
 flashcards:
   - front: Where does the left recurrent laryngeal nerve loop?
     back: Under the aortic arch (lateral to the ligamentum arteriosum)

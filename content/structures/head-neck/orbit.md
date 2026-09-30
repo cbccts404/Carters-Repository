@@ -91,6 +91,40 @@ quiz:
     explanation: >-
       **Pain with eye movement and ophthalmoplegia** indicate **orbital (postseptal) cellulitis**, usually from ethmoid
       sinusitis. It needs **CT orbits** (to exclude abscess), **IV antibiotics** and ophthalmology/ENT involvement.
+  - stem: Which orbital wall is the thinnest?
+    choices:
+      - Roof (frontal bone)
+      - Lateral wall (zygomatic and greater wing of sphenoid)
+      - Medial wall (lamina papyracea of the ethmoid)
+      - Floor (maxilla)
+    answer: C
+    explanation: >-
+      The **lamina papyracea** of the ethmoid is paper-thin, which is why ethmoid sinusitis spreads to cause orbital
+      cellulitis. The **lateral** wall is the thickest; the floor is also thin and fractures in blowout injuries.
+  - stem: >-
+      After facial trauma, a patient has painful proptosis, a tense orbit, reduced vision and a relative afferent
+      pupillary defect. What is the most urgent intervention?
+    choices:
+      - Lateral canthotomy and cantholysis
+      - CT scan and wait for ophthalmology
+      - Eye patch and oral analgesia
+      - Topical antibiotic
+      - Pupil dilation for fundoscopy
+    answer: A
+    explanation: >-
+      **Retrobulbar hemorrhage** (orbital compartment syndrome) compresses the optic nerve and its blood supply. It is
+      an emergency treated with **lateral canthotomy and cantholysis** to decompress the orbit.
+  - stem: Which vessel passes through the optic canal with the optic nerve?
+    choices:
+      - Superior ophthalmic vein
+      - Ophthalmic artery
+      - Infraorbital artery
+      - Central retinal vein
+      - Middle meningeal artery
+    answer: B
+    explanation: >-
+      The **optic canal** transmits the **optic nerve (CN II)** and the **ophthalmic artery**. The superior orbital
+      fissure transmits CN III, IV, V1 and VI with the superior ophthalmic vein.
 flashcards:
   - front: Weakest walls of the orbit?
     back: Floor (maxilla) and medial wall (lamina papyracea)

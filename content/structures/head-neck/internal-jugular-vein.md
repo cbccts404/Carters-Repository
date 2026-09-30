@@ -81,6 +81,41 @@ quiz:
     explanation: >-
       **Lemierre syndrome** — septic thrombophlebitis of the **internal jugular vein** after pharyngitis (classically
       *Fusobacterium necrophorum*) with **septic pulmonary emboli**.
+  - stem: >-
+      A patient's jugular venous pressure rises during inspiration. Which condition does this Kussmaul sign most
+      classically indicate?
+    choices:
+      - Constrictive pericarditis
+      - Hypovolemia
+      - Left ventricular failure alone
+      - Aortic stenosis
+      - Pulmonary embolism
+    answer: A
+    explanation: >-
+      **Kussmaul sign** (JVP rising with inspiration) classically indicates **constrictive pericarditis** (also
+      restrictive cardiomyopathy and RV infarction). It is classically absent in tamponade.
+  - stem: The internal jugular vein joins the subclavian vein to form the brachiocephalic vein behind which structure?
+    choices:
+      - Angle of the mandible
+      - Thyroid cartilage
+      - Manubriosternal joint
+      - Sternoclavicular joint
+      - Second costal cartilage
+    answer: D
+    explanation: >-
+      The IJ joins the subclavian vein **behind the sternoclavicular joint** to form the brachiocephalic vein. The
+      thoracic duct enters at the left venous angle.
+  - stem: During internal jugular central line placement, which patient position reduces the risk of air embolism?
+    choices:
+      - Sitting upright at 90°
+      - Reverse Trendelenburg
+      - Trendelenburg (head down)
+      - Prone
+      - Left lateral decubitus with the head raised
+    answer: C
+    explanation: >-
+      The **Trendelenburg** position distends the neck veins and keeps their pressure above atmospheric, reducing the
+      risk of **air embolism**. Other complications include carotid puncture, pneumothorax, infection and thrombosis.
 flashcards:
   - front: Where does the IJ begin?
     back: At the jugular foramen as the continuation of the sigmoid sinus
