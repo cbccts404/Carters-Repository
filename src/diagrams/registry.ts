@@ -59,4 +59,16 @@ export const diagrams: Record<string, DiagramMeta> = {
     description:
       'Sagittal schematic (not to scale): the cord ends at about L1–L2, the dural sac at about S2. The needle enters at L3–L4, just above the intercristal line (≈ L4), well below the conus.',
   },
+  'internal-iliac-branches': {
+    title: 'Branches of the internal iliac artery',
+    region: 'pelvis-perineum',
+    description:
+      'Usual branching pattern (it varies between people). Posterior-division branches are dashed; the superior gluteal passes above piriformis, the inferior gluteal and internal pudendal below it. Tap a label to open its page.',
+  },
+  'perineum-triangles': {
+    title: 'Perineum: urogenital and anal triangles',
+    region: 'pelvis-perineum',
+    description:
+      'Inferior view with the patient in lithotomy (anterior at the top). A line between the ischial tuberosities divides the urogenital triangle from the anal triangle; the pudendal canal runs in the lateral wall of each ischioanal fossa.',
+  },
 };

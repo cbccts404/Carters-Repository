@@ -22,7 +22,7 @@
   name: Pelvis & Perineum
   order: 4
   blurb: Bony pelvis, pelvic floor, pelvic viscera, and the urogenital and anal triangles.
-  subregions: [Bony pelvis, Pelvic floor, Pelvic viscera, Perineum]
+  subregions: [Bony pelvis, Pelvic floor, Pelvic viscera, Female reproductive organs, Male reproductive organs, Perineum, Vessels, nerves & lymphatics]
 
 - id: upper-limb
   name: Upper Limb

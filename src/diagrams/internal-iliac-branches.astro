@@ -1,0 +1,77 @@
+---
+/* Original schematic of the internal iliac artery and its usual branching pattern (the real
+   pattern varies considerably between people). Posterior-division branches are dashed. */
+import Label from '../components/Label.astro';
+
+const D = [190, 150]; // division point
+const P = [270, 150]; // posterior division
+const A = [250, 318]; // anterior division
+const post = [
+  { y: 105, text: 'Iliolumbar' },
+  { y: 140, text: 'Lateral sacral' },
+  { y: 175, text: 'Superior gluteal (above piriformis)' },
+];
+const ant = [
+  { y: 212, text: 'Umbilical → superior vesical (bladder)', to: 'urinary-bladder' },
+  { y: 245, text: 'Obturator (→ obturator canal, medial thigh)' },
+  { y: 278, text: 'Inferior vesical ♂ / vaginal ♀' },
+  { y: 311, text: 'Uterine ♀', to: 'uterine-artery' },
+  { y: 344, text: 'Middle rectal', to: 'rectum' },
+  { y: 377, text: 'Internal pudendal', to: 'perineum' },
+  { y: 428, text: 'Inferior gluteal (below piriformis)' },
+];
+---
+
+<div class="scroll">
+  <svg viewBox="0 0 690 490" role="img" aria-labelledby="iia-title iia-desc">
+    <title id="iia-title">Branches of the internal iliac artery</title>
+    <desc id="iia-desc">
+      The common iliac artery divides into the external iliac, which continues to the lower limb, and the internal
+      iliac. The internal iliac divides into a posterior division (iliolumbar, lateral sacral, superior gluteal) and an
+      anterior division (umbilical with superior vesical, obturator, inferior vesical or vaginal, uterine, middle rectal,
+      internal pudendal, inferior gluteal).
+    </desc>
+    <style>
+      .iia-a { stroke: var(--t-artery); stroke-width: 5; stroke-linecap: round; fill: none; }
+      .iia-b { stroke: var(--t-artery); stroke-width: 2.5; stroke-linecap: round; fill: none; }
+      .iia-p { stroke: var(--t-artery); stroke-width: 2.5; stroke-linecap: round; stroke-dasharray: 7 5; fill: none; }
+      .iia-n { fill: var(--bg); stroke: var(--t-artery); stroke-width: 2; }
+    </style>
+
+    <!-- common, external and internal iliac -->
+    <path class="iia-a" d="M40 70 H150"></path>
+    <path class="iia-a" d="M150 70 L250 40 H360"></path>
+    <path class="iia-a" d={`M150 70 L${D[0]} ${D[1]}`}></path>
+
+    <!-- posterior division (dashed) -->
+    <path class="iia-p" d={`M${D[0]} ${D[1]} H${P[0]}`}></path>
+    {post.map((b) => <path class="iia-p" d={`M${P[0]} ${P[1]} L340 ${b.y}`}></path>)}
+
+    <!-- anterior division -->
+    <path class="iia-a" d={`M${D[0]} ${D[1]} L${A[0]} ${A[1]}`}></path>
+    {ant.map((b) => <path class="iia-b" d={`M${A[0]} ${A[1]} L340 ${b.y}`}></path>)}
+
+    <circle class="iia-n" cx="150" cy="70" r="4"></circle>
+    <circle class="iia-n" cx={D[0]} cy={D[1]} r="4"></circle>
+    <circle class="iia-n" cx={P[0]} cy={P[1]} r="4"></circle>
+    <circle class="iia-n" cx={A[0]} cy={A[1]} r="4"></circle>
+
+    <!-- trunk labels -->
+    <Label x={40} y={58} size="sm">Common iliac</Label>
+    <Label x={368} y={45}>External iliac → femoral (lower limb)</Label>
+    <Label x={160} y={124} anchor="end" to="internal-iliac-artery">Internal iliac</Label>
+    <Label x={160} y={138} anchor="end" size="sm">(at L5/S1 disc)</Label>
+    <Label x={196} y={142} size="sm">Posterior div.</Label>
+    <Label x={240} y={336} anchor="end" size="sm">Anterior div.</Label>
+
+    <!-- branch labels -->
+    {post.map((b) => <Label x={348} y={b.y + 4}>{b.text}</Label>)}
+    {ant.map((b) => <Label x={348} y={b.y + 4} to={b.to}>{b.text}</Label>)}
+    <Label x={348} y={393} size="sm">→ inferior rectal, perineal, dorsal/deep a. of penis or clitoris</Label>
+
+    <!-- notes -->
+    <Label x={40} y={458} size="sm">Posterior division mnemonic: "I Love Sex" (Iliolumbar, Lateral sacral, Superior gluteal).</Label>
+    <Label x={40} y={476} size="sm">Obliterated distal umbilical artery = medial umbilical ligament. Branching pattern varies.</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>
