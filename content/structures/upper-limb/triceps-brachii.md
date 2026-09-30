@@ -6,6 +6,7 @@ subregion: Arm
 taName: Musculus triceps brachii
 summary: Three-headed muscle of the posterior arm and the chief extensor of the elbow; supplied by the radial nerve.
 tags: [elbow]
+systems: [musculoskeletal]
 highYield: false
 status: draft
 anatomy:

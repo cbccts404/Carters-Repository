@@ -7,6 +7,7 @@ taName: Tibia
 aka: [Shin bone]
 summary: The weight-bearing medial bone of the leg. Its subcutaneous shaft makes open fractures and compartment syndrome common, and the tibial tuberosity is the site of Osgood–Schlatter disease.
 tags: [leg, fracture, pediatrics]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

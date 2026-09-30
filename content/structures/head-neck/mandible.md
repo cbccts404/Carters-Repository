@@ -7,6 +7,7 @@ taName: Mandibula
 aka: [Lower jaw]
 summary: The lower jaw — the largest facial bone and the only movable bone of the skull. As a ring with the skull base, it often fractures in two places, and the inferior alveolar nerve runs through it.
 tags: [face, trauma, dental]
+systems: [musculoskeletal, eent]
 highYield: false
 status: draft
 anatomy:

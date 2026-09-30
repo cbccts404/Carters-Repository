@@ -7,6 +7,7 @@ taName: Vertebrae thoracicae
 aka: [T-spine]
 summary: Twelve vertebrae that articulate with the ribs. They are the common site of osteoporotic compression fractures, metastases and spinal tuberculosis.
 tags: [spine]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

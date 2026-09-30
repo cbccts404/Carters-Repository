@@ -6,6 +6,7 @@ subregion: Wrist & hand
 taName: Canalis carpi
 summary: Osseofibrous tunnel on the palmar wrist, formed by the carpal bones and the flexor retinaculum, that carries the median nerve and nine long flexor tendons.
 tags: [wrist, carpal-tunnel]
+systems: [musculoskeletal, neurologic]
 highYield: true
 status: draft
 anatomy:

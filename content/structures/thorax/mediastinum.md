@@ -6,6 +6,7 @@ subregion: Mediastinum
 taName: Mediastinum
 summary: Central compartment of the thorax between the pleural cavities, divided into superior and inferior parts. Knowing what is in each compartment leads you to the differential for a mediastinal mass.
 tags: [mediastinum]
+systems: [pulmonary, cardiovascular]
 highYield: true
 status: draft
 anatomy:

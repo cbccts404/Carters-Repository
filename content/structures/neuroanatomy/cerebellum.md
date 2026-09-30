@@ -7,6 +7,7 @@ taName: Cerebellum
 aka: [Cerebellar vermis, Cerebellar peduncles, Dentate nucleus, Cerebellar ataxia]
 summary: Coordinates movement, balance and eye movements. Hemisphere lesions cause ipsilateral limb ataxia, vermis lesions cause truncal and gait ataxia, and cerebellar strokes can swell and compress the brainstem.
 tags: [cerebellum, movement, stroke]
+systems: [neurologic]
 highYield: true
 status: draft
 anatomy:

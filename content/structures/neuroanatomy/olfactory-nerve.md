@@ -7,6 +7,7 @@ taName: Nervus olfactorius
 aka: [CN I, Cranial nerve I, Olfactory bulb, Olfactory tract]
 summary: Special sensory nerve for smell. Its fibers pass through the cribriform plate to the olfactory bulb, so head trauma and anterior fossa tumors cause anosmia.
 tags: [cranial-nerves, special-senses]
+systems: [neurologic, eent]
 highYield: false
 status: draft
 anatomy:

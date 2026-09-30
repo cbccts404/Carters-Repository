@@ -7,6 +7,7 @@ taName: Hypothalamus
 aka: [Supraoptic nucleus, Paraventricular nucleus, Suprachiasmatic nucleus, Mammillary bodies, Diabetes insipidus]
 summary: Small part of the diencephalon that controls the pituitary, autonomic nervous system, temperature, hunger, thirst and circadian rhythm. Its disorders include central diabetes insipidus and craniopharyngioma.
 tags: [cerebrum, endocrine, autonomic]
+systems: [endocrine, neurologic]
 highYield: true
 status: draft
 anatomy:

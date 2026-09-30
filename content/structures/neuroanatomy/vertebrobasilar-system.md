@@ -7,6 +7,7 @@ taName: Arteria basilaris
 aka: [Basilar artery, Posterior circulation, PICA, AICA, Superior cerebellar artery, Subclavian steal syndrome]
 summary: The posterior circulation — the vertebral arteries join to form the basilar artery, which supplies the brainstem, cerebellum and (through the PCAs) the occipital lobes. Its strokes cause vertigo, crossed signs and, with basilar occlusion, coma or locked-in syndrome.
 tags: [cerebral-vessels, stroke, brainstem]
+systems: [neurologic, cardiovascular]
 highYield: true
 status: draft
 anatomy:

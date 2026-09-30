@@ -6,6 +6,7 @@ subregion: Posterior abdominal wall
 taName: Pars abdominalis aortae
 summary: Continuation of the thoracic aorta from the aortic hiatus (T12) to its bifurcation at L4. It supplies the abdominal organs and is the usual site of aortic aneurysm.
 tags: [vascular, posterior-abdominal-wall]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

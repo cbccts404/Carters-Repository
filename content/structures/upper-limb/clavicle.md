@@ -7,6 +7,7 @@ taName: Clavicula
 aka: [Collarbone]
 summary: S-shaped strut connecting the upper limb to the axial skeleton; one of the most commonly fractured bones, usually in its middle third.
 tags: [shoulder]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

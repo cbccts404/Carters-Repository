@@ -7,6 +7,7 @@ taName: Systema limbicum
 aka: [Hippocampus, Amygdala, Cingulate gyrus, Fornix, Papez circuit, Wernicke–Korsakoff syndrome]
 summary: Network of medial temporal and diencephalic structures for memory, emotion and behavior. The hippocampus and mammillary bodies are damaged in Alzheimer disease, Wernicke–Korsakoff syndrome and HSV encephalitis.
 tags: [cerebrum, memory, emotion]
+systems: [neurologic, psychiatric]
 highYield: true
 status: draft
 anatomy:

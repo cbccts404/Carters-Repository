@@ -7,6 +7,7 @@ taName: Musculi faciei
 aka: [Mimetic muscles]
 summary: Thin subcutaneous muscles derived from the second pharyngeal arch and supplied by the facial nerve (CN VII). Their pattern of weakness distinguishes a peripheral facial palsy (Bell palsy) from a stroke.
 tags: [face, facial-nerve]
+systems: [neurologic]
 highYield: true
 status: draft
 anatomy:

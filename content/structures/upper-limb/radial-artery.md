@@ -6,6 +6,7 @@ subregion: Forearm
 taName: Arteria radialis
 summary: Smaller terminal branch of the brachial artery. It is palpated at the wrist, used for ABGs, arterial lines and cardiac catheterization, and forms most of the deep palmar arch.
 tags: [forearm, wrist, hand]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

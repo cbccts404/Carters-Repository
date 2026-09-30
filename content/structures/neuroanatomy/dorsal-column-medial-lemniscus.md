@@ -7,6 +7,7 @@ taName: Funiculus posterior; Lemniscus medialis
 aka: [DCML, Dorsal columns, Posterior columns, Fasciculus gracilis, Fasciculus cuneatus, Medial lemniscus]
 summary: Ascending pathway for fine touch, vibration and proprioception. It runs up the same side of the spinal cord and crosses in the medulla, so cord lesions cause ipsilateral loss and a positive Romberg sign.
 tags: [spinal-tracts, sensation]
+systems: [neurologic]
 highYield: true
 status: draft
 anatomy:

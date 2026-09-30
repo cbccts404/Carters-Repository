@@ -7,6 +7,7 @@ taName: Tuba uterina
 aka: [Fallopian tubes, Oviducts]
 summary: Paired tubes that carry the oocyte from the ovary to the uterus; fertilization usually occurs in the ampulla. They are the most common site of ectopic pregnancy and are damaged by pelvic inflammatory disease.
 tags: [female, obstetrics, gynecology, sti]
+systems: [reproductive]
 highYield: true
 status: draft
 anatomy:

@@ -6,6 +6,7 @@ subregion: Thigh
 taName: Articulatio coxae
 summary: Deep ball-and-socket joint between the femoral head and the acetabulum, built for stability. Osteoarthritis, posterior dislocation, septic arthritis in children and developmental dysplasia are the high-yield topics.
 tags: [hip, pediatrics, arthritis]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

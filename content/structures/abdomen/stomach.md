@@ -6,6 +6,7 @@ subregion: GI viscera
 taName: Gaster
 summary: J-shaped dilated foregut organ in the upper abdomen, supplied by all three branches of the celiac trunk. Peptic ulcers, gastric cancer and pyloric stenosis are its key clinical problems.
 tags: [gi, foregut]
+systems: [gastrointestinal]
 highYield: true
 status: draft
 anatomy:

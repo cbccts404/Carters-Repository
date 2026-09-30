@@ -7,6 +7,7 @@ taName: Circulus arteriosus cerebri
 aka: [Cerebral arterial circle, Anterior communicating artery, Posterior communicating artery, Berry aneurysm, Saccular aneurysm]
 summary: Arterial ring at the base of the brain joining the carotid (anterior) and vertebrobasilar (posterior) circulations. It provides collateral flow, and its branch points are where berry aneurysms form.
 tags: [cerebral-vessels, aneurysm, stroke]
+systems: [neurologic, cardiovascular]
 highYield: true
 status: draft
 anatomy:

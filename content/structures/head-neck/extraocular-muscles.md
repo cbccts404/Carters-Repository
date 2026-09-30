@@ -7,6 +7,7 @@ taName: Musculi externi bulbi oculi
 aka: [Rectus muscles, Oblique muscles, EOMs]
 summary: Six muscles that move each eye — four recti and two obliques — supplied by CN III, IV and VI (LR6 SO4, the rest 3). Testing them in the "H" pattern localizes cranial nerve palsies.
 tags: [orbit, eye, cranial-nerves]
+systems: [eent, neurologic]
 highYield: true
 status: draft
 anatomy:

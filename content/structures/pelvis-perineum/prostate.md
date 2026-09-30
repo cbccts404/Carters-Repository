@@ -6,6 +6,7 @@ subregion: Male reproductive organs
 taName: Prostata
 summary: Walnut-sized gland around the prostatic urethra below the bladder. BPH arises in the transition zone and carcinoma mostly in the peripheral zone, which is the part felt on digital rectal exam.
 tags: [genitourinary, male, oncology]
+systems: [genitourinary]
 highYield: true
 status: draft
 anatomy:

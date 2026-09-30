@@ -7,6 +7,7 @@ taName: Articulatio temporomandibularis
 aka: [TMJ, Jaw joint]
 summary: Synovial joint between the mandibular condyle and the temporal bone, divided by an articular disc into two compartments that allow hinging and gliding. TMJ disorders and anterior dislocation are common.
 tags: [face, dental, pain]
+systems: [musculoskeletal, eent]
 highYield: false
 status: draft
 anatomy:

@@ -162,6 +162,8 @@ a.card:hover { border-color: var(--accent); }
   border: 1px solid currentColor; white-space: nowrap; vertical-align: middle;
 }
 .badge.hy { color: var(--bad); }
+.badge.system { color: var(--accent); text-decoration: none; }
+.badge.system:hover { background: var(--accent-soft); }
 .badge.stub, .badge.draft { color: var(--muted); }
 .badge.reviewed { color: var(--good); }
 .t-bone { --t: var(--t-bone); } .t-muscle { --t: var(--t-muscle); } .t-nerve { --t: var(--t-nerve); }
@@ -414,3 +416,14 @@ ul.plain li { padding: 4px 0; }
 }
 .vf-report { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; }
 .vf-export { margin: 18px 0 8px; }
+
+/* diagram quiz */
+.dq-stage .diagram-tools, .dq-stage figcaption { display: none; }
+.dq-stage .fig { margin: 10px 0; }
+.dq-prompt { margin: 12px 0 0; font-weight: 600; }
+.dq-stage text.dq-hidden { fill: transparent !important; }
+.dq-stage .dq-mask { fill: color-mix(in srgb, var(--accent) 30%, var(--surface)); stroke: var(--accent); stroke-width: 2; animation: dq-pulse 1.4s ease-in-out infinite; }
+.dq-stage text.dq-revealed { fill: var(--good) !important; font-weight: 700; }
+@keyframes dq-pulse { 50% { stroke-width: 4; } }
+@media (prefers-reduced-motion: reduce) { .dq-stage .dq-mask { animation: none; } }
+.dq-q { margin-top: 6px; }

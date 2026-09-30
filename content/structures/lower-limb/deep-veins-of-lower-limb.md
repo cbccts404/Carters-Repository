@@ -7,6 +7,7 @@ taName: Venae profundae membri inferioris
 aka: [Femoral vein, Popliteal vein, Tibial veins, Soleal veins]
 summary: Paired deep veins that accompany the leg arteries and join to form the popliteal and femoral veins. They carry most venous return, helped by the calf muscle pump, and are where DVT forms.
 tags: [vascular, venous, thrombosis]
+systems: [cardiovascular, hematologic]
 highYield: true
 status: draft
 anatomy:

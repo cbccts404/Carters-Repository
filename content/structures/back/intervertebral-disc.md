@@ -7,6 +7,7 @@ taName: Discus intervertebralis
 aka: [Disc herniation, Herniated nucleus pulposus, Sciatica]
 summary: Fibrocartilaginous joint between vertebral bodies, made of a tough anulus fibrosus around a gel-like nucleus pulposus. Lumbar disc herniation at L4–L5 or L5–S1 causes sciatica.
 tags: [spine, low-back-pain, radiculopathy]
+systems: [musculoskeletal, neurologic]
 highYield: true
 status: draft
 anatomy:

@@ -7,6 +7,7 @@ taName: Musculi rhomboidei major et minor
 aka: [Rhomboids, Dorsal scapular nerve]
 summary: Two flat muscles between the upper thoracic spine and the medial border of the scapula that retract the scapula. They are supplied by the dorsal scapular nerve (C5).
 tags: [back, shoulder]
+systems: [musculoskeletal]
 highYield: false
 status: draft
 anatomy:

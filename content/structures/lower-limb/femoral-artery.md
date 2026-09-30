@@ -6,6 +6,7 @@ subregion: Thigh
 taName: Arteria femoralis
 summary: Continuation of the external iliac artery below the inguinal ligament and the main artery of the lower limb. Its groin pulse is a key exam site and the usual access for catheterization; the superficial femoral segment is the classic site of claudication-causing atherosclerosis.
 tags: [thigh, vascular, peripheral-artery-disease]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

@@ -7,6 +7,7 @@ taName: Plexus cervicalis
 aka: [Ansa cervicalis, Great auricular nerve, Lesser occipital nerve, Supraclavicular nerves]
 summary: Network of the C1–C4 ventral rami deep to sternocleidomastoid. It gives cutaneous branches to the neck and ear, the ansa cervicalis to the strap muscles, and most importantly the phrenic nerve (C3–C5) to the diaphragm.
 tags: [neck, nerve-block, diaphragm]
+systems: [neurologic]
 highYield: true
 status: draft
 anatomy:

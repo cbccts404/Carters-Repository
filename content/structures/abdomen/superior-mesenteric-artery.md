@@ -7,6 +7,7 @@ taName: Arteria mesenterica superior
 aka: [SMA]
 summary: Artery of the midgut, arising from the aorta at L1 behind the pancreas. Its occlusion causes acute mesenteric ischemia, and its angle with the aorta explains SMA and nutcracker syndromes.
 tags: [vascular, midgut]
+systems: [cardiovascular, gastrointestinal]
 highYield: true
 status: draft
 anatomy:

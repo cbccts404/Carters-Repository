@@ -7,6 +7,7 @@ taName: Ramus circumflexus arteriae coronariae sinistrae
 aka: [LCx, Left circumflex artery]
 summary: Branch of the left coronary artery in the left atrioventricular groove that supplies the lateral wall of the left ventricle and the left atrium; its occlusion causes lateral (and sometimes posterior) MI.
 tags: [heart, coronary, cardiology]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

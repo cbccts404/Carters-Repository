@@ -7,6 +7,7 @@ taName: Fossa cubitalis
 aka: [Antecubital fossa]
 summary: Triangular depression on the anterior elbow containing the biceps tendon, brachial artery and median nerve. It is the usual site for venipuncture and blood pressure auscultation.
 tags: [elbow]
+systems: [musculoskeletal, cardiovascular]
 highYield: true
 status: draft
 anatomy:

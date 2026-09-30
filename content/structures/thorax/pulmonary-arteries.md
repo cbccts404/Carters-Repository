@@ -7,6 +7,7 @@ taName: Truncus pulmonalis; arteriae pulmonales dextra et sinistra
 aka: [Pulmonary trunk, Right pulmonary artery, Left pulmonary artery]
 summary: The pulmonary trunk and its right and left branches carry deoxygenated blood from the right ventricle to the lungs. They're where pulmonary emboli lodge.
 tags: [lungs, vascular]
+systems: [pulmonary, cardiovascular]
 highYield: true
 status: draft
 anatomy:

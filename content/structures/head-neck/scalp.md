@@ -6,6 +6,7 @@ subregion: Face & scalp
 taName: Scalpus
 summary: Five-layered soft tissue covering the skull vault. Its rich blood supply makes lacerations bleed heavily, and its loose areolar "danger layer" lets infection spread into the skull.
 tags: [scalp, trauma]
+systems: [dermatologic]
 highYield: false
 status: draft
 anatomy:

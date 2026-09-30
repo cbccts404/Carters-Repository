@@ -6,6 +6,7 @@ subregion: Pleura & lungs
 taName: Pulmones
 summary: Paired organs of respiration. The right lung has three lobes and the left has two plus the lingula; lobe location drives exam findings and imaging signs.
 tags: [lungs]
+systems: [pulmonary]
 highYield: true
 status: draft
 anatomy:

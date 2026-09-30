@@ -7,6 +7,7 @@ taName: Valva atrioventricularis sinistra
 aka: [Bicuspid valve, Left atrioventricular valve]
 summary: Two-leaflet valve between the left atrium and left ventricle, anchored by chordae tendineae to two papillary muscles. Mitral stenosis, regurgitation and prolapse are heard best at the apex.
 tags: [heart, valves, murmurs]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

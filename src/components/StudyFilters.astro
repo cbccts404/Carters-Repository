@@ -1,0 +1,64 @@
+---
+/**
+ * Region and PANCE body-system pickers shared by the quiz and flashcard pages.
+ * Every box starts checked; a ?system=<id> or ?region=<id> link narrows the
+ * matching group to that one choice (handled by the page script via applyUrlFilters()).
+ */
+import { BODY_SYSTEMS, SYSTEM_LABELS, loadAtlas, type Structure } from '../lib/atlas';
+
+interface Props {
+  count: (s: Structure) => number; // items (questions or cards) an entry contributes
+}
+const { count } = Astro.props;
+const atlas = await loadAtlas();
+const sum = (list: Structure[]) => list.reduce((n, s) => n + count(s), 0);
+const regions = atlas.regions
+  .map((r) => ({ id: r.id, name: r.data.name, n: sum(atlas.structures.filter((s) => s.data.region === r.id)) }))
+  .filter((r) => r.n > 0);
+const systems = BODY_SYSTEMS.map((sy) => ({
+  id: sy,
+  name: SYSTEM_LABELS[sy][0],
+  n: sum(atlas.structures.filter((s) => s.data.systems.includes(sy))),
+})).filter((x) => x.n > 0);
+---
+
+<fieldset data-group="region">
+  <legend>Regions</legend>
+  <div class="region-picks">
+    {
+      regions.map((r) => (
+        <label class="pick">
+          <input type="checkbox" name="region" value={r.id} checked />
+          <span>{r.name}</span>
+          <span class="muted small">{r.n}</span>
+        </label>
+      ))
+    }
+  </div>
+  <p class="small">
+    <button type="button" class="linkish" data-all="1">Select all</button>
+    <span class="muted" aria-hidden="true">&nbsp;·&nbsp;</span>
+    <button type="button" class="linkish" data-all="0">Clear</button>
+  </p>
+</fieldset>
+
+<fieldset data-group="system">
+  <legend>Body systems (PANCE)</legend>
+  <div class="region-picks">
+    {
+      systems.map((x) => (
+        <label class="pick">
+          <input type="checkbox" name="system" value={x.id} checked />
+          <span>{x.name}</span>
+          <span class="muted small">{x.n}</span>
+        </label>
+      ))
+    }
+  </div>
+  <p class="small">
+    <button type="button" class="linkish" data-all="1">Select all</button>
+    <span class="muted" aria-hidden="true">&nbsp;·&nbsp;</span>
+    <button type="button" class="linkish" data-all="0">Clear</button>
+  </p>
+  <p class="small muted">An entry can belong to more than one system (e.g. carotid arteries: cardiovascular and neurologic).</p>
+</fieldset>

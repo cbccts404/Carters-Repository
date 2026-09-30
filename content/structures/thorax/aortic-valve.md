@@ -6,6 +6,7 @@ subregion: Heart & pericardium
 taName: Valva aortae
 summary: Three-cusped semilunar valve between the left ventricle and the aorta. Aortic stenosis and regurgitation are among the most tested murmurs.
 tags: [heart, valves, murmurs]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

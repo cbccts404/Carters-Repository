@@ -6,6 +6,7 @@ subregion: Female reproductive organs
 taName: Vagina
 summary: Fibromuscular canal from the cervix to the vestibule. Its fornices, relations and split nerve and lymph supply matter for pelvic exams, vaginitis, prolapse and cancer spread.
 tags: [female, gynecology, sti]
+systems: [reproductive]
 highYield: true
 status: draft
 anatomy:

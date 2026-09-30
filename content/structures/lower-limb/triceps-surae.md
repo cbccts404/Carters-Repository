@@ -7,6 +7,7 @@ taName: Musculus triceps surae; Tendo calcaneus
 aka: [Gastrocnemius and soleus, Calf muscles, Achilles tendon]
 summary: Gastrocnemius and soleus form the calf and insert via the Achilles tendon on the calcaneus to plantarflex the ankle. They carry the S1 ankle reflex; Achilles rupture and tendinopathy are common.
 tags: [leg, ankle, sports-medicine]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

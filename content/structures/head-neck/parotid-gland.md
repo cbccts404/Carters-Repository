@@ -6,6 +6,7 @@ subregion: Face & scalp
 taName: Glandula parotidea
 summary: The largest salivary gland, in front of the ear, with the facial nerve branching through it. Mumps, bacterial parotitis, stones and tumors (most often pleomorphic adenoma) are its key problems.
 tags: [salivary, face, oncology]
+systems: [eent]
 highYield: true
 status: draft
 anatomy:

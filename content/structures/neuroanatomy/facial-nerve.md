@@ -7,6 +7,7 @@ taName: Nervus facialis
 aka: [CN VII, Cranial nerve VII, Bell palsy, Chorda tympani, Nervus intermedius]
 summary: Motor to the muscles of facial expression, with taste from the anterior tongue and parasympathetic supply to the lacrimal and submandibular/sublingual glands. Whether the forehead is spared separates a central (stroke) from a peripheral (Bell) palsy.
 tags: [cranial-nerves, face]
+systems: [neurologic, eent]
 highYield: true
 status: draft
 anatomy:

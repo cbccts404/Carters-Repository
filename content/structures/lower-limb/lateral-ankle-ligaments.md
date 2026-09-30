@@ -7,6 +7,7 @@ taName: Ligamentum collaterale laterale articulationis talocruralis
 aka: [ATFL, CFL, PTFL, Lateral collateral ligament of the ankle]
 summary: Three ligaments from the lateral malleolus — anterior talofibular, calcaneofibular and posterior talofibular — that resist inversion. The ATFL is the most commonly injured ligament in the body.
 tags: [ankle, sports-medicine]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

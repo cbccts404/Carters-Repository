@@ -7,6 +7,7 @@ taName: Vena cava superior
 aka: [SVC]
 summary: Large vein returning blood from the head, neck, upper limbs and upper thorax to the right atrium. It is the site of SVC syndrome and the target position for central venous catheter tips.
 tags: [mediastinum, vascular, procedures]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

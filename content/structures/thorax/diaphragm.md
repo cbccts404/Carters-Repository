@@ -6,6 +6,7 @@ subregion: Thoracic wall
 taName: Diaphragma
 summary: Dome-shaped musculotendinous partition between the thorax and abdomen. It is the main muscle of inspiration and is supplied by the phrenic nerves (C3–C5).
 tags: [thoracic-wall, respiration]
+systems: [pulmonary, gastrointestinal]
 highYield: true
 status: draft
 anatomy:

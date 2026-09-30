@@ -1,16 +1,10 @@
 ---
 import Base from '../layouts/Base.astro';
+import StudyFilters from '../components/StudyFilters.astro';
 import { loadAtlas, url } from '../lib/atlas';
 
 const atlas = await loadAtlas();
-const regions = atlas.regions
-  .map((r) => ({
-    id: r.id,
-    name: r.data.name,
-    total: atlas.structures.filter((s) => s.data.region === r.id).reduce((n, s) => n + s.data.flashcards.length, 0),
-  }))
-  .filter((r) => r.total > 0);
-const total = regions.reduce((n, r) => n + r.total, 0);
+const total = atlas.structures.reduce((n, s) => n + s.data.flashcards.length, 0);
 ---
 
 <Base title="Flashcards" description="Anatomy flashcards with spaced repetition.">
@@ -26,25 +20,7 @@ const total = regions.reduce((n, r) => n + r.total, 0);
     </p>
 
     <form id="fc-form" class="quiz-setup">
-      <fieldset>
-        <legend>Regions</legend>
-        <div class="region-picks">
-          {
-            regions.map((r) => (
-              <label class="pick">
-                <input type="checkbox" name="region" value={r.id} checked />
-                <span>{r.name}</span>
-                <span class="muted small">{r.total}</span>
-              </label>
-            ))
-          }
-        </div>
-        <p class="small">
-          <button type="button" class="linkish" data-all="1">Select all</button>
-          <span class="muted" aria-hidden="true">&nbsp;·&nbsp;</span>
-          <button type="button" class="linkish" data-all="0">Clear</button>
-        </p>
-      </fieldset>
+      <StudyFilters count={(s) => s.data.flashcards.length} />
 
       <fieldset>
         <legend>Cards</legend>
@@ -118,12 +94,14 @@ const total = regions.reduce((n, r) => n + r.total, 0);
 </Base>
 
 <script>
+  import { applyUrlFilters, labels, matches, selected, wireSelectAll } from '../scripts/filters';
   import { isDue, loadProgress, MASTERED_BOX, recordCard, resetCardProgress } from '../scripts/progress';
 
   interface Card {
     id: string;
     entry: string;
     region: string;
+    systems: string[];
     highYield: boolean;
     url: string;
     front: string;
@@ -132,12 +110,7 @@ const total = regions.reduce((n, r) => n + r.total, 0);
 
   const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
   const form = $<HTMLFormElement>('fc-form');
-  const regionNames = new Map(
-    [...form.querySelectorAll<HTMLInputElement>('input[name=region]')].map((i) => [
-      i.value,
-      i.closest('label')!.querySelector('span')!.textContent!,
-    ]),
-  );
+  const regionNames = labels(form, 'region');
   const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
   const REQUEUE_GAP = 4; // a missed card comes back after this many other cards
 
@@ -160,20 +133,16 @@ const total = regions.reduce((n, r) => n + r.total, 0);
 
   function settings() {
     const fd = new FormData(form);
-    return {
-      regions: fd.getAll('region') as string[],
-      mode: String(fd.get('mode')),
-      hy: fd.get('hy') === 'on',
-      n: Number(fd.get('n')),
-    };
+    return { mode: String(fd.get('mode')), n: Number(fd.get('n')) };
   }
 
   function pool() {
-    const { regions, mode, hy } = settings();
+    const { mode } = settings();
+    const sel = selected(form);
     const cards = loadProgress().cards;
     const now = Date.now();
     return deck.filter((c) => {
-      if (!regions.includes(c.region) || (hy && !c.highYield)) return false;
+      if (!matches(c, sel)) return false;
       const r = cards[c.id];
       if (mode === 'due') return isDue(r, now);
       if (mode === 'again') return !!r && r.box === 0;
@@ -185,7 +154,7 @@ const total = regions.reduce((n, r) => n + r.total, 0);
     if (!deck.length) return;
     const { mode } = settings();
     const n = pool().length;
-    const none = mode === 'due' ? 'Nothing is due in these regions — come back later or pick "All cards".' : 'No cards match these settings.';
+    const none = mode === 'due' ? 'Nothing is due for this selection — come back later or pick "All cards".' : 'No cards match these settings.';
     $('avail').textContent = n ? `${n} card${n === 1 ? '' : 's'} ${mode === 'due' ? 'due' : 'match'}` : none;
     $<HTMLButtonElement>('start-btn').disabled = n === 0;
   }
@@ -321,12 +290,8 @@ const total = regions.reduce((n, r) => n + r.total, 0);
     e.preventDefault();
     if (pool().length) start();
   });
-  for (const b of form.querySelectorAll<HTMLButtonElement>('[data-all]')) {
-    b.addEventListener('click', () => {
-      for (const i of form.querySelectorAll<HTMLInputElement>('input[name=region]')) i.checked = b.dataset.all === '1';
-      updateAvailable();
-    });
-  }
+  wireSelectAll(form, updateAvailable);
+  applyUrlFilters(form);
   $('card').addEventListener('click', (e) => {
     if ((e.target as HTMLElement).closest('a')) return; // let cross-links inside a card work
     flip();

@@ -7,6 +7,7 @@ taName: Cauda equina
 aka: [Cauda equina syndrome, Conus medullaris syndrome]
 summary: Bundle of lumbar and sacral nerve roots descending in the lumbar cistern below the end of the spinal cord. Compression causes cauda equina syndrome, a surgical emergency.
 tags: [spine, neuro, emergency]
+systems: [neurologic, musculoskeletal]
 highYield: true
 status: draft
 anatomy:

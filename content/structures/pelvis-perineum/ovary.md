@@ -6,6 +6,7 @@ subregion: Female reproductive organs
 taName: Ovarium
 summary: Paired almond-shaped gonads on the lateral pelvic wall that produce oocytes and sex hormones. Their blood supply comes from the aorta, which explains torsion, and their lymph drains to the para-aortic nodes.
 tags: [female, gynecology, oncology]
+systems: [reproductive]
 highYield: true
 status: draft
 anatomy:

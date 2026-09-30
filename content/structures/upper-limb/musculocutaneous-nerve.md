@@ -6,6 +6,7 @@ subregion: Arm
 taName: Nervus musculocutaneus
 summary: Lateral cord branch that pierces coracobrachialis, supplies the anterior arm muscles, and ends as the lateral cutaneous nerve of the forearm.
 tags: [brachial-plexus]
+systems: [neurologic, musculoskeletal]
 highYield: false
 status: draft
 anatomy:

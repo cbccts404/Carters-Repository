@@ -6,6 +6,7 @@ subregion: Male reproductive organs
 taName: Penis
 summary: Male copulatory and urinary organ made of three erectile bodies — two corpora cavernosa and the corpus spongiosum around the urethra. Erectile dysfunction, priapism, penile fracture and phimosis/paraphimosis are its key problems.
 tags: [male, genitourinary, emergency]
+systems: [genitourinary]
 highYield: true
 status: draft
 anatomy:

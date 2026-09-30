@@ -7,6 +7,7 @@ taName: Trigonum femorale
 aka: [Scarpa triangle]
 summary: Triangular region of the upper anterior thigh containing the femoral nerve, artery, vein and canal. It is the site of the femoral pulse, arterial and venous access, and femoral hernias.
 tags: [thigh, groin, vascular-access, hernia]
+systems: [cardiovascular, musculoskeletal]
 highYield: true
 status: draft
 anatomy:

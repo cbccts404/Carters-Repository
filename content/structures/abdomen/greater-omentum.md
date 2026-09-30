@@ -6,6 +6,7 @@ subregion: Peritoneum
 taName: Omentum majus
 summary: Fatty, apron-like peritoneal fold hanging from the greater curvature of the stomach. It limits the spread of infection and is a common site of peritoneal metastases.
 tags: [peritoneum]
+systems: [gastrointestinal]
 highYield: false
 status: draft
 anatomy:

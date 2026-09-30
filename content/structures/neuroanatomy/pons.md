@@ -7,6 +7,7 @@ taName: Pons
 aka: [Locked-in syndrome, Osmotic demyelination syndrome, Central pontine myelinolysis, PPRF]
 summary: Middle part of the brainstem that links the cerebrum to the cerebellum. It holds the nuclei of CN V–VIII and horizontal gaze centers; basilar artery occlusion causes locked-in syndrome.
 tags: [brainstem, eye-movements, stroke]
+systems: [neurologic]
 highYield: true
 status: draft
 anatomy:

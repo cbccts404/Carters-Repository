@@ -6,6 +6,7 @@ subregion: Muscles of the back
 taName: Musculus trapezius
 summary: Large superficial triangular muscle of the upper back and neck that elevates, retracts and rotates the scapula. It is supplied by the spinal accessory nerve (CN XI), whose injury causes a drooping shoulder and lateral winging.
 tags: [back, shoulder, cranial-nerves]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

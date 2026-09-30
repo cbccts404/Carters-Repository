@@ -7,6 +7,7 @@ taName: Arteria cerebri anterior, media et posterior
 aka: [Anterior cerebral artery, Middle cerebral artery, Posterior cerebral artery, ACA, MCA, PCA, Stroke syndromes, Ischemic stroke]
 summary: The three paired arteries that supply the cerebral hemispheres. Each territory gives a recognizable stroke syndrome; the MCA is the most commonly affected.
 tags: [cerebral-vessels, stroke, emergency]
+systems: [neurologic, cardiovascular]
 highYield: true
 status: draft
 anatomy:

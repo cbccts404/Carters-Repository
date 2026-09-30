@@ -7,6 +7,7 @@ taName: Spatium superficiale perinei; Spatium profundum perinei
 aka: [Superficial perineal pouch, Deep perineal pouch, Urogenital diaphragm (older term)]
 summary: Two fascial compartments of the urogenital triangle, separated by the perineal membrane. Their fascial attachments determine where urine spreads after urethral injury and how Fournier gangrene tracks.
 tags: [perineum, trauma, urethra]
+systems: [genitourinary, reproductive]
 highYield: true
 status: draft
 anatomy:

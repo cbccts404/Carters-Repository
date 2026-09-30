@@ -6,6 +6,7 @@ subregion: Muscles of the back
 taName: Musculus latissimus dorsi
 summary: Broad flat muscle of the lower back that extends, adducts and medially rotates the arm. It is supplied by the thoracodorsal nerve and forms the posterior axillary fold.
 tags: [back, shoulder]
+systems: [musculoskeletal]
 highYield: false
 status: draft
 anatomy:

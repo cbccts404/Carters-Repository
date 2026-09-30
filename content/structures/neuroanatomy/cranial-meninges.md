@@ -7,6 +7,7 @@ taName: Meninges encephali
 aka: [Dura mater, Arachnoid mater, Pia mater, Epidural hematoma, Subdural hematoma, Subarachnoid hemorrhage, Meningitis, Falx cerebri, Tentorium cerebelli]
 summary: Three membranes — dura, arachnoid and pia — that cover the brain and define the epidural, subdural and subarachnoid spaces. Each space has its own classic bleed and CT appearance.
 tags: [meninges, trauma, emergency]
+systems: [neurologic, infectious]
 highYield: true
 status: draft
 anatomy:

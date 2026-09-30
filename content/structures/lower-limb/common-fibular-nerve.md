@@ -7,6 +7,7 @@ taName: Nervus fibularis communis
 aka: [Common peroneal nerve, Peroneal nerve]
 summary: Lateral terminal branch of the sciatic nerve that winds around the fibular neck — the most commonly injured nerve of the lower limb. Injury causes foot drop and numbness of the dorsum of the foot.
 tags: [knee, leg, nerve-injury, foot-drop]
+systems: [neurologic, musculoskeletal]
 highYield: true
 status: draft
 anatomy:

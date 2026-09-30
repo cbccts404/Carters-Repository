@@ -6,6 +6,7 @@ subregion: Axilla
 taName: Arteria axillaris
 summary: Continuation of the subclavian artery through the axilla, divided into three parts by pectoralis minor, with six named branches.
 tags: [axilla]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

@@ -7,6 +7,7 @@ taName: Nervus opticus
 aka: [CN II, Cranial nerve II, Optic chiasm, Optic tract, Optic radiation, Visual pathway, Meyer loop]
 summary: Carries vision from the retina to the occipital cortex through the chiasm, tracts and radiations. The pattern of a visual field defect localizes the lesion, and CN II is the afferent limb of the pupillary light reflex.
 tags: [cranial-nerves, special-senses, visual-fields]
+systems: [eent, neurologic]
 highYield: true
 status: draft
 anatomy:

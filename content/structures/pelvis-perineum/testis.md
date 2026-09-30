@@ -7,6 +7,7 @@ taName: Testis; Epididymis
 aka: [Testicle]
 summary: Paired male gonads in the scrotum with the epididymis along their back. Torsion is a surgical emergency, and aortic blood supply plus para-aortic lymph drainage reflect the testis's descent from the abdomen.
 tags: [male, genitourinary, emergency, oncology]
+systems: [genitourinary]
 highYield: true
 status: draft
 anatomy:

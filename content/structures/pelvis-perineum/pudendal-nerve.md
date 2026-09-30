@@ -6,6 +6,7 @@ subregion: Vessels, nerves & lymphatics
 taName: Nervus pudendus
 summary: Main somatic nerve of the perineum (S2–S4), supplying the external anal and urethral sphincters, the perineal muscles and perineal skin. It is blocked at the ischial spine in labor and can be stretched in childbirth or entrapped in cyclists.
 tags: [perineum, continence, sacral-plexus]
+systems: [neurologic]
 highYield: true
 status: draft
 anatomy:

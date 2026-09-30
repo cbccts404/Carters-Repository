@@ -6,6 +6,7 @@ subregion: Muscles of the back
 taName: Musculus levator scapulae
 summary: Strap-like muscle from the upper cervical transverse processes to the superior angle of the scapula. It elevates the scapula and is a frequent source of neck and shoulder stiffness.
 tags: [back, neck, shoulder]
+systems: [musculoskeletal]
 highYield: false
 status: draft
 anatomy:

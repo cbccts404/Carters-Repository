@@ -6,6 +6,7 @@ subregion: Neck
 taName: Glandulae parathyroideae
 summary: Usually four small endocrine glands on the back of the thyroid that secrete parathyroid hormone. They are important in hypercalcemia (primary hyperparathyroidism) and in hypocalcemia after thyroid surgery.
 tags: [endocrine, neck, calcium]
+systems: [endocrine]
 highYield: true
 status: draft
 anatomy:

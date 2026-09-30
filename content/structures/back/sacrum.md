@@ -7,6 +7,7 @@ taName: Os sacrum et os coccygis
 aka: [Sacrum, Coccyx, Tailbone, Sacral hiatus]
 summary: The fused sacral vertebrae form the posterior wall of the pelvis and articulate with the ilia at the sacroiliac joints; the coccyx is the vestigial tail. The sacral hiatus is the route for caudal epidural block.
 tags: [spine, pelvis]
+systems: [musculoskeletal]
 highYield: false
 status: draft
 anatomy:

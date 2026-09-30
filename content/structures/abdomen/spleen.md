@@ -6,6 +6,7 @@ subregion: Accessory organs
 taName: Splen (lien)
 summary: Intraperitoneal lymphoid organ in the left upper quadrant under ribs 9–11. It is the organ most often injured in blunt abdominal trauma, and asplenia predisposes to infection with encapsulated bacteria.
 tags: [lymphoid, trauma]
+systems: [hematologic]
 highYield: true
 status: draft
 anatomy:

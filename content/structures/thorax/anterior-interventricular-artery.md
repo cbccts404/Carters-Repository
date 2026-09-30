@@ -7,6 +7,7 @@ taName: Ramus interventricularis anterior
 aka: [LAD, Left anterior descending artery]
 summary: Branch of the left coronary artery in the anterior interventricular groove. It supplies the anterior LV wall, the anterior two-thirds of the septum and the apex, and is the most commonly occluded coronary artery.
 tags: [heart, coronary, cardiology, cabg]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

@@ -7,6 +7,7 @@ taName: Musculi adductores
 aka: [Hip adductors, Medial thigh muscles, Groin muscles]
 summary: Medial compartment muscles — adductor longus, brevis and magnus, gracilis, pectineus and obturator externus — that adduct the hip. They are supplied mostly by the obturator nerve, and adductor strains are the classic "groin pull".
 tags: [thigh, groin-pain, obturator-nerve]
+systems: [musculoskeletal]
 highYield: false
 status: draft
 anatomy:

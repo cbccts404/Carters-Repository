@@ -7,6 +7,7 @@ taName: Vena portae hepatis
 aka: [Portal vein, Portal system, Portosystemic anastomoses]
 summary: Carries nutrient-rich venous blood from the GI tract, spleen and pancreas to the liver. In portal hypertension its anastomoses with systemic veins cause varices, caput medusae and rectal varices.
 tags: [vascular, hepatobiliary, portal-hypertension]
+systems: [gastrointestinal, cardiovascular]
 highYield: true
 status: draft
 anatomy:

@@ -7,6 +7,7 @@ taName: Diaphragma pelvis
 aka: [Pelvic floor, Levator ani and coccygeus]
 summary: Funnel-shaped muscular floor of the pelvis formed by levator ani and coccygeus. It supports the pelvic organs and maintains urinary and fecal continence; its weakening underlies pelvic organ prolapse and stress incontinence.
 tags: [pelvic-floor, continence, prolapse]
+systems: [genitourinary, reproductive, musculoskeletal]
 highYield: true
 status: draft
 anatomy:

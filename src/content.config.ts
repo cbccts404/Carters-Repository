@@ -28,6 +28,13 @@ export const STRUCTURE_TYPES = [
 ] as const;
 export type StructureType = (typeof STRUCTURE_TYPES)[number];
 
+/** Organ-system categories of the NCCPA PANCE content blueprint, used to study by system. */
+export const BODY_SYSTEMS = [
+  'cardiovascular', 'dermatologic', 'endocrine', 'eent', 'gastrointestinal', 'genitourinary', 'hematologic',
+  'infectious', 'musculoskeletal', 'neurologic', 'psychiatric', 'pulmonary', 'renal', 'reproductive',
+] as const;
+export type BodySystem = (typeof BODY_SYSTEMS)[number];
+
 // ---------- type-specific "Core anatomy" blocks ----------
 // strictObject = unknown keys are an error, so a misspelled field name fails
 // the build instead of silently disappearing.
@@ -176,6 +183,7 @@ const baseFields = {
   aka: z.array(z.string()).default([]),       // synonyms / eponyms (searchable)
   summary: z.string(),                        // one-line description
   tags: z.array(z.string()).default([]),
+  systems: z.array(z.enum(BODY_SYSTEMS)).min(1, 'assign at least one PANCE body system'),
   highYield: z.boolean().default(false),
   status: z.enum(['stub', 'draft', 'reviewed']).default('draft'),
   netterPlate: z.string().optional(),         // for YOUR reference; fill in per your edition

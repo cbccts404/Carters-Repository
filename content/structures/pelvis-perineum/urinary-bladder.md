@@ -6,6 +6,7 @@ subregion: Pelvic viscera
 taName: Vesica urinaria
 summary: Distensible muscular reservoir for urine lying behind the pubis. Its autonomic control explains neurogenic bladder, and rupture type (intraperitoneal vs extraperitoneal) decides management.
 tags: [genitourinary, trauma]
+systems: [genitourinary, renal]
 highYield: true
 status: draft
 anatomy:

@@ -7,6 +7,7 @@ taName: Pharynx
 aka: [Throat, Nasopharynx, Oropharynx, Laryngopharynx]
 summary: Fibromuscular tube from the skull base to C6, shared by the airway and the food passage. It is divided into nasopharynx, oropharynx and laryngopharynx, and the site of Zenker diverticulum and nasopharyngeal carcinoma.
 tags: [pharynx, swallowing, ent]
+systems: [eent]
 highYield: false
 status: draft
 anatomy:

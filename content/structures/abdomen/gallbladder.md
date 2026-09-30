@@ -7,6 +7,7 @@ taName: Vesica biliaris et ductus biliares
 aka: [Gallbladder, Common bile duct, Cystic duct, Calot triangle]
 summary: Pear-shaped sac under the liver that stores and concentrates bile, with the extrahepatic bile ducts. Gallstone disease (biliary colic, cholecystitis, choledocholithiasis, cholangitis) is one of the most tested topics.
 tags: [gi, foregut, hepatobiliary]
+systems: [gastrointestinal]
 highYield: true
 status: draft
 anatomy:

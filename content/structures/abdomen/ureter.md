@@ -6,6 +6,7 @@ subregion: Kidneys & suprarenals
 taName: Ureter
 summary: Muscular tube carrying urine from the renal pelvis to the bladder. Its three narrow points are where stones lodge, and its pelvic course puts it at risk during gynecologic surgery.
 tags: [genitourinary, retroperitoneum]
+systems: [renal, genitourinary]
 highYield: true
 status: draft
 anatomy:

@@ -6,6 +6,7 @@ subregion: Pectoral & scapular region
 taName: Musculus teres minor
 summary: Small rotator cuff muscle from the lateral border of the scapula. It laterally rotates the arm and is supplied by the axillary nerve.
 tags: [rotator-cuff, shoulder]
+systems: [musculoskeletal]
 highYield: false
 status: draft
 anatomy:

@@ -6,6 +6,7 @@ subregion: Gluteal region
 taName: Nervus ischiadicus
 summary: The largest nerve in the body (L4–S3), running from the buttock down the back of the thigh and dividing into the tibial and common fibular nerves. It supplies the hamstrings and everything below the knee except a strip of skin on the medial leg.
 tags: [gluteal, thigh, sciatica, nerve-injury]
+systems: [neurologic, musculoskeletal]
 highYield: true
 status: draft
 anatomy:

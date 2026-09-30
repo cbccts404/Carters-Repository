@@ -7,6 +7,7 @@ taName: Compartimenta cruris
 aka: [Osteofascial compartments of the leg]
 summary: Four tight osteofascial compartments — anterior, lateral, superficial posterior and deep posterior — each with its own muscles, nerve and vessels. Rising pressure after fractures or crush injuries causes compartment syndrome, a surgical emergency.
 tags: [leg, emergency, trauma]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

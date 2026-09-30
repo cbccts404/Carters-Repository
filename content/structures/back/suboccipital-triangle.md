@@ -6,6 +6,7 @@ subregion: Suboccipital region
 taName: Trigonum suboccipitale
 summary: Small triangle deep in the back of the neck, bounded by three suboccipital muscles. It contains the vertebral artery and the suboccipital nerve, and the greater occipital nerve emerges just below it.
 tags: [neck, suboccipital]
+systems: [musculoskeletal]
 highYield: false
 status: draft
 anatomy:

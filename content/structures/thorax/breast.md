@@ -7,6 +7,7 @@ taName: Mamma
 aka: [Mammary gland]
 summary: Modified sweat gland on the anterior thoracic wall. Most of its lymph drains to the axillary nodes, which is central to the spread and staging of breast cancer.
 tags: [breast]
+systems: [reproductive]
 highYield: true
 status: draft
 anatomy:

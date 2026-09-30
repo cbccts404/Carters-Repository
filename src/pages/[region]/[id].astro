@@ -6,6 +6,7 @@ import Figure from '../../components/Figure.astro';
 import Diagram from '../../components/Diagram.astro';
 import {
   ANATOMY_FIELDS,
+  SYSTEM_LABELS,
   TYPE_LABELS,
   backlinksFor,
   completeness,
@@ -15,6 +16,7 @@ import {
   plain,
   regionUrl,
   structureUrl,
+  systemUrl,
   type Structure,
 } from '../../lib/atlas';
 
@@ -150,6 +152,11 @@ const summary = await mdInline(d.summary);
       <span class={`badge type t-${d.type}`}>{TYPE_LABELS[d.type][0]}</span>
       {d.highYield && <span class="badge hy">High-yield</span>}
       <span class={`badge ${d.status}`}>{d.status}</span>
+      {d.systems.map((sy) => (
+        <a class="badge system" href={systemUrl(sy)} title={`PANCE system: ${SYSTEM_LABELS[sy][0]}`}>
+          {SYSTEM_LABELS[sy][1]}
+        </a>
+      ))}
     </div>
     <p class="summary" set:html={summary} />
   </header>

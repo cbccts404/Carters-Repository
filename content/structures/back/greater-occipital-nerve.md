@@ -6,6 +6,7 @@ subregion: Suboccipital region
 taName: Nervus occipitalis major
 summary: Medial branch of the dorsal ramus of C2 that supplies the skin of the back of the scalp. Its irritation causes occipital neuralgia, which responds to nerve block.
 tags: [neck, headache]
+systems: [neurologic]
 highYield: false
 status: draft
 anatomy:

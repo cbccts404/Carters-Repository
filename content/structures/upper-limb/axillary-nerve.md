@@ -7,6 +7,7 @@ taName: Nervus axillaris
 aka: [Circumflex nerve]
 summary: Branch of the posterior cord that passes through the quadrangular space around the surgical neck of the humerus to supply deltoid and teres minor.
 tags: [brachial-plexus]
+systems: [neurologic, musculoskeletal]
 highYield: true
 status: draft
 anatomy:

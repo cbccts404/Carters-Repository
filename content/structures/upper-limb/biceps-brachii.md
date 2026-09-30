@@ -6,6 +6,7 @@ subregion: Arm
 taName: Musculus biceps brachii
 summary: Two-headed muscle of the anterior arm and the most powerful supinator of the forearm; it also flexes the elbow.
 tags: [shoulder, elbow]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

@@ -7,6 +7,7 @@ taName: Musculus serratus anterior
 aka: ["Boxer's muscle"]
 summary: Serrated muscle on the lateral thoracic wall that protracts the scapula, rotates it upward, and holds it against the chest wall.
 tags: [shoulder]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

@@ -6,6 +6,7 @@ subregion: Mediastinum
 taName: Oesophagus
 summary: Muscular tube from the pharynx (C6) through the posterior mediastinum to the stomach (T11). Its constrictions, portosystemic anastomosis and relations explain many board classics.
 tags: [mediastinum, gi]
+systems: [gastrointestinal]
 highYield: true
 status: draft
 anatomy:

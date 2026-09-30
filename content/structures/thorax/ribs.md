@@ -6,6 +6,7 @@ subregion: Thoracic wall
 taName: Costae
 summary: Twelve pairs of curved bones forming most of the thoracic cage. They are grouped as true, false and floating ribs, and rib fractures are the most common thoracic injury.
 tags: [thoracic-wall]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

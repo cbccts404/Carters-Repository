@@ -6,6 +6,7 @@ subregion: Skull
 taName: Arteria meningea media
 summary: Branch of the maxillary artery that enters the skull through the foramen spinosum to supply the dura and skull. Tearing of its anterior branch under the pterion causes an epidural hematoma.
 tags: [skull, trauma, emergency]
+systems: [neurologic, cardiovascular]
 highYield: true
 status: draft
 anatomy:

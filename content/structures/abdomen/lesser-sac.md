@@ -7,6 +7,7 @@ taName: Bursa omentalis
 aka: [Omental bursa, Epiploic foramen, Foramen of Winslow]
 summary: Part of the peritoneal cavity behind the stomach, entered through the omental (epiploic) foramen. The hepatoduodenal ligament in front of that foramen is compressed in the Pringle maneuver.
 tags: [peritoneum, surgery]
+systems: [gastrointestinal]
 highYield: false
 status: draft
 anatomy:

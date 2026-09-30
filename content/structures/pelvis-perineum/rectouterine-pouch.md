@@ -7,6 +7,7 @@ taName: Excavatio rectouterina
 aka: [Pouch of Douglas, Cul-de-sac]
 summary: Deepest recess of the female peritoneal cavity, between the uterus and rectum. Blood, pus and ascites collect here; the male equivalent is the rectovesical pouch.
 tags: [female, peritoneum, fast]
+systems: [reproductive, gastrointestinal]
 highYield: true
 status: draft
 anatomy:

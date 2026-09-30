@@ -1,0 +1,32 @@
+---
+import Base from '../../layouts/Base.astro';
+import { BODY_SYSTEMS, SYSTEM_LABELS, loadAtlas, systemUrl, url } from '../../lib/atlas';
+
+const atlas = await loadAtlas();
+const rows = BODY_SYSTEMS.map((sy) => {
+  const entries = atlas.structures.filter((s) => s.data.systems.includes(sy));
+  return { sy, entries: entries.length, questions: entries.reduce((n, s) => n + s.data.quiz.length, 0) };
+});
+---
+
+<Base title="Body systems" description="Atlas entries grouped by PANCE blueprint organ system.">
+  <p class="crumbs"><a href={url()}>Home</a> / Body systems</p>
+  <h1>Study by body system</h1>
+  <p class="muted">
+    The PANCE is organized by organ system rather than region. Each entry is tagged with the systems it's tested under
+    (from the NCCPA content blueprint categories), so you can review — or quiz yourself on — one system across the whole
+    body.
+  </p>
+  <div class="grid">
+    {
+      rows.map((r) => (
+        <a class="card" href={systemUrl(r.sy)}>
+          <h3>{SYSTEM_LABELS[r.sy][0]}</h3>
+          <p>
+            {r.entries} {r.entries === 1 ? 'entry' : 'entries'} · {r.questions} questions
+          </p>
+        </a>
+      ))
+    }
+  </div>
+</Base>

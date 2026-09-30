@@ -7,6 +7,7 @@ taName: Nervus vestibulocochlearis
 aka: [CN VIII, Cranial nerve VIII, Acoustic nerve, Vestibular schwannoma, Acoustic neuroma]
 summary: Special sensory nerve for hearing (cochlear part) and balance (vestibular part). It runs with CN VII through the internal acoustic meatus, where a vestibular schwannoma causes unilateral hearing loss.
 tags: [cranial-nerves, ear, special-senses]
+systems: [eent, neurologic]
 highYield: true
 status: draft
 anatomy:

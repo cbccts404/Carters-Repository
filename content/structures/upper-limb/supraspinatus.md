@@ -6,6 +6,7 @@ subregion: Pectoral & scapular region
 taName: Musculus supraspinatus
 summary: Rotator cuff muscle in the supraspinous fossa that initiates abduction and is the most commonly torn cuff tendon.
 tags: [rotator-cuff, shoulder]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

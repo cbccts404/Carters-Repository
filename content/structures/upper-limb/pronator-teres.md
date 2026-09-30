@@ -6,6 +6,7 @@ subregion: Forearm
 taName: Musculus pronator teres
 summary: Superficial muscle of the anterior forearm. It pronates the forearm, forms the medial border of the cubital fossa, and the median nerve passes between its two heads.
 tags: [elbow, forearm]
+systems: [musculoskeletal]
 highYield: false
 status: draft
 anatomy:

@@ -6,6 +6,7 @@ subregion: Female reproductive organs
 taName: Ligamentum latum uteri
 summary: Double fold of peritoneum draped over the uterus, tubes and ovaries to the pelvic walls. It carries their vessels, and the ureter runs beneath its base, where it is at risk during hysterectomy.
 tags: [female, peritoneum, surgery]
+systems: [reproductive]
 highYield: false
 status: draft
 anatomy:

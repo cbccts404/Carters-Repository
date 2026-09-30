@@ -6,6 +6,7 @@ subregion: Heart & pericardium
 taName: Pericardium
 summary: Double-walled fibroserous sac enclosing the heart. Pericarditis, effusion and tamponade are its key clinical problems.
 tags: [heart, cardiology]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

@@ -7,6 +7,7 @@ taName: Colon (intestinum crassum)
 aka: [Large intestine, Cecum, Ascending colon, Transverse colon, Descending colon, Sigmoid colon]
 summary: Large intestine from the cecum to the sigmoid colon, supplied by the SMA (midgut) and IMA (hindgut). Diverticulitis, colorectal cancer, volvulus and ischemic colitis are the high-yield problems.
 tags: [gi, midgut, hindgut]
+systems: [gastrointestinal]
 highYield: true
 status: draft
 anatomy:

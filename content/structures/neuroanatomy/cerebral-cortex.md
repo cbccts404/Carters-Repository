@@ -7,6 +7,7 @@ taName: Cortex cerebri
 aka: [Cerebral hemispheres, Frontal lobe, Parietal lobe, Temporal lobe, Occipital lobe, Broca area, Wernicke area, Aphasia, Homunculus]
 summary: The folded gray matter of the cerebral hemispheres, organized into frontal, parietal, temporal and occipital lobes with specialized areas for movement, sensation, language and vision. Lesion location predicts the deficit.
 tags: [cerebrum, language, stroke]
+systems: [neurologic]
 highYield: true
 status: draft
 anatomy:

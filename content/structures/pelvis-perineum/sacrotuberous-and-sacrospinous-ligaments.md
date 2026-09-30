@@ -6,6 +6,7 @@ subregion: Bony pelvis
 taName: Ligamentum sacrotuberale; Ligamentum sacrospinale
 summary: Two strong ligaments from the sacrum and coccyx to the ischium that stabilize the sacrum and turn the sciatic notches into the greater and lesser sciatic foramina, the gateways between pelvis, gluteal region and perineum.
 tags: [pelvis, sciatic-foramina]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

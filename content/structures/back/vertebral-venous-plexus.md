@@ -7,6 +7,7 @@ taName: Plexus venosi vertebrales
 aka: [Batson plexus]
 summary: Valveless network of veins inside and around the vertebral column that connects the pelvic, abdominal, thoracic and intracranial veins. It explains how prostate and breast cancer spread to the spine.
 tags: [spine, vascular, oncology]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

@@ -6,6 +6,7 @@ subregion: Forearm
 taName: Radius
 summary: Lateral bone of the forearm. It rotates around the ulna in pronation and supination, and its distal end is one of the most commonly fractured sites in the body.
 tags: [forearm, wrist, elbow]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

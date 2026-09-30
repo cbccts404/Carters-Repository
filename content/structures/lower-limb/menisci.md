@@ -7,6 +7,7 @@ taName: Meniscus medialis; Meniscus lateralis
 aka: [Medial meniscus, Lateral meniscus, Semilunar cartilages]
 summary: Two crescent-shaped fibrocartilage pads on the tibial plateau that deepen the articular surfaces, spread load and absorb shock. Tears — traumatic in the young, degenerative in older adults — cause joint-line pain, catching and locking.
 tags: [knee, sports-medicine]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

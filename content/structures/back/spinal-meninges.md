@@ -7,6 +7,7 @@ taName: Meninges spinales; spatium epidurale; spatium subarachnoideum
 aka: [Epidural space, Subarachnoid space, Lumbar cistern, Lumbar puncture, Dura mater]
 summary: Three membranes (dura, arachnoid, pia) and the spaces between them surrounding the spinal cord. The epidural space is the target of epidural anesthesia, and the lumbar cistern is sampled by lumbar puncture.
 tags: [spine, procedures, neuro]
+systems: [neurologic]
 highYield: true
 status: draft
 anatomy:

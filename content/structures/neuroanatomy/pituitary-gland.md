@@ -7,6 +7,7 @@ taName: Hypophysis
 aka: [Hypophysis, Adenohypophysis, Neurohypophysis, Pituitary adenoma, Prolactinoma, Pituitary apoplexy, Sheehan syndrome]
 summary: Master endocrine gland in the sella turcica below the optic chiasm, with anterior (hormone-producing) and posterior (ADH, oxytocin) lobes. Adenomas cause hormone excess, hypopituitarism and bitemporal hemianopia.
 tags: [endocrine, skull-base]
+systems: [endocrine, neurologic]
 highYield: true
 status: draft
 anatomy:

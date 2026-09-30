@@ -7,6 +7,7 @@ taName: Capsula interna
 aka: [Posterior limb of internal capsule, Lacunar infarct, Lacunar stroke]
 summary: Compact band of white matter carrying motor and sensory fibers between the cortex and the brainstem. A small (lacunar) infarct here can cause a pure motor hemiparesis of the face, arm and leg.
 tags: [cerebrum, stroke, white-matter]
+systems: [neurologic]
 highYield: true
 status: draft
 anatomy:

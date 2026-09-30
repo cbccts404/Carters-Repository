@@ -7,6 +7,7 @@ taName: Aorta thoracica (pars ascendens, arcus aortae, pars descendens)
 aka: [Ascending aorta, Aortic arch, Descending thoracic aorta]
 summary: The aorta within the thorax (ascending aorta, arch and descending thoracic aorta). It's the site of dissection, coarctation, traumatic injury and aneurysm.
 tags: [mediastinum, vascular]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

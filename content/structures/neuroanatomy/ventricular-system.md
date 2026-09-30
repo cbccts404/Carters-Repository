@@ -7,6 +7,7 @@ taName: Systema ventriculare
 aka: [Lateral ventricles, Third ventricle, Fourth ventricle, Cerebrospinal fluid, CSF, Hydrocephalus, Normal pressure hydrocephalus, Choroid plexus]
 summary: Four interconnected cavities in the brain that produce and circulate cerebrospinal fluid. Blockage or impaired absorption causes hydrocephalus, including normal pressure hydrocephalus in older adults.
 tags: [csf, hydrocephalus]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

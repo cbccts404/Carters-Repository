@@ -6,6 +6,7 @@ subregion: Abdominal wall
 taName: Musculus rectus abdominis
 summary: Long strap muscle on either side of the linea alba, enclosed in the rectus sheath. It flexes the trunk, and hematoma in its sheath is a classic complication of anticoagulation.
 tags: [abdominal-wall]
+systems: [musculoskeletal, gastrointestinal]
 highYield: false
 status: draft
 anatomy:

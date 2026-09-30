@@ -7,6 +7,7 @@ taName: Arteria iliaca interna
 aka: [Hypogastric artery]
 summary: Main artery of the pelvis, supplying the pelvic viscera, perineum, gluteal region and medial thigh. Its branches bleed in pelvic fractures and are embolized for postpartum hemorrhage and fibroids.
 tags: [pelvis, trauma, vascular]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

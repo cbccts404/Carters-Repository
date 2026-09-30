@@ -1,0 +1,56 @@
+---
+import Base from '../../layouts/Base.astro';
+import {
+  BODY_SYSTEMS,
+  SYSTEM_LABELS,
+  TYPE_LABELS,
+  loadAtlas,
+  plain,
+  structureUrl,
+  type BodySystem,
+  url,
+} from '../../lib/atlas';
+
+export async function getStaticPaths() {
+  return BODY_SYSTEMS.map((system) => ({ params: { system } }));
+}
+const system = Astro.params.system as BodySystem;
+const atlas = await loadAtlas();
+const entries = atlas.structures.filter((s) => s.data.systems.includes(system));
+const groups = atlas.regions
+  .map((r) => ({ region: r, entries: entries.filter((s) => s.data.region === r.id) }))
+  .filter((g) => g.entries.length);
+const questions = entries.reduce((n, s) => n + s.data.quiz.length, 0);
+---
+
+<Base title={SYSTEM_LABELS[system][0]} description={`Atlas entries tested under ${SYSTEM_LABELS[system][0]} on the PANCE.`}>
+  <p class="crumbs"><a href={url()}>Home</a> / <a href={url('systems/')}>Body systems</a> / {SYSTEM_LABELS[system][0]}</p>
+  <h1>{SYSTEM_LABELS[system][0]}</h1>
+  <p class="muted">{entries.length} entries across {groups.length} {groups.length === 1 ? 'region' : 'regions'} · {questions} questions</p>
+  <p class="btn-row">
+    <a class="btn primary" href={url(`quiz/?system=${system}`)}>Quiz this system</a>
+    <a class="btn" href={url(`flashcards/?system=${system}`)}>Flashcards for this system</a>
+  </p>
+  {
+    groups.map((g) => (
+      <section>
+        <h2>{g.region.data.name}</h2>
+        <ul class="list">
+          {g.entries.map((s) => (
+            <li>
+              <a href={structureUrl(s)} class={`t-${s.data.type}`}>
+                <span class="dot" />
+                <span>
+                  <strong>{s.data.name}</strong>
+                  {s.data.highYield && <span class="badge hy">HY</span>}{' '}
+                  <span class="muted small">{TYPE_LABELS[s.data.type][0]}</span>
+                  <span class="sum">{plain(s.data.summary)}</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Base>

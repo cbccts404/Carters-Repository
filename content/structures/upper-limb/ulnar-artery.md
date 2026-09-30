@@ -6,6 +6,7 @@ subregion: Forearm
 taName: Arteria ulnaris
 summary: Larger terminal branch of the brachial artery. It gives the common interosseous artery, enters the hand through Guyon's canal, and forms most of the superficial palmar arch.
 tags: [forearm, wrist, hand]
+systems: [cardiovascular]
 highYield: false
 status: draft
 anatomy:

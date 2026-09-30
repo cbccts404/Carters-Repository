@@ -7,6 +7,7 @@ taName: Trigonum auscultationis; trigonum lumbale inferius
 aka: [Triangle of auscultation, Lumbar triangle, Petit triangle, Lumbar hernia]
 summary: Two gaps in the superficial muscles of the back. The triangle of auscultation lets breath sounds be heard clearly; the lumbar (Petit) triangle is a rare site of lumbar hernia.
 tags: [back, exam, hernia]
+systems: [musculoskeletal]
 highYield: false
 status: draft
 anatomy:

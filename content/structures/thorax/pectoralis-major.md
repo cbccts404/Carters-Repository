@@ -6,6 +6,7 @@ subregion: Thoracic wall
 taName: Musculus pectoralis major
 summary: Large fan-shaped muscle of the anterior chest that adducts and medially rotates the arm. It forms the anterior axillary fold and lies deep to the breast.
 tags: [thoracic-wall, breast]
+systems: [musculoskeletal]
 highYield: false
 status: draft
 anatomy:

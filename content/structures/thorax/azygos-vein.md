@@ -6,6 +6,7 @@ subregion: Mediastinum
 taName: Vena azygos
 summary: Vein on the right side of the posterior mediastinum that drains the posterior thoracic wall. It arches over the right lung root into the SVC and is a key collateral pathway between the caval systems.
 tags: [mediastinum, vascular]
+systems: [cardiovascular]
 highYield: false
 status: draft
 anatomy:

@@ -7,6 +7,7 @@ taName: Articulatio humeri
 aka: [Shoulder joint]
 summary: Ball-and-socket joint between the humeral head and the glenoid cavity. It is the most mobile joint in the body and the most frequently dislocated major joint.
 tags: [shoulder, rotator-cuff]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

@@ -7,6 +7,7 @@ taName: Os coxae
 aka: [Innominate bone, Pelvic bone, Os coxae]
 summary: Large flat bone formed by the fusion of the ilium, ischium and pubis at the acetabulum. Its palpable landmarks guide the exam, and its apophyses are classic sites of avulsion fractures in adolescents.
 tags: [pelvis, avulsion]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

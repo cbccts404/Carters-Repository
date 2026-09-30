@@ -7,6 +7,7 @@ taName: Nervus radialis
 aka: [Musculospiral nerve]
 summary: Largest branch of the brachial plexus (posterior cord). It supplies all extensor muscles of the arm and forearm and winds around the humerus in the radial groove.
 tags: [brachial-plexus]
+systems: [neurologic, musculoskeletal]
 highYield: true
 status: draft
 anatomy:

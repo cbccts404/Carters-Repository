@@ -6,6 +6,7 @@ subregion: Gluteal region
 taName: Musculus piriformis
 summary: Pear-shaped lateral rotator of the hip and the key landmark of the gluteal region — structures leave the pelvis above or below it. It can irritate the sciatic nerve (piriformis syndrome).
 tags: [gluteal, hip, sciatica]
+systems: [musculoskeletal]
 highYield: false
 status: draft
 anatomy:

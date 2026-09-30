@@ -6,6 +6,7 @@ subregion: Pectoral & scapular region
 taName: Musculus infraspinatus
 summary: Rotator cuff muscle in the infraspinous fossa and the main lateral (external) rotator of the arm.
 tags: [rotator-cuff, shoulder]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

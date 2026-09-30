@@ -7,6 +7,7 @@ taName: Nervus accessorius
 aka: [CN XI, Cranial nerve XI, Spinal accessory nerve]
 summary: Motor nerve to sternocleidomastoid and trapezius, arising from the upper cervical cord. It crosses the posterior triangle superficially, where lymph node biopsy can injure it and cause shoulder droop.
 tags: [cranial-nerves, neck, shoulder]
+systems: [neurologic]
 highYield: true
 status: draft
 anatomy:

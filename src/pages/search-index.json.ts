@@ -18,6 +18,7 @@ export const GET: APIRoute = async () => {
       subregion: d.subregion ?? '',
       summary: plain(d.summary),
       tags: d.tags.join(' '),
+      systems: d.systems.join(' '),
       clinical: [...d.clinical.map((c) => c.title), ...d.pance.map(plain), ...d.exam?.specialTests.map((t) => t.name) ?? []].join(' · '),
       highYield: d.highYield,
       url: structureUrl(s),
