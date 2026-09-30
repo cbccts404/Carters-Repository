@@ -485,3 +485,14 @@ table.cmp tbody th { font-weight: 600; }
 .loc-jump[hidden], .loc-jump.loc-jump-off { display: none; }
 @media (min-width: 900px) { .loc-jump { display: none; } }
 @media (max-width: 480px) { .loc-dl { grid-template-columns: 1fr; gap: 0 0; } .loc-dl dd { margin-bottom: 4px; } }
+
+/* Progress page */
+.pg-stats { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); margin: 16px 0 8px; }
+.pg-stats .card { display: flex; flex-direction: column; gap: 2px; }
+.pg-stats b { font-size: 1.6rem; line-height: 1.1; }
+.pg-stats span { color: var(--muted); font-size: 0.85rem; }
+.pg-import { display: grid; gap: 10px; max-width: 640px; }
+.pg-import fieldset { border: 1px solid var(--border); border-radius: var(--radius); padding: 8px 12px; margin: 0; }
+.pg-import .pick { display: flex; gap: 8px; align-items: flex-start; padding: 4px 0; }
+.pg-import textarea { width: 100%; margin-top: 6px; font: inherit; font-size: 0.85rem; padding: 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); }
+p > a + .linkish.danger { margin-left: 16px; }

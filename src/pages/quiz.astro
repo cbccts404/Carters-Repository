@@ -62,7 +62,10 @@ const total = atlas.structures.reduce((n, s) => n + s.data.quiz.length, 0);
         <tbody></tbody>
       </table>
       <div id="sessions"></div>
-      <p><button type="button" class="linkish danger" id="reset-btn" hidden>Reset quiz progress</button></p>
+      <p class="small">
+        <a href={url('progress/')}>Back up or move progress</a>
+        <button type="button" class="linkish danger" id="reset-btn" hidden>Reset quiz progress</button>
+      </p>
     </section>
   </section>
 
