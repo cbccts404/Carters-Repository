@@ -70,6 +70,42 @@ quiz:
     explanation: >-
       The **short head of biceps femoris** is supplied by the **common fibular** division; all the other hamstrings
       (and the hamstring part of adductor magnus) are supplied by the tibial division.
+  - stem: >-
+      A water-skier's hip is forced into flexion with the knee extended. He feels a pop and develops a large bruise on
+      the back of the thigh. From which bony attachment have the tendons most likely avulsed?
+    choices:
+      - Anterior superior iliac spine
+      - Anterior inferior iliac spine
+      - Ischial tuberosity
+      - Greater trochanter
+      - Lesser trochanter
+    answer: C
+    explanation: >-
+      The hamstrings arise from the **ischial tuberosity**. Forceful hip flexion with the knee extended can cause a
+      **proximal hamstring avulsion** (or, in adolescents, avulsion of the ischial apophysis). The ASIS and AIIS give
+      origin to sartorius and rectus femoris.
+  - stem: Which hamstring muscle inserts on the tibia as part of the pes anserinus?
+    choices:
+      - Semimembranosus
+      - Biceps femoris (long head)
+      - Biceps femoris (short head)
+      - Semitendinosus
+    answer: D
+    explanation: >-
+      The pes anserinus is formed by **sartorius, gracilis and semitendinosus** ("Say Grace before Tea") on the upper
+      medial tibia. Semimembranosus inserts on the posterior medial tibial condyle, and biceps femoris on the fibular
+      head.
+  - stem: With the knee flexed, which hamstring rotates the leg laterally?
+    choices:
+      - Biceps femoris
+      - Semitendinosus
+      - Semimembranosus
+      - Gracilis
+      - Sartorius
+    answer: A
+    explanation: >-
+      **Biceps femoris** (inserting on the fibular head) laterally rotates the flexed knee. Semitendinosus and
+      semimembranosus, inserting medially, rotate it medially.
 flashcards:
   - front: Three hamstrings?
     back: Biceps femoris (long head), semitendinosus, semimembranosus

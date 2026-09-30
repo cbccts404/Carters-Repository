@@ -115,6 +115,33 @@ quiz:
     explanation: >-
       With strong clinical suspicion and normal films, **MRI** is the most sensitive test for an **occult hip
       fracture**; delayed diagnosis risks displacement and AVN.
+  - stem: >-
+      A 6-year-old boy has had an insidious limp and knee pain for 6 weeks. Hip internal rotation and abduction are
+      reduced, and hip radiographs are normal. What is the most likely diagnosis and the most sensitive test?
+    choices:
+      - Slipped capital femoral epiphysis; frog-leg lateral radiograph
+      - Legg–Calvé–Perthes disease; MRI
+      - Transient synovitis; observation
+      - Septic arthritis; joint aspiration
+      - Osgood–Schlatter disease; reassurance
+    answer: B
+    explanation: >-
+      **Legg–Calvé–Perthes disease** is idiopathic AVN of the femoral head in children about **4–8 years**, causing a
+      limp and hip or referred knee pain with reduced internal rotation and abduction. Radiographs can be normal early,
+      and **MRI** is most sensitive. SCFE affects obese adolescents.
+  - stem: >-
+      Two days after a femoral shaft fracture, a 22-year-old becomes hypoxic and confused and develops a petechial rash
+      over the chest and axillae. What is the most likely diagnosis?
+    choices:
+      - Pulmonary embolism from a DVT
+      - Hemorrhagic shock
+      - Sepsis
+      - Fat embolism syndrome
+      - Alcohol withdrawal
+    answer: D
+    explanation: >-
+      **Fat embolism syndrome** follows long-bone (especially femoral) fractures and classically causes **hypoxia,
+      confusion and a petechial rash**, usually 1–3 days after injury.
 flashcards:
   - front: Main artery to the femoral head in adults?
     back: Medial circumflex femoral artery (retinacular branches)

@@ -85,6 +85,44 @@ quiz:
     explanation: >-
       **Virchow triad** is venous **stasis**, **endothelial injury** and **hypercoagulability**; systemic arterial
       hypertension is not part of it.
+  - stem: A 28-year-old woman has an unprovoked left iliofemoral DVT. Which anatomic relationship may explain its side?
+    choices:
+      - Compression of the left common iliac vein by the right common iliac artery
+      - Compression of the right common iliac vein by the left common iliac artery
+      - Compression of the femoral vein by the inguinal ligament
+      - Absence of valves in the left popliteal vein
+      - Compression of the IVC by the liver
+    answer: A
+    explanation: >-
+      In **May–Thurner syndrome**, the **right common iliac artery** crosses and compresses the **left common iliac
+      vein** against the spine, predisposing to left-sided DVT, especially in young women.
+  - stem: >-
+      A patient with metastatic cancer develops a massively swollen, painful, bluish left leg with early skin blebs.
+      What is the most likely diagnosis?
+    choices:
+      - Cellulitis
+      - Ruptured Baker cyst
+      - Phlegmasia cerulea dolens
+      - Acute arterial embolism
+      - Lymphedema
+    answer: C
+    explanation: >-
+      **Phlegmasia cerulea dolens** is massive iliofemoral DVT obstructing nearly all venous outflow: a swollen,
+      **blue**, painful leg that can progress to venous gangrene. It is an emergency treated with anticoagulation and
+      catheter-directed thrombolysis or thrombectomy.
+  - stem: >-
+      A patient with calf pain has a low pretest probability of DVT by Wells score. What is the most appropriate first
+      test?
+    choices:
+      - Compression ultrasound
+      - D-dimer
+      - CT venography
+      - Contrast venography
+      - Empiric anticoagulation
+    answer: B
+    explanation: >-
+      With **low pretest probability**, a **normal D-dimer rules out DVT**. A positive D-dimer, or a high pretest
+      probability, leads to **compression ultrasound**.
 flashcards:
   - front: Where does most calf DVT begin?
     back: Soleal venous sinuses / calf veins (valve pockets)

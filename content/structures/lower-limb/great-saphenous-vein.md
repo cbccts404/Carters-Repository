@@ -85,6 +85,42 @@ quiz:
     explanation: >-
       The great saphenous vein passes through the **saphenous opening** in the fascia lata to join the **femoral vein**
       in the femoral triangle. The small saphenous vein drains to the popliteal vein.
+  - stem: Where is the great saphenous vein reliably found at the ankle, for example for a venous cutdown?
+    choices:
+      - Posterior to the medial malleolus
+      - Posterior to the lateral malleolus
+      - Anterior to the medial malleolus
+      - Over the dorsalis pedis pulse
+      - Anterior to the lateral malleolus
+    answer: C
+    explanation: >-
+      The great saphenous vein begins at the medial end of the dorsal venous arch and passes **anterior to the medial
+      malleolus**, a reliable site for cutdown. The small saphenous vein passes behind the lateral malleolus.
+  - stem: Which feature suggests an arterial rather than a venous leg ulcer?
+    choices:
+      - Location above the medial malleolus
+      - Surrounding brown hyperpigmentation
+      - Shallow, irregular edges with ankle edema
+      - A painful, punched-out ulcer on the toes or lateral malleolus
+      - Improvement with compression and elevation
+    answer: D
+    explanation: >-
+      **Arterial ulcers** are distal (toes, lateral malleolus), **punched out** and painful, with poor pulses. **Venous
+      ulcers** are shallow and irregular, **above the medial malleolus**, with hyperpigmentation and edema, and are
+      treated with compression.
+  - stem: >-
+      A patient has a tender, red, palpable cord along the great saphenous vein in the thigh. What is the most
+      appropriate next step?
+    choices:
+      - Warm compresses only; no imaging needed
+      - Duplex ultrasound of the leg
+      - Oral antibiotics for cellulitis
+      - Contrast venography
+      - Vein stripping
+    answer: B
+    explanation: >-
+      **Superficial thrombophlebitis** can coexist with **DVT** (in about a quarter of cases), so **duplex ultrasound**
+      is needed. Thrombus close to the saphenofemoral junction or long segments are treated with anticoagulation.
 flashcards:
   - front: Where is the GSV reliably found at the ankle?
     back: Anterior to the medial malleolus

@@ -87,6 +87,44 @@ quiz:
     explanation: >-
       The patella almost always dislocates **laterally**, pulled by the valgus line of the quadriceps (Q angle) and
       limited by the medial patellofemoral ligament, which is usually torn.
+  - stem: >-
+      After falling onto her knee, a patient has a palpable gap at the patella. Which finding shows the extensor
+      mechanism is disrupted?
+    choices:
+      - Positive patellar apprehension test
+      - Pain on patellar compression
+      - Inability to perform a straight-leg raise
+      - Effusion in the suprapatellar pouch
+      - Crepitus with knee flexion
+    answer: C
+    explanation: >-
+      **Inability to do a straight-leg raise** means the **extensor mechanism** (quadriceps tendon, patella or patellar
+      ligament) is disrupted, which usually needs surgery.
+  - stem: >-
+      A knee radiograph shows a smooth, well-corticated separate fragment at the superolateral corner of the patella in
+      an athlete with no acute injury. What is the most likely explanation?
+    choices:
+      - Acute patellar fracture
+      - Bipartite patella
+      - Osgood–Schlatter disease
+      - Osteochondritis dissecans
+      - Patellar dislocation
+    answer: B
+    explanation: >-
+      The patella ossifies from several centers; failure of fusion leaves a **bipartite patella**, usually
+      **superolateral**, which can mimic a fracture. Smooth corticated edges favor a developmental variant.
+  - stem: A larger Q angle and a shallow femoral trochlear groove predispose to which injury?
+    choices:
+      - Medial patellar dislocation
+      - Patellar ligament rupture
+      - Osgood–Schlatter disease
+      - Lateral patellar dislocation
+      - Prepatellar bursitis
+    answer: D
+    explanation: >-
+      The **Q angle** (ASIS → center of patella → tibial tuberosity) is larger in women. A large Q angle and a shallow
+      trochlear groove predispose to **lateral patellar dislocation**, which often tears the medial patellofemoral
+      ligament.
 flashcards:
   - front: Type of bone — patella?
     back: Sesamoid (largest in the body), in the quadriceps tendon

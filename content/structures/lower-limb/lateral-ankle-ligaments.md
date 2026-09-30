@@ -78,6 +78,44 @@ quiz:
     explanation: >-
       **Neuromuscular (balance/proprioception) training** reduces recurrent sprains. Early functional mobilization is
       better than prolonged immobilization, and surgery is reserved for chronic instability.
+  - stem: As inversion force increases during a lateral ankle sprain, which ligament usually tears second?
+    choices:
+      - Anterior talofibular ligament
+      - Calcaneofibular ligament
+      - Posterior talofibular ligament
+      - Deltoid ligament
+      - Anterior inferior tibiofibular ligament
+    answer: B
+    explanation: >-
+      The usual order of failure is **ATFL → CFL → PTFL**. The ATFL is the weakest and tears first; the PTFL is the
+      strongest and tears only with dislocation.
+  - stem: >-
+      After an inversion injury, the anterior drawer test of the ankle shows marked forward translation of the talus.
+      What does this indicate?
+    choices:
+      - Grade I sprain (ligament stretch)
+      - Grade II sprain (partial tear)
+      - Grade III sprain (complete ATFL tear)
+      - Syndesmotic (high ankle) sprain
+      - Achilles tendon rupture
+    answer: C
+    explanation: >-
+      A **positive anterior drawer** means the **ATFL is completely torn** (grade III), since the ATFL resists anterior
+      displacement of the talus. Grade I is a stretch and grade II a partial tear.
+  - stem: >-
+      After rolling her ankle, a patient has tenderness at the base of the 5th metatarsal rather than over the lateral
+      ligaments. What injury is most likely?
+    choices:
+      - ATFL sprain
+      - Lisfranc injury
+      - Navicular fracture
+      - Achilles rupture
+      - Avulsion fracture of the 5th metatarsal tuberosity by fibularis brevis
+    answer: E
+    explanation: >-
+      The inversion mechanism that sprains the ATFL can also make **fibularis brevis avulse the 5th metatarsal
+      tuberosity**. Always palpate the 5th metatarsal base, both malleoli and the proximal fibula after an inversion
+      injury.
 flashcards:
   - front: Three lateral ankle ligaments?
     back: ATFL, CFL, PTFL

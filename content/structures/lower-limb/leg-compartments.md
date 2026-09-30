@@ -85,6 +85,42 @@ quiz:
     explanation: >-
       The **deep posterior compartment** contains tibialis posterior, FDL, FHL, the **tibial nerve**, and the
       **posterior tibial and fibular arteries**.
+  - stem: Which nerve supplies the muscles of the lateral compartment of the leg, and what movement do they produce?
+    choices:
+      - Deep fibular nerve; dorsiflexion
+      - Tibial nerve; inversion
+      - Superficial fibular nerve; eversion
+      - Sural nerve; plantarflexion
+      - Saphenous nerve; eversion
+    answer: C
+    explanation: >-
+      The lateral compartment (fibularis longus and brevis) is supplied by the **superficial fibular nerve** and
+      **everts** the foot. It has no major artery of its own; it is supplied by branches of the fibular artery.
+  - stem: Which compartment pressure measurement supports emergency fasciotomy?
+    choices:
+      - Compartment pressure below 10 mm Hg
+      - Diastolic blood pressure minus compartment pressure below 30 mm Hg
+      - Systolic blood pressure minus compartment pressure above 30 mm Hg
+      - Any pressure above the central venous pressure
+      - Compartment pressure equal to the pulse pressure
+    answer: B
+    explanation: >-
+      Compartment syndrome is a clinical diagnosis, but when pressures are measured, a **delta pressure** (diastolic BP
+      − compartment pressure) **below 30 mm Hg** supports fasciotomy.
+  - stem: >-
+      A 24-year-old runner has predictable tightness and aching in the front of both legs after about 3 km, relieved
+      within minutes of stopping. The exam at rest is normal. What is the most likely diagnosis?
+    choices:
+      - Medial tibial stress syndrome
+      - Tibial stress fracture
+      - Popliteal artery entrapment syndrome
+      - Chronic exertional compartment syndrome
+      - L5 radiculopathy
+    answer: D
+    explanation: >-
+      **Chronic exertional compartment syndrome** is a reversible pressure rise during exercise, usually in the anterior
+      or lateral compartment, with symptoms at a predictable distance that settle with rest. It is diagnosed with pre-
+      and post-exercise compartment pressures.
 flashcards:
   - front: Four compartments of the leg and their nerves?
     back: Anterior — deep fibular; lateral — superficial fibular; superficial posterior and deep posterior — tibial

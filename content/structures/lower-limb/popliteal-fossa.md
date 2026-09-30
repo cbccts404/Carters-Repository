@@ -73,6 +73,42 @@ quiz:
     explanation: >-
       **Biceps femoris** forms the superolateral border; semimembranosus and semitendinosus the superomedial; the two
       heads of gastrocnemius the inferior borders.
+  - stem: Which muscles form the superomedial border of the popliteal fossa?
+    choices:
+      - Biceps femoris
+      - Semimembranosus and semitendinosus
+      - Medial head of gastrocnemius
+      - Lateral head of gastrocnemius and plantaris
+      - Popliteus
+    answer: B
+    explanation: >-
+      The popliteal fossa is bounded superomedially by **semimembranosus and semitendinosus**, superolaterally by
+      **biceps femoris**, and inferiorly by the two heads of gastrocnemius (with plantaris laterally). Popliteus forms
+      part of the floor.
+  - stem: Which superficial vein ends in the popliteal fossa by joining the popliteal vein?
+    choices:
+      - Great saphenous vein
+      - Anterior tibial vein
+      - Femoral vein
+      - Small saphenous vein
+      - Fibular vein
+    answer: D
+    explanation: >-
+      The **small saphenous vein** runs up the back of the calf and pierces the popliteal fascia to join the popliteal
+      vein. The great saphenous vein drains into the femoral vein at the saphenous opening.
+  - stem: >-
+      A 64-year-old with knee osteoarthritis has a soft posteromedial swelling behind the knee that is more prominent
+      with the knee extended. Which bursa is distended?
+    choices:
+      - Prepatellar bursa
+      - Suprapatellar bursa
+      - Pes anserine bursa
+      - Infrapatellar bursa
+      - Gastrocnemius–semimembranosus bursa
+    answer: E
+    explanation: >-
+      A **popliteal (Baker) cyst** is a distended **gastrocnemius–semimembranosus bursa**, filled by knee effusions from
+      OA, RA or meniscal tears. Its rupture causes calf pain and swelling that mimics DVT.
 flashcards:
   - front: Borders of the popliteal fossa?
     back: Biceps femoris (superolateral), semimembranosus/semitendinosus (superomedial), gastrocnemius heads (inferior)

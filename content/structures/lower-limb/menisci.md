@@ -90,6 +90,43 @@ quiz:
     explanation: >-
       For **degenerative** tears without a mechanical block, trials show arthroscopic meniscectomy offers little benefit
       over **physical therapy**, which is first-line.
+  - stem: Which part of a meniscus is able to heal after a tear?
+    choices:
+      - The outer third (red zone), supplied by the genicular arteries
+      - The inner two-thirds (white zone)
+      - The anterior horn only
+      - The posterior horn only
+      - No part of the meniscus can heal
+    answer: A
+    explanation: >-
+      The **outer third (red zone)** is vascularized by the genicular arteries and can heal. The **inner two-thirds** is
+      avascular, nourished by synovial fluid, so tears there rarely heal.
+  - stem: >-
+      A 19-year-old twisted his knee and now cannot fully extend it; the knee is "stuck" in slight flexion. What is the
+      most appropriate management?
+    choices:
+      - Physical therapy for 6 weeks
+      - Corticosteroid injection
+      - Urgent orthopedic referral for arthroscopy
+      - NSAIDs and observation
+      - Total knee arthroplasty
+    answer: C
+    explanation: >-
+      A **locked knee** that can't fully extend suggests a displaced **bucket-handle meniscal tear**, which needs
+      **urgent orthopedic referral and arthroscopy** (repair or partial meniscectomy). Physical therapy first is for
+      degenerative tears without locking.
+  - stem: After a twisting knee injury, which feature favors a meniscal tear over an ACL tear?
+    choices:
+      - A pop and inability to continue playing
+      - Tense swelling within 2 hours
+      - Positive Lachman test
+      - Swelling that develops gradually over about a day, with catching
+      - Instability when pivoting
+    answer: D
+    explanation: >-
+      The menisci are **less vascular** than the ACL, so swelling from a meniscal tear develops **gradually over about a
+      day**, with joint-line tenderness and mechanical symptoms (catching or locking). Rapid hemarthrosis within hours
+      suggests an ACL tear.
 flashcards:
   - front: Shape of the medial vs lateral meniscus?
     back: Medial C-shaped; lateral O-shaped (nearly circular)

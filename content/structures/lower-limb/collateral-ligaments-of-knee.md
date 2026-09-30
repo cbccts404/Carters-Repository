@@ -81,6 +81,45 @@ quiz:
     explanation: >-
       The medial meniscus is anchored to the **MCL** and capsule, so it moves less and is trapped more easily. The LCL
       is separate from the lateral meniscus, which is also partly mobilized by popliteus.
+  - stem: Why are the collateral ligaments of the knee tested with the knee flexed to about 30°?
+    choices:
+      - To isolate them from the cruciate ligaments and posterior capsule
+      - Because the collaterals are slack in full extension
+      - To relax the quadriceps tendon
+      - To lock the knee with the screw-home mechanism
+      - Because the menisci block testing in extension
+    answer: A
+    explanation: >-
+      At **30° of flexion**, the cruciates and posterior capsule contribute less to varus/valgus stability, so laxity
+      reflects the **collateral ligament** itself. Both collaterals are taut in extension; laxity in full extension
+      implies a more extensive injury.
+  - stem: >-
+      A rugby player takes a blow to the medial side of his knee. He has lateral knee pain, varus laxity and a new foot
+      drop. Which ligament and nerve are most likely injured?
+    choices:
+      - Medial collateral ligament and tibial nerve
+      - Lateral collateral ligament and common fibular nerve
+      - Anterior cruciate ligament and femoral nerve
+      - Posterior cruciate ligament and saphenous nerve
+      - Medial collateral ligament and saphenous nerve
+    answer: B
+    explanation: >-
+      A **varus** force (blow to the medial knee) injures the **LCL** and posterolateral corner. The **common fibular
+      nerve** lies close to the LCL and fibular head, so check for **foot drop**. A valgus blow injures the MCL.
+  - stem: >-
+      A 62-year-old woman with obesity and knee osteoarthritis has pain and tenderness over the proximal medial tibia,
+      about 3 cm below the joint line. Valgus stress is painless. What is the most likely diagnosis?
+    choices:
+      - Medial meniscal tear
+      - MCL sprain
+      - Prepatellar bursitis
+      - Popliteal (Baker) cyst
+      - Pes anserine bursitis
+    answer: E
+    explanation: >-
+      **Pes anserine bursitis** causes tenderness about **2–5 cm below the medial joint line** over the proximal medial
+      tibia, where sartorius, gracilis and semitendinosus insert superficial to the distal MCL. It is common with knee
+      OA and obesity. MCL sprain hurts with valgus stress; meniscal tears cause joint-line tenderness.
 flashcards:
   - front: MCL resists which force?
     back: Valgus

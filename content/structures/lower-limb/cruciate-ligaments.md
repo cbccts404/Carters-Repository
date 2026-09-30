@@ -102,6 +102,31 @@ quiz:
     explanation: >-
       The ACL runs from the anterior tibial intercondylar area to the **medial side of the lateral femoral condyle**;
       the PCL runs to the lateral side of the medial condyle.
+  - stem: Which ligament is the main stabilizer when weight-bearing on a flexed knee, as when walking downhill?
+    choices:
+      - Posterior cruciate ligament
+      - Anterior cruciate ligament
+      - Medial collateral ligament
+      - Lateral collateral ligament
+      - Patellar ligament
+    answer: A
+    explanation: >-
+      The **PCL** is the stronger cruciate and prevents posterior translation of the tibia (anterior sliding of the
+      femur on the tibia), which matters most when bearing weight on a flexed knee. The ACL prevents anterior tibial
+      translation.
+  - stem: >-
+      MRI confirms a complete ACL tear in a 20-year-old competitive soccer player who wants to return to pivoting
+      sports. What is the usual management?
+    choices:
+      - Long leg cast for 6 weeks
+      - Corticosteroid injection
+      - Total knee arthroplasty
+      - Observation without rehabilitation
+      - ACL reconstruction
+    answer: E
+    explanation: >-
+      Young, active patients who pivot usually have **ACL reconstruction**; less active patients may do well with
+      rehabilitation alone. Immobilization and injection don't restore stability.
 flashcards:
   - front: ACL prevents?
     back: Anterior translation of the tibia on the femur

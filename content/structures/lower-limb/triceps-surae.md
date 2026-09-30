@@ -86,6 +86,42 @@ quiz:
     explanation: >-
       The **ankle (Achilles) reflex** is mediated by **S1** via the tibial nerve to the triceps surae. The patellar reflex
       is L4; there is no reliable routine reflex for L5.
+  - stem: Where do most calf deep vein thromboses begin?
+    choices:
+      - In the great saphenous vein
+      - In the femoral vein
+      - In the soleal venous sinuses
+      - In the external iliac vein
+      - In the dorsal venous arch
+    answer: C
+    explanation: >-
+      DVT usually starts in the **soleal venous sinuses** of the calf and propagates proximally. Contraction of soleus
+      normally squeezes these sinuses (the **calf muscle pump**), which immobility abolishes.
+  - stem: In managing Achilles tendinopathy, which treatment should be avoided?
+    choices:
+      - Eccentric calf strengthening
+      - Activity modification
+      - Heel lift
+      - Corticosteroid injection into the tendon
+      - Stopping a fluoroquinolone
+    answer: D
+    explanation: >-
+      Achilles tendinopathy is treated with **eccentric calf strengthening** and load management. **Steroid injection
+      into the tendon** is avoided because it increases the risk of rupture. Fluoroquinolones are associated with
+      tendinopathy and rupture.
+  - stem: >-
+      A 45-year-old tennis player feels sudden sharp pain in the medial calf while pushing off with the knee extended.
+      The Thompson test is normal. What is the most likely diagnosis?
+    choices:
+      - Achilles tendon rupture
+      - Medial gastrocnemius strain ("tennis leg")
+      - Popliteal artery aneurysm
+      - Tarsal tunnel syndrome
+      - Plantar fasciitis
+    answer: B
+    explanation: >-
+      **Tennis leg** is a strain of the **medial head of gastrocnemius** during push-off with the knee extended. A
+      normal Thompson test argues against Achilles rupture; ultrasound can exclude DVT if swelling suggests it.
 flashcards:
   - front: Components of triceps surae?
     back: Gastrocnemius (two heads) and soleus

@@ -104,6 +104,32 @@ quiz:
     explanation: >-
       Axial load through the heels is transmitted up the skeleton; calcaneal fractures are commonly associated with
       **lumbar (thoracolumbar) compression fractures** and fractures of the opposite calcaneus.
+  - stem: >-
+      After a fall onto a plantarflexed foot, a patient has midfoot pain, swelling and bruising on the sole. Non-weight
+      bearing radiographs look normal. What is the best next step?
+    choices:
+      - Reassure and allow full activity
+      - Weight-bearing radiographs of the foot
+      - Ankle radiographs only
+      - Bone scan in 6 weeks
+      - Corticosteroid injection
+    answer: B
+    explanation: >-
+      Midfoot pain with **plantar ecchymosis** suggests a **Lisfranc (tarsometatarsal) injury**, which is easily missed.
+      **Weight-bearing radiographs** reveal widening between the bases of the 1st and 2nd metatarsals.
+  - stem: >-
+      Which tarsal bone has no muscle attachments and is at risk of avascular necrosis after a fracture through its
+      neck?
+    choices:
+      - Calcaneus
+      - Navicular
+      - Cuboid
+      - Talus
+      - Medial cuneiform
+    answer: D
+    explanation: >-
+      The **talus** has no muscle attachments, and its blood supply enters mainly through the **neck**, so neck
+      fractures risk **AVN** of the body. The calcaneus is the largest tarsal and receives the Achilles tendon.
 flashcards:
   - front: Tarsal bones?
     back: Talus, calcaneus, navicular, cuboid, medial/intermediate/lateral cuneiforms

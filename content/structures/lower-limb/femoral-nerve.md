@@ -87,6 +87,43 @@ quiz:
     explanation: >-
       The **femoral nerve** lies lateral to and **outside** the femoral sheath, which contains the femoral artery, vein
       and canal (lymphatics); the femoral branch of the genitofemoral nerve does pierce the sheath's lateral part.
+  - stem: >-
+      After great saphenous vein harvest for bypass surgery, a patient has numbness of the medial leg and foot with no
+      weakness. Which nerve was injured?
+    choices:
+      - Sural nerve
+      - Superficial fibular nerve
+      - Obturator nerve
+      - Saphenous nerve
+      - Lateral femoral cutaneous nerve
+    answer: D
+    explanation: >-
+      The **saphenous nerve**, the longest cutaneous branch of the femoral nerve, runs with the great saphenous vein
+      below the knee to the **medial leg and foot**. It is purely sensory, so injury causes numbness without weakness.
+  - stem: The patellar reflex mainly tests which nerve root, carried by which nerve?
+    choices:
+      - L2, obturator nerve
+      - L4, femoral nerve
+      - L5, sciatic nerve
+      - S1, tibial nerve
+      - L3, obturator nerve
+    answer: B
+    explanation: >-
+      The patellar (knee-jerk) reflex is mediated mainly by **L4** through the **femoral nerve** (L2–L4) to the
+      quadriceps. The ankle reflex is S1 (tibial nerve).
+  - stem: >-
+      A patient has weak knee extension, a reduced patellar reflex and weak hip adduction. Where is the lesion most
+      likely?
+    choices:
+      - Isolated femoral nerve
+      - Isolated obturator nerve
+      - L3–L4 nerve roots or the lumbar plexus
+      - Common fibular nerve
+      - Sciatic nerve
+    answer: C
+    explanation: >-
+      The femoral nerve doesn't supply the adductors (obturator nerve), so **added adduction weakness** points to a
+      lesion of the shared **L3–L4 roots or the lumbar plexus**. An isolated femoral neuropathy preserves hip adduction.
 flashcards:
   - front: Roots of the femoral nerve?
     back: L2–L4 (posterior divisions)
