@@ -1,0 +1,17 @@
+title: Upper limb nerve injuries
+region: upper-limb
+summary: Where each nerve is injured, what is lost, and the sign that gives it away.
+columns: [Nerve (roots), Typical injury, Motor loss, Sensory loss, Classic sign]
+rows:
+  - ["[[axillary-nerve|Axillary]] (C5–C6)", "Fracture of the surgical neck of the humerus; anterior shoulder dislocation", "Deltoid, teres minor — weak abduction", "\"Regimental badge\" patch over the lateral shoulder", "Flattened deltoid"]
+  - ["[[musculocutaneous-nerve|Musculocutaneous]] (C5–C7)", "Uncommon; penetrating trauma", "Biceps, brachialis, coracobrachialis — weak elbow flexion and supination", "Lateral forearm", "Lost biceps reflex"]
+  - ["[[radial-nerve|Radial]] (C5–T1)", "Midshaft humerus fracture (spiral groove); \"Saturday night palsy\"; crutch pressure in the axilla", "Wrist and finger extensors (triceps too if injured in the axilla)", "Dorsum of the hand over the first web space", "**Wrist drop**"]
+  - ["[[median-nerve|Median]] — at the elbow", "Supracondylar humerus fracture", "Pronators, lateral forearm flexors, thenar muscles", "Lateral 3½ digits and lateral palm", "**Hand of benediction** when making a fist"]
+  - ["[[median-nerve|Median]] — at the wrist", "**Carpal tunnel syndrome**; wrist laceration", "Thenar muscles and lateral two lumbricals (\"LOAF\")", "Lateral 3½ digits (palm spared — palmar cutaneous branch)", "Thenar atrophy; Tinel and Phalen signs"]
+  - ["[[ulnar-nerve|Ulnar]] — at the elbow", "Medial epicondyle fracture; cubital tunnel (leaning on the elbow)", "Flexor carpi ulnaris, medial flexor digitorum profundus, most intrinsic hand muscles", "Medial 1½ digits", "Claw of the 4th and 5th digits; **Froment sign**"]
+  - ["[[ulnar-nerve|Ulnar]] — at the wrist", "Guyon canal compression (cyclists); hook of hamate fracture", "Intrinsic hand muscles", "Medial 1½ digits (palmar)", "More obvious clawing than an elbow lesion (\"ulnar paradox\")"]
+  - ["[[long-thoracic-nerve|Long thoracic]] (C5–C7)", "Axillary node dissection or mastectomy; chest tube; heavy backpack", "Serratus anterior", "None", "**Medial scapular winging**"]
+  - ["Upper trunk of the [[brachial-plexus]] (C5–C6)", "**Erb palsy** — shoulder dystocia, fall forcing the head and shoulder apart", "Shoulder abductors and external rotators, elbow flexors, supinators", "Lateral arm and forearm", "\"**Waiter's tip**\" posture"]
+  - ["Lower trunk of the [[brachial-plexus]] (C8–T1)", "**Klumpke palsy** — arm pulled upward (breech delivery, grabbing a branch); Pancoast tumor; cervical rib", "Intrinsic hand muscles", "Medial forearm and hand", "Total claw hand ± **Horner syndrome**"]
+notes:
+  - "The ulnar paradox: a proximal ulnar lesion also weakens the medial FDP, so the fingers flex less and the claw looks milder than with a lesion at the wrist."

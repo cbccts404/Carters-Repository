@@ -1,4 +1,5 @@
 ---
+import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import SelfQuiz from '../../components/SelfQuiz.astro';
 import Flashcards from '../../components/Flashcards.astro';
@@ -15,6 +16,7 @@ import {
   mdInline,
   plain,
   regionUrl,
+  url,
   structureUrl,
   systemUrl,
   type Structure,
@@ -134,6 +136,11 @@ const exam = d.exam
   : undefined;
 
 const related = d.related.map((r) => atlas.byId.get(r)).filter(Boolean) as Structure[];
+// comparison tables that link to this entry
+const linkRe = new RegExp(`\\[\\[${entry.id}(\\||\\]\\])`);
+const inTables = (await getCollection('tables')).filter((t) =>
+  [...t.data.rows.flat(), ...t.data.notes].some((c) => linkRe.test(c)),
+);
 const { sections, done, total } = completeness(entry);
 const summary = await mdInline(d.summary);
 ---
@@ -344,7 +351,7 @@ const summary = await mdInline(d.summary);
   </section>
 
   {
-    related.length > 0 && (
+    (related.length > 0 || inTables.length > 0) && (
       <section>
         <h2>See also</h2>
         <ul>
@@ -353,6 +360,11 @@ const summary = await mdInline(d.summary);
               <a class={`xref t-${r.data.type}`} href={structureUrl(r)}>
                 {r.data.name}
               </a>
+            </li>
+          ))}
+          {inTables.map((t) => (
+            <li>
+              <a href={url(`tables/${t.id}/`)}>{t.data.title}</a> <span class="muted small">(comparison table)</span>
             </li>
           ))}
         </ul>

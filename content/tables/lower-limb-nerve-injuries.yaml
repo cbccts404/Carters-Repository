@@ -1,0 +1,17 @@
+title: Lower limb nerve injuries
+region: lower-limb
+summary: Where each nerve is injured, what is lost, and the sign that gives it away.
+columns: [Nerve (roots), Typical injury, Motor loss, Sensory loss, Classic sign]
+rows:
+  - ["[[femoral-nerve|Femoral]] (L2–L4)", "Retroperitoneal or iliopsoas hematoma (anticoagulation); hip or pelvic surgery; femoral catheterization", "Quadriceps — weak knee extension", "Anterior thigh; medial leg (saphenous nerve)", "Knee buckles; **lost patellar reflex**"]
+  - ["[[obturator-nerve|Obturator]] (L2–L4)", "Pelvic surgery, childbirth, pelvic fracture", "Hip adductors", "Medial thigh", "Weak adduction; leg swings outward when walking"]
+  - ["Superior gluteal (L4–S1) — see [[gluteus-medius-and-minimus]]", "Misplaced intramuscular injection; hip surgery", "Gluteus medius and minimus, tensor fasciae latae", "None", "**Trendelenburg sign** — the pelvis drops on the side opposite the lesion"]
+  - ["Inferior gluteal (L5–S2) — see [[gluteus-maximus]]", "Posterior approach to the hip", "Gluteus maximus", "None", "Difficulty rising from a chair or climbing stairs"]
+  - ["[[sciatic-nerve|Sciatic]] (L4–S3)", "Posterior hip dislocation; misplaced gluteal injection; hip arthroplasty", "Hamstrings and every muscle below the knee", "Leg and foot except the medial side (saphenous)", "Foot drop with weak knee flexion"]
+  - ["[[common-fibular-nerve|Common fibular]] (L4–S2)", "**Fibular neck fracture**; tight cast or brace; habitual leg crossing; prolonged squatting", "Ankle dorsiflexors and evertors", "Lateral leg and dorsum of the foot", "**Foot drop** with steppage gait"]
+  - ["Deep fibular — branch of the [[common-fibular-nerve]]", "Anterior compartment syndrome (see [[leg-compartments]])", "Ankle and toe dorsiflexors", "First web space only", "Foot drop"]
+  - ["[[tibial-nerve|Tibial]] (L4–S3)", "Tarsal tunnel behind the medial malleolus; posterior knee trauma", "Plantarflexors, toe flexors, intrinsic foot muscles", "Sole of the foot", "Can't stand on the toes; burning sole (tarsal tunnel)"]
+  - ["Lateral femoral cutaneous (L2–L3)", "**Meralgia paresthetica** — tight belts, obesity, pregnancy", "None (sensory nerve)", "Anterolateral thigh", "Burning or numb anterolateral thigh"]
+  - ["[[pudendal-nerve|Pudendal]] (S2–S4)", "Childbirth; prolonged cycling", "External urethral and anal sphincters, perineal muscles", "Perineum and genitalia", "Incontinence; perineal numbness"]
+notes:
+  - "Foot drop with weak eversion but normal inversion points to the common fibular nerve; weak inversion as well suggests an L5 radiculopathy."
