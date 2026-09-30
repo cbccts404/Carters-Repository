@@ -141,6 +141,17 @@ quiz:
     explanation: >-
       The **lung point** (where sliding lung meets the non-sliding pneumothorax) is highly specific. Lung sliding and
       B-lines rule pneumothorax out at that location. Anechoic fluid and the spine sign indicate effusion.
+  - stem: In an upright patient, where does a small pleural effusion collect first?
+    choices:
+      - Cervical pleura (cupula)
+      - Costomediastinal recess
+      - Oblique fissure
+      - Around the root of the lung
+      - Costodiaphragmatic recess
+    answer: E
+    explanation: >-
+      The **costodiaphragmatic recess** is the lowest part of the pleural cavity, where fluid collects first (blunting
+      of the costophrenic angle on CXR). The costomediastinal recess lies anteriorly behind the sternum.
 flashcards:
   - front: Pleural reflection lines (MCL, MAL, posterior)?
     back: Ribs 8, 10, 12 (lung border 2 ribs higher — 6, 8, 10)

@@ -110,6 +110,28 @@ quiz:
     explanation: >-
       Standing **decreases preload** (smaller LV volume), so the prolapse occurs **earlier**, moving the click earlier and
       lengthening the murmur.
+  - stem: Which papillary muscle of the left ventricle usually has a dual blood supply from the LAD and circumflex?
+    choices:
+      - Anterolateral papillary muscle
+      - Posteromedial papillary muscle
+      - Septal papillary muscle
+      - Anterior papillary muscle of the right ventricle
+    answer: A
+    explanation: >-
+      The **anterolateral** papillary muscle usually has a **dual** supply (LAD and circumflex). The **posteromedial**
+      muscle usually depends on a single artery (the posterior interventricular), so it is more vulnerable to rupture
+      after inferior MI.
+  - stem: Which murmur is characteristic of chronic mitral regurgitation?
+    choices:
+      - Crescendo–decrescendo systolic murmur at the right upper sternal border radiating to the carotids
+      - Holosystolic blowing murmur at the apex radiating to the axilla
+      - Early diastolic decrescendo murmur at the left sternal border
+      - Opening snap followed by a mid-diastolic rumble at the apex
+      - Holosystolic murmur at the left lower sternal border that increases with inspiration
+    answer: B
+    explanation: >-
+      MR causes a **holosystolic, blowing murmur at the apex radiating to the axilla**. The other choices describe
+      aortic stenosis, aortic regurgitation, mitral stenosis and tricuspid regurgitation.
 flashcards:
   - front: Mitral stenosis — cause and murmur?
     back: Rheumatic heart disease; opening snap + mid-diastolic rumble at apex

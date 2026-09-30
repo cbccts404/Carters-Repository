@@ -110,6 +110,31 @@ quiz:
     explanation: >-
       The **ligamentum arteriosum** is the fibrous remnant of the **ductus arteriosus**. The ligamentum venosum is the
       remnant of the ductus venosus; the ligamentum teres is the remnant of the umbilical vein.
+  - stem: The right pulmonary artery passes to the right hilum behind which structures?
+    choices:
+      - Ascending aorta and superior vena cava
+      - Esophagus and thoracic duct
+      - Descending aorta and left main bronchus
+      - Azygos vein and right main bronchus
+      - Left atrium and pulmonary veins
+    answer: A
+    explanation: >-
+      The **right pulmonary artery** runs horizontally **behind the ascending aorta and SVC**. The shorter left
+      pulmonary artery passes in front of the descending aorta and left main bronchus and is joined to the arch by the
+      ligamentum arteriosum.
+  - stem: >-
+      A newborn has a ductal-dependent congenital heart lesion. Which drug keeps the ductus arteriosus open until
+      surgery?
+    choices:
+      - Indomethacin
+      - Ibuprofen
+      - Acetaminophen
+      - Digoxin
+      - Prostaglandin E1
+    answer: E
+    explanation: >-
+      **Prostaglandin E1** keeps the ductus open in ductal-dependent lesions. **Indomethacin**, ibuprofen or
+      acetaminophen (prostaglandin inhibitors) promote closure of a PDA.
 flashcards:
   - front: Pulmonary trunk — origin and bifurcation level?
     back: Right ventricle; bifurcates under the aortic arch at about T4–T5

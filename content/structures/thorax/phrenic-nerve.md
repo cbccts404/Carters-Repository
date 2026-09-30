@@ -103,6 +103,29 @@ quiz:
     explanation: >-
       The pericardium is innervated by the **phrenic nerve** (C3–C5). Pain from pericarditis radiating to the
       **trapezius ridge** is characteristic and reflects the shared C3–C5 dermatomes.
+  - stem: The phrenic nerve enters the thorax between which two structures?
+    choices:
+      - Trachea and esophagus
+      - Anterior and middle scalene muscles
+      - Common carotid artery and internal jugular vein
+      - Subclavian artery and subclavian vein
+      - First rib and clavicle
+    answer: D
+    explanation: >-
+      The phrenic nerve descends on the **anterior surface of anterior scalene** and enters the thorax **between the
+      subclavian artery and vein**. The roots of the brachial plexus pass between the anterior and middle scalenes.
+  - stem: Which symptom is typical of bilateral diaphragmatic paralysis?
+    choices:
+      - Hoarseness
+      - Hiccups only
+      - Orthopnea
+      - Dysphagia
+      - Shoulder-tip pain
+    answer: C
+    explanation: >-
+      Bilateral paralysis causes **orthopnea** (the abdominal contents push the flaccid diaphragm up when supine),
+      paradoxical inward movement of the abdomen on inspiration, and potentially respiratory failure. Unilateral
+      paralysis is often asymptomatic.
 flashcards:
   - front: Phrenic nerve — roots?
     back: C3, C4, C5 ("keeps the diaphragm alive")

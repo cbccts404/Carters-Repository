@@ -88,6 +88,30 @@ quiz:
       Air enters the left lung around the object during inspiration but can't leave on expiration (**check-valve**),
       so that side stays **hyperinflated** while the normal lung deflates. Foreign bodies occur on the left too, even
       though the right is more common.
+  - stem: The left main bronchus passes inferior to which structure?
+    choices:
+      - Azygos vein
+      - Arch of the aorta
+      - Superior vena cava
+      - Left brachiocephalic vein
+      - Thymus
+    answer: B
+    explanation: >-
+      The **arch of the aorta** passes over the **left** main bronchus, while the **azygos vein** arches over the
+      **right** main bronchus. The left main bronchus is longer and more horizontal than the right.
+  - stem: >-
+      After a high-speed deceleration injury, a patient has pneumomediastinum and a persistent large air leak despite a
+      functioning chest tube. The collapsed lung has fallen away from the hilum. What is the most likely injury?
+    choices:
+      - Tension pneumothorax
+      - Esophageal rupture
+      - Tracheobronchial injury
+      - Diaphragmatic rupture
+      - Aortic isthmus tear
+    answer: C
+    explanation: >-
+      **Tracheobronchial injury**, usually within about 2.5 cm of the carina, causes pneumomediastinum, subcutaneous
+      emphysema, a **persistent air leak** despite a chest tube, and the **"fallen lung" sign**.
 flashcards:
   - front: Right vs left main bronchus?
     back: "Right: wider, shorter, more vertical (aspiration). Left: longer, narrower, under the aortic arch"

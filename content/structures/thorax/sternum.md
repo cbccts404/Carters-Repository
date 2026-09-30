@@ -102,6 +102,29 @@ quiz:
     explanation: >-
       Sternal fractures raise concern for **blunt cardiac injury**. A **12-lead ECG** is the initial screening test
       (with troponin). A normal ECG and troponin make significant blunt cardiac injury unlikely.
+  - stem: The xiphisternal joint lies at about which vertebral level?
+    choices:
+      - T2
+      - T4/T5
+      - T9
+      - T12
+      - L1
+    answer: C
+    explanation: >-
+      The **xiphisternal joint** lies at about **T9**. The sternal angle marks the T4/T5 disc; the jugular notch lies at
+      about the level of T2.
+  - stem: Where should the hands be placed for chest compressions during CPR?
+    choices:
+      - On the lower half of the sternum (center of the chest)
+      - On the manubrium
+      - On the xiphoid process
+      - Over the left 5th intercostal space
+      - Over the upper sternum at the sternal angle
+    answer: A
+    explanation: >-
+      Compressions are delivered on the **lower half of the sternum**, compressing the heart between the sternum and
+      vertebral column. Pressing on the **xiphoid** can injure the liver. Rib and sternal fractures are common with
+      effective CPR.
 flashcards:
   - front: Three parts of the sternum?
     back: Manubrium, body, xiphoid process

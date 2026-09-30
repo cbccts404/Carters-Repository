@@ -89,6 +89,30 @@ quiz:
     explanation: >-
       **Neurogenic tumors** arise from the sympathetic chain and nerve roots in the **posterior** mediastinum. The anterior
       "4 T's" are thymoma, teratoma, thyroid, and "terrible" lymphoma.
+  - stem: The thymus develops from which embryologic structure?
+    choices:
+      - First pharyngeal pouch
+      - Third pharyngeal pouch
+      - Fourth pharyngeal pouch
+      - Second pharyngeal arch
+      - Thyroglossal duct
+    answer: B
+    explanation: >-
+      The thymus develops from the **third pharyngeal pouch** (endoderm), together with the **inferior parathyroid
+      glands**. DiGeorge syndrome reflects failure of the 3rd and 4th pouches.
+  - stem: >-
+      A chest radiograph of a healthy 6-month-old shows a triangular soft-tissue density extending from the upper
+      mediastinum. What is it most likely to be?
+    choices:
+      - Anterior mediastinal lymphoma
+      - Teratoma
+      - Right upper lobe pneumonia
+      - Retrosternal goiter
+      - Normal thymus ("sail sign")
+    answer: E
+    explanation: >-
+      The thymus is relatively large in infancy and normally visible on CXR as the **"sail sign"**; it isn't a mass. It
+      involutes after puberty and is replaced by fat.
 flashcards:
   - front: Thymus — embryologic origin?
     back: Third pharyngeal pouch (with inferior parathyroids)

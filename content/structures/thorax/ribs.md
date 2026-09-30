@@ -103,6 +103,30 @@ quiz:
     explanation: >-
       In **coarctation of the aorta**, blood bypasses the narrowing through the [[internal-thoracic-artery]] and
       intercostal arteries. The dilated, tortuous intercostal arteries erode the **inferior rib margins**.
+  - stem: On the first rib, the scalene tubercle separates the grooves for which two structures?
+    choices:
+      - Subclavian vein (in front) and subclavian artery (behind)
+      - Subclavian artery (in front) and subclavian vein (behind)
+      - Phrenic nerve and vagus nerve
+      - Internal thoracic artery and vein
+      - Brachial plexus (in front) and subclavian vein (behind)
+    answer: A
+    explanation: >-
+      Anterior scalene inserts on the **scalene tubercle**, with the **subclavian vein anterior** and the **subclavian
+      artery (with the brachial plexus) posterior** to it. A 1st rib fracture implies high-energy trauma and possible
+      injury to these structures.
+  - stem: >-
+      A patient has fractures of the left 10th and 11th ribs after a fall. Which associated injury is of most concern?
+    choices:
+      - Brachial plexus injury
+      - Subclavian artery injury
+      - Aortic arch injury
+      - Tracheal injury
+      - Splenic injury
+    answer: E
+    explanation: >-
+      **Lower rib (9–12) fractures** raise concern for injury to the **spleen** (left), **liver** (right) or
+      **kidneys**. 1st and 2nd rib fractures raise concern for subclavian vessel and brachial plexus injury.
 flashcards:
   - front: True, false and floating ribs?
     back: "True: 1–7. False: 8–10. Floating: 11–12"

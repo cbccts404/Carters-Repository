@@ -134,6 +134,18 @@ quiz:
     explanation: >-
       **Perforating branches of the internal thoracic artery** (medial mammary branches) supply the medial breast. The
       lateral thoracic artery supplies the lateral part.
+  - stem: A breast cancer causes dimpling of the overlying skin. What causes the dimpling?
+    choices:
+      - Obstruction of dermal lymphatics
+      - Invasion of the pectoralis major
+      - Retraction of the lactiferous ducts
+      - Fat necrosis
+      - Tethering of the suspensory (Cooper) ligaments
+    answer: E
+    explanation: >-
+      **Skin dimpling** comes from the tumor **tethering Cooper (suspensory) ligaments**, which run from the dermis to
+      the deep fascia. **Peau d'orange** is caused by obstruction of dermal lymphatics; nipple retraction reflects
+      involvement of the ducts behind the nipple.
 flashcards:
   - front: Breast — vertical and horizontal extent?
     back: Ribs 2–6; lateral sternal border to mid-axillary line (+ axillary tail)

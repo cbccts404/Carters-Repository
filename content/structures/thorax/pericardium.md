@@ -112,6 +112,31 @@ quiz:
     explanation: >-
       The **transverse pericardial sinus** lies posterior to the ascending aorta and pulmonary trunk and anterior to the
       SVC, allowing the great arteries to be isolated.
+  - stem: >-
+      Years after mediastinal radiation, a patient has edema, ascites and distended neck veins. The JVP rises on
+      inspiration, and there is an early diastolic knock. What is the most likely diagnosis?
+    choices:
+      - Acute pericarditis
+      - Cardiac tamponade
+      - Constrictive pericarditis
+      - Dilated cardiomyopathy
+      - Tricuspid stenosis
+    answer: C
+    explanation: >-
+      **Constrictive pericarditis** (after radiation, cardiac surgery, TB or prior pericarditis) restricts diastolic
+      filling, causing right heart failure signs, a **Kussmaul sign** (JVP rising on inspiration) and a **pericardial
+      knock**.
+  - stem: In cardiac tamponade, what does pulsus paradoxus mean?
+    choices:
+      - A rise in systolic BP of more than 10 mmHg on inspiration
+      - A fall in systolic BP of more than 10 mmHg on inspiration
+      - Alternating strong and weak beats
+      - A delayed carotid upstroke
+      - A wide pulse pressure with bounding pulses
+    answer: B
+    explanation: >-
+      **Pulsus paradoxus** is an exaggerated **fall in systolic BP (more than 10 mmHg) during inspiration**. With Beck's
+      triad (hypotension, JVD, muffled heart sounds) and electrical alternans, it supports tamponade.
 flashcards:
   - front: Beck's triad?
     back: Hypotension, JVD, muffled heart sounds (cardiac tamponade)

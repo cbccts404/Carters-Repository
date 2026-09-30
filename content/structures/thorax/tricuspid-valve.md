@@ -91,6 +91,28 @@ quiz:
     explanation: >-
       **Ebstein anomaly**, apical displacement of the septal and posterior **tricuspid** leaflets, is associated with
       prenatal **lithium** exposure.
+  - stem: What are the three leaflets of the tricuspid valve?
+    choices:
+      - Right, left and posterior
+      - Anterior, posterior and septal
+      - Anterior, posterior and lateral
+      - Aortic, mural and septal
+      - Superior, inferior and septal
+    answer: B
+    explanation: >-
+      The tricuspid valve has **anterior, posterior and septal** leaflets. The septal leaflet lies near the membranous
+      septum and AV conduction tissue. The aortic valve has right, left and posterior (non-coronary) cusps.
+  - stem: Which jugular venous finding is typical of significant tricuspid regurgitation?
+    choices:
+      - Cannon a waves
+      - Absent a waves
+      - Kussmaul sign only
+      - Steep y descent only
+      - Large (giant) v waves
+    answer: E
+    explanation: >-
+      Regurgitant flow into the right atrium during systole produces **prominent (giant) v waves** in the JVP, often
+      with a **pulsatile liver**. Cannon a waves occur with AV dissociation.
 flashcards:
   - front: Tricuspid regurgitation — murmur and sign?
     back: Holosystolic at left lower sternal border, louder on inspiration (Carvallo sign)

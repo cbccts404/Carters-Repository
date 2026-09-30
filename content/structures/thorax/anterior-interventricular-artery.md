@@ -88,6 +88,31 @@ quiz:
     explanation: >-
       This is **Wellens syndrome**, a marker of **critical proximal LAD stenosis**. Stress testing may precipitate an MI;
       the patient needs **coronary angiography**.
+  - stem: >-
+      Several weeks after a large anterior MI, echocardiography shows a thin, dyskinetic apex containing a mural
+      thrombus. What complication has developed?
+    choices:
+      - Papillary muscle rupture
+      - Free wall rupture
+      - Dressler syndrome
+      - Right ventricular infarction
+      - Left ventricular apical aneurysm
+    answer: E
+    explanation: >-
+      The LAD supplies the **apex**, so a large anterior MI can leave a **left ventricular apical aneurysm**, a thin
+      dyskinetic segment in which **thrombus** forms (embolic risk). Papillary muscle rupture typically follows an
+      inferior MI.
+  - stem: Which bypass conduit to the LAD has the best long-term patency?
+    choices:
+      - Left internal thoracic (mammary) artery
+      - Saphenous vein graft
+      - Radial artery graft
+      - Cephalic vein graft
+      - Right gastroepiploic artery
+    answer: A
+    explanation: >-
+      The **LIMA → LAD** graft has the best long-term patency of any bypass conduit and is the standard graft to the LAD
+      in CABG.
 flashcards:
   - front: LAD territory?
     back: Anterior LV, anterior 2/3 of septum, apex, anterolateral papillary muscle (shared)

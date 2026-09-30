@@ -100,6 +100,29 @@ quiz:
       - Coronary sinus
     answer: B
     explanation: The **azygos vein** arches over the right lung root at about the level of the sternal angle (T4) and drains into the posterior SVC.
+  - stem: A persistent left superior vena cava usually drains into which structure?
+    choices:
+      - Left atrium
+      - Left brachiocephalic vein
+      - Azygos vein
+      - Hemiazygos vein
+      - Coronary sinus
+    answer: E
+    explanation: >-
+      A **persistent left SVC** (failure of the left anterior cardinal vein to regress) usually drains into the
+      **coronary sinus**, which appears dilated on echocardiography. It is usually asymptomatic and may be found as a
+      left-sided catheter course.
+  - stem: How and where is the superior vena cava formed?
+    choices:
+      - Union of the internal jugular and subclavian veins at the left venous angle
+      - Union of the right and left brachiocephalic veins behind the right 1st costal cartilage
+      - Continuation of the azygos vein at the sternal angle
+      - Union of the brachiocephalic veins behind the left 3rd costal cartilage
+      - Continuation of the right subclavian vein
+    answer: B
+    explanation: >-
+      The SVC is formed by the **right and left brachiocephalic veins** behind the lower border of the **right 1st
+      costal cartilage**. It receives the azygos vein posteriorly and ends in the right atrium.
 flashcards:
   - front: SVC — formation and termination?
     back: Right + left brachiocephalic veins (behind right 1st costal cartilage) → right atrium (right 3rd costal cartilage)
