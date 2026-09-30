@@ -107,4 +107,7 @@ flashcards:
   - front: First-echelon pelvic nodes for the cervix and prostate?
     back: Obturator/external and internal iliac nodes
 related: [thoracic-duct, anal-canal, testis, vulva]
+images:
+  - image: gray-539-pelvic-arteries
+    caption: "The pelvic arteries: the pelvic lymph nodes lie along the internal, external and common iliac vessels."
 ---

@@ -388,3 +388,29 @@ ul.plain li { padding: 4px 0; }
 .offline-note { margin: 0; padding: 6px 16px; text-align: center; font-size: 0.85rem; background: var(--accent-soft); color: var(--text); border-bottom: 1px solid var(--border); }
 .offline-box { margin: 26px 0 8px; }
 .offline-box .meter { margin: 10px 0 4px; }
+
+/* verify-flag checklist (review page) */
+.vf-summary { position: sticky; top: var(--header-h); z-index: 2; background: var(--bg); padding: 6px 0 8px; }
+.vf-summary p { margin: 4px 0; }
+.vf-filter { display: flex; flex-wrap: wrap; gap: 0 16px; }
+.vf-group { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); margin: 10px 0; padding: 4px 14px; }
+.vf-group summary { cursor: pointer; padding: 8px 0; }
+.vf-list { list-style: none; padding: 0; margin: 0 0 8px; }
+.vf { border-top: 1px solid var(--border); padding: 10px 0; }
+.vf p { margin: 4px 0; }
+.vf-claim { font-size: 0.95rem; }
+.vf-badge { margin-left: 6px; font-size: 0.8rem; font-weight: 600; }
+.vf[data-state='ok'] .vf-badge { color: var(--good); }
+.vf[data-state='diff'] .vf-badge { color: var(--bad); }
+.vf[data-state='ok'] { opacity: 0.75; }
+.vf-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin-top: 6px; }
+.vf-actions [data-s='ok'][aria-pressed='true'] { border-color: var(--good); color: var(--good); background: color-mix(in srgb, var(--good) 12%, var(--surface)); }
+.vf-actions [data-s='diff'][aria-pressed='true'] { border-color: var(--bad); color: var(--bad); background: color-mix(in srgb, var(--bad) 12%, var(--surface)); }
+.vf-note { display: block; margin-top: 8px; }
+.vf-note[hidden], .vf-report[hidden] { display: none; }
+.vf-note textarea, .vf-report {
+  display: block; width: 100%; margin-top: 4px; padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px;
+  background: var(--bg); color: var(--text); font: inherit; font-size: 0.9rem; box-sizing: border-box;
+}
+.vf-report { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; }
+.vf-export { margin: 18px 0 8px; }

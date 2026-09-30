@@ -110,4 +110,9 @@ flashcards:
   - front: Preferred vein for venipuncture and why?
     back: Median cubital vein; superficial, large, anchored, and separated from the artery/nerve by the bicipital aponeurosis
 related: [elbow-joint, brachial-artery, median-nerve]
+images:
+  - image: gray-574-upper-limb-superficial-veins
+    caption: "Superficial veins at the elbow, including the median cubital vein used for venipuncture."
+  - image: gray-525-brachial-artery
+    caption: "The brachial artery entering the cubital fossa."
 ---

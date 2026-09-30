@@ -96,4 +96,7 @@ flashcards:
     back: Biphasic or deep T inversions in V2–V3 after pain resolves → critical proximal LAD stenosis
 diagrams: [coronary-arteries]
 related: [left-coronary-artery, circumflex-artery, internal-thoracic-artery]
+images:
+  - image: gray-492-heart-sternocostal
+    caption: "The anterior descending (interventricular) branch of the left coronary artery on the sternocostal surface."
 ---

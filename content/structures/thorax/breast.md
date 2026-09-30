@@ -143,4 +143,9 @@ flashcards:
   - front: Standard mammographic views?
     back: Craniocaudal (CC) and mediolateral oblique (MLO)
 related: [axilla, pectoralis-major, internal-thoracic-artery]
+images:
+  - image: gray-1172-mammary-gland
+    caption: "Dissection of the mammary gland: lobules, lactiferous ducts and ampullae."
+  - image: gray-607-mammary-lymphatics
+    caption: "Lymphatic drainage of the breast to the axillary nodes."
 ---

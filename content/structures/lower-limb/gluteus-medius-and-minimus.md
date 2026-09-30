@@ -81,4 +81,9 @@ flashcards:
   - front: Positive Trendelenburg — which side is weak?
     back: The stance side; the opposite hip drops
 related: [gluteus-maximus, hip-joint, sacral-plexus]
+images:
+  - image: gray-235-hip-bone-outer
+    caption: "Outer surface of the hip bone: gluteus medius and minimus arise between the gluteal lines."
+  - image: gray-344-hip-transverse-section
+    caption: "Section at the hip joint showing gluteus medius and minimus lateral to the joint."
 ---

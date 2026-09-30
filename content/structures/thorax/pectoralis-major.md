@@ -98,4 +98,7 @@ flashcards:
   - front: Intertubercular groove insertions?
     back: "Lateral lip: pectoralis major. Floor: latissimus dorsi. Medial lip: teres major"
 related: [breast, axilla]
+images:
+  - image: gray-410-pectoralis-deltoid-biceps
+    caption: "Pectoralis major converging on the lateral lip of the bicipital groove."
 ---

@@ -192,4 +192,9 @@ flashcards:
     back: Tinel, Phalen, carpal compression (Durkan)
 diagrams: [brachial-plexus]
 related: [carpal-tunnel, cubital-fossa]
+images:
+  - image: gray-815-superficial-palmar-nerves
+    caption: "Palmar branches of the median nerve to the thenar muscles and lateral digits."
+  - image: gray-417-forearm-cross-section
+    caption: "The median nerve in the mid-forearm between the superficial and deep flexors."
 ---

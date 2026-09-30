@@ -96,4 +96,9 @@ flashcards:
   - front: Classic setting for rectus sheath hematoma?
     back: Anticoagulated (often older) patient after coughing or straining
 related: [anterior-abdominal-wall, inferior-epigastric-artery]
+images:
+  - image: gray-392-external-oblique-rectus-sheath
+    caption: "The anterior rectus sheath formed by the external oblique aponeurosis; the tendinous intersections of rectus abdominis show through it."
+  - image: gray-395-internal-oblique
+    caption: "The internal oblique contributing to the rectus sheath."
 ---

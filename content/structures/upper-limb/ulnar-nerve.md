@@ -174,4 +174,9 @@ flashcards:
     back: "Froment: thumb IP flexion on key pinch (weak adductor pollicis). Wartenberg: little finger abducted (weak 3rd palmar interosseous)"
 diagrams: [brachial-plexus]
 related: [elbow-joint, wrist-joint]
+images:
+  - image: gray-817-deep-palmar-nerves
+    caption: "The deep branch of the ulnar nerve crossing the palm."
+  - image: gray-413-arm-cross-section
+    caption: "The ulnar nerve in the mid-arm, posterior to the brachial artery."
 ---

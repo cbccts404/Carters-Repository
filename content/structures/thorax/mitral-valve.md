@@ -120,4 +120,9 @@ flashcards:
     back: Posteromedial (single supply from posterior interventricular artery — inferior MI)
 diagrams: [cardiac-auscultation]
 related: [aortic-valve, heart]
+images:
+  - image: gray-495-ventricles-base-valves
+    caption: "The valves from above: the bicuspid (mitral) valve between left atrium and ventricle."
+  - image: gray-496-left-heart-interior
+    caption: "The opened left heart: mitral valve cusps, chordae tendineae and papillary muscles."
 ---

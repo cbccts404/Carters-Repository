@@ -106,4 +106,7 @@ flashcards:
   - front: Tests for subscapularis?
     back: Lift-off (Gerber), belly-press, bear-hug
 related: [supraspinatus, infraspinatus, teres-minor]
+images:
+  - image: gray-411-deep-chest-front-arm
+    caption: "Subscapularis forming the posterior wall of the axilla."
 ---

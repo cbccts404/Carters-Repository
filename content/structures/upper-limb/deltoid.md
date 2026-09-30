@@ -97,4 +97,9 @@ flashcards:
   - front: Actions of the three parts of deltoid?
     back: "Anterior: flexion + medial rotation. Middle: abduction. Posterior: extension + lateral rotation"
 related: [axillary-nerve, supraspinatus]
+images:
+  - image: gray-410-pectoralis-deltoid-biceps
+    caption: "Deltoid covering the shoulder, beside pectoralis major."
+  - image: gray-810-suprascapular-axillary-nerves
+    caption: "The axillary nerve supplying deltoid from behind."
 ---

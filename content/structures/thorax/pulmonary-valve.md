@@ -93,4 +93,9 @@ flashcards:
     back: Noonan syndrome (also tetralogy of Fallot, carcinoid)
 diagrams: [cardiac-auscultation]
 related: [tricuspid-valve, pulmonary-arteries]
+images:
+  - image: gray-494-heart-base-valves-above
+    caption: "The pulmonary and aortic valves seen from above."
+  - image: gray-495-ventricles-base-valves
+    caption: "The four valves at the base of the ventricles, with the pulmonary valve most anterior."
 ---
