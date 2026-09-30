@@ -15,7 +15,7 @@ anatomy:
     - "**Cervical enlargement** (about C4–T1, for the brachial plexus) and **lumbosacral enlargement** (about L1–S3 segments, for the lumbosacral plexus)"
     - "**Conus medullaris**: tapered lower end; **filum terminale** continues to the coccyx"
     - "**31 pairs of spinal nerves** (8 C, 12 T, 5 L, 5 S, 1 Co) from dorsal (sensory) and ventral (motor) rootlets"
-    - "Internal organization: central gray matter (dorsal, lateral T1–L2 sympathetic, and ventral horns) surrounded by white matter tracts (see Neuroanatomy)"
+    - "Internal organization: central gray matter (dorsal, lateral T1–L2 sympathetic, and ventral horns) surrounded by white matter tracts ([[dorsal-column-medial-lemniscus|dorsal columns]], [[spinothalamic-tract|spinothalamic]], [[corticospinal-tract|corticospinal]])"
   relations: >-
     Surrounded by the [[spinal-meninges]]; roots below the conus form the [[cauda-equina]]. Because the cord is shorter
     than the column, lower cord **segments lie higher than their vertebrae** (e.g. the lumbar segments lie at about T10–T12).

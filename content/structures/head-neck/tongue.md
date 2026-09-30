@@ -20,7 +20,7 @@ anatomy:
   venousDrainage: Lingual veins → internal jugular vein.
   lymphatics: Tip → submental nodes; lateral anterior two-thirds → submandibular nodes; posterior third → deep cervical (jugulodigastric) nodes, often **bilaterally** (see [[cervical-lymph-nodes]]).
   innervation: >-
-    **Motor**: all muscles by the **hypoglossal nerve (CN XII)** except **palatoglossus (vagus, CN X)**. **Anterior
+    **Motor**: all muscles by the **[[hypoglossal-nerve|hypoglossal nerve (CN XII)]]** except **palatoglossus (vagus, CN X)**. **Anterior
     two-thirds**: general sensation — lingual nerve (**V3**); taste — chorda tympani (**CN VII**). **Posterior
     third**: general sensation and taste — **CN IX**. Epiglottic region/root: **CN X** (internal laryngeal).
   relations: The lingual nerve loops under the submandibular duct in the floor of the mouth; the hypoglossal nerve lies on hyoglossus.

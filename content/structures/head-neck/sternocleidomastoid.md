@@ -13,7 +13,7 @@ anatomy:
   group: Superficial lateral neck muscle, enclosed in the investing layer of deep cervical fascia (with trapezius)
   origin: '**Sternal head** — anterior surface of the manubrium; **clavicular head** — superior surface of the medial third of the clavicle (see [[sternum]], [[clavicle]]).'
   insertion: Lateral surface of the **mastoid process** and the lateral half of the superior nuchal line (see [[skull]]).
-  innervation: '**Spinal accessory nerve (CN XI)** (motor); C2–C3 ventral rami (proprioception, via the [[cervical-plexus]]).'
+  innervation: '**[[accessory-nerve|Spinal accessory nerve (CN XI)]]** (motor); C2–C3 ventral rami (proprioception, via the [[cervical-plexus]]).'
   bloodSupply: Occipital and superior thyroid arteries (branches of the [[external-carotid-artery]]) and the suprascapular artery.
   action:
     - "**One side**: tilts the head to the same side and **rotates the face to the opposite side**"

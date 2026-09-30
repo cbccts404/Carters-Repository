@@ -20,7 +20,7 @@ anatomy:
     **Masseter**: lateral surface of the ramus and angle. **Temporalis**: coronoid process and anterior ramus.
     **Medial pterygoid**: medial surface of the ramus and angle. **Lateral pterygoid**: neck of the condyle, the
     articular disc and capsule of the [[temporomandibular-joint]].
-  innervation: "**Mandibular division of the trigeminal nerve (V3)** — motor root"
+  innervation: "**Mandibular division of the [[trigeminal-nerve|trigeminal nerve]] (V3)** — motor root"
   bloodSupply: Branches of the maxillary artery (from the [[external-carotid-artery]]).
   action:
     - "**Elevation (closing)**: masseter, temporalis, medial pterygoid"

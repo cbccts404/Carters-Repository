@@ -21,7 +21,7 @@ anatomy:
   bloodSupply: '**Ophthalmic artery** (first branch of the internal carotid; see [[carotid-arteries]]) → **central retinal artery** (inner retina — an end artery) and ciliary arteries (choroid, which supplies the outer retina).'
   venousDrainage: Central retinal vein and vortex veins → ophthalmic veins → cavernous sinus.
   lymphatics: None within the globe.
-  innervation: Sensory from V1 (long and short ciliary nerves). Parasympathetic (CN III → ciliary ganglion) — pupillary constriction and accommodation. Sympathetic (superior cervical ganglion) — pupillary dilation.
+  innervation: Sensory from V1 (long and short ciliary nerves). Parasympathetic ([[oculomotor-nerve|CN III]] → ciliary ganglion) — pupillary constriction and accommodation. Sympathetic (superior cervical ganglion) — pupillary dilation.
   relations: Moved by the [[extraocular-muscles]]; the optic nerve leaves posteriorly slightly medial to the posterior pole.
 clinical:
   - title: Acute angle-closure glaucoma

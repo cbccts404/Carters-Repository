@@ -17,7 +17,7 @@ anatomy:
     oblique**: body of the sphenoid above the ring, passing through the **trochlea** (a pulley on the superomedial
     orbital wall). **Inferior oblique**: floor of the orbit near the nasolacrimal canal (the only one not from the apex).
   insertion: Recti into the sclera in front of the equator; obliques into the sclera behind the equator (posterolateral), which is why they depress/elevate and rotate.
-  innervation: '**LR6 SO4, rest 3**: lateral rectus — abducens nerve (**CN VI**); superior oblique — trochlear nerve (**CN IV**); superior, inferior and medial recti and inferior oblique — oculomotor nerve (**CN III**, which also supplies levator palpebrae superioris).'
+  innervation: '**LR6 SO4, rest 3**: lateral rectus — [[abducens-nerve|abducens nerve]] (**CN VI**); superior oblique — [[trochlear-nerve|trochlear nerve]] (**CN IV**); superior, inferior and medial recti and inferior oblique — oculomotor nerve (**CN III**, which also supplies levator palpebrae superioris).'
   bloodSupply: Muscular branches of the ophthalmic artery.
   action:
     - "**Medial rectus**: adduction"

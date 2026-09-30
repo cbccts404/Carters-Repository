@@ -15,7 +15,7 @@ anatomy:
   origin: Mostly from bones of the face or fascia (e.g. orbicularis oculi from the medial orbital margin; zygomaticus major from the zygomatic bone; buccinator from the alveolar processes and pterygomandibular raphe).
   insertion: Mostly into the skin and each other (e.g. modiolus at the angle of the mouth), which is why they move the skin.
   innervation: >-
-    **Facial nerve (CN VII)** — its five terminal branches leave the [[parotid-gland]]: **temporal, zygomatic, buccal,
+    **[[facial-nerve|Facial nerve (CN VII)]]** — its five terminal branches leave the [[parotid-gland]]: **temporal, zygomatic, buccal,
     marginal mandibular and cervical** ("To Zanzibar By Motor Car"). Also stapedius, stylohyoid and the posterior
     belly of digastric.
   bloodSupply: Facial, superficial temporal and transverse facial arteries (branches of the [[external-carotid-artery]]).

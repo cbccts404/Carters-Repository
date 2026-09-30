@@ -21,7 +21,7 @@ anatomy:
   venousDrainage: Pharyngeal venous plexus → internal jugular vein.
   lymphatics: Retropharyngeal and deep cervical nodes (see [[cervical-lymph-nodes]]).
   innervation: >-
-    **Pharyngeal plexus**: motor from **CN X** (all constrictors and most muscles) except **stylopharyngeus (CN IX)**;
+    **Pharyngeal plexus**: motor from **[[vagus-nerve|CN X]]** (all constrictors and most muscles) except **stylopharyngeus ([[glossopharyngeal-nerve|CN IX]])**;
     sensory from **CN IX** (oropharynx — afferent limb of the **gag reflex**; the efferent limb is CN X) and CN X
     (laryngopharynx); nasopharynx from V2.
   relations: Behind lies the retropharyngeal space (see [[deep-neck-spaces]]); laterally the parapharyngeal space and the carotid sheath.

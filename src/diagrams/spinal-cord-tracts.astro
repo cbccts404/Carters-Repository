@@ -1,0 +1,82 @@
+---
+/* Original schematic: cross-section of the cervical spinal cord (dorsal at the top) showing the gray
+   matter and the three clinically important long tracts. Tracts are drawn on both sides; labels on the
+   right side only. */
+import Label from '../components/Label.astro';
+
+const DC = '#60a5fa';
+const CST = '#ef4444';
+const STT = '#34d399';
+const gray =
+  '180,112 198,112 236,205 260,214 284,205 322,112 340,112 302,218 294,242 345,272 362,332 330,362 290,332 270,292 250,292 230,332 190,362 158,332 175,272 226,242 218,218';
+const both = (cx: number) => [cx, 520 - cx];
+---
+
+<div class="scroll">
+  <svg viewBox="20 60 760 440" role="img" aria-labelledby="sc-title sc-desc">
+    <title id="sc-title">Spinal cord cross-section: major tracts</title>
+    <desc id="sc-desc">
+      Cross-section of the cervical cord with the dorsal side at the top. The dorsal columns (fasciculus gracilis
+      medially, cuneatus laterally) lie between the dorsal horns and carry vibration, fine touch and proprioception on
+      the same side. The lateral corticospinal tract lies in the lateral funiculus and carries motor commands to the
+      same side of the body below. The spinothalamic tract lies in the anterolateral funiculus and carries pain and
+      temperature from the opposite side; its fibers cross in the anterior white commissure in front of the central
+      canal. The anterior corticospinal tract lies beside the anterior median fissure.
+    </desc>
+    <style>
+      .sc-cord { fill: color-mix(in srgb, var(--muted) 10%, var(--surface)); stroke: var(--text); stroke-width: 2; }
+      .sc-gray { fill: color-mix(in srgb, var(--muted) 45%, var(--surface)); stroke: var(--text); stroke-width: 1; stroke-linejoin: round; }
+      .sc-canal { fill: var(--surface); stroke: var(--text); stroke-width: 1; }
+    </style>
+
+    <ellipse class="sc-cord" cx="260" cy="245" rx="200" ry="150"></ellipse>
+    <!-- posterior median sulcus and anterior median fissure -->
+    <line x1="260" y1="95" x2="260" y2="208" stroke="var(--text)" stroke-width="1"></line>
+    <path d="M252 395 L260 356 L268 395" fill="var(--surface)" stroke="var(--text)" stroke-width="1"></path>
+
+    <!-- tracts -->
+    {both(250).map((x) => <ellipse cx={x} cy="152" rx="9" ry="44" fill={DC} opacity="0.75"></ellipse>)}
+    {both(229).map((x) => <ellipse cx={x} cy="150" rx="11" ry="38" fill={DC} opacity="0.5"></ellipse>)}
+    {both(118).map((x) => <ellipse cx={x} cy="212" rx="30" ry="38" fill={CST} opacity="0.6"></ellipse>)}
+    {both(124).map((x) => <ellipse cx={x} cy="306" rx="26" ry="36" fill={STT} opacity="0.6"></ellipse>)}
+    {both(244).map((x) => <ellipse cx={x} cy="372" rx="10" ry="20" fill={CST} opacity="0.35"></ellipse>)}
+
+    <!-- gray matter and central canal -->
+    <polygon class="sc-gray" points={gray}></polygon>
+    <circle class="sc-canal" cx="260" cy="256" r="5"></circle>
+
+    <!-- a spinothalamic fiber crossing in the anterior white commissure (left dorsal horn → right STT) -->
+    <path d="M205 150 Q228 250 258 268 Q330 290 386 300" fill="none" stroke={STT} stroke-width="2" stroke-dasharray="5 3"></path>
+
+    <!-- leader lines -->
+    <g stroke="var(--muted)" stroke-width="1">
+      <line x1="476" y1="96" x2="274" y2="124"></line>
+      <line x1="476" y1="136" x2="296" y2="146"></line>
+      <line x1="476" y1="200" x2="426" y2="210"></line>
+      <line x1="476" y1="262" x2="268" y2="262"></line>
+      <line x1="476" y1="318" x2="414" y2="310"></line>
+      <line x1="476" y1="360" x2="336" y2="340"></line>
+      <line x1="476" y1="404" x2="282" y2="382"></line>
+      <line x1="476" y1="166" x2="316" y2="128"></line>
+    </g>
+
+    <Label x={482} y={100} size="sm" to="dorsal-column-medial-lemniscus">Fasciculus gracilis (legs)</Label>
+    <Label x={482} y={140} size="sm" to="dorsal-column-medial-lemniscus">Fasciculus cuneatus (arms)</Label>
+    <Label x={482} y={170} size="sm">Dorsal horn (sensory)</Label>
+    <Label x={482} y={204} size="sm" to="corticospinal-tract">Lateral corticospinal tract</Label>
+    <Label x={482} y={218} size="sm">(ipsilateral motor)</Label>
+    <Label x={482} y={266} size="sm">Anterior white commissure</Label>
+    <Label x={482} y={280} size="sm">(crossing pain fibers — syrinx)</Label>
+    <Label x={482} y={322} size="sm" to="spinothalamic-tract">Spinothalamic tract</Label>
+    <Label x={482} y={336} size="sm">(contralateral pain, temp)</Label>
+    <Label x={482} y={364} size="sm">Ventral horn (LMN)</Label>
+    <Label x={482} y={408} size="sm" to="corticospinal-tract">Anterior corticospinal tract</Label>
+
+    <Label x={40} y={84} size="sm">Dorsal ↑ · cervical level</Label>
+    <Label x={40} y={440} size="sm">Blue: dorsal columns — cross in the medulla</Label>
+    <Label x={40} y={458} size="sm">Green: spinothalamic — crosses within 1–2 segments</Label>
+    <Label x={40} y={476} size="sm">Red: corticospinal — crossed in the medulla, descends on the same side it acts on</Label>
+    <Label x={40} y={494} size="sm" to="spinal-cord">Hemisection → ipsilateral weakness and vibration loss, contralateral pain/temperature loss</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

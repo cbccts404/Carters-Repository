@@ -24,7 +24,7 @@ anatomy:
     - "Side-to-side (grinding) movements"
     - "Muscles: see [[muscles-of-mastication]]"
   stability: Most stable with the teeth together (occlusion). Wide opening moves the condyle onto the articular tubercle, the position from which it can dislocate.
-  innervation: Auriculotemporal and masseteric branches of the mandibular nerve (V3).
+  innervation: Auriculotemporal and masseteric branches of the mandibular nerve (V3; [[trigeminal-nerve]]).
   bloodSupply: Superficial temporal and maxillary arteries (branches of the [[external-carotid-artery]]).
   relations: The parotid gland lies behind and lateral to the joint; the external acoustic meatus lies directly behind the condyle, so TMJ pain is often felt as ear pain.
 clinical:

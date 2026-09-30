@@ -11,7 +11,7 @@ highYield: true
 status: draft
 anatomy:
   roots: Vagus nerve (CN X) — motor fibers from the nucleus ambiguus
-  origin: Branch of the **vagus nerve (CN X)** in the root of the neck (right) or the thorax (left).
+  origin: Branch of the **[[vagus-nerve|vagus nerve (CN X)]]** in the root of the neck (right) or the thorax (left).
   course: >-
     **Right**: hooks under the **right subclavian artery**. **Left**: hooks under the **aortic arch** just lateral to the
     ligamentum arteriosum (see [[thoracic-aorta]]), so it is longer and has a thoracic course. Both ascend in the

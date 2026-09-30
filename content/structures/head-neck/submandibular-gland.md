@@ -17,7 +17,7 @@ anatomy:
   bloodSupply: Facial artery (from the [[external-carotid-artery]]), which grooves the gland.
   venousDrainage: Facial vein.
   lymphatics: Submandibular nodes (see [[cervical-lymph-nodes]]).
-  innervation: '**Parasympathetic secretomotor: facial nerve (CN VII)** — superior salivatory nucleus → chorda tympani (joins the lingual nerve) → submandibular ganglion.'
+  innervation: '**Parasympathetic secretomotor: [[facial-nerve|facial nerve (CN VII)]]** — superior salivatory nucleus → chorda tympani (joins the lingual nerve) → submandibular ganglion.'
   relations: The marginal mandibular branch of the facial nerve, the lingual nerve and the hypoglossal nerve are all close — at risk in submandibular gland excision.
 clinical:
   - title: Sialolithiasis (salivary stones)

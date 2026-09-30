@@ -19,7 +19,7 @@ anatomy:
   bloodSupply: '**Labyrinthine artery** — usually from the anterior inferior cerebellar artery (vertebrobasilar system; see [[vertebral-artery]]); an end artery.'
   venousDrainage: Labyrinthine veins to the sigmoid and inferior petrosal sinuses.
   lymphatics: None.
-  innervation: '**Vestibulocochlear nerve (CN VIII)** — cochlear and vestibular divisions — leaving through the internal acoustic meatus with the facial nerve.'
+  innervation: '**[[vestibulocochlear-nerve|Vestibulocochlear nerve (CN VIII)]]** — cochlear and vestibular divisions — leaving through the internal acoustic meatus with the facial nerve.'
   relations: The internal acoustic meatus carries CN VII, CN VIII and the labyrinthine vessels toward the cerebellopontine angle.
 clinical:
   - title: Benign paroxysmal positional vertigo (BPPV)

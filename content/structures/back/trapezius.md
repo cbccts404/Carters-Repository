@@ -13,7 +13,7 @@ anatomy:
   group: Superficial extrinsic back muscles (posterior axioappendicular), with latissimus dorsi.
   origin: Medial third of the superior nuchal line, external occipital protuberance, **nuchal ligament**, and the spinous processes of **C7–T12**.
   insertion: Lateral third of the [[clavicle]], acromion, and spine of the [[scapula]].
-  innervation: '**Spinal accessory nerve (CN XI)** for motor; C3–C4 (cervical plexus) for pain and proprioception.'
+  innervation: '**[[accessory-nerve|Spinal accessory nerve (CN XI)]]** for motor; C3–C4 (cervical plexus) for pain and proprioception.'
   bloodSupply: Transverse cervical artery (superficial branch), plus the occipital artery and dorsal branches of posterior intercostal arteries.
   action:
     - "**Upper (descending) fibers**: elevate the scapula (shrug)"

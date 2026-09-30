@@ -1,0 +1,121 @@
+---
+/* Original schematic: the circle of Willis and vertebrobasilar system seen from below (inferior view,
+   anterior at the top). Red dots mark the commonest sites of saccular (berry) aneurysms. */
+import Label from '../components/Label.astro';
+
+const ICA_L = [262, 222];
+const ICA_R = [378, 222];
+const A_L = [302, 160];
+const A_R = [338, 160];
+const P_L = [272, 318];
+const P_R = [368, 318];
+const TIP = [320, 330];
+const m = (p: number[]) => [640 - p[0], p[1]]; // mirror across the midline (x = 320)
+---
+
+<div class="scroll">
+  <svg viewBox="-70 20 780 560" role="img" aria-labelledby="cw-title cw-desc">
+    <title id="cw-title">Circle of Willis and vertebrobasilar system (inferior view)</title>
+    <desc id="cw-desc">
+      Seen from below with the front of the brain at the top. The two vertebral arteries give the posterior inferior
+      cerebellar arteries and join to form the basilar artery, which gives the anterior inferior cerebellar, pontine and
+      superior cerebellar arteries and divides into the two posterior cerebral arteries. Posterior communicating
+      arteries join each posterior cerebral artery to the internal carotid artery. Each internal carotid gives the
+      middle cerebral artery laterally and the anterior cerebral artery medially; the anterior cerebral arteries are
+      joined by the anterior communicating artery. The oculomotor nerve passes between the posterior cerebral and
+      superior cerebellar arteries. Common aneurysm sites: anterior communicating artery, posterior communicating–internal
+      carotid junction, and middle cerebral artery bifurcation.
+    </desc>
+    <style>
+      .cw-a { fill: none; stroke: var(--t-artery); stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+      .cw-s { fill: none; stroke: var(--t-artery); stroke-width: 3.5; stroke-linecap: round; }
+      .cw-t { fill: none; stroke: var(--t-artery); stroke-width: 1.8; stroke-linecap: round; }
+      .cw-ica { fill: var(--surface); stroke: var(--t-artery); stroke-width: 3; }
+      .cw-n { fill: none; stroke: var(--t-nerve); stroke-width: 3; stroke-linecap: round; }
+      .cw-stalk { fill: color-mix(in srgb, var(--t-organ) 40%, var(--surface)); stroke: var(--t-organ); stroke-width: 1.2; }
+      .cw-an { fill: #ef4444; stroke: var(--surface); stroke-width: 1.5; }
+    </style>
+
+    <!-- vertebral arteries and basilar -->
+    <path class="cw-a" d="M282 560 Q284 500 320 470 Q356 500 358 560"></path>
+    <path class="cw-a" d={`M320 470 L${TIP}`}></path>
+    <!-- PICA, AICA, pontine, SCA -->
+    <path class="cw-s" d="M290 518 Q250 520 212 540"></path>
+    <path class="cw-s" d={`M${m([290, 518])} Q${m([250, 520])} ${m([212, 540])}`}></path>
+    <path class="cw-s" d="M320 446 Q280 444 238 458"></path>
+    <path class="cw-s" d={`M320 446 Q${m([280, 444])} ${m([238, 458])}`}></path>
+    <path class="cw-t" d="M320 404 L292 400 M320 404 L348 400 M320 380 L294 376 M320 380 L346 376"></path>
+    <path class="cw-s" d="M320 346 Q280 350 232 362"></path>
+    <path class="cw-s" d={`M320 346 Q${m([280, 350])} ${m([232, 362])}`}></path>
+
+    <!-- posterior cerebral arteries -->
+    <path class="cw-a" d={`M${TIP} L${P_L} Q210 322 160 384`}></path>
+    <path class="cw-a" d={`M${TIP} L${P_R} Q${m([210, 322])} ${m([160, 384])}`}></path>
+
+    <!-- posterior communicating arteries -->
+    <path class="cw-s" d={`M${P_L} L${ICA_L}`}></path>
+    <path class="cw-s" d={`M${P_R} L${ICA_R}`}></path>
+
+    <!-- anterior cerebral (A1, A2) and anterior communicating -->
+    <path class="cw-a" d={`M${ICA_L} L${A_L} L302 60`}></path>
+    <path class="cw-a" d={`M${ICA_R} L${A_R} L338 60`}></path>
+    <path class="cw-s" d={`M${A_L} L${A_R}`}></path>
+
+    <!-- middle cerebral arteries with lenticulostriate branches -->
+    <path class="cw-a" d={`M${ICA_L} Q190 212 150 218 Q110 226 80 256`}></path>
+    <path class="cw-a" d={`M${ICA_R} Q${m([190, 212])} ${m([150, 218])} Q${m([110, 226])} ${m([80, 256])}`}></path>
+    <path class="cw-t" d="M150 218 L112 196 M150 218 L126 180"></path>
+    <path class="cw-t" d="M226 214 L222 196 M212 214 L206 196 M198 215 L190 198"></path>
+
+    <!-- internal carotid stumps and infundibulum -->
+    <circle class="cw-ica" cx={ICA_L[0]} cy={ICA_L[1]} r="9"></circle>
+    <circle class="cw-ica" cx={ICA_R[0]} cy={ICA_R[1]} r="9"></circle>
+    <circle class="cw-stalk" cx="320" cy="258" r="11"></circle>
+
+    <!-- oculomotor nerves between PCA and SCA -->
+    <path class="cw-n" d="M306 334 Q262 334 236 300 L226 262"></path>
+    <path class="cw-n" d={`M334 334 Q${m([262, 334])} ${m([236, 300])} L${m([226, 262])}`}></path>
+
+    <!-- aneurysm sites -->
+    <circle class="cw-an" cx="320" cy="160" r="7"></circle>
+    <circle class="cw-an" cx="268" cy="236" r="6"></circle>
+    <circle class="cw-an" cx="150" cy="218" r="6"></circle>
+
+    <!-- leader lines -->
+    <g stroke="var(--muted)" stroke-width="1">
+      <line x1="420" y1="120" x2="326" y2="156"></line>
+      <line x1="440" y1="288" x2="376" y2="272"></line>
+      <line x1="416" y1="210" x2="388" y2="220"></line>
+      <line x1="136" y1="170" x2="190" y2="200"></line>
+      <line x1="218" y1="318" x2="244" y2="308"></line>
+      <line x1="300" y1="258" x2="262" y2="258"></line>
+      <line x1="556" y1="350" x2="404" y2="360"></line>
+      <line x1="556" y1="410" x2="478" y2="382"></line>
+      <line x1="556" y1="458" x2="402" y2="454"></line>
+      <line x1="556" y1="526" x2="430" y2="536"></line>
+      <line x1="556" y1="562" x2="362" y2="548"></line>
+    </g>
+
+    <!-- labels -->
+    <Label x={296} y={50} anchor="end" to="cerebral-arteries">Anterior cerebral a.</Label>
+    <Label x={426} y={116} size="sm" to="circle-of-willis">Anterior communicating a.</Label>
+    <Label x={422} y={208} size="sm" to="carotid-arteries">Internal carotid a. (cut)</Label>
+    <Label x={446} y={292} size="sm" to="circle-of-willis">Posterior communicating a.</Label>
+    <Label x={60} y={302} anchor="middle" to="cerebral-arteries">Middle cerebral a.</Label>
+    <Label x={562} y={414} size="sm" to="cerebral-arteries">Posterior cerebral a.</Label>
+    <Label x={562} y={354} size="sm" to="cerebellum">Superior cerebellar a.</Label>
+    <Label x={356} y={392} size="sm">Pontine branches</Label>
+    <Label x={562} y={462} size="sm" to="pons">AICA</Label>
+    <Label x={312} y={428} anchor="end" size="sm" to="vertebrobasilar-system">Basilar a.</Label>
+    <Label x={562} y={530} size="sm" to="medulla-oblongata">PICA</Label>
+    <Label x={562} y={566} size="sm" to="vertebral-artery">Vertebral a.</Label>
+    <Label x={130} y={166} anchor="end" size="sm" to="internal-capsule">Lenticulostriate aa.</Label>
+    <Label x={214} y={322} anchor="end" size="sm" to="oculomotor-nerve">CN III</Label>
+    <Label x={250} y={262} anchor="end" size="sm" to="pituitary-gland">Infundibulum</Label>
+
+    <circle class="cw-an" cx="-56" cy="64" r="6"></circle>
+    <Label x={-44} y={68} size="sm">Berry aneurysm sites: AComm, PComm–ICA, MCA bifurcation</Label>
+    <Label x={-60} y={44} size="sm">Inferior view · anterior ↑</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

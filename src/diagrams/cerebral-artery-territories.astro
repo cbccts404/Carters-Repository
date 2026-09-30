@@ -1,0 +1,97 @@
+---
+/* Original schematic: territories of the anterior, middle and posterior cerebral arteries on the lateral
+   surface of the left hemisphere and the medial surface of the right hemisphere (frontal pole on the
+   left in both). Borders between territories vary between people. */
+import Label from '../components/Label.astro';
+
+const ACA = '#60a5fa';
+const MCA = '#f59e0b';
+const PCA = '#34d399';
+const outline =
+  'M60 200 C60 100 190 44 320 48 C440 52 510 120 510 200 C510 250 488 282 452 296 C420 306 392 300 372 312 C340 334 292 342 250 326 C214 312 176 304 140 302 C88 298 60 256 60 200 Z';
+const legend = [
+  { y: 520, c: ACA, name: 'ACA', to: 'cerebral-arteries', t: 'Medial frontal/parietal — leg and foot, bladder' },
+  { y: 566, c: MCA, name: 'MCA', to: 'cerebral-arteries', t: 'Lateral surface — face and arm, language, attention' },
+  { y: 612, c: PCA, name: 'PCA', to: 'cerebral-arteries', t: 'Occipital lobe (vision), inferior temporal lobe' },
+];
+---
+
+<div class="scroll">
+  <svg viewBox="0 0 1100 650" role="img" aria-labelledby="ct-title ct-desc">
+    <title id="ct-title">Territories of the cerebral arteries</title>
+    <desc id="ct-desc">
+      Lateral surface of the left hemisphere: the middle cerebral artery supplies most of the lateral surface including
+      the face and arm areas of the motor and sensory cortex and the language areas; the anterior cerebral artery
+      supplies a strip along the superior border; the posterior cerebral artery supplies the occipital pole and the
+      inferior temporal lobe. Medial surface of the right hemisphere: the anterior cerebral artery supplies the medial
+      frontal and parietal lobes including the leg area (paracentral lobule); the posterior cerebral artery supplies the
+      occipital lobe around the calcarine sulcus.
+    </desc>
+    <defs>
+      <clipPath id="ct-clip-l"><path d={outline}></path></clipPath>
+      <clipPath id="ct-clip-m"><path d={outline} transform="translate(560 0)"></path></clipPath>
+    </defs>
+    <style>
+      .ct-out { fill: none; stroke: var(--text); stroke-width: 2; }
+      .ct-sulc { fill: none; stroke: var(--text); stroke-width: 1.6; opacity: 0.7; }
+      .ct-cc { fill: var(--surface); stroke: var(--text); stroke-width: 1.5; }
+    </style>
+
+    <!-- lateral surface (left hemisphere) -->
+    <g clip-path="url(#ct-clip-l)">
+      <rect x="40" y="30" width="490" height="320" fill={MCA} opacity="0.45"></rect>
+      <path d="M40 150 C130 90 300 60 470 110 L470 20 L40 20 Z" fill={ACA} opacity="0.6"></path>
+      <path d="M452 60 C420 150 424 240 470 330 L540 330 L540 40 Z" fill={PCA} opacity="0.6"></path>
+      <path d="M240 330 C300 300 380 292 460 300 L460 360 L240 360 Z" fill={PCA} opacity="0.6"></path>
+    </g>
+    <path class="ct-out" d={outline}></path>
+    <path class="ct-sulc" d="M300 50 C292 110 270 170 258 222"></path>
+    <path class="ct-sulc" d="M158 262 C220 238 300 226 380 232"></path>
+
+    <!-- medial surface (right hemisphere) -->
+    <g transform="translate(560 0)">
+      <g clip-path="url(#ct-clip-m)" transform="translate(-560 0)">
+        <g transform="translate(560 0)">
+          <rect x="40" y="30" width="490" height="320" fill={ACA} opacity="0.6"></rect>
+          <path d="M400 40 C382 130 370 200 330 262 L300 360 L540 360 L540 40 Z" fill={PCA} opacity="0.6"></path>
+          <path d="M150 300 C200 290 260 300 300 320 L300 360 L140 360 Z" fill={PCA} opacity="0.6"></path>
+        </g>
+      </g>
+      <path class="ct-out" d={outline}></path>
+      <path class="ct-cc" d="M150 196 C170 150 260 132 350 148 C392 156 404 186 384 200 C360 216 330 196 300 190 C240 180 200 196 180 212 C160 226 140 216 150 196 Z"></path>
+      <path class="ct-sulc" d="M400 40 C382 130 370 200 330 262"></path>
+      <path class="ct-sulc" d="M340 244 C380 236 430 240 478 232"></path>
+      <path class="ct-sulc" d="M280 48 C280 70 270 88 262 100"></path>
+    </g>
+
+    <!-- labels on the lateral view -->
+    <Label x={120} y={120} to="cerebral-arteries">ACA</Label>
+    <Label x={170} y={200} to="cerebral-arteries">MCA</Label>
+    <Label x={458} y={210} to="cerebral-arteries">PCA</Label>
+    <Label x={306} y={76} size="sm">Leg</Label>
+    <Label x={290} y={134} size="sm">Arm</Label>
+    <Label x={272} y={200} size="sm">Face</Label>
+    <Label x={214} y={290} size="sm" to="cerebral-cortex">Lateral fissure</Label>
+    <Label x={330} y={40} size="sm" to="cerebral-cortex">Central sulcus</Label>
+    <Label x={285} y={380} anchor="middle">Lateral surface, left hemisphere</Label>
+
+    <!-- labels on the medial view -->
+    <Label x={680} y={120} to="cerebral-arteries">ACA</Label>
+    <Label x={1010} y={176} to="cerebral-arteries">PCA</Label>
+    <Label x={690} y={72} size="sm" to="cerebral-cortex">Leg/foot (paracentral lobule)</Label>
+    <Label x={930} y={262} size="sm" to="optic-nerve">Calcarine sulcus (V1)</Label>
+    <Label x={880} y={180} size="sm">Corpus callosum</Label>
+    <Label x={845} y={380} anchor="middle">Medial surface, right hemisphere</Label>
+
+    <!-- legend -->
+    {legend.map((l) => (
+      <>
+        <rect x="60" y={l.y - 16} width="26" height="20" rx="3" fill={l.c} opacity="0.75"></rect>
+        <Label x={98} y={l.y} to={l.to}>{l.name}</Label>
+        <Label x={160} y={l.y} size="sm">{l.t}</Label>
+      </>
+    ))}
+    <Label x={60} y={470} size="sm">Frontal pole on the left in both views. Territory borders (watershed zones) vary between people.</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>
