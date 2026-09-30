@@ -104,6 +104,28 @@ quiz:
     explanation: >-
       **Hutchinson sign** — the nasociliary branch of V1 supplies both the nose tip and the eye, so nasal vesicles predict
       **ocular zoster**. Urgent ophthalmology and antivirals.
+  - stem: Which nerve supplies the skin over the angle of the jaw?
+    choices:
+      - Mandibular division of the trigeminal nerve
+      - Great auricular nerve (C2–C3)
+      - Facial nerve
+      - Maxillary division of the trigeminal nerve
+      - Lesser occipital nerve
+    answer: B
+    explanation: >-
+      The angle of the jaw is supplied by the **great auricular nerve (C2–C3)**, not CN V, which helps tell trigeminal
+      from cervical sensory loss.
+  - stem: A 28-year-old develops trigeminal neuralgia. Which underlying condition should be considered?
+    choices:
+      - Temporomandibular joint dysfunction
+      - Migraine
+      - Dental caries
+      - Sinusitis
+      - Multiple sclerosis
+    answer: E
+    explanation: >-
+      Trigeminal neuralgia is usually from vascular compression in older adults. In a **young patient** or with
+      **bilateral** symptoms, consider **multiple sclerosis** and obtain MRI.
 flashcards:
   - front: Foramina of V1, V2, V3?
     back: Superior orbital fissure, foramen rotundum, foramen ovale

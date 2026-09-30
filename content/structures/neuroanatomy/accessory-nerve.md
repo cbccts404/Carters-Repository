@@ -70,6 +70,41 @@ quiz:
     explanation: >-
       Its motor neurons lie in the **ventral horn of C1–C5**; the rootlets ascend through the foramen magnum and leave
       through the jugular foramen.
+  - stem: Through which opening does the spinal accessory nerve leave the skull?
+    choices:
+      - Foramen ovale
+      - Hypoglossal canal
+      - Jugular foramen
+      - Stylomastoid foramen
+      - Foramen spinosum
+    answer: C
+    explanation: >-
+      CN XI rootlets ascend from the upper cervical cord through the **foramen magnum**, then leave the skull through
+      the **jugular foramen** with CN IX and X.
+  - stem: A patient has weakness turning the head to the left against resistance. Which muscle and nerve are affected?
+    choices:
+      - Left sternocleidomastoid; left CN XI
+      - Left trapezius; left CN XI
+      - Right trapezius; right CN XI
+      - Left sternocleidomastoid; right CN XI
+      - Right sternocleidomastoid; right CN XI
+    answer: E
+    explanation: >-
+      Each SCM turns the face to the **opposite** side, so weak turning to the **left** points to the **right SCM** and
+      right CN XI.
+  - stem: >-
+      A tumor at the jugular foramen compresses the accessory nerve. Which other cranial nerves are likely to be
+      affected?
+    choices:
+      - CN III and IV
+      - CN IX and X
+      - CN VII and VIII
+      - CN V and VI
+      - CN I and II
+    answer: B
+    explanation: >-
+      The **jugular foramen** transmits **CN IX, X and XI** with the internal jugular vein, so a lesion there causes a
+      combined palsy (dysphagia, hoarseness, weak SCM and trapezius).
 flashcards:
   - front: Muscles supplied by CN XI?
     back: Sternocleidomastoid and trapezius

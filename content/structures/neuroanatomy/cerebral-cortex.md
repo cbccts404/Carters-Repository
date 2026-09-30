@@ -101,6 +101,30 @@ quiz:
     explanation: >-
       The **leg and foot** are represented on the **medial** surface of the motor cortex (ACA territory). Motor output
       crosses, so a right-sided lesion weakens the **left leg**.
+  - stem: >-
+      After a stroke, a patient speaks fluently and understands well but cannot repeat a phrase. Which structure is most
+      likely damaged?
+    choices:
+      - Broca area
+      - Wernicke area
+      - Primary motor cortex
+      - Arcuate fasciculus
+      - Angular gyrus
+    answer: D
+    explanation: >-
+      **Conduction aphasia** (fluent speech, intact comprehension, **poor repetition**) results from damage to the
+      **arcuate fasciculus** connecting Wernicke and Broca areas.
+  - stem: A patient has agraphia, acalculia, finger agnosia and left–right confusion. Where is the lesion?
+    choices:
+      - Nondominant parietal lobe
+      - Dominant angular gyrus
+      - Occipital pole
+      - Prefrontal cortex
+      - Cingulate gyrus
+    answer: B
+    explanation: >-
+      This is **Gerstmann syndrome**, from a lesion of the **dominant (usually left) angular gyrus** in the inferior
+      parietal lobule. Nondominant parietal lesions cause hemineglect.
 flashcards:
   - front: Location of Broca area?
     back: Inferior frontal gyrus of the dominant hemisphere

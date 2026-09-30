@@ -89,6 +89,44 @@ quiz:
     explanation: >-
       This is **right posterior canal BPPV**; the **Epley canalith repositioning maneuver** is curative in most patients.
       Long-term vestibular suppressants delay compensation.
+  - stem: Bilateral vestibular schwannomas are characteristic of which condition?
+    choices:
+      - Neurofibromatosis type 1
+      - Tuberous sclerosis
+      - von Hippel–Lindau disease
+      - Neurofibromatosis type 2
+      - Sturge–Weber syndrome
+    answer: D
+    explanation: >-
+      **Bilateral vestibular schwannomas** define **neurofibromatosis type 2**. Unilateral tumors usually occur
+      sporadically.
+  - stem: >-
+      Why does a unilateral lesion of the central auditory pathway above the cochlear nuclei not cause deafness in one
+      ear?
+    choices:
+      - The auditory cortex is not needed for hearing
+      - Each ear projects bilaterally above the cochlear nuclei
+      - The cochlea regenerates
+      - Hearing is carried by the facial nerve
+      - The auditory pathway doesn't cross
+    answer: B
+    explanation: >-
+      Above the cochlear nuclei, auditory pathways ascend **bilaterally** (superior olive, lateral lemniscus), so a
+      unilateral central lesion doesn't cause unilateral deafness. Unilateral hearing loss points to the cochlea, CN
+      VIII or the cochlear nuclei.
+  - stem: >-
+      In a patient with continuous vertigo and nystagmus, which HINTS finding suggests a stroke rather than vestibular
+      neuritis?
+    choices:
+      - A normal head impulse test
+      - An abnormal head impulse test with a corrective saccade
+      - Unidirectional horizontal nystagmus
+      - No skew deviation
+      - Nystagmus that fades with fixation
+    answer: A
+    explanation: >-
+      In vestibular neuritis the head impulse is **abnormal** (corrective saccade). A **normal head impulse**,
+      direction-changing or vertical nystagmus, or skew deviation suggests a **central (stroke)** cause → MRI.
 flashcards:
   - front: Weber lateralizes to which ear in sensorineural loss?
     back: The better (unaffected) ear

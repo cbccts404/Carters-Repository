@@ -79,6 +79,41 @@ quiz:
     explanation: >-
       A **calcified cystic suprasellar mass** in a child with growth failure and **bitemporal hemianopia** is a
       **craniopharyngioma** (Rathke pouch remnant).
+  - stem: >-
+      A patient on long-term lithium has polyuria with dilute urine. Urine osmolality does not rise after desmopressin.
+      What is the diagnosis?
+    choices:
+      - Central diabetes insipidus
+      - SIADH
+      - Nephrogenic diabetes insipidus
+      - Primary polydipsia
+      - Diabetes mellitus
+    answer: C
+    explanation: >-
+      **Nephrogenic DI** (lithium, hypercalcemia) doesn't respond to desmopressin because the kidney can't respond to
+      ADH. In **central DI**, urine osmolality rises after desmopressin.
+  - stem: A lesion of the ventromedial nucleus of the hypothalamus causes which change?
+    choices:
+      - Hyperphagia and obesity
+      - Anorexia and weight loss
+      - Loss of circadian rhythm
+      - Diabetes insipidus
+      - Hypothermia
+    answer: A
+    explanation: >-
+      The **ventromedial nucleus** mediates **satiety**; its lesion causes **hyperphagia and obesity**. A lesion of the
+      **lateral** area (hunger) causes anorexia.
+  - stem: Which hypothalamic nucleus controls circadian rhythm using retinal input?
+    choices:
+      - Supraoptic nucleus
+      - Arcuate nucleus
+      - Paraventricular nucleus
+      - Suprachiasmatic nucleus
+      - Ventromedial nucleus
+    answer: D
+    explanation: >-
+      The **suprachiasmatic nucleus** receives retinohypothalamic input and sets **circadian rhythm** (with melatonin
+      release from the pineal). The supraoptic and paraventricular nuclei make ADH and oxytocin.
 flashcards:
   - front: Nuclei that make ADH and oxytocin?
     back: Supraoptic and paraventricular nuclei

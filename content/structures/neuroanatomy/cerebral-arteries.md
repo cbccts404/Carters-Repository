@@ -102,6 +102,28 @@ quiz:
     explanation: >-
       A **left homonymous hemianopia with macular sparing** and no weakness localizes to the **right occipital lobe**
       — **right PCA** territory.
+  - stem: In an acute hemispheric (cortical) stroke, which way do the eyes usually deviate?
+    choices:
+      - Toward the side of the lesion (away from the weak side)
+      - Away from the lesion (toward the weak side)
+      - Downward
+      - Upward
+      - They don't deviate
+    answer: A
+    explanation: >-
+      A destructive hemispheric lesion knocks out the frontal eye field, so the intact opposite field drives the eyes
+      **toward the lesion**, away from the hemiparesis.
+  - stem: The lenticulostriate arteries supplying the basal ganglia and internal capsule arise from which artery?
+    choices:
+      - Anterior cerebral artery
+      - Posterior cerebral artery
+      - Basilar artery
+      - Anterior communicating artery
+      - Middle cerebral artery
+    answer: E
+    explanation: >-
+      The **lenticulostriate** arteries are branches of the **MCA**. They are the vessels involved in lacunar infarcts
+      and hypertensive hemorrhage of the putamen and internal capsule.
 flashcards:
   - front: Stroke with leg > arm weakness?
     back: ACA

@@ -80,6 +80,39 @@ quiz:
     explanation: >-
       Dilation **proximal** to the aqueduct (lateral and third ventricles) with a **normal fourth ventricle** localizes the
       block to the **cerebral aqueduct** (aqueductal stenosis).
+  - stem: Where is most cerebrospinal fluid produced?
+    choices:
+      - Arachnoid granulations
+      - Superior sagittal sinus
+      - Choroid plexus of the ventricles
+      - Ependyma of the central canal only
+      - Dura mater
+    answer: C
+    explanation: >-
+      CSF (about 500 mL/day, about 150 mL at a time) is made mainly by the **choroid plexus** of the lateral, third and
+      fourth ventricles and absorbed through arachnoid granulations into the superior sagittal sinus.
+  - stem: Hydrocephalus after subarachnoid hemorrhage or meningitis is usually caused by what?
+    choices:
+      - Aqueductal stenosis
+      - Overproduction of CSF
+      - A colloid cyst
+      - Impaired absorption at the arachnoid granulations (communicating hydrocephalus)
+      - Brain atrophy
+    answer: D
+    explanation: >-
+      Blood or pus impairs **absorption at the arachnoid granulations**, causing **communicating** hydrocephalus. Blocks
+      within the ventricular system cause noncommunicating hydrocephalus.
+  - stem: Which finding in an infant suggests hydrocephalus?
+    choices:
+      - Sunken fontanelle
+      - Rapidly enlarging head circumference with "sunset eyes"
+      - Early fontanelle closure
+      - Small head circumference
+      - Brisk Moro reflex
+    answer: B
+    explanation: >-
+      Infant hydrocephalus causes **rapidly enlarging head circumference**, a bulging fontanelle, splayed sutures and
+      **"sunset eyes"** (upgaze palsy). Ultrasound through the fontanelle is the first test.
 flashcards:
   - front: Where is CSF produced and absorbed?
     back: Produced by the choroid plexus; absorbed by arachnoid granulations into the superior sagittal sinus

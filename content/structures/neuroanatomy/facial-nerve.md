@@ -90,6 +90,40 @@ quiz:
     explanation: >-
       **Forehead sparing** with contralateral lower facial and arm weakness is an **upper motor neuron** lesion — a
       **right hemispheric stroke** (the forehead has bilateral cortical input). Activate the stroke pathway.
+  - stem: Which nerve carries the efferent limb of the corneal reflex?
+    choices:
+      - Ophthalmic nerve (V1)
+      - Oculomotor nerve
+      - Facial nerve
+      - Abducens nerve
+      - Trochlear nerve
+    answer: C
+    explanation: >-
+      The corneal reflex has its **afferent limb in V1** and its **efferent limb in CN VII** (orbicularis oculi closes
+      both eyes).
+  - stem: The greater petrosal nerve, branching at the geniculate ganglion, controls which function?
+    choices:
+      - Taste from the anterior tongue
+      - Submandibular salivation
+      - Stapedius contraction
+      - Sensation of the external ear
+      - Lacrimal gland secretion
+    answer: E
+    explanation: >-
+      The **greater petrosal nerve** carries parasympathetic fibers to the pterygopalatine ganglion and the **lacrimal
+      gland** (and nasal and palatine glands). A lesion at or above the geniculate ganglion reduces tearing.
+  - stem: The chorda tympani carries which fibers?
+    choices:
+      - Taste from the anterior two-thirds of the tongue and secretomotor fibers to the submandibular and sublingual glands
+      - Motor fibers to the muscles of mastication
+      - General sensation from the posterior third of the tongue
+      - Parasympathetic fibers to the parotid gland
+      - Motor fibers to stapedius
+    answer: A
+    explanation: >-
+      The **chorda tympani** crosses the middle ear and joins the lingual nerve, carrying **taste from the anterior
+      two-thirds** of the tongue and parasympathetic fibers to the **submandibular and sublingual** glands. The parotid
+      is supplied by CN IX.
 flashcards:
   - front: Five terminal branches of the facial nerve?
     back: Temporal, zygomatic, buccal, marginal mandibular, cervical

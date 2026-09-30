@@ -80,6 +80,41 @@ quiz:
     explanation: >-
       **AICA** supplies the lateral lower pons (facial nucleus, vestibular/cochlear nuclei) and usually the **labyrinthine
       artery** — vertigo with **hearing loss** and facial palsy suggests the **lateral pontine (AICA) syndrome**.
+  - stem: >-
+      A 70-year-old is found comatose with quadriparesis and pinpoint pupils. CT shows no hemorrhage. What is the most
+      important next step?
+    choices:
+      - CT angiography to look for basilar artery occlusion, for possible thrombectomy
+      - Lumbar puncture
+      - EEG only
+      - Observation overnight
+      - MRI of the lumbar spine
+    answer: A
+    explanation: >-
+      Sudden coma, quadriparesis and pinpoint pupils suggest **basilar artery occlusion**, which has high mortality
+      without reperfusion. It needs emergency **CTA** and **thrombectomy**.
+  - stem: The posterior cerebral arteries are the terminal branches of which artery?
+    choices:
+      - Internal carotid artery
+      - Vertebral artery
+      - Anterior communicating artery
+      - Middle cerebral artery
+      - Basilar artery
+    answer: E
+    explanation: >-
+      The **basilar artery** divides into the two **posterior cerebral arteries** at the upper pons/midbrain. The PComm
+      arteries connect them to the internal carotids.
+  - stem: Which imaging test best detects an acute posterior circulation (brainstem or cerebellar) stroke?
+    choices:
+      - Noncontrast CT
+      - Skull radiograph
+      - MRI with diffusion-weighted imaging
+      - Carotid duplex ultrasound
+      - Transcranial Doppler alone
+    answer: C
+    explanation: >-
+      CT often misses posterior fossa infarcts because of bone artifact. **MRI (diffusion-weighted)** is the test of
+      choice when a posterior circulation stroke is suspected.
 flashcards:
   - front: Where do the vertebral arteries join to form the basilar?
     back: Pontomedullary junction

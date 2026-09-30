@@ -76,6 +76,41 @@ quiz:
     explanation: >-
       **Parkinson disease** results from loss of dopaminergic neurons in the **substantia nigra pars compacta**. Caudate
       atrophy is Huntington disease; a subthalamic lesion causes hemiballismus.
+  - stem: Weber syndrome (ipsilateral CN III palsy with contralateral hemiparesis) results from a lesion where?
+    choices:
+      - Dorsal midbrain (tectum)
+      - Ventral midbrain (cerebral peduncle)
+      - Lateral medulla
+      - Basilar pons
+      - Cerebellar vermis
+    answer: B
+    explanation: >-
+      **Weber syndrome** is a **ventral (basal) midbrain** infarct involving the **CN III fascicles** and the **cerebral
+      peduncle** (corticospinal fibers). Dorsal midbrain lesions cause Parinaud syndrome.
+  - stem: On MRI, which pattern of ventricular enlargement indicates aqueductal stenosis?
+    choices:
+      - All four ventricles dilated
+      - Only the fourth ventricle dilated
+      - Only one lateral ventricle dilated
+      - Lateral and third ventricles dilated with a normal fourth ventricle
+      - No dilation
+    answer: D
+    explanation: >-
+      Obstruction at the **cerebral aqueduct** dilates everything **upstream** (lateral and third ventricles) while the
+      **fourth ventricle stays normal**, a noncommunicating hydrocephalus.
+  - stem: >-
+      Which midbrain area relays the pupillary light reflex to both Edinger–Westphal nuclei, producing the consensual
+      response?
+    choices:
+      - Pretectal area
+      - Red nucleus
+      - Substantia nigra
+      - Inferior colliculus
+      - Periaqueductal gray
+    answer: A
+    explanation: >-
+      The **pretectal nuclei** receive optic tract input and project to **both** Edinger–Westphal nuclei, so light in
+      one eye constricts both pupils (direct and consensual responses).
 flashcards:
   - front: Cranial nerve nuclei in the midbrain?
     back: CN III (with Edinger–Westphal) and CN IV

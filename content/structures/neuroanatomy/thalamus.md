@@ -72,6 +72,41 @@ quiz:
     explanation: >-
       The **lateral geniculate nucleus** receives the optic tract and projects via the optic radiations to V1. The medial
       geniculate relays hearing.
+  - stem: >-
+      Two months after a thalamic stroke, a patient develops severe burning pain on the numb side of the body. What is
+      the diagnosis?
+    choices:
+      - Complex regional pain syndrome
+      - Diabetic neuropathy
+      - Postherpetic neuralgia
+      - Thalamic pain syndrome (Dejerine–Roussy)
+      - Radiculopathy
+    answer: D
+    explanation: >-
+      **Thalamic pain syndrome** follows a **VPL** stroke, causing severe contralateral burning pain and allodynia in
+      the area of sensory loss. It is treated with neuropathic agents.
+  - stem: Which sensory modality reaches the cortex without relaying in the thalamus?
+    choices:
+      - Olfaction
+      - Vision
+      - Hearing
+      - Taste
+      - Touch
+    answer: A
+    explanation: >-
+      **Olfaction** is the only sense that bypasses the thalamus. Vision relays in the LGN, hearing in the MGN, and
+      taste and face sensation in VPM.
+  - stem: The medial geniculate nucleus relays which sense?
+    choices:
+      - Vision
+      - Taste
+      - Hearing
+      - Body touch
+      - Balance only
+    answer: C
+    explanation: >-
+      **"Medial = Music"**: the MGN relays **hearing** from the inferior colliculus to the auditory cortex. "Lateral =
+      Light": the LGN relays vision.
 flashcards:
   - front: Thalamic nucleus for facial sensation and taste?
     back: VPM

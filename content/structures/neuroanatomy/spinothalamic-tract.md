@@ -73,6 +73,40 @@ quiz:
     explanation: >-
       Spinothalamic fibers cross within 1–2 segments of entry, so a right hemisection causes **contralateral (left)** pain
       and temperature loss starting **1–2 levels below** the lesion.
+  - stem: Where do the second-order spinothalamic fibers cross the midline?
+    choices:
+      - In the medulla
+      - In the internal capsule
+      - In the anterior white commissure of the spinal cord
+      - In the thalamus
+      - They don't cross
+    answer: C
+    explanation: >-
+      Second-order fibers cross in the **anterior white commissure** within 1–2 segments and ascend in the contralateral
+      anterolateral column. A central syrinx damages these crossing fibers.
+  - stem: Why can an expanding intramedullary spinal cord tumor spare sacral pain and temperature sensation?
+    choices:
+      - Sacral fibers cross higher in the cord
+      - Sacral sensation travels in the dorsal columns
+      - Sacral fibers use the spinal trigeminal tract
+      - Sacral fibers bypass the thalamus
+      - Sacral fibers lie most laterally in the spinothalamic tract
+    answer: E
+    explanation: >-
+      In the spinothalamic tract, **sacral fibers lie most laterally** and cervical fibers most medially, so a tumor
+      expanding from the center compresses cervical fibers first (**sacral sparing**).
+  - stem: >-
+      Before synapsing in the dorsal horn, pain and temperature fibers travel up or down 1–2 segments in which tract?
+    choices:
+      - Fasciculus gracilis
+      - Dorsolateral tract (of Lissauer)
+      - Medial longitudinal fasciculus
+      - Lateral corticospinal tract
+      - Spinocerebellar tract
+    answer: B
+    explanation: >-
+      Pain and temperature fibers run 1–2 segments in **Lissauer tract** before synapsing, which is why the
+      contralateral sensory level in a hemisection starts 1–2 segments below the lesion.
 flashcards:
   - front: Where do spinothalamic fibers cross?
     back: Anterior white commissure, within 1–2 segments of entry

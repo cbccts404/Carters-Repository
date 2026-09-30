@@ -69,6 +69,38 @@ quiz:
     explanation: >-
       CN IV is the only cranial nerve to emerge from the **dorsal** brainstem; its fibers decussate, so each nucleus
       supplies the contralateral superior oblique. It is the thinnest nerve with the longest intracranial course.
+  - stem: Why is the trochlear nerve especially vulnerable to head trauma?
+    choices:
+      - It is the thickest cranial nerve
+      - It runs through the petrous bone
+      - It has the longest intracranial course and is very thin
+      - It lies within the cavernous sinus
+      - It exits through the foramen magnum
+    answer: C
+    explanation: >-
+      CN IV has the **longest intracranial course** and is thin, running along the tentorial edge, so **head trauma** is
+      its most common acquired cause of palsy.
+  - stem: Each trochlear nucleus supplies which superior oblique muscle?
+    choices:
+      - The contralateral superior oblique
+      - The ipsilateral superior oblique
+      - Both superior obliques
+      - The ipsilateral inferior oblique
+    answer: A
+    explanation: >-
+      Trochlear fibers **decussate** before emerging from the dorsal brainstem, so each nucleus supplies the
+      **contralateral** superior oblique.
+  - stem: What is the main action of the superior oblique when the eye is adducted?
+    choices:
+      - Elevation
+      - Abduction
+      - Extorsion
+      - Depression
+      - Adduction
+    answer: D
+    explanation: >-
+      The superior oblique **depresses the adducted eye** (and intorts and abducts it), which is why CN IV palsy causes
+      diplopia when looking down and in, such as reading or going downstairs.
 flashcards:
   - front: Muscle supplied by CN IV?
     back: Superior oblique
