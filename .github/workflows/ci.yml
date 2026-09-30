@@ -1,0 +1,38 @@
+# Checks every pull request before it can be merged: content lint, type check, a production build
+# (with the same base path as GitHub Pages) and an internal link check of the built site.
+name: CI
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      BASE_PATH: /${{ github.event.repository.name }}
+      SITE_URL: https://${{ github.repository_owner }}.github.io
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Lint content
+        run: npm run lint
+      - name: Type check
+        run: npm run check
+      - name: Build (links to missing entries fail the build)
+        run: npm run build
+        env:
+          STRICT_LINKS: '1'
+      - name: Check internal links
+        run: npm run check:links

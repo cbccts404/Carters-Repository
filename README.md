@@ -10,9 +10,14 @@ npm run dev        # http://localhost:4321, reloads when you edit content
 npm run build      # production build into dist/
 npm run preview    # serve the production build
 npm run check      # type-check the code
+npm run lint       # check the YAML syntax of every entry (the build checks the schema)
+npm run check:links  # after a build: every internal link in dist/ resolves
 ```
 
 Requires Node 22.12 or later.
+
+Every pull request runs these checks automatically (`.github/workflows/ci.yml`): lint, type check, a build that
+fails on links to missing entries, and the link check.
 
 ## Where things live
 
