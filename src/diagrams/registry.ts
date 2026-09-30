@@ -119,4 +119,58 @@ export const diagrams: Record<string, DiagramMeta> = {
     description:
       'Cervical cord, dorsal at the top. Dorsal columns and lateral corticospinal tract serve the same side of the body; the spinothalamic tract serves the opposite side because its fibers cross in the anterior white commissure (dashed green) within 1–2 segments.',
   },
+  'suboccipital-triangle': {
+    title: 'Suboccipital triangle',
+    region: 'back',
+    description:
+      'Posterior view with the superficial muscles removed. Rectus capitis posterior major, obliquus capitis superior and obliquus capitis inferior bound the triangle; the vertebral artery and suboccipital nerve (C1) lie in its floor on the posterior arch of the atlas. The greater occipital nerve (C2) emerges below obliquus capitis inferior and is not a content of the triangle.',
+  },
+  'vertebral-column': {
+    title: 'Vertebral column (lateral view)',
+    region: 'back',
+    description:
+      "Left lateral view, anterior to the left. Cervical and lumbar lordoses are secondary curvatures; thoracic and sacral kyphoses are primary. Landmark levels vary by about one segment between people, so use them as guides, not rules.",
+  },
+  'vertebral-venous-plexus': {
+    title: 'Vertebral venous plexus (Batson)',
+    region: 'back',
+    description:
+      "A: lumbar cross-section, oriented as on axial CT. The internal plexus lies in the epidural space; the external plexus lies outside the vertebra. B: the plexus is a valveless channel from the skull to the pelvis, which is why pelvic tumors (classically prostate) and infections can reach the vertebrae.",
+  },
+  'internal-thoracic-artery': {
+    title: 'Internal thoracic artery (anterior view)',
+    region: 'thorax',
+    description:
+      "Drawn as if seen through the chest wall; the arteries run on its deep surface about 1 cm lateral to the sternum. Each divides in the 6th intercostal space into the musculophrenic and superior epigastric arteries. The superior epigastric anastomoses with the inferior epigastric in the rectus sheath, a subclavian-to-iliac collateral route (for example in coarctation).",
+  },
+  'inguinal-region': {
+    title: 'Inguinal region from inside (Hesselbach triangle)',
+    region: 'abdomen',
+    description:
+      "Right side seen from inside the abdomen, as at laparoscopy. The inferior epigastric vessels separate indirect hernias (lateral, through the deep ring) from direct hernias (medial, through the inguinal triangle). Femoral hernias pass below the inguinal ligament, medial to the femoral vein. The inguinal canal and superficial ring lie in front of this plane (dashed).",
+  },
+  'rotator-cuff': {
+    title: 'Rotator cuff (SITS)',
+    region: 'upper-limb',
+    description:
+      "Right glenoid seen from the side with the humerus removed. The cuff covers the top, back and front of the joint but not its inferior part, which is why most dislocations are anterior–inferior. The table summarizes attachments, nerves, actions and bedside tests.",
+  },
+  'carpal-bones': {
+    title: 'Carpal bones (right hand, palmar view)',
+    region: 'upper-limb',
+    description:
+      "Thumb on the left. The flexor retinaculum (dashed) is anchored to the scaphoid tubercle and trapezium laterally and to the pisiform and hook of hamate medially, forming the roof of the carpal tunnel. Highlighted bones are the high-yield ones: scaphoid (fracture), lunate (dislocation) and hamate (hook fracture).",
+  },
+  'skull-base-foramina': {
+    title: 'Foramina of the cranial base',
+    region: 'head-neck',
+    description:
+      "Internal view from above, anterior at the top. Each foramen is drawn on both sides and labelled on one. The carotid canal runs inside the petrous bone (dashed) and opens at its apex, where the internal carotid artery crosses above the cartilage-filled foramen lacerum.",
+  },
+  'referred-pain': {
+    title: 'Referred visceral pain',
+    region: 'abdomen',
+    description:
+      "Visceral pain is poorly localized and felt in the dermatomes that share spinal segments with the organ's afferent fibers. Pain becomes sharp and localized once the parietal peritoneum is involved (appendicitis: periumbilical → RLQ). Zones are approximate and vary between people.",
+  },
 };

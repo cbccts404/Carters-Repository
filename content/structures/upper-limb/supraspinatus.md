@@ -163,6 +163,7 @@ flashcards:
     back: Empty-can (Jobe), drop-arm, painful arc; Neer/Hawkins for impingement
   - front: Rotator cuff muscles?
     back: SITS — Supraspinatus, Infraspinatus, Teres minor, Subscapularis
+diagrams: [rotator-cuff]
 related: [infraspinatus, teres-minor, subscapularis, glenohumeral-joint]
 images:
   - image: gray-412-scapular-muscles

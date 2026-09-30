@@ -127,6 +127,7 @@ flashcards:
     back: RUQ (Morison), LUQ (splenorenal), pelvic, subxiphoid (± lungs in eFAST)
   - front: SBP diagnostic threshold?
     back: Ascitic fluid PMN ≥ 250 cells/mm³
+diagrams: [referred-pain]
 related: [lesser-sac, greater-omentum, anterior-abdominal-wall]
 images:
   - image: gray-1035-peritoneum-sagittal

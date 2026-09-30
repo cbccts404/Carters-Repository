@@ -108,6 +108,7 @@ flashcards:
     back: CN IX, X, XI and the internal jugular vein
   - front: Closure of anterior vs posterior fontanelle?
     back: Anterior ≈ 18–24 months; posterior ≈ 2 months
+diagrams: [skull-base-foramina]
 related: [middle-meningeal-artery, mandible, scalp, orbit]
 images:
   - image: gray-188-skull-lateral

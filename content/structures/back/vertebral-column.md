@@ -122,5 +122,6 @@ flashcards:
     back: Line joining the tops of the iliac crests (Tuffier/intercristal line)
   - front: Adams forward bend test detects?
     back: Rib/lumbar hump from rotational component of structural scoliosis
+diagrams: [vertebral-column]
 related: [intervertebral-disc, spinal-cord, lumbar-vertebrae]
 ---

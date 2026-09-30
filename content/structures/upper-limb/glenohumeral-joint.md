@@ -174,6 +174,7 @@ flashcards:
     back: "Capsulitis: active AND passive ROM lost. Cuff tear: active lost, passive preserved"
   - front: Weakest part of the shoulder capsule?
     back: Inferior (no rotator cuff support)
+diagrams: [rotator-cuff]
 related: [humerus, scapula, supraspinatus, axillary-nerve]
 images:
   - image: gray-326-shoulder-joint

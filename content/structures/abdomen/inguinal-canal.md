@@ -126,6 +126,7 @@ flashcards:
     back: Indirect inguinal (both sexes)
   - front: Groin hernia with highest strangulation risk?
     back: Femoral hernia (below inguinal ligament, more common in women)
+diagrams: [inguinal-region]
 related: [inguinal-triangle, spermatic-cord, inferior-epigastric-artery, anterior-abdominal-wall]
 images:
   - image: gray-1146-spermatic-cord

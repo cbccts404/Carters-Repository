@@ -131,6 +131,7 @@ flashcards:
     back: Gallstones and alcohol
   - front: Blood supply of the pancreatic head?
     back: Superior (GDA, celiac) and inferior (SMA) pancreaticoduodenal arcades
+diagrams: [referred-pain]
 related: [duodenum, gallbladder, lesser-sac, spleen]
 images:
   - image: gray-1098-duodenum-pancreas

@@ -98,5 +98,6 @@ flashcards:
     back: Left internal thoracic (mammary) artery — LIMA
   - front: Role of internal thoracic artery in coarctation?
     back: Collateral pathway via intercostals → rib notching
+diagrams: [internal-thoracic-artery]
 related: [anterior-interventricular-artery, thoracic-aorta, breast]
 ---

@@ -106,6 +106,7 @@ flashcards:
     back: Suprascapular nerve (C5–C6); lateral rotation, stabilizes humeral head
   - front: Suprascapular notch vs spinoglenoid notch lesion?
     back: "Suprascapular notch: supraspinatus + infraspinatus. Spinoglenoid notch: infraspinatus only"
+diagrams: [rotator-cuff]
 related: [supraspinatus, teres-minor, subscapularis]
 images:
   - image: gray-412-scapular-muscles

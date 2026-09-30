@@ -82,5 +82,6 @@ flashcards:
     back: Valveless vertebral venous plexus connecting pelvic, abdominal, thoracic and cranial veins
   - front: Clinical importance of Batson plexus?
     back: Spread of prostate (and breast) cancer to the spine, bypassing the lungs
+diagrams: [vertebral-venous-plexus]
 related: [spinal-meninges, azygos-vein, lumbar-vertebrae]
 ---

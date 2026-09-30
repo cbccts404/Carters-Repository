@@ -122,6 +122,7 @@ flashcards:
     back: "Psoas: hip extension → pain (retrocecal). Obturator: flexed hip internally rotated → pain (pelvic)"
   - front: Imaging for suspected appendicitis in children and pregnancy?
     back: Ultrasound first (MRI next in pregnancy); CT in most adults
+diagrams: [referred-pain]
 related: [small-intestine, colon, psoas-major]
 images:
   - image: gray-1073-cecum-appendix

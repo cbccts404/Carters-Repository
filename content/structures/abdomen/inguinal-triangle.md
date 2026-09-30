@@ -67,6 +67,7 @@ flashcards:
     back: "Medial: lateral border of rectus abdominis. Lateral: inferior epigastric vessels. Inferior: inguinal ligament (RIP)"
   - front: Hernia through Hesselbach triangle?
     back: Direct inguinal hernia
+diagrams: [inguinal-region]
 related: [inguinal-canal, inferior-epigastric-artery]
 images:
   - image: gray-1036-anterior-wall-posterior-view

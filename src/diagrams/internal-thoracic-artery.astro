@@ -1,0 +1,203 @@
+---
+/* Original schematic: anterior thoracic wall, anterior view, with the internal thoracic arteries drawn as if
+   seen through the wall (they lie on its deep surface). The patient's left is on the viewer's right. Not to scale. */
+import Label from '../components/Label.astro';
+
+const C = 420; // midline
+const ITA = 44; // distance of the artery from the midline (≈ 1 cm lateral to the sternal border)
+const cart = [118, 170, 208, 246, 284, 322, 360]; // where costal cartilages 1–7 meet the sternum
+const drop = [0, 4, 8, 12, 20, 34, 52]; // cartilages slope down laterally, more so below
+const spaces = cart.slice(0, 6).map((y, i) => (y + cart[i + 1]) / 2); // intercostal spaces 1–6
+const SPLIT_N = 5; // division in the 6th intercostal space
+const sides = [-1, 1];
+
+
+type P = [number, number];
+const quad = (a: P, c: P, b: P, t: number): P => [
+  (1 - t) ** 2 * a[0] + 2 * (1 - t) * t * c[0] + t ** 2 * b[0],
+  (1 - t) ** 2 * a[1] + 2 * (1 - t) * t * c[1] + t ** 2 * b[1],
+];
+// control points of rib n (0-based) on side s: costal cartilage, then the bony rib rising toward the axilla
+const ribCtl = (n: number, s: number) => {
+  const y = cart[n];
+  const mid: P = [C + s * (80 + n * 8), y + drop[n]];
+  return {
+    cart: [[C + s * 26, y], [C + s * 54, y + drop[n] * 0.4], mid] as [P, P, P],
+    bone: [mid, [C + s * 190, mid[1] - 2], [C + s * 262, mid[1] - 22]] as [P, P, P],
+  };
+};
+const d = (c: [P, P, P]) => `M${c[0]} Q${c[1]} ${c[2]}`;
+// a point along a whole rib, t in [0, 1] (first 30% cartilage, rest bone)
+const ribAt = (n: number, s: number, t: number): P => {
+  const r = ribCtl(n, s);
+  return t < 0.3 ? quad(...r.cart, t / 0.3) : quad(...r.bone, (t - 0.3) / 0.7);
+};
+// centre line of intercostal space n (between ribs n and n+1), from the artery outward
+const spacePath = (n: number, s: number, reach = 0.78) => {
+  const pts: P[] = [];
+  for (let i = 0; i <= 40; i++) {
+    const t = (i / 40) * reach;
+    const a = ribAt(n, s, t);
+    const b = ribAt(n + 1, s, t);
+    const p: P = [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2];
+    if (s * (p[0] - C) >= ITA) pts.push(p);
+  }
+  return 'M' + pts.map((p) => `${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(' L');
+};
+const spaceY = (n: number, s: number) => {
+  // y of space n where it crosses the artery
+  for (let i = 0; i <= 200; i++) {
+    const t = i / 200;
+    const a = ribAt(n, s, t);
+    const b = ribAt(n + 1, s, t);
+    if (s * ((a[0] + b[0]) / 2 - C) >= ITA) return (a[1] + b[1]) / 2;
+  }
+  return spaces[n];
+};
+const SPLIT = spaceY(SPLIT_N, 1);
+const spaceAt = (n: number, t: number): P => {
+  const a = ribAt(n, 1, t);
+  const b = ribAt(n + 1, 1, t);
+  return [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2];
+};
+const icTarget = spaceAt(2, 0.6);
+---
+
+<div class="scroll">
+  <svg viewBox="-110 30 1190 570" role="img" aria-labelledby="ita-title ita-desc">
+    <title id="ita-title">Internal thoracic artery (anterior view)</title>
+    <desc id="ita-desc">
+      Anterior view of the chest wall. On each side, the internal thoracic artery arises from the first part of the
+      subclavian artery and descends about 1 cm lateral to the sternum, behind the costal cartilages. It gives
+      anterior intercostal arteries to spaces 1 to 6, perforating branches to the anterior chest wall and breast, and
+      the pericardiacophrenic artery, which accompanies the phrenic nerve. In the 6th intercostal space it divides
+      into the musculophrenic artery, which follows the costal margin, and the superior epigastric artery, which
+      enters the rectus sheath and anastomoses with the inferior epigastric artery. The left internal thoracic
+      artery is the usual graft to the left anterior descending artery in coronary bypass surgery.
+    </desc>
+    <style>
+      .ita-bone { fill: color-mix(in srgb, var(--t-bone) 28%, var(--surface)); stroke: var(--t-bone); stroke-width: 1.8; }
+      .ita-rib { stroke: var(--t-bone); stroke-width: 9; stroke-linecap: round; fill: none; opacity: 0.8; }
+      .ita-cart { stroke: color-mix(in srgb, var(--t-bone) 45%, var(--surface)); stroke-width: 8; stroke-linecap: round; fill: none; }
+      .ita-clav { stroke: var(--t-bone); stroke-width: 11; stroke-linecap: round; fill: none; }
+      .ita-margin { stroke: color-mix(in srgb, var(--t-bone) 45%, var(--surface)); stroke-width: 7; stroke-linecap: round; fill: none; }
+      .ita-heart { fill: color-mix(in srgb, var(--t-organ) 12%, transparent); stroke: var(--t-organ); stroke-width: 1.2; stroke-dasharray: 4 4; }
+      .ita-rect { fill: color-mix(in srgb, var(--t-muscle) 9%, transparent); stroke: var(--t-muscle); stroke-width: 1.2; }
+      .ita-a { stroke: var(--t-artery); stroke-width: 4.5; stroke-linecap: round; fill: none; }
+      .ita-a2 { stroke: var(--t-artery); stroke-width: 2.4; stroke-linecap: round; fill: none; }
+      .ita-deep { stroke: var(--t-artery); stroke-width: 2.2; stroke-dasharray: 5 4; fill: none; }
+      .ita-graft { stroke: var(--t-artery); stroke-width: 3; stroke-dasharray: 2 5; stroke-linecap: round; fill: none; }
+      .ita-nerve { stroke: var(--t-nerve); stroke-width: 2; fill: none; }
+    </style>
+
+    <!-- heart silhouette behind the sternum, with the LAD -->
+    <path class="ita-heart" d={`M${C - 70} 230 Q${C - 110} 330 ${C - 40} 380 Q${C + 60} 420 ${C + 150} 360 Q${C + 170} 280 ${C + 90} 220 Q${C} 200 ${C - 70} 230 Z`}></path>
+    <path class="ita-a2" d={`M${C + 30} 236 Q${C + 70} 300 ${C + 96} 384`} opacity="0.75"></path>
+
+    <!-- rectus abdominis below the costal margin -->
+    {sides.map((s) => <rect class="ita-rect" x={s < 0 ? C - 96 : C + 10} y="400" width="86" height="176" rx="8" />)}
+
+    <!-- ribs and costal cartilages 1–7, costal margin -->
+    {
+      sides.map((s) =>
+        cart.map((_, n) => {
+          const r = ribCtl(n, s);
+          return (
+            <>
+              <path class="ita-rib" d={d(r.bone)} />
+              <path class="ita-cart" d={d(r.cart)} />
+            </>
+          );
+        }),
+      )
+    }
+    {sides.map((s) => <path class="ita-margin" d={`M${C + s * 142} 412 Q${C + s * 210} 440 ${C + s * 262} 440`} />)}
+
+    <!-- sternum: manubrium, body, xiphoid -->
+    <path class="ita-bone" d={`M${C - 38} 96 L${C + 38} 96 L${C + 30} 166 L${C - 30} 166 Z`}></path>
+    <path class="ita-bone" d={`M${C - 27} 172 L${C + 27} 172 L${C + 24} 368 L${C - 24} 368 Z`}></path>
+    <path class="ita-bone" d={`M${C - 12} 372 L${C + 12} 372 L${C} 408 Z`}></path>
+
+    <!-- clavicles -->
+    {sides.map((s) => <path class="ita-clav" d={`M${C + s * 40} 100 Q${C + s * 140} 80 ${C + s * 250} 70`} />)}
+
+    <!-- subclavian arteries and the internal thoracic arteries with their branches -->
+    {
+      sides.map((s) => (
+        <g>
+          <path class="ita-a" d={`M${C + s * 34} 44 Q${C + s * 90} 74 ${C + s * 170} 84 Q${C + s * 230} 90 ${C + s * 290} 84`} />
+          <path class="ita-a" d={`M${C + s * 76} 72 Q${C + s * ITA} 92 ${C + s * ITA} 130 L${C + s * ITA} ${SPLIT}`} />
+          {spaces.map((_, n) => (
+            <path class="ita-a2" d={spacePath(n, s)} />
+          ))}
+          {spaces.slice(0, 5).map((_, n) => (
+            <circle cx={C + s * (ITA + 12)} cy={spaceY(n, s) + 1} r="4" fill="var(--t-artery)" />
+          ))}
+          <path class="ita-a2" d={`M${C + s * ITA} ${SPLIT} Q${C + s * 130} 400 ${C + s * 250} 422`} />
+          <path class="ita-a" d={`M${C + s * ITA} ${SPLIT} L${C + s * ITA} 500`} />
+          <path class="ita-deep" d={`M${C + s * (ITA + 6)} 590 L${C + s * ITA} 512`} />
+          <circle cx={C + s * ITA} cy="506" r="7" fill="none" stroke="var(--t-artery)" stroke-width="1.5" />
+          <path class="ita-deep" d={`M${C + s * ITA} 118 Q${C + s * 110} 150 ${C + s * 120} 250 Q${C + s * 126} 320 ${C + s * 130} 390`} />
+          <path class="ita-nerve" d={`M${C + s * 126} 116 Q${C + s * 124} 150 ${C + s * 128} 250 Q${C + s * 134} 320 ${C + s * 138} 390`} />
+        </g>
+      ))
+    }
+    <!-- LIMA graft to the LAD -->
+    <path class="ita-graft" d={`M${C + ITA} 196 Q${C + 90} 250 ${C + 70} 304`}></path>
+
+    <!-- leader lines -->
+    <g stroke="var(--muted)" stroke-width="1">
+      <line x1="740" y1="80" x2={C + 200} y2="104"></line>
+      <line x1="740" y1="136" x2={C + ITA + 2} y2="150"></line>
+      <line x1="740" y1="176" x2={C + 124} y2="186"></line>
+      <line x1="740" y1="222" x2={icTarget[0]} y2={icTarget[1]}></line>
+      <line x1="740" y1="266" x2={C + ITA + 16} y2={spaceY(3, 1)}></line>
+      <line x1="740" y1="310" x2={C + 82} y2="266"></line>
+      <line x1="740" y1="356" x2={C + 96} y2="380"></line>
+      <line x1="740" y1="416" x2={C + 200} y2="416"></line>
+      <line x1="740" y1="470" x2={C + ITA + 2} y2="470"></line>
+      <line x1="740" y1="526" x2={C + ITA + 8} y2="508"></line>
+      <line x1="100" y1="82" x2={C - 200} y2="80"></line>
+      <line x1="100" y1="130" x2={C - 30} y2="130"></line>
+      <line x1="100" y1="172" x2={C - 28} y2="170"></line>
+      <line x1="100" y1="232" x2={C - 70} y2="214"></line>
+      <line x1="100" y1="282" x2={C - 190} y2="292"></line>
+      <line x1="100" y1="342" x2={C - ITA} y2={SPLIT}></line>
+      <line x1="100" y1="400" x2={C - 6} y2="394"></line>
+      <line x1="100" y1="440" x2={C - 200} y2="434"></line>
+      <line x1="100" y1="500" x2={C - 96} y2="500"></line>
+    </g>
+
+    <!-- labels (patient's left, viewer's right) -->
+    <Label x={746} y={84} size="sm">Subclavian artery (1st part)</Label>
+    <Label x={746} y={140} to="internal-thoracic-artery">Internal thoracic artery</Label>
+    <Label x={746} y={176} size="sm" to="phrenic-nerve">Pericardiacophrenic a.</Label>
+    <Label x={746} y={190} size="sm">(dashed, with the phrenic n.)</Label>
+    <Label x={746} y={226} size="sm" to="intercostal-space">Anterior intercostal arteries</Label>
+    <Label x={746} y={240} size="sm">(spaces 1–6)</Label>
+    <Label x={746} y={270} size="sm" to="breast">Perforating branches (to breast)</Label>
+    <Label x={746} y={314} size="sm" to="anterior-interventricular-artery">LIMA graft → LAD (CABG)</Label>
+    <Label x={746} y={360} size="sm" to="heart">Heart (behind the sternum)</Label>
+    <Label x={746} y={420} size="sm">Musculophrenic artery</Label>
+    <Label x={746} y={474} size="sm">Superior epigastric artery</Label>
+    <Label x={746} y={488} size="sm" to="rectus-abdominis">(into the rectus sheath)</Label>
+    <Label x={746} y={530} size="sm" to="inferior-epigastric-artery">Inferior epigastric artery</Label>
+    <Label x={746} y={544} size="sm">(dashed; anastomosis in the rectus sheath)</Label>
+
+    <!-- labels (patient's right, viewer's left) -->
+    <Label x={94} y={86} anchor="end" size="sm" to="clavicle">Clavicle</Label>
+    <Label x={94} y={134} anchor="end" size="sm" to="sternum">Manubrium</Label>
+    <Label x={94} y={176} anchor="end" size="sm">Sternal angle (2nd cartilage)</Label>
+    <Label x={94} y={236} anchor="end" size="sm">Costal cartilage</Label>
+    <Label x={94} y={286} anchor="end" size="sm" to="ribs">Rib</Label>
+    <Label x={94} y={340} anchor="end" size="sm">Divides in the</Label>
+    <Label x={94} y={354} anchor="end" size="sm">6th intercostal space</Label>
+    <Label x={94} y={404} anchor="end" size="sm">Xiphoid process</Label>
+    <Label x={94} y={444} anchor="end" size="sm">Costal margin</Label>
+    <Label x={94} y={504} anchor="end" size="sm">Rectus abdominis</Label>
+
+    <Label x={-100} y={570} size="sm">Anterior view · arteries lie on the deep</Label>
+    <Label x={-100} y={584} size="sm">surface of the wall · not to scale</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

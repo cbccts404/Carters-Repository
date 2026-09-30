@@ -106,6 +106,7 @@ flashcards:
     back: Upper and lower subscapular nerves (posterior cord); medial rotation and adduction
   - front: Tests for subscapularis?
     back: Lift-off (Gerber), belly-press, bear-hug
+diagrams: [rotator-cuff]
 related: [supraspinatus, infraspinatus, teres-minor]
 images:
   - image: gray-411-deep-chest-front-arm

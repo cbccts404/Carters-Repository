@@ -141,6 +141,7 @@ flashcards:
     back: Ulnar nerve and artery (Guyon's canal), palmar cutaneous branch of median nerve, palmaris longus tendon
   - front: Systemic conditions associated with carpal tunnel syndrome?
     back: Pregnancy, hypothyroidism, diabetes, rheumatoid arthritis, acromegaly, amyloidosis
+diagrams: [carpal-bones]
 related: [median-nerve, wrist-joint]
 images:
   - image: gray-1233-flexor-sheaths

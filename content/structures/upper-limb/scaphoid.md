@@ -118,6 +118,7 @@ flashcards:
     back: Thumb spica splint and repeat X-ray in 10–14 days, or MRI
   - front: Anatomical snuffbox — borders and floor?
     back: EPL (ulnar), APL + EPB (radial); floor = scaphoid + trapezium; radial artery crosses it
+diagrams: [carpal-bones]
 related: [wrist-joint, radial-artery]
 images:
   - image: gray-219-hand-bones-volar
