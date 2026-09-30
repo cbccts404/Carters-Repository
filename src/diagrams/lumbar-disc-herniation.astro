@@ -1,0 +1,87 @@
+---
+/* Original schematic: posterior (coronal) view of L4–S1 with the dural sac and the right-sided
+   nerve roots, showing why a posterolateral L4–L5 herniation hits the traversing L5 root and a
+   far-lateral herniation hits the exiting L4 root. */
+import Label from '../components/Label.astro';
+const V = [
+  { n: 'L4', y: 50 },
+  { n: 'L5', y: 170 },
+  { n: 'S1', y: 290 },
+];
+---
+
+<div class="scroll">
+  <svg viewBox="0 0 600 560" role="img" aria-labelledby="dh-title dh-desc">
+    <title id="dh-title">Lumbar disc herniation and nerve roots</title>
+    <desc id="dh-desc">
+      Posterior view of L4, L5 and S1. Each lumbar root exits below the pedicle of its own vertebra. A posterolateral
+      herniation of the L4–L5 disc compresses the traversing L5 root; a far-lateral herniation at the same level
+      compresses the exiting L4 root.
+    </desc>
+    <style>
+      .dh-body { fill: color-mix(in srgb, var(--t-bone) 22%, var(--surface)); stroke: var(--t-bone); stroke-width: 1.5; }
+      .dh-disc { fill: color-mix(in srgb, #60a5fa 25%, var(--surface)); stroke: #60a5fa; stroke-width: 1.5; }
+      .dh-ped { fill: color-mix(in srgb, var(--t-bone) 45%, var(--surface)); stroke: var(--t-bone); stroke-width: 1.5; }
+      .dh-sac { fill: color-mix(in srgb, var(--t-nerve) 12%, transparent); stroke: var(--t-nerve); stroke-width: 1.5; stroke-dasharray: 5 4; }
+      .dh-root { fill: none; stroke: var(--t-nerve); stroke-width: 5; stroke-linecap: round; }
+      .dh-hern { fill: #f97316; stroke: var(--bg); stroke-width: 2; }
+      .dh-cell { fill: var(--surface-2); stroke: var(--border); }
+    </style>
+
+    <!-- vertebral bodies, discs, pedicles -->
+    {V.map((v) => (
+      <>
+        <rect class="dh-body" x="150" y={v.y} width="220" height="95" rx="10"></rect>
+        <ellipse class="dh-ped" cx="160" cy={v.y + 28} rx="18" ry="24"></ellipse>
+        <ellipse class="dh-ped" cx="360" cy={v.y + 28} rx="18" ry="24"></ellipse>
+      </>
+    ))}
+    <rect class="dh-disc" x="150" y="145" width="220" height="25" rx="8"></rect>
+    <rect class="dh-disc" x="150" y="265" width="220" height="25" rx="8"></rect>
+
+    <!-- dural sac -->
+    <rect class="dh-sac" x="226" y="20" width="68" height="370" rx="30"></rect>
+
+    <!-- right-sided roots: each exits below its own pedicle -->
+    <path class="dh-root" d="M288 70 C300 100 330 118 380 132 L470 150"></path>
+    <path class="dh-root" d="M288 140 C304 170 312 200 330 228 C346 246 380 252 470 268"></path>
+    <path class="dh-root" d="M286 258 C300 300 312 320 330 346 C346 364 380 370 470 386"></path>
+
+    <!-- herniations at L4–L5 -->
+    <ellipse class="dh-hern" cx="300" cy="162" rx="16" ry="11"></ellipse>
+    <ellipse class="dh-hern" cx="382" cy="150" rx="14" ry="10"></ellipse>
+
+    <!-- labels -->
+    {V.map((v) => <Label x={140} y={v.y + 55} anchor="end" size="lg" to={v.n === 'S1' ? 'sacrum' : 'lumbar-vertebrae'}>{v.n}</Label>)}
+    <Label x={140} y={162} anchor="end" size="sm" to="intervertebral-disc">L4–L5 disc</Label>
+    <Label x={140} y={282} anchor="end" size="sm" to="intervertebral-disc">L5–S1 disc</Label>
+    <Label x={260} y={410} anchor="middle" size="sm" to="cauda-equina">Dural sac / cauda equina</Label>
+    <Label x={478} y={154} to="spinal-nerves">L4 root</Label>
+    <Label x={478} y={272} to="spinal-nerves">L5 root</Label>
+    <Label x={478} y={390} to="spinal-nerves">S1 root</Label>
+    <Label x={404} y={126} size="sm">② far-lateral → L4</Label>
+    <Label x={140} y={122} anchor="end" size="sm">① posterolateral</Label>
+    <Label x={140} y={136} anchor="end" size="sm">→ L5 (traversing)</Label>
+    <line x1="144" y1="128" x2="286" y2="158" stroke="var(--muted)" stroke-width="1"></line>
+
+    <!-- root table -->
+    <rect class="dh-cell" x="20" y="430" width="560" height="120" rx="8"></rect>
+    <Label x={36} y={452} size="sm">Root</Label>
+    <Label x={96} y={452} size="sm">Weakness</Label>
+    <Label x={300} y={452} size="sm">Reflex</Label>
+    <Label x={380} y={452} size="sm">Sensory loss</Label>
+    <Label x={36} y={478} to="spinal-nerves">L4</Label>
+    <Label x={96} y={478} size="sm">Knee extension, ankle dorsiflexion</Label>
+    <Label x={300} y={478} size="sm">Patellar ↓</Label>
+    <Label x={380} y={478} size="sm">Medial leg / ankle</Label>
+    <Label x={36} y={504} to="spinal-nerves">L5</Label>
+    <Label x={96} y={504} size="sm">Great-toe extension, hip abduction</Label>
+    <Label x={300} y={504} size="sm">None reliable</Label>
+    <Label x={380} y={504} size="sm">Dorsum of foot, 1st web</Label>
+    <Label x={36} y={530} to="spinal-nerves">S1</Label>
+    <Label x={96} y={530} size="sm">Plantarflexion, eversion</Label>
+    <Label x={300} y={530} size="sm">Achilles ↓</Label>
+    <Label x={380} y={530} size="sm">Lateral foot, sole</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

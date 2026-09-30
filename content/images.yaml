@@ -492,3 +492,183 @@
   license: Public domain
   licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
   alt: "Sagittal diagram of the female abdomen and pelvis showing the greater sac in red and the omental bursa in blue"
+
+- id: gray-82-thoracic-vertebra
+  file: images/gray-82-thoracic-vertebra.png
+  title: "A typical thoracic vertebra, viewed from above"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 82"
+  source: https://commons.wikimedia.org/wiki/File:Gray82.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Typical thoracic vertebra from above showing the heart-shaped body, costal facet, pedicle, lamina, superior articular process and long spinous process"
+
+- id: gray-84-cervical-vertebra
+  file: images/gray-84-cervical-vertebra.png
+  title: "A cervical vertebra, from above"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 84"
+  source: https://commons.wikimedia.org/wiki/File:Gray84.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Typical cervical vertebra from above showing the body, bifid spinous process, transverse processes with anterior and posterior tubercles and the foramen transversarium"
+
+- id: gray-86-atlas
+  file: images/gray-86-atlas.png
+  title: "First cervical vertebra, or atlas, from above"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 86"
+  source: https://commons.wikimedia.org/wiki/File:Gray86.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Atlas from above showing the anterior and posterior arches, lateral masses with superior articular surfaces, the facet for the dens and the groove for the vertebral artery"
+
+- id: gray-87-axis
+  file: images/gray-87-axis.png
+  title: "Second cervical vertebra (axis), from above"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 87"
+  source: https://commons.wikimedia.org/wiki/File:Gray87.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Axis from above showing the dens with facets for the alar and transverse ligaments, the body, superior articular surfaces and bifid spinous process"
+
+- id: gray-89-vertebra-prominens
+  file: images/gray-89-vertebra-prominens.png
+  title: "Seventh cervical vertebra (vertebra prominens)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 89"
+  source: https://commons.wikimedia.org/wiki/File:Gray89.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Seventh cervical vertebra from above showing its long non-bifid spinous process and foramina transversaria"
+
+- id: gray-93-lumbar-vertebra
+  file: images/gray-93-lumbar-vertebra.png
+  title: "A lumbar vertebra from above and behind"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 93"
+  source: https://commons.wikimedia.org/wiki/File:Gray93.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lumbar vertebra from above and behind showing the large kidney-shaped body, superior and inferior articular processes, mamillary and accessory processes"
+
+- id: gray-96-sacrum-dorsal
+  file: images/gray-96-sacrum-dorsal.png
+  title: "Sacrum, dorsal surface"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 96"
+  source: https://commons.wikimedia.org/wiki/File:Gray96.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Dorsal surface of the sacrum with muscle attachments outlined in red, including multifidus, sacrospinalis (erector spinae) and gluteus maximus"
+
+- id: gray-301-lumbar-ligaments-sagittal
+  file: images/gray-301-lumbar-ligaments-sagittal.png
+  title: "Median sagittal section of two lumbar vertebrae and their ligaments"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 301"
+  source: https://commons.wikimedia.org/wiki/File:Gray301.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Median sagittal section of two lumbar vertebrae showing the intervertebral disc, anterior and posterior longitudinal ligaments, ligamenta flava, interspinous and supraspinous ligaments and a facet joint capsule"
+
+- id: gray-302-posterior-longitudinal-ligament
+  file: images/gray-302-posterior-longitudinal-ligament.png
+  title: "Posterior longitudinal ligament, in the thoracic region"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 302"
+  source: https://commons.wikimedia.org/wiki/File:Gray302.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior longitudinal ligament on the backs of thoracic vertebral bodies seen from within the vertebral canal after cutting the pedicles"
+
+- id: gray-303-ligamenta-flava
+  file: images/gray-303-ligamenta-flava.png
+  title: "Vertebral arches of three thoracic vertebrae viewed from the front"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 303"
+  source: https://commons.wikimedia.org/wiki/File:Gray303.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Inner (anterior) surface of three thoracic vertebral arches showing the ligamenta flava joining adjacent laminae"
+
+- id: gray-389-deep-back-muscles
+  file: images/gray-389-deep-back-muscles.png
+  title: "Deep muscles of the back"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 389"
+  source: https://commons.wikimedia.org/wiki/File:Gray389.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Deep (intrinsic) muscles of the back from occiput to sacrum, including the columns of erector spinae (sacrospinalis) and multifidus"
+
+- id: gray-409-back-muscles-superficial
+  file: images/gray-409-back-muscles-superficial.png
+  title: "Muscles connecting the upper extremity to the vertebral column"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 409"
+  source: https://commons.wikimedia.org/wiki/File:Gray409.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the back: trapezius and latissimus dorsi on the left; on the right, trapezius removed to show levator scapulae, rhomboid minor and major and serratus posterior inferior; the lumbar triangle is labelled"
+
+- id: gray-513-vertebral-artery
+  file: images/gray-513-vertebral-artery.png
+  title: "The internal carotid and vertebral arteries, right side"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 513"
+  source: https://commons.wikimedia.org/wiki/File:Gray513.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral view of the neck showing the vertebral artery ascending through the foramina transversaria of the cervical vertebrae alongside the internal carotid artery"
+
+- id: gray-661-conus-filum-sagittal
+  file: images/gray-661-conus-filum-sagittal.png
+  title: "Sagittal section of the vertebral canal showing the lower end of the spinal cord and the filum terminale"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 661"
+  source: https://commons.wikimedia.org/wiki/File:Gray661.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Sagittal section of the lumbosacral vertebral canal showing the spinal cord ending near L1, the dural sac ending at the second sacral vertebra and the filum terminale"
+
+- id: gray-662-cauda-equina
+  file: images/gray-662-cauda-equina.png
+  title: "Cauda equina and filum terminale seen from behind"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 662"
+  source: https://commons.wikimedia.org/wiki/File:Gray662.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the lower spinal canal with the dura opened, showing the conus medullaris, the nerve roots of the cauda equina and the filum terminale"
+
+- id: gray-675-spinal-nerve-formation
+  file: images/gray-675-spinal-nerve-formation.png
+  title: "Formation of a spinal nerve from the roots of the spinal cord"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 675"
+  source: https://commons.wikimedia.org/wiki/File:Gray675.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Segment of spinal cord with anterior and posterior roots, the spinal ganglion on the posterior root and their union into a spinal nerve"
+
+- id: gray-796-spinal-cord-dura-opened
+  file: images/gray-796-spinal-cord-dura-opened.png
+  title: "A portion of the spinal cord, right lateral surface, with the dura opened"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 796"
+  source: https://commons.wikimedia.org/wiki/File:Gray796.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Spinal cord with the dura opened showing anterior and posterior nerve roots, the denticulate ligament and spinal nerves in their sheaths"
+
+- id: gray-802-dorsal-rami-cutaneous
+  file: images/gray-802-dorsal-rami-cutaneous.png
+  title: "Cutaneous areas of the posterior divisions of the spinal nerves"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 802"
+  source: https://commons.wikimedia.org/wiki/File:Gray802.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior trunk showing the cutaneous territories of the dorsal rami of the spinal nerves by segment"

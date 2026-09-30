@@ -1,0 +1,78 @@
+---
+/* Original schematic: sagittal view of the lower spine showing the end of the spinal cord, the
+   cauda equina, the dural sac, and a lumbar puncture needle at L3–L4 below the intercristal line. */
+import Label from '../components/Label.astro';
+const levels = [
+  ['T12', 40],
+  ['L1', 100],
+  ['L2', 160],
+  ['L3', 220],
+  ['L4', 280],
+  ['L5', 340],
+] as const;
+---
+
+<div class="scroll">
+  <svg viewBox="0 0 600 520" role="img" aria-labelledby="lp-title lp-desc">
+    <title id="lp-title">Lumbar puncture anatomy (sagittal view)</title>
+    <desc id="lp-desc">
+      The spinal cord ends at the conus medullaris at about L1–L2; the cauda equina continues in the dural sac, which
+      ends at about S2. A needle entering between the L3 and L4 spinous processes passes the ligaments and epidural
+      space into the subarachnoid space below the cord. The intercristal line crosses L4.
+    </desc>
+    <style>
+      .lp-body { fill: color-mix(in srgb, var(--t-bone) 22%, var(--surface)); stroke: var(--t-bone); stroke-width: 1.5; }
+      .lp-disc { fill: color-mix(in srgb, #60a5fa 25%, var(--surface)); stroke: #60a5fa; stroke-width: 1; }
+      .lp-sac { fill: color-mix(in srgb, #60a5fa 14%, transparent); stroke: #60a5fa; stroke-width: 1.5; }
+      .lp-cord { fill: color-mix(in srgb, var(--t-nerve) 45%, var(--surface)); stroke: var(--t-nerve); stroke-width: 1.5; }
+      .lp-root { fill: none; stroke: var(--t-nerve); stroke-width: 1.4; }
+      .lp-lig { fill: none; stroke: var(--t-ligament); stroke-width: 4; }
+      .lp-needle { stroke: var(--text); stroke-width: 3; stroke-linecap: round; }
+      .lp-line { stroke: #f59e0b; stroke-width: 1.5; stroke-dasharray: 6 5; }
+    </style>
+
+    <!-- vertebral bodies and discs (anterior = left) -->
+    {levels.map(([t, y]) => (
+      <>
+        <rect class="lp-body" x="90" y={y} width="100" height="48" rx="6"></rect>
+        <rect class="lp-disc" x="92" y={y + 49} width="96" height="10" rx="4"></rect>
+        <path class="lp-body" d={`M270 ${y + 6} L330 ${y + 16} L334 ${y + 40} L272 ${y + 40} Z`}></path>
+      </>
+    ))}
+    <!-- sacrum -->
+    <path class="lp-body" d="M90 400 L190 400 L210 500 L150 510 Z"></path>
+    <path class="lp-body" d="M270 400 L310 410 L300 500 L262 496 Z"></path>
+
+    <!-- dural sac to S2 and cord to conus L1–L2 -->
+    <path class="lp-sac" d="M205 10 H255 V430 Q230 456 205 430 Z"></path>
+    <path class="lp-cord" d="M214 10 H246 V130 Q230 170 214 130 Z"></path>
+    {Array.from({ length: 7 }, (_, i) => (
+      <path class="lp-root" d={`M${222 + i * 3} 150 C${212 + i * 5} 260 ${210 + i * 6} 360 ${212 + i * 5} 425`}></path>
+    ))}
+
+    <!-- ligaments between L3 and L4 spinous processes -->
+    <path class="lp-lig" d="M300 256 L300 286"></path>
+    <path class="lp-lig" d="M262 262 L262 284"></path>
+
+    <!-- intercristal line and needle at L3–L4 -->
+    <line class="lp-line" x1="40" y1="300" x2="560" y2="300"></line>
+    <line class="lp-needle" x1="520" y1="274" x2="232" y2="274"></line>
+    <circle cx="232" cy="274" r="4" fill="var(--text)"></circle>
+
+    <!-- labels -->
+    {levels.map(([t, y]) => <Label x={82} y={y + 30} anchor="end" size="sm" to="lumbar-vertebrae">{t}</Label>)}
+    <Label x={82} y={450} anchor="end" size="sm" to="sacrum">Sacrum</Label>
+    <Label x={258} y={120} to="spinal-cord">Spinal cord</Label>
+    <Label x={258} y={165} size="sm">Conus medullaris (L1–L2)</Label>
+    <Label x={260} y={394} size="sm" to="cauda-equina">← Cauda equina</Label>
+    <Label x={262} y={446} size="sm" to="spinal-meninges">Dural sac ends ≈ S2</Label>
+    <Label x={348} y={234} size="sm" to="vertebral-ligaments">Supraspinous / interspinous lig.</Label>
+    <Label x={348} y={248} size="sm" to="vertebral-ligaments">Ligamentum flavum</Label>
+    <Label x={348} y={262} size="sm" to="spinal-meninges">Epidural space → dura → CSF</Label>
+    <Label x={530} y={292} anchor="end" size="sm">LP needle (L3–L4)</Label>
+    <Label x={560} y={318} anchor="end" size="sm">Intercristal (Tuffier) line ≈ L4</Label>
+    <Label x={40} y={30} size="sm">Anterior</Label>
+    <Label x={560} y={30} anchor="end" size="sm">Posterior</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>
