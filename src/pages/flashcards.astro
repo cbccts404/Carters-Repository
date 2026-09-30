@@ -1,0 +1,376 @@
+---
+import Base from '../layouts/Base.astro';
+import { loadAtlas, url } from '../lib/atlas';
+
+const atlas = await loadAtlas();
+const regions = atlas.regions
+  .map((r) => ({
+    id: r.id,
+    name: r.data.name,
+    total: atlas.structures.filter((s) => s.data.region === r.id).reduce((n, s) => n + s.data.flashcards.length, 0),
+  }))
+  .filter((r) => r.total > 0);
+const total = regions.reduce((n, r) => n + r.total, 0);
+---
+
+<Base title="Flashcards" description="Anatomy flashcards with spaced repetition.">
+  <p class="crumbs"><a href={url()}>Home</a> / Flashcards</p>
+  <h1>Flashcards</h1>
+
+  <noscript><p class="note">Flashcard mode needs JavaScript. Each entry page also shows its own flashcards.</p></noscript>
+
+  <section id="setup">
+    <p class="muted">
+      {total} cards. Mark each one <b>Know it</b> or <b>Review again</b>. Cards you know come back after 1, 3, 7, 14, then 30
+      days; cards you miss return later in the same session. Progress is saved on this device only.
+    </p>
+
+    <form id="fc-form" class="quiz-setup">
+      <fieldset>
+        <legend>Regions</legend>
+        <div class="region-picks">
+          {
+            regions.map((r) => (
+              <label class="pick">
+                <input type="checkbox" name="region" value={r.id} checked />
+                <span>{r.name}</span>
+                <span class="muted small">{r.total}</span>
+              </label>
+            ))
+          }
+        </div>
+        <p class="small">
+          <button type="button" class="linkish" data-all="1">Select all</button>
+          <span class="muted" aria-hidden="true">&nbsp;·&nbsp;</span>
+          <button type="button" class="linkish" data-all="0">Clear</button>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Cards</legend>
+        <label class="pick"><input type="radio" name="mode" value="due" checked /> <span>Due for review (new and scheduled cards)</span></label>
+        <label class="pick"><input type="radio" name="mode" value="all" /> <span>All cards</span></label>
+        <label class="pick"><input type="radio" name="mode" value="again" /> <span>Only cards I marked "review again"</span></label>
+        <label class="pick"><input type="checkbox" name="hy" /> <span>High-yield entries only</span></label>
+        <label class="pick">
+          <span>How many</span>
+          <select name="n">
+            <option value="20" selected>20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="0">All</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <p class="btn-row" style="align-items:center">
+        <button class="btn primary" type="submit" id="start-btn">Start studying</button>
+        <span class="muted small" id="avail" aria-live="polite"></span>
+      </p>
+    </form>
+
+    <section class="quiz-stats" aria-labelledby="fc-stats-h">
+      <h2 id="fc-stats-h">Your progress</h2>
+      <p id="stats-summary" class="muted">No cards studied yet on this device.</p>
+      <table class="qa" id="stats-table" hidden>
+        <thead>
+          <tr><th>Region</th><th>Studied</th><th>Mastered</th><th>Due now</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p class="small muted">Mastered = marked "know it" at least three times in a row.</p>
+      <p><button type="button" class="linkish danger" id="reset-btn" hidden>Reset flashcard progress</button></p>
+    </section>
+  </section>
+
+  <section id="run" hidden>
+    <div class="quiz-bar">
+      <span id="run-pos"></span>
+      <span id="run-score" class="muted"></span>
+      <button type="button" class="linkish" id="end-btn">End session</button>
+    </div>
+    <div class="meter" aria-hidden="true"><span id="run-meter"></span></div>
+
+    <button type="button" class="fc-card" id="card" aria-live="polite">
+      <span class="fc-meta small muted" id="card-meta"></span>
+      <span class="fc-face" id="card-front"></span>
+      <span class="fc-face fc-back" id="card-back" hidden></span>
+      <span class="fc-hint small muted" id="card-hint">Tap to show the answer</span>
+    </button>
+
+    <p class="small" id="card-link-p" hidden><a id="card-link" href="#">Open the entry →</a></p>
+
+    <div class="fc-actions" id="actions" hidden>
+      <button type="button" class="btn fc-again" id="again-btn">✗ Review again</button>
+      <button type="button" class="btn fc-know" id="know-btn">✓ Know it</button>
+    </div>
+    <p class="small muted">Keys: Space to flip · 1 or ← review again · 2 or → know it.</p>
+  </section>
+
+  <section id="done" hidden>
+    <h2 id="done-title">Session complete</h2>
+    <p id="done-summary"></p>
+    <div id="done-list"></div>
+    <p class="btn-row">
+      <button type="button" class="btn primary" id="more-btn">Study more</button>
+    </p>
+  </section>
+</Base>
+
+<script>
+  import { isDue, loadProgress, MASTERED_BOX, recordCard, resetCardProgress } from '../scripts/progress';
+
+  interface Card {
+    id: string;
+    entry: string;
+    region: string;
+    highYield: boolean;
+    url: string;
+    front: string;
+    back: string;
+  }
+
+  const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
+  const form = $<HTMLFormElement>('fc-form');
+  const regionNames = new Map(
+    [...form.querySelectorAll<HTMLInputElement>('input[name=region]')].map((i) => [
+      i.value,
+      i.closest('label')!.querySelector('span')!.textContent!,
+    ]),
+  );
+  const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
+  const REQUEUE_GAP = 4; // a missed card comes back after this many other cards
+
+  let deck: Card[] = [];
+  let queue: Card[] = [];
+  let pos = 0;
+  let flipped = false;
+  let total = 0; // distinct cards in this session
+  const knownFirstTry = new Set<string>();
+  const missed = new Map<string, Card>();
+  const done = new Set<string>();
+
+  function shuffle<T>(a: T[]) {
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function settings() {
+    const fd = new FormData(form);
+    return {
+      regions: fd.getAll('region') as string[],
+      mode: String(fd.get('mode')),
+      hy: fd.get('hy') === 'on',
+      n: Number(fd.get('n')),
+    };
+  }
+
+  function pool() {
+    const { regions, mode, hy } = settings();
+    const cards = loadProgress().cards;
+    const now = Date.now();
+    return deck.filter((c) => {
+      if (!regions.includes(c.region) || (hy && !c.highYield)) return false;
+      const r = cards[c.id];
+      if (mode === 'due') return isDue(r, now);
+      if (mode === 'again') return !!r && r.box === 0;
+      return true;
+    });
+  }
+
+  function updateAvailable() {
+    if (!deck.length) return;
+    const { mode } = settings();
+    const n = pool().length;
+    const none = mode === 'due' ? 'Nothing is due in these regions — come back later or pick "All cards".' : 'No cards match these settings.';
+    $('avail').textContent = n ? `${n} card${n === 1 ? '' : 's'} ${mode === 'due' ? 'due' : 'match'}` : none;
+    $<HTMLButtonElement>('start-btn').disabled = n === 0;
+  }
+
+  function renderStats() {
+    const cards = loadProgress().cards;
+    const now = Date.now();
+    const studiedIds = Object.keys(cards);
+    $('reset-btn').hidden = studiedIds.length === 0;
+    if (!studiedIds.length) {
+      $('stats-table').hidden = true;
+      $('stats-summary').textContent = 'No cards studied yet on this device.';
+      return;
+    }
+    const by = new Map<string, { total: number; seen: number; mastered: number; due: number }>();
+    let seen = 0;
+    let mastered = 0;
+    let due = 0;
+    for (const c of deck) {
+      const x = by.get(c.region) ?? { total: 0, seen: 0, mastered: 0, due: 0 };
+      const r = cards[c.id];
+      x.total++;
+      if (r) {
+        x.seen++;
+        if (r.box >= MASTERED_BOX) x.mastered++;
+      }
+      if (r && isDue(r, now)) x.due++;
+      by.set(c.region, x);
+    }
+    const rows = [...by].map(([id, x]) => {
+      seen += x.seen;
+      mastered += x.mastered;
+      due += x.due;
+      return `<tr><td>${esc(regionNames.get(id) ?? id)}</td><td>${x.seen} / ${x.total}</td><td>${x.mastered}</td><td>${x.due}</td></tr>`;
+    });
+    $('stats-table').querySelector('tbody')!.innerHTML = rows.join('');
+    $('stats-table').hidden = false;
+    $('stats-summary').textContent = `Studied ${seen} of ${deck.length} cards · ${mastered} mastered · ${due} studied cards due for review now.`;
+  }
+
+  function show(section: 'setup' | 'run' | 'done') {
+    for (const s of ['setup', 'run', 'done']) $(s).hidden = s !== section;
+    window.scrollTo({ top: 0 });
+  }
+
+  function start() {
+    const { mode, n } = settings();
+    const cards = loadProgress().cards;
+    let qs = shuffle(pool());
+    // in "due" mode, show cards you have struggled with first, then new cards, then scheduled reviews
+    if (mode === 'due') {
+      const rank = (c: Card) => (cards[c.id] ? (cards[c.id].box === 0 ? 0 : 2) : 1);
+      qs = qs.sort((a, b) => rank(a) - rank(b));
+    }
+    queue = n ? qs.slice(0, n) : qs;
+    total = queue.length;
+    pos = 0;
+    knownFirstTry.clear();
+    missed.clear();
+    done.clear();
+    show('run');
+    renderCard();
+  }
+
+  function renderCard() {
+    const c = queue[pos];
+    flipped = false;
+    $('card-meta').textContent = regionNames.get(c.region) ?? c.region;
+    $('card-front').innerHTML = c.front;
+    $('card-back').innerHTML = c.back;
+    $('card-back').hidden = true;
+    $('card-front').hidden = false;
+    $('card-hint').textContent = 'Tap to show the answer';
+    $('card').setAttribute('aria-pressed', 'false');
+    $('actions').hidden = true;
+    $('card-link-p').hidden = true;
+    $('run-pos').textContent = `${done.size} / ${total} done`;
+    $('run-score').textContent = missed.size ? `${missed.size} to review again` : '';
+    $('run-meter').style.width = `${total ? Math.round((100 * done.size) / total) : 0}%`;
+    $('card').focus({ preventScroll: true });
+  }
+
+  function flip() {
+    if (flipped) return;
+    flipped = true;
+    const c = queue[pos];
+    $('card-front').hidden = true;
+    $('card-back').hidden = false;
+    $('card-meta').textContent = `${regionNames.get(c.region) ?? c.region} · ${c.entry}`;
+    $('card-hint').textContent = '';
+    $('card').setAttribute('aria-pressed', 'true');
+    $<HTMLAnchorElement>('card-link').href = c.url;
+    $('card-link').textContent = `Open the ${c.entry} entry →`;
+    $('card-link-p').hidden = false;
+    $('actions').hidden = false;
+    $('know-btn').focus({ preventScroll: true });
+  }
+
+  function mark(known: boolean) {
+    if (!flipped) return;
+    const c = queue[pos];
+    recordCard(c.id, known);
+    if (known) {
+      if (!missed.has(c.id)) knownFirstTry.add(c.id);
+      done.add(c.id);
+    } else {
+      missed.set(c.id, c);
+      queue.splice(Math.min(queue.length, pos + 1 + REQUEUE_GAP), 0, c); // see it again later this session
+    }
+    pos++;
+    if (pos < queue.length) renderCard();
+    else finish();
+  }
+
+  function finish() {
+    const reviewed = new Set([...done, ...missed.keys()]).size;
+    $('done-title').textContent = done.size === total && total ? 'Session complete' : 'Session ended';
+    $('done-summary').textContent = reviewed
+      ? `${reviewed} card${reviewed === 1 ? '' : 's'} reviewed · ${knownFirstTry.size} known on the first try · ${missed.size} needed another look.`
+      : 'No cards reviewed.';
+    $('done-list').innerHTML = missed.size
+      ? `<h3>Cards to revisit</h3><ul class="plain">${[...missed.values()]
+          .map((c) => `<li><a href="${c.url}">${esc(c.entry)}</a> <span class="muted small">· ${c.front}</span></li>`)
+          .join('')}</ul>`
+      : '';
+    show('done');
+    renderStats();
+  }
+
+  // ----- wiring -----
+  form.addEventListener('change', updateAvailable);
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (pool().length) start();
+  });
+  for (const b of form.querySelectorAll<HTMLButtonElement>('[data-all]')) {
+    b.addEventListener('click', () => {
+      for (const i of form.querySelectorAll<HTMLInputElement>('input[name=region]')) i.checked = b.dataset.all === '1';
+      updateAvailable();
+    });
+  }
+  $('card').addEventListener('click', (e) => {
+    if ((e.target as HTMLElement).closest('a')) return; // let cross-links inside a card work
+    flip();
+  });
+  $('again-btn').addEventListener('click', () => mark(false));
+  $('know-btn').addEventListener('click', () => mark(true));
+  $('end-btn').addEventListener('click', finish);
+  $('more-btn').addEventListener('click', () => {
+    show('setup');
+    updateAvailable();
+  });
+  $('reset-btn').addEventListener('click', () => {
+    if (confirm('Erase all flashcard progress saved on this device?')) {
+      resetCardProgress();
+      renderStats();
+      updateAvailable();
+    }
+  });
+  document.addEventListener('keydown', (e) => {
+    if ($('run').hidden || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
+    if (!flipped && (e.key === ' ' || e.key === 'Enter')) {
+      e.preventDefault();
+      flip();
+    } else if (flipped && (e.key === '1' || e.key === 'ArrowLeft')) {
+      e.preventDefault();
+      mark(false);
+    } else if (flipped && (e.key === '2' || e.key === 'ArrowRight')) {
+      e.preventDefault();
+      mark(true);
+    }
+  });
+
+  // ----- load the deck -----
+  $('avail').textContent = 'Loading cards…';
+  $<HTMLButtonElement>('start-btn').disabled = true;
+  fetch((document.body.dataset.base ?? '/') + 'flashcard-bank.json')
+    .then((r) => r.json())
+    .then((data: Card[]) => {
+      deck = data;
+      updateAvailable();
+      renderStats();
+    })
+    .catch(() => {
+      $('avail').textContent = 'Could not load the cards. Check your connection and reload.';
+    });
+</script>

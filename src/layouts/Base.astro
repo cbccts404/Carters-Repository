@@ -29,6 +29,10 @@ const fullTitle = title === 'Anatomy Atlas' ? title : `${title} · Anatomy Atlas
     <title>{fullTitle}</title>
     {description && <meta name="description" content={description} />}
     <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
+    <link rel="manifest" href={url('manifest.webmanifest')} />
+    <link rel="apple-touch-icon" href={url('apple-touch-icon.png')} />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Anatomy" />
   </head>
   <body data-base={url()}>
     <header class="site-header">
@@ -68,10 +72,14 @@ const fullTitle = title === 'Anatomy Atlas' ? title : `${title} · Anatomy Atlas
         ))
       }
       <hr />
+      <a href={url('quiz/')}>Quiz mode</a>
+      <a href={url('flashcards/')}>Flashcards</a>
       <a href={url('search/')}>Search</a>
       <a href={url('review/')}>Review queue (verify flags)</a>
       <a href={url('credits/')}>Image credits &amp; licenses</a>
     </nav>
+
+    <p class="offline-note" id="offline-note" hidden>You're offline — showing pages saved on this device.</p>
 
     <main class="wrap">
       <slot />
@@ -141,6 +149,16 @@ const fullTitle = title === 'Anatomy Atlas' ? title : `${title} · Anatomy Atlas
       });
 
       initSearchUI($('q') as HTMLInputElement, $('quick-results'), { limit: 8 });
+
+      // offline support (service worker is generated at build time, so skip it in dev)
+      if (import.meta.env.PROD && 'serviceWorker' in navigator) {
+        navigator.serviceWorker.register((document.body.dataset.base ?? '/') + 'sw.js').catch(() => {});
+      }
+      const offlineNote = $('offline-note');
+      const syncOnline = () => (offlineNote.hidden = navigator.onLine);
+      addEventListener('online', syncOnline);
+      addEventListener('offline', syncOnline);
+      syncOnline();
     </script>
   </body>
 </html>

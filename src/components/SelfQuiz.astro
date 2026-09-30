@@ -18,7 +18,7 @@ const questions = await Promise.all(
 
 {
   questions.map((q, qi) => (
-    <div class="q" data-answer={q.answer}>
+    <div class="q" data-answer={q.answer} data-qid={`${entry.id}#${qi}`}>
       <div class="stem">
         <span class="muted small">Q{qi + 1}. </span>
         <Fragment set:html={q.stem} />
@@ -52,6 +52,8 @@ const questions = await Promise.all(
 }
 
 <script>
+  import { recordAnswer } from '../scripts/progress';
+
   for (const q of document.querySelectorAll<HTMLElement>('.q')) {
     q.classList.add('js');
     const answer = Number(q.dataset.answer);
@@ -65,6 +67,7 @@ const questions = await Promise.all(
         if (picked !== answer) b.classList.add('wrong');
         explain.querySelector('.verdict')!.textContent = picked === answer ? '✓ Correct.' : '✗ Not quite.';
         explain.hidden = false;
+        if (q.dataset.qid) recordAnswer(q.dataset.qid, picked === answer);
       });
     }
   }

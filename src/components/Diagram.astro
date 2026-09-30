@@ -12,6 +12,11 @@ if (!Component) throw new Error(`Diagram "${id}" is registered but src/diagrams/
 ---
 
 <figure class="fig diagram" data-diagram={id}>
+  <div class="diagram-tools">
+    <button type="button" class="btn tool-btn" data-hide aria-pressed="false">Hide labels</button>
+    <button type="button" class="linkish" data-reveal hidden>Reveal all</button>
+    <span class="small muted" data-hint hidden>Tap a box to reveal it</span>
+  </div>
   <Component />
   <figcaption>
     <strong>{meta.title}.</strong>{' '}
@@ -19,3 +24,83 @@ if (!Component) throw new Error(`Diagram "${id}" is registered but src/diagrams/
     <div class="attribution">Original schematic, created for this atlas.</div>
   </figcaption>
 </figure>
+
+<script>
+  /*
+   * Hide-labels mode: structure labels are covered by blank boxes; tapping a
+   * box reveals that label. Legend-style notes (orientation, keys) stay visible.
+   * The choice is remembered on this device and applies to every diagram.
+   */
+  const KEY = 'atlas.hideLabels';
+  const SVG_NS = 'http://www.w3.org/2000/svg';
+  const figures = [...document.querySelectorAll<HTMLElement>('figure.diagram')];
+
+  // Legend-style notes stay visible: long text, or text with separators/arrows ("Inferior view · anterior ↑").
+  const isNote = (t: SVGTextElement) => {
+    const s = (t.textContent ?? '').trim();
+    return t.classList.contains('lbl-head') || s.length > 30 || s.startsWith('(') || /[·↑↓←→=]/.test(s);
+  };
+  const quizzable = (fig: HTMLElement) =>
+    [...fig.querySelectorAll<SVGTextElement>('text.lbl')].filter((t) => t.closest('a.lbl-link') || !isNote(t));
+
+  function addMasks(fig: HTMLElement) {
+    if (fig.dataset.masked) return;
+    for (const t of quizzable(fig)) {
+      const bb = t.getBBox();
+      if (!bb.width) continue;
+      const r = document.createElementNS(SVG_NS, 'rect');
+      r.setAttribute('x', String(bb.x - 3));
+      r.setAttribute('y', String(bb.y - 2));
+      r.setAttribute('width', String(bb.width + 6));
+      r.setAttribute('height', String(bb.height + 4));
+      r.setAttribute('rx', '4');
+      r.setAttribute('class', 'lbl-mask');
+      t.parentNode!.insertBefore(r, t);
+      t.classList.add('lbl-quiz');
+    }
+    fig.dataset.masked = '1';
+  }
+
+  function setHidden(fig: HTMLElement, on: boolean) {
+    if (on) addMasks(fig);
+    fig.classList.toggle('labels-hidden', on);
+    fig.querySelectorAll('.revealed').forEach((el) => el.classList.remove('revealed'));
+    fig.querySelector('[data-hide]')!.setAttribute('aria-pressed', String(on));
+    fig.querySelector<HTMLElement>('[data-hide]')!.textContent = on ? 'Show labels' : 'Hide labels';
+    fig.querySelector<HTMLElement>('[data-reveal]')!.hidden = !on;
+    fig.querySelector<HTMLElement>('[data-hint]')!.hidden = !on;
+  }
+
+  function setAll(on: boolean) {
+    figures.forEach((f) => setHidden(f, on));
+    try {
+      localStorage.setItem(KEY, on ? '1' : '0');
+    } catch {}
+  }
+
+  for (const fig of figures) {
+    fig.querySelector('[data-hide]')!.addEventListener('click', () => setAll(!fig.classList.contains('labels-hidden')));
+    fig.querySelector('[data-reveal]')!.addEventListener('click', () => {
+      fig.querySelectorAll('.lbl-quiz, .lbl-mask').forEach((el) => el.classList.add('revealed'));
+    });
+    // Reveal one label on tap; the first tap on a hidden linked label reveals it instead of navigating.
+    fig.addEventListener('click', (e) => {
+      if (!fig.classList.contains('labels-hidden')) return;
+      const hit = (e.target as Element).closest('.lbl-mask, text.lbl-quiz');
+      if (!hit) return;
+      const text = hit.matches('text') ? hit : hit.nextElementSibling;
+      const mask = hit.matches('text') ? hit.previousElementSibling : hit;
+      if (text && !text.classList.contains('revealed')) {
+        e.preventDefault();
+        text.classList.add('revealed');
+        mask?.classList.add('revealed');
+      }
+    });
+  }
+
+  let saved = false;
+  try {
+    saved = localStorage.getItem(KEY) === '1';
+  } catch {}
+  if (saved && figures.length) requestAnimationFrame(() => setAll(true));
+</script>
