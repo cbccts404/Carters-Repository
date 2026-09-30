@@ -1,0 +1,107 @@
+---
+/* Original schematic: the perineum seen from below (lithotomy position, anterior at the top).
+   The line between the ischial tuberosities divides the urogenital and anal triangles. */
+import Label from '../components/Label.astro';
+
+const S = [280, 60]; // pubic symphysis
+const L = [110, 270]; // left ischial tuberosity (viewer's left)
+const R = [450, 270]; // right ischial tuberosity
+const C = [280, 470]; // coccyx
+---
+
+<div class="scroll">
+  <svg viewBox="-64 0 692 540" role="img" aria-labelledby="per-title per-desc">
+    <title id="per-title">Perineum: urogenital and anal triangles (inferior view)</title>
+    <desc id="per-desc">
+      Diamond-shaped perineum bounded by the pubic symphysis, ischiopubic rami, ischial tuberosities, sacrotuberous
+      ligaments and coccyx. A line between the ischial tuberosities separates the anterior urogenital triangle
+      (urethra and vagina) from the posterior anal triangle (anus and ischioanal fossae). The perineal body lies at the
+      center. The pudendal canal runs in the lateral wall of each ischioanal fossa.
+    </desc>
+    <style>
+      .per-ug { fill: color-mix(in srgb, var(--t-organ) 16%, transparent); }
+      .per-an { fill: color-mix(in srgb, var(--t-space) 14%, transparent); }
+      .per-bone { stroke: var(--t-bone); stroke-width: 7; stroke-linecap: round; fill: none; }
+      .per-lig { stroke: var(--t-ligament); stroke-width: 4; stroke-linecap: round; fill: none; }
+      .per-div { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 6 5; }
+      .per-fossa { fill: color-mix(in srgb, #f59e0b 16%, transparent); stroke: #f59e0b; stroke-width: 1; stroke-dasharray: 3 3; }
+      .per-nerve { stroke: var(--t-nerve); stroke-width: 2.5; stroke-dasharray: 8 4; fill: none; }
+      .per-nerve2 { stroke: var(--t-nerve); stroke-width: 1.8; fill: none; }
+      .per-open { fill: var(--surface); stroke: var(--text); stroke-width: 1.5; }
+      .per-sph { fill: none; stroke: var(--t-muscle); stroke-width: 5; }
+      .per-body { fill: var(--t-muscle); }
+    </style>
+
+    <!-- triangles -->
+    <polygon class="per-ug" points={`${S} ${L} ${R}`}></polygon>
+    <polygon class="per-an" points={`${L} ${R} ${C}`}></polygon>
+    <line class="per-div" x1={L[0]} y1={L[1]} x2={R[0]} y2={R[1]}></line>
+
+    <!-- ischioanal fossae -->
+    <ellipse class="per-fossa" cx="200" cy="322" rx="44" ry="38"></ellipse>
+    <ellipse class="per-fossa" cx="360" cy="322" rx="44" ry="38"></ellipse>
+
+    <!-- bones and ligaments -->
+    <path class="per-bone" d={`M${L} L${S} L${R}`}></path>
+    <circle cx={S[0]} cy={S[1]} r="9" fill="var(--t-bone)"></circle>
+    <circle cx={L[0]} cy={L[1]} r="12" fill="var(--t-bone)"></circle>
+    <circle cx={R[0]} cy={R[1]} r="12" fill="var(--t-bone)"></circle>
+    <path class="per-lig" d={`M${L} L${C} L${R}`}></path>
+    <circle cx={C[0]} cy={C[1]} r="8" fill="var(--t-bone)"></circle>
+
+    <!-- pudendal canal and inferior rectal nerves -->
+    <path class="per-nerve" d="M182 342 L140 285"></path>
+    <path class="per-nerve" d="M378 342 L420 285"></path>
+    <path class="per-nerve2" d="M162 314 Q210 334 258 350"></path>
+    <path class="per-nerve2" d="M398 314 Q350 334 302 350"></path>
+
+    <!-- leader lines -->
+    <g stroke="var(--muted)" stroke-width="1">
+      <line x1="396" y1="141" x2="322" y2="116"></line>
+      <line x1="104" y1="314" x2="152" y2="300"></line>
+      <line x1="198" y1="414" x2="224" y2="342"></line>
+      <line x1="456" y1="356" x2="304" y2="354"></line>
+      <line x1="326" y1="466" x2="284" y2="420"></line>
+      <line x1="124" y1="466" x2="194" y2="372"></line>
+    </g>
+
+    <!-- urogenital openings -->
+    <circle class="per-open" cx="280" cy="150" r="7"></circle>
+    <ellipse cx="280" cy="200" rx="15" ry="26" fill="none" stroke="var(--text)" stroke-width="1.5" stroke-dasharray="4 3"></ellipse>
+
+    <!-- perineal body and anus -->
+    <circle class="per-body" cx="280" cy="270" r="9"></circle>
+    <circle class="per-sph" cx="280" cy="352" r="22"></circle>
+    <circle class="per-open" cx="280" cy="352" r="8"></circle>
+
+    <!-- labels -->
+    <Label x={280} y={40} anchor="middle" to="pubic-symphysis">Pubic symphysis</Label>
+    <Label x={160} y={150} anchor="end" size="sm" to="hip-bone">Ischiopubic ramus</Label>
+    <Label x={96} y={250} anchor="end" size="sm" to="hip-bone">Ischial</Label>
+    <Label x={96} y={264} anchor="end" size="sm" to="hip-bone">tuberosity</Label>
+    <Label x={464} y={250} size="sm" to="hip-bone">Ischial</Label>
+    <Label x={464} y={264} size="sm" to="hip-bone">tuberosity</Label>
+    <Label x={400} y={146} to="perineal-pouches">Urogenital triangle</Label>
+    <Label x={400} y={160} size="sm">(perineal membrane,</Label>
+    <Label x={400} y={174} size="sm">superficial & deep pouches)</Label>
+    <Label x={266} y={155} anchor="end" size="sm" to="urethra">Urethra</Label>
+    <Label x={302} y={206} size="sm" to="vagina">Vagina (♀)</Label>
+    <Label x={266} y={262} anchor="end" size="sm" to="perineum">Perineal body</Label>
+    <Label x={200} y={300} anchor="middle" size="sm" to="ischioanal-fossa">Ischioanal</Label>
+    <Label x={200} y={313} anchor="middle" size="sm" to="ischioanal-fossa">fossa</Label>
+    <Label x={360} y={300} anchor="middle" size="sm" to="ischioanal-fossa">Ischioanal</Label>
+    <Label x={360} y={313} anchor="middle" size="sm" to="ischioanal-fossa">fossa</Label>
+    <Label x={462} y={352} size="sm" to="anal-canal">Anus + external</Label>
+    <Label x={462} y={366} size="sm" to="anal-canal">anal sphincter</Label>
+    <Label x={100} y={306} anchor="end" size="sm" to="pudendal-nerve">Pudendal canal</Label>
+    <Label x={100} y={320} anchor="end" size="sm">(pudendal n. +</Label>
+    <Label x={100} y={334} anchor="end" size="sm">int. pudendal vessels)</Label>
+    <Label x={196} y={426} anchor="end" size="sm" to="pudendal-nerve">Inferior rectal n.</Label>
+    <Label x={120} y={480} anchor="end" size="sm" to="sacrotuberous-and-sacrospinous-ligaments">Sacrotuberous lig.</Label>
+    <Label x={330} y={478} size="sm" to="perineum">Anal triangle</Label>
+    <Label x={280} y={502} anchor="middle" to="sacrum">Coccyx</Label>
+    <Label x={-50} y={24} size="sm">Anterior ↑ (inferior view, lithotomy)</Label>
+    <Label x={-50} y={530} size="sm">Dashed line: between the ischial tuberosities</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

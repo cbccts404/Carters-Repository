@@ -1,0 +1,89 @@
+---
+/* Original schematic: dermatomes of the right lower limb, anterior view (medial = viewer's right,
+   great toe medial), with ASIA key sensory points and a root / key muscle / reflex table.
+   Dermatome maps differ between sources and adjacent dermatomes overlap. */
+import Label from '../components/Label.astro';
+
+const outline =
+  'M95 40 Q180 20 262 45 L250 200 L238 330 Q236 360 232 380 L222 560 L228 600 ' +
+  'L246 640 L262 690 Q258 706 240 706 L150 706 Q134 704 138 690 L150 640 L158 600 ' +
+  'L160 560 L170 380 Q168 360 162 330 L130 200 Z';
+
+const regions = [
+  { id: 'L1', color: '#9aa5b8', points: '60,0 300,0 300,62 60,88' },
+  { id: 'L2', color: '#e07a5f', points: '60,88 300,62 300,170 60,200' },
+  { id: 'L3', color: '#f2cc8f', points: '60,200 300,170 300,352 60,352' },
+  { id: 'L4', color: '#81b29a', points: '196,352 300,352 300,640 240,640 226,612 200,560' },
+  { id: 'L5', color: '#6fa8dc', points: '60,352 196,352 200,560 226,612 240,640 300,640 300,730 158,730 158,600 60,600' },
+  { id: 'S1', color: '#c06c84', points: '60,600 158,600 158,730 60,730' },
+];
+// ASIA key sensory points (L1 upper thigh, L2 mid-anterior thigh, L3 medial femoral condyle,
+// L4 medial malleolus, L5 dorsum at the 3rd MTP joint, S1 lateral heel — shown approximately)
+const keyPoints = [
+  [178, 70], [182, 130], [230, 322], [226, 598], [205, 676], [150, 650],
+];
+const table = [
+  ['L2', 'Hip flexion', 'psoas-major', '—', undefined],
+  ['L3', 'Knee extension', 'quadriceps-femoris', '—', undefined],
+  ['L4', 'Ankle dorsiflexion', 'leg-compartments', 'Patellar (L3–L4)', 'quadriceps-femoris'],
+  ['L5', 'Great toe extension', 'leg-compartments', '—', undefined],
+  ['S1', 'Ankle plantarflexion', 'triceps-surae', 'Ankle (Achilles)', 'triceps-surae'],
+] as const;
+---
+
+<div class="scroll">
+  <svg viewBox="0 0 720 740" role="img" aria-labelledby="lld-title lld-desc">
+    <title id="lld-title">Lower limb dermatomes (anterior view) and key muscles</title>
+    <desc id="lld-desc">
+      L1 over the groin and upper thigh; L2 the upper anterior thigh; L3 the lower anterior thigh and knee; L4 the medial
+      leg and medial malleolus; L5 the lateral leg and dorsum of the foot including the great toe; S1 the lateral edge
+      of the foot and little toe. Table: L2 hip flexion; L3 knee extension; L4 ankle dorsiflexion and patellar reflex;
+      L5 great toe extension; S1 plantarflexion and ankle reflex.
+    </desc>
+    <defs>
+      <clipPath id="lld-limb"><path d={outline}></path></clipPath>
+    </defs>
+    <g clip-path="url(#lld-limb)">
+      {regions.map((r) => <polygon points={r.points} fill={r.color} fill-opacity="0.75"></polygon>)}
+    </g>
+    <path d={outline} fill="none" stroke="var(--text)" stroke-width="1.5" stroke-linejoin="round"></path>
+    {keyPoints.map(([x, y]) => <circle cx={x} cy={y} r="4.5" fill="#fff" stroke="#222" stroke-width="1.5"></circle>)}
+
+    <g stroke="var(--muted)" stroke-width="1">
+      <line x1="62" y1="58" x2="112" y2="60"></line>
+      <line x1="62" y1="140" x2="130" y2="140"></line>
+      <line x1="62" y1="270" x2="148" y2="270"></line>
+      <line x1="282" y1="480" x2="228" y2="480"></line>
+      <line x1="62" y1="480" x2="166" y2="480"></line>
+      <line x1="62" y1="680" x2="142" y2="680"></line>
+    </g>
+
+    <Label x={56} y={63} anchor="end" size="lg" to="lumbar-plexus">L1</Label>
+    <Label x={56} y={145} anchor="end" size="lg" to="femoral-nerve">L2</Label>
+    <Label x={56} y={275} anchor="end" size="lg" to="femoral-nerve">L3</Label>
+    <Label x={288} y={485} size="lg" to="femoral-nerve">L4</Label>
+    <Label x={56} y={485} anchor="end" size="lg" to="common-fibular-nerve">L5</Label>
+    <Label x={56} y={685} anchor="end" size="lg" to="tibial-nerve">S1</Label>
+    <Label x={14} y={722} size="sm">Lateral</Label>
+    <Label x={290} y={722} anchor="end" size="sm">Medial (great toe)</Label>
+    <circle cx="18" cy="16" r="4.5" fill="#fff" stroke="#222" stroke-width="1.5"></circle>
+    <Label x={28} y={20} size="sm">ASIA key sensory point (S1: lateral heel)</Label>
+
+    <!-- key muscle / reflex table -->
+    <text class="lbl lbl-head" x="330" y="120">Root</text>
+    <text class="lbl lbl-head" x="376" y="120">Key muscle action</text>
+    <text class="lbl lbl-head" x="580" y="120">Reflex</text>
+    <line x1="326" y1="130" x2="716" y2="130" stroke="var(--muted)" stroke-width="1"></line>
+    {table.map(([root, action, to, reflex, rto], i) => (
+      <>
+        <Label x={330} y={156 + i * 34} size="lg">{root}</Label>
+        <Label x={376} y={156 + i * 34} to={to}>{action}</Label>
+        <Label x={580} y={156 + i * 34} size="sm" to={rto}>{reflex}</Label>
+      </>
+    ))}
+    <Label x={330} y={340} size="sm">Foot drop with weak inversion → L5 root;</Label>
+    <Label x={330} y={356} size="sm">with normal inversion → common fibular nerve.</Label>
+    <Label x={330} y={380} size="sm">Maps differ between sources; neighbours overlap.</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

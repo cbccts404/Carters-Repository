@@ -219,7 +219,11 @@ a.xref:hover { border-bottom-color: var(--t, var(--accent)); background: var(--a
 }
 .boundaries { display: grid; grid-template-columns: max-content 1fr; gap: 4px 12px; margin: 0; }
 .boundaries dt { font-weight: 600; text-transform: capitalize; }
-.boundaries dd { margin: 0; }
+.boundaries dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+@media (max-width: 520px) {
+  .boundaries { grid-template-columns: 1fr; gap: 0; }
+  .boundaries dd { margin-bottom: 8px; }
+}
 
 .derived { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 14px; margin-top: 12px; }
 .derived h3 { margin: 4px 0 6px; font-size: 0.95rem; }

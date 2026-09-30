@@ -1,0 +1,96 @@
+---
+/* Original schematic: cross-section through the middle of the leg (anterior at the top, medial on
+   the left), showing the four osteofascial compartments and their main nerves and vessels. */
+import Label from '../components/Label.astro';
+
+// tibia corners: anterior crest A, interosseous border B, posteromedial corner C
+const A = [170, 82];
+const B = [235, 165];
+const C = [140, 185];
+const septum = `M${C} Q230 300 350 262`; // transverse intermuscular septum
+const comps = [
+  { color: 'var(--t-organ)', d: `M${C} Q230 300 350 262 L480 262 L480 420 L40 420 L40 200 Z` },
+  { color: 'var(--t-space)', d: `M${B} L330 226 L350 262 Q230 300 ${C} Z` },
+  { color: 'var(--t-muscle)', d: `M${A} L${B} L330 226 L352 222 L427 40 L170 40 Z` },
+  { color: 'var(--t-nerve)', d: 'M352 222 L427 40 L480 40 L480 262 L362 256 Z' },
+];
+const legend = [
+  { y: 58, color: 'var(--t-muscle)', name: 'Anterior', m: 'Tibialis anterior, EHL, EDL, fibularis tertius', n: 'Deep fibular n. · anterior tibial a.', nto: 'common-fibular-nerve', act: 'Dorsiflexion, toe extension' },
+  { y: 150, color: 'var(--t-nerve)', name: 'Lateral', m: 'Fibularis longus and brevis', n: 'Superficial fibular n.', nto: 'common-fibular-nerve', act: 'Eversion' },
+  { y: 242, color: 'var(--t-space)', name: 'Deep posterior', m: 'Tibialis posterior, FDL, FHL', n: 'Tibial n. · posterior tibial and fibular aa.', nto: 'tibial-nerve', act: 'Inversion, toe flexion' },
+  { y: 334, color: 'var(--t-organ)', name: 'Superficial posterior', m: 'Gastrocnemius, soleus, plantaris', mto: 'triceps-surae', n: 'Branches of the tibial n.', nto: 'tibial-nerve', act: 'Plantarflexion' },
+];
+---
+
+<div class="scroll">
+  <svg viewBox="-96 0 876 430" role="img" aria-labelledby="lc-title lc-desc">
+    <title id="lc-title">Compartments of the leg (cross-section)</title>
+    <desc id="lc-desc">
+      Mid-leg cross-section. The tibia lies anteromedially and the fibula laterally, joined by the interosseous
+      membrane. Anterior and posterior intermuscular septa and the transverse intermuscular septum divide the leg into
+      anterior, lateral, deep posterior and superficial posterior compartments, each with its own nerve.
+    </desc>
+    <style>
+      .lc-skin { fill: none; stroke: var(--text); stroke-width: 2; }
+      .lc-sep { fill: none; stroke: var(--text); stroke-width: 1.5; opacity: 0.8; }
+      .lc-bone { fill: color-mix(in srgb, var(--t-bone) 55%, var(--surface)); stroke: var(--t-bone); stroke-width: 2; }
+      .lc-nerve { fill: var(--t-nerve); stroke: #222; stroke-width: 1; }
+      .lc-art { fill: var(--t-artery); stroke: #222; stroke-width: 1; }
+      .lc-vein { fill: var(--t-vein); stroke: #222; stroke-width: 1; }
+    </style>
+    <defs>
+      <clipPath id="lc-leg"><ellipse cx="262" cy="222" rx="192" ry="172"></ellipse></clipPath>
+    </defs>
+
+    <g clip-path="url(#lc-leg)">
+      {comps.map((c) => <path d={c.d} fill={`color-mix(in srgb, ${c.color} 32%, transparent)`}></path>)}
+    </g>
+
+    <!-- skin / deep fascia, septa, interosseous membrane -->
+    <ellipse class="lc-skin" cx="262" cy="222" rx="192" ry="172"></ellipse>
+    <path class="lc-sep" d={`M${B} L330 226`}></path>
+    <path class="lc-sep" d="M352 222 L400 105"></path>
+    <path class="lc-sep" d="M362 256 L448 262"></path>
+    <path class="lc-sep" d={septum}></path>
+
+    <!-- bones -->
+    <path class="lc-bone" d={`M${A} L${B} L${C} Z`}></path>
+    <circle class="lc-bone" cx="345" cy="240" r="20"></circle>
+
+    <!-- neurovascular structures -->
+    <circle class="lc-art" cx="282" cy="183" r="6"></circle>
+    <circle class="lc-nerve" cx="297" cy="176" r="5"></circle>
+    <circle class="lc-nerve" cx="400" cy="190" r="5"></circle>
+    <circle class="lc-art" cx="236" cy="226" r="6"></circle>
+    <circle class="lc-nerve" cx="252" cy="234" r="5"></circle>
+    <circle class="lc-art" cx="316" cy="252" r="5"></circle>
+    <circle class="lc-vein" cx="262" cy="378" r="5"></circle>
+    <circle class="lc-nerve" cx="278" cy="378" r="4"></circle>
+    <circle class="lc-vein" cx="86" cy="205" r="5"></circle>
+
+    <!-- labels on the section -->
+    <Label x={176} y={150} size="sm" to="tibia">Tibia</Label>
+    <Label x={372} y={236} size="sm" to="fibula">Fibula</Label>
+    <Label x={64} y={186} anchor="end" size="sm" to="great-saphenous-vein">Great saphenous v.</Label>
+    <Label x={270} y={414} anchor="middle" size="sm">Small saphenous v. + sural n.</Label>
+    <Label x={-80} y={24} size="sm">Anterior ↑ · medial on the left (schematic)</Label>
+
+    <!-- legend -->
+    {legend.map((l) => (
+      <>
+        <rect x="480" y={l.y - 12} width="14" height="14" rx="3" fill={`color-mix(in srgb, ${l.color} 45%, transparent)`} stroke={l.color}></rect>
+        <Label x={502} y={l.y} to="leg-compartments">{l.name}</Label>
+        <Label x={502} y={l.y + 18} size="sm" to={l.mto}>{l.m}</Label>
+        <Label x={502} y={l.y + 34} size="sm" to={l.nto}>{l.n}</Label>
+        <Label x={502} y={l.y + 50} size="sm">{l.act}</Label>
+      </>
+    ))}
+    <circle class="lc-nerve" cx="486" cy="408" r="5"></circle>
+    <Label x={496} y={412} size="sm">nerve</Label>
+    <circle class="lc-art" cx="550" cy="408" r="5"></circle>
+    <Label x={560} y={412} size="sm">artery</Label>
+    <circle class="lc-vein" cx="618" cy="408" r="5"></circle>
+    <Label x={628} y={412} size="sm">vein</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

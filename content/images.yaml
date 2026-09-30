@@ -672,3 +672,773 @@
   license: Public domain
   licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
   alt: "Posterior trunk showing the cutaneous territories of the dorsal rami of the spinal nerves by segment"
+
+- id: gray-235-hip-bone-external
+  file: images/gray-235-hip-bone-external.png
+  title: "Right hip bone (os innominatum), external surface"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 235"
+  source: https://commons.wikimedia.org/wiki/File:Gray235.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Right hip bone from the lateral side with muscle attachments outlined in red and the acetabulum, obturator foramen, iliac spines and ischial tuberosity labelled"
+
+- id: gray-236-hip-bone-internal
+  file: images/gray-236-hip-bone-internal.png
+  title: "Right hip bone, internal surface"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 236"
+  source: https://commons.wikimedia.org/wiki/File:Gray236.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Right hip bone from the medial side showing the iliac fossa, auricular surface for the sacrum and muscle attachments"
+
+- id: gray-237-hip-bone-ossification
+  file: images/gray-237-hip-bone-ossification.png
+  title: "Plan of ossification of the hip bone"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 237"
+  source: https://commons.wikimedia.org/wiki/File:Gray237.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Hip bone showing the three primary centers (ilium, ischium, pubis) meeting at the Y-shaped cartilage in the acetabulum, and the secondary centers in blue"
+
+- id: gray-238-female-pelvic-inlet
+  file: images/gray-238-female-pelvic-inlet.png
+  title: "Diameters of the superior aperture of the lesser pelvis (female)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 238"
+  source: https://commons.wikimedia.org/wiki/File:Gray238.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Female pelvis from above with the transverse, oblique and anteroposterior diameters of the pelvic inlet drawn in"
+
+- id: gray-241-male-pelvis
+  file: images/gray-241-male-pelvis.png
+  title: "Male pelvis, anterior view"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 241"
+  source: https://commons.wikimedia.org/wiki/File:Gray241.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the male pelvis: ilium, sacrum, pubis, ischium and a narrow pubic arch"
+
+- id: gray-242-female-pelvis
+  file: images/gray-242-female-pelvis.png
+  title: "Female pelvis, anterior view"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 242"
+  source: https://commons.wikimedia.org/wiki/File:Gray242.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the female pelvis showing the wider, rounder pelvic brim and broader pubic arch"
+
+- id: gray-319-pelvic-ligaments-anterior
+  file: images/gray-319-pelvic-ligaments-anterior.png
+  title: "Anterior articulations of the pelvis (after Quain)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 319"
+  source: https://commons.wikimedia.org/wiki/File:Gray319.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the right half of the pelvis showing the anterior sacroiliac, iliolumbar, sacrospinous, sacrotuberous and inguinal ligaments"
+
+- id: gray-320-pelvic-ligaments-posterior
+  file: images/gray-320-pelvic-ligaments-posterior.png
+  title: "Posterior articulations of the pelvis (after Quain)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 320"
+  source: https://commons.wikimedia.org/wiki/File:Gray320.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the right half of the pelvis showing the posterior sacroiliac, sacrotuberous, sacrospinous and iliolumbar ligaments"
+
+- id: gray-321-pubic-symphysis-coronal
+  file: images/gray-321-pubic-symphysis-coronal.png
+  title: "Symphysis pubis exposed by a coronal section"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 321"
+  source: https://commons.wikimedia.org/wiki/File:Gray321.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Coronal section through the pubic symphysis showing the interpubic fibrocartilaginous lamina, with the obturator membrane, acetabulum and inguinal ligament"
+
+- id: gray-404-levator-ani
+  file: images/gray-404-levator-ani.png
+  title: "Left levator ani from within"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 404"
+  source: https://commons.wikimedia.org/wiki/File:Gray404.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Medial view of the left half of the pelvis showing levator ani and coccygeus forming the pelvic floor, with piriformis and obturator fascia"
+
+- id: gray-405-male-perineum-fascia
+  file: images/gray-405-male-perineum-fascia.png
+  title: "Male perineum: superficial fascia reflected"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 405"
+  source: https://commons.wikimedia.org/wiki/File:Gray405.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Male perineum from below with the layers of superficial perineal fascia reflected, showing the inferior rectal vessels and nerve crossing the ischioanal fossa"
+
+- id: gray-406-male-perineum-muscles
+  file: images/gray-406-male-perineum-muscles.png
+  title: "Muscles of the male perineum"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 406"
+  source: https://commons.wikimedia.org/wiki/File:Gray406.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Male perineum from below showing bulbospongiosus, ischiocavernosus, the transverse perineal muscles, levator ani and the external anal sphincter"
+
+- id: gray-407-pelvis-coronal-urogenital
+  file: images/gray-407-pelvis-coronal-urogenital.png
+  title: "Coronal section of the anterior pelvis through the pubic arch"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 407"
+  source: https://commons.wikimedia.org/wiki/File:Gray407.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Coronal section through the bladder, prostate and urethra showing levator ani, the fascial layers of the urogenital region, bulbospongiosus, ischiocavernosus and the ischioanal fossae"
+
+- id: gray-408-female-perineum-muscles
+  file: images/gray-408-female-perineum-muscles.png
+  title: "Muscles of the female perineum"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 408"
+  source: https://commons.wikimedia.org/wiki/File:Gray408.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Female perineum from below showing the clitoris, urethral and vaginal orifices, bulbospongiosus, ischiocavernosus, levator ani and the external anal sphincter"
+
+- id: gray-539-pelvic-arteries
+  file: images/gray-539-pelvic-arteries.png
+  title: "The arteries of the pelvis (male)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 539"
+  source: https://commons.wikimedia.org/wiki/File:Gray539.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Medial view of the male pelvis showing the common, external and internal iliac arteries and their branches to the bladder, prostate and rectum"
+
+- id: gray-828-sacral-plexus-plan
+  file: images/gray-828-sacral-plexus-plan.png
+  title: "Plan of the sacral and pudendal plexuses"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 828"
+  source: https://commons.wikimedia.org/wiki/File:Gray828.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Schematic of the sacral plexus roots L4 to S5 and coccygeal, with the sciatic, gluteal, pudendal and other branches"
+
+- id: gray-829-pelvic-wall-nerves
+  file: images/gray-829-pelvic-wall-nerves.png
+  title: "Side wall of the pelvis showing the sacral and pudendal plexuses (after Testut)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 829"
+  source: https://commons.wikimedia.org/wiki/File:Gray829.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Dissection of the lateral pelvic wall showing the sacral plexus, pudendal nerve, sympathetic trunk and visceral branches beside the bladder, prostate and rectum"
+
+- id: gray-837-sacral-plexus-right
+  file: images/gray-837-sacral-plexus-right.png
+  title: "Sacral plexus of the right side (after Testut)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 837"
+  source: https://commons.wikimedia.org/wiki/File:Gray837.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral view of the right pelvis showing the sacral plexus and the pudendal nerve with its perineal, inferior rectal and dorsal penile branches"
+
+- id: gray-1076-sigmoid-rectum
+  file: images/gray-1076-sigmoid-rectum.png
+  title: "Sigmoid colon and rectum seen from the front"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1076"
+  source: https://commons.wikimedia.org/wiki/File:Gray1076.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the sigmoid colon and rectum after removal of the pubic bones and bladder, with levator ani and the peritoneal reflection"
+
+- id: gray-1078-rectum-anal-canal-coronal
+  file: images/gray-1078-rectum-anal-canal-coronal.png
+  title: "Coronal section of the rectum and anal canal"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1078"
+  source: https://commons.wikimedia.org/wiki/File:Gray1078.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Coronal section showing the transverse rectal folds, rectal (anal) columns and the internal and external anal sphincters"
+
+- id: gray-1080-anal-canal-interior
+  file: images/gray-1080-anal-canal-interior.png
+  title: "Interior of the anal canal and lower rectum"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1080"
+  source: https://commons.wikimedia.org/wiki/File:Gray1080.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Opened anal canal showing the anal columns, anal valves and the surrounding internal sphincter and levator ani"
+
+- id: gray-1083-rectal-vessels
+  file: images/gray-1083-rectal-vessels.png
+  title: "Blood vessels of the rectum and anus (posterior surface)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1083"
+  source: https://commons.wikimedia.org/wiki/File:Gray1083.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the rectum showing the superior, middle and inferior rectal (hemorrhoidal) arteries and veins"
+
+- id: gray-1136-male-pelvic-organs
+  file: images/gray-1136-male-pelvic-organs.png
+  title: "Male pelvic organs seen from the right side"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1136"
+  source: https://commons.wikimedia.org/wiki/File:Gray1136.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Right lateral view of the male pelvis with the bladder and rectum distended, showing the prostate, seminal vesicle, levator ani, bulbourethral gland and peritoneal reflections"
+
+- id: gray-1139-female-pelvis-sagittal
+  file: images/gray-1139-female-pelvis-sagittal.png
+  title: "Median sagittal section of the female pelvis"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1139"
+  source: https://commons.wikimedia.org/wiki/File:Gray1139.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Median sagittal section of the female pelvis showing the uterus, bladder, rectum, vagina, urethra, rectouterine (rectovaginal) and vesicouterine pouches and the anal canal"
+
+- id: gray-1142-male-urethra-opened
+  file: images/gray-1142-male-urethra-opened.png
+  title: "The male urethra laid open on its anterior surface"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1142"
+  source: https://commons.wikimedia.org/wiki/File:Gray1142.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Male urethra opened from the bladder to the external orifice showing the prostatic part with the urethral crest and ejaculatory duct openings, the membranous part and the spongy part"
+
+- id: gray-1144-scrotum-testis
+  file: images/gray-1144-scrotum-testis.png
+  title: "The scrotum and testes, anterior view"
+  author: "Unknown (Gray's Anatomy, 1918; author not recorded on Commons)"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1144"
+  source: https://commons.wikimedia.org/wiki/File:Gray1144.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Scrotum opened from the front showing the spermatic cords, cremaster, tunica vaginalis, epididymis and left testis"
+
+- id: gray-1145-testis-transverse
+  file: images/gray-1145-testis-transverse.png
+  title: "Transverse section through the left scrotum and testis"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1145"
+  source: https://commons.wikimedia.org/wiki/File:Gray1145.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Transverse section of the scrotum and testis showing the scrotal layers, tunica vaginalis, tunica albuginea, lobules, mediastinum testis and epididymis"
+
+- id: gray-1154-penis-corpora
+  file: images/gray-1154-penis-corpora.png
+  title: "The corpora of the penis"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1154"
+  source: https://commons.wikimedia.org/wiki/File:Gray1154.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Penis with the corpus spongiosum separated from the corpora cavernosa, showing the glans, crura and bulb"
+
+- id: gray-1155-penis-cross-section
+  file: images/gray-1155-penis-cross-section.png
+  title: "Cross-section of the penis"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1155"
+  source: https://commons.wikimedia.org/wiki/File:Gray1155.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Transverse section of the penis showing the two corpora cavernosa, the corpus spongiosum with the urethra, the fibrous envelope and the dorsal vessels and nerves"
+
+- id: gray-1160-prostate-seminal-vesicles
+  file: images/gray-1160-prostate-seminal-vesicles.png
+  title: "Prostate with seminal vesicles and seminal ducts (after Spalteholz)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1160"
+  source: https://commons.wikimedia.org/wiki/File:Gray1160.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Prostate from in front and above with the ductus deferens, ampullae, seminal vesicles and ejaculatory ducts"
+
+- id: gray-1161-uterus-broad-ligament
+  file: images/gray-1161-uterus-broad-ligament.png
+  title: "Uterus and right broad ligament, seen from behind"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1161"
+  source: https://commons.wikimedia.org/wiki/File:Gray1161.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the uterus with the right broad ligament spread out, showing the uterine tube, ovary, ligament of the ovary, fimbriae and ovarian vessels"
+
+- id: gray-1165-female-pelvis-above
+  file: images/gray-1165-female-pelvis-above.png
+  title: "Female pelvis and its contents, seen from above and in front"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1165"
+  source: https://commons.wikimedia.org/wiki/File:Gray1165.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Female pelvis from above showing the uterus, bladder, ovaries, uterine tubes, round ligaments, ureter and sigmoid colon"
+
+- id: gray-1166-female-trunk-sagittal
+  file: images/gray-1166-female-trunk-sagittal.png
+  title: "Sagittal section of the lower female trunk, right segment (after Testut)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1166"
+  source: https://commons.wikimedia.org/wiki/File:Gray1166.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Sagittal section showing the bladder, uterus, vagina with anterior and posterior fornices, rectum, symphysis, clitoris and labia"
+
+- id: gray-1170-uterine-artery
+  file: images/gray-1170-uterine-artery.png
+  title: "Arteries of the uterus and ovary"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1170"
+  source: https://commons.wikimedia.org/wiki/File:Gray1170.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Uterine artery ascending along the side of the uterus with branches to the cervix, body and fundus, anastomosing with the ovarian artery, and vaginal arteries below"
+
+- id: gray-543-male-perineum-deep
+  file: images/gray-543-male-perineum-deep.png
+  title: "Deep dissection of the male perineum"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 543"
+  source: https://commons.wikimedia.org/wiki/File:Gray543.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Male perineum with the superficial structures removed showing the bulb, prostate, bulbourethral glands and the internal pudendal artery with its branches to the penis"
+
+- id: gray-244-femur-anterior
+  file: images/gray-244-femur-anterior.png
+  title: "Right femur, anterior surface"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 244"
+  source: https://commons.wikimedia.org/wiki/File:Gray244.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the right femur with muscle attachments outlined in red: head, neck, greater and lesser trochanters, shaft, condyles and adductor tubercle"
+
+- id: gray-245-femur-posterior
+  file: images/gray-245-femur-posterior.png
+  title: "Right femur, posterior surface"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 245"
+  source: https://commons.wikimedia.org/wiki/File:Gray245.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the right femur showing the linea aspera, gluteal tuberosity, intertrochanteric crest and the condyles with muscle attachments"
+
+- id: gray-255-patella-anterior
+  file: images/gray-255-patella-anterior.png
+  title: "Right patella, anterior surface"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 255"
+  source: https://commons.wikimedia.org/wiki/File:Gray255.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior surface of the right patella with the quadriceps tendon attachment above and the patellar ligament below"
+
+- id: gray-258-leg-bones-anterior
+  file: images/gray-258-leg-bones-anterior.png
+  title: "Bones of the right leg, anterior surface"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 258"
+  source: https://commons.wikimedia.org/wiki/File:Gray258.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the right tibia and fibula with muscle attachments, the tibial tuberosity and both malleoli"
+
+- id: gray-259-leg-bones-posterior
+  file: images/gray-259-leg-bones-posterior.png
+  title: "Bones of the right leg, posterior surface"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 259"
+  source: https://commons.wikimedia.org/wiki/File:Gray259.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the right tibia and fibula showing the soleal line and muscle attachments"
+
+- id: gray-268-foot-bones-dorsal
+  file: images/gray-268-foot-bones-dorsal.png
+  title: "Bones of the right foot, dorsal surface"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 268"
+  source: https://commons.wikimedia.org/wiki/File:Gray268.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Dorsal view of the bones of the right foot: talus, calcaneus, navicular, cuboid, cuneiforms, metatarsals and phalanges, with muscle attachments"
+
+- id: gray-269-foot-bones-plantar
+  file: images/gray-269-foot-bones-plantar.png
+  title: "Bones of the right foot, plantar surface"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 269"
+  source: https://commons.wikimedia.org/wiki/File:Gray269.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Plantar view of the bones of the right foot with muscle and tendon attachments"
+
+- id: gray-291-foot-skeleton-lateral
+  file: images/gray-291-foot-skeleton-lateral.png
+  title: "Skeleton of the foot, lateral aspect"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 291"
+  source: https://commons.wikimedia.org/wiki/File:Gray291.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral view of the foot skeleton showing the talus, calcaneus, cuboid, cuneiforms and metatarsals forming the longitudinal arch"
+
+- id: gray-339-hip-joint-anterior
+  file: images/gray-339-hip-joint-anterior.png
+  title: "Right hip joint from the front (after Spalteholz)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 339"
+  source: https://commons.wikimedia.org/wiki/File:Gray339.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the right hip joint showing the iliofemoral ligament from the anterior inferior iliac spine to the intertrochanteric line"
+
+- id: gray-340-hip-joint-posterior
+  file: images/gray-340-hip-joint-posterior.png
+  title: "The hip joint from behind (after Quain)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 340"
+  source: https://commons.wikimedia.org/wiki/File:Gray340.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the hip joint showing the ischiofemoral ligament"
+
+- id: gray-345-knee-anterior
+  file: images/gray-345-knee-anterior.png
+  title: "Right knee joint, anterior view"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 345"
+  source: https://commons.wikimedia.org/wiki/File:Gray345.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the right knee showing the quadriceps tendon, patella, patellar ligament, capsule and tibial collateral ligament"
+
+- id: gray-347-knee-interior-front
+  file: images/gray-347-knee-interior-front.png
+  title: "Right knee joint from the front, showing interior ligaments"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 347"
+  source: https://commons.wikimedia.org/wiki/File:Gray347.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Flexed right knee from the front with the patella removed, showing the cruciate ligaments and the medial and lateral menisci"
+
+- id: gray-348-knee-interior-behind
+  file: images/gray-348-knee-interior-behind.png
+  title: "Left knee joint from behind, showing interior ligaments"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 348"
+  source: https://commons.wikimedia.org/wiki/File:Gray348.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the left knee showing the anterior and posterior cruciate ligaments, menisci, fibular and tibial collateral ligaments and popliteus tendon"
+
+- id: gray-349-tibial-plateau-menisci
+  file: images/gray-349-tibial-plateau-menisci.png
+  title: "Head of the right tibia from above, showing the menisci"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 349"
+  source: https://commons.wikimedia.org/wiki/File:Gray349.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Tibial plateau from above showing the C-shaped medial and O-shaped lateral menisci, transverse ligament and cruciate ligament attachments"
+
+- id: gray-350-knee-sagittal
+  file: images/gray-350-knee-sagittal.png
+  title: "Sagittal section of the right knee joint"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 350"
+  source: https://commons.wikimedia.org/wiki/File:Gray350.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Sagittal section of the knee showing the femur, tibia, patella, suprapatellar bursa, infrapatellar fat pad and patellar ligament"
+
+- id: gray-355-foot-ligaments-lateral
+  file: images/gray-355-foot-ligaments-lateral.png
+  title: "Ligaments of the foot from the lateral aspect (after Quain)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 355"
+  source: https://commons.wikimedia.org/wiki/File:Gray355.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral view of the ankle and foot ligaments including the anterior and posterior talofibular and calcaneofibular ligaments"
+
+- id: gray-356-ankle-capsule-lateral
+  file: images/gray-356-ankle-capsule-lateral.png
+  title: "Capsule of the left ankle joint (distended), lateral aspect"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 356"
+  source: https://commons.wikimedia.org/wiki/File:Gray356.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral view of the distended ankle capsule with the anterior talofibular, posterior talofibular and calcaneofibular ligaments"
+
+- id: gray-357-ankle-coronal
+  file: images/gray-357-ankle-coronal.png
+  title: "Coronal section through the right ankle and subtalar joints"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 357"
+  source: https://commons.wikimedia.org/wiki/File:Gray357.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Coronal section showing the talus in the mortise between the medial and lateral malleoli, the deltoid and calcaneofibular ligaments, and tendons, vessels and nerves around the ankle"
+
+- id: gray-430-anterior-thigh-muscles
+  file: images/gray-430-anterior-thigh-muscles.png
+  title: "Muscles of the iliac and anterior femoral regions"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 430"
+  source: https://commons.wikimedia.org/wiki/File:Gray430.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the thigh muscles: iliopsoas, sartorius, the quadriceps femoris and the adductors"
+
+- id: gray-432-thigh-cross-section
+  file: images/gray-432-thigh-cross-section.png
+  title: "Cross-section through the middle of the thigh"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 432"
+  source: https://commons.wikimedia.org/wiki/File:Gray432.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Cross-section of the mid-thigh showing the femur, quadriceps, adductors, hamstrings, the femoral vessels, sciatic nerve and great saphenous vein"
+
+- id: gray-433-deep-adductors
+  file: images/gray-433-deep-adductors.png
+  title: "Deep muscles of the medial thigh"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 433"
+  source: https://commons.wikimedia.org/wiki/File:Gray433.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Deep medial thigh muscles passing from the pubis and ischium to the femur, including adductor brevis and adductor magnus down to the adductor tubercle"
+
+- id: gray-434-gluteal-posterior-thigh
+  file: images/gray-434-gluteal-posterior-thigh.png
+  title: "Muscles of the gluteal and posterior femoral regions"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 434"
+  source: https://commons.wikimedia.org/wiki/File:Gray434.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the hip and thigh showing gluteus maximus and the hamstrings (biceps femoris, semitendinosus, semimembranosus)"
+
+- id: gray-437-anterior-leg-muscles
+  file: images/gray-437-anterior-leg-muscles.png
+  title: "Muscles of the front of the leg"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 437"
+  source: https://commons.wikimedia.org/wiki/File:Gray437.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the leg showing tibialis anterior, the long extensors of the toes and the extensor retinacula"
+
+- id: gray-438-calf-superficial
+  file: images/gray-438-calf-superficial.png
+  title: "Muscles of the back of the leg, superficial layer"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 438"
+  source: https://commons.wikimedia.org/wiki/File:Gray438.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the leg showing the two heads of gastrocnemius converging on the calcaneal (Achilles) tendon"
+
+- id: gray-440-leg-cross-section
+  file: images/gray-440-leg-cross-section.png
+  title: "Cross-section through the middle of the leg"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 440"
+  source: https://commons.wikimedia.org/wiki/File:Gray440.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Mid-leg cross-section showing the tibia, fibula, interosseous membrane, the muscle compartments and the tibial and fibular nerves and vessels"
+
+- id: gray-442-ankle-tendon-sheaths-medial
+  file: images/gray-442-ankle-tendon-sheaths-medial.png
+  title: "Tendon sheaths around the ankle, medial aspect"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 442"
+  source: https://commons.wikimedia.org/wiki/File:Gray442.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Medial view of the ankle showing the synovial sheaths of tibialis anterior, tibialis posterior, flexor digitorum longus and flexor hallucis longus"
+
+- id: gray-548-femoral-artery-diagram
+  file: images/gray-548-femoral-artery-diagram.png
+  title: "Diagram of the femoral artery and its branches"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 548"
+  source: https://commons.wikimedia.org/wiki/File:Gray548.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Diagram of the femoral artery with the deep femoral (profunda) artery, circumflex femoral and perforating branches"
+
+- id: gray-549-femoral-triangle
+  file: images/gray-549-femoral-triangle.png
+  title: "The left femoral triangle"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 549"
+  source: https://commons.wikimedia.org/wiki/File:Gray549.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Dissection of the femoral triangle showing the femoral nerve, artery and vein, sartorius, adductor longus and the great saphenous vein"
+
+- id: gray-550-femoral-artery-thigh
+  file: images/gray-550-femoral-artery-thigh.png
+  title: "The femoral artery in the thigh"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 550"
+  source: https://commons.wikimedia.org/wiki/File:Gray550.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anteromedial view of the thigh showing the femoral artery descending to the adductor canal with the saphenous nerve and genicular branches"
+
+- id: gray-551-popliteal-posterior-tibial
+  file: images/gray-551-popliteal-posterior-tibial.png
+  title: "The popliteal and posterior tibial arteries"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 551"
+  source: https://commons.wikimedia.org/wiki/File:Gray551.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the leg showing the popliteal artery continuing as the posterior tibial artery, with sural and fibular branches"
+
+- id: gray-552-genicular-anastomosis
+  file: images/gray-552-genicular-anastomosis.png
+  title: "The genicular anastomosis around the knee"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 552"
+  source: https://commons.wikimedia.org/wiki/File:Gray552.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Arteries around the right knee: superior, middle and inferior genicular branches forming an anastomosis with the anterior tibial recurrent artery"
+
+- id: gray-553-anterior-tibial-artery
+  file: images/gray-553-anterior-tibial-artery.png
+  title: "Arteries of the front of the leg"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 553"
+  source: https://commons.wikimedia.org/wiki/File:Gray553.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the leg showing the anterior tibial artery continuing onto the dorsum of the foot as the dorsalis pedis artery"
+
+- id: gray-583-popliteal-deep-veins
+  file: images/gray-583-popliteal-deep-veins.png
+  title: "Deep veins of the back of the leg"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 583"
+  source: https://commons.wikimedia.org/wiki/File:Gray583.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior tibial and fibular (peroneal) veins joining to form the popliteal vein, accompanying the arteries of the calf"
+
+- id: gray-584-saphenofemoral-junction
+  file: images/gray-584-saphenofemoral-junction.png
+  title: "Superficial veins near the saphenofemoral junction"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 584"
+  source: https://commons.wikimedia.org/wiki/File:Gray584.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Superficial epigastric, circumflex iliac and external pudendal veins joining the great saphenous vein at its junction with the femoral vein"
+
+- id: gray-582-small-saphenous-sural
+  file: images/gray-582-small-saphenous-sural.png
+  title: "Posterior view of the right leg: small saphenous vein and sural nerve"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 582"
+  source: https://commons.wikimedia.org/wiki/File:Gray582.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior leg showing the small saphenous vein ascending to the popliteal fossa alongside the sural nerve"
+
+- id: gray-823-lumbar-plexus
+  file: images/gray-823-lumbar-plexus.png
+  title: "The lumbar plexus and its branches"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 823"
+  source: https://commons.wikimedia.org/wiki/File:Gray823.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior abdominal wall showing the lumbar plexus in psoas with the femoral, obturator, lateral femoral cutaneous and other branches"
+
+- id: gray-825-lower-limb-cutaneous-anterior
+  file: images/gray-825-lower-limb-cutaneous-anterior.png
+  title: "Cutaneous nerves of the right lower limb, front view"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 825"
+  source: https://commons.wikimedia.org/wiki/File:Gray825.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the lower limb showing the cutaneous nerves, including the saphenous, superficial and deep fibular (peroneal) and sural branches"
+
+- id: gray-832-lower-limb-nerves-posterior
+  file: images/gray-832-lower-limb-nerves-posterior.png
+  title: "Nerves of the right lower limb, posterior view"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 832"
+  source: https://commons.wikimedia.org/wiki/File:Gray832.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view showing the sciatic nerve dividing into the tibial and common fibular (peroneal) nerves, with the gluteal nerves"
+
+- id: gray-833-plantar-nerves
+  file: images/gray-833-plantar-nerves.png
+  title: "The plantar nerves"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 833"
+  source: https://commons.wikimedia.org/wiki/File:Gray833.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Sole of the foot showing the medial and lateral plantar nerves, terminal branches of the tibial nerve"
+
+- id: gray-835-deep-nerves-front-of-leg
+  file: images/gray-835-deep-nerves-front-of-leg.png
+  title: "Deep nerves of the front of the leg (after Testut)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 835"
+  source: https://commons.wikimedia.org/wiki/File:Gray835.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior leg dissection showing the common fibular nerve dividing into the deep fibular nerve (with the anterior tibial artery) and the superficial fibular nerve"
+
+- id: gray-1244-gluteal-surface-markings
+  file: images/gray-1244-gluteal-surface-markings.png
+  title: "Left gluteal region: surface markings for the arteries and sciatic nerve"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1244"
+  source: https://commons.wikimedia.org/wiki/File:Gray1244.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Surface projection of the sciatic nerve and the superior gluteal, inferior gluteal and internal pudendal arteries on the buttock"
+
+- id: gray-1245-thigh-surface-markings
+  file: images/gray-1245-thigh-surface-markings.png
+  title: "Front of the right thigh: surface markings for the femoral artery and nerve"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1245"
+  source: https://commons.wikimedia.org/wiki/File:Gray1245.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Surface projection of the femoral artery and femoral nerve on the front of the thigh from the inguinal ligament to the adductor tubercle"
