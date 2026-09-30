@@ -6,6 +6,7 @@ subregion: Perineum
 taName: Canalis analis
 summary: Terminal 3–4 cm of the gut, surrounded by the internal and external anal sphincters. The pectinate line divides it into two halves with different blood supply, lymph drainage, nerves and diseases.
 tags: [gastrointestinal, perineum, pectinate-line]
+systems: [gastrointestinal]
 highYield: true
 status: draft
 anatomy:

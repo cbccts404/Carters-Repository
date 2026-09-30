@@ -7,6 +7,7 @@ taName: Articulatio radiocarpalis
 aka: [Radiocarpal joint]
 summary: Condyloid joint between the distal radius (and articular disc) and the proximal carpal row. It's a common site of fractures, instability and tenosynovitis.
 tags: [wrist]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

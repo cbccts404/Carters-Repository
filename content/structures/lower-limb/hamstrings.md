@@ -7,6 +7,7 @@ taName: Musculus biceps femoris; Musculus semitendinosus; Musculus semimembranos
 aka: [Hamstring muscles]
 summary: Posterior thigh muscles — biceps femoris, semitendinosus and semimembranosus — that extend the hip and flex the knee. Hamstring strains are common in sprinting sports.
 tags: [thigh, sports-medicine, sciatic-nerve]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

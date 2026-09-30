@@ -6,6 +6,7 @@ subregion: Axilla
 taName: Plexus brachialis
 summary: Network formed by the ventral rami of C5–T1 that supplies the motor and most of the sensory innervation of the upper limb.
 tags: [brachial-plexus]
+systems: [neurologic, musculoskeletal]
 highYield: true
 status: draft
 anatomy:

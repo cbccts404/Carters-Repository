@@ -7,6 +7,7 @@ taName: Nervus hypoglossus
 aka: [CN XII, Cranial nerve XII]
 summary: Motor nerve to the tongue. A lower motor neuron lesion makes the protruded tongue deviate toward the weak side, with atrophy and fasciculations.
 tags: [cranial-nerves, tongue]
+systems: [neurologic]
 highYield: true
 status: draft
 anatomy:

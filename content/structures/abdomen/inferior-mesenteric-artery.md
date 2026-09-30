@@ -7,6 +7,7 @@ taName: Arteria mesenterica inferior
 aka: [IMA]
 summary: Artery of the hindgut, arising from the aorta at L3. It supplies the distal transverse colon to the upper rectum, and its ligation during aortic surgery puts the watershed colon at risk.
 tags: [vascular, hindgut]
+systems: [cardiovascular, gastrointestinal]
 highYield: true
 status: draft
 anatomy:

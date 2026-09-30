@@ -6,6 +6,7 @@ subregion: Abdominal wall
 taName: Paries abdominis anterolateralis
 summary: Layered musculoaponeurotic wall from the costal margin to the pelvis. Its planes and regions are the map for describing abdominal pain, and it is the site of ventral hernias.
 tags: [abdominal-wall, hernia, exam]
+systems: [gastrointestinal, musculoskeletal]
 highYield: true
 status: draft
 anatomy:

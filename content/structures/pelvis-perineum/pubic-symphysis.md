@@ -6,6 +6,7 @@ subregion: Bony pelvis
 taName: Symphysis pubica
 summary: Fibrocartilaginous midline joint between the two pubic bones. It widens in pregnancy and after open-book pelvic injuries, and is a source of groin pain in athletes (osteitis pubis).
 tags: [pelvis, groin-pain]
+systems: [musculoskeletal]
 highYield: false
 status: draft
 anatomy:

@@ -7,6 +7,7 @@ taName: Ligamentum collaterale tibiale; Ligamentum collaterale fibulare
 aka: [MCL, LCL, Medial collateral ligament, Lateral collateral ligament, Tibial collateral ligament, Fibular collateral ligament]
 summary: Side ligaments of the knee — the broad MCL, attached to the medial meniscus, resists valgus stress; the cord-like LCL resists varus stress. The MCL is the most commonly injured knee ligament.
 tags: [knee, sports-medicine]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

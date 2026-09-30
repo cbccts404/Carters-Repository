@@ -7,6 +7,7 @@ taName: Auris interna
 aka: [Labyrinth, Cochlea, Vestibular apparatus]
 summary: Fluid-filled bony and membranous labyrinth in the petrous temporal bone — the cochlea for hearing and the vestibule and semicircular canals for balance. Sensorineural hearing loss and peripheral vertigo arise here.
 tags: [ear, hearing, vertigo]
+systems: [eent]
 highYield: true
 status: draft
 anatomy:

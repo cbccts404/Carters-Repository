@@ -1,0 +1,238 @@
+---
+/**
+ * Lesion localizer: tick the findings, get lesion sites ranked by how well they
+ * explain them. Data lives in content/localizer/*.yaml. Every lesion card is
+ * rendered here; the client script only scores, sorts and shows them.
+ */
+import { readFileSync } from 'node:fs';
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { loadAtlas, md, structureUrl, url } from '../lib/atlas';
+
+const atlas = await loadAtlas();
+// getCollection() returns entries sorted by id; keep the authored order instead.
+const authored = [...readFileSync('./content/localizer/findings.yaml', 'utf8').matchAll(/\bid: ([a-z0-9-]+)/g)].map(
+  (m) => m[1],
+);
+const findings = (await getCollection('findings')).sort((a, b) => authored.indexOf(a.id) - authored.indexOf(b.id));
+const lesions = await getCollection('lesions');
+
+const findingIds = new Set(findings.map((f) => f.id));
+const errors: string[] = [];
+for (const l of lesions) {
+  for (const f of [...l.data.findings, ...l.data.against])
+    if (!findingIds.has(f)) errors.push(`lesion "${l.id}": unknown finding "${f}"`);
+  for (const e of l.data.entries) if (!atlas.byId.has(e)) errors.push(`lesion "${l.id}": unknown entry "${e}"`);
+}
+if (errors.length) throw new Error('content/localizer errors:\n  ' + errors.join('\n  '));
+
+const groups = [...new Set(findings.map((f) => f.data.group))].map((g) => ({
+  name: g,
+  items: findings.filter((f) => f.data.group === g),
+}));
+const cards = await Promise.all(
+  lesions.map(async (l) => ({
+    ...l.data,
+    why: await md(l.data.why),
+    links: l.data.entries.map((e) => atlas.byId.get(e)!),
+  })),
+);
+const labels = Object.fromEntries(findings.map((f) => [f.id, f.data.label]));
+---
+
+<Base
+  title="Lesion localizer"
+  description="Tick the neurological findings and see which lesion sites explain them best."
+>
+  <p class="crumbs"><a href={url()}>Home</a> / Lesion localizer</p>
+  <h1>Lesion localizer</h1>
+  <p class="muted">
+    Tick the findings and the {lesions.length} lesion sites are ranked by how well they explain them. "Left" and "right"
+    are left out: read each finding as being on the side you examined, and the explanation says whether the lesion is on
+    the same side or the opposite one.
+  </p>
+  <p class="small muted">A study aid for thinking through localization. It is not a diagnostic tool.</p>
+
+  <div class="loc">
+    <form class="loc-findings" id="loc-form" aria-label="Findings">
+      <div class="loc-tools">
+        <input type="search" id="loc-filter" class="search-input" placeholder="Filter findings…" aria-label="Filter findings" />
+        <button type="button" class="btn" id="loc-clear">Clear all</button>
+      </div>
+      {
+        groups.map((g) => (
+          <fieldset>
+            <legend>{g.name}</legend>
+            <div class="chips">
+              {g.items.map((f) => (
+                <label class="chip">
+                  <input type="checkbox" name="f" value={f.id} />
+                  <span>{f.data.label}</span>
+                </label>
+              ))}
+            </div>
+          </fieldset>
+        ))
+      }
+      <p class="small muted" id="loc-nomatch" hidden>No findings match that filter.</p>
+    </form>
+
+    <section class="loc-results" aria-labelledby="loc-h" aria-live="polite">
+      <h2 id="loc-h">Likely sites</h2>
+      <p class="muted" id="loc-empty">Tick at least one finding.</p>
+      <div id="loc-list">
+        {
+          cards.map((c) => (
+            <article class="card loc-card" data-id={c.id} data-findings={c.findings.join(' ')} data-against={c.against.join(' ')} hidden>
+              <header>
+                <h3>{c.name}</h3>
+                <span class="loc-score small" />
+              </header>
+              <p class="small muted">{c.site}</p>
+              <dl class="loc-dl">
+                <dt class="good">Explains</dt>
+                <dd data-k="matched" />
+                <dt class="bad" data-k="against-t">Argues against</dt>
+                <dd data-k="against" />
+                <dt data-k="unexplained-t">Doesn't explain</dt>
+                <dd data-k="unexplained" />
+                <dt data-k="look-t">Also look for</dt>
+                <dd data-k="look" />
+              </dl>
+              <div class="loc-why" set:html={c.why} />
+              {c.links.length > 0 && (
+                <p class="small">
+                  Study:{' '}
+                  {c.links.map((s, i) => (
+                    <>
+                      {i > 0 && ', '}
+                      <a href={structureUrl(s)}>{s.data.name}</a>
+                    </>
+                  ))}
+                </p>
+              )}
+            </article>
+          ))
+        }
+      </div>
+      <p><button type="button" class="btn" id="loc-more" hidden>Show all matches</button></p>
+    </section>
+  </div>
+  <a href="#loc-h" class="btn primary loc-jump" id="loc-jump" hidden>See results</a>
+
+  <script is:inline type="application/json" id="loc-labels" set:html={JSON.stringify(labels)} />
+</Base>
+
+<script>
+  const TOP = 6;
+  const AGAINST_PENALTY = 1.5;
+  const labels: Record<string, string> = JSON.parse(document.getElementById('loc-labels')!.textContent!);
+  const form = document.getElementById('loc-form') as HTMLFormElement;
+  const boxes = [...form.querySelectorAll<HTMLInputElement>('input[name="f"]')];
+  const cards = [...document.querySelectorAll<HTMLElement>('.loc-card')];
+  const list = document.getElementById('loc-list')!;
+  const empty = document.getElementById('loc-empty')!;
+  const more = document.getElementById('loc-more') as HTMLButtonElement;
+  const jump = document.getElementById('loc-jump')!;
+  const filter = document.getElementById('loc-filter') as HTMLInputElement;
+  let showAll = false;
+
+  const names = (ids: string[]) => ids.map((id) => labels[id]).join('; ');
+
+  function fill(card: HTMLElement, key: string, ids: string[]) {
+    const dd = card.querySelector<HTMLElement>(`dd[data-k="${key}"]`)!;
+    const dt = card.querySelector<HTMLElement>(`dt[data-k="${key}-t"]`);
+    dd.textContent = names(ids);
+    dd.hidden = ids.length === 0;
+    if (dt) dt.hidden = ids.length === 0;
+  }
+
+  function update() {
+    const picked = boxes.filter((b) => b.checked).map((b) => b.value);
+    const set = new Set(picked);
+    const scored = cards
+      .map((card) => {
+        const expected = card.dataset.findings!.split(' ');
+        const against = (card.dataset.against || '').split(' ').filter(Boolean);
+        const matched = expected.filter((f) => set.has(f));
+        const contra = against.filter((f) => set.has(f));
+        return {
+          card,
+          matched,
+          contra,
+          unexplained: picked.filter((f) => !expected.includes(f)),
+          look: expected.filter((f) => !set.has(f)),
+          score: matched.length - AGAINST_PENALTY * contra.length,
+          frac: matched.length / expected.length,
+        };
+      })
+      .filter((r) => r.matched.length > 0)
+      .sort((a, b) => b.score - a.score || b.frac - a.frac);
+
+    for (const c of cards) c.hidden = true;
+    scored.forEach((r, i) => {
+      list.append(r.card); // re-order in the DOM so reading order matches rank
+      fill(r.card, 'matched', r.matched);
+      fill(r.card, 'against', r.contra);
+      fill(r.card, 'unexplained', r.unexplained);
+      fill(r.card, 'look', r.look);
+      r.card.querySelector('.loc-score')!.textContent = `${r.matched.length}/${r.matched.length + r.look.length} expected`;
+      r.card.classList.toggle('loc-contra', r.contra.length > 0);
+      r.card.hidden = !showAll && i >= TOP;
+    });
+
+    empty.hidden = picked.length > 0 && scored.length > 0;
+    empty.textContent = picked.length ? 'None of the sites here explains these findings.' : 'Tick at least one finding.';
+    more.hidden = showAll || scored.length <= TOP;
+    more.textContent = `Show all ${scored.length} matches`;
+    jump.hidden = picked.length === 0;
+    jump.textContent = `See results (${Math.min(scored.length, showAll ? scored.length : TOP)})`;
+
+    const params = new URLSearchParams(location.search);
+    if (picked.length) params.set('f', picked.join(','));
+    else params.delete('f');
+    const q = params.toString();
+    history.replaceState(null, '', location.pathname + (q ? `?${q}` : ''));
+  }
+
+  function applyFilter() {
+    const q = filter.value.trim().toLowerCase();
+    let any = false;
+    for (const fs of form.querySelectorAll('fieldset')) {
+      let shown = 0;
+      for (const chip of fs.querySelectorAll<HTMLElement>('.chip')) {
+        const hit = !q || chip.textContent!.toLowerCase().includes(q);
+        chip.hidden = !hit;
+        if (hit) shown++;
+      }
+      fs.hidden = shown === 0;
+      if (shown) any = true;
+    }
+    document.getElementById('loc-nomatch')!.hidden = any;
+  }
+
+  const initial = new Set((new URLSearchParams(location.search).get('f') ?? '').split(',').filter(Boolean));
+  for (const b of boxes) b.checked = initial.has(b.value);
+
+  form.addEventListener('change', () => {
+    showAll = false;
+    update();
+  });
+  form.addEventListener('submit', (e) => e.preventDefault());
+  filter.addEventListener('input', applyFilter);
+  document.getElementById('loc-clear')!.addEventListener('click', () => {
+    for (const b of boxes) b.checked = false;
+    filter.value = '';
+    applyFilter();
+    showAll = false;
+    update();
+  });
+  // Hide the floating "See results" button while the results are on screen.
+  new IntersectionObserver(([e]) => jump.classList.toggle('loc-jump-off', e.isIntersecting)).observe(document.querySelector('.loc-results')!);
+
+  more.addEventListener('click', () => {
+    showAll = true;
+    update();
+  });
+  update();
+</script>

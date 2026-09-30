@@ -7,6 +7,7 @@ taName: Sternum
 aka: [Breastbone]
 summary: Flat bone of the anterior thoracic wall made of the manubrium, body and xiphoid process. The sternal angle is the key surface landmark of the thorax.
 tags: [thoracic-wall, landmarks]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

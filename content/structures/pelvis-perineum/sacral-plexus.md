@@ -6,6 +6,7 @@ subregion: Vessels, nerves & lymphatics
 taName: Plexus sacralis
 summary: Nerve network on the posterior pelvic wall (L4–S4) that gives the sciatic, gluteal and pudendal nerves. It supplies the buttock, posterior thigh, nearly all of the leg and foot, the pelvic floor and the perineum.
 tags: [pelvis, lower-limb, sacral-plexus]
+systems: [neurologic]
 highYield: true
 status: draft
 anatomy:

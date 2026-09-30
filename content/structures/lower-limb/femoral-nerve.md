@@ -6,6 +6,7 @@ subregion: Thigh
 taName: Nervus femoralis
 summary: Largest branch of the lumbar plexus (L2–L4), supplying the hip flexors and knee extensors and the skin of the anterior thigh and medial leg. Lesions cause knee buckling and a lost patellar reflex.
 tags: [thigh, lumbar-plexus, nerve-injury]
+systems: [neurologic, musculoskeletal]
 highYield: true
 status: draft
 anatomy:

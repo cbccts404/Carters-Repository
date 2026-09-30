@@ -7,6 +7,7 @@ taName: Larynx
 aka: [Voice box]
 summary: Cartilaginous airway organ from C3 to C6 that protects the airway and produces voice. Epiglottitis, croup, vocal cord paralysis from recurrent laryngeal nerve injury and emergency cricothyrotomy are the key topics.
 tags: [airway, voice, emergency]
+systems: [eent, pulmonary]
 highYield: true
 status: draft
 anatomy:

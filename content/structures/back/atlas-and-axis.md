@@ -7,6 +7,7 @@ taName: Atlas et axis
 aka: [Atlas, Axis, C1, C2, Dens, Odontoid process]
 summary: The first two cervical vertebrae, specialized for head movement. The atlas (C1) has no body; the axis (C2) carries the dens, around which the atlas rotates. Their fractures and instability are high-yield.
 tags: [spine, neck, trauma]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

@@ -7,6 +7,7 @@ taName: Perineum
 aka: [Perineal region]
 summary: Diamond-shaped region below the pelvic diaphragm, divided into the urogenital and anal triangles. The perineal body at its center is torn in obstetric lacerations, and saddle anesthesia here signals cauda equina syndrome.
 tags: [perineum, obstetrics, emergency]
+systems: [reproductive, genitourinary]
 highYield: true
 status: draft
 anatomy:

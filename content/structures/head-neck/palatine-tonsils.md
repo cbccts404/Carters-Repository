@@ -7,6 +7,7 @@ taName: Tonsilla palatina
 aka: [Tonsils]
 summary: Paired masses of lymphoid tissue in the tonsillar fossae of the oropharynx, part of Waldeyer ring. Streptococcal pharyngitis, peritonsillar abscess and infectious mononucleosis are the key problems.
 tags: [pharynx, ent, infection]
+systems: [eent, infectious]
 highYield: true
 status: draft
 anatomy:

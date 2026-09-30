@@ -7,6 +7,7 @@ taName: Nervus ulnaris
 aka: [Funny bone nerve]
 summary: Medial cord branch that passes behind the medial epicondyle and through Guyon's canal. It supplies most intrinsic hand muscles and the medial 1½ digits.
 tags: [brachial-plexus]
+systems: [neurologic, musculoskeletal]
 highYield: true
 status: draft
 anatomy:

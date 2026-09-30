@@ -7,6 +7,7 @@ taName: Auris externa; Auris media
 aka: [Tympanic cavity, Tympanic membrane, Eardrum, Ear canal]
 summary: The ear canal, eardrum and air-filled tympanic cavity with its three ossicles, connected to the nasopharynx by the pharyngotympanic tube. Otitis externa, otitis media and conductive hearing loss are the key topics.
 tags: [ear, ent, hearing]
+systems: [eent]
 highYield: true
 status: draft
 anatomy:

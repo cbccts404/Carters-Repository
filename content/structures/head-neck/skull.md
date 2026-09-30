@@ -7,6 +7,7 @@ taName: Cranium
 aka: [Cranium, Neurocranium and viscerocranium]
 summary: The bones of the head — the neurocranium enclosing the brain and the viscerocranium forming the face. Pterion fractures, basilar skull fractures and infant fontanelles are the clinically important features.
 tags: [skull, trauma, pediatrics]
+systems: [musculoskeletal, neurologic]
 highYield: true
 status: draft
 anatomy:

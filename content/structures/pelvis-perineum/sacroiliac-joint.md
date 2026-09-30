@@ -7,6 +7,7 @@ taName: Articulatio sacroiliaca
 aka: [SI joint]
 summary: Strong, nearly immobile joint between the sacrum and ilium that transmits body weight to the pelvis. It is the classic site of inflammatory sacroiliitis in axial spondyloarthritis.
 tags: [pelvis, spondyloarthritis]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

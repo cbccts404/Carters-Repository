@@ -1,0 +1,351 @@
+# Lesion sites for the localizer. `findings` are expected findings; `against` are findings that argue
+# against this site. `entries` are atlas entry ids. `why` is Markdown and may use [[links]].
+# ---- cerebrum ----
+- id: mca-dominant
+  name: Dominant (usually left) MCA territory
+  site: Cerebral cortex — lateral hemisphere
+  findings: [hemiparesis-face-arm, lower-face-weakness, aphasia, homonymous-hemianopia, gaze-deviation, umn-signs]
+  against: [hemiparesis-leg, whole-face-weakness, lmn-signs]
+  entries: [cerebral-arteries, cerebral-cortex]
+  why: The MCA supplies the face and arm areas of the motor and sensory cortex, the language areas and the optic radiations. Eyes deviate **toward** the lesion.
+- id: mca-nondominant
+  name: Nondominant (usually right) MCA territory
+  site: Cerebral cortex — lateral hemisphere
+  findings: [hemiparesis-face-arm, lower-face-weakness, neglect, homonymous-hemianopia, gaze-deviation, umn-signs]
+  against: [aphasia, hemiparesis-leg, whole-face-weakness, lmn-signs]
+  entries: [cerebral-arteries, cerebral-cortex]
+  why: Same motor and field deficits as a dominant MCA stroke, but the nondominant parietal lobe gives **neglect** and anosognosia instead of aphasia.
+- id: aca
+  name: Anterior cerebral artery territory
+  site: Medial frontal and parietal cortex
+  findings: [hemiparesis-leg, bladder-dysfunction, umn-signs]
+  against: [hemiparesis-face-arm, aphasia, homonymous-hemianopia]
+  entries: [cerebral-arteries, cerebral-cortex]
+  why: The leg and foot are represented on the medial surface of the motor cortex, supplied by the ACA; frontal bladder control is also affected.
+- id: pca
+  name: Posterior cerebral artery territory
+  site: Occipital lobe
+  findings: [homonymous-hemianopia, macular-sparing]
+  against: [hemiparesis-face-arm, hemiparesis-leg, aphasia]
+  entries: [cerebral-arteries, optic-nerve]
+  why: Occipital infarction gives a contralateral homonymous hemianopia; the macula is often spared because the occipital pole also receives MCA blood.
+- id: internal-capsule
+  name: Posterior limb of the internal capsule (lacunar)
+  site: Deep white matter
+  findings: [hemiparesis-equal, lower-face-weakness, umn-signs]
+  against: [aphasia, neglect, homonymous-hemianopia, hemisensory-loss]
+  entries: [internal-capsule, basal-ganglia]
+  why: Motor fibers for the whole half-body are packed together, so a small lacune weakens face, arm and leg **equally**, without cortical signs.
+- id: thalamus
+  name: Thalamus (lacunar)
+  site: VPL and VPM nuclei
+  findings: [hemisensory-loss]
+  against: [hemiparesis-face-arm, hemiparesis-equal, aphasia]
+  entries: [thalamus]
+  why: VPL (body) and VPM (face) sit side by side, so a small thalamic infarct causes **pure sensory loss** of the whole opposite side, face included.
+- id: optic-chiasm
+  name: Optic chiasm
+  site: Above the pituitary
+  findings: [bitemporal-hemianopia]
+  against: [homonymous-hemianopia, monocular-vision-loss]
+  entries: [optic-nerve, pituitary-gland]
+  why: The crossing nasal fibers carry both temporal fields; a pituitary adenoma or craniopharyngioma compresses them from below.
+- id: optic-nerve
+  name: Optic nerve (e.g. optic neuritis)
+  site: Anterior visual pathway, one eye
+  findings: [monocular-vision-loss, rapd, eye-pain-on-movement]
+  against: [bitemporal-hemianopia, homonymous-hemianopia]
+  entries: [optic-nerve, eyeball]
+  why: A lesion in front of the chiasm affects only one eye and causes a relative afferent pupillary defect; pain on eye movement suggests optic neuritis.
+# ---- brainstem and cerebellum ----
+- id: weber
+  name: Midbrain — Weber syndrome
+  site: Ventral midbrain (cerebral peduncle)
+  findings: [eye-down-and-out, ptosis, dilated-pupil, hemiparesis-equal, umn-signs]
+  against: [upgaze-palsy]
+  entries: [midbrain, oculomotor-nerve]
+  why: Ipsilateral CN III palsy with **contralateral** hemiparesis — the CN III fascicles cross the cerebral peduncle.
+- id: parinaud
+  name: Dorsal midbrain — Parinaud syndrome
+  site: Superior colliculi (pineal region)
+  findings: [upgaze-palsy, light-near-dissociation]
+  against: [hemiparesis-equal, hemiparesis-face-arm]
+  entries: [midbrain]
+  why: Compression of the dorsal midbrain (often a pineal tumor) impairs vertical gaze and the pupillary light reflex.
+- id: uncal-herniation
+  name: Uncal (transtentorial) herniation
+  site: Medial temporal lobe over the tentorial edge
+  findings: [dilated-pupil, decreased-consciousness, hemiparesis-equal, eye-down-and-out]
+  against: [pupil-normal]
+  entries: [cranial-meninges, oculomotor-nerve, midbrain]
+  why: An expanding supratentorial mass pushes the uncus onto CN III (blown pupil first) and the midbrain — a neurosurgical emergency.
+- id: basilar-pons
+  name: Ventral pons — locked-in syndrome
+  site: Basilar pons (basilar artery occlusion)
+  findings: [quadriplegia, vertical-eye-movements-only, dysarthria]
+  against: [decreased-consciousness]
+  entries: [pons, vertebrobasilar-system]
+  why: Corticospinal and corticobulbar tracts are destroyed but the reticular activating system above is spared — the patient is awake and communicates with vertical eye movements.
+- id: mlf
+  name: Medial longitudinal fasciculus — internuclear ophthalmoplegia
+  site: Pons/midbrain tegmentum
+  findings: [ino, nystagmus]
+  against: [eye-down-and-out, ptosis]
+  entries: [abducens-nerve, pons]
+  why: The MLF links the abducens nucleus to the opposite medial rectus subnucleus. Bilateral INO in a young adult suggests **multiple sclerosis**.
+- id: lateral-medulla
+  name: Lateral medulla — Wallenberg syndrome
+  site: PICA or vertebral artery territory
+  findings: [ipsilateral-face-pain-temp-loss, contralateral-body-pain-temp-loss, dysphagia, hoarseness, ptosis, miosis, limb-ataxia, vertigo, nystagmus]
+  against: [hemiparesis-equal, hemiparesis-face-arm, tongue-deviates]
+  entries: [medulla-oblongata, vertebrobasilar-system]
+  why: Crossed pain/temperature loss (spinal trigeminal tract vs spinothalamic tract), nucleus ambiguus signs and ipsilateral Horner — with **no limb weakness**.
+- id: medial-medulla
+  name: Medial medulla
+  site: Anterior spinal artery territory
+  findings: [tongue-deviates, tongue-atrophy, hemiparesis-equal, vibration-proprioception-loss, umn-signs]
+  against: [ipsilateral-face-pain-temp-loss, hoarseness]
+  entries: [medulla-oblongata, hypoglossal-nerve]
+  why: Ipsilateral CN XII, contralateral hemiparesis (pyramid) and contralateral loss of vibration/proprioception (medial lemniscus).
+- id: cerebellar-hemisphere
+  name: Cerebellar hemisphere
+  site: Lateral cerebellum
+  findings: [limb-ataxia, nystagmus, dysarthria, vertigo]
+  against: [hemiparesis-equal, hemisensory-loss, positive-romberg]
+  entries: [cerebellum]
+  why: Hemisphere lesions cause **ipsilateral** limb ataxia; a stroke here can swell and compress the fourth ventricle and brainstem.
+- id: cerebellar-vermis
+  name: Cerebellar vermis
+  site: Midline cerebellum
+  findings: [gait-ataxia, nystagmus]
+  against: [limb-ataxia, positive-romberg]
+  entries: [cerebellum]
+  why: The vermis controls the trunk and gait; alcohol damages the anterior vermis, giving a wide-based gait with fairly normal arm coordination.
+# ---- cranial nerves ----
+- id: cn3-compressive
+  name: CN III — compressive (e.g. PComm aneurysm)
+  site: Oculomotor nerve, outside the brainstem
+  findings: [eye-down-and-out, ptosis, dilated-pupil, sudden-headache]
+  against: [pupil-normal, hemiparesis-equal]
+  entries: [oculomotor-nerve, circle-of-willis]
+  why: The pupillary fibers run on the surface of the nerve, so compression dilates the pupil early. A painful pupil-involving palsy is an aneurysm until proven otherwise.
+- id: cn3-ischemic
+  name: CN III — ischemic (diabetic)
+  site: Core of the oculomotor nerve
+  findings: [eye-down-and-out, ptosis, pupil-normal]
+  against: [dilated-pupil]
+  entries: [oculomotor-nerve]
+  why: Microvascular ischemia affects the core of the nerve and tends to spare the superficial pupillary fibers.
+- id: cn4
+  name: CN IV — trochlear nerve
+  site: Trochlear nerve
+  findings: [vertical-diplopia, head-tilt]
+  against: [ptosis, dilated-pupil]
+  entries: [trochlear-nerve, extraocular-muscles]
+  why: The superior oblique depresses the adducted eye; patients tilt the head away from the weak side. Head trauma is the most common acquired cause.
+- id: cn6
+  name: CN VI — abducens nerve
+  site: Abducens nerve (long course along the clivus)
+  findings: [cannot-abduct]
+  against: [ptosis, dilated-pupil]
+  entries: [abducens-nerve, extraocular-muscles]
+  why: The lateral rectus fails. Raised intracranial pressure can stretch CN VI — a false localizing sign.
+- id: cn7-peripheral
+  name: CN VII — peripheral (Bell palsy)
+  site: Facial nerve in the facial canal
+  findings: [whole-face-weakness, hyperacusis]
+  against: [lower-face-weakness, hemiparesis-face-arm]
+  entries: [facial-nerve, muscles-of-facial-expression]
+  why: A lower motor neuron lesion weakens the whole half of the face **including the forehead**; branches to stapedius and the chorda tympani may be involved.
+- id: cn8
+  name: CN VIII — vestibular schwannoma (cerebellopontine angle)
+  site: Internal acoustic meatus / CPA
+  findings: [unilateral-hearing-loss, tinnitus, gait-ataxia, reduced-corneal-reflex, face-numbness]
+  against: [hemiparesis-equal]
+  entries: [vestibulocochlear-nerve, inner-ear]
+  why: Asymmetric sensorineural hearing loss with tinnitus; larger tumors compress CN V (reduced corneal reflex) and the cerebellum.
+- id: cn10
+  name: CN X — vagus nerve
+  site: Vagus nerve or jugular foramen
+  findings: [uvula-deviates, hoarseness, dysphagia]
+  against: []
+  entries: [vagus-nerve, larynx]
+  why: The intact side pulls the uvula **away** from the lesion; recurrent laryngeal involvement causes hoarseness.
+- id: cn11
+  name: CN XI — spinal accessory nerve
+  site: Posterior triangle of the neck
+  findings: [shoulder-droop]
+  against: [medial-scapular-winging]
+  entries: [accessory-nerve, trapezius, triangles-of-the-neck]
+  why: Usually injured during a posterior-triangle node biopsy; trapezius weakness causes shoulder droop and lateral scapular winging.
+- id: cn12
+  name: CN XII — hypoglossal nerve (lower motor neuron)
+  site: Hypoglossal nerve or nucleus
+  findings: [tongue-deviates, tongue-atrophy]
+  against: [hemiparesis-equal]
+  entries: [hypoglossal-nerve, tongue]
+  why: The tongue deviates **toward** the side of the lesion, with atrophy and fasciculations.
+- id: horner
+  name: Horner syndrome — sympathetic pathway
+  site: Hypothalamus → cervical cord → sympathetic chain → carotid
+  findings: [ptosis, miosis, anhidrosis]
+  against: [dilated-pupil, eye-down-and-out]
+  entries: [carotid-arteries, lungs, brachial-plexus]
+  why: Mild ptosis with a small pupil. Look for a Pancoast tumor at the lung apex, carotid dissection (with neck pain) or a lateral medullary stroke.
+# ---- spinal cord ----
+- id: brown-sequard
+  name: Spinal cord hemisection (Brown-Séquard)
+  site: One half of the spinal cord
+  findings: [weakness-one-side-below-level, vibration-proprioception-loss, contralateral-body-pain-temp-loss, umn-signs]
+  against: [ipsilateral-face-pain-temp-loss]
+  entries: [spinal-cord, corticospinal-tract, dorsal-column-medial-lemniscus, spinothalamic-tract]
+  why: Ipsilateral weakness and vibration/proprioception loss below the lesion; pain and temperature are lost on the **opposite** side because the spinothalamic fibers have already crossed.
+- id: anterior-cord
+  name: Anterior cord syndrome
+  site: Anterior spinal artery territory
+  findings: [paraparesis, bilateral-pain-temp-loss, bladder-dysfunction]
+  against: [vibration-proprioception-loss]
+  entries: [spinal-cord, spinothalamic-tract]
+  why: Infarction of the anterior two-thirds of the cord (e.g. after aortic surgery) spares the dorsal columns.
+- id: syrinx
+  name: Central cord — syringomyelia
+  site: Anterior white commissure (cervical cord)
+  findings: [cape-sensory-loss, lmn-signs]
+  against: [vibration-proprioception-loss]
+  entries: [spinothalamic-tract, spinal-cord]
+  why: A central cavity interrupts the crossing pain/temperature fibers at the affected levels on both sides; touch and vibration are spared.
+- id: dorsal-columns-cst
+  name: Dorsal columns + corticospinal tracts (subacute combined degeneration)
+  site: Posterior and lateral columns
+  findings: [vibration-proprioception-loss, positive-romberg, umn-signs, paraparesis]
+  against: [cape-sensory-loss]
+  entries: [dorsal-column-medial-lemniscus, corticospinal-tract]
+  why: Classically vitamin B12 deficiency — sensory ataxia with a positive Romberg plus upper motor neuron signs.
+- id: cauda-equina
+  name: Cauda equina
+  site: Lumbosacral nerve roots below the conus
+  findings: [saddle-anesthesia, bladder-dysfunction, paraparesis, reduced-ankle-reflex, lmn-signs]
+  against: [umn-signs]
+  entries: [cauda-equina, intervertebral-disc]
+  why: Compression of multiple roots (large central disc herniation, tumor) — a surgical emergency; signs are **lower** motor neuron.
+- id: als
+  name: Upper and lower motor neurons (ALS)
+  site: Corticospinal tracts and anterior horn cells
+  findings: [umn-signs, lmn-signs, tongue-atrophy, dysarthria, no-sensory-loss]
+  against: [vibration-proprioception-loss, hemisensory-loss, saddle-anesthesia]
+  entries: [corticospinal-tract]
+  why: Mixed upper and lower motor neuron signs in the same region with **no sensory loss**.
+# ---- nerve roots ----
+- id: c6-root
+  name: C6 radiculopathy
+  site: C5–C6 disc / C6 root
+  findings: [weak-elbow-flexion, reduced-biceps-reflex, thumb-numb]
+  against: [umn-signs]
+  entries: [cervical-vertebrae, spinal-nerves]
+  why: Weak elbow flexion and wrist extension, reduced biceps/brachioradialis reflex, numbness of the thumb and lateral forearm.
+- id: c7-root
+  name: C7 radiculopathy
+  site: C6–C7 disc / C7 root
+  findings: [weak-elbow-extension, reduced-triceps-reflex, middle-finger-numb]
+  against: [umn-signs]
+  entries: [cervical-vertebrae, spinal-nerves]
+  why: The most common cervical radiculopathy — weak triceps, reduced triceps reflex, numb middle finger.
+- id: l4-root
+  name: L4 radiculopathy
+  site: L3–L4 disc / L4 root
+  findings: [weak-knee-extension, reduced-patellar-reflex, medial-leg-numb, weak-hip-adduction]
+  against: [umn-signs]
+  entries: [lumbar-vertebrae, intervertebral-disc]
+  why: Weak knee extension, reduced patellar reflex and numbness of the medial leg; hip adduction (obturator nerve, L2–L4) may also be weak, unlike a femoral nerve lesion.
+- id: l5-root
+  name: L5 radiculopathy
+  site: L4–L5 disc / L5 root
+  findings: [foot-drop, weak-great-toe-extension, weak-inversion, weak-eversion, dorsal-foot-numb]
+  against: [inversion-normal, reduced-ankle-reflex, reduced-patellar-reflex]
+  entries: [intervertebral-disc, lumbar-vertebrae]
+  why: Foot drop with weak **inversion** (tibialis posterior, L5) as well as dorsiflexion distinguishes an L5 root from a common fibular nerve lesion.
+- id: s1-root
+  name: S1 radiculopathy
+  site: L5–S1 disc / S1 root
+  findings: [weak-plantarflexion, reduced-ankle-reflex, lateral-foot-numb]
+  against: [foot-drop]
+  entries: [intervertebral-disc, sacrum]
+  why: Weak plantarflexion, reduced ankle reflex, numbness of the lateral foot and sole.
+# ---- plexus and peripheral nerves ----
+- id: upper-trunk
+  name: Upper trunk of the brachial plexus (Erb palsy)
+  site: C5–C6 roots / upper trunk
+  findings: [waiters-tip, weak-shoulder-abduction, weak-elbow-flexion, reduced-biceps-reflex, thumb-numb]
+  against: [total-claw]
+  entries: [brachial-plexus]
+  why: Traction that widens the neck–shoulder angle (shoulder dystocia) — "waiter's tip" posture.
+- id: lower-trunk
+  name: Lower trunk of the brachial plexus (Klumpke palsy)
+  site: C8–T1 roots / lower trunk
+  findings: [total-claw, ptosis, miosis]
+  against: [waiters-tip]
+  entries: [brachial-plexus]
+  why: Traction on an abducted arm, a Pancoast tumor or a cervical rib; T1 involvement can add Horner syndrome.
+- id: axillary-nerve
+  name: Axillary nerve
+  site: Surgical neck of the humerus / quadrangular space
+  findings: [weak-shoulder-abduction, lateral-shoulder-numb]
+  against: [weak-elbow-flexion, reduced-biceps-reflex]
+  entries: [axillary-nerve, deltoid]
+  why: Surgical neck fracture or anterior dislocation — weak deltoid with the "regimental badge" patch of numbness.
+- id: long-thoracic
+  name: Long thoracic nerve
+  site: Lateral chest wall
+  findings: [medial-scapular-winging]
+  against: [shoulder-droop]
+  entries: [long-thoracic-nerve, serratus-anterior]
+  why: Serratus anterior palsy after axillary surgery or a chest tube — medial winging when pushing against a wall.
+- id: radial-nerve
+  name: Radial nerve (spiral groove)
+  site: Midshaft of the humerus
+  findings: [wrist-drop, dorsal-hand-numb]
+  against: [thenar-weakness, claw-4-5]
+  entries: [radial-nerve, humerus]
+  why: Midshaft humerus fracture or "Saturday night palsy" — wrist drop with triceps usually spared.
+- id: median-wrist
+  name: Median nerve at the wrist (carpal tunnel)
+  site: Carpal tunnel
+  findings: [thenar-weakness, lateral-digits-numb, nocturnal-hand-symptoms]
+  against: [wrist-drop, claw-4-5, reduced-biceps-reflex]
+  entries: [median-nerve, carpal-tunnel]
+  why: Numbness of the lateral 3½ digits with the palm spared, nocturnal symptoms and thenar weakness; Tinel and Phalen signs.
+- id: ulnar-nerve
+  name: Ulnar nerve
+  site: Cubital tunnel (elbow) or Guyon canal (wrist)
+  findings: [claw-4-5, medial-digits-numb, froment]
+  against: [thenar-weakness, wrist-drop]
+  entries: [ulnar-nerve]
+  why: Clawing of the ring and little fingers, numb medial 1½ digits and a positive Froment sign (weak adductor pollicis).
+- id: common-fibular
+  name: Common fibular nerve
+  site: Neck of the fibula
+  findings: [foot-drop, weak-eversion, dorsal-foot-numb, inversion-normal]
+  against: [weak-inversion, reduced-ankle-reflex]
+  entries: [common-fibular-nerve, fibula]
+  why: Foot drop with weak eversion but **normal inversion** (tibialis posterior is supplied by the tibial nerve).
+- id: femoral-nerve
+  name: Femoral nerve
+  site: Pelvis or femoral triangle
+  findings: [weak-knee-extension, reduced-patellar-reflex, anterior-thigh-numb, medial-leg-numb]
+  against: [weak-hip-adduction]
+  entries: [femoral-nerve, femoral-triangle]
+  why: Weak quadriceps with a lost patellar reflex; hip adduction (obturator nerve) is normal, which helps separate it from an L4 radiculopathy.
+- id: superior-gluteal
+  name: Superior gluteal nerve
+  site: Gluteal region (e.g. misplaced injection)
+  findings: [trendelenburg]
+  against: []
+  entries: [gluteus-medius-and-minimus]
+  why: Gluteus medius and minimus can't stabilize the pelvis, so it drops on the unsupported side during stance.
+- id: tibial-nerve
+  name: Tibial nerve
+  site: Popliteal fossa or tarsal tunnel
+  findings: [weak-plantarflexion, weak-inversion, lateral-foot-numb]
+  against: [foot-drop, weak-eversion]
+  entries: [tibial-nerve]
+  why: Weak plantarflexion and inversion with numbness of the sole; at the tarsal tunnel only the sole is affected.

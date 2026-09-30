@@ -6,6 +6,7 @@ subregion: Leg
 taName: Nervus tibialis
 summary: Larger terminal branch of the sciatic nerve, running through the popliteal fossa and deep posterior leg to the sole. It supplies the plantarflexors and inverters and the skin of the sole, and is compressed in the tarsal tunnel.
 tags: [leg, foot, nerve-injury]
+systems: [neurologic, musculoskeletal]
 highYield: true
 status: draft
 anatomy:

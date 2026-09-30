@@ -7,6 +7,7 @@ taName: Nervus oculomotorius
 aka: [CN III, Cranial nerve III, Third nerve palsy]
 summary: Supplies four extraocular muscles, levator palpebrae and the pupillary constrictor. A palsy gives a "down and out" eye with ptosis; a blown pupil signals compression (aneurysm or herniation) rather than diabetic ischemia.
 tags: [cranial-nerves, eye, emergency]
+systems: [neurologic, eent]
 highYield: true
 status: draft
 anatomy:

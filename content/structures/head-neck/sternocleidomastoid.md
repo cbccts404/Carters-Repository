@@ -7,6 +7,7 @@ taName: Musculus sternocleidomastoideus
 aka: [SCM, Sternomastoid]
 summary: Prominent two-headed neck muscle that divides the neck into anterior and posterior triangles. It is supplied by the accessory nerve and is shortened in congenital muscular torticollis.
 tags: [neck, cranial-nerves]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

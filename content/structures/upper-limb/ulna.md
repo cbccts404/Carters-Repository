@@ -6,6 +6,7 @@ subregion: Forearm
 taName: Ulna
 summary: Medial, stabilizing bone of the forearm. Its trochlear notch forms the hinge of the elbow with the humerus.
 tags: [forearm, elbow]
+systems: [musculoskeletal]
 highYield: false
 status: draft
 anatomy:

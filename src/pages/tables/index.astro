@@ -1,0 +1,28 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { loadAtlas, url } from '../../lib/atlas';
+
+const atlas = await loadAtlas();
+const order = atlas.regions.map((r) => r.id);
+const tables = (await getCollection('tables')).sort(
+  (a, b) => order.indexOf(a.data.region ?? '') - order.indexOf(b.data.region ?? ''),
+);
+---
+
+<Base title="Comparison tables" description="High-yield comparison tables across the atlas.">
+  <p class="crumbs"><a href={url()}>Home</a> / Comparison tables</p>
+  <h1>Comparison tables</h1>
+  <p class="muted">Side-by-side summaries of things that are easy to mix up. Every name links to its full entry.</p>
+  <div class="grid">
+    {
+      tables.map((t) => (
+        <a class="card" href={url(`tables/${t.id}/`)}>
+          <h3>{t.data.title}</h3>
+          <p>{t.data.summary}</p>
+          <p class="small" style="margin-top:8px">{t.data.rows.length} rows</p>
+        </a>
+      ))
+    }
+  </div>
+</Base>

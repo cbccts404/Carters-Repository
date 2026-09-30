@@ -7,6 +7,7 @@ taName: Pelvis
 aka: [Pelvic girdle, Pelvic ring]
 summary: Ring formed by the two hip bones, the sacrum and the coccyx. Its inlet and outlet define the birth canal, and ring fractures from high-energy trauma can cause life-threatening hemorrhage.
 tags: [pelvis, trauma, obstetrics]
+systems: [musculoskeletal, reproductive]
 highYield: true
 status: draft
 anatomy:

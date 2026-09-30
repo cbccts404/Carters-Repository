@@ -7,6 +7,7 @@ taName: Ligamenta columnae vertebralis
 aka: [Anterior longitudinal ligament, Posterior longitudinal ligament, Ligamentum flavum, Interspinous ligament, Supraspinous ligament, Nuchal ligament]
 summary: Ligaments that bind the vertebrae. The longitudinal ligaments run along the bodies and the ligamentum flavum joins the laminae; these are the layers a needle passes through during lumbar puncture and epidural anesthesia.
 tags: [spine, procedures]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

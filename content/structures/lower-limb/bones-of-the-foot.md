@@ -7,6 +7,7 @@ taName: Ossa pedis
 aka: [Tarsals, metatarsals and phalanges]
 summary: Seven tarsals, five metatarsals and fourteen phalanges forming the arches of the foot. Fifth metatarsal fractures, calcaneal fractures, stress fractures and plantar fasciitis are the common problems.
 tags: [foot, fracture, sports-medicine]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

@@ -7,6 +7,7 @@ taName: Medulla spinalis
 aka: [Conus medullaris, Anterior spinal artery, Artery of Adamkiewicz]
 summary: Continuation of the medulla within the vertebral canal, ending at the conus medullaris at about L1–L2 in adults. Its blood supply and level of termination explain spinal cord injury syndromes and safe lumbar puncture sites.
 tags: [spine, neuro]
+systems: [neurologic]
 highYield: true
 status: draft
 anatomy:

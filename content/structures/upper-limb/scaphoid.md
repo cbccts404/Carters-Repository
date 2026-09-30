@@ -7,6 +7,7 @@ taName: Os scaphoideum
 aka: [Navicular of the hand]
 summary: Boat-shaped bone of the proximal carpal row. It is the most commonly fractured carpal bone and its proximal pole is prone to avascular necrosis.
 tags: [wrist]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

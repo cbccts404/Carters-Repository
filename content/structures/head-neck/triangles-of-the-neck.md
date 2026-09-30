@@ -7,6 +7,7 @@ taName: Regio cervicalis anterior; Regio cervicalis lateralis
 aka: [Anterior triangle, Posterior triangle, Carotid triangle, Submandibular triangle, Lateral cervical region]
 summary: Sternocleidomastoid divides each side of the neck into anterior and posterior triangles, and each is subdivided further. Knowing their contents helps localize neck masses and avoid injuring the accessory nerve.
 tags: [neck, surface-anatomy]
+systems: [eent]
 highYield: true
 status: draft
 anatomy:

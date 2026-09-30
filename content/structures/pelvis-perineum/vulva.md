@@ -7,6 +7,7 @@ taName: Pudendum femininum; Vulva
 aka: [Female external genitalia, Pudendum]
 summary: Female external genitalia in the urogenital triangle — mons pubis, labia, clitoris, vestibule and vestibular glands. Bartholin gland cysts and abscesses, lichen sclerosus and vulvar cancer are the key problems.
 tags: [female, perineum, gynecology]
+systems: [reproductive]
 highYield: false
 status: draft
 anatomy:

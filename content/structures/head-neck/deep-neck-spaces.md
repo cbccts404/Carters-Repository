@@ -7,6 +7,7 @@ taName: Spatia colli profunda
 aka: [Retropharyngeal space, Danger space, Parapharyngeal space, Submandibular space, Ludwig angina, Deep cervical fascia]
 summary: Potential spaces between the layers of deep cervical fascia. Infections can track through them from the teeth, tonsils and pharynx into the mediastinum.
 tags: [neck, infection, emergency]
+systems: [eent, infectious]
 highYield: true
 status: draft
 anatomy:

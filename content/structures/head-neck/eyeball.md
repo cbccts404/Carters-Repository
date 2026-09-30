@@ -7,6 +7,7 @@ taName: Bulbus oculi
 aka: [Globe, Eye]
 summary: The globe of the eye — three coats (fibrous, vascular, neural) around the lens and chambers. Acute angle-closure glaucoma, retinal detachment, central retinal artery occlusion and the red eye are its emergencies.
 tags: [eye, ophthalmology, emergency]
+systems: [eent]
 highYield: true
 status: draft
 anatomy:

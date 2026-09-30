@@ -7,6 +7,7 @@ taName: Vertebrae cervicales
 aka: [C-spine, C3–C7]
 summary: Seven small vertebrae of the neck with transverse foramina for the vertebral arteries. Cervical radiculopathy, myelopathy and trauma clearance are the key clinical topics.
 tags: [spine, neck]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

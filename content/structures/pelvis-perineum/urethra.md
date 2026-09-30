@@ -6,6 +6,7 @@ subregion: Pelvic viscera
 taName: Urethra masculina; Urethra feminina
 summary: Tube from the bladder to the exterior — about 18–20 cm and S-shaped in males, about 4 cm in females. The site of the injury determines where extravasated urine goes, and urethral injury must be excluded before catheterizing a trauma patient.
 tags: [genitourinary, trauma, sti]
+systems: [genitourinary]
 highYield: true
 status: draft
 anatomy:

@@ -7,6 +7,7 @@ taName: Musculus quadriceps femoris
 aka: [Quadriceps, Quads]
 summary: Four-headed extensor of the knee in the anterior thigh, supplied by the femoral nerve. It tests the L4 reflex, and its tendon, patella and patellar ligament form the knee's extensor mechanism.
 tags: [thigh, knee, femoral-nerve]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

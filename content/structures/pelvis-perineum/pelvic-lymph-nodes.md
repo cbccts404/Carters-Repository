@@ -7,6 +7,7 @@ taName: Nodi lymphoidei pelvis; Nodi lymphoidei inguinales
 aka: [Iliac lymph nodes, Pelvic lymph nodes]
 summary: Iliac, sacral and inguinal node groups that drain the pelvis and perineum. The rule "lymph follows the arteries" (gonads to para-aortic, perineal skin to superficial inguinal) predicts where pelvic cancers spread.
 tags: [lymphatic, oncology, sti]
+systems: [hematologic]
 highYield: true
 status: draft
 anatomy:

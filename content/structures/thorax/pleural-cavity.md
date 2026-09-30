@@ -7,6 +7,7 @@ taName: Cavitas pleuralis
 aka: [Pleura, Pleural space]
 summary: Potential space between the visceral and parietal pleura around each lung. It's the site of pneumothorax and pleural effusion and the target of thoracentesis and chest tubes.
 tags: [pleura, procedures]
+systems: [pulmonary]
 highYield: true
 status: draft
 anatomy:

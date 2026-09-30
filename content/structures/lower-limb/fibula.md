@@ -6,6 +6,7 @@ subregion: Leg
 taName: Fibula
 summary: Slender lateral bone of the leg that bears little weight but forms the lateral malleolus of the ankle. The common fibular nerve wraps around its neck, where fractures and pressure injure it.
 tags: [leg, ankle, nerve-injury]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

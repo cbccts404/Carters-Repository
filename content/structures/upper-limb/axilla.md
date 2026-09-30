@@ -7,6 +7,7 @@ taName: Fossa axillaris
 aka: [Armpit, Axillary fossa]
 summary: Pyramidal space between the arm and the thoracic wall. It is the passageway for the neurovascular bundle of the upper limb and contains the axillary lymph nodes, which drain most of the breast.
 tags: [axilla, breast]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

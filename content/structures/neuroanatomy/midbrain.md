@@ -7,6 +7,7 @@ taName: Mesencephalon
 aka: [Mesencephalon, Cerebral peduncles, Substantia nigra, Superior colliculus, Tectum, Parinaud syndrome]
 summary: Uppermost part of the brainstem, around the cerebral aqueduct. It contains the CN III and IV nuclei, the substantia nigra and the corticospinal tracts in the cerebral peduncles, and is compressed in transtentorial herniation.
 tags: [brainstem, eye-movements, movement-disorders]
+systems: [neurologic]
 highYield: true
 status: draft
 anatomy:

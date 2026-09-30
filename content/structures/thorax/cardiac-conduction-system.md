@@ -7,6 +7,7 @@ taName: Systema conducente cordis
 aka: [SA node, AV node, Bundle of His, Purkinje fibers]
 summary: Specialized cardiac muscle that generates and conducts impulses (SA node → AV node → bundle of His → bundle branches → Purkinje fibers). Its blood supply explains the arrhythmias that accompany some MIs.
 tags: [heart, cardiology, ecg]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

@@ -7,6 +7,7 @@ taName: Articulationes zygapophysiales
 aka: [Facet joints]
 summary: Paired synovial joints between the articular processes of adjacent vertebrae. Their orientation determines spinal motion at each level, and facet arthropathy is a common cause of axial back and neck pain.
 tags: [spine, low-back-pain]
+systems: [musculoskeletal]
 highYield: false
 status: draft
 anatomy:

@@ -7,6 +7,7 @@ taName: Nervus glossopharyngeus
 aka: [CN IX, Cranial nerve IX, Carotid sinus nerve, Glossopharyngeal neuralgia]
 summary: Mainly sensory — posterior tongue, oropharynx and middle ear, plus the carotid sinus and body. It is the afferent limb of the gag reflex and supplies the parotid gland (parasympathetic) and stylopharyngeus.
 tags: [cranial-nerves, pharynx]
+systems: [neurologic, eent]
 highYield: false
 status: draft
 anatomy:

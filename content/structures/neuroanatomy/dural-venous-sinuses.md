@@ -7,6 +7,7 @@ taName: Sinus durae matris
 aka: [Superior sagittal sinus, Cavernous sinus, Transverse sinus, Sigmoid sinus, Straight sinus, Cerebral venous sinus thrombosis, Cavernous sinus thrombosis]
 summary: Valveless venous channels between the layers of the dura that drain the brain into the internal jugular veins. Thrombosis of the sagittal or cavernous sinus is an important, easily missed cause of headache and cranial nerve palsies.
 tags: [cerebral-vessels, venous-thrombosis]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

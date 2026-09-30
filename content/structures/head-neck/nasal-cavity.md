@@ -6,6 +6,7 @@ subregion: Oral & nasal cavities
 taName: Cavitas nasi
 summary: Paired air passages from the nostrils to the choanae, divided by the septum and lined by the conchae that warm and humidify air. Anterior epistaxis from Kiesselbach plexus is the classic problem.
 tags: [nose, ent, epistaxis]
+systems: [eent]
 highYield: true
 status: draft
 anatomy:

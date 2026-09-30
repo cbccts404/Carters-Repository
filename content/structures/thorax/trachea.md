@@ -7,6 +7,7 @@ taName: Trachea
 aka: [Windpipe]
 summary: Cartilage-reinforced airway from the larynx (C6) to its bifurcation at the carina (about T4–T5). Its midline position is an important exam and radiographic sign.
 tags: [airway, mediastinum]
+systems: [pulmonary]
 highYield: true
 status: draft
 anatomy:

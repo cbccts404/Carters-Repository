@@ -7,6 +7,7 @@ taName: Scapula
 aka: [Shoulder blade]
 summary: Triangular flat bone on the posterolateral thorax that gives attachment to the rotator cuff and forms the glenoid cavity of the shoulder joint.
 tags: [shoulder]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

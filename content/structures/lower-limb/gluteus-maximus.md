@@ -6,6 +6,7 @@ subregion: Gluteal region
 taName: Musculus gluteus maximus
 summary: The largest and most superficial gluteal muscle, the main extensor of the hip for rising, climbing and running. Weakness from an inferior gluteal nerve lesion causes a backward-lurching gait.
 tags: [gluteal, hip]
+systems: [musculoskeletal]
 highYield: false
 status: draft
 anatomy:

@@ -7,6 +7,7 @@ taName: Tractus spinothalamicus
 aka: [Anterolateral system, Lateral spinothalamic tract, Syringomyelia]
 summary: Ascending pathway for pain, temperature and crude touch. Its fibers cross within one or two segments of entering the cord, so cord lesions cause contralateral loss; syringomyelia damages the crossing fibers.
 tags: [spinal-tracts, sensation, pain]
+systems: [neurologic]
 highYield: true
 status: draft
 anatomy:

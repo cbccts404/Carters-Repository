@@ -6,6 +6,7 @@ subregion: Kidneys & suprarenals
 taName: Ren
 summary: Paired retroperitoneal organs at T12–L3, with the right kidney slightly lower than the left. Stones, pyelonephritis, renal cell carcinoma and trauma are the key clinical problems.
 tags: [genitourinary, retroperitoneum]
+systems: [renal, genitourinary]
 highYield: true
 status: draft
 anatomy:

@@ -6,6 +6,7 @@ subregion: Suboccipital region
 taName: Arteria vertebralis
 summary: First branch of the subclavian artery, ascending through the cervical transverse foramina to join its partner and form the basilar artery. Dissection and subclavian steal are the key clinical problems.
 tags: [neck, vascular, neuro]
+systems: [cardiovascular, neurologic]
 highYield: true
 status: draft
 anatomy:

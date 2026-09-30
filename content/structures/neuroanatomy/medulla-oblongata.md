@@ -7,6 +7,7 @@ taName: Medulla oblongata
 aka: [Medulla, Wallenberg syndrome, Lateral medullary syndrome, Pyramidal decussation, Area postrema]
 summary: Lowest part of the brainstem, continuous with the spinal cord at the foramen magnum. It contains the cardiorespiratory centers, the nuclei of CN IX–XII and the pyramidal decussation; PICA strokes cause the lateral medullary (Wallenberg) syndrome.
 tags: [brainstem, stroke, autonomic]
+systems: [neurologic]
 highYield: true
 status: draft
 anatomy:

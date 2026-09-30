@@ -6,6 +6,7 @@ subregion: Knee & popliteal fossa
 taName: Fossa poplitea
 summary: Diamond-shaped space behind the knee containing the popliteal vessels, the tibial and common fibular nerves and lymph nodes. Baker cysts, popliteal aneurysms and knee-dislocation vascular injury arise here.
 tags: [knee, vascular]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

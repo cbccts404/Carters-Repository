@@ -14,6 +14,7 @@ export const GET: APIRoute = async () => {
         id: `${s.id}#${i}`,
         entry: s.data.name,
         region: s.data.region,
+        systems: s.data.systems,
         highYield: s.data.highYield,
         url: structureUrl(s),
         front: await mdInline(c.front),

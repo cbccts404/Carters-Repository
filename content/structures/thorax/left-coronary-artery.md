@@ -7,6 +7,7 @@ taName: Arteria coronaria sinistra
 aka: [Left main coronary artery, LMCA]
 summary: Short trunk from the left aortic sinus that divides into the anterior interventricular (LAD) and circumflex arteries, supplying most of the left ventricle.
 tags: [heart, coronary, cardiology]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

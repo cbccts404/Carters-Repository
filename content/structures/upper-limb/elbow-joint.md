@@ -6,6 +6,7 @@ subregion: Elbow & cubital fossa
 taName: Articulatio cubiti
 summary: Hinge joint between the humerus, ulna and radius. It shares a capsule with the proximal radioulnar joint and is the site of common overuse and pediatric injuries.
 tags: [elbow]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

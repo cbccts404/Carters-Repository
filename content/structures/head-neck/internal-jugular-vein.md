@@ -7,6 +7,7 @@ taName: Vena jugularis interna
 aka: [IJ, IJV]
 summary: Main venous drainage of the brain, face and neck. It runs in the carotid sheath and is the source of the jugular venous pressure (JVP), a common central line site, and the vein thrombosed in Lemierre syndrome.
 tags: [neck, vascular, procedures]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

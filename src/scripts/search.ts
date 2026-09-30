@@ -12,6 +12,7 @@ export interface Doc {
   subregion: string;
   summary: string;
   tags: string;
+  systems: string;
   clinical: string;
   highYield: boolean;
   url: string;
@@ -27,7 +28,7 @@ export function getIndex() {
     const docs: Doc[] = await fetch(base + 'search-index.json').then((r) => r.json());
     const mini = new MiniSearch<Doc>({
       fields: ['name', 'aka', 'taName', 'tags', 'clinical', 'summary', 'subregion'],
-      storeFields: ['name', 'aka', 'type', 'typeLabel', 'region', 'regionName', 'summary', 'url', 'highYield'],
+      storeFields: ['name', 'aka', 'type', 'typeLabel', 'region', 'regionName', 'systems', 'summary', 'url', 'highYield'],
       searchOptions: {
         boost: { name: 6, aka: 4, taName: 2, tags: 2, clinical: 1.5 },
         prefix: true,

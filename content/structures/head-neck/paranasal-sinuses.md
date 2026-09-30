@@ -7,6 +7,7 @@ taName: Sinus paranasales
 aka: [Maxillary sinus, Frontal sinus, Ethmoid sinuses, Sphenoid sinus]
 summary: Four paired air-filled cavities — frontal, ethmoid, sphenoid and maxillary — draining into the nasal cavity. Acute sinusitis is usually viral; ethmoid and frontal infections can spread to the orbit and brain.
 tags: [nose, sinus, ent]
+systems: [eent, infectious]
 highYield: true
 status: draft
 anatomy:

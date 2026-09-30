@@ -6,6 +6,7 @@ subregion: Inguinal region
 taName: Funiculus spermaticus
 summary: Bundle of structures running between the deep inguinal ring and the testis. It carries the ductus deferens, testicular vessels and pampiniform plexus, and is involved in varicocele, torsion and inguinal hernia.
 tags: [inguinal, male-genital]
+systems: [genitourinary]
 highYield: true
 status: draft
 anatomy:

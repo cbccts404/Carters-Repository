@@ -7,6 +7,7 @@ taName: Ligamentum cruciatum anterius; Ligamentum cruciatum posterius
 aka: [ACL, PCL, Anterior cruciate ligament, Posterior cruciate ligament]
 summary: Crossed intra-articular ligaments of the knee that prevent the tibia sliding forward (ACL) or backward (PCL) on the femur. ACL tears from non-contact pivoting are among the most common serious sports injuries.
 tags: [knee, sports-medicine]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

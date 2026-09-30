@@ -7,6 +7,7 @@ taName: Nervi spinales
 aka: [Dorsal root, Ventral root, Dorsal ramus, Ventral ramus, Radiculopathy, Dorsal root ganglion]
 summary: The 31 pairs of mixed nerves formed from dorsal (sensory) and ventral (motor) roots. Knowing where each root exits and what it supplies lets you localize radiculopathy.
 tags: [spine, neuro, radiculopathy]
+systems: [neurologic, musculoskeletal]
 highYield: true
 status: draft
 anatomy:

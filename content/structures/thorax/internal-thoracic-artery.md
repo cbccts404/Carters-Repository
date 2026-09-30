@@ -7,6 +7,7 @@ taName: Arteria thoracica interna
 aka: [Internal mammary artery, IMA, LIMA/RIMA]
 summary: Branch of the subclavian artery that descends just lateral to the sternum. It supplies the anterior chest wall and breast and is the preferred conduit for coronary bypass (LIMA to LAD).
 tags: [thoracic-wall, cabg]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

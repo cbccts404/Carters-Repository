@@ -6,6 +6,7 @@ subregion: Arm
 taName: Arteria brachialis
 summary: Main artery of the arm, continuing from the axillary artery. It gives the profunda brachii, then divides in the cubital fossa into the radial and ulnar arteries; it's the site for blood pressure measurement.
 tags: [elbow]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

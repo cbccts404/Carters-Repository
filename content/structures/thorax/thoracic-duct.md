@@ -6,6 +6,7 @@ subregion: Mediastinum
 taName: Ductus thoracicus
 summary: Largest lymphatic vessel. It drains lymph from most of the body, ascends through the posterior mediastinum, and empties into the left venous angle. Injury causes chylothorax.
 tags: [mediastinum, lymphatic]
+systems: [hematologic]
 highYield: true
 status: draft
 anatomy:

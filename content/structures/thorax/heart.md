@@ -6,6 +6,7 @@ subregion: Heart & pericardium
 taName: Cor
 summary: Four-chambered muscular pump in the middle mediastinum. Knowing which chamber forms each surface and border is the key to exam findings, ECGs and chest X-rays.
 tags: [heart, cardiology]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

@@ -6,6 +6,7 @@ subregion: Oral & nasal cavities
 taName: Glandula submandibularis
 summary: Salivary gland under the body of the mandible that produces most resting saliva. It is the most common site of salivary stones because its duct runs uphill and its saliva is thick.
 tags: [salivary, oral]
+systems: [eent]
 highYield: false
 status: draft
 anatomy:

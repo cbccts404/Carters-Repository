@@ -6,6 +6,7 @@ subregion: Peritoneum
 taName: Cavitas peritonealis
 summary: Potential space between the parietal and visceral peritoneum. Its recesses are where fluid, blood and pus collect, which is the anatomic basis of the FAST exam.
 tags: [peritoneum, trauma, procedures]
+systems: [gastrointestinal]
 highYield: true
 status: draft
 anatomy:

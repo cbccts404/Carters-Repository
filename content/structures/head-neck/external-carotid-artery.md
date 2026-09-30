@@ -7,6 +7,7 @@ taName: Arteria carotis externa
 aka: [ECA]
 summary: Main artery of the face, scalp and neck outside the skull. It has eight branches (SALFOPSM) and ends in the parotid gland as the superficial temporal and maxillary arteries.
 tags: [neck, face, vascular]
+systems: [cardiovascular, eent]
 highYield: true
 status: draft
 anatomy:

@@ -6,6 +6,7 @@ subregion: Forearm
 taName: Nervus medianus
 summary: Formed by roots from the lateral and medial cords. It supplies most of the anterior forearm and the thenar muscles, and passes through the carpal tunnel.
 tags: [brachial-plexus, carpal-tunnel]
+systems: [neurologic, musculoskeletal]
 highYield: true
 status: draft
 anatomy:

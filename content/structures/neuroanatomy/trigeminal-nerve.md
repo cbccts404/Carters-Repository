@@ -7,6 +7,7 @@ taName: Nervus trigeminus
 aka: [CN V, Cranial nerve V, Ophthalmic nerve, Maxillary nerve, Mandibular nerve, V1, V2, V3, Trigeminal neuralgia]
 summary: Largest cranial nerve — sensation from the face, scalp, eye, nose and mouth in three divisions, plus motor supply to the muscles of mastication. Trigeminal neuralgia and shingles of V1 are the classic problems.
 tags: [cranial-nerves, face, pain]
+systems: [neurologic]
 highYield: true
 status: draft
 anatomy:

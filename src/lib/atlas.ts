@@ -5,7 +5,7 @@
  */
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { Marked } from 'marked';
-import { STRUCTURE_TYPES, type StructureType } from '../content.config';
+import { BODY_SYSTEMS, STRUCTURE_TYPES, type BodySystem, type StructureType } from '../content.config';
 import { diagrams } from '../diagrams/registry';
 
 export type Structure = CollectionEntry<'structures'>;
@@ -19,8 +19,27 @@ const BASE = import.meta.env.BASE_URL.endsWith('/')
 export const url = (path = '') => BASE + path.replace(/^\//, '');
 export const structureUrl = (s: Structure) => url(`${s.data.region}/${s.id}/`);
 export const regionUrl = (regionId: string) => url(`${regionId}/`);
+export const systemUrl = (system: BodySystem) => url(`systems/${system}/`);
 
 // ---------- labels ----------
+export { BODY_SYSTEMS, type BodySystem };
+/** PANCE blueprint organ systems: [full name, short badge label] */
+export const SYSTEM_LABELS: Record<BodySystem, [name: string, short: string]> = {
+  cardiovascular: ['Cardiovascular', 'Cardio'],
+  dermatologic: ['Dermatologic', 'Derm'],
+  endocrine: ['Endocrine', 'Endo'],
+  eent: ['Eyes, ears, nose & throat', 'EENT'],
+  gastrointestinal: ['Gastrointestinal / nutritional', 'GI'],
+  genitourinary: ['Genitourinary', 'GU'],
+  hematologic: ['Hematologic', 'Heme'],
+  infectious: ['Infectious diseases', 'ID'],
+  musculoskeletal: ['Musculoskeletal', 'MSK'],
+  neurologic: ['Neurologic', 'Neuro'],
+  psychiatric: ['Psychiatry / behavioral', 'Psych'],
+  pulmonary: ['Pulmonary', 'Pulm'],
+  renal: ['Renal', 'Renal'],
+  reproductive: ['Reproductive', 'Repro'],
+};
 export const TYPE_LABELS: Record<StructureType, [singular: string, plural: string]> = {
   bone: ['Bone', 'Bones'],
   muscle: ['Muscle', 'Muscles'],

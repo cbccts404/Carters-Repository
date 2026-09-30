@@ -6,6 +6,7 @@ subregion: Mediastinum
 taName: Nervus phrenicus
 summary: Nerve from C3–C5 that descends through the neck and mediastinum. It is the sole motor supply of the diaphragm and carries sensation from the pericardium, mediastinal pleura and central diaphragm.
 tags: [respiration, mediastinum]
+systems: [neurologic, pulmonary]
 highYield: true
 status: draft
 anatomy:

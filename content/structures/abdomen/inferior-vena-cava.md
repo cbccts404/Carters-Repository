@@ -7,6 +7,7 @@ taName: Vena cava inferior
 aka: [IVC]
 summary: Largest vein of the body, returning blood from below the diaphragm to the right atrium. It lies to the right of the aorta, passes through the diaphragm at T8, and is compressed by the gravid uterus in the supine position.
 tags: [vascular, posterior-abdominal-wall]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

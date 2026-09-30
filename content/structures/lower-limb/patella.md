@@ -7,6 +7,7 @@ taName: Patella
 aka: [Kneecap]
 summary: The largest sesamoid bone, embedded in the quadriceps tendon in front of the knee. It increases the leverage of the quadriceps and is involved in patellofemoral pain, dislocation and fractures.
 tags: [knee, sports-medicine]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

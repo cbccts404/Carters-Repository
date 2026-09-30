@@ -7,6 +7,7 @@ taName: Nervus laryngeus recurrens
 aka: [Inferior laryngeal nerve, RLN]
 summary: Branch of the vagus that loops under the subclavian artery on the right and the aortic arch on the left, then climbs in the tracheoesophageal groove to supply the larynx. Injury causes hoarseness, a classic thyroidectomy complication.
 tags: [larynx, vagus, thyroid-surgery]
+systems: [eent, neurologic]
 highYield: true
 status: draft
 anatomy:

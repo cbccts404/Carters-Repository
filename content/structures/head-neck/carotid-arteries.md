@@ -7,6 +7,7 @@ taName: Arteria carotis communis; Arteria carotis interna
 aka: [Carotid artery, Common carotid artery, Internal carotid artery, ICA, CCA]
 summary: Main arteries of the head. Each common carotid divides at about C4 into external and internal carotids, and atherosclerosis at the bifurcation is a major cause of stroke and TIA.
 tags: [neck, stroke, vascular]
+systems: [cardiovascular, neurologic]
 highYield: true
 status: draft
 anatomy:

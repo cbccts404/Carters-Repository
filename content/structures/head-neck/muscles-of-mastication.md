@@ -7,6 +7,7 @@ taName: Musculi masticatorii
 aka: [Masseter, Temporalis, Medial pterygoid, Lateral pterygoid]
 summary: Four muscles derived from the first pharyngeal arch and supplied by the mandibular nerve (V3) — masseter, temporalis and medial pterygoid close the jaw; lateral pterygoid opens and protrudes it.
 tags: [face, trigeminal]
+systems: [musculoskeletal, eent]
 highYield: true
 status: draft
 anatomy:

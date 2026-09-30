@@ -6,6 +6,7 @@ subregion: Thigh
 taName: Nervus obturatorius
 summary: Lumbar plexus branch (L2–L4) that runs along the lateral pelvic wall through the obturator canal to supply the hip adductors and a patch of medial thigh skin. It is injured in pelvic surgery and childbirth.
 tags: [thigh, lumbar-plexus, nerve-injury]
+systems: [neurologic, musculoskeletal]
 highYield: false
 status: draft
 anatomy:

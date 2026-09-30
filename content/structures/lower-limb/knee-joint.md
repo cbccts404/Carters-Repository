@@ -6,6 +6,7 @@ subregion: Knee & popliteal fossa
 taName: Articulatio genus
 summary: The largest synovial joint — a modified hinge between the femur, tibia and patella, stabilized mainly by ligaments and the menisci. Ligament and meniscal injuries, effusions and osteoarthritis make it one of the most examined joints.
 tags: [knee, sports-medicine, arthritis]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

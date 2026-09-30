@@ -7,6 +7,7 @@ taName: Nodi lymphoidei cervicales
 aka: [Neck lymph nodes, Deep cervical nodes, Virchow node, Jugulodigastric node]
 summary: Superficial and deep nodes of the head and neck, grouped clinically into levels I–VI. Lymphadenopathy is common, and a persistent neck mass in an adult is cancer until proven otherwise.
 tags: [lymphatic, neck, oncology]
+systems: [hematologic, eent]
 highYield: true
 status: draft
 anatomy:

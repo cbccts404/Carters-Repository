@@ -7,6 +7,7 @@ taName: Valva atrioventricularis dextra
 aka: [Right atrioventricular valve]
 summary: Three-leaflet valve between the right atrium and right ventricle. Tricuspid regurgitation, including from IV drug–associated endocarditis, is its key clinical problem.
 tags: [heart, valves, murmurs]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

@@ -6,6 +6,7 @@ subregion: Oral & nasal cavities
 taName: Lingua
 summary: Muscular organ of taste, speech and swallowing. Its mixed embryologic origin gives it four different nerve supplies, and hypoglossal lesions make it deviate toward the weak side.
 tags: [oral, cranial-nerves]
+systems: [eent]
 highYield: true
 status: draft
 anatomy:

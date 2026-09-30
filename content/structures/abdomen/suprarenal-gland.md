@@ -7,6 +7,7 @@ taName: Glandula suprarenalis
 aka: [Adrenal gland]
 summary: Paired retroperitoneal endocrine glands on the superomedial poles of the kidneys. The cortex makes steroids and the medulla makes catecholamines; pheochromocytoma, Cushing, Conn and Addison are the classic disorders.
 tags: [endocrine, retroperitoneum]
+systems: [endocrine]
 highYield: true
 status: draft
 anatomy:

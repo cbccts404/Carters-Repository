@@ -6,6 +6,7 @@ subregion: Inguinal region
 taName: Arteria epigastrica inferior
 summary: Branch of the external iliac artery that ascends into the rectus sheath. It's the landmark separating indirect from direct inguinal hernias and must be avoided during paracentesis and laparoscopic port placement.
 tags: [abdominal-wall, hernia, procedures]
+systems: [cardiovascular, gastrointestinal]
 highYield: true
 status: draft
 anatomy:

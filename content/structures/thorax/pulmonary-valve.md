@@ -7,6 +7,7 @@ taName: Valva trunci pulmonalis
 aka: [Pulmonic valve]
 summary: Three-cusped semilunar valve between the right ventricle and the pulmonary trunk. It is the most anterior valve, and the physiologic splitting of S2 is heard best over it.
 tags: [heart, valves, murmurs]
+systems: [cardiovascular]
 highYield: false
 status: draft
 anatomy:

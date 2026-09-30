@@ -7,6 +7,7 @@ taName: Orbita
 aka: [Eye socket]
 summary: Pyramidal bony cavity holding the eyeball, extraocular muscles, nerves and vessels. Its thin floor and medial wall break in blowout fractures, and infection behind the orbital septum is an emergency.
 tags: [orbit, eye, trauma, emergency]
+systems: [eent]
 highYield: true
 status: draft
 anatomy:

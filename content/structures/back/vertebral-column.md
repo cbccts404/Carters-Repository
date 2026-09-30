@@ -7,6 +7,7 @@ taName: Columna vertebralis
 aka: [Spine, Spinal column]
 summary: Column of 33 vertebrae (7 cervical, 12 thoracic, 5 lumbar, 5 fused sacral, about 4 coccygeal) with four curvatures. It supports the trunk, protects the spinal cord, and is the site of scoliosis, kyphosis and inflammatory back disease.
 tags: [spine, landmarks]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

@@ -6,6 +6,7 @@ subregion: Thoracic wall
 taName: Spatium intercostale
 summary: Space between adjacent ribs containing three muscle layers and the intercostal neurovascular bundle, which runs along the lower border of the rib above.
 tags: [thoracic-wall, procedures]
+systems: [pulmonary, musculoskeletal]
 highYield: true
 status: draft
 anatomy:

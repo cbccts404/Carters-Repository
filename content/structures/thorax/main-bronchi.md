@@ -7,6 +7,7 @@ taName: Bronchi principales
 aka: [Primary bronchi, Right main bronchus, Left main bronchus]
 summary: The two airways arising at the carina. The right main bronchus is wider, shorter and more vertical, so foreign bodies and aspirate usually enter the right lung.
 tags: [airway]
+systems: [pulmonary]
 highYield: true
 status: draft
 anatomy:

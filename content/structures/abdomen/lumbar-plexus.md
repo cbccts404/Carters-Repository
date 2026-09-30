@@ -6,6 +6,7 @@ subregion: Posterior abdominal wall
 taName: Plexus lumbalis
 summary: Nerve network formed within psoas major from the anterior rami of L1–L4. It supplies the lower abdominal wall, groin and anterior and medial thigh, and its branches are injured in hernia repair and by tight clothing.
 tags: [posterior-abdominal-wall, nerves]
+systems: [neurologic]
 highYield: false
 status: draft
 anatomy:

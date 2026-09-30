@@ -6,6 +6,7 @@ subregion: Pectoral & scapular region
 taName: Musculus subscapularis
 summary: Large rotator cuff muscle on the costal surface of the scapula. It is the main medial rotator of the arm and the only cuff muscle inserting on the lesser tubercle.
 tags: [rotator-cuff, shoulder]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

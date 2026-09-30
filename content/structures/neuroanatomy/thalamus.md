@@ -7,6 +7,7 @@ taName: Thalamus
 aka: [Diencephalon, VPL, VPM, Lateral geniculate nucleus, Medial geniculate nucleus, Thalamic pain syndrome]
 summary: Paired relay station of the diencephalon. Almost all sensory information (except smell) and motor loops pass through it to the cortex; thalamic strokes cause contralateral sensory loss and sometimes severe pain.
 tags: [cerebrum, sensation, stroke]
+systems: [neurologic]
 highYield: true
 status: draft
 anatomy:

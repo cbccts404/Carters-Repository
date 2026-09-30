@@ -7,6 +7,7 @@ taName: Tractus corticospinalis
 aka: [Pyramidal tract, Upper motor neuron, UMN, Lateral corticospinal tract, Babinski sign]
 summary: Main voluntary motor pathway from the motor cortex to the spinal cord. It crosses in the lower medulla; damage causes upper motor neuron signs — weakness, spasticity, hyperreflexia and an extensor plantar response.
 tags: [spinal-tracts, motor, stroke]
+systems: [neurologic]
 highYield: true
 status: draft
 anatomy:

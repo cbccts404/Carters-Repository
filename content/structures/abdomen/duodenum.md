@@ -6,6 +6,7 @@ subregion: GI viscera
 taName: Duodenum
 summary: C-shaped first part of the small intestine wrapped around the head of the pancreas. It receives bile and pancreatic juice at the major duodenal papilla and is the most common site of peptic ulcers.
 tags: [gi, foregut, midgut]
+systems: [gastrointestinal]
 highYield: true
 status: draft
 anatomy:

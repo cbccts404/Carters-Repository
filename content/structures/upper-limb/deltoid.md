@@ -6,6 +6,7 @@ subregion: Pectoral & scapular region
 taName: Musculus deltoideus
 summary: Triangular muscle that forms the rounded contour of the shoulder. It is the main abductor of the arm beyond the first ~15° and is supplied by the axillary nerve.
 tags: [shoulder]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

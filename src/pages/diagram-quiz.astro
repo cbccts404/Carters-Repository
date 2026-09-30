@@ -1,0 +1,333 @@
+---
+import Base from '../layouts/Base.astro';
+import Diagram from '../components/Diagram.astro';
+import { diagrams } from '../diagrams/registry';
+import { loadAtlas, url } from '../lib/atlas';
+
+const atlas = await loadAtlas();
+// Only diagrams that are actually used by an entry, in region order.
+const used = new Set(atlas.structures.flatMap((s) => s.data.diagrams));
+const regionOrder = atlas.regions.map((r) => r.id);
+const ids = Object.keys(diagrams)
+  .filter((id) => used.has(id))
+  .sort((a, b) => regionOrder.indexOf(diagrams[a].region) - regionOrder.indexOf(diagrams[b].region));
+const regionName = new Map(atlas.regions.map((r) => [r.id, r.data.name]));
+---
+
+<Base title="Diagram quiz" description="Identify the hidden label on anatomy diagrams.">
+  <p class="crumbs"><a href={url()}>Home</a> / <a href={url('quiz/')}>Quiz</a> / Diagram quiz</p>
+  <h1>Diagram quiz</h1>
+
+  <noscript><p class="note">The diagram quiz needs JavaScript.</p></noscript>
+
+  <section id="setup">
+    <p class="muted">
+      One label on a diagram is hidden and highlighted — pick the structure it names. Wrong answers come from the same
+      diagram, so they're plausible.
+    </p>
+    <form id="dq-form" class="quiz-setup">
+      <fieldset>
+        <legend>Diagrams</legend>
+        <div class="region-picks" id="dq-picks">
+          {
+            ids.map((id) => (
+              <label class="pick">
+                <input type="checkbox" name="diagram" value={id} checked />
+                <span>{diagrams[id].title}</span>
+                <span class="muted small" data-count={id} />
+              </label>
+            ))
+          }
+        </div>
+        <p class="small">
+          <button type="button" class="linkish" data-all="1">Select all</button>
+          <span class="muted" aria-hidden="true">&nbsp;·&nbsp;</span>
+          <button type="button" class="linkish" data-all="0">Clear</button>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Questions</legend>
+        <label class="pick">
+          <span>How many</span>
+          <select name="n">
+            <option value="10">10</option>
+            <option value="20" selected>20</option>
+            <option value="0">All</option>
+          </select>
+        </label>
+      </fieldset>
+      <p class="btn-row" style="align-items:center">
+        <button class="btn primary" type="submit" id="start-btn" disabled>Start</button>
+        <span class="muted small" id="avail" aria-live="polite"></span>
+      </p>
+    </form>
+  </section>
+
+  <section id="run" hidden>
+    <div class="quiz-bar">
+      <span id="run-pos"></span>
+      <span id="run-score" class="muted"></span>
+      <button type="button" class="linkish" id="end-btn">End quiz</button>
+    </div>
+    <div class="meter" aria-hidden="true"><span id="run-meter"></span></div>
+    <p class="dq-prompt"><span class="muted small" id="dq-title"></span><br />Which structure is at the <b>highlighted</b> label?</p>
+
+    <div class="dq-stage" data-no-hide-labels>
+      {
+        ids.map((id) => (
+          <div class="dq-diagram" data-id={id} data-region={regionName.get(diagrams[id].region)} hidden>
+            <Diagram id={id} />
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="q js dq-q">
+      <ol id="dq-choices"></ol>
+      <div class="explain" id="dq-explain" hidden>
+        <p><strong class="verdict" id="dq-verdict"></strong> <span class="muted" id="dq-correct"></span></p>
+        <p class="small"><a id="dq-link" href="#">Open the entry →</a></p>
+        <button type="button" class="btn primary" id="dq-next">Next</button>
+      </div>
+    </div>
+    <p class="small muted">Keys: 1–4 to answer · Enter for next.</p>
+  </section>
+
+  <section id="done" hidden>
+    <h2 id="done-score"></h2>
+    <div id="done-missed"></div>
+    <p class="btn-row">
+      <button type="button" class="btn primary" id="retry-btn">Retry the ones I missed</button>
+      <button type="button" class="btn" id="new-btn">New diagram quiz</button>
+    </p>
+  </section>
+</Base>
+
+<script>
+  interface Item {
+    diagram: string;
+    title: string;
+    text: string; // the answer
+    href: string;
+    nodes: SVGTextElement[]; // every label on the diagram with this text (all get masked)
+  }
+
+  const SVG_NS = 'http://www.w3.org/2000/svg';
+  const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
+  const form = $<HTMLFormElement>('dq-form');
+  const stage = document.querySelector<HTMLElement>('.dq-stage')!;
+  // tidy a label: collapse spaces and drop a leading/trailing pointer arrow ("← Cauda equina")
+  const norm = (s: string) => s.replace(/\s+/g, ' ').trim().replace(/^[←→↑↓]\s*|\s*[←→↑↓*♀♂]+$/g, '');
+  const LEVEL = /^[CTLS]\d/; // spinal-level labels ("C5–C6") only compete with each other
+
+  // ----- build the question pool from the rendered diagrams -----
+  const byDiagram = new Map<string, Item[]>();
+  for (const wrap of stage.querySelectorAll<HTMLElement>('.dq-diagram')) {
+    const id = wrap.dataset.id!;
+    const title = wrap.querySelector('figcaption strong')?.textContent?.replace(/\.$/, '') ?? id;
+    const links = [...wrap.querySelectorAll<SVGAElement>('a.lbl-link')];
+    const items = new Map<string, Item>();
+    for (const a of links) {
+      const t = a.querySelector<SVGTextElement>('text.lbl');
+      if (!t) continue;
+      const text = norm(t.textContent ?? '');
+      // skip fragments of multi-line labels, very short tokens, and note-style labels (arrows, ≈, slashes)
+      if (text.length < 3 || /[,(]$/.test(text) || /^[(a-z]/.test(text) || /[·↑↓←→=≈/]/.test(text)) continue;
+      const href = a.getAttribute('href') ?? '#';
+      // a label split over two lines with the same link: skip, the halves aren't meaningful alone
+      const y = Number(t.getAttribute('y'));
+      const x = Number(t.getAttribute('x'));
+      const split = links.some((b) => {
+        if (b === a || b.getAttribute('href') !== href) return false;
+        const u = b.querySelector('text');
+        return u && Math.abs(Number(u.getAttribute('x')) - x) < 2 && Math.abs(Number(u.getAttribute('y')) - y) <= 16;
+      });
+      if (split) continue;
+      const it = items.get(text) ?? { diagram: id, title, text, href, nodes: [] };
+      it.nodes.push(t);
+      items.set(text, it);
+    }
+    // also mask identical unlinked text so the answer isn't visible elsewhere
+    for (const t of wrap.querySelectorAll<SVGTextElement>('text.lbl')) {
+      const it = items.get(norm(t.textContent ?? ''));
+      if (it && !it.nodes.includes(t)) it.nodes.push(t);
+    }
+    const list = [...items.values()];
+    if (list.length >= 4) byDiagram.set(id, list);
+    const count = form.querySelector<HTMLElement>(`[data-count="${id}"]`);
+    if (count) count.textContent = String(list.length >= 4 ? list.length : 0);
+    if (list.length < 4) form.querySelector<HTMLInputElement>(`input[value="${id}"]`)!.closest('label')!.hidden = true;
+  }
+
+  function shuffle<T>(a: T[]) {
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+  const chosen = () => new FormData(form).getAll('diagram') as string[];
+  const pool = () => chosen().flatMap((id) => byDiagram.get(id) ?? []);
+
+  function updateAvailable() {
+    const n = pool().length;
+    $('avail').textContent = n ? `${n} labels available` : 'Pick at least one diagram.';
+    $<HTMLButtonElement>('start-btn').disabled = n === 0;
+  }
+
+  // ----- run -----
+  let queue: Item[] = [];
+  let pos = 0;
+  let answered = false;
+  let choices: Item[] = [];
+  let results: { item: Item; ok: boolean }[] = [];
+  let masks: SVGRectElement[] = [];
+
+  function show(section: 'setup' | 'run' | 'done') {
+    for (const s of ['setup', 'run', 'done']) $(s).hidden = s !== section;
+    window.scrollTo({ top: 0 });
+  }
+
+  function clearMasks() {
+    masks.forEach((m) => m.remove());
+    masks = [];
+    stage.querySelectorAll('.dq-hidden').forEach((t) => t.classList.remove('dq-hidden'));
+  }
+
+  function start(items: Item[]) {
+    queue = items;
+    pos = 0;
+    results = [];
+    show('run');
+    render();
+  }
+
+  function render() {
+    clearMasks();
+    const it = queue[pos];
+    answered = false;
+    for (const w of stage.querySelectorAll<HTMLElement>('.dq-diagram')) w.hidden = w.dataset.id !== it.diagram;
+    $('dq-title').textContent = it.title;
+    $('run-pos').textContent = `Label ${pos + 1} of ${queue.length}`;
+    const ok = results.filter((r) => r.ok).length;
+    $('run-score').textContent = results.length ? `${ok} / ${results.length} correct` : '';
+    $('run-meter').style.width = `${Math.round((100 * pos) / queue.length)}%`;
+
+    // hide the answer and draw a highlighted box where it was
+    for (const t of it.nodes) {
+      t.classList.add('dq-hidden');
+      const bb = t.getBBox();
+      const r = document.createElementNS(SVG_NS, 'rect');
+      r.setAttribute('x', String(bb.x - 4));
+      r.setAttribute('y', String(bb.y - 3));
+      r.setAttribute('width', String(bb.width + 8));
+      r.setAttribute('height', String(bb.height + 6));
+      r.setAttribute('rx', '4');
+      r.setAttribute('class', 'dq-mask');
+      t.parentNode!.insertBefore(r, t);
+      masks.push(r);
+    }
+    masks[0]?.scrollIntoView({ block: 'nearest', inline: 'center' });
+
+    // three distractors from the same diagram, same kind (spinal level vs structure name)
+    const others = (byDiagram.get(it.diagram) ?? []).filter((x) => x.text !== it.text);
+    const same = others.filter((x) => LEVEL.test(x.text) === LEVEL.test(it.text));
+    const rest = others.filter((x) => !same.includes(x));
+    choices = shuffle([it, ...[...shuffle(same), ...shuffle(rest)].slice(0, 3)]);
+    $('dq-choices').innerHTML = choices
+      .map((c, i) => `<li><button class="choice" type="button" data-i="${i}"><span class="letter">${i + 1}</span> <span></span></button></li>`)
+      .join('');
+    $('dq-choices').querySelectorAll('.choice span:last-child').forEach((s, i) => (s.textContent = choices[i].text));
+    for (const b of $('dq-choices').querySelectorAll<HTMLButtonElement>('.choice')) b.addEventListener('click', () => answer(Number(b.dataset.i)));
+    $('dq-explain').hidden = true;
+  }
+
+  function answer(i: number) {
+    if (answered || i >= choices.length) return;
+    answered = true;
+    const it = queue[pos];
+    const ok = choices[i] === it;
+    results.push({ item: it, ok });
+    const buttons = [...$('dq-choices').querySelectorAll<HTMLButtonElement>('.choice')];
+    buttons.forEach((b) => (b.disabled = true));
+    buttons[choices.indexOf(it)].classList.add('correct');
+    if (!ok) buttons[i].classList.add('wrong');
+    clearMasks();
+    for (const t of it.nodes) t.classList.add('dq-revealed');
+    $('dq-verdict').textContent = ok ? '✓ Correct.' : '✗ Not quite.';
+    $('dq-correct').textContent = ` It's ${it.text}.`;
+    $<HTMLAnchorElement>('dq-link').href = it.href;
+    $('dq-link').textContent = `Read more about ${it.text} →`;
+    $('dq-next').textContent = pos + 1 < queue.length ? 'Next' : 'See results';
+    $('dq-explain').hidden = false;
+    $('run-score').textContent = `${results.filter((r) => r.ok).length} / ${results.length} correct`;
+    $('dq-next').focus({ preventScroll: true });
+  }
+
+  function next() {
+    if (!answered) return;
+    queue[pos].nodes.forEach((t) => t.classList.remove('dq-revealed'));
+    pos++;
+    if (pos < queue.length) render();
+    else finish();
+  }
+
+  function finish() {
+    clearMasks();
+    stage.querySelectorAll('.dq-revealed').forEach((t) => t.classList.remove('dq-revealed'));
+    const ok = results.filter((r) => r.ok).length;
+    $('done-score').textContent = results.length
+      ? `${ok} / ${results.length} correct (${Math.round((100 * ok) / results.length)}%)`
+      : 'No labels answered';
+    const missed = results.filter((r) => !r.ok);
+    $('done-missed').innerHTML = missed.length ? '<h3>Review these</h3><ul class="plain"></ul>' : results.length ? '<p>No misses — nice work.</p>' : '';
+    const ul = $('done-missed').querySelector('ul');
+    for (const r of missed) {
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = r.item.href;
+      a.textContent = r.item.text;
+      const note = document.createElement('span');
+      note.className = 'muted small';
+      note.textContent = ` · ${r.item.title}`;
+      li.append(a, note);
+      ul?.append(li);
+    }
+    $('retry-btn').hidden = missed.length === 0;
+    show('done');
+  }
+
+  // ----- wiring -----
+  // inside the quiz, labels are not links until the question is answered
+  stage.addEventListener('click', (e) => {
+    if (!answered && (e.target as Element).closest('a')) e.preventDefault();
+  });
+  form.addEventListener('change', updateAvailable);
+  for (const b of form.querySelectorAll<HTMLButtonElement>('[data-all]')) {
+    b.addEventListener('click', () => {
+      form.querySelectorAll<HTMLInputElement>('input[name=diagram]').forEach((i) => (i.checked = b.dataset.all === '1'));
+      updateAvailable();
+    });
+  }
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const n = Number(new FormData(form).get('n'));
+    const items = shuffle(pool());
+    if (items.length) start(n ? items.slice(0, n) : items);
+  });
+  $('dq-next').addEventListener('click', next);
+  $('end-btn').addEventListener('click', finish);
+  $('retry-btn').addEventListener('click', () => start(shuffle(results.filter((r) => !r.ok).map((r) => r.item))));
+  $('new-btn').addEventListener('click', () => show('setup'));
+  document.addEventListener('keydown', (e) => {
+    if ($('run').hidden || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (!answered && /^[1-4]$/.test(e.key)) {
+      e.preventDefault();
+      answer(Number(e.key) - 1);
+    } else if (answered && e.key === 'Enter' && document.activeElement?.id !== 'dq-next') {
+      e.preventDefault();
+      next();
+    }
+  });
+  updateAvailable();
+</script>

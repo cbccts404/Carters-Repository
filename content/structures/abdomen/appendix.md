@@ -7,6 +7,7 @@ taName: Appendix vermiformis
 aka: [Appendix]
 summary: Blind-ending tube arising from the cecum where the teniae coli converge. Acute appendicitis is the most common abdominal surgical emergency.
 tags: [gi, midgut]
+systems: [gastrointestinal]
 highYield: true
 status: draft
 anatomy:

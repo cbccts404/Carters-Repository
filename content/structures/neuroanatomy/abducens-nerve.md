@@ -7,6 +7,7 @@ taName: Nervus abducens
 aka: [CN VI, Cranial nerve VI, Sixth nerve palsy]
 summary: Supplies the lateral rectus. Its long course along the clivus and through the cavernous sinus makes it the cranial nerve most often affected by raised intracranial pressure, causing horizontal diplopia.
 tags: [cranial-nerves, eye]
+systems: [neurologic, eent]
 highYield: true
 status: draft
 anatomy:

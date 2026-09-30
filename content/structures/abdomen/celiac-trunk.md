@@ -7,6 +7,7 @@ taName: Truncus coeliacus
 aka: [Celiac axis]
 summary: Short anterior branch of the abdominal aorta at T12 and the artery of the foregut. It divides into the left gastric, splenic and common hepatic arteries.
 tags: [vascular, foregut]
+systems: [cardiovascular, gastrointestinal]
 highYield: true
 status: draft
 anatomy:

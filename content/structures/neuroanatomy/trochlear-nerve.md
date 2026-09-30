@@ -7,6 +7,7 @@ taName: Nervus trochlearis
 aka: [CN IV, Cranial nerve IV, Fourth nerve palsy]
 summary: Thinnest cranial nerve and the only one to exit the back of the brainstem. It supplies the superior oblique; a palsy causes vertical diplopia worse on looking down and a compensatory head tilt away from the affected side.
 tags: [cranial-nerves, eye]
+systems: [neurologic, eent]
 highYield: true
 status: draft
 anatomy:

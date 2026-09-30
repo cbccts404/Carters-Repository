@@ -7,6 +7,7 @@ taName: Musculus erector spinae
 aka: [Iliocostalis, Longissimus, Spinalis, Paraspinal muscles]
 summary: Main extensor of the vertebral column, running in three columns beside the spine. It is supplied by the dorsal rami of spinal nerves and is the usual site of mechanical low back strain.
 tags: [back, low-back-pain]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

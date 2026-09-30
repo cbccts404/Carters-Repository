@@ -28,6 +28,13 @@ export const STRUCTURE_TYPES = [
 ] as const;
 export type StructureType = (typeof STRUCTURE_TYPES)[number];
 
+/** Organ-system categories of the NCCPA PANCE content blueprint, used to study by system. */
+export const BODY_SYSTEMS = [
+  'cardiovascular', 'dermatologic', 'endocrine', 'eent', 'gastrointestinal', 'genitourinary', 'hematologic',
+  'infectious', 'musculoskeletal', 'neurologic', 'psychiatric', 'pulmonary', 'renal', 'reproductive',
+] as const;
+export type BodySystem = (typeof BODY_SYSTEMS)[number];
+
 // ---------- type-specific "Core anatomy" blocks ----------
 // strictObject = unknown keys are an error, so a misspelled field name fails
 // the build instead of silently disappearing.
@@ -176,6 +183,7 @@ const baseFields = {
   aka: z.array(z.string()).default([]),       // synonyms / eponyms (searchable)
   summary: z.string(),                        // one-line description
   tags: z.array(z.string()).default([]),
+  systems: z.array(z.enum(BODY_SYSTEMS)).min(1, 'assign at least one PANCE body system'),
   highYield: z.boolean().default(false),
   status: z.enum(['stub', 'draft', 'reviewed']).default('draft'),
   netterPlate: z.string().optional(),         // for YOUR reference; fill in per your edition
@@ -243,4 +251,41 @@ const images = defineCollection({
   }),
 });
 
-export const collections = { structures, regions, images };
+// Comparison tables (content/tables/*.yaml): cells are Markdown with [[links]].
+const tables = defineCollection({
+  loader: glob({ pattern: '**/[^_]*.yaml', base: './content/tables' }),
+  schema: z
+    .strictObject({
+      title: z.string(),
+      region: id.optional(),
+      summary: z.string(),
+      columns: z.array(z.string()).min(2),
+      rows: z.array(z.array(z.string())).min(1),
+      notes: z.array(z.string()).default([]),
+    })
+    .refine((t) => t.rows.every((r) => r.length === t.columns.length), {
+      message: 'every row needs one cell per column',
+      path: ['rows'],
+    }),
+});
+
+// Lesion localizer (content/localizer/*.yaml). The page checks that every finding a lesion names exists.
+const findings = defineCollection({
+  loader: file('./content/localizer/findings.yaml'),
+  schema: z.strictObject({ id, group: z.string(), label: z.string() }),
+});
+
+const lesions = defineCollection({
+  loader: file('./content/localizer/lesions.yaml'),
+  schema: z.strictObject({
+    id,
+    name: z.string(),
+    site: z.string(),
+    findings: z.array(id).min(1),   // expected findings (ids from findings.yaml)
+    against: z.array(id).default([]), // findings that argue against this site
+    entries: z.array(id).default([]), // atlas entries to study
+    why: z.string(),                // Markdown; may use [[links]]
+  }),
+});
+
+export const collections = { structures, regions, images, tables, findings, lesions };

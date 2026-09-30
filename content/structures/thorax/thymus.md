@@ -6,6 +6,7 @@ subregion: Mediastinum
 taName: Thymus
 summary: Primary lymphoid organ in the anterior and superior mediastinum where T cells mature. It is large in children, involutes after puberty, and thymoma is associated with myasthenia gravis.
 tags: [mediastinum, immunology]
+systems: [hematologic]
 highYield: true
 status: draft
 anatomy:

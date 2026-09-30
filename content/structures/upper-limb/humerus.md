@@ -6,6 +6,7 @@ subregion: Arm
 taName: Humerus
 summary: Long bone of the arm. It articulates with the scapula at the shoulder and with the radius and ulna at the elbow, and four major nerves lie against it at predictable fracture sites.
 tags: [shoulder, elbow]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

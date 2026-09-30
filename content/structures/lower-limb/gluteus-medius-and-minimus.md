@@ -7,6 +7,7 @@ taName: Musculus gluteus medius; Musculus gluteus minimus
 aka: [Hip abductors]
 summary: Fan-shaped hip abductors that keep the pelvis level when standing on one leg. Weakness or superior gluteal nerve injury produces the Trendelenburg sign; their tendons cause lateral hip pain.
 tags: [gluteal, hip, gait]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

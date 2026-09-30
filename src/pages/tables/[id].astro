@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { md, mdInline, url } from '../../lib/atlas';
+
+export async function getStaticPaths() {
+  return (await getCollection('tables')).map((t) => ({ params: { id: t.id }, props: { t } }));
+}
+const { t } = Astro.props;
+const d = t.data;
+const rows = await Promise.all(d.rows.map((r) => Promise.all(r.map((c) => mdInline(c)))));
+const notes = await Promise.all(d.notes.map((n) => md(n)));
+---
+
+<Base title={d.title} description={d.summary}>
+  <p class="crumbs"><a href={url()}>Home</a> / <a href={url('tables/')}>Comparison tables</a> / {d.title}</p>
+  <h1>{d.title}</h1>
+  <p class="muted">{d.summary}</p>
+  <table class="cmp">
+    <thead>
+      <tr>{d.columns.map((c) => <th scope="col">{c}</th>)}</tr>
+    </thead>
+    <tbody>
+      {
+        rows.map((r) => (
+          <tr>
+            {r.map((c, i) =>
+              i === 0 ? (
+                <th scope="row" data-label={d.columns[i]} set:html={c} />
+              ) : (
+                <td data-label={d.columns[i]} set:html={c} />
+              ),
+            )}
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+  {notes.length > 0 && <div class="cmp-notes">{notes.map((n) => <Fragment set:html={n} />)}</div>}
+</Base>

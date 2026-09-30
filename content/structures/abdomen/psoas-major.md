@@ -6,6 +6,7 @@ subregion: Posterior abdominal wall
 taName: Musculus psoas major
 summary: Long muscle beside the lumbar spine that joins iliacus to flex the hip. The lumbar plexus forms within it, and the psoas sign reflects inflammation of structures lying on it.
 tags: [posterior-abdominal-wall, hip]
+systems: [musculoskeletal]
 highYield: false
 status: draft
 anatomy:

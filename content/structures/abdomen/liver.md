@@ -6,6 +6,7 @@ subregion: Accessory organs
 taName: Hepar
 summary: Largest gland in the body, in the right upper quadrant. It has a dual blood supply (portal vein and hepatic artery) and is divided into eight functional segments; cirrhosis and portal hypertension are its central clinical problems.
 tags: [gi, foregut, hepatobiliary]
+systems: [gastrointestinal]
 highYield: true
 status: draft
 anatomy:

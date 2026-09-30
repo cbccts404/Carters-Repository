@@ -7,6 +7,7 @@ taName: Fossa ischioanalis
 aka: [Ischiorectal fossa]
 summary: Paired fat-filled wedge-shaped spaces on either side of the anal canal. The pudendal canal lies in their lateral wall, and anorectal abscesses spread through them, sometimes in a horseshoe pattern.
 tags: [perineum, abscess]
+systems: [gastrointestinal]
 highYield: false
 status: draft
 anatomy:

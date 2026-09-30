@@ -7,6 +7,7 @@ taName: Uterus
 aka: [Womb]
 summary: Thick-walled muscular organ between the bladder and rectum in which the embryo implants and develops. Fibroids, endometrial cancer, cervical cancer and postpartum hemorrhage are its key clinical problems.
 tags: [female, obstetrics, gynecology, oncology]
+systems: [reproductive]
 highYield: true
 status: draft
 anatomy:

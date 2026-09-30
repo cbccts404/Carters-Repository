@@ -7,6 +7,7 @@ taName: Trigonum inguinale
 aka: [Hesselbach triangle]
 summary: Area of the lower anterior abdominal wall, seen from inside, where direct inguinal hernias push through a weak transversalis fascia.
 tags: [inguinal, hernia]
+systems: [gastrointestinal]
 highYield: true
 status: draft
 anatomy:

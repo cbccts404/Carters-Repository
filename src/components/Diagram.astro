@@ -33,7 +33,8 @@ if (!Component) throw new Error(`Diagram "${id}" is registered but src/diagrams/
    */
   const KEY = 'atlas.hideLabels';
   const SVG_NS = 'http://www.w3.org/2000/svg';
-  const figures = [...document.querySelectorAll<HTMLElement>('figure.diagram')];
+  // diagrams inside [data-no-hide-labels] (the diagram quiz) manage their own labels
+  const figures = [...document.querySelectorAll<HTMLElement>('figure.diagram')].filter((f) => !f.closest('[data-no-hide-labels]'));
 
   // Legend-style notes stay visible: long text, or text with separators/arrows ("Inferior view · anterior ↑").
   const isNote = (t: SVGTextElement) => {

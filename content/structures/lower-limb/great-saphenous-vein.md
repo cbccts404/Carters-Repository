@@ -7,6 +7,7 @@ taName: Vena saphena magna
 aka: [Long saphenous vein, GSV]
 summary: The longest vein in the body, running superficially from the front of the medial malleolus to the groin. It is the usual source of varicose veins and a common graft for coronary bypass.
 tags: [vascular, venous]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

@@ -6,6 +6,7 @@ subregion: Inguinal region
 taName: Canalis inguinalis
 summary: Oblique passage through the lower anterior abdominal wall carrying the spermatic cord or round ligament. It's the site of indirect and direct inguinal hernias, the most common hernias overall.
 tags: [inguinal, hernia]
+systems: [gastrointestinal, genitourinary]
 highYield: true
 status: draft
 anatomy:

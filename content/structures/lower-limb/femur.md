@@ -7,6 +7,7 @@ taName: Femur
 aka: [Thigh bone]
 summary: The longest and strongest bone in the body. Femoral neck fractures in older adults, slipped capital femoral epiphysis and avascular necrosis of the head are its high-yield problems.
 tags: [hip, fracture, pediatrics]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

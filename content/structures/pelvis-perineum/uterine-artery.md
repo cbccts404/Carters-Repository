@@ -6,6 +6,7 @@ subregion: Vessels, nerves & lymphatics
 taName: Arteria uterina
 summary: Branch of the internal iliac artery that crosses above the ureter beside the cervix to supply the uterus. It is ligated in hysterectomy, embolized for fibroids and postpartum hemorrhage, and greatly enlarged in pregnancy.
 tags: [female, obstetrics, gynecology, vascular]
+systems: [reproductive, cardiovascular]
 highYield: true
 status: draft
 anatomy:

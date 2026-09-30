@@ -7,6 +7,7 @@ taName: Nervus thoracicus longus
 aka: [Nerve of Bell, External respiratory nerve of Bell]
 summary: Branch arising directly from the C5–C7 roots that supplies serratus anterior; injury causes medial winging of the scapula.
 tags: [brachial-plexus]
+systems: [neurologic, musculoskeletal]
 highYield: true
 status: draft
 anatomy:

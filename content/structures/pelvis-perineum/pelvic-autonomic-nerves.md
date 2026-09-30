@@ -7,6 +7,7 @@ taName: Nervi splanchnici pelvici; Plexus hypogastricus
 aka: [Pelvic splanchnic nerves, Nervi erigentes, Hypogastric plexuses]
 summary: Sympathetic hypogastric nerves and parasympathetic pelvic splanchnic nerves (S2–S4) that meet in the inferior hypogastric plexus to control the bladder, rectum and sexual function. They are at risk in prostate and rectal surgery.
 tags: [autonomic, continence, sexual-function]
+systems: [neurologic, genitourinary]
 highYield: true
 status: draft
 anatomy:

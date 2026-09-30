@@ -1,20 +1,10 @@
 ---
 import Base from '../layouts/Base.astro';
+import StudyFilters from '../components/StudyFilters.astro';
 import { loadAtlas, url } from '../lib/atlas';
 
 const atlas = await loadAtlas();
-const regions = atlas.regions
-  .map((r) => {
-    const entries = atlas.structures.filter((s) => s.data.region === r.id);
-    return {
-      id: r.id,
-      name: r.data.name,
-      total: entries.reduce((n, s) => n + s.data.quiz.length, 0),
-      hy: entries.filter((s) => s.data.highYield).reduce((n, s) => n + s.data.quiz.length, 0),
-    };
-  })
-  .filter((r) => r.total > 0);
-const total = regions.reduce((n, r) => n + r.total, 0);
+const total = atlas.structures.reduce((n, s) => n + s.data.quiz.length, 0);
 ---
 
 <Base title="Quiz mode" description="Board-style anatomy questions with score tracking.">
@@ -24,33 +14,14 @@ const total = regions.reduce((n, r) => n + r.total, 0);
   <noscript><p class="note">Quiz mode needs JavaScript. Each entry page also has its own self-quiz.</p></noscript>
 
   <section id="setup">
+    <p class="note small">New: <a href={url('diagram-quiz/')}>Diagram quiz</a> — name the hidden label on the atlas diagrams.</p>
     <p class="muted">
       {total} board-style questions from every entry. Your answers are saved on this device only, and answers you give in
       an entry's own self-quiz count too.
     </p>
 
     <form id="quiz-form" class="quiz-setup">
-      <fieldset>
-        <legend>Regions</legend>
-        <div class="region-picks">
-          {
-            regions.map((r) => (
-              <label class="pick">
-                <input type="checkbox" name="region" value={r.id} checked />
-                <span>{r.name}</span>
-                <span class="muted small" data-count={r.id}>
-                  {r.total}
-                </span>
-              </label>
-            ))
-          }
-        </div>
-        <p class="small">
-          <button type="button" class="linkish" data-all="1">Select all</button>
-          <span class="muted" aria-hidden="true">&nbsp;·&nbsp;</span>
-          <button type="button" class="linkish" data-all="0">Clear</button>
-        </p>
-      </fieldset>
+      <StudyFilters count={(s) => s.data.quiz.length} />
 
       <fieldset>
         <legend>Questions</legend>
@@ -81,6 +52,12 @@ const total = regions.reduce((n, r) => n + r.total, 0);
       <table class="qa" id="stats-table" hidden>
         <thead>
           <tr><th>Region</th><th>Answered</th><th>Accuracy</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <table class="qa" id="stats-sys" hidden>
+        <thead>
+          <tr><th>Body system</th><th>Answered</th><th>Accuracy</th></tr>
         </thead>
         <tbody></tbody>
       </table>
@@ -126,12 +103,14 @@ const total = regions.reduce((n, r) => n + r.total, 0);
 </Base>
 
 <script>
+  import { applyUrlFilters, labels, matches, selected, wireSelectAll } from '../scripts/filters';
   import { loadProgress, recordAnswer, recordSession, resetQuizProgress } from '../scripts/progress';
 
   interface Q {
     id: string;
     entry: string;
     region: string;
+    systems: string[];
     highYield: boolean;
     url: string;
     stem: string;
@@ -147,12 +126,8 @@ const total = regions.reduce((n, r) => n + r.total, 0);
   const LETTERS = ['A', 'B', 'C', 'D', 'E'];
   const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
   const form = $<HTMLFormElement>('quiz-form');
-  const regionNames = new Map(
-    [...form.querySelectorAll<HTMLInputElement>('input[name=region]')].map((i) => [
-      i.value,
-      i.closest('label')!.querySelector('span')!.textContent!,
-    ]),
-  );
+  const regionNames = labels(form, 'region');
+  const systemNames = labels(form, 'system');
   const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
   const pct = (a: number, b: number) => (b ? Math.round((100 * a) / b) : 0);
 
@@ -173,23 +148,14 @@ const total = regions.reduce((n, r) => n + r.total, 0);
 
   function settings() {
     const fd = new FormData(form);
-    return {
-      regions: fd.getAll('region') as string[],
-      mode: String(fd.get('mode')),
-      hy: fd.get('hy') === 'on',
-      n: Number(fd.get('n')),
-    };
+    return { mode: String(fd.get('mode')), n: Number(fd.get('n')) };
   }
 
   function pool() {
-    const { regions, mode, hy } = settings();
+    const { mode } = settings();
+    const sel = selected(form);
     const progress = loadProgress().quiz;
-    return bank.filter(
-      (q) =>
-        regions.includes(q.region) &&
-        (!hy || q.highYield) &&
-        (mode !== 'missed' || (progress[q.id] && progress[q.id].last === 0)),
-    );
+    return bank.filter((q) => matches(q, sel) && (mode !== 'missed' || (progress[q.id] && progress[q.id].last === 0)));
   }
 
   function updateAvailable() {
@@ -199,40 +165,48 @@ const total = regions.reduce((n, r) => n + r.total, 0);
     $<HTMLButtonElement>('start-btn').disabled = n === 0;
   }
 
+  /** Fill one stats table: answered / total and accuracy (most recent attempt) per group. */
+  function fillTable(id: string, keysOf: (q: Q) => string[], names: Map<string, string>, quiz: Record<string, { last: 0 | 1 }>) {
+    const groups = new Map<string, { total: number; seen: number; lastOk: number }>();
+    for (const q of bank) {
+      for (const k of keysOf(q)) {
+        const g = groups.get(k) ?? { total: 0, seen: 0, lastOk: 0 };
+        g.total++;
+        const rec = quiz[q.id];
+        if (rec) {
+          g.seen++;
+          g.lastOk += rec.last;
+        }
+        groups.set(k, g);
+      }
+    }
+    const order = [...names.keys()]; // same order as the filter checkboxes
+    const rows = [...groups].sort(([a], [b]) => order.indexOf(a) - order.indexOf(b));
+    $(id).querySelector('tbody')!.innerHTML = rows
+      .map(([k, g]) => {
+        const acc = pct(g.lastOk, g.seen);
+        return `<tr><td>${esc(names.get(k) ?? k)}</td><td>${g.seen} / ${g.total}</td>
+          <td>${g.seen ? `<span class="bar"><span style="width:${acc}%"></span></span> ${acc}%` : '<span class="muted">—</span>'}</td></tr>`;
+      })
+      .join('');
+    $(id).hidden = false;
+  }
+
   function renderStats() {
     const progress = loadProgress();
     const recs = Object.entries(progress.quiz);
-    const tbody = $('stats-table').querySelector('tbody')!;
     $('reset-btn').hidden = recs.length === 0 && progress.sessions.length === 0;
     if (!recs.length) {
       $('stats-table').hidden = true;
+      $('stats-sys').hidden = true;
       $('sessions').innerHTML = '';
       return;
     }
-    const byRegion = new Map<string, { total: number; seen: number; lastOk: number }>();
-    for (const q of bank) {
-      const r = byRegion.get(q.region) ?? { total: 0, seen: 0, lastOk: 0 };
-      r.total++;
-      const rec = progress.quiz[q.id];
-      if (rec) {
-        r.seen++;
-        r.lastOk += rec.last;
-      }
-      byRegion.set(q.region, r);
-    }
-    let seen = 0;
-    let ok = 0;
-    tbody.innerHTML = [...byRegion]
-      .map(([id, r]) => {
-        seen += r.seen;
-        ok += r.lastOk;
-        const acc = pct(r.lastOk, r.seen);
-        return `<tr><td>${esc(regionNames.get(id) ?? id)}</td><td>${r.seen} / ${r.total}</td>
-          <td>${r.seen ? `<span class="bar"><span style="width:${acc}%"></span></span> ${acc}%` : '<span class="muted">—</span>'}</td></tr>`;
-      })
-      .join('');
-    $('stats-table').hidden = false;
-    $('stats-summary').textContent = `Answered ${seen} of ${bank.length} questions at least once. Most recent attempts: ${ok} correct (${pct(ok, seen)}%).`;
+    fillTable('stats-table', (q) => [q.region], regionNames, progress.quiz);
+    fillTable('stats-sys', (q) => q.systems, systemNames, progress.quiz);
+    const seenQs = bank.filter((q) => progress.quiz[q.id]);
+    const ok = seenQs.filter((q) => progress.quiz[q.id].last === 1).length;
+    $('stats-summary').textContent = `Answered ${seenQs.length} of ${bank.length} questions at least once. Most recent attempts: ${ok} correct (${pct(ok, seenQs.length)}%).`;
     const recent = progress.sessions.slice(0, 5);
     $('sessions').innerHTML = recent.length
       ? `<h3>Recent quizzes</h3><ul class="plain">${recent
@@ -359,12 +333,8 @@ const total = regions.reduce((n, r) => n + r.total, 0);
     const qs = buildQueue();
     if (qs.length) start(qs);
   });
-  for (const b of form.querySelectorAll<HTMLButtonElement>('[data-all]')) {
-    b.addEventListener('click', () => {
-      for (const i of form.querySelectorAll<HTMLInputElement>('input[name=region]')) i.checked = b.dataset.all === '1';
-      updateAvailable();
-    });
-  }
+  wireSelectAll(form, updateAvailable);
+  applyUrlFilters(form);
   $('next-btn').addEventListener('click', next);
   $('end-btn').addEventListener('click', finish);
   $('retry-btn').addEventListener('click', () => start(shuffle(results.filter((r) => !r.ok).map((r) => r.q))));

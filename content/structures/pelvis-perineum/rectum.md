@@ -6,6 +6,7 @@ subregion: Pelvic viscera
 taName: Rectum
 summary: Final part of the large intestine, from the rectosigmoid junction at S3 to the anorectal junction at the puborectalis sling. Rectal cancer staging and treatment depend on its peritoneal relations and pelvic surroundings.
 tags: [gastrointestinal, oncology]
+systems: [gastrointestinal]
 highYield: true
 status: draft
 anatomy:

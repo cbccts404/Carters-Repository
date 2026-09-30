@@ -6,6 +6,7 @@ subregion: Knee & popliteal fossa
 taName: Arteria poplitea
 summary: Continuation of the femoral artery through the popliteal fossa, the deepest structure there. It is tethered and easily injured in knee dislocations and is the most common site of peripheral aneurysms.
 tags: [knee, vascular, trauma]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

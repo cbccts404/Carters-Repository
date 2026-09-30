@@ -7,6 +7,7 @@ taName: Arteria coronaria dextra
 aka: [RCA]
 summary: Arises from the right aortic sinus and runs in the right atrioventricular groove. It usually supplies the SA and AV nodes, the right ventricle and (in right dominance) the inferior wall; occlusion causes inferior MI.
 tags: [heart, coronary, cardiology]
+systems: [cardiovascular]
 highYield: true
 status: draft
 anatomy:

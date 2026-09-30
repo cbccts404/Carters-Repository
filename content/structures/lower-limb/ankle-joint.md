@@ -7,6 +7,7 @@ taName: Articulatio talocruralis
 aka: [Talocrural joint]
 summary: Hinge joint in which the talus sits in a mortise formed by the tibia and fibula. Sprains of the lateral ligaments and malleolar fractures are extremely common; the Ottawa rules decide who needs an X-ray.
 tags: [ankle, sports-medicine, fracture]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

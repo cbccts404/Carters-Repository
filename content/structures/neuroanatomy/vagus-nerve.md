@@ -7,6 +7,7 @@ taName: Nervus vagus
 aka: [CN X, Cranial nerve X, Vagal trunks, Pharyngeal plexus]
 summary: Longest cranial nerve — motor to the palate, pharynx and larynx, and parasympathetic supply to the thoracic and abdominal viscera down to the distal transverse colon. A lesion causes hoarseness, dysphagia and a uvula deviated away from the lesion.
 tags: [cranial-nerves, autonomic, larynx]
+systems: [neurologic, eent]
 highYield: true
 status: draft
 anatomy:

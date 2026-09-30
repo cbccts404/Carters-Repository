@@ -7,6 +7,7 @@ taName: Vertebrae lumbales
 aka: [L-spine, Pars interarticularis]
 summary: Five large weight-bearing vertebrae of the lower back. Spondylolysis, spondylolisthesis and lumbar spinal stenosis are their key clinical problems.
 tags: [spine, low-back-pain]
+systems: [musculoskeletal]
 highYield: true
 status: draft
 anatomy:

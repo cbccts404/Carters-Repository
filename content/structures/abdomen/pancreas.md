@@ -6,6 +6,7 @@ subregion: Accessory organs
 taName: Pancreas
 summary: Mostly retroperitoneal gland lying across the posterior abdominal wall, with its head in the duodenal C-loop. Acute pancreatitis and pancreatic cancer are the key clinical problems.
 tags: [gi, foregut]
+systems: [gastrointestinal, endocrine]
 highYield: true
 status: draft
 anatomy:

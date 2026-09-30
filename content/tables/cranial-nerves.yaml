@@ -1,0 +1,19 @@
+title: Cranial nerves at a glance
+region: neuroanatomy
+summary: Exit foramen, main functions, the lesion sign to know, and how to test each nerve at the bedside.
+columns: [Nerve, Leaves the skull via, Main functions, Lesion sign, Bedside test]
+rows:
+  - ["[[olfactory-nerve|I Olfactory]]", "Cribriform plate", "Smell", "Anosmia", "Familiar scent, each nostril"]
+  - ["[[optic-nerve|II Optic]]", "Optic canal", "Vision; afferent limb of the pupillary light reflex", "Field defects; relative afferent pupillary defect", "Acuity, fields, pupils, fundoscopy"]
+  - ["[[oculomotor-nerve|III Oculomotor]]", "Superior orbital fissure", "Superior, inferior and medial recti, inferior oblique, levator; pupil constriction", "Eye \"down and out\", ptosis, dilated pupil", "H-pattern eye movements; pupils"]
+  - ["[[trochlear-nerve|IV Trochlear]]", "Superior orbital fissure", "Superior oblique", "Vertical diplopia worse looking down; head tilt away from the lesion", "Look down and in"]
+  - ["[[trigeminal-nerve|V Trigeminal]]", "V1 superior orbital fissure · V2 foramen rotundum · V3 foramen ovale", "Facial sensation; muscles of mastication", "Facial numbness; jaw deviates toward the lesion; lost corneal reflex (afferent)", "Sensation in V1–V3; clench teeth; corneal reflex"]
+  - ["[[abducens-nerve|VI Abducens]]", "Superior orbital fissure", "Lateral rectus", "Eye turned in; horizontal diplopia", "Abduction"]
+  - ["[[facial-nerve|VII Facial]]", "Internal acoustic meatus → stylomastoid foramen", "Facial expression; taste (anterior ⅔ of tongue); lacrimal and submandibular/sublingual glands", "Bell palsy (whole half-face) vs stroke (forehead spared)", "Raise eyebrows, close eyes tightly, smile"]
+  - ["[[vestibulocochlear-nerve|VIII Vestibulocochlear]]", "Internal acoustic meatus", "Hearing; balance", "Sensorineural hearing loss; vertigo", "Whisper test, Weber and Rinne, Dix–Hallpike"]
+  - ["[[glossopharyngeal-nerve|IX Glossopharyngeal]]", "Jugular foramen", "Taste and sensation of the posterior ⅓ of the tongue and pharynx; stylopharyngeus; parotid gland", "Lost gag reflex (afferent)", "Gag reflex"]
+  - ["[[vagus-nerve|X Vagus]]", "Jugular foramen", "Palate, pharynx, larynx; thoracic and abdominal parasympathetics", "Uvula deviates away from the lesion; hoarseness", "Say \"ah\"; gag reflex; voice"]
+  - ["[[accessory-nerve|XI Accessory]]", "Jugular foramen", "Sternocleidomastoid and trapezius", "Shoulder droop; weak head turning", "Shrug; turn the head against resistance"]
+  - ["[[hypoglossal-nerve|XII Hypoglossal]]", "Hypoglossal canal", "Tongue muscles (except palatoglossus)", "Tongue deviates toward the lesion", "Protrude the tongue"]
+notes:
+  - "Nerves in the lateral wall of the cavernous sinus: III, IV, V1, V2. Running through it: CN VI and the internal carotid artery — see [[dural-venous-sinuses]]."

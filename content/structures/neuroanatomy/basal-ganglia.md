@@ -7,6 +7,7 @@ taName: Nuclei basales
 aka: [Basal nuclei, Striatum, Caudate nucleus, Putamen, Globus pallidus, Subthalamic nucleus, Huntington disease, Hemiballismus]
 summary: Deep gray-matter nuclei that modulate movement through direct and indirect pathways. Their disorders cause either too little movement (Parkinson disease) or too much (Huntington chorea, hemiballismus).
 tags: [cerebrum, movement-disorders]
+systems: [neurologic]
 highYield: true
 status: draft
 anatomy:

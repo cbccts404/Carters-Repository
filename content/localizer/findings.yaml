@@ -1,0 +1,103 @@
+# Findings a user can pick in the lesion localizer. Groups set the order on the page.
+- { id: decreased-consciousness, group: General, label: "Decreased consciousness" }
+- { id: sudden-headache, group: General, label: "Sudden severe headache" }
+- { id: bladder-dysfunction, group: General, label: "Urinary retention or incontinence" }
+
+- { id: monocular-vision-loss, group: Eyes and vision, label: "Vision loss in one eye" }
+- { id: rapd, group: Eyes and vision, label: "Relative afferent pupillary defect" }
+- { id: eye-pain-on-movement, group: Eyes and vision, label: "Pain with eye movement" }
+- { id: bitemporal-hemianopia, group: Eyes and vision, label: "Bitemporal hemianopia" }
+- { id: homonymous-hemianopia, group: Eyes and vision, label: "Homonymous hemianopia" }
+- { id: macular-sparing, group: Eyes and vision, label: "Central (macular) vision spared" }
+- { id: eye-down-and-out, group: Eyes and vision, label: "Eye \"down and out\"" }
+- { id: ptosis, group: Eyes and vision, label: "Ptosis" }
+- { id: dilated-pupil, group: Eyes and vision, label: "Dilated, poorly reactive pupil" }
+- { id: pupil-normal, group: Eyes and vision, label: "Pupils equal and reactive" }
+- { id: miosis, group: Eyes and vision, label: "Small pupil (miosis)" }
+- { id: anhidrosis, group: Eyes and vision, label: "Loss of sweating on one side of the face" }
+- { id: vertical-diplopia, group: Eyes and vision, label: "Vertical diplopia, worse looking down" }
+- { id: head-tilt, group: Eyes and vision, label: "Head tilted away from the affected eye" }
+- { id: cannot-abduct, group: Eyes and vision, label: "Eye can't abduct (horizontal diplopia)" }
+- { id: ino, group: Eyes and vision, label: "One eye fails to adduct on side gaze; other eye has nystagmus" }
+- { id: upgaze-palsy, group: Eyes and vision, label: "Can't look up" }
+- { id: light-near-dissociation, group: Eyes and vision, label: "Pupils react to near but not to light" }
+- { id: gaze-deviation, group: Eyes and vision, label: "Eyes deviated to one side" }
+- { id: vertical-eye-movements-only, group: Eyes and vision, label: "Only vertical eye movements and blinking preserved" }
+- { id: nystagmus, group: Eyes and vision, label: "Nystagmus" }
+
+- { id: whole-face-weakness, group: Face, label: "Whole half of the face weak (forehead too)" }
+- { id: lower-face-weakness, group: Face, label: "Lower face weak, forehead spared" }
+- { id: hyperacusis, group: Face, label: "Hyperacusis or taste loss on the front of the tongue" }
+- { id: ipsilateral-face-pain-temp-loss, group: Face, label: "Pain and temperature lost on one side of the face" }
+- { id: face-numbness, group: Face, label: "Facial numbness" }
+- { id: reduced-corneal-reflex, group: Face, label: "Reduced corneal reflex" }
+
+- { id: aphasia, group: "Speech, swallowing and tongue", label: Aphasia }
+- { id: neglect, group: "Speech, swallowing and tongue", label: Neglect of one side }
+- { id: dysarthria, group: "Speech, swallowing and tongue", label: Dysarthria }
+- { id: hoarseness, group: "Speech, swallowing and tongue", label: Hoarseness }
+- { id: dysphagia, group: "Speech, swallowing and tongue", label: Dysphagia }
+- { id: uvula-deviates, group: "Speech, swallowing and tongue", label: Uvula deviates away from one side }
+- { id: tongue-deviates, group: "Speech, swallowing and tongue", label: Tongue deviates to one side on protrusion }
+- { id: tongue-atrophy, group: "Speech, swallowing and tongue", label: Tongue atrophy or fasciculations }
+
+- { id: unilateral-hearing-loss, group: Hearing and balance, label: "Hearing loss in one ear" }
+- { id: tinnitus, group: Hearing and balance, label: "Tinnitus" }
+- { id: vertigo, group: Hearing and balance, label: "Vertigo" }
+- { id: limb-ataxia, group: Hearing and balance, label: "Limb ataxia or intention tremor" }
+- { id: gait-ataxia, group: Hearing and balance, label: "Wide-based, unsteady gait" }
+- { id: positive-romberg, group: Hearing and balance, label: "Positive Romberg sign" }
+
+- { id: hemiparesis-face-arm, group: Motor, label: "Weakness of face and arm more than leg (one side)" }
+- { id: hemiparesis-leg, group: Motor, label: "Weakness of leg more than arm (one side)" }
+- { id: hemiparesis-equal, group: Motor, label: "Face, arm and leg equally weak (one side)" }
+- { id: quadriplegia, group: Motor, label: "Weakness of all four limbs" }
+- { id: paraparesis, group: Motor, label: "Weakness of both legs" }
+- { id: weakness-one-side-below-level, group: Motor, label: "Weakness of one side below a spinal level" }
+- { id: umn-signs, group: Motor, label: "Hyperreflexia, spasticity or Babinski sign" }
+- { id: lmn-signs, group: Motor, label: "Muscle atrophy or fasciculations" }
+
+- { id: hemisensory-loss, group: Sensation, label: "All sensation lost on one side of the body, face included" }
+- { id: contralateral-body-pain-temp-loss, group: Sensation, label: "Pain and temperature lost on the opposite side of the body" }
+- { id: vibration-proprioception-loss, group: Sensation, label: "Vibration and joint-position sense lost" }
+- { id: bilateral-pain-temp-loss, group: Sensation, label: "Pain and temperature lost on both sides below a level" }
+- { id: cape-sensory-loss, group: Sensation, label: "Cape-like loss of pain and temperature, touch preserved" }
+- { id: saddle-anesthesia, group: Sensation, label: "Saddle anesthesia" }
+- { id: no-sensory-loss, group: Sensation, label: "No sensory loss" }
+
+- { id: wrist-drop, group: Upper limb, label: "Wrist drop" }
+- { id: dorsal-hand-numb, group: Upper limb, label: "Numb dorsum of the hand (first web space)" }
+- { id: thenar-weakness, group: Upper limb, label: "Thenar weakness or atrophy" }
+- { id: lateral-digits-numb, group: Upper limb, label: "Numb thumb, index, middle and half of ring finger" }
+- { id: nocturnal-hand-symptoms, group: Upper limb, label: "Hand tingling that wakes the patient at night" }
+- { id: claw-4-5, group: Upper limb, label: "Clawing of the ring and little fingers" }
+- { id: medial-digits-numb, group: Upper limb, label: "Numb little finger and half of ring finger" }
+- { id: froment, group: Upper limb, label: "Froment sign" }
+- { id: weak-shoulder-abduction, group: Upper limb, label: "Weak shoulder abduction" }
+- { id: lateral-shoulder-numb, group: Upper limb, label: "Numb patch over the lateral shoulder" }
+- { id: medial-scapular-winging, group: Upper limb, label: "Medial scapular winging" }
+- { id: shoulder-droop, group: Upper limb, label: "Shoulder droop and weak shrug" }
+- { id: waiters-tip, group: Upper limb, label: "Arm adducted, internally rotated, pronated (\"waiter's tip\")" }
+- { id: total-claw, group: Upper limb, label: "Claw hand affecting all fingers" }
+- { id: weak-elbow-flexion, group: Upper limb, label: "Weak elbow flexion" }
+- { id: reduced-biceps-reflex, group: Upper limb, label: "Reduced biceps or brachioradialis reflex" }
+- { id: thumb-numb, group: Upper limb, label: "Numb thumb and lateral forearm" }
+- { id: weak-elbow-extension, group: Upper limb, label: "Weak elbow extension" }
+- { id: reduced-triceps-reflex, group: Upper limb, label: "Reduced triceps reflex" }
+- { id: middle-finger-numb, group: Upper limb, label: "Numb middle finger" }
+
+- { id: foot-drop, group: Lower limb, label: "Foot drop" }
+- { id: weak-eversion, group: Lower limb, label: "Weak foot eversion" }
+- { id: weak-inversion, group: Lower limb, label: "Weak foot inversion" }
+- { id: inversion-normal, group: Lower limb, label: "Foot inversion normal" }
+- { id: weak-great-toe-extension, group: Lower limb, label: "Weak great toe extension" }
+- { id: dorsal-foot-numb, group: Lower limb, label: "Numb dorsum of the foot" }
+- { id: weak-plantarflexion, group: Lower limb, label: "Weak plantarflexion (can't stand on toes)" }
+- { id: reduced-ankle-reflex, group: Lower limb, label: "Reduced ankle reflex" }
+- { id: lateral-foot-numb, group: Lower limb, label: "Numb lateral foot and sole" }
+- { id: weak-knee-extension, group: Lower limb, label: "Weak knee extension" }
+- { id: reduced-patellar-reflex, group: Lower limb, label: "Reduced patellar reflex" }
+- { id: medial-leg-numb, group: Lower limb, label: "Numb medial leg" }
+- { id: anterior-thigh-numb, group: Lower limb, label: "Numb anterior thigh" }
+- { id: weak-hip-adduction, group: Lower limb, label: "Weak hip adduction" }
+- { id: trendelenburg, group: Lower limb, label: "Trendelenburg sign (pelvis drops on the opposite side)" }

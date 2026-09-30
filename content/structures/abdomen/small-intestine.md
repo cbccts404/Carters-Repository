@@ -7,6 +7,7 @@ taName: Jejunum et ileum
 aka: [Jejunum, Ileum, Small bowel]
 summary: Coiled intraperitoneal small bowel on a mesentery, supplied by the SMA. Small bowel obstruction, Meckel diverticulum, Crohn disease and mesenteric ischemia are its key clinical problems.
 tags: [gi, midgut]
+systems: [gastrointestinal]
 highYield: true
 status: draft
 anatomy:

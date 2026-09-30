@@ -6,6 +6,7 @@ subregion: Neck
 taName: Glandula thyroidea
 summary: Butterfly-shaped endocrine gland wrapped around the upper trachea at C5–T1. It moves with swallowing, lies next to the recurrent laryngeal nerves and parathyroids, and thyroid nodules are a common workup.
 tags: [endocrine, neck, thyroid-surgery]
+systems: [endocrine]
 highYield: true
 status: draft
 anatomy:

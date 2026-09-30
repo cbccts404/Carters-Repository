@@ -7,6 +7,7 @@ taName: Ductus deferens; Glandula vesiculosa
 aka: [Vas deferens, Seminal vesicles]
 summary: Thick-walled muscular duct carrying sperm from the epididymis to the ejaculatory duct, joined behind the bladder by the seminal gland. It is cut in vasectomy and absent in men with cystic fibrosis.
 tags: [male, genitourinary, infertility]
+systems: [genitourinary]
 highYield: false
 status: draft
 anatomy:
