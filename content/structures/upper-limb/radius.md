@@ -126,6 +126,19 @@ quiz:
     explanation: >-
       A **posterior fat pad** always indicates an effusion. In an adult after a fall on an outstretched hand with radial
       head tenderness, this implies an **occult radial head fracture**.
+  - stem: >-
+      Six weeks after a minimally displaced distal radius fracture, a woman suddenly can't extend the IP joint of her
+      thumb. Which tendon has most likely ruptured, and around which landmark does it turn?
+    choices:
+      - Abductor pollicis longus, at the radial styloid
+      - Extensor pollicis brevis, in the first dorsal compartment
+      - Extensor pollicis longus, around the dorsal (Lister) tubercle
+      - Flexor pollicis longus, in the carpal tunnel
+      - Extensor indicis, at the ulnar head
+    answer: C
+    explanation: >-
+      **EPL rupture** is a known late complication of distal radius fracture. The EPL tendon turns around **Lister's
+      tubercle**, where it can fray. EPL extends the thumb IP joint; EPB and APL act at the MCP and CMC joints.
 flashcards:
   - front: Colles vs Smith fracture?
     back: "Colles: dorsal displacement (dinner fork), FOOSH. Smith: volar displacement (garden spade), fall on flexed wrist"

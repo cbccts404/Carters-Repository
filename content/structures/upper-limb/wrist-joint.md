@@ -141,6 +141,31 @@ quiz:
     explanation: >-
       A volarly dislocated **lunate** pushes into the carpal tunnel and compresses the **median nerve** (acute carpal
       tunnel syndrome). This is an orthopedic emergency.
+  - stem: Kienböck disease is avascular necrosis of which bone, and which anatomic variant is associated with it?
+    choices:
+      - Scaphoid; positive ulnar variance
+      - Lunate; negative ulnar variance (short ulna)
+      - Capitate; negative ulnar variance
+      - Lunate; positive ulnar variance
+      - Hamate; positive ulnar variance
+    answer: B
+    explanation: >-
+      **Kienböck disease** is AVN of the **lunate**, associated with **negative ulnar variance**. Positive ulnar
+      variance is associated with degenerative TFCC injury. Scaphoid AVN follows fracture.
+  - stem: >-
+      A 26-year-old has a smooth, firm, painless mass on the dorsal wrist over the scapholunate region. It
+      transilluminates and varies in size. What is the most likely diagnosis?
+    choices:
+      - Ganglion cyst
+      - Giant cell tumor of tendon sheath
+      - Lipoma
+      - Epidermoid inclusion cyst
+      - Osteochondroma
+    answer: A
+    explanation: >-
+      A **ganglion cyst** is the most common soft-tissue mass of the hand and wrist, usually **dorsal** over the
+      scapholunate region. It is mucin-filled, arises from a joint capsule or tendon sheath, often **transilluminates**
+      and changes in size.
 flashcards:
   - front: Radiocarpal joint — type and articulating bones?
     back: Condyloid (ellipsoid); distal radius + articular disc with scaphoid, lunate, triquetrum

@@ -180,6 +180,20 @@ quiz:
       The **hand of benediction** results from loss of FDS and the lateral half of FDP, which are supplied in the
       forearm. The lesion must therefore be **proximal** to those branches, at or above the elbow. A lesion at the
       wrist spares the long flexors.
+  - stem: >-
+      A man cuts his wrist crease on broken glass and divides the median nerve at that level. Which function is
+      preserved?
+    choices:
+      - Flexion of the index finger DIP joint
+      - Opposition of the thumb
+      - Abduction of the thumb (abductor pollicis brevis)
+      - Sensation of the index finger pad
+      - Sensation of the middle fingertip
+    answer: A
+    explanation: >-
+      A wrist-level laceration is **distal to the forearm branches**, including the anterior interosseous nerve, so FDP
+      to the index (DIP flexion), FPL and the forearm flexors still work. The thenar muscles and median digital
+      sensation are lost, leaving an adducted, unopposable thumb ("ape hand").
 flashcards:
   - front: Median nerve — muscles in the hand?
     back: LOAF — lateral 2 lumbricals, opponens pollicis, abductor pollicis brevis, flexor pollicis brevis (superficial head)

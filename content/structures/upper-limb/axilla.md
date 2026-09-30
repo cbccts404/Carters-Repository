@@ -126,6 +126,20 @@ quiz:
     explanation: >-
       **Cortical thickening and loss of the fatty hilum** (plus a round shape and non-hilar vascularity) suggest
       metastatic involvement. The other options describe normal-appearing nodes.
+  - stem: >-
+      After an axillary lymph node dissection, a patient's scapula lifts off the chest wall when she pushes against a
+      wall. The injured nerve runs along which wall of the axilla?
+    choices:
+      - Anterior wall (pectoralis major and minor)
+      - Posterior wall (subscapularis, teres major, latissimus dorsi)
+      - Medial wall (serratus anterior over the ribs)
+      - Lateral wall (intertubercular groove)
+      - Apex (cervicoaxillary canal)
+    answer: C
+    explanation: >-
+      The **long thoracic nerve** runs down the **medial wall** of the axilla on the surface of serratus anterior, so it
+      is exposed during axillary dissection; injury causes medial winging. The **thoracodorsal nerve** runs on the
+      posterior wall (latissimus dorsi), and the intercostobrachial nerve crosses the space (medial arm numbness).
 flashcards:
   - front: Axilla — boundaries of the apex?
     back: Clavicle (anterior), first rib (medial), superior border of scapula (posterior)

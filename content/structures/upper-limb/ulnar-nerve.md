@@ -162,6 +162,20 @@ quiz:
     explanation: >-
       The ulnar nerve enters the forearm between the humeral and ulnar heads of **flexor carpi ulnaris**. The median
       nerve passes between the heads of pronator teres.
+  - stem: >-
+      A patient with paresthesias of the little finger also has numbness over the dorsal ulnar side of the hand. Where
+      is the ulnar nerve lesion most likely?
+    choices:
+      - Guyon's canal
+      - Deep branch in the palm
+      - At or above the elbow (proximal to the dorsal cutaneous branch)
+      - Carpal tunnel
+      - Superficial branch at the pisiform
+    answer: C
+    explanation: >-
+      The **dorsal cutaneous branch** arises in the distal forearm, before Guyon's canal. Dorsal ulnar hand numbness
+      therefore places the lesion **proximal** to that branch, classically the **cubital tunnel**. Guyon's canal lesions
+      spare dorsal sensation.
 flashcards:
   - front: Ulnar nerve — roots and cord?
     back: C8–T1 (often C7); medial cord

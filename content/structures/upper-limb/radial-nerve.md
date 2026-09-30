@@ -152,6 +152,20 @@ quiz:
     explanation: >-
       The **profunda brachii (deep brachial) artery**, a branch of the [[brachial-artery]], accompanies the radial
       nerve through the triangular interval and along the radial groove.
+  - stem: >-
+      After spending a night in tight handcuffs, a man has numbness over the dorsoradial hand and thumb. Strength is
+      normal. Which nerve is most likely compressed?
+    choices:
+      - Posterior interosseous nerve
+      - Median nerve (palmar cutaneous branch)
+      - Dorsal cutaneous branch of the ulnar nerve
+      - Lateral cutaneous nerve of the forearm
+      - Superficial branch of the radial nerve
+    answer: E
+    explanation: >-
+      Tight handcuffs, watchbands or casts compress the **superficial (sensory) branch of the radial nerve** in the
+      distal forearm (**Wartenberg syndrome**), causing dorsoradial hand numbness **without weakness**. PIN syndrome is
+      the opposite: weakness without sensory loss.
 flashcards:
   - front: Radial nerve — roots and cord?
     back: C5–T1; posterior cord (largest branch of the plexus)

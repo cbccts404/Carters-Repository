@@ -111,6 +111,32 @@ quiz:
     explanation: >-
       The **profunda brachii (deep artery of the arm)** runs with the [[radial-nerve]]. The superior ulnar collateral
       artery accompanies the ulnar nerve.
+  - stem: At about what level does the brachial artery normally divide into the radial and ulnar arteries?
+    choices:
+      - Inferior border of teres major
+      - Mid-humerus, where the median nerve crosses it
+      - Just above the medial epicondyle
+      - Neck of the radius, in the cubital fossa
+      - Proximal to the wrist crease
+    answer: D
+    explanation: >-
+      The brachial artery ends in the **cubital fossa at about the level of the neck of the radius** by dividing into
+      the radial and ulnar arteries. It begins at the inferior border of teres major. A **high division** in the arm is
+      a recognized variant.
+  - stem: >-
+      A 6-year-old with a displaced supracondylar humerus fracture has no palpable radial pulse, but the hand is warm
+      and pink with brisk capillary refill. What best explains the perfusion?
+    choices:
+      - The radial artery arises above the fracture in most children
+      - Collateral flow through the periarticular anastomosis around the elbow
+      - Venous congestion masking ischemia
+      - Blood supply from the interosseous membrane alone
+      - The ulnar artery is a direct branch of the axillary artery
+    answer: B
+    explanation: >-
+      A **pink, pulseless hand** is perfused by **collaterals**: the collateral branches of the brachial and profunda
+      brachii arteries connect with the recurrent branches of the radial, ulnar and interosseous arteries. It still
+      needs urgent reduction and close monitoring; a white, pulseless hand indicates ischemia.
 flashcards:
   - front: Brachial artery — start and end?
     back: Inferior border of teres major → divides into radial and ulnar arteries in the cubital fossa (neck of radius)

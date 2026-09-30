@@ -154,6 +154,18 @@ quiz:
     explanation: >-
       Supraspinatus **initiates abduction** (about the first 15°) and keeps the humeral head seated so deltoid can
       continue abduction. Patients often shrug or lean to start the movement.
+  - stem: Which finding best distinguishes a rotator cuff tear from adhesive capsulitis?
+    choices:
+      - Night pain
+      - Pain with overhead activity
+      - Age over 40
+      - Weak external rotation
+      - Passive range of motion is preserved
+    answer: E
+    explanation: >-
+      In rotator cuff pathology **passive range of motion is preserved** while active motion is limited. In adhesive
+      capsulitis **both active and passive** motion are lost, most markedly external rotation. Night pain and pain with
+      overhead activity occur in both.
 flashcards:
   - front: Supraspinatus — origin, insertion?
     back: Supraspinous fossa → superior facet of greater tubercle

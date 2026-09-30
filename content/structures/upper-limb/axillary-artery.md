@@ -113,6 +113,30 @@ quiz:
     explanation: >-
       The subclavian becomes axillary at the **lateral border of the first rib**, and the axillary becomes
       [[brachial-artery|brachial]] at the **inferior border of teres major**.
+  - stem: Which branch arises from the third part of the axillary artery (lateral to pectoralis minor)?
+    choices:
+      - Superior thoracic artery
+      - Thoracoacromial artery
+      - Lateral thoracic artery
+      - Subscapular artery
+      - Profunda brachii artery
+    answer: D
+    explanation: >-
+      The third part has three branches: the **subscapular**, anterior circumflex humeral and posterior circumflex
+      humeral arteries. The superior thoracic comes from the first part; the thoracoacromial and lateral thoracic from
+      the second. The profunda brachii is a branch of the brachial artery.
+  - stem: Pectoralis minor crosses which part of the axillary artery, and how many branches does that part give off?
+    choices:
+      - Second part; two branches
+      - First part; one branch
+      - Third part; three branches
+      - Second part; three branches
+      - Third part; two branches
+    answer: A
+    explanation: >-
+      Pectoralis minor lies anterior to the **second part**, which gives **two** branches (thoracoacromial and lateral
+      thoracic). The first part (medial to the muscle) has one branch and the third part (lateral to it) has three: the
+      "1, 2, 3" rule. The cords of the brachial plexus are named by their relation to the second part.
 flashcards:
   - front: Axillary artery — start and end?
     back: Lateral border of first rib → inferior border of teres major (becomes brachial artery)

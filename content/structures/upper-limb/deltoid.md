@@ -90,6 +90,29 @@ quiz:
       - Coracoid process
     answer: C
     explanation: All three parts of deltoid converge on the **deltoid tuberosity** on the lateral surface of the humeral shaft.
+  - stem: A patient with an acute anterior shoulder dislocation has a "squared-off" shoulder. What causes this contour?
+    choices:
+      - Paralysis of deltoid from axillary nerve injury
+      - Displacement of the humeral head from beneath the acromion
+      - Rupture of the supraspinatus tendon
+      - Acromioclavicular joint separation
+      - Deltoid atrophy
+    answer: B
+    explanation: >-
+      The squared-off shoulder of an acute anterior dislocation comes from the **displaced humeral head** (moved
+      anteroinferiorly), leaving the acromion prominent. It is **not** deltoid paralysis. Flattening from deltoid
+      atrophy after axillary nerve injury develops over weeks.
+  - stem: Which vein runs in the groove between deltoid and pectoralis major?
+    choices:
+      - Basilic vein
+      - Axillary vein
+      - Cephalic vein
+      - Median cubital vein
+      - Brachial vein
+    answer: C
+    explanation: >-
+      The **cephalic vein** runs in the **deltopectoral groove** between the anterior border of deltoid and pectoralis
+      major before draining into the axillary vein.
 flashcards:
   - front: Deltoid — origin?
     back: Lateral third of clavicle, acromion, spine of scapula (same as trapezius insertion)

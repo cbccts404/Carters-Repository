@@ -103,6 +103,29 @@ quiz:
     explanation: >-
       **Pronator teres** forms the medial border and **brachioradialis** the lateral border. Brachialis and supinator
       form the floor.
+  - stem: Which muscle forms the lateral boundary of the cubital fossa?
+    choices:
+      - Pronator teres
+      - Brachialis
+      - Supinator
+      - Biceps brachii
+      - Brachioradialis
+    answer: E
+    explanation: >-
+      The cubital fossa is bounded laterally by **brachioradialis**, medially by **pronator teres**, and superiorly by a
+      line between the epicondyles. Brachialis and supinator form its floor.
+  - stem: Which structure separates the median cubital vein from the brachial artery and median nerve?
+    choices:
+      - Bicipital aponeurosis
+      - Pronator teres
+      - Brachialis
+      - Anular ligament
+      - Flexor retinaculum
+    answer: A
+    explanation: >-
+      The **bicipital aponeurosis** passes over the brachial artery and median nerve, and the median cubital vein lies
+      superficial to it. This gives some protection during venipuncture, but a needle passed too deeply medial to the
+      biceps tendon can still reach the artery.
 flashcards:
   - front: Cubital fossa — boundaries?
     back: "Superior: line between epicondyles. Medial: pronator teres. Lateral: brachioradialis. Floor: brachialis + supinator. Roof: fascia + bicipital aponeurosis"

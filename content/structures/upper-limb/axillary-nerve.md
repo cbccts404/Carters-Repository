@@ -128,6 +128,20 @@ quiz:
       The **axillary nerve** is the nerve most commonly injured in anterior dislocation. Testing sensation over the
       regimental badge area is a quick screen, because deltoid strength is hard to test in a painful dislocated
       shoulder.
+  - stem: >-
+      A 25-year-old volleyball player has poorly localized posterior shoulder pain that worsens with abduction and
+      external rotation. MRI shows isolated fatty atrophy of teres minor. Compression in which space is most likely?
+    choices:
+      - Triangular space
+      - Triangular interval
+      - Suprascapular notch
+      - Spinoglenoid notch
+      - Quadrangular space
+    answer: E
+    explanation: >-
+      **Quadrilateral space syndrome** compresses the axillary nerve (± posterior circumflex humeral artery) in the
+      quadrangular space, typically in overhead athletes. Isolated teres minor atrophy is the classic MRI clue.
+      Suprascapular and spinoglenoid notch lesions affect supraspinatus and/or infraspinatus instead.
 flashcards:
   - front: Axillary nerve — roots, cord, muscles?
     back: C5–C6; posterior cord; deltoid + teres minor

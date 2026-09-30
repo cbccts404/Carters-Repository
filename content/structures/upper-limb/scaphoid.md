@@ -109,6 +109,31 @@ quiz:
     explanation: >-
       The snuffbox is bounded by **EPL** on the ulnar (medial) side and **APL/EPB** on the radial (lateral) side. The
       scaphoid and trapezium form the floor, and the radial artery crosses it.
+  - stem: >-
+      After a fall on an outstretched hand, a PA wrist radiograph shows an abnormally wide gap between the scaphoid and
+      lunate. Which injury does this sign indicate?
+    choices:
+      - Lunate dislocation ("spilled teacup")
+      - Scapholunate ligament injury ("Terry Thomas" sign)
+      - Radial head fracture (fat pad sign)
+      - Posterior shoulder dislocation ("lightbulb" sign)
+      - Kienböck disease
+    answer: B
+    explanation: >-
+      A widened scapholunate gap on the PA view (the **"Terry Thomas" sign**) indicates **scapholunate ligament
+      injury**, the most common carpal instability. The Watson scaphoid shift test may be positive.
+  - stem: A scaphoid fracture goes undiagnosed and progresses to nonunion. What is the long-term consequence?
+    choices:
+      - Kienböck disease
+      - De Quervain tenosynovitis
+      - Guyon's canal syndrome
+      - Scaphoid nonunion advanced collapse (SNAC) arthritis
+      - Ganglion cyst
+    answer: D
+    explanation: >-
+      Delayed diagnosis and interrupted **retrograde blood supply** lead to proximal pole AVN and **nonunion**, which
+      progresses to **SNAC wrist arthritis**. This is why snuffbox tenderness is immobilized and reimaged even when the
+      first radiographs are normal.
 flashcards:
   - front: Most commonly fractured carpal bone?
     back: Scaphoid (usually the waist)

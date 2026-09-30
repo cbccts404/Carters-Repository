@@ -137,6 +137,30 @@ quiz:
     answer: C
     explanation: >-
       The **anterior band of the UCL** is the key restraint to valgus stress and is injured by repetitive throwing.
+  - stem: The "terrible triad" of the elbow consists of which injuries?
+    choices:
+      - Anterior dislocation, olecranon fracture and ulnar nerve injury
+      - Posterior dislocation, medial epicondyle fracture and brachial artery injury
+      - Supracondylar fracture, AIN injury and compartment syndrome
+      - Elbow dislocation, radial head fracture and coronoid process fracture
+      - Radial head subluxation, anular ligament tear and capitulum fracture
+    answer: D
+    explanation: >-
+      The **terrible triad** is an **elbow dislocation with fractures of the radial head and the coronoid process**.
+      Posterior dislocation is the most common elbow dislocation; check the brachial artery, median nerve and ulnar
+      nerve.
+  - stem: Using the mnemonic CRITOE, which ossification center of the pediatric elbow appears last?
+    choices:
+      - Capitellum
+      - Radial head
+      - Olecranon
+      - Trochlea
+      - Lateral (external) epicondyle
+    answer: E
+    explanation: >-
+      **CRITOE**: Capitellum, Radial head, Internal (medial) epicondyle, Trochlea, Olecranon, **External (lateral)
+      epicondyle**. Knowing the order helps tell a normal unfused center from a fracture fragment on a child's elbow
+      radiograph.
 flashcards:
   - front: Elbow joint classification?
     back: Synovial hinge (humeroulnar, humeroradial) sharing a capsule with the proximal radioulnar (pivot) joint

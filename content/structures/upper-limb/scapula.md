@@ -108,6 +108,32 @@ quiz:
     explanation: >-
       The suprascapular **nerve** passes **below** the superior transverse scapular ligament through the suprascapular
       notch. The suprascapular **artery** usually passes **above** it.
+  - stem: >-
+      After a lymph node biopsy in the posterior triangle of the neck, a patient's shoulder droops and the scapula wings
+      laterally. Which muscle is weak?
+    choices:
+      - Serratus anterior
+      - Trapezius
+      - Rhomboid major
+      - Latissimus dorsi
+      - Levator scapulae
+    answer: B
+    explanation: >-
+      The **spinal accessory nerve (CN XI)** crosses the posterior triangle and is at risk during node biopsy. Trapezius
+      paralysis causes shoulder droop and **lateral** winging. **Medial** winging points to serratus anterior (long
+      thoracic nerve).
+  - stem: The long head of triceps brachii arises from which part of the scapula?
+    choices:
+      - Infraglenoid tubercle
+      - Supraglenoid tubercle
+      - Coracoid process
+      - Acromion
+      - Spine of the scapula
+    answer: A
+    explanation: >-
+      The long head of triceps arises from the **infraglenoid tubercle**; the long head of biceps from the
+      **supraglenoid tubercle**. The coracoid gives attachment to pectoralis minor, the short head of biceps and
+      coracobrachialis.
 flashcards:
   - front: Scapular landmarks and vertebral levels?
     back: Medial end of spine ≈ T3; inferior angle ≈ T7 (arm at side)

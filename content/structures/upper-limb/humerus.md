@@ -130,6 +130,20 @@ quiz:
     explanation: >-
       In flexion the three points form an **isosceles triangle**; in extension they lie in a **straight line**. A
       posterior elbow dislocation disrupts this relationship.
+  - stem: >-
+      A 13-year-old baseball pitcher has a displaced avulsion fracture of the medial epicondyle. Which nerve is most at
+      risk?
+    choices:
+      - Axillary nerve
+      - Radial nerve
+      - Median nerve
+      - Ulnar nerve
+      - Musculocutaneous nerve
+    answer: D
+    explanation: >-
+      The **ulnar nerve** passes **behind the medial epicondyle**, so medial epicondyle fractures threaten it. Other
+      fracture–nerve pairs: surgical neck → axillary; midshaft → radial; supracondylar → median (AIN) and brachial
+      artery.
 flashcards:
   - front: Humerus fracture sites and nerves at risk?
     back: "Surgical neck → axillary; midshaft → radial; supracondylar → median/AIN + brachial artery; medial epicondyle → ulnar"

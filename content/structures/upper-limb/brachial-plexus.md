@@ -177,6 +177,18 @@ quiz:
     explanation: >-
       The lateral, medial and posterior cords are named for their position around the **second part of the axillary
       artery**, which lies posterior to pectoralis minor.
+  - stem: Which nerve arises directly from the roots of the brachial plexus?
+    choices:
+      - Suprascapular nerve
+      - Thoracodorsal nerve
+      - Long thoracic nerve
+      - Lateral pectoral nerve
+      - Musculocutaneous nerve
+    answer: C
+    explanation: >-
+      The **long thoracic nerve (C5–C7)** and the dorsal scapular nerve (C5) arise from the **roots**. The suprascapular
+      nerve comes from the superior trunk, the thoracodorsal from the posterior cord, and the lateral pectoral and
+      musculocutaneous nerves from the lateral cord.
 flashcards:
   - front: Brachial plexus — order of components?
     back: Roots → Trunks → Divisions → Cords → Branches (ventral rami C5–T1)
