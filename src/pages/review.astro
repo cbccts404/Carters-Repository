@@ -1,56 +1,113 @@
 ---
 import Base from '../layouts/Base.astro';
-import { completeness, loadAtlas, structureUrl } from '../lib/atlas';
+import { completeness, loadAtlas, plain, structureUrl } from '../lib/atlas';
 const atlas = await loadAtlas();
 const incomplete = atlas.structures.filter((s) => completeness(s).done < 5);
 const missing = [...new Set(atlas.missingLinks.map((m) => m.target))].sort();
+
+// Readable field names for the checklist ("clinical.0.presentation" → "Clinical 1 · presentation").
+const fieldLabel = (f: string) =>
+  f
+    .replace(/^anatomy\./, 'Anatomy · ')
+    .replace(/^(clinical|quiz|flashcards|images)\.(\d+)/, (_, k, n) => `${k[0].toUpperCase()}${k.slice(1)} ${Number(n) + 1}`)
+    .replace(/^pance\.(\d+)/, (_, n) => `PANCE pearl ${Number(n) + 1}`)
+    .replace(/^imaging\./, 'Imaging · ')
+    .replace(/^exam\./, 'Exam · ')
+    .replace(/\./g, ' · ');
+
+// Stable id per flag: entry, field and its position among flags in that field.
+const counter = new Map<string, number>();
+const flags = atlas.verifyFlags.map((f) => {
+  const key = `${f.entry.id}|${f.field}`;
+  const n = counter.get(key) ?? 0;
+  counter.set(key, n + 1);
+  return {
+    id: `${key}|${n}`,
+    entryId: f.entry.id,
+    entry: f.entry.data.name,
+    region: f.entry.data.region,
+    url: structureUrl(f.entry),
+    field: fieldLabel(f.field),
+    claim: plain(f.snippet),
+    note: f.note,
+  };
+});
+const groups = atlas.regions
+  .map((r) => ({ id: r.id, name: r.data.name, flags: flags.filter((f) => f.region === r.id) }))
+  .filter((g) => g.flags.length);
 ---
 
 <Base title="Review queue" description="Facts flagged for verification and content gaps.">
   <div class="hero">
     <h1>Review queue</h1>
     <p>
-      Everything in the atlas marked <span class="verify">verify</span>, so you can check it against Netter or your
-      course text. After you've checked a fact, delete the <code>{'{{verify}}'}</code> tag from the file. Once an entry
-      has been fully checked, set <code>status: reviewed</code>.
+      Every fact marked <span class="verify">verify</span> is listed here so you can check it against your textbook.
+      Mark each one <b>Matches</b> or <b>Differs</b> (and say what your book says). When you're done, tap <b
+        >Copy my results</b
+      > and paste them to Claude, who will remove the confirmed tags and apply your corrections.
     </p>
   </div>
 
-  <h2>Verify flags ({atlas.verifyFlags.length})</h2>
+  <h2>Verify flags ({flags.length})</h2>
+  <div class="vf-summary" id="vf-summary">
+    <p id="vf-count" class="muted">{flags.length} flags to check. Your checks are saved on this device.</p>
+    <div class="meter" aria-hidden="true"><span id="vf-meter"></span></div>
+    <p class="vf-filter">
+      <label class="pick"><input type="radio" name="vf-show" value="all" checked /> <span>All</span></label>
+      <label class="pick"><input type="radio" name="vf-show" value="open" /> <span>Not checked yet</span></label>
+      <label class="pick"><input type="radio" name="vf-show" value="diff" /> <span>Differs</span></label>
+    </p>
+  </div>
+
   {
-    atlas.verifyFlags.length ? (
-      <div class="table-scroll">
-        <table class="qa">
-          <thead>
-            <tr><th>Entry</th><th>Field</th><th>Context / reason</th></tr>
-          </thead>
-          <tbody>
-            {atlas.verifyFlags.map((f) => (
-              <tr>
-                <td><a href={structureUrl(f.entry)}>{f.entry.data.name}</a></td>
-                <td><code>{f.field}</code></td>
-                <td>
-                  {f.snippet && <div>{f.snippet}</div>}
-                  {f.note && <div class="muted">Why: {f.note}</div>}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    ) : (
-      <p class="empty-note">No verify flags.</p>
-    )
+    groups.map((g) => (
+      <details class="vf-group" open={groups.length <= 2}>
+        <summary>
+          <strong>{g.name}</strong> <span class="muted small" data-group-count={g.id}>{g.flags.length} flags</span>
+        </summary>
+        <ul class="vf-list">
+          {g.flags.map((f) => (
+            <li class="vf" data-id={f.id} data-region={g.id}>
+              <p class="vf-head">
+                <a href={f.url}>{f.entry}</a> <span class="muted small">· {f.field}</span>
+                <span class="vf-badge" aria-live="polite" />
+              </p>
+              {f.claim && <p class="vf-claim">{f.claim}</p>}
+              {f.note && <p class="small muted">Why flagged: {f.note}</p>}
+              <div class="vf-actions">
+                <button type="button" class="btn tool-btn" data-s="ok">✓ Matches</button>
+                <button type="button" class="btn tool-btn" data-s="diff">✗ Differs</button>
+                <button type="button" class="linkish small" data-s="" hidden>Undo</button>
+              </div>
+              <label class="vf-note" hidden>
+                <span class="small">What does your textbook say?</span>
+                <textarea rows="2" />
+              </label>
+            </li>
+          ))}
+        </ul>
+      </details>
+    ))
   }
+
+  <section class="vf-export">
+    <p class="btn-row">
+      <button type="button" class="btn primary" id="vf-copy">Copy my results</button>
+      <button type="button" class="btn" id="vf-download">Download as text</button>
+      <button type="button" class="linkish danger" id="vf-reset">Clear my checks</button>
+    </p>
+    <p class="small muted" id="vf-msg" aria-live="polite"></p>
+    <textarea id="vf-report" class="vf-report" rows="8" readonly hidden></textarea>
+  </section>
 
   <h2>Links to entries not yet written ({missing.length})</h2>
   <p class="small muted">These show as dashed text until the target entry exists. A misspelled id will also appear here.</p>
   {missing.length ? <p>{missing.map((m, i) => <>{i > 0 && ' · '}<code>{m}</code></>)}</p> : <p class="empty-note">None.</p>}
 
   <h2>Incomplete entries ({incomplete.length})</h2>
-  <ul>
-    {
-      incomplete.map((s) => {
+  {incomplete.length ? (
+    <ul>
+      {incomplete.map((s) => {
         const c = completeness(s);
         const gaps = Object.entries(c.sections).filter(([, on]) => !on).map(([k]) => k);
         return (
@@ -58,7 +115,148 @@ const missing = [...new Set(atlas.missingLinks.map((m) => m.target))].sort();
             <a href={structureUrl(s)}>{s.data.name}</a> <span class="muted small">— missing {gaps.join(', ')}</span>
           </li>
         );
-      })
-    }
-  </ul>
+      })}
+    </ul>
+  ) : (
+    <p class="empty-note">None.</p>
+  )}
 </Base>
+
+<script>
+  const KEY = 'atlas.verify.v1';
+  type Check = { s: 'ok' | 'diff'; note?: string; t: number };
+  const items = [...document.querySelectorAll<HTMLElement>('li.vf')];
+  const $ = (id: string) => document.getElementById(id)!;
+
+  function load(): Record<string, Check> {
+    try {
+      return JSON.parse(localStorage.getItem(KEY) ?? '{}');
+    } catch {
+      return {};
+    }
+  }
+  let checks = load();
+  function save() {
+    try {
+      localStorage.setItem(KEY, JSON.stringify(checks));
+    } catch {}
+  }
+
+  function paint(li: HTMLElement) {
+    const c = checks[li.dataset.id!];
+    li.dataset.state = c?.s ?? '';
+    li.querySelector('.vf-badge')!.textContent = c ? (c.s === 'ok' ? '✓ matches' : '✗ differs') : '';
+    for (const b of li.querySelectorAll<HTMLButtonElement>('.vf-actions [data-s]')) {
+      const s = b.dataset.s;
+      if (s) b.setAttribute('aria-pressed', String(c?.s === s));
+      else b.hidden = !c;
+    }
+    const note = li.querySelector<HTMLElement>('.vf-note')!;
+    note.hidden = c?.s !== 'diff';
+    const ta = note.querySelector('textarea')!;
+    if (document.activeElement !== ta) ta.value = c?.note ?? '';
+  }
+
+  function applyFilter() {
+    const show = (document.querySelector<HTMLInputElement>('input[name=vf-show]:checked')?.value ?? 'all') as string;
+    for (const li of items) {
+      const s = li.dataset.state;
+      li.hidden = show === 'open' ? !!s : show === 'diff' ? s !== 'diff' : false;
+    }
+  }
+
+  function summarize() {
+    const vals = items.map((li) => checks[li.dataset.id!]).filter(Boolean);
+    const ok = vals.filter((c) => c.s === 'ok').length;
+    const diff = vals.length - ok;
+    $('vf-count').textContent = `${vals.length} of ${items.length} checked · ${ok} match · ${diff} differ`;
+    $('vf-meter').style.width = `${items.length ? Math.round((100 * vals.length) / items.length) : 0}%`;
+    for (const el of document.querySelectorAll<HTMLElement>('[data-group-count]')) {
+      const g = items.filter((li) => li.dataset.region === el.dataset.groupCount);
+      const done = g.filter((li) => checks[li.dataset.id!]).length;
+      el.textContent = `${done} / ${g.length} checked`;
+    }
+  }
+
+  function refresh() {
+    items.forEach(paint);
+    summarize();
+    applyFilter();
+  }
+
+  for (const li of items) {
+    const id = li.dataset.id!;
+    for (const b of li.querySelectorAll<HTMLButtonElement>('.vf-actions [data-s]')) {
+      b.addEventListener('click', () => {
+        const s = b.dataset.s as '' | 'ok' | 'diff';
+        if (!s) delete checks[id];
+        else checks[id] = { s, note: s === 'diff' ? checks[id]?.note : undefined, t: Date.now() };
+        save();
+        paint(li);
+        summarize();
+        if (s === 'diff') li.querySelector('textarea')!.focus();
+      });
+    }
+    li.querySelector('textarea')!.addEventListener('input', (e) => {
+      if (checks[id]?.s !== 'diff') return;
+      checks[id].note = (e.target as HTMLTextAreaElement).value;
+      save();
+    });
+  }
+  for (const r of document.querySelectorAll('input[name=vf-show]')) r.addEventListener('change', applyFilter);
+
+  function report() {
+    const lines = (s: 'ok' | 'diff') =>
+      items
+        .filter((li) => checks[li.dataset.id!]?.s === s)
+        .map((li) => {
+          const [entryId, field, n] = li.dataset.id!.split('|');
+          const name = li.querySelector('.vf-head a')!.textContent;
+          const claim = li.querySelector('.vf-claim')?.textContent ?? '';
+          const note = checks[li.dataset.id!].note?.trim();
+          return `- ${name} [${entryId} · ${field} · #${Number(n) + 1}]: "${claim}"${s === 'diff' ? `\n  Textbook says: ${note || '(no note given)'}` : ''}`;
+        });
+    const ok = lines('ok');
+    const diff = lines('diff');
+    return [
+      `Anatomy Atlas — verify-flag check (${new Date().toLocaleDateString()})`,
+      `Checked ${ok.length + diff.length} of ${items.length} flags.`,
+      '',
+      `CONFIRMED — matches my textbook, remove the verify tag (${ok.length}):`,
+      ...(ok.length ? ok : ['- none']),
+      '',
+      `CORRECTIONS — my textbook differs (${diff.length}):`,
+      ...(diff.length ? diff : ['- none']),
+    ].join('\n');
+  }
+
+  $('vf-copy').addEventListener('click', async () => {
+    const text = report();
+    const box = $('vf-report') as HTMLTextAreaElement;
+    box.value = text;
+    box.hidden = false;
+    try {
+      await navigator.clipboard.writeText(text);
+      $('vf-msg').textContent = 'Copied. Paste it into your chat with Claude.';
+    } catch {
+      box.select();
+      $('vf-msg').textContent = 'Copy the text below and paste it into your chat with Claude.';
+    }
+  });
+  $('vf-download').addEventListener('click', () => {
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([report()], { type: 'text/plain' }));
+    a.download = `verify-check-${new Date().toISOString().slice(0, 10)}.txt`;
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  });
+  $('vf-reset').addEventListener('click', () => {
+    if (confirm('Clear all your verify checks on this device?')) {
+      checks = {};
+      save();
+      refresh();
+    }
+  });
+
+  refresh();
+</script>

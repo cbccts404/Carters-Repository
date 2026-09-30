@@ -104,4 +104,7 @@ flashcards:
   - front: Which nerve passes between the two heads of pronator teres?
     back: Median nerve
 related: [cubital-fossa, median-nerve]
+images:
+  - image: gray-414-forearm-anterior-superficial
+    caption: "Superficial flexors of the forearm, with pronator teres crossing to the radius."
 ---

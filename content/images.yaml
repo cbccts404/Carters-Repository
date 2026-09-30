@@ -2182,3 +2182,233 @@
   license: Public domain
   licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
   alt: "Dorsal view of the brainstem with the cerebellum partly removed: superior and inferior colliculi, trochlear nerve, facial colliculus, hypoglossal trigone, area postrema and the cerebellar peduncles"
+
+- id: gray-392-external-oblique-rectus-sheath
+  file: images/gray-392-external-oblique-rectus-sheath.png
+  title: "The external oblique and the rectus sheath"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 392"
+  source: https://commons.wikimedia.org/wiki/File:Gray392.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterolateral abdominal wall showing the external oblique muscle and its aponeurosis forming the anterior rectus sheath, through which the tendinous intersections of rectus abdominis can be seen"
+
+- id: gray-395-internal-oblique
+  file: images/gray-395-internal-oblique.png
+  title: "The internal oblique muscle"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 395"
+  source: https://commons.wikimedia.org/wiki/File:Gray395.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterolateral abdominal wall with the external oblique removed, showing the internal oblique muscle and the rectus sheath"
+
+- id: gray-1188-spleen-visceral
+  file: images/gray-1188-spleen-visceral.png
+  title: "The visceral surface of the spleen"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1188"
+  source: https://commons.wikimedia.org/wiki/File:Gray1188.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Visceral surface of the spleen with its gastric, renal and colic impressions and the splenic vessels at the hilum"
+
+- id: gray-235-hip-bone-outer
+  file: images/gray-235-hip-bone-outer.png
+  title: "Right hip bone, external surface, with muscle attachments"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 235"
+  source: https://commons.wikimedia.org/wiki/File:Gray235.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Outer surface of the right hip bone showing the gluteal lines and the attachments of the gluteus maximus, medius and minimus"
+
+- id: gray-344-hip-transverse-section
+  file: images/gray-344-hip-transverse-section.png
+  title: "Transverse section through the right hip joint"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 344"
+  source: https://commons.wikimedia.org/wiki/File:Gray344.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Cross-section at the level of the hip joint showing the acetabulum and femoral head surrounded by gluteus maximus, medius and minimus, the femoral vessels and nerve, and the sciatic nerve"
+
+- id: gray-1172-mammary-gland
+  file: images/gray-1172-mammary-gland.png
+  title: "Dissection of the lower half of the mammary gland"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1172"
+  source: https://commons.wikimedia.org/wiki/File:Gray1172.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "The breast dissected to show its lobules, lactiferous ducts and ampullae converging on the nipple, embedded in fat and connective tissue"
+
+- id: gray-607-mammary-lymphatics
+  file: images/gray-607-mammary-lymphatics.png
+  title: "Lymphatics of the mammary gland and axillary lymph nodes"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 607"
+  source: https://commons.wikimedia.org/wiki/File:Gray607.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lymphatic vessels of the breast draining to the axillary lymph node groups (pectoral, central, lateral, subscapular and subclavicular)"
+
+- id: gray-1178-thymus
+  file: images/gray-1178-thymus.png
+  title: "The thymus of a full-term fetus"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1178"
+  source: https://commons.wikimedia.org/wiki/File:Gray1178.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Thymus exposed in the superior and anterior mediastinum, lying on the pericardium in front of the great vessels"
+
+- id: gray-492-heart-sternocostal
+  file: images/gray-492-heart-sternocostal.png
+  title: "Sternocostal surface of the heart with the coronary arteries"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 492"
+  source: https://commons.wikimedia.org/wiki/File:Gray492.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior surface of the heart showing the right coronary artery in the coronary sulcus and the anterior descending (interventricular) branch of the left coronary artery"
+
+- id: gray-491-heart-diaphragmatic
+  file: images/gray-491-heart-diaphragmatic.png
+  title: "Base and diaphragmatic surface of the heart"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 491"
+  source: https://commons.wikimedia.org/wiki/File:Gray491.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the heart showing the left atrium with the pulmonary veins, the coronary sinus and the cardiac veins accompanying the coronary arteries"
+
+- id: gray-494-heart-base-valves-above
+  file: images/gray-494-heart-base-valves-above.png
+  title: "Base of the heart from above, showing the pulmonary and aortic valves"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 494"
+  source: https://commons.wikimedia.org/wiki/File:Gray494.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "View of the heart from above with the great vessels cut, showing the closed pulmonary and aortic valves and the atria"
+
+- id: gray-495-ventricles-base-valves
+  file: images/gray-495-ventricles-base-valves.png
+  title: "Base of the ventricles with the atria removed"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 495"
+  source: https://commons.wikimedia.org/wiki/File:Gray495.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "The four valves seen from above: pulmonary, aortic, bicuspid (mitral) and tricuspid, with the coronary arteries around them"
+
+- id: gray-496-left-heart-interior
+  file: images/gray-496-left-heart-interior.png
+  title: "Interior of the left side of the heart"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 496"
+  source: https://commons.wikimedia.org/wiki/File:Gray496.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "The left atrium and ventricle opened to show the mitral valve, chordae tendineae and papillary muscles"
+
+- id: gray-410-pectoralis-deltoid-biceps
+  file: images/gray-410-pectoralis-deltoid-biceps.png
+  title: "Superficial muscles of the chest and front of the arm"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 410"
+  source: https://commons.wikimedia.org/wiki/File:Gray410.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Pectoralis major converging on the humerus, with deltoid, biceps brachii and the deltopectoral groove"
+
+- id: gray-411-deep-chest-front-arm
+  file: images/gray-411-deep-chest-front-arm.png
+  title: "Deep muscles of the chest and front of the arm, with the boundaries of the axilla"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 411"
+  source: https://commons.wikimedia.org/wiki/File:Gray411.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Pectoralis minor, serratus anterior, subscapularis in the posterior wall of the axilla, coracobrachialis, biceps brachii and brachialis"
+
+- id: gray-414-forearm-anterior-superficial
+  file: images/gray-414-forearm-anterior-superficial.png
+  title: "Front of the left forearm, superficial muscles"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 414"
+  source: https://commons.wikimedia.org/wiki/File:Gray414.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Superficial flexor muscles of the forearm, including pronator teres crossing from the medial epicondyle to the radius"
+
+- id: gray-574-upper-limb-superficial-veins
+  file: images/gray-574-upper-limb-superficial-veins.png
+  title: "Superficial veins of the upper limb"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 574"
+  source: https://commons.wikimedia.org/wiki/File:Gray574.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Cephalic and basilic veins and the median cubital vein crossing the front of the elbow, with the cutaneous nerves"
+
+- id: gray-413-arm-cross-section
+  file: images/gray-413-arm-cross-section.png
+  title: "Cross-section through the middle of the arm"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 413"
+  source: https://commons.wikimedia.org/wiki/File:Gray413.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Mid-arm section showing biceps brachii, brachialis and triceps, with the brachial artery and median, ulnar and radial nerves"
+
+- id: gray-417-forearm-cross-section
+  file: images/gray-417-forearm-cross-section.png
+  title: "Cross-section through the middle of the forearm"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 417"
+  source: https://commons.wikimedia.org/wiki/File:Gray417.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Mid-forearm section showing the flexor and extensor muscles, the radius and ulna, and the median, ulnar and radial nerves with their vessels"
+
+- id: gray-815-superficial-palmar-nerves
+  file: images/gray-815-superficial-palmar-nerves.png
+  title: "Superficial palmar nerves (Testut)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 815"
+  source: https://commons.wikimedia.org/wiki/File:Gray815.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Palmar branches of the median and ulnar nerves supplying the thenar muscles, lateral lumbricals and digital nerves"
+
+- id: gray-817-deep-palmar-nerves
+  file: images/gray-817-deep-palmar-nerves.png
+  title: "Deep palmar nerves (Testut)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 817"
+  source: https://commons.wikimedia.org/wiki/File:Gray817.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "The deep branch of the ulnar nerve crossing the palm to supply the interossei, medial lumbricals and adductor pollicis"
+
+- id: gray-810-suprascapular-axillary-nerves
+  file: images/gray-810-suprascapular-axillary-nerves.png
+  title: "Suprascapular and axillary nerves, from behind (Testut)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 810"
+  source: https://commons.wikimedia.org/wiki/File:Gray810.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior shoulder showing the axillary nerve passing through the quadrangular space to supply deltoid and teres minor, and the suprascapular nerve"
+
+- id: gray-818-suprascapular-axillary-radial
+  file: images/gray-818-suprascapular-axillary-radial.png
+  title: "The suprascapular, axillary and radial nerves"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 818"
+  source: https://commons.wikimedia.org/wiki/File:Gray818.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the upper limb with the axillary nerve at the shoulder and the radial nerve in the spiral groove and forearm"

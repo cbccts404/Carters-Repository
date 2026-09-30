@@ -161,4 +161,9 @@ flashcards:
   - front: Hook test?
     back: Can't hook the distal biceps tendon in the antecubital fossa → complete distal rupture
 related: [cubital-fossa, glenohumeral-joint]
+images:
+  - image: gray-410-pectoralis-deltoid-biceps
+    caption: "Biceps brachii on the front of the arm."
+  - image: gray-413-arm-cross-section
+    caption: "Cross-section of the mid-arm: biceps, brachialis and the neurovascular bundle."
 ---

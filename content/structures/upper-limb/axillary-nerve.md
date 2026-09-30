@@ -137,4 +137,9 @@ flashcards:
   - front: Sensory territory of the axillary nerve?
     back: Skin over inferior deltoid ("regimental badge") via superior lateral cutaneous nerve of arm
 related: [glenohumeral-joint]
+images:
+  - image: gray-810-suprascapular-axillary-nerves
+    caption: "The axillary nerve passing through the quadrangular space to deltoid and teres minor."
+  - image: gray-818-suprascapular-axillary-radial
+    caption: "The axillary and radial nerves from behind."
 ---

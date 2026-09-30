@@ -113,4 +113,7 @@ flashcards:
   - front: Traube space?
     back: Area bounded by the 6th rib, left costal margin and anterior axillary line; dullness suggests splenomegaly
 related: [pancreas, celiac-trunk, hepatic-portal-vein]
+images:
+  - image: gray-1188-spleen-visceral
+    caption: "Visceral surface of the spleen: gastric, renal and colic impressions and the hilum."
 ---

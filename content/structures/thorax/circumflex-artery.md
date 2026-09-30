@@ -84,4 +84,9 @@ flashcards:
     back: Posterior leads V7–V9 (ST elevation); anterior leads show ST depression + tall R in V1–V3
 diagrams: [coronary-arteries]
 related: [left-coronary-artery, anterior-interventricular-artery, right-coronary-artery]
+images:
+  - image: gray-491-heart-diaphragmatic
+    caption: "The diaphragmatic surface of the heart, where the circumflex and right coronary territories meet."
+  - image: gray-492-heart-sternocostal
+    caption: "The left coronary artery and its anterior descending branch."
 ---

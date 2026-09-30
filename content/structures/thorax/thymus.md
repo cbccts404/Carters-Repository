@@ -96,4 +96,7 @@ flashcards:
   - front: Anterior mediastinal mass — 4 T's?
     back: Thymoma, teratoma, thyroid (goiter), terrible lymphoma
 related: [mediastinum, sternum]
+images:
+  - image: gray-1178-thymus
+    caption: "The thymus in the anterior mediastinum of a full-term fetus."
 ---
