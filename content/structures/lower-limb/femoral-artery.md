@@ -92,4 +92,9 @@ flashcards:
   - front: ABI diagnostic of PAD?
     back: ≤ 0.90
 related: [femoral-triangle, popliteal-artery, femoral-nerve, internal-iliac-artery]
+images:
+  - image: gray-548-femoral-artery-diagram
+    caption: "Femoral artery and its branches (diagram)."
+  - image: gray-550-femoral-artery-thigh
+    caption: "The femoral artery descending through the thigh toward the adductor canal."
 ---

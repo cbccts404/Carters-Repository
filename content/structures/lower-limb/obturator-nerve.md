@@ -75,4 +75,7 @@ flashcards:
   - front: Muscles supplied?
     back: Adductors (longus, brevis, adductor part of magnus), gracilis, obturator externus
 related: [lumbar-plexus, adductor-muscles, hip-joint, femoral-nerve]
+images:
+  - image: gray-823-lumbar-plexus
+    caption: "The lumbar plexus: the obturator nerve at the medial border of psoas."
 ---

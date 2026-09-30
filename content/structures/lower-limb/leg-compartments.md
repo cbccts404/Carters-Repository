@@ -93,4 +93,9 @@ flashcards:
     back: Diastolic BP − compartment pressure < 30 mm Hg
 diagrams: [leg-compartments]
 related: [tibia, fibula, common-fibular-nerve, tibial-nerve, triceps-surae]
+images:
+  - image: gray-440-leg-cross-section
+    caption: "Cross-section through the middle of the leg."
+  - image: gray-437-anterior-leg-muscles
+    caption: "Anterior compartment muscles of the leg."
 ---

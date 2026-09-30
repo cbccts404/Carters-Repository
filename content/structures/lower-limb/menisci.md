@@ -97,4 +97,9 @@ flashcards:
   - front: Classic mechanical symptom of a bucket-handle tear?
     back: Locking — inability to fully extend the knee
 related: [knee-joint, collateral-ligaments-of-knee, cruciate-ligaments]
+images:
+  - image: gray-349-tibial-plateau-menisci
+    caption: "Tibial plateau from above: C-shaped medial and O-shaped lateral menisci."
+  - image: gray-347-knee-interior-front
+    caption: "The menisci on the tibial plateau of the flexed knee."
 ---

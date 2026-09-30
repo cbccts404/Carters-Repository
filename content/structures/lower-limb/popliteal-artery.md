@@ -86,4 +86,9 @@ flashcards:
   - front: Dorsalis pedis is the continuation of?
     back: Anterior tibial artery
 related: [femoral-artery, popliteal-fossa, knee-joint, leg-compartments]
+images:
+  - image: gray-551-popliteal-posterior-tibial
+    caption: "The popliteal artery continuing as the posterior tibial artery."
+  - image: gray-553-anterior-tibial-artery
+    caption: "The anterior tibial artery continuing as the dorsalis pedis artery."
 ---

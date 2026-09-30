@@ -96,4 +96,9 @@ flashcards:
   - front: Osgood–Schlatter disease?
     back: Traction apophysitis of the tibial tuberosity in adolescents
 related: [fibula, knee-joint, ankle-joint, leg-compartments]
+images:
+  - image: gray-258-leg-bones-anterior
+    caption: "Tibia and fibula from the front: tibial tuberosity and subcutaneous anteromedial surface."
+  - image: gray-259-leg-bones-posterior
+    caption: "Posterior surface with the soleal line."
 ---

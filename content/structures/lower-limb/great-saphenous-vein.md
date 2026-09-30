@@ -92,4 +92,9 @@ flashcards:
   - front: Location of venous ulcers?
     back: Gaiter area, typically above the medial malleolus
 related: [deep-veins-of-lower-limb, femoral-triangle]
+images:
+  - image: gray-584-saphenofemoral-junction
+    caption: "Tributaries at the saphenofemoral junction."
+  - image: gray-549-femoral-triangle
+    caption: "The great saphenous vein joining the femoral vein in the femoral triangle."
 ---

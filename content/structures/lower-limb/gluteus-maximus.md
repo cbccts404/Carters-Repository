@@ -76,4 +76,7 @@ flashcards:
   - front: Main insertion of gluteus maximus?
     back: Iliotibial tract (and gluteal tuberosity)
 related: [gluteus-medius-and-minimus, piriformis, sciatic-nerve, hip-joint]
+images:
+  - image: gray-434-gluteal-posterior-thigh
+    caption: "Gluteal and posterior thigh muscles: gluteus maximus and the hamstrings."
 ---

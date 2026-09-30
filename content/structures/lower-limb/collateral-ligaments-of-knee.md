@@ -88,4 +88,9 @@ flashcards:
   - front: Which collateral ligament is attached to its meniscus?
     back: MCL (to the medial meniscus); the LCL is separate
 related: [knee-joint, cruciate-ligaments, menisci]
+images:
+  - image: gray-348-knee-interior-behind
+    caption: "Posterior view showing the fibular collateral ligament (separate from the lateral meniscus) and the tibial collateral ligament."
+  - image: gray-345-knee-anterior
+    caption: "Anterior view with the tibial collateral ligament on the medial side."
 ---

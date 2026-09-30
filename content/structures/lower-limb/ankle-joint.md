@@ -115,4 +115,9 @@ flashcards:
   - front: Position of greatest ankle stability?
     back: Dorsiflexion (wider anterior talus in the mortise)
 related: [lateral-ankle-ligaments, tibia, fibula, bones-of-the-foot]
+images:
+  - image: gray-357-ankle-coronal
+    caption: "Coronal section: the talus in the mortise between the malleoli, with the deltoid and calcaneofibular ligaments."
+  - image: gray-442-ankle-tendon-sheaths-medial
+    caption: "Tendons behind the medial malleolus: tibialis posterior, flexor digitorum longus and flexor hallucis longus."
 ---

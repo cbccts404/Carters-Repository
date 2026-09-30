@@ -88,4 +88,7 @@ flashcards:
     back: L5 also weakens inversion (tibialis posterior) and hip abduction; fibular palsy spares them
 diagrams: [leg-compartments, lower-limb-dermatomes]
 related: [sciatic-nerve, fibula, leg-compartments, tibial-nerve]
+images:
+  - image: gray-835-deep-nerves-front-of-leg
+    caption: "Deep nerves of the front of the leg: common fibular nerve dividing into deep and superficial fibular nerves."
 ---

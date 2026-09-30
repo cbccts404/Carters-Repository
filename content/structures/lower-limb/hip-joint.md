@@ -139,4 +139,9 @@ flashcards:
   - front: DDH treatment in infants?
     back: Pavlik harness
 related: [femur, hip-bone, gluteus-medius-and-minimus, sciatic-nerve]
+images:
+  - image: gray-339-hip-joint-anterior
+    caption: "Anterior view: the Y-shaped iliofemoral ligament."
+  - image: gray-340-hip-joint-posterior
+    caption: "Posterior view: the ischiofemoral ligament."
 ---

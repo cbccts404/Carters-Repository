@@ -73,4 +73,9 @@ flashcards:
   - front: Exceptions to obturator nerve supply in the medial thigh?
     back: Pectineus (femoral), hamstring part of adductor magnus (tibial)
 related: [obturator-nerve, femoral-triangle, hip-joint]
+images:
+  - image: gray-433-deep-adductors
+    caption: "Deep adductors of the medial thigh reaching the adductor tubercle."
+  - image: gray-430-anterior-thigh-muscles
+    caption: "Anterior view including adductor longus and gracilis."
 ---

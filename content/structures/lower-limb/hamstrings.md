@@ -77,4 +77,9 @@ flashcards:
   - front: Pes anserinus muscles?
     back: Sartorius, gracilis, semitendinosus
 related: [sciatic-nerve, knee-joint, popliteal-fossa]
+images:
+  - image: gray-434-gluteal-posterior-thigh
+    caption: "Posterior thigh: biceps femoris, semitendinosus and semimembranosus."
+  - image: gray-432-thigh-cross-section
+    caption: "Cross-section of the mid-thigh: the hamstrings around the sciatic nerve."
 ---

@@ -75,4 +75,7 @@ flashcards:
   - front: Nerve to piriformis?
     back: S1–S2 (sacral plexus)
 related: [sciatic-nerve, gluteus-maximus, sacral-plexus]
+images:
+  - image: gray-1244-gluteal-surface-markings
+    caption: "Surface markings: the sciatic nerve and gluteal arteries leave the pelvis around piriformis through the greater sciatic foramen."
 ---

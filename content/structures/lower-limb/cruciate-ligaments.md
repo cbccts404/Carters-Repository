@@ -109,4 +109,9 @@ flashcards:
   - front: Segond fracture implies?
     back: ACL tear
 related: [knee-joint, collateral-ligaments-of-knee, menisci]
+images:
+  - image: gray-347-knee-interior-front
+    caption: "Flexed knee from the front: the cruciate ligaments in the intercondylar fossa."
+  - image: gray-348-knee-interior-behind
+    caption: "Knee from behind: anterior and posterior cruciate ligaments."
 ---

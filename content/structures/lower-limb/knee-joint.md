@@ -127,4 +127,11 @@ flashcards:
   - front: Tests for knee effusion?
     back: Bulge (wipe) test (small), patellar tap/ballottement (large)
 related: [cruciate-ligaments, collateral-ligaments-of-knee, menisci, patella, popliteal-fossa]
+images:
+  - image: gray-345-knee-anterior
+    caption: "Anterior view of the knee: quadriceps tendon, patella and patellar ligament."
+  - image: gray-350-knee-sagittal
+    caption: "Sagittal section of the knee joint."
+  - image: gray-552-genicular-anastomosis
+    caption: "The genicular anastomosis around the knee."
 ---

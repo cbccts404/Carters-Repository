@@ -84,4 +84,9 @@ flashcards:
   - front: Weber classification refers to?
     back: Level of the lateral malleolar (fibular) fracture relative to the syndesmosis (A below, B at, C above)
 related: [tibia, ankle-joint, common-fibular-nerve]
+images:
+  - image: gray-258-leg-bones-anterior
+    caption: "The fibula lateral to the tibia, from the head to the lateral malleolus."
+  - image: gray-259-leg-bones-posterior
+    caption: "Posterior view of the leg bones."
 ---

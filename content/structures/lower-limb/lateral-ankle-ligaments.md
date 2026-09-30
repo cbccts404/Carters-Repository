@@ -85,4 +85,9 @@ flashcards:
   - front: Ligament that resists eversion?
     back: Deltoid (medial) ligament
 related: [ankle-joint, fibula, bones-of-the-foot]
+images:
+  - image: gray-356-ankle-capsule-lateral
+    caption: "Lateral ankle: anterior talofibular, calcaneofibular and posterior talofibular ligaments."
+  - image: gray-355-foot-ligaments-lateral
+    caption: "Ligaments of the foot and ankle from the lateral side."
 ---

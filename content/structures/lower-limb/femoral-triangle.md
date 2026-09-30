@@ -88,4 +88,9 @@ flashcards:
   - front: Medial boundary of the femoral ring?
     back: Lacunar ligament
 related: [femoral-artery, femoral-nerve, great-saphenous-vein, inguinal-canal]
+images:
+  - image: gray-549-femoral-triangle
+    caption: "Dissection of the femoral triangle: femoral nerve, artery and vein between sartorius and adductor longus."
+  - image: gray-1245-thigh-surface-markings
+    caption: "Surface markings of the femoral artery and nerve."
 ---

@@ -91,4 +91,9 @@ flashcards:
     back: Common fibular division (foot drop)
 diagrams: [lower-limb-dermatomes]
 related: [sacral-plexus, piriformis, hamstrings, tibial-nerve, common-fibular-nerve]
+images:
+  - image: gray-832-lower-limb-nerves-posterior
+    caption: "Posterior view: the sciatic nerve and its tibial and common fibular divisions."
+  - image: gray-1244-gluteal-surface-markings
+    caption: "Surface marking of the sciatic nerve in the buttock."
 ---

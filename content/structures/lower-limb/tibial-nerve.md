@@ -83,4 +83,9 @@ flashcards:
     back: Skin of the lateral foot and heel (sensory only)
 diagrams: [leg-compartments, lower-limb-dermatomes]
 related: [sciatic-nerve, triceps-surae, popliteal-fossa, ankle-joint]
+images:
+  - image: gray-833-plantar-nerves
+    caption: "The medial and lateral plantar nerves, terminal branches of the tibial nerve."
+  - image: gray-832-lower-limb-nerves-posterior
+    caption: "The tibial nerve descending through the popliteal fossa and calf."
 ---

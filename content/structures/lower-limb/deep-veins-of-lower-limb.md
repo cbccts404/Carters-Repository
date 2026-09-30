@@ -92,4 +92,9 @@ flashcards:
   - front: Where does the popliteal vein become the femoral vein?
     back: Adductor hiatus
 related: [great-saphenous-vein, triceps-surae, inferior-vena-cava, popliteal-fossa]
+images:
+  - image: gray-583-popliteal-deep-veins
+    caption: "Posterior tibial and fibular veins forming the popliteal vein."
+  - image: gray-582-small-saphenous-sural
+    caption: "The small saphenous vein ascending to the popliteal vein, with the sural nerve."
 ---

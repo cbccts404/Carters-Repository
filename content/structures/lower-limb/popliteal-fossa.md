@@ -78,4 +78,9 @@ flashcards:
   - front: Contents superficial → deep?
     back: Tibial nerve, popliteal vein, popliteal artery
 related: [popliteal-artery, tibial-nerve, common-fibular-nerve, knee-joint]
+images:
+  - image: gray-583-popliteal-deep-veins
+    caption: "Deep veins of the back of the leg converging on the popliteal vein."
+  - image: gray-551-popliteal-posterior-tibial
+    caption: "The popliteal artery in the popliteal fossa."
 ---

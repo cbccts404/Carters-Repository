@@ -95,4 +95,11 @@ flashcards:
     back: Nerve, Artery, Vein, Empty space (canal), Lymphatics (NAVEL)
 diagrams: [lower-limb-dermatomes]
 related: [lumbar-plexus, quadriceps-femoris, femoral-triangle, femoral-artery]
+images:
+  - image: gray-823-lumbar-plexus
+    caption: "The lumbar plexus: the femoral nerve emerging from psoas."
+  - image: gray-1245-thigh-surface-markings
+    caption: "Surface markings of the femoral nerve and artery."
+  - image: gray-825-lower-limb-cutaneous-anterior
+    caption: "Cutaneous nerves of the front of the lower limb, including the saphenous nerve."
 ---

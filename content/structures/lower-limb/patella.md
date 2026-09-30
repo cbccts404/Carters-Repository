@@ -94,4 +94,9 @@ flashcards:
   - front: Test for integrity of the extensor mechanism?
     back: Active straight-leg raise
 related: [knee-joint, quadriceps-femoris, femur]
+images:
+  - image: gray-255-patella-anterior
+    caption: "Anterior surface of the patella."
+  - image: gray-350-knee-sagittal
+    caption: "Sagittal section of the knee: the patella within the quadriceps tendon and patellar ligament."
 ---

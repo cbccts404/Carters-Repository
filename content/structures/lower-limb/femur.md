@@ -124,4 +124,9 @@ flashcards:
   - front: Normal angle of inclination of the femoral neck?
     back: About 125°
 related: [hip-joint, knee-joint, femoral-artery]
+images:
+  - image: gray-244-femur-anterior
+    caption: "Right femur, anterior surface, with muscle attachments."
+  - image: gray-245-femur-posterior
+    caption: "Posterior surface: linea aspera and gluteal tuberosity."
 ---

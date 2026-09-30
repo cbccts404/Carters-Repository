@@ -93,4 +93,7 @@ flashcards:
   - front: Ankle reflex root?
     back: S1
 related: [tibial-nerve, ankle-joint, leg-compartments, deep-veins-of-lower-limb]
+images:
+  - image: gray-438-calf-superficial
+    caption: "Gastrocnemius converging on the calcaneal (Achilles) tendon."
 ---

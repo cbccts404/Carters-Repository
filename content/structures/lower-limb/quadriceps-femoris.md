@@ -85,4 +85,9 @@ flashcards:
   - front: Origin of rectus femoris straight head?
     back: Anterior inferior iliac spine (AIIS)
 related: [patella, femoral-nerve, knee-joint, femur]
+images:
+  - image: gray-430-anterior-thigh-muscles
+    caption: "Anterior thigh muscles: sartorius and the quadriceps femoris."
+  - image: gray-432-thigh-cross-section
+    caption: "Cross-section of the mid-thigh showing the quadriceps compartment."
 ---

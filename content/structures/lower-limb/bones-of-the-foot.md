@@ -113,4 +113,11 @@ flashcards:
   - front: Lisfranc ligament connects?
     back: Medial cuneiform to the base of the 2nd metatarsal
 related: [ankle-joint, lateral-ankle-ligaments, triceps-surae]
+images:
+  - image: gray-268-foot-bones-dorsal
+    caption: "Bones of the foot, dorsal surface."
+  - image: gray-269-foot-bones-plantar
+    caption: "Plantar surface with muscle attachments."
+  - image: gray-291-foot-skeleton-lateral
+    caption: "Lateral view of the foot skeleton and longitudinal arch."
 ---
