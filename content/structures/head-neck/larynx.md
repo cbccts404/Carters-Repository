@@ -20,7 +20,7 @@ anatomy:
   venousDrainage: Superior and inferior laryngeal veins → thyroid veins.
   lymphatics: Supraglottis → deep cervical nodes (rich drainage); glottis — very sparse lymphatics (early vocal cord cancers rarely spread); subglottis → pretracheal/paratracheal nodes.
   innervation: >-
-    All from the **vagus (CN X)**. **Superior laryngeal nerve**: internal branch — sensation above the vocal folds (cough
+    All from the **[[vagus-nerve|vagus (CN X)]]**. **Superior laryngeal nerve**: internal branch — sensation above the vocal folds (cough
     reflex); external branch — **cricothyroid** (tenses the cords; pitch). **[[recurrent-laryngeal-nerve]]** — all other
     intrinsic muscles and sensation below the vocal folds. **Posterior cricoarytenoid** is the **only abductor**
     (opens the glottis).

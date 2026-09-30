@@ -18,14 +18,14 @@ anatomy:
     lateral wall: Zygomatic bone and greater wing of the sphenoid — the thickest wall
     apex: Optic canal and superior orbital fissure
   contents:
-    - "[[eyeball]] and optic nerve (CN II)"
+    - "[[eyeball]] and [[optic-nerve|optic nerve (CN II)]]"
     - "[[extraocular-muscles]] and levator palpebrae superioris"
-    - "Nerves: CN III, IV, VI, V1 branches (frontal, lacrimal, nasociliary), ciliary ganglion"
+    - "Nerves: [[oculomotor-nerve|CN III]], [[trochlear-nerve|IV]], [[abducens-nerve|VI]], [[trigeminal-nerve|V1]] branches (frontal, lacrimal, nasociliary), ciliary ganglion"
     - "Ophthalmic artery (from the internal carotid) and superior/inferior ophthalmic veins"
     - "Lacrimal gland (superolateral) and orbital fat"
   communications: >-
     **Optic canal** → middle cranial fossa (CN II, ophthalmic artery). **Superior orbital fissure** (CN III, IV, V1,
-    VI, superior ophthalmic vein) → cavernous sinus. **Inferior orbital fissure** → pterygopalatine and infratemporal
+    VI, superior ophthalmic vein) → cavernous sinus (see [[dural-venous-sinuses]]). **Inferior orbital fissure** → pterygopalatine and infratemporal
     fossae. Ophthalmic veins are **valveless** and drain to the **cavernous sinus** — a route for spreading infection.
   notes: The **orbital septum**, a fascial sheet from the orbital rim to the tarsal plates, separates the eyelids (preseptal) from the orbit proper (postseptal).
 clinical:

@@ -18,7 +18,7 @@ anatomy:
   venousDrainage: Retromandibular vein.
   lymphatics: Parotid (preauricular) nodes → deep cervical nodes (see [[cervical-lymph-nodes]]).
   innervation: >-
-    **Secretomotor: parasympathetic from the glossopharyngeal nerve (CN IX)** — inferior salivatory nucleus → lesser
+    **Secretomotor: parasympathetic from the [[glossopharyngeal-nerve|glossopharyngeal nerve (CN IX)]]** — inferior salivatory nucleus → lesser
     petrosal nerve → otic ganglion → auriculotemporal nerve (V3). Sensory: auriculotemporal and great auricular
     nerves. The facial nerve passes through the gland but does **not** supply it.
   relations: The [[temporomandibular-joint]] and external acoustic meatus lie behind; masseter in front; the styloid process and internal jugular vein deep.

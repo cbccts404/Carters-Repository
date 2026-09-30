@@ -21,7 +21,7 @@ anatomy:
     carotid** via the ophthalmic artery (supratrochlear, supraorbital); extensive anastomoses.
   venousDrainage: Veins accompanying the arteries; **emissary veins** in the danger layer connect scalp veins with the intracranial dural venous sinuses.
   lymphatics: Occipital, posterior auricular (mastoid), preauricular (parotid) and submandibular nodes (see [[cervical-lymph-nodes]]).
-  innervation: Anteriorly branches of the trigeminal nerve (supratrochlear, supraorbital, zygomaticotemporal, auriculotemporal); posteriorly the greater occipital nerve (C2) ([[greater-occipital-nerve]]), lesser occipital and great auricular nerves ([[cervical-plexus]]) and third occipital nerve.
+  innervation: Anteriorly branches of the [[trigeminal-nerve|trigeminal nerve]] (supratrochlear, supraorbital, zygomaticotemporal, auriculotemporal); posteriorly the greater occipital nerve (C2) ([[greater-occipital-nerve]]), lesser occipital and great auricular nerves ([[cervical-plexus]]) and third occipital nerve.
   relations: The first three layers are firmly bound together and move as one ("scalp proper").
 clinical:
   - title: Scalp lacerations

@@ -1812,3 +1812,373 @@
   license: Public domain
   licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
   alt: "Coronal section through the vertex: skin, subcutaneous tissue, galea aponeurotica, loose areolar tissue, pericranium, skull, dura, arachnoid, pia and the superior sagittal sinus"
+
+- id: gray-726-cerebrum-lateral
+  file: images/gray-726-cerebrum-lateral.png
+  title: "Lateral surface of the left cerebral hemisphere"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 726"
+  source: https://commons.wikimedia.org/wiki/File:Gray726.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral view of the left hemisphere with the frontal, parietal, temporal and occipital gyri and sulci labelled, including the central sulcus, precentral and postcentral gyri and lateral fissure"
+
+- id: gray-727-cerebrum-medial
+  file: images/gray-727-cerebrum-medial.png
+  title: "Medial surface of the left cerebral hemisphere"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 727"
+  source: https://commons.wikimedia.org/wiki/File:Gray727.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Medial surface showing the corpus callosum, cingulate gyrus, paracentral lobule, precuneus, cuneus, calcarine and parieto-occipital fissures, and the parahippocampal (hippocampal) gyrus and uncus"
+
+- id: gray-518-cerebral-artery-areas-medial
+  file: images/gray-518-cerebral-artery-areas-medial.png
+  title: "Medial surface of the cerebral hemisphere showing areas supplied by the cerebral arteries"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 518"
+  source: https://commons.wikimedia.org/wiki/File:Gray518.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Medial surface tinted by arterial territory: anterior cerebral (blue) over the medial frontal and parietal lobes, posterior cerebral (yellow) over the occipital and inferior temporal lobes, middle cerebral (pink) at the temporal pole"
+
+- id: gray-519-circle-of-willis-diagram
+  file: images/gray-519-circle-of-willis-diagram.png
+  title: "Diagram of the arterial circulation at the base of the brain"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 519"
+  source: https://commons.wikimedia.org/wiki/File:Gray519.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Diagram of the circle of Willis: internal carotid, anterior cerebral, anterior communicating, middle cerebral, posterior communicating and posterior cerebral arteries, with the basilar and vertebral arteries and their branches"
+
+- id: gray-516-arteries-base-of-brain
+  file: images/gray-516-arteries-base-of-brain.png
+  title: "The arteries of the base of the brain"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 516"
+  source: https://commons.wikimedia.org/wiki/File:Gray516.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Inferior surface of the brain with the arterial circle, the basilar and vertebral arteries and the middle cerebral artery in the lateral fissure"
+
+- id: gray-679-medulla-pons-anterior
+  file: images/gray-679-medulla-pons-anterior.png
+  title: "Medulla oblongata and pons, anterior surface"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 679"
+  source: https://commons.wikimedia.org/wiki/File:Gray679.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the pons and medulla showing the pyramids, the olives, the decussation of the pyramids and the middle cerebellar peduncle (brachium pontis)"
+
+- id: gray-680-pyramidal-decussation
+  file: images/gray-680-pyramidal-decussation.png
+  title: "Decussation of the pyramids (scheme)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 680"
+  source: https://commons.wikimedia.org/wiki/File:Gray680.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Scheme of fibers passing from the spinal cord into the medulla, showing the crossing corticospinal (pyramidal) fibers at the decussation of the pyramids"
+
+- id: gray-703-cerebellum-anterior
+  file: images/gray-703-cerebellum-anterior.png
+  title: "The cerebellum, anterior aspect"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 703"
+  source: https://commons.wikimedia.org/wiki/File:Gray703.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the cerebellum showing the vermis (nodule, pyramid, tuber), the flocculus and the hemispheres"
+
+- id: gray-704-cerebellum-sagittal
+  file: images/gray-704-cerebellum-sagittal.png
+  title: "Sagittal section through the cerebellum"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 704"
+  source: https://commons.wikimedia.org/wiki/File:Gray704.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Sagittal section of the cerebellar hemisphere and brainstem showing the folia (arbor vitae), tonsil, superior peduncle and fourth ventricle"
+
+- id: gray-741-striatum-model
+  file: images/gray-741-striatum-model.png
+  title: "Model of the striatum"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 741"
+  source: https://commons.wikimedia.org/wiki/File:Gray741.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Two views of a model of the caudate nucleus curving around the lentiform nucleus"
+
+- id: gray-744-coronal-anterior-commissure
+  file: images/gray-744-coronal-anterior-commissure.png
+  title: "Coronal section of the brain through the anterior commissure"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 744"
+  source: https://commons.wikimedia.org/wiki/File:Gray744.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Coronal section showing the caudate nucleus, internal capsule, putamen, globus pallidus, claustrum, insula, lateral and third ventricles and optic chiasm"
+
+- id: gray-1181-pituitary-sagittal
+  file: images/gray-1181-pituitary-sagittal.png
+  title: "The pituitary gland (median sagittal section)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1181"
+  source: https://commons.wikimedia.org/wiki/File:Gray1181.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Sagittal section of the pituitary showing the anterior lobe, pars intermedia and posterior lobe beneath the optic chiasm and third ventricle"
+
+- id: gray-773-optic-nerve-tracts
+  file: images/gray-773-optic-nerve-tracts.png
+  title: "The left optic nerve and the optic tracts"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 773"
+  source: https://commons.wikimedia.org/wiki/File:Gray773.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "The eyeball and left optic nerve joining the optic chiasm, with the optic tracts passing around the cerebral peduncles to the thalamus"
+
+- id: gray-774-visual-pathway-scheme
+  file: images/gray-774-visual-pathway-scheme.png
+  title: "Scheme of the central connections of the optic nerves and tracts"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 774"
+  source: https://commons.wikimedia.org/wiki/File:Gray774.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Both retinas projecting through the optic nerves, chiasm (crossed and uncrossed fibers) and optic tracts to the lateral geniculate bodies, superior colliculi and occipital cortex"
+
+- id: gray-566-superior-sagittal-sinus
+  file: images/gray-566-superior-sagittal-sinus.png
+  title: "The superior sagittal sinus laid open"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 566"
+  source: https://commons.wikimedia.org/wiki/File:Gray566.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "View from above with the skull cap removed showing the superior sagittal sinus, venous lacunae and dural veins"
+
+- id: gray-567-dura-tentorium-cranial-nerves
+  file: images/gray-567-dura-tentorium-cranial-nerves.png
+  title: "Dura mater and tentorium with the cranial nerves"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 567"
+  source: https://commons.wikimedia.org/wiki/File:Gray567.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Dura mater exposed by removing half of the skull and brain: the falx cerebri, tentorium cerebelli, great cerebral vein, and the cranial nerves (optic to accessory) passing through the dura"
+
+- id: gray-568-dural-sinuses-sagittal
+  file: images/gray-568-dural-sinuses-sagittal.png
+  title: "The sinuses of the dura mater"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 568"
+  source: https://commons.wikimedia.org/wiki/File:Gray568.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Sagittal view of the skull showing the falx cerebri with the superior and inferior sagittal sinuses, straight sinus and the confluence of sinuses (torcular Herophili)"
+
+- id: gray-786-cavernous-sinus-section
+  file: images/gray-786-cavernous-sinus-section.png
+  title: "Oblique section through the right cavernous sinus"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 786"
+  source: https://commons.wikimedia.org/wiki/File:Gray786.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Section of the cavernous sinus showing the internal carotid artery and abducent nerve within the sinus, and the oculomotor, trochlear, ophthalmic and maxillary nerves in its lateral wall, beside the sphenoidal sinus"
+
+- id: gray-672-spinal-cord-fasciculi
+  file: images/gray-672-spinal-cord-fasciculi.png
+  title: "The fasciculi of the spinal cord"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 672"
+  source: https://commons.wikimedia.org/wiki/File:Gray672.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Cross-section of the spinal cord showing the ascending tracts (fasciculus gracilis and cuneatus, spinocerebellar and spinothalamic) and descending tracts (lateral and anterior corticospinal, rubrospinal, vestibulospinal)"
+
+- id: gray-713-lemniscus-scheme
+  file: images/gray-713-lemniscus-scheme.png
+  title: "Scheme of the lemniscus"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 713"
+  source: https://commons.wikimedia.org/wiki/File:Gray713.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Scheme of the brainstem showing the medial lemniscus (blue) ascending from the nucleus gracilis and cuneatus to the thalamus, and the lateral (auditory) lemniscus (red)"
+
+- id: gray-764-motor-tract
+  file: images/gray-764-motor-tract.png
+  title: "The motor tract (after Poirier)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 764"
+  source: https://commons.wikimedia.org/wiki/File:Gray764.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Corticospinal fibers descending from the motor cortex through the internal capsule, cerebral peduncle, pons and pyramids, crossing at the decussation of the pyramids into the lateral corticospinal tract"
+
+- id: gray-746-internal-capsule-tracts
+  file: images/gray-746-internal-capsule-tracts.png
+  title: "Diagram of the tracts in the internal capsule"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 746"
+  source: https://commons.wikimedia.org/wiki/File:Gray746.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Horizontal section of the hemisphere showing the internal capsule with the motor (red) fibers at the genu and posterior limb and the thalamocortical sensory fibers (blue), and the optic radiation"
+
+- id: gray-788-facial-nerve-plan
+  file: images/gray-788-facial-nerve-plan.png
+  title: "Plan of the facial and intermediate nerves"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 788"
+  source: https://commons.wikimedia.org/wiki/File:Gray788.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Diagram of the facial nerve and nervus intermedius: geniculate ganglion, greater petrosal nerve, nerve to stapedius, chorda tympani joining the lingual nerve, and the terminal branches"
+
+- id: gray-789-facial-nerve-temporal-bone
+  file: images/gray-789-facial-nerve-temporal-bone.png
+  title: "The facial nerve in the temporal bone"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 789"
+  source: https://commons.wikimedia.org/wiki/File:Gray789.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Course of the facial nerve through the temporal bone with the geniculate ganglion and the petrosal nerves"
+
+- id: gray-778-maxillary-mandibular-nerves
+  file: images/gray-778-maxillary-mandibular-nerves.png
+  title: "Distribution of the maxillary and mandibular nerves"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 778"
+  source: https://commons.wikimedia.org/wiki/File:Gray778.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral dissection showing the trigeminal (semilunar) ganglion with the maxillary and mandibular divisions and their branches, including the lingual, inferior alveolar and auriculotemporal nerves"
+
+- id: gray-776-orbit-nerves-above
+  file: images/gray-776-orbit-nerves-above.png
+  title: "Nerves of the orbit seen from above"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 776"
+  source: https://commons.wikimedia.org/wiki/File:Gray776.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "The right orbit opened from above showing the trochlear nerve to the superior oblique, the ophthalmic nerve branches and the trigeminal (semilunar) ganglion"
+
+- id: gray-777-orbit-nerves-side
+  file: images/gray-777-orbit-nerves-side.png
+  title: "Nerves of the orbit and the ciliary ganglion, side view"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 777"
+  source: https://commons.wikimedia.org/wiki/File:Gray777.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral view of the orbit showing the oculomotor nerve divisions, the ciliary ganglion, the abducent nerve to the lateral rectus and the trigeminal ganglion"
+
+- id: gray-793-glossopharyngeal-vagus-accessory
+  file: images/gray-793-glossopharyngeal-vagus-accessory.png
+  title: "Course and distribution of the glossopharyngeal, vagus and accessory nerves"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 793"
+  source: https://commons.wikimedia.org/wiki/File:Gray793.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "The glossopharyngeal, vagus and accessory nerves descending from the skull base in the neck, with the vagus continuing through the thorax to the stomach"
+
+- id: gray-772-olfactory-neurons
+  file: images/gray-772-olfactory-neurons.png
+  title: "Plan of the olfactory neurons"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 772"
+  source: https://commons.wikimedia.org/wiki/File:Gray772.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Olfactory receptor cells in the olfactory epithelium sending axons to glomeruli and mitral cells in the olfactory bulb, whose fibers form the olfactory tract"
+
+- id: gray-734-ventricles-scheme
+  file: images/gray-734-ventricles-scheme.png
+  title: "Relations of the ventricles to the surface of the brain"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 734"
+  source: https://commons.wikimedia.org/wiki/File:Gray734.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral view of the brain with the lateral and third ventricles, cerebral aqueduct and fourth ventricle projected onto it"
+
+- id: gray-736-ventricle-cast-side
+  file: images/gray-736-ventricle-cast-side.png
+  title: "Cast of the ventricular cavities, side view (Retzius)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 736"
+  source: https://commons.wikimedia.org/wiki/File:Gray736.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Cast of the ventricles showing the lateral ventricle with its horns, the interventricular foramen, third ventricle, cerebral aqueduct and fourth ventricle"
+
+- id: gray-739-hippocampus-ventricle
+  file: images/gray-739-hippocampus-ventricle.png
+  title: "Posterior and inferior horns of the left lateral ventricle"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 739"
+  source: https://commons.wikimedia.org/wiki/File:Gray739.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral dissection exposing the inferior horn of the lateral ventricle with the hippocampus, fimbria and choroid plexus"
+
+- id: gray-747-fornix-diagram
+  file: images/gray-747-fornix-diagram.png
+  title: "Diagram of the fornix (Spitzka)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 747"
+  source: https://commons.wikimedia.org/wiki/File:Gray747.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Diagram of the fornix arching from the hippocampus (fimbria and crus) to the anterior pillars that end in the mammillary bodies"
+
+- id: gray-720-brain-median-sagittal
+  file: images/gray-720-brain-median-sagittal.png
+  title: "Median sagittal section of the brain"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 720"
+  source: https://commons.wikimedia.org/wiki/File:Gray720.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Median section showing the corpus callosum, fornix, thalamus, hypothalamus with the mammillary body and infundibulum, optic chiasm, midbrain with the cerebral aqueduct, pons, medulla, cerebellum and fourth ventricle"
+
+- id: gray-717-coronal-thalamus-midbrain
+  file: images/gray-717-coronal-thalamus-midbrain.png
+  title: "Coronal section through the thalamus and midbrain"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 717"
+  source: https://commons.wikimedia.org/wiki/File:Gray717.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Coronal section showing the thalamus, internal capsule, lentiform and caudate nuclei, red nucleus, substantia nigra, cerebral peduncle and hippocampus"
+
+- id: gray-718-coronal-thalamus-basal-ganglia
+  file: images/gray-718-coronal-thalamus-basal-ganglia.png
+  title: "Coronal section through the thalamus and basal ganglia"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 718"
+  source: https://commons.wikimedia.org/wiki/File:Gray718.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Coronal section showing the thalamus, caudate nucleus, internal capsule, putamen, globus pallidus, claustrum, third ventricle, mammillary bodies and amygdala"
+
+- id: gray-709-brainstem-dorsal
+  file: images/gray-709-brainstem-dorsal.png
+  title: "The rhomboid fossa (floor of the fourth ventricle)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 709"
+  source: https://commons.wikimedia.org/wiki/File:Gray709.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Dorsal view of the brainstem with the cerebellum partly removed: superior and inferior colliculi, trochlear nerve, facial colliculus, hypoglossal trigone, area postrema and the cerebellar peduncles"

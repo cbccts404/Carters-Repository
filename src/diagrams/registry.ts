@@ -95,4 +95,28 @@ export const diagrams: Record<string, DiagramMeta> = {
     description:
       'Right lateral view, face to the right (schematic, not to scale). Sternocleidomastoid separates the anterior triangle (submandibular, carotid, muscular; submental in the midline) from the posterior triangle (occipital, omoclavicular). The dashed common carotid runs deep to sternocleidomastoid.',
   },
+  'visual-pathway': {
+    title: 'Visual pathway and field defects',
+    region: 'neuroanatomy',
+    description:
+      'View from above, anterior at the top. Nasal retinal fibers cross at the chiasm; the Meyer loop (temporal lobe) carries the upper field and the parietal radiation the lower field. The numbered left-sided lesions produce the field defects in the table (patient\'s view, red = lost).',
+  },
+  'circle-of-willis': {
+    title: 'Circle of Willis and vertebrobasilar system',
+    region: 'neuroanatomy',
+    description:
+      'Inferior view, anterior at the top. The internal carotids (anterior circulation) and basilar artery (posterior circulation) are joined by the communicating arteries; CN III passes between the PCA and SCA. Red dots mark common berry aneurysm sites. A complete, symmetric circle is present in only a minority of people.',
+  },
+  'cerebral-artery-territories': {
+    title: 'Territories of the cerebral arteries',
+    region: 'neuroanatomy',
+    description:
+      'Lateral surface of the left hemisphere and medial surface of the right. The MCA supplies the face and arm cortex and the language areas; the ACA the medial leg area; the PCA the occipital lobe. Territory borders vary between people.',
+  },
+  'spinal-cord-tracts': {
+    title: 'Spinal cord tracts (cross-section)',
+    region: 'neuroanatomy',
+    description:
+      'Cervical cord, dorsal at the top. Dorsal columns and lateral corticospinal tract serve the same side of the body; the spinothalamic tract serves the opposite side because its fibers cross in the anterior white commissure (dashed green) within 1–2 segments.',
+  },
 };
