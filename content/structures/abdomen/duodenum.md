@@ -97,6 +97,30 @@ quiz:
     explanation: >-
       The **SMA and SMV** pass anterior to the 3rd part; the IVC and aorta lie behind it. Narrowing of the angle between
       the SMA and aorta can compress the duodenum (SMA syndrome).
+  - stem: >-
+      After losing 15 kg rapidly, a young woman has postprandial epigastric pain, early satiety and bilious vomiting.
+      Which part of the duodenum is compressed, and between which structures?
+    choices:
+      - First part, between the liver and gallbladder
+      - Second part, between the pancreas and right kidney
+      - Third part, between the superior mesenteric artery and aorta
+      - Fourth part, at the ligament of Treitz
+      - Duodenal bulb, by the gastroduodenal artery
+    answer: C
+    explanation: >-
+      In **SMA syndrome**, loss of the mesenteric fat pad narrows the aortomesenteric angle so the **3rd part of the
+      duodenum** is compressed between the **SMA** in front and the **aorta** behind.
+  - stem: The duodenojejunal flexure, suspended by the ligament of Treitz, is the conventional boundary for what?
+    choices:
+      - Upper vs lower GI bleeding
+      - Foregut vs midgut blood supply
+      - Intraperitoneal vs retroperitoneal duodenum
+      - Where the common bile duct opens
+      - Where most duodenal ulcers occur
+    answer: A
+    explanation: >-
+      The **ligament of Treitz** divides **upper** from **lower** GI bleeding. The foregut–midgut junction lies just
+      distal to the major papilla in the 2nd part, and most duodenal ulcers are in the 1st part.
 flashcards:
   - front: Four parts of the duodenum and key features?
     back: "1st: bulb, most ulcers. 2nd: major papilla. 3rd: crosses IVC/aorta under SMA. 4th: ligament of Treitz"

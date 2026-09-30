@@ -68,6 +68,39 @@ quiz:
     explanation: >-
       The **genu** carries **corticobulbar** fibers to cranial nerve motor nuclei. Corticospinal fibers and sensory
       radiations are in the posterior limb; optic radiations are retrolenticular.
+  - stem: Which risk factors are most associated with lacunar infarcts of the internal capsule?
+    choices:
+      - Atrial fibrillation and valve disease
+      - Chronic hypertension and diabetes
+      - Carotid dissection
+      - Oral contraceptives
+      - Migraine with aura
+    answer: B
+    explanation: >-
+      Lacunes are small-vessel infarcts from **lipohyalinosis** of deep penetrating arteries, caused mainly by **chronic
+      hypertension** and **diabetes**. Atrial fibrillation causes embolic cortical strokes.
+  - stem: Which finding argues against a lacunar infarct?
+    choices:
+      - Equal weakness of the face, arm and leg
+      - Pure sensory loss on one side
+      - Dysarthria with a clumsy hand
+      - Ataxic hemiparesis
+      - Aphasia
+    answer: E
+    explanation: >-
+      Lacunar syndromes lack **cortical signs**: aphasia, neglect, visual field loss and gaze deviation point to a
+      cortical (large-vessel) stroke.
+  - stem: Which vessels supply most of the internal capsule?
+    choices:
+      - Lenticulostriate arteries from the MCA
+      - Posterior spinal arteries
+      - Superior cerebellar arteries
+      - Pericallosal arteries from the ACA
+      - Calcarine branches of the PCA
+    answer: A
+    explanation: >-
+      Most of the internal capsule is supplied by the **lenticulostriate arteries of the MCA**, with contributions from
+      the anterior choroidal artery (posterior limb) and the recurrent artery of Heubner (anterior limb and genu).
 flashcards:
   - front: Main arterial supply of the internal capsule?
     back: Lenticulostriate arteries (MCA), plus anterior choroidal and recurrent artery of Heubner

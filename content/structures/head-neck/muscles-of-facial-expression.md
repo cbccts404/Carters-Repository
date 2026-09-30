@@ -89,6 +89,41 @@ quiz:
     explanation: >-
       The part of the facial nucleus supplying the **upper face receives input from both cerebral hemispheres**, so a
       unilateral cortical lesion spares the forehead. The lower face receives mainly contralateral input.
+  - stem: >-
+      A 60-year-old has painful vesicles in the right ear canal and new weakness of the whole right side of the face.
+      What is the diagnosis?
+    choices:
+      - Bell palsy
+      - Stroke
+      - Lyme disease
+      - Parotid tumor
+      - Ramsay Hunt syndrome (herpes zoster oticus)
+    answer: E
+    explanation: >-
+      **Ramsay Hunt syndrome** is reactivation of **varicella-zoster** in the geniculate ganglion, causing facial palsy
+      with **vesicles in the ear canal**. Always look in the ear in a facial palsy.
+  - stem: Bilateral peripheral facial palsy should raise suspicion for which conditions?
+    choices:
+      - Lyme disease, Guillain–Barré syndrome or sarcoidosis
+      - Bilateral strokes
+      - Bell palsy, which is usually bilateral
+      - Parotid adenoma
+      - Migraine
+    answer: A
+    explanation: >-
+      Bell palsy is almost always unilateral. **Bilateral** facial palsy suggests **Lyme disease, Guillain–Barré
+      syndrome or sarcoidosis**.
+  - stem: Which nerve supplies the buccinator muscle?
+    choices:
+      - Buccal branch of V3 (long buccal nerve)
+      - Mandibular nerve motor root
+      - Hypoglossal nerve
+      - Facial nerve (buccal branch)
+      - Glossopharyngeal nerve
+    answer: D
+    explanation: >-
+      Buccinator is a muscle of facial expression (2nd arch), supplied by the **buccal branch of the facial nerve**. The
+      long buccal nerve of V3 is purely **sensory** to the cheek.
 flashcards:
   - front: Nerve supply of the muscles of facial expression?
     back: Facial nerve (CN VII); second pharyngeal arch

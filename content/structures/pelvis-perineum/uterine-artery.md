@@ -73,6 +73,43 @@ quiz:
     explanation: >-
       **Spiral arteries** supply the functional layer; their constriction at the end of the luteal phase causes
       ischemia and shedding. Straight (basal) arteries supply the basal layer, which persists.
+  - stem: During hysterectomy, why is the ureter at risk when the uterine vessels are clamped?
+    choices:
+      - It lies anterior to the uterine artery near the uterine horn
+      - It passes under the uterine artery about 1–2 cm lateral to the supravaginal cervix
+      - It runs within the round ligament
+      - It crosses the ovary in the ovarian fossa
+      - It lies in the free upper edge of the broad ligament
+    answer: B
+    explanation: >-
+      "**Water under the bridge**": the uterine artery passes **above and in front of the ureter** about 1–2 cm lateral
+      to the supravaginal cervix. Clamping, ligation or thermal injury here can cause hydronephrosis, urinoma or a
+      fistula, so surgeons identify the ureter before clamping.
+  - stem: Near the uterine horn, the uterine artery anastomoses with which artery?
+    choices:
+      - Inferior epigastric artery
+      - Internal pudendal artery
+      - Superior vesical artery
+      - Ovarian artery
+      - Obturator artery
+    answer: D
+    explanation: >-
+      The uterine artery ascends tortuously along the lateral uterus and ends by anastomosing with the **ovarian
+      artery** (from the aorta) near the uterine horn and uterotubal junction. These collaterals preserve perfusion when
+      the uterine or internal iliac arteries are ligated or embolized.
+  - stem: >-
+      A 42-year-old woman has heavy bleeding from symptomatic fibroids and wants to keep her uterus. Which
+      catheter-directed procedure can treat her?
+    choices:
+      - Internal iliac vein filter placement
+      - Ovarian vein embolization
+      - Uterine artery embolization
+      - Total hysterectomy
+      - Inferior vena cava filter placement
+    answer: C
+    explanation: >-
+      **Uterine artery embolization**, performed through catheters in the internal iliac arteries, treats symptomatic
+      fibroids (and postpartum hemorrhage) while preserving the uterus. Post-embolization pain and fever are common.
 flashcards:
   - front: Where does the uterine artery cross the ureter?
     back: About 1–2 cm lateral to the supravaginal cervix, passing above/in front of it

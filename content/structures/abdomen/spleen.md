@@ -104,6 +104,28 @@ quiz:
     explanation: >-
       Asplenic patients are at risk from **encapsulated bacteria**: *S. pneumoniae*, *H. influenzae* type b and *N.
       meningitidis*. They should be vaccinated against all three.
+  - stem: A peripheral smear shows Howell–Jolly bodies in red cells. What do they indicate?
+    choices:
+      - Iron deficiency
+      - Asplenia or hyposplenism
+      - Lead poisoning
+      - Vitamin B12 deficiency
+      - Hereditary spherocytosis without splenectomy
+    answer: B
+    explanation: >-
+      **Howell–Jolly bodies** (nuclear remnants) persist when the spleen can't filter red cells, as after splenectomy or
+      with sickle cell autosplenectomy. These patients need vaccination against encapsulated organisms.
+  - stem: The normal spleen lies deep to which ribs on the left?
+    choices:
+      - Ribs 5–7
+      - Ribs 6–8
+      - Ribs 7–9
+      - Ribs 9–11
+      - Ribs 11–12
+    answer: D
+    explanation: >-
+      The spleen lies deep to the **9th–11th ribs**, with its long axis along the 10th rib, which is why lower left rib
+      fractures raise concern for splenic injury. A normal spleen isn't palpable.
 flashcards:
   - front: Spleen surface location?
     back: LUQ deep to ribs 9–11, long axis along rib 10

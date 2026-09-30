@@ -119,6 +119,32 @@ quiz:
     explanation: >-
       A positive **Carnett sign** (tenderness unchanged or worse with the wall tensed) points to an **abdominal wall**
       source such as anterior cutaneous nerve entrapment or a hernia. Visceral pain typically lessens.
+  - stem: >-
+      A patient with severe hemorrhagic pancreatitis develops bruising around the umbilicus. What is this sign called?
+    choices:
+      - Grey Turner sign
+      - Cullen sign
+      - Caput medusae
+      - Carnett sign
+      - Murphy sign
+    answer: B
+    explanation: >-
+      **Cullen sign** is **periumbilical** ecchymosis; **Grey Turner sign** is **flank** ecchymosis. Both reflect blood
+      tracking from the retroperitoneum or peritoneal cavity, e.g. in hemorrhagic pancreatitis or ruptured ectopic
+      pregnancy. Caput medusae is dilated periumbilical veins in portal hypertension.
+  - stem: >-
+      A hernia protrudes through the lateral edge of the rectus sheath in the lower abdomen, near the arcuate line. What
+      type of hernia is it?
+    choices:
+      - Epigastric hernia
+      - Umbilical hernia
+      - Direct inguinal hernia
+      - Femoral hernia
+      - Spigelian hernia
+    answer: E
+    explanation: >-
+      A **Spigelian hernia** passes through the **linea semilunaris** (the lateral edge of the rectus sheath), usually
+      near the arcuate line. Epigastric hernias pass through the linea alba above the umbilicus.
 flashcards:
   - front: Layers of the anterior abdominal wall?
     back: Skin, Camper and Scarpa fascia, external oblique, internal oblique, transversus abdominis, transversalis fascia, extraperitoneal fat, parietal peritoneum

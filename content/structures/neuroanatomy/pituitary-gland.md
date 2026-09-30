@@ -82,6 +82,41 @@ quiz:
     explanation: >-
       **Pituitary apoplexy** causes **acute ACTH deficiency**; hypotension requires **stress-dose IV hydrocortisone**.
       Surgical decompression follows if vision or consciousness is affected.
+  - stem: >-
+      After a delivery complicated by massive hemorrhage, a woman cannot breastfeed and later develops amenorrhea and
+      fatigue. What is the most likely diagnosis?
+    choices:
+      - Prolactinoma
+      - Pituitary apoplexy from an adenoma
+      - Sheehan syndrome
+      - Asherman syndrome
+      - Postpartum thyroiditis
+    answer: C
+    explanation: >-
+      **Sheehan syndrome** is ischemic necrosis of the enlarged anterior pituitary after **postpartum hemorrhage**,
+      causing **failure to lactate**, amenorrhea and hypopituitarism.
+  - stem: In a patient with hypopituitarism, which hormone must be replaced first?
+    choices:
+      - Glucocorticoid (hydrocortisone)
+      - Levothyroxine
+      - Testosterone or estrogen
+      - Growth hormone
+      - Desmopressin
+    answer: A
+    explanation: >-
+      Replace **glucocorticoid before thyroid hormone**; giving levothyroxine first increases cortisol clearance and can
+      precipitate adrenal crisis.
+  - stem: What is the best initial screening test for suspected acromegaly?
+    choices:
+      - Random growth hormone level
+      - Serum prolactin
+      - 24-hour urine cortisol
+      - TSH
+      - Serum IGF-1
+    answer: E
+    explanation: >-
+      **IGF-1** is the screening test for acromegaly (GH fluctuates too much for a random level). It is confirmed by
+      failure of GH suppression on an oral glucose tolerance test.
 flashcards:
   - front: Embryologic origin of the anterior pituitary?
     back: Rathke pouch (oral ectoderm)

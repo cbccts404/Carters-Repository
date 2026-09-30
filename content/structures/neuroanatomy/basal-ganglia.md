@@ -79,6 +79,41 @@ quiz:
     explanation: >-
       **Hemiballismus** results from a lesion (usually lacunar infarct) of the **contralateral subthalamic nucleus** —
       here the **right**.
+  - stem: How does dopamine from the substantia nigra affect the direct and indirect pathways?
+    choices:
+      - Inhibits both pathways
+      - Excites the indirect pathway (D1) and inhibits the direct pathway (D2)
+      - Excites the direct pathway (D1) and inhibits the indirect pathway (D2)
+      - Has no effect on the basal ganglia pathways
+      - Excites both pathways equally
+    answer: C
+    explanation: >-
+      Dopamine **excites the direct pathway (D1)** and **inhibits the indirect pathway (D2)**; both effects favor
+      movement. Its loss in Parkinson disease leaves too little movement.
+  - stem: >-
+      A 19-year-old has a new tremor, personality change and abnormal liver tests. Slit-lamp exam shows brown rings at
+      the corneal margin. Which lab finding is expected?
+    choices:
+      - High serum ceruloplasmin
+      - High serum ferritin
+      - Positive anti-dsDNA
+      - Low vitamin B12
+      - Low serum ceruloplasmin
+    answer: E
+    explanation: >-
+      **Wilson disease** deposits copper in the **lentiform nucleus** and liver, causing tremor, dystonia, psychiatric
+      symptoms and **Kayser–Fleischer rings**, with a **low ceruloplasmin**.
+  - stem: What is the most common site of hypertensive intracerebral hemorrhage?
+    choices:
+      - Putamen
+      - Cerebellum
+      - Pons
+      - Occipital lobe
+      - Caudate nucleus
+    answer: A
+    explanation: >-
+      The **putamen** is the most common site, from rupture of **lenticulostriate** arteries (Charcot–Bouchard
+      microaneurysms), followed by the thalamus.
 flashcards:
   - front: Components of the striatum?
     back: Caudate and putamen

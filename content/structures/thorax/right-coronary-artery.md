@@ -96,6 +96,28 @@ quiz:
     explanation: >-
       **II, III and aVF** face the inferior wall, usually supplied by the RCA. V1–V4 are septal/anterior (LAD); I, aVL,
       V5–V6 are lateral (circumflex).
+  - stem: Which branch of the RCA runs along the inferior (acute) margin of the heart to supply the right ventricle?
+    choices:
+      - Conus artery
+      - SA nodal artery
+      - Right (acute) marginal artery
+      - Obtuse marginal artery
+      - Diagonal artery
+    answer: C
+    explanation: >-
+      The **right (acute) marginal artery** runs along the acute margin and supplies the RV. Obtuse marginals come from
+      the circumflex, and diagonals from the LAD.
+  - stem: In an inferior STEMI, in which leads is reciprocal ST depression usually seen?
+    choices:
+      - V1–V2
+      - V4R
+      - V5–V6
+      - I and aVL
+      - aVR only
+    answer: D
+    explanation: >-
+      Inferior MI (II, III, aVF) typically shows **reciprocal ST depression in I and aVL**. ST elevation in V4R suggests
+      right ventricular involvement.
 flashcards:
   - front: RCA — origin?
     back: Right aortic sinus

@@ -121,6 +121,31 @@ quiz:
     explanation: >-
       Blood irritating the diaphragm stimulates **phrenic nerve** (C3–C5) sensory fibers. The pain is referred to the
       shoulder, which shares the C3–C5 dermatomes (**Kehr sign**).
+  - stem: Which structure passes through the aortic hiatus of the diaphragm with the aorta?
+    choices:
+      - Inferior vena cava
+      - Thoracic duct
+      - Anterior and posterior vagal trunks
+      - Branches of the right phrenic nerve
+      - Esophageal branches of the left gastric vessels
+    answer: B
+    explanation: >-
+      The **aortic hiatus (T12)** transmits the **aorta, the thoracic duct** and often the azygos vein. The caval
+      opening (T8) transmits the IVC and branches of the right phrenic nerve; the esophageal hiatus (T10) transmits the
+      esophagus, the vagal trunks and esophageal branches of the left gastric vessels.
+  - stem: >-
+      After blunt abdominal trauma, a chest radiograph shows a nasogastric tube curling up into the left hemithorax. Why
+      are traumatic diaphragmatic ruptures more often left-sided?
+    choices:
+      - The left hemidiaphragm is thicker
+      - The left phrenic nerve is longer
+      - The left dome is higher
+      - The heart pushes the left dome down
+      - The liver protects the right hemidiaphragm
+    answer: E
+    explanation: >-
+      Blunt diaphragmatic ruptures are more often **left-sided** because the **liver buffers the right side**. Abdominal
+      contents (e.g. the stomach with an NG tube) in the chest are the clue, and the injury is easily missed.
 flashcards:
   - front: Diaphragm — motor nerve?
     back: Phrenic nerve (C3–C5)

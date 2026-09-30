@@ -81,6 +81,41 @@ quiz:
     explanation: >-
       Perioral tingling and a positive **Chvostek sign** indicate **hypocalcemia** from parathyroid injury or removal.
       Symptomatic hypocalcemia is treated with **IV calcium gluconate**, then oral calcium and calcitriol.
+  - stem: The inferior parathyroid glands may be found in the anterior mediastinum. Why?
+    choices:
+      - They develop from the 4th pharyngeal pouch with the thyroid
+      - They develop from the 1st pharyngeal pouch
+      - They develop from the 3rd pharyngeal pouch and descend with the thymus
+      - They develop from the thyroglossal duct
+      - They develop from the 2nd pharyngeal arch
+    answer: C
+    explanation: >-
+      The **inferior parathyroids** arise from the **3rd pouch** with the **thymus** and descend further, so they are
+      more variable and may lie in the thymus or anterior mediastinum. The superior glands arise from the 4th pouch and
+      are more constant.
+  - stem: Which artery is the main blood supply of both the superior and inferior parathyroid glands in most people?
+    choices:
+      - Superior thyroid artery
+      - Thyroid ima artery
+      - Lingual artery
+      - Inferior thyroid artery
+      - Internal thoracic artery
+    answer: D
+    explanation: >-
+      The **inferior thyroid artery** usually supplies both parathyroids on each side, so preserving it during
+      thyroidectomy reduces postoperative hypoparathyroidism.
+  - stem: A patient on dialysis for CKD has which pattern of labs in secondary hyperparathyroidism?
+    choices:
+      - High PTH, high calcium, low phosphate
+      - High PTH, low or normal calcium, high phosphate
+      - Low PTH, low calcium, high phosphate
+      - Low PTH, high calcium, low phosphate
+      - Normal PTH, normal calcium, normal phosphate
+    answer: B
+    explanation: >-
+      In **secondary hyperparathyroidism** of CKD, PTH rises in response to low calcium and phosphate retention: **high
+      PTH, low/normal calcium, high phosphate**. Primary disease gives high calcium with low phosphate; tertiary gives
+      high PTH with high calcium.
 flashcards:
   - front: Most common cause of primary hyperparathyroidism?
     back: Single parathyroid adenoma

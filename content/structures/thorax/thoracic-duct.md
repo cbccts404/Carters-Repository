@@ -87,6 +87,28 @@ quiz:
     explanation: >-
       A **Virchow node** (left supraclavicular) reflects spread of abdominal malignancy, classically **gastric
       cancer**, via the thoracic duct.
+  - stem: Where does the thoracic duct begin, and through which diaphragmatic opening does it enter the thorax?
+    choices:
+      - Right venous angle; caval opening (T8)
+      - Left venous angle; esophageal hiatus (T10)
+      - Cisterna chyli; aortic hiatus (T12)
+      - Cisterna chyli; caval opening (T8)
+      - Right lymphatic duct; aortic hiatus (T12)
+    answer: C
+    explanation: >-
+      The thoracic duct begins at the **cisterna chyli (about L1–L2)**, passes through the **aortic hiatus (T12)**,
+      ascends between the aorta and azygos vein, crosses to the left and empties into the left venous angle.
+  - stem: Which region drains to the right lymphatic duct rather than the thoracic duct?
+    choices:
+      - Right side of the head and neck, right upper limb and right thorax
+      - Both lower limbs
+      - The entire right side of the body
+      - The abdominal viscera
+      - The left upper limb
+    answer: A
+    explanation: >-
+      The **right lymphatic duct** drains the **right side of the head and neck, the right upper limb and the right side
+      of the thorax**. The thoracic duct drains everything else, including the whole body below the diaphragm.
 flashcards:
   - front: Thoracic duct — start and end?
     back: Cisterna chyli (L1–L2) → left venous angle (left IJ + subclavian junction)

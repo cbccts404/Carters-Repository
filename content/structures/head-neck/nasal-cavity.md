@@ -85,6 +85,41 @@ quiz:
     explanation: >-
       The **nasolacrimal duct** opens into the **inferior meatus**, which is why crying makes the nose run. The frontal,
       maxillary and anterior ethmoid sinuses drain into the middle meatus.
+  - stem: Which artery is the main source of posterior epistaxis?
+    choices:
+      - Anterior ethmoidal artery
+      - Superior labial artery
+      - Greater palatine artery
+      - Facial artery
+      - Sphenopalatine artery
+    answer: E
+    explanation: >-
+      **Posterior** nosebleeds arise from **sphenopalatine artery** branches; they are heavier and more common in older
+      patients with hypertension or anticoagulation. About 90% of nosebleeds are anterior, from **Kiesselbach plexus**.
+  - stem: >-
+      After a punch to the nose, a patient has a fluctuant, bluish swelling of the nasal septum. What is the most
+      appropriate management?
+    choices:
+      - Observation; it will resorb
+      - Prompt incision and drainage
+      - Nasal decongestant spray only
+      - Oral antibiotics alone
+      - Delayed rhinoplasty in 6 weeks
+    answer: B
+    explanation: >-
+      A **septal hematoma** must be **drained promptly** to prevent necrosis of the septal cartilage (saddle nose
+      deformity) or abscess.
+  - stem: A 3-year-old has a unilateral, foul-smelling purulent nasal discharge. What is the most likely cause?
+    choices:
+      - Allergic rhinitis
+      - Viral URI
+      - Nasal polyps
+      - Nasal foreign body
+      - Choanal atresia
+    answer: D
+    explanation: >-
+      **Unilateral foul-smelling discharge** in a young child suggests a **nasal foreign body**. Nasal polyps in a child
+      should prompt testing for cystic fibrosis.
 flashcards:
   - front: Arteries forming Kiesselbach plexus?
     back: Anterior ethmoidal, sphenopalatine, greater palatine, superior labial

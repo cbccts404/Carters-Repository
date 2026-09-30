@@ -87,6 +87,42 @@ quiz:
       A **pupil-sparing** CN III palsy in a patient with vascular risk factors is usually **microvascular ischemia**,
       which affects the core of the nerve and spares the superficial pupillary fibers. It typically recovers within
       about 3 months.
+  - stem: Why does a compressive lesion of CN III affect the pupil early, while ischemic lesions often spare it?
+    choices:
+      - The pupil fibers travel with CN IV
+      - The pupil fibers are the thickest in the nerve
+      - The parasympathetic pupillary fibers lie superficially on the nerve
+      - Ischemia affects only the pupillary fibers
+      - The pupil is controlled only by sympathetic fibers
+    answer: C
+    explanation: >-
+      The **parasympathetic fibers lie on the surface** of the nerve, so external compression (aneurysm, herniation)
+      affects the pupil early, while microvascular ischemia of the nerve's core tends to spare it.
+  - stem: Between which two arteries does the oculomotor nerve emerge?
+    choices:
+      - Anterior cerebral and middle cerebral arteries
+      - Internal carotid and ophthalmic arteries
+      - Vertebral and basilar arteries
+      - Anterior and posterior inferior cerebellar arteries
+      - Posterior cerebral and superior cerebellar arteries
+    answer: E
+    explanation: >-
+      CN III emerges from the interpeduncular fossa and passes **between the posterior cerebral and superior cerebellar
+      arteries**, then runs alongside the posterior communicating artery.
+  - stem: >-
+      A patient with a large left subdural hematoma has a blown left pupil but weakness on the LEFT side. What explains
+      the ipsilateral weakness?
+    choices:
+      - A second stroke in the right hemisphere
+      - Compression of the opposite cerebral peduncle against the tentorium (Kernohan notch)
+      - Spinal cord injury
+      - Conversion disorder
+      - Uncrossed corticospinal fibers
+    answer: B
+    explanation: >-
+      In uncal herniation, the midbrain can be pushed so that the **opposite cerebral peduncle** is compressed against
+      the tentorial edge (**Kernohan notch**), causing weakness on the **same side** as the lesion, a false localizing
+      sign.
 flashcards:
   - front: Muscles supplied by CN III?
     back: Superior, inferior and medial recti, inferior oblique, levator palpebrae superioris, sphincter pupillae and ciliary muscle (parasympathetic)

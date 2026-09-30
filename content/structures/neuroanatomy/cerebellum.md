@@ -88,6 +88,42 @@ quiz:
     explanation: >-
       Alcohol preferentially damages the **anterior (superior) vermis**, which controls the trunk and gait, so gait ataxia
       occurs with relatively normal limb coordination.
+  - stem: How does the Romberg test typically behave in a patient with pure cerebellar ataxia?
+    choices:
+      - Positive, because vision compensates for the deficit
+      - Negative, because the patient is unsteady even with the eyes open
+      - Positive only on the right
+      - Always positive when the vermis is involved
+      - Cannot be performed
+    answer: B
+    explanation: >-
+      A **positive Romberg** (steady with eyes open, falls with them closed) indicates **sensory (proprioceptive)
+      ataxia**. In cerebellar ataxia the patient is unsteady even with the eyes open, so the test is classically
+      **negative**.
+  - stem: >-
+      A 6-year-old has morning headaches, vomiting and a wide-based, unsteady gait. MRI shows a midline posterior fossa
+      mass in the vermis. What is the most likely diagnosis?
+    choices:
+      - Pilocytic astrocytoma of the hemisphere
+      - Craniopharyngioma
+      - Glioblastoma
+      - Medulloblastoma
+      - Meningioma
+    answer: D
+    explanation: >-
+      **Medulloblastoma** arises in the **vermis** and is the most common malignant brain tumor of childhood; it causes
+      truncal ataxia and hydrocephalus. Pilocytic astrocytomas are typically cystic tumors of the hemisphere.
+  - stem: Which is the largest cerebellar peduncle, carrying input from the contralateral pontine nuclei?
+    choices:
+      - Superior cerebellar peduncle
+      - Inferior cerebellar peduncle
+      - Middle cerebellar peduncle
+      - Cerebral peduncle
+    answer: C
+    explanation: >-
+      The **middle cerebellar peduncle** is the largest and carries pontocerebellar fibers from the contralateral
+      pontine nuclei. The **superior** peduncle is mainly output; the **inferior** peduncle carries spinal, vestibular
+      and olivary input.
 flashcards:
   - front: Deep cerebellar nuclei (lateral → medial)?
     back: Dentate, emboliform, globose, fastigial

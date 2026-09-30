@@ -87,6 +87,45 @@ quiz:
     explanation: >-
       **Endometriosis** deposits commonly involve the cul-de-sac and **uterosacral ligaments**, causing dysmenorrhea,
       deep dyspareunia and dyschezia. Adenomyosis causes a diffusely enlarged, boggy uterus.
+  - stem: In a man, what is the lowest part of the peritoneal cavity?
+    choices:
+      - Vesicouterine pouch
+      - Retropubic space
+      - Rectovesical pouch
+      - Ischioanal fossa
+      - Deep perineal pouch
+    answer: C
+    explanation: >-
+      In men the lowest recess is the **rectovesical pouch** between the bladder and rectum. In women it is the
+      **rectouterine pouch** (of Douglas). The retropubic space, ischioanal fossa and perineal pouches are outside the
+      peritoneal cavity.
+  - stem: >-
+      A 64-year-old man with gastric cancer has a hard, shelf-like mass felt anteriorly on rectal exam. What does this
+      finding represent?
+    choices:
+      - Blumer shelf (a drop metastasis in the rectovesical pouch)
+      - Sister Mary Joseph nodule
+      - A prolapsed internal hemorrhoid
+      - A rectocele
+      - Virchow node
+    answer: A
+    explanation: >-
+      A **Blumer shelf** is a peritoneal drop metastasis that settles in the dependent pouch (rectovesical in men,
+      rectouterine in women) and is felt as a hard shelf anteriorly on rectal exam.
+  - stem: >-
+      A woman being treated for a tubo-ovarian abscess develops fever, tenesmus and a tender, fluctuant mass felt on
+      rectal exam. Where has the pus most likely collected?
+    choices:
+      - Retropubic space
+      - Vesicouterine pouch
+      - Ischioanal fossa
+      - Superficial perineal pouch
+      - Rectouterine pouch
+    answer: E
+    explanation: >-
+      The **rectouterine pouch** is the most dependent part of the female peritoneal cavity, so pus (pelvic abscess),
+      blood and fluid collect there. A pelvic abscess causes fever, pelvic pain, tenesmus or diarrhea and a tender
+      fluctuant mass on rectal or vaginal exam; it can be drained percutaneously, transrectally or transvaginally.
 flashcards:
   - front: Most dependent part of the female peritoneal cavity?
     back: Rectouterine pouch (of Douglas)

@@ -119,6 +119,34 @@ quiz:
       The uterine body lies **above the pelvic pain line** (covered by peritoneum), so its pain afferents travel with
       **sympathetic** fibers to about T10–L1 — the target of labor epidurals. Cervical and perineal (second-stage) pain
       travels via S2–S4.
+  - stem: >-
+      Contraction of the ductus deferens, seminal glands and prostate during emission is mediated mainly by which
+      fibers?
+    choices:
+      - Pelvic splanchnic (parasympathetic) nerves from S2–S4
+      - Somatic fibers of the pudendal nerve
+      - The vagus nerve
+      - Sympathetic fibers from about T11/T12–L2
+      - The obturator nerve
+    answer: D
+    explanation: >-
+      "Point and Shoot": **parasympathetic** fibers (S2–S4) cause erection, **sympathetic** fibers (lumbar splanchnic
+      nerves, T11/T12–L2) cause **emission**, and somatic pudendal fibers (bulbospongiosus) produce ejaculation.
+      Sympathetic contraction of the bladder neck also prevents retrograde ejaculation.
+  - stem: >-
+      A 64-year-old man with long-standing diabetes has a large post-void residual volume and dribbling overflow
+      incontinence. Which bladder pattern is most likely?
+    choices:
+      - Areflexic, overdistended bladder (lower motor neuron pattern)
+      - Small-capacity spastic bladder with detrusor–sphincter dyssynergia
+      - Stress incontinence from urethral hypermobility
+      - Bladder outlet obstruction from posterior urethral valves
+      - Autonomic dysreflexia
+    answer: A
+    explanation: >-
+      Sacral or cauda equina lesions and **peripheral (diabetic) neuropathy** produce an **areflexic, overdistended**
+      bladder with retention and overflow. Suprasacral cord lesions instead cause detrusor overactivity and
+      detrusor–sphincter dyssynergia (a small, spastic bladder). Management includes clean intermittent catheterization.
 flashcards:
   - front: Parasympathetic supply of the pelvis?
     back: Pelvic splanchnic nerves (S2–S4), nervi erigentes

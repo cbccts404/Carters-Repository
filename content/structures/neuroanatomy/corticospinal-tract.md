@@ -82,6 +82,40 @@ quiz:
     explanation: >-
       An **extensor plantar response (Babinski sign)** indicates **corticospinal tract (UMN)** dysfunction. The other
       findings suggest a lower motor neuron lesion.
+  - stem: Where do most corticospinal fibers cross the midline?
+    choices:
+      - In the internal capsule
+      - In the pyramids of the lower medulla
+      - In the cerebral peduncles
+      - In the anterior white commissure of the cord
+      - In the basilar pons
+    answer: B
+    explanation: >-
+      About **85–90%** of corticospinal fibers cross in the **pyramidal decussation** at the medulla–cord junction.
+      Lesions above it cause contralateral weakness; cord lesions cause ipsilateral weakness.
+  - stem: Immediately after an acute complete spinal cord injury, what are tone and reflexes like below the lesion?
+    choices:
+      - Spastic with brisk reflexes
+      - Normal
+      - Rigid with cogwheeling
+      - Flaccid with absent reflexes (spinal shock)
+      - Fasciculations with brisk reflexes
+    answer: D
+    explanation: >-
+      In **spinal shock**, tone and reflexes are initially **reduced or absent** below the lesion. Upper motor neuron
+      signs (spasticity, hyperreflexia, Babinski) develop later.
+  - stem: A cortical stroke causes weakness of the opposite lower face but spares the forehead. Why?
+    choices:
+      - The forehead is supplied by the trigeminal nerve
+      - The facial nucleus is not affected by strokes
+      - The upper face receives bilateral corticobulbar input, but the lower face receives mainly contralateral input
+      - The forehead muscles have their own nerve
+      - The lower face receives bilateral input
+    answer: C
+    explanation: >-
+      Most cranial motor nuclei receive **bilateral** corticobulbar input, but the part of the facial nucleus for the
+      **lower face** receives mainly **contralateral** input, so an upper motor neuron lesion weakens only the opposite
+      lower face.
 flashcards:
   - front: Where does the corticospinal tract decussate?
     back: Pyramidal decussation in the lower medulla (85–90% of fibers)

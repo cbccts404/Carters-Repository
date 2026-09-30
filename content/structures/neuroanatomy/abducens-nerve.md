@@ -78,6 +78,40 @@ quiz:
     explanation: >-
       Failure of adduction on lateral gaze with preserved convergence is a **left internuclear ophthalmoplegia** from a
       lesion of the **left MLF**. In a young adult, especially if bilateral, MS is the leading cause.
+  - stem: Why is the abducens nerve often the first cranial nerve affected in cavernous sinus thrombosis?
+    choices:
+      - It is the thickest nerve in the sinus
+      - It runs through the sinus itself beside the internal carotid, not in the lateral wall
+      - It has no myelin
+      - It enters the orbit outside the common tendinous ring
+      - It is supplied only by the sinus blood
+    answer: B
+    explanation: >-
+      CN VI runs **inside** the cavernous sinus next to the internal carotid artery, while CN III, IV, V1 and V2 lie in
+      the lateral wall, so CN VI is often affected first.
+  - stem: A pontine lesion of the abducens nucleus (rather than the nerve) causes which finding?
+    choices:
+      - Only the ipsilateral eye fails to abduct
+      - Vertical gaze palsy
+      - Ptosis and a dilated pupil
+      - Ipsilateral horizontal gaze palsy (neither eye can look toward the side of the lesion)
+      - Bilateral internuclear ophthalmoplegia
+    answer: D
+    explanation: >-
+      The abducens nucleus contains interneurons that project through the MLF to the opposite medial rectus, so a
+      **nucleus** lesion causes an **ipsilateral horizontal gaze palsy**, often with an ipsilateral facial palsy (facial
+      colliculus). A **nerve** lesion affects only the lateral rectus.
+  - stem: What forms the facial colliculus in the floor of the fourth ventricle?
+    choices:
+      - Facial nerve fibers looping around the abducens nucleus
+      - The hypoglossal nucleus
+      - The vestibular nuclei
+      - The trochlear decussation
+      - The locus coeruleus
+    answer: A
+    explanation: >-
+      The **facial colliculus** is formed by **facial motor fibers looping around the abducens nucleus** in the caudal
+      pons, so a lesion there can cause both a gaze palsy and a facial palsy.
 flashcards:
   - front: Muscle supplied by CN VI?
     back: Lateral rectus

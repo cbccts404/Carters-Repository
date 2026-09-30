@@ -112,6 +112,20 @@ quiz:
     explanation: >-
       The **septomarginal trabecula (moderator band)** carries part of the right bundle branch from the septum to the
       base of the anterior papillary muscle, shortening conduction time.
+  - stem: >-
+      A 30-year-old with known Wolff–Parkinson–White syndrome presents with an irregular, wide-complex tachycardia at
+      210/min (pre-excited atrial fibrillation). He is hemodynamically stable. Which drug is appropriate?
+    choices:
+      - Adenosine
+      - Diltiazem
+      - Procainamide
+      - Digoxin
+      - Metoprolol
+    answer: C
+    explanation: >-
+      In **pre-excited AF**, **AV nodal blockers** (adenosine, calcium channel blockers, beta blockers, digoxin) can
+      increase conduction down the accessory pathway and precipitate ventricular fibrillation. **Procainamide** (or
+      cardioversion if unstable) is used.
 flashcards:
   - front: Sequence of cardiac conduction?
     back: SA node → AV node → bundle of His → right/left bundle branches → Purkinje fibers

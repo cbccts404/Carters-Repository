@@ -108,6 +108,29 @@ quiz:
     explanation: >-
       Only the **superior gluteal nerve and vessels** pass above piriformis; everything else from the sacral plexus
       passes below it.
+  - stem: Intramuscular gluteal injections are given in the upper outer quadrant mainly to avoid which nerve?
+    choices:
+      - Superior gluteal nerve
+      - Pudendal nerve
+      - Sciatic nerve
+      - Obturator nerve
+      - Femoral nerve
+    answer: C
+    explanation: >-
+      Injections into the lower or medial buttock can hit the **sciatic nerve** as it leaves below piriformis, causing
+      pain and weakness below the knee (often foot drop, because the fibular division is most vulnerable). Use the upper
+      outer quadrant or the ventrogluteal site.
+  - stem: The lumbosacral trunk that joins the sacral plexus is formed from which ventral rami?
+    choices:
+      - Part of L4 and all of L5
+      - L1 and L2
+      - S1 and S2
+      - L2 to L4
+      - T12 and L1
+    answer: A
+    explanation: >-
+      The **lumbosacral trunk** (part of **L4** plus **L5**) descends over the pelvic brim from the lumbar plexus to
+      join the ventral rami of **S1–S4**, so the sacral plexus roots are **L4–S4**.
 flashcards:
   - front: Roots of the sacral plexus?
     back: L4–S4 (lumbosacral trunk L4–L5 + S1–S4)

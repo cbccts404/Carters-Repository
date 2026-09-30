@@ -94,6 +94,32 @@ quiz:
     explanation: >-
       The **sacrospinous** ligament runs to the ischial **spine**; the **sacrotuberous** ligament runs to the ischial
       **tuberosity**.
+  - stem: The sacrotuberous ligament runs from the sacrum and coccyx to which landmark?
+    choices:
+      - Ischial spine
+      - Anterior superior iliac spine
+      - Pubic tubercle
+      - Greater trochanter
+      - Ischial tuberosity
+    answer: E
+    explanation: >-
+      **Sacrotuberous** → ischial **tuberosity**; **sacrospinous** → ischial **spine**. Together they convert the
+      sciatic notches into the greater and lesser sciatic foramina and resist upward rotation of the lower sacrum.
+  - stem: >-
+      Which nerve leaves the pelvis through the greater sciatic foramen and then re-enters through the lesser sciatic
+      foramen?
+    choices:
+      - Sciatic nerve
+      - Superior gluteal nerve
+      - Nerve to obturator internus
+      - Inferior gluteal nerve
+      - Posterior femoral cutaneous nerve
+    answer: C
+    explanation: >-
+      Mnemonic **PIN**: the **P**udendal nerve, **I**nternal pudendal vessels and **N**erve to obturator internus exit
+      through the greater sciatic foramen below piriformis and re-enter through the lesser sciatic foramen. The sciatic,
+      inferior gluteal and posterior femoral cutaneous nerves stay in the gluteal region; the superior gluteal nerve
+      exits above piriformis.
 flashcards:
   - front: What passes above piriformis in the greater sciatic foramen?
     back: Superior gluteal nerve and vessels

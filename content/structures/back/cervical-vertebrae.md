@@ -121,6 +121,18 @@ quiz:
       - Sympathetic trunk
     answer: B
     explanation: The **vertebral artery** typically enters at C6 and ascends through the transverse foramina of C6–C1.
+  - stem: Under the NEXUS criteria, which finding in an alert trauma patient means cervical spine imaging is needed?
+    choices:
+      - Age 40
+      - Low-speed rear-end collision
+      - Midline cervical spine tenderness
+      - A minor abrasion on the forearm
+      - Neck stiffness that develops the next day
+    answer: C
+    explanation: >-
+      **NEXUS**: imaging isn't needed if there is **no midline tenderness**, no focal neurologic deficit, normal
+      alertness, no intoxication and no painful distracting injury. **Midline tenderness** means imaging (CT in adults)
+      is needed.
 flashcards:
   - front: Cervical root exit rule?
     back: C1–C7 exit above their vertebra; C8 exits between C7 and T1

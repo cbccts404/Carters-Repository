@@ -122,6 +122,18 @@ quiz:
       - Uncinate process
     answer: B
     explanation: The **superior mesenteric vein** and **splenic vein** unite behind the **neck** of the pancreas to form the portal vein.
+  - stem: Which combination is the classic triad of chronic pancreatitis?
+    choices:
+      - Fever, RUQ pain and jaundice
+      - Painless jaundice, weight loss and a palpable gallbladder
+      - Epigastric pain, lipase above 3× normal and CT findings
+      - Hypotension, JVD and muffled heart sounds
+      - Pancreatic calcifications, steatorrhea and diabetes
+    answer: E
+    explanation: >-
+      Chronic pancreatitis (usually from long-term alcohol use) causes **calcifications**, **steatorrhea** (exocrine
+      insufficiency) and **diabetes** (endocrine insufficiency), with chronic epigastric pain. The other choices
+      describe cholangitis, pancreatic head cancer, acute pancreatitis criteria and tamponade.
 flashcards:
   - front: Parts of the pancreas and key relations?
     back: "Head (in duodenal C-loop), uncinate (behind SMV/SMA), neck (over portal vein formation), body (over aorta), tail (splenorenal ligament)"

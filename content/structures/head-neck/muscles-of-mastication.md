@@ -80,6 +80,42 @@ quiz:
     explanation: >-
       The jaw deviates **toward the weak side** because the intact left lateral pterygoid pushes it across. So the
       **right V3** motor supply is affected. (The tongue also deviates toward the weak side in a hypoglossal lesion.)
+  - stem: The muscles of mastication develop from which pharyngeal arch?
+    choices:
+      - Second arch
+      - First arch
+      - Third arch
+      - Fourth arch
+      - Sixth arch
+    answer: B
+    explanation: >-
+      The muscles of mastication derive from the **first pharyngeal arch** and are supplied by its nerve, **V3**. The
+      muscles of facial expression derive from the second arch (CN VII).
+  - stem: >-
+      Ten days after a puncture wound, an unvaccinated farmer can't open his mouth and has painful muscle spasms. What
+      is the most likely diagnosis?
+    choices:
+      - Temporomandibular joint dislocation
+      - Peritonsillar abscess
+      - Tetanus
+      - Bell palsy
+      - Trigeminal neuralgia
+    answer: C
+    explanation: >-
+      **Tetanus** causes **trismus ("lockjaw")** and generalized spasms. Trismus with fever and neck swelling suggests a
+      deep space infection or peritonsillar abscess instead.
+  - stem: The lateral pterygoid inserts on which structures?
+    choices:
+      - Neck of the condyle and the articular disc of the TMJ
+      - Coronoid process
+      - Lateral surface of the ramus and angle
+      - Medial surface of the ramus and angle
+      - Hyoid bone
+    answer: A
+    explanation: >-
+      The **lateral pterygoid** inserts on the **condylar neck, articular disc and capsule** of the TMJ and pulls them
+      forward to **open** and protrude the jaw. Temporalis inserts on the coronoid process; masseter and medial
+      pterygoid on the ramus and angle.
 flashcards:
   - front: Nerve supply of the muscles of mastication?
     back: Mandibular division of the trigeminal nerve (V3)

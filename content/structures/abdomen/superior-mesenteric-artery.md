@@ -90,6 +90,31 @@ quiz:
     explanation: >-
       The **left renal vein** crosses anterior to the aorta beneath the SMA. Compression here (**nutcracker syndrome**)
       can cause hematuria and a left varicocele.
+  - stem: >-
+      A thin young man has hematuria, left flank pain and a left varicocele. Imaging shows compression of the left renal
+      vein. Between which structures is it compressed?
+    choices:
+      - The IVC and right renal artery
+      - The pancreas and spleen
+      - The psoas and quadratus lumborum
+      - The left crus and the aorta
+      - The superior mesenteric artery and the aorta
+    answer: E
+    explanation: >-
+      In **nutcracker syndrome**, a narrow aortomesenteric angle compresses the **left renal vein between the SMA and
+      aorta**, causing hematuria, left flank pain and a left varicocele. The same angle compresses the duodenum in SMA
+      syndrome.
+  - stem: Which branch of the SMA supplies the appendix?
+    choices:
+      - Middle colic artery
+      - Ileocolic artery (via the appendicular artery)
+      - Right colic artery
+      - Inferior pancreaticoduodenal artery
+      - Left colic artery
+    answer: B
+    explanation: >-
+      The **appendicular artery** is a branch of the **ileocolic artery**, which also supplies the terminal ileum and
+      cecum. The left colic artery belongs to the IMA.
 flashcards:
   - front: SMA branches?
     back: Inferior pancreaticoduodenal, jejunal/ileal, middle colic, right colic, ileocolic

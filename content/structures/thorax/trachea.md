@@ -105,6 +105,31 @@ quiz:
     explanation: >-
       A **large left pleural effusion** pushes the trachea and mediastinum **away** (to the right). Left-sided
       atelectasis or pneumonectomy would pull the trachea **toward** the white-out.
+  - stem: What bridges the posterior gap in the C-shaped tracheal cartilages?
+    choices:
+      - The thyroid isthmus
+      - The esophagus
+      - Elastic cartilage
+      - The trachealis (smooth muscle)
+      - The posterior longitudinal ligament
+    answer: D
+    explanation: >-
+      The trachea has 16–20 **C-shaped hyaline cartilage rings**, **open posteriorly** and bridged by the **trachealis**
+      smooth muscle, where the trachea lies against the esophagus.
+  - stem: >-
+      A newborn drools, chokes with feeds, and a nasogastric tube coils in the upper chest on X-ray. The stomach is
+      filled with gas. What is the most likely anomaly?
+    choices:
+      - Isolated tracheoesophageal fistula without atresia
+      - Pyloric stenosis
+      - Esophageal atresia with a distal tracheoesophageal fistula
+      - Isolated esophageal atresia without a fistula
+      - Duodenal atresia
+    answer: C
+    explanation: >-
+      The most common type is **proximal esophageal atresia with a distal TE fistula**: the NG tube coils in the blind
+      pouch, and air reaches the stomach through the fistula. Isolated atresia leaves a gasless abdomen. It is
+      associated with VACTERL.
 flashcards:
   - front: Trachea — start and end levels?
     back: C6 (cricoid) → carina at T4–T5 (sternal angle)

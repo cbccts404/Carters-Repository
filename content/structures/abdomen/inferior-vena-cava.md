@@ -89,6 +89,31 @@ quiz:
       - Thrombolysis
     answer: C
     explanation: When anticoagulation is **contraindicated** (active bleeding), an **IVC filter** can prevent PE from a leg DVT.
+  - stem: The inferior vena cava passes through the diaphragm at which opening and level?
+    choices:
+      - Aortic hiatus, T12
+      - Caval opening in the central tendon, T8
+      - Esophageal hiatus, T10
+      - Behind the median arcuate ligament, T12
+      - Caval opening in the right crus, T10
+    answer: B
+    explanation: >-
+      The IVC passes through the **caval opening in the central tendon at T8** ("I 8 10 Eggs At 12": IVC T8, esophagus
+      T10, aorta T12).
+  - stem: >-
+      A 62-year-old man develops a new right-sided varicocele that does not decompress when he lies down. What should
+      this prompt?
+    choices:
+      - Reassurance; right varicoceles are the most common type
+      - Scrotal support only
+      - Testicular biopsy
+      - Semen analysis
+      - Abdominal imaging for a retroperitoneal mass such as renal cell carcinoma or IVC obstruction
+    answer: E
+    explanation: >-
+      The right testicular vein drains **directly into the IVC**, so a **new right-sided or non-decompressing**
+      varicocele suggests obstruction (e.g. **renal cell carcinoma** tumor thrombus in the IVC or a retroperitoneal
+      mass). Most varicoceles are left-sided.
 flashcards:
   - front: IVC — formation and diaphragmatic level?
     back: Common iliac veins at L5; passes through the central tendon at T8

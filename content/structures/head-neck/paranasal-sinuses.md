@@ -82,6 +82,42 @@ quiz:
     explanation: >-
       The **ethmoid cells** are separated from the orbit only by the paper-thin **lamina papyracea**, so ethmoid
       sinusitis is the usual source of orbital cellulitis.
+  - stem: Which feature suggests bacterial rather than viral acute rhinosinusitis?
+    choices:
+      - Clear nasal discharge for 3 days
+      - Symptoms lasting 10 days or more without improvement, or worsening after initial improvement
+      - Sneezing and itchy eyes
+      - Mild facial pressure on day 2
+      - Any colored discharge
+    answer: B
+    explanation: >-
+      Suspect **bacterial** sinusitis if symptoms last **≥ 10 days without improvement**, are **severe** (fever ≥ 39 °C
+      with purulent discharge for 3–4 days) or **"double-worsen"**; treat with amoxicillin-clavulanate. Most acute
+      sinusitis is viral.
+  - stem: >-
+      A teenager with frontal sinusitis develops a soft, tender swelling of the forehead. What is the most likely
+      complication?
+    choices:
+      - Orbital cellulitis
+      - Cavernous sinus thrombosis
+      - Mucocele of the maxillary sinus
+      - Nasal polyp
+      - Pott puffy tumor (frontal bone osteomyelitis)
+    answer: E
+    explanation: >-
+      **Pott puffy tumor** is **frontal bone osteomyelitis** with a subperiosteal abscess, producing forehead swelling;
+      it can extend intracranially and needs CT and IV antibiotics.
+  - stem: Why does the maxillary sinus drain poorly and depend on ciliary action?
+    choices:
+      - Its ostium lies high on its medial wall
+      - It has no ostium
+      - It drains into the inferior meatus
+      - Its mucosa has no cilia
+      - It opens into the sphenoethmoidal recess
+    answer: A
+    explanation: >-
+      The **maxillary ostium is high on the medial wall**, opening into the middle meatus, so drainage depends on
+      **cilia** rather than gravity. Maxillary sinusitis can also cause upper toothache.
 flashcards:
   - front: Which sinuses drain into the middle meatus?
     back: Frontal, maxillary, anterior ethmoid

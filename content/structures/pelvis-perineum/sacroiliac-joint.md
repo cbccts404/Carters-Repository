@@ -134,6 +134,32 @@ quiz:
     explanation: >-
       The **interosseous sacroiliac ligament**, which forms the posterior syndesmotic part of the joint, is the
       strongest and main load-bearing ligament. The anterior ligament is thin.
+  - stem: How is the sacroiliac joint classified?
+    choices:
+      - A purely fibrous syndesmosis
+      - A secondary cartilaginous joint (symphysis)
+      - A ball-and-socket synovial joint
+      - A synovial plane joint anteriorly with a syndesmosis posteriorly
+      - A hinge joint
+    answer: D
+    explanation: >-
+      The sacroiliac joint is a **compound joint**: a **synovial** (plane) joint between the auricular surfaces
+      anteriorly and a **syndesmosis** (interosseous ligament between the tuberosities) posteriorly. It allows only
+      slight gliding and rotation (nutation).
+  - stem: >-
+      A 27-year-old man with ankylosing spondylitis still has inflammatory back pain despite trials of two NSAIDs and
+      regular exercise. What is the most appropriate next treatment?
+    choices:
+      - Methotrexate
+      - A TNF inhibitor
+      - Bed rest and immobilization
+      - Opioids as the main therapy
+      - Sacroiliac joint fusion surgery
+    answer: B
+    explanation: >-
+      First-line treatment for axial spondyloarthritis is **NSAIDs** plus exercise and physical therapy; a **TNF
+      inhibitor** (or IL-17 inhibitor) is used when symptoms persist. **Methotrexate does not help axial disease**, and
+      rest makes inflammatory back pain worse.
 flashcards:
   - front: Type of joint — sacroiliac?
     back: Synovial (plane) anteriorly + syndesmosis (interosseous ligament) posteriorly

@@ -107,6 +107,28 @@ quiz:
     explanation: >-
       An **expanding post-thyroidectomy hematoma** compresses the airway; **open the wound immediately** (skin and strap
       sutures) to relieve pressure, then return to the OR. Imaging would delay life-saving treatment.
+  - stem: A patient with a thyroid nodule has a low TSH. What is the most appropriate next step?
+    choices:
+      - Fine-needle aspiration of the nodule
+      - Radioactive iodine uptake scan
+      - Total thyroidectomy
+      - Serum calcitonin only
+      - CT of the neck
+    answer: B
+    explanation: >-
+      With a **low TSH**, a **radioactive iodine uptake scan** is next; a **"hot"** (hyperfunctioning) nodule is rarely
+      malignant. With a normal or high TSH, ultrasound ± FNA is next.
+  - stem: Medullary thyroid carcinoma arises from which cells, and which tumor marker is used?
+    choices:
+      - Follicular cells; thyroglobulin
+      - Follicular cells; TSH
+      - Lymphocytes; LDH
+      - Squamous cells; SCC antigen
+      - Parafollicular C cells; calcitonin
+    answer: E
+    explanation: >-
+      **Medullary carcinoma** arises from **parafollicular C cells**, secretes **calcitonin**, and is associated with
+      **MEN 2**. Papillary carcinoma (most common) arises from follicular cells.
 flashcards:
   - front: Level of the thyroid isthmus?
     back: Over the 2nd–3rd tracheal rings

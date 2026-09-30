@@ -117,6 +117,18 @@ quiz:
     explanation: >-
       The **ilioinguinal nerve** enters the canal from its lateral wall (not through the deep ring) and exits the
       superficial ring. It can be injured in open hernia repair, causing groin and scrotal/labial numbness or pain.
+  - stem: The superficial inguinal ring is an opening in which layer?
+    choices:
+      - External oblique aponeurosis
+      - Internal oblique muscle
+      - Transversus abdominis
+      - Transversalis fascia
+      - Parietal peritoneum
+    answer: A
+    explanation: >-
+      The **superficial ring** is an opening in the **external oblique aponeurosis**, just superolateral to the pubic
+      tubercle. The **deep ring** is an opening in the **transversalis fascia**, lateral to the inferior epigastric
+      vessels.
 flashcards:
   - front: Inguinal canal walls (MALT)?
     back: "Roof: Muscles (IO, TA). Anterior: Aponeurosis (EO). Floor: Ligament (inguinal). Posterior: Transversalis fascia"

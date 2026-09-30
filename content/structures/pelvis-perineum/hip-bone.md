@@ -123,6 +123,30 @@ quiz:
     explanation: >-
       The ilium, ischium and pubis meet at the **acetabulum** through the Y-shaped triradiate cartilage, which fuses
       around puberty.
+  - stem: What is the preferred site for bone marrow aspiration and biopsy in adults?
+    choices:
+      - Anterior superior iliac spine
+      - Ischial tuberosity
+      - Posterior iliac crest near the PSIS
+      - Pubic tubercle
+      - Greater trochanter of the femur
+    answer: C
+    explanation: >-
+      The **posterior iliac crest** (near the PSIS) is preferred because it is superficial and away from major vessels.
+      The procedure is done with the patient prone or lying on one side.
+  - stem: >-
+      After an iliac crest bone graft is harvested near the anterior superior iliac spine, a patient has numbness over
+      the lateral thigh. Which nerve was most likely injured?
+    choices:
+      - Femoral nerve
+      - Obturator nerve
+      - Sciatic nerve
+      - Lateral femoral cutaneous nerve
+      - Superior gluteal nerve
+    answer: D
+    explanation: >-
+      The **lateral femoral cutaneous nerve** passes close to the ASIS, so harvesting graft from the anterior crest can
+      injure it and cause numbness of the lateral thigh. Donor-site pain is the other common complication.
 flashcards:
   - front: Three bones fused in the hip bone? Where do they meet?
     back: Ilium, ischium, pubis; at the acetabulum (triradiate cartilage)

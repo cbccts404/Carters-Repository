@@ -85,6 +85,33 @@ quiz:
     explanation: >-
       The artery runs deep to the rectus abdominis, so placing the needle **lateral to the rectus sheath** (typically LLQ)
       avoids it. Ultrasound guidance further reduces risk.
+  - stem: >-
+      A branch of the inferior epigastric artery sometimes anastomoses with the obturator artery behind the superior
+      pubic ramus and can bleed heavily in pelvic surgery. What is this variant called?
+    choices:
+      - Corona mortis
+      - Arc of Riolan
+      - Marginal artery of Drummond
+      - Circle of Willis
+      - Cruciate anastomosis
+    answer: A
+    explanation: >-
+      The **pubic branch** of the inferior epigastric artery may anastomose with the obturator artery (the **"corona
+      mortis"**), a source of significant bleeding during pelvic and hernia surgery.
+  - stem: >-
+      A patient on anticoagulation develops a tender, firm lower abdominal wall mass after a coughing fit. The mass
+      stays palpable when she tenses her abdominal muscles. What is the most likely diagnosis?
+    choices:
+      - Spigelian hernia
+      - Ovarian torsion
+      - Rectus sheath hematoma
+      - Incarcerated umbilical hernia
+      - Appendiceal abscess
+    answer: C
+    explanation: >-
+      A **rectus sheath hematoma** follows rupture of the **inferior epigastric artery**, often in anticoagulated
+      patients after coughing or straining. A wall mass stays palpable when the rectus contracts (Fothergill sign),
+      unlike an intra-abdominal mass.
 flashcards:
   - front: Inferior epigastric artery — origin?
     back: External iliac artery, just above the inguinal ligament

@@ -89,6 +89,44 @@ quiz:
     explanation: >-
       Infection from the **danger triangle** spreads through the valveless **facial and ophthalmic veins** to the
       **cavernous sinus**. **CN VI**, which runs freely within the sinus, is often affected first.
+  - stem: >-
+      MR venography confirms cerebral venous sinus thrombosis in a postpartum woman with a small hemorrhagic venous
+      infarct. What is the appropriate treatment?
+    choices:
+      - Withhold anticoagulation because of the hemorrhage
+      - Aspirin only
+      - Observation
+      - Anticoagulation with heparin despite the hemorrhage
+      - Emergency craniotomy for all patients
+    answer: D
+    explanation: >-
+      Venous sinus thrombosis is treated with **anticoagulation (heparin) even when there is a hemorrhagic venous
+      infarct**, because restoring venous outflow is key.
+  - stem: >-
+      Weeks after a head injury, a patient has a pulsating, protruding eye with an audible orbital bruit and
+      arterialized conjunctival vessels. What is the most likely diagnosis?
+    choices:
+      - Orbital cellulitis
+      - Carotid–cavernous fistula
+      - Thyroid eye disease
+      - Retrobulbar hemorrhage
+      - Cavernous sinus thrombosis
+    answer: B
+    explanation: >-
+      A **carotid–cavernous fistula** (an abnormal connection between the ICA and the cavernous sinus, after trauma or a
+      ruptured cavernous aneurysm) causes **pulsatile exophthalmos**, an **orbital bruit**, chemosis and
+      ophthalmoplegia.
+  - stem: What is the usual order of venous drainage from the superior sagittal sinus?
+    choices:
+      - Confluence of sinuses → transverse sinus → sigmoid sinus → internal jugular vein
+      - Straight sinus → cavernous sinus → external jugular vein
+      - Inferior sagittal sinus → petrosal sinus → vertebral vein
+      - Cavernous sinus → ophthalmic vein → facial vein
+      - Transverse sinus → straight sinus → subclavian vein
+    answer: A
+    explanation: >-
+      The superior sagittal and straight sinuses meet at the **confluence**, then drain through the **transverse** and
+      **sigmoid** sinuses to the **internal jugular vein** at the jugular foramen.
 flashcards:
   - front: Contents of the lateral wall of the cavernous sinus?
     back: CN III, IV, V1, V2

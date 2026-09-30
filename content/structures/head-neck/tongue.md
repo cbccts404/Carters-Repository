@@ -79,6 +79,39 @@ quiz:
     explanation: >-
       **Taste** from the anterior two-thirds travels in the **chorda tympani (CN VII)**, which joins the lingual nerve.
       The lingual nerve (V3) carries general sensation, and CN IX carries both from the posterior third.
+  - stem: Which tongue muscle is NOT supplied by the hypoglossal nerve?
+    choices:
+      - Genioglossus
+      - Hyoglossus
+      - Styloglossus
+      - Palatoglossus
+      - Superior longitudinal
+    answer: D
+    explanation: >-
+      All tongue muscles are supplied by **CN XII** except **palatoglossus**, supplied by the **vagus (CN X)** through
+      the pharyngeal plexus.
+  - stem: Lymph from the tip of the tongue drains first to which nodes?
+    choices:
+      - Occipital nodes
+      - Submental nodes
+      - Parotid nodes
+      - Supraclavicular nodes
+      - Retropharyngeal nodes
+    answer: B
+    explanation: >-
+      The **tip** of the tongue drains to the **submental** nodes, the lateral anterior two-thirds to the submandibular
+      nodes, and the posterior third to the deep cervical nodes, often bilaterally.
+  - stem: Which nerve carries both general sensation and taste from the posterior third of the tongue?
+    choices:
+      - Lingual nerve (V3)
+      - Chorda tympani (CN VII)
+      - Hypoglossal nerve
+      - Internal laryngeal nerve
+      - Glossopharyngeal nerve (CN IX)
+    answer: E
+    explanation: >-
+      The **posterior third** receives both general sensation and taste from **CN IX**. The anterior two-thirds has
+      general sensation from the **lingual nerve (V3)** and taste from the **chorda tympani (CN VII)**.
 flashcards:
   - front: Nerve supply of the anterior 2/3 of the tongue (sensation and taste)?
     back: Sensation — lingual nerve (V3); taste — chorda tympani (CN VII)

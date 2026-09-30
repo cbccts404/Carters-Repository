@@ -82,6 +82,41 @@ quiz:
     explanation: >-
       The dorsal columns ascend **ipsilaterally** and cross only in the medulla, so a left hemisection causes **left-sided
       loss of vibration and proprioception** below the lesion. Pain and temperature are lost on the **right**.
+  - stem: Fibers from which part of the body ascend in the fasciculus gracilis?
+    choices:
+      - The face
+      - The lower body (below about T6)
+      - The upper limbs only
+      - The viscera
+      - The contralateral body
+    answer: B
+    explanation: >-
+      The **fasciculus gracilis** (medial) carries fibers from the **lower body, below about T6**; the **fasciculus
+      cuneatus** (lateral) carries the upper body. Both ascend ipsilaterally to the medulla.
+  - stem: >-
+      A patient has sensory ataxia, lightning pains, absent reflexes and pupils that accommodate but don't react to
+      light. What is the most likely diagnosis?
+    choices:
+      - Vitamin B12 deficiency
+      - Multiple sclerosis
+      - Friedreich ataxia
+      - Guillain–Barré syndrome
+      - Tabes dorsalis (tertiary syphilis)
+    answer: E
+    explanation: >-
+      **Tabes dorsalis** damages the dorsal roots and columns, causing sensory ataxia, lightning pains, areflexia and
+      **Argyll Robertson pupils**. B12 deficiency also affects the dorsal columns but adds UMN signs.
+  - stem: The medial lemniscus relays in which thalamic nucleus?
+    choices:
+      - Ventral posterolateral (VPL)
+      - Ventral posteromedial (VPM)
+      - Lateral geniculate
+      - Medial geniculate
+      - Anterior nucleus
+    answer: A
+    explanation: >-
+      The medial lemniscus (body touch, vibration, proprioception) synapses in the **VPL**, which projects to the
+      somatosensory cortex. VPM relays the face.
 flashcards:
   - front: Where does the DCML pathway cross?
     back: In the medulla (internal arcuate fibers, sensory decussation)

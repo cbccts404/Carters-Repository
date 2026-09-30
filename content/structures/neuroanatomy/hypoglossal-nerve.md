@@ -68,6 +68,40 @@ quiz:
     answer: D
     explanation: >-
       **Palatoglossus** is supplied by the **vagus (pharyngeal plexus)**; all other tongue muscles are supplied by CN XII.
+  - stem: In an upper motor neuron (cortical) lesion of hypoglossal control, how does the tongue behave?
+    choices:
+      - It deviates toward the lesion with atrophy and fasciculations
+      - It deviates away from the cortical lesion without atrophy
+      - It cannot protrude at all
+      - It shows fasciculations on both sides
+      - It deviates upward
+    answer: B
+    explanation: >-
+      An **LMN** lesion makes the tongue deviate **toward** the lesion with atrophy and fasciculations. A **UMN**
+      (cortical) lesion makes it deviate **away** from the cortical lesion (toward the weak side of the body), without
+      atrophy, and is often mild.
+  - stem: Through which opening does the hypoglossal nerve leave the skull?
+    choices:
+      - Jugular foramen
+      - Foramen magnum
+      - Stylomastoid foramen
+      - Hypoglossal canal
+      - Foramen ovale
+    answer: D
+    explanation: >-
+      CN XII exits through the **hypoglossal canal**, just anterolateral to the foramen magnum. CN IX–XI use the jugular
+      foramen.
+  - stem: In the neck, the hypoglossal nerve crosses which vessels, making it vulnerable in carotid surgery?
+    choices:
+      - Deep to the internal jugular vein only
+      - Behind the vertebral artery
+      - Below the subclavian artery
+      - Along the thyrocervical trunk
+      - Superficial to the internal and external carotid arteries above the bifurcation
+    answer: E
+    explanation: >-
+      The hypoglossal nerve loops forward **superficial to the internal and external carotid arteries** above the
+      bifurcation, so it is at risk during **carotid endarterectomy**.
 flashcards:
   - front: Foramen of CN XII?
     back: Hypoglossal canal

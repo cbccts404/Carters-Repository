@@ -134,6 +134,20 @@ quiz:
     explanation: >-
       The arch gives the **brachiocephalic trunk**, the **left common carotid**, and the **left subclavian** arteries. The
       coronaries come from the ascending aorta.
+  - stem: >-
+      CT angiography in a patient with tearing chest pain shows a dissection flap involving the ascending aorta. What is
+      the appropriate management?
+    choices:
+      - IV beta blocker alone with outpatient follow-up
+      - Thrombolysis
+      - Anticoagulation with heparin
+      - Emergency surgical repair (with BP and heart-rate control)
+      - Repeat CT in 1 week
+    answer: D
+    explanation: >-
+      **Stanford type A** dissection (ascending aorta) is a **surgical emergency**. Type B (descending only, distal to
+      the left subclavian) is usually managed medically with BP and heart-rate control unless complicated. Thrombolysis
+      and anticoagulation are dangerous.
 flashcards:
   - front: Aortic arch branches?
     back: Brachiocephalic trunk, left common carotid, left subclavian

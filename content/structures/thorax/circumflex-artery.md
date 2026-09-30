@@ -76,6 +76,30 @@ quiz:
       - Conus artery
     answer: B
     explanation: In **left dominance**, the **circumflex** continues around the posterior AV groove to give the posterior interventricular artery.
+  - stem: In which groove does the circumflex artery run?
+    choices:
+      - Left atrioventricular (coronary) groove
+      - Anterior interventricular groove
+      - Posterior interventricular groove
+      - Right atrioventricular groove
+      - Interatrial groove
+    answer: A
+    explanation: >-
+      The circumflex runs in the **left AV groove** around the obtuse margin, alongside the great cardiac vein and
+      coronary sinus and close to the mitral annulus. The LAD lies in the anterior interventricular groove and the RCA
+      in the right AV groove.
+  - stem: Why can a circumflex occlusion be missed on a standard 12-lead ECG?
+    choices:
+      - The circumflex supplies only the atria
+      - Circumflex occlusions never cause infarction
+      - Troponin doesn't rise with circumflex occlusion
+      - The lateral and posterior walls it supplies are poorly represented on the standard leads
+      - The circumflex is supplied by the RCA
+    answer: D
+    explanation: >-
+      The circumflex supplies the **lateral and posterolateral LV wall**, which the standard 12 leads represent poorly,
+      so occlusion can be **electrically silent**. Rely on symptoms, troponin, echocardiography, and posterior leads
+      (V7–V9).
 flashcards:
   - front: Circumflex territory?
     back: Lateral and posterolateral LV, left atrium (± SA node ~40%; posterior septum/inferior wall in left dominance)

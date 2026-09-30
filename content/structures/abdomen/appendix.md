@@ -113,6 +113,20 @@ quiz:
       - The mesentery of the sigmoid colon
     answer: B
     explanation: The three **teniae coli converge** at the base of the appendix on the cecum, a reliable intraoperative guide.
+  - stem: >-
+      A patient with appendicitis has right lower quadrant pain when the examiner passively extends the right hip. Where
+      is the appendix most likely positioned?
+    choices:
+      - Pelvic, against obturator internus
+      - Pre-ileal
+      - Retrocecal, against the psoas
+      - Subhepatic
+      - Left iliac fossa
+    answer: C
+    explanation: >-
+      A positive **psoas sign** (pain on hip extension) suggests an inflamed **retrocecal** appendix lying against the
+      psoas. A positive **obturator sign** (pain on internal rotation of the flexed hip) suggests a **pelvic** appendix
+      against obturator internus.
 flashcards:
   - front: McBurney point?
     back: One-third of the way from the right ASIS to the umbilicus

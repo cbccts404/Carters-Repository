@@ -120,6 +120,20 @@ quiz:
     explanation: >-
       **Pain out of proportion to exam** in a patient with AF suggests **acute mesenteric ischemia** from an SMA embolus.
       **CT angiography** is the diagnostic test of choice.
+  - stem: >-
+      A 14-month-old has episodes of severe colicky pain with drawing up of the legs and a sausage-shaped abdominal
+      mass. Ultrasound shows a target sign. What is the most appropriate treatment for an otherwise stable child?
+    choices:
+      - Emergency laparotomy
+      - Observation and oral fluids
+      - Technetium-99m pertechnetate scan
+      - Air or contrast enema reduction
+      - Upper GI series
+    answer: D
+    explanation: >-
+      **Intussusception** (usually ileocolic) is diagnosed by ultrasound (**target sign**), and an **air or contrast
+      enema** is both diagnostic and therapeutic in a stable child. Surgery is reserved for failed reduction,
+      perforation or peritonitis.
 flashcards:
   - front: Jejunum vs ileum?
     back: "Jejunum: long vasa recta, few arcades, thick wall, prominent folds. Ileum: short vasa recta, many arcades, Peyer patches, more fat"

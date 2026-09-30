@@ -114,6 +114,28 @@ quiz:
     explanation: >-
       The **Meyer loop** in the temporal lobe carries fibers for the **contralateral superior quadrant**, so a right
       temporal lesion causes a **left superior quadrantanopia** ("pie in the sky").
+  - stem: A lesion of the optic radiations in the parietal lobe causes which visual field defect?
+    choices:
+      - Contralateral superior quadrantanopia
+      - Bitemporal hemianopia
+      - Ipsilateral monocular blindness
+      - Contralateral inferior quadrantanopia
+      - Central scotoma
+    answer: D
+    explanation: >-
+      The **parietal** radiations carry the **inferior** field ("pie on the floor"); **Meyer loop** in the temporal lobe
+      carries the superior field ("pie in the sky").
+  - stem: Why is the optic nerve affected by demyelinating diseases such as multiple sclerosis?
+    choices:
+      - It is a CNS tract myelinated by oligodendrocytes
+      - It is a peripheral nerve myelinated by Schwann cells
+      - It has no myelin
+      - It is supplied by the vertebral artery
+      - It lies outside the meninges
+    answer: A
+    explanation: >-
+      Developmentally the optic nerve is a **CNS tract**, myelinated by **oligodendrocytes** and wrapped in meninges,
+      which is why MS causes optic neuritis and raised intracranial pressure causes papilledema.
 flashcards:
   - front: Which retinal fibers cross at the chiasm?
     back: Nasal fibers (carrying the temporal visual fields)

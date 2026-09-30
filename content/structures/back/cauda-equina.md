@@ -81,6 +81,33 @@ quiz:
       - Rigidity and tremor
     answer: B
     explanation: The cauda equina consists of **peripheral nerve roots**, so compression produces **lower motor neuron** signs.
+  - stem: >-
+      In a patient with back pain and suspected cauda equina syndrome, which bedside test helps detect urinary
+      retention?
+    choices:
+      - Post-void residual bladder volume
+      - Urine culture
+      - Serum creatinine
+      - Straight leg raise
+      - Urine dipstick for blood
+    answer: A
+    explanation: >-
+      Measuring the **post-void residual** (by bladder scan or catheter) detects **urinary retention**, a key feature of
+      cauda equina syndrome, along with perianal sensation and anal tone. Suspicion warrants emergency MRI.
+  - stem: >-
+      After an L1 burst fracture, a patient has sudden symmetric bladder and bowel dysfunction, perianal numbness, a
+      brisk knee jerk and absent ankle jerks. Where is the lesion?
+    choices:
+      - Cauda equina below L3
+      - S1 nerve root only
+      - Cervical spinal cord
+      - Conus medullaris
+      - Common fibular nerves
+    answer: D
+    explanation: >-
+      A **conus medullaris** lesion (around L1–L2) gives **early**, symmetric bladder, bowel and sexual dysfunction with
+      perianal numbness and **mixed UMN/LMN** leg findings. Cauda equina lesions produce purely lower motor neuron signs
+      and are often asymmetric.
 flashcards:
   - front: Cauda equina — definition?
     back: Lumbar, sacral and coccygeal roots descending in the lumbar cistern below the conus (L1–L2)

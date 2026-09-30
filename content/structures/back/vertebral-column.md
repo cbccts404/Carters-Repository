@@ -113,6 +113,30 @@ quiz:
     explanation: >-
       The **intercristal (Tuffier) line** crosses the **L4 spinous process or the L4–L5 interspace**, the landmark for
       lumbar puncture below the end of the spinal cord.
+  - stem: Which curvatures of the vertebral column are primary (present at birth)?
+    choices:
+      - Cervical and lumbar lordoses
+      - Cervical lordosis and thoracic kyphosis
+      - Lumbar lordosis only
+      - Thoracic and sacral kyphoses
+      - Cervical and sacral curvatures
+    answer: D
+    explanation: >-
+      The **thoracic and sacral kyphoses** are **primary** curvatures, present in the fetus. The **cervical** (head
+      control) and **lumbar** (walking) **lordoses** are secondary.
+  - stem: >-
+      A 15-year-old boy has a rounded upper back that doesn't correct fully when he extends his spine. Radiographs show
+      wedging of several adjacent thoracic vertebrae. What is the most likely diagnosis?
+    choices:
+      - Adolescent idiopathic scoliosis
+      - Ankylosing spondylitis
+      - Spondylolysis
+      - Postural kyphosis
+      - Scheuermann disease
+    answer: E
+    explanation: >-
+      **Scheuermann disease** is a structural hyperkyphosis in adolescents from **wedging of adjacent thoracic
+      vertebrae**, so it doesn't fully correct on extension, unlike postural kyphosis.
 flashcards:
   - front: Number of vertebrae by region?
     back: 7 cervical, 12 thoracic, 5 lumbar, 5 sacral (fused), ~4 coccygeal

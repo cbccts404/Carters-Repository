@@ -75,6 +75,39 @@ quiz:
     explanation: >-
       **ADPKD** carries an increased risk of **intracranial berry aneurysms**; with a family history of aneurysm or SAH,
       screening with **MRA** (or CTA) is recommended.
+  - stem: An unruptured posterior communicating artery aneurysm typically presents with which finding?
+    choices:
+      - Bitemporal hemianopia
+      - Pupil-sparing CN VI palsy
+      - Anosmia
+      - Contralateral leg weakness
+      - Pupil-involving CN III palsy
+    answer: E
+    explanation: >-
+      The **PComm** runs alongside **CN III**, so an aneurysm compresses its superficial pupillomotor fibers, causing a
+      **pupil-involving CN III palsy** that needs emergency vascular imaging.
+  - stem: An anterior communicating artery aneurysm can compress which structure and cause visual field defects?
+    choices:
+      - Optic tract
+      - Lateral geniculate nucleus
+      - Optic chiasm
+      - Occipital cortex
+      - Oculomotor nerve
+    answer: C
+    explanation: >-
+      The **AComm** lies above the **optic chiasm**, so an aneurysm there can cause visual field defects. AComm is the
+      most common site of berry aneurysms.
+  - stem: The circle of Willis lies in which space, so that aneurysm rupture causes which hemorrhage?
+    choices:
+      - Subarachnoid space; subarachnoid hemorrhage
+      - Epidural space; epidural hematoma
+      - Subdural space; subdural hematoma
+      - Within the brain parenchyma; intracerebral hemorrhage
+      - Within the ventricles; intraventricular hemorrhage only
+    answer: A
+    explanation: >-
+      The circle lies in the **subarachnoid space** (interpeduncular cistern), so a ruptured berry aneurysm causes
+      **subarachnoid hemorrhage** with a thunderclap headache.
 flashcards:
   - front: Components of the circle of Willis?
     back: ACAs, AComm, ICAs, PComms, PCAs (fed by the basilar)

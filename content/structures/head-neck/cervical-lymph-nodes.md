@@ -95,6 +95,41 @@ quiz:
     explanation: >-
       **Virchow node** (left supraclavicular) receives lymph near the termination of the **thoracic duct** and is a
       classic sign of **gastric** (and other abdominal) cancer.
+  - stem: When lymphoma is suspected in an enlarged cervical node, which biopsy is needed?
+    choices:
+      - Excisional biopsy of the whole node
+      - Fine-needle aspiration only
+      - Core biopsy of the overlying skin
+      - Bone marrow biopsy only
+      - No biopsy; diagnose by CT
+    answer: A
+    explanation: >-
+      Lymphoma diagnosis needs the **node architecture**, so an **excisional biopsy** is required; FNA is insufficient.
+      For a suspected metastatic squamous cell carcinoma, FNA is preferred and open excision is avoided first.
+  - stem: Lymph from the palatine tonsil drains first to which named node?
+    choices:
+      - Submental node
+      - Occipital node
+      - Jugulo-omohyoid node
+      - Jugulodigastric node
+      - Virchow node
+    answer: D
+    explanation: >-
+      The tonsil drains to the **jugulodigastric (tonsillar) node** of the deep cervical chain, just below the angle of
+      the mandible, which enlarges in tonsillitis. The jugulo-omohyoid node is associated with the tongue.
+  - stem: >-
+      A teenager with pharyngitis has prominent posterior cervical lymphadenopathy. Which diagnosis does this pattern
+      suggest?
+    choices:
+      - Group A streptococcal pharyngitis
+      - Infectious mononucleosis
+      - Dental abscess
+      - Thyroid cancer
+      - Acute otitis media
+    answer: B
+    explanation: >-
+      **Posterior cervical** nodes suggest **infectious mononucleosis** (EBV); **anterior** cervical nodes suggest
+      streptococcal pharyngitis.
 flashcards:
   - front: Node draining the palatine tonsil?
     back: Jugulodigastric (level II)

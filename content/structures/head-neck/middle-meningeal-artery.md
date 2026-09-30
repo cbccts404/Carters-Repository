@@ -67,6 +67,41 @@ quiz:
     explanation: >-
       Epidural hematomas are **biconvex** and limited by **suture lines**, where the dura is firmly attached. Subdural
       hematomas are crescent-shaped and cross sutures (but not the midline falx).
+  - stem: Through which opening does the middle meningeal artery enter the cranial cavity?
+    choices:
+      - Foramen ovale
+      - Foramen rotundum
+      - Foramen lacerum
+      - Foramen spinosum
+      - Jugular foramen
+    answer: D
+    explanation: >-
+      The middle meningeal artery, from the maxillary artery, enters the middle cranial fossa through the **foramen
+      spinosum**. The foramen ovale transmits V3 and the rotundum V2.
+  - stem: Which branch of the middle meningeal artery lies deep to the pterion?
+    choices:
+      - Posterior (parietal) branch
+      - Anterior (frontal) branch
+      - Petrosal branch
+      - Superior tympanic branch
+    answer: B
+    explanation: >-
+      The **anterior (frontal) branch** runs deep to the **pterion**, the thinnest part of the lateral skull, so a
+      fracture there can tear it and cause an epidural hematoma.
+  - stem: >-
+      A patient with an expanding right epidural hematoma develops a fixed, dilated right pupil. What causes the pupil
+      change?
+    choices:
+      - Direct injury to the right optic nerve
+      - Sympathetic chain injury
+      - Uncal herniation compressing the right oculomotor nerve
+      - Midbrain hemorrhage
+      - Retinal detachment
+    answer: C
+    explanation: >-
+      An expanding hematoma pushes the uncus over the tentorium, compressing the **ipsilateral oculomotor nerve**; its
+      superficial parasympathetic fibers are affected first, giving an **ipsilateral fixed dilated pupil**, often with
+      contralateral hemiparesis.
 flashcards:
   - front: Foramen for the middle meningeal artery?
     back: Foramen spinosum

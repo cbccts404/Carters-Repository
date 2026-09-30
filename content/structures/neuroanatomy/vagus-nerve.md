@@ -87,6 +87,39 @@ quiz:
     explanation: >-
       For **stable SVT**, start with **vagal maneuvers** (increase vagal tone at the AV node); if unsuccessful, give
       **adenosine**. Unstable patients need synchronized cardioversion.
+  - stem: Which nerve carries the efferent limb of the gag reflex?
+    choices:
+      - Glossopharyngeal nerve
+      - Vagus nerve
+      - Hypoglossal nerve
+      - Facial nerve
+      - Trigeminal nerve
+    answer: B
+    explanation: >-
+      The gag reflex has its **afferent** limb in **CN IX** and its **efferent** limb in **CN X** (pharyngeal and
+      palatal muscles).
+  - stem: How far along the gut does vagal parasympathetic supply extend?
+    choices:
+      - Only to the stomach
+      - To the rectum
+      - To the ileocecal valve only
+      - Only to the esophagus
+      - Foregut and midgut, to about the distal third of the transverse colon
+    answer: E
+    explanation: >-
+      The vagus supplies the **foregut and midgut**, to about the distal third of the transverse colon. Beyond that, the
+      pelvic splanchnic nerves (S2–S4) take over.
+  - stem: Which pharyngeal muscle is NOT supplied by the vagus nerve?
+    choices:
+      - Stylopharyngeus
+      - Superior constrictor
+      - Palatopharyngeus
+      - Inferior constrictor
+      - Levator veli palatini
+    answer: A
+    explanation: >-
+      **Stylopharyngeus** is supplied by **CN IX**. The vagus supplies the other pharyngeal muscles and the soft palate
+      except tensor veli palatini (V3).
 flashcards:
   - front: Direction of uvula deviation with a CN X lesion?
     back: Away from the lesion

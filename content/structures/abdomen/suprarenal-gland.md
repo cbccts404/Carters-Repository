@@ -106,6 +106,19 @@ quiz:
     explanation: >-
       **Hyperpigmentation** (high ACTH) with **hyponatremia and hyperkalemia** (loss of aldosterone) indicates **primary**
       adrenal insufficiency. Secondary insufficiency lacks hyperpigmentation and hyperkalemia.
+  - stem: >-
+      A 45-year-old with resistant hypertension has a serum potassium of 3.0 mEq/L and metabolic alkalosis. What is the
+      best initial screening test for the most likely diagnosis?
+    choices:
+      - Plasma aldosterone-to-renin ratio
+      - Plasma free metanephrines
+      - 24-hour urine free cortisol
+      - Morning cortisol and ACTH
+      - Renal artery duplex ultrasound
+    answer: A
+    explanation: >-
+      **Primary hyperaldosteronism (Conn syndrome)** causes hypertension with **hypokalemia**, metabolic alkalosis and
+      low renin. Screen with the **aldosterone-to-renin ratio**. Metanephrines screen for pheochromocytoma.
 flashcards:
   - front: Adrenal cortex zones and hormones?
     back: "Glomerulosa: aldosterone. Fasciculata: cortisol. Reticularis: androgens (salt, sugar, sex)"

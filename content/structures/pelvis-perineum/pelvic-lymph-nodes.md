@@ -100,6 +100,32 @@ quiz:
     explanation: >-
       **Primary syphilis** causes a **painless indurated chancre** with painless regional lymphadenopathy. Chancroid is
       painful with suppurative nodes; herpes causes painful vesicles and tender nodes.
+  - stem: >-
+      Which nodes on the lateral pelvic wall are first-echelon nodes for the cervix, prostate and bladder, and are
+      sampled in pelvic lymphadenectomy?
+    choices:
+      - Superficial inguinal nodes
+      - Para-aortic nodes
+      - Obturator nodes
+      - Inferior mesenteric nodes
+      - Deep inguinal nodes
+    answer: C
+    explanation: >-
+      The **obturator nodes** (part of the external iliac group) lie around the obturator nerve and vessels on the
+      lateral pelvic wall. They are first-echelon nodes for the cervix, prostate and bladder.
+  - stem: >-
+      A man has a painful genital ulcer and tender, suppurative inguinal lymph nodes. What is the most likely diagnosis?
+    choices:
+      - Primary syphilis
+      - Genital herpes
+      - Lymphogranuloma venereum
+      - Chancroid
+      - Testicular cancer
+    answer: D
+    explanation: >-
+      **Chancroid** causes a painful ulcer with suppurative nodes. Syphilis causes a painless chancre with painless
+      nodes; HSV causes painful vesicles with tender nodes; LGV causes a painless ulcer followed by painful buboes (the
+      "groove sign"). Testicular cancer spreads to para-aortic, not inguinal, nodes.
 flashcards:
   - front: Lymph drainage of the testis vs scrotum?
     back: Testis → para-aortic; scrotum → superficial inguinal

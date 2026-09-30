@@ -122,6 +122,19 @@ quiz:
       - Ogilvie syndrome
     answer: B
     explanation: The **coffee bean** sign in an older, institutionalized patient is classic for **sigmoid volvulus**. Treatment starts with endoscopic detorsion if there's no ischemia.
+  - stem: >-
+      In a large bowel obstruction with a competent ileocecal valve, which part of the colon is most at risk of
+      perforation?
+    choices:
+      - Sigmoid colon
+      - Descending colon
+      - Splenic flexure
+      - Rectum
+      - Cecum
+    answer: E
+    explanation: >-
+      The **cecum** has the widest diameter, so by the **law of Laplace** its wall tension is highest and it perforates
+      first in a closed-loop large bowel obstruction.
 flashcards:
   - front: Arterial supply of the colon by segment?
     back: "SMA (ileocolic, right colic, middle colic) to distal 1/3 transverse; IMA (left colic, sigmoid, superior rectal) beyond"

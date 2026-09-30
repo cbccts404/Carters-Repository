@@ -98,6 +98,29 @@ quiz:
     explanation: >-
       The **umbilicus** corresponds to the **T10** dermatome. T4 is at the nipple. Herpes zoster follows a single
       dermatome and doesn't cross the midline.
+  - stem: The anterior intercostal arteries of spaces 1–6 arise from which artery?
+    choices:
+      - Internal thoracic artery
+      - Thoracic aorta
+      - Supreme intercostal artery
+      - Lateral thoracic artery
+      - Musculophrenic artery
+    answer: A
+    explanation: >-
+      The **internal thoracic artery** gives the anterior intercostal arteries of spaces 1–6; the musculophrenic artery
+      supplies the lower spaces. The **posterior** intercostal arteries come from the thoracic aorta (spaces 3–11) and
+      the supreme intercostal artery (spaces 1–2).
+  - stem: Which intercostal muscle has fibers running inferoanteriorly, like hands in front pockets?
+    choices:
+      - Internal intercostal
+      - External intercostal
+      - Innermost intercostal
+      - Transversus thoracis
+      - Subcostalis
+    answer: B
+    explanation: >-
+      **External intercostal** fibers run **inferoanteriorly** ("hands in front pockets"). The internal intercostals run
+      at right angles to them. The neurovascular bundle lies between the internal and innermost layers.
 flashcards:
   - front: Intercostal muscle layers?
     back: External, internal, innermost (neurovascular bundle between internal and innermost)

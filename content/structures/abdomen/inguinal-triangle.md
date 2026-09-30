@@ -62,6 +62,29 @@ quiz:
       - Internal spermatic fascia
     answer: B
     explanation: The floor of the triangle is the **transversalis fascia** (posterior wall of the inguinal canal); its weakness allows direct herniation.
+  - stem: Which structure forms the medial boundary of the inguinal (Hesselbach) triangle?
+    choices:
+      - Inferior epigastric vessels
+      - Inguinal ligament
+      - Lateral border of rectus abdominis
+      - Pubic symphysis
+      - Deep inguinal ring
+    answer: C
+    explanation: >-
+      "RIP": **R**ectus abdominis (lateral border) is **medial**, the **I**nferior epigastric vessels are lateral, and
+      **P**oupart (inguinal) ligament is inferior.
+  - stem: Compared with femoral hernias, what is characteristic of direct inguinal hernias?
+    choices:
+      - They are more common in women
+      - They pass below the inguinal ligament
+      - They usually descend into the scrotum
+      - They are caused by a patent processus vaginalis
+      - They are usually broad-necked with a lower risk of strangulation
+    answer: E
+    explanation: >-
+      **Direct** hernias are acquired, typically in **older men**, **broad-necked** and easily reducible, and rarely
+      enter the scrotum, so strangulation is less likely. **Femoral** hernias (below the ligament, more common in women)
+      have the highest strangulation risk; a patent processus vaginalis underlies **indirect** hernias.
 flashcards:
   - front: Hesselbach triangle boundaries?
     back: "Medial: lateral border of rectus abdominis. Lateral: inferior epigastric vessels. Inferior: inguinal ligament (RIP)"

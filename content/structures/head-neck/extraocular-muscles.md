@@ -102,6 +102,27 @@ quiz:
     explanation: >-
       The **abducens nerve (CN VI)** supplies the lateral rectus (LR6). CN IV supplies the superior oblique; CN III
       supplies the rest.
+  - stem: A patient with a right trochlear (CN IV) palsy tilts the head in which direction to reduce diplopia?
+    choices:
+      - Toward the right
+      - Toward the left (away from the affected side)
+      - Chin up
+      - No head tilt occurs
+    answer: B
+    explanation: >-
+      In CN IV palsy the affected eye drifts up and extorts; patients **tilt the head away** from the affected side to
+      compensate. Diplopia is worst looking **down and in** (reading, going downstairs).
+  - stem: Which extraocular muscle does NOT arise from the orbital apex?
+    choices:
+      - Superior rectus
+      - Lateral rectus
+      - Superior oblique
+      - Medial rectus
+      - Inferior oblique
+    answer: E
+    explanation: >-
+      The **inferior oblique** arises from the **orbital floor** near the nasolacrimal canal. The four recti arise from
+      the common tendinous ring, and the superior oblique from the sphenoid above it, passing through the trochlea.
 flashcards:
   - front: Innervation mnemonic for extraocular muscles?
     back: LR6 SO4, rest 3

@@ -75,6 +75,40 @@ quiz:
     explanation: >-
       **EBV mononucleosis**: exudative tonsillitis with **posterior** cervical nodes, **splenomegaly**, and the classic
       **rash after amoxicillin**. Advise avoiding contact sports because of splenic rupture risk.
+  - stem: What is the main reason to treat group A streptococcal pharyngitis with antibiotics?
+    choices:
+      - To prevent post-streptococcal glomerulonephritis
+      - To prevent infectious mononucleosis
+      - To prevent otitis externa
+      - To prevent acute rheumatic fever
+      - To eliminate the need for follow-up
+    answer: D
+    explanation: >-
+      Treating GAS pharyngitis with **penicillin V or amoxicillin** prevents **acute rheumatic fever**. Antibiotics do
+      **not** reliably prevent post-streptococcal glomerulonephritis.
+  - stem: What is the usual source of bleeding after tonsillectomy?
+    choices:
+      - External palatine (paratonsillar) vein
+      - Internal carotid artery
+      - Lingual artery
+      - Internal jugular vein
+      - Ascending pharyngeal artery
+    answer: A
+    explanation: >-
+      The **external palatine (paratonsillar) vein** is the usual source of post-tonsillectomy bleeding. The main
+      arterial supply is the tonsillar branch of the facial artery; the internal carotid lies about 2–2.5 cm
+      posterolateral.
+  - stem: After tonsillectomy, a patient has ear pain. Which nerve refers this pain?
+    choices:
+      - Facial nerve
+      - Great auricular nerve
+      - Glossopharyngeal nerve
+      - Hypoglossal nerve
+      - Accessory nerve
+    answer: C
+    explanation: >-
+      The **glossopharyngeal nerve (CN IX)** lies in the tonsillar bed and also supplies the middle ear via its tympanic
+      branch, so pain from the tonsillar fossa is referred to the **ear**.
 flashcards:
   - front: Centor criteria?
     back: Fever, tonsillar exudate, tender anterior cervical nodes, absence of cough (+ age in McIsaac)

@@ -91,6 +91,29 @@ quiz:
     explanation: >-
       Blood flows from the subclavian into the **internal thoracic artery**, through the **anterior intercostal**
       arteries into the **posterior intercostals**, and back into the descending aorta beyond the coarctation.
+  - stem: At the 6th intercostal space, the internal thoracic artery divides into which two terminal branches?
+    choices:
+      - Superior epigastric and musculophrenic arteries
+      - Inferior epigastric and pericardiacophrenic arteries
+      - Anterior intercostal and lateral thoracic arteries
+      - Superior phrenic and bronchial arteries
+      - Thoracoacromial and superior thoracic arteries
+    answer: A
+    explanation: >-
+      The internal thoracic artery ends at about the **6th intercostal space** by dividing into the **superior
+      epigastric** (into the rectus sheath) and **musculophrenic** arteries.
+  - stem: In the rectus sheath, the superior epigastric artery anastomoses with which artery?
+    choices:
+      - Deep circumflex iliac artery
+      - Superficial epigastric artery
+      - Lumbar arteries
+      - Lateral thoracic artery
+      - Inferior epigastric artery
+    answer: E
+    explanation: >-
+      The superior epigastric (from the internal thoracic) anastomoses with the **inferior epigastric** (from the
+      external iliac) in the rectus sheath, a collateral route between the subclavian and iliac systems that enlarges in
+      coarctation of the aorta.
 flashcards:
   - front: Internal thoracic artery — origin and terminal branches?
     back: 1st part of subclavian; superior epigastric + musculophrenic (6th intercostal space)

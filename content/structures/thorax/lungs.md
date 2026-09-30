@@ -141,6 +141,17 @@ quiz:
     explanation: >-
       The **horizontal fissure** follows the **4th rib and costal cartilage** from the sternum to about the mid-axillary
       line, where it meets the oblique fissure.
+  - stem: Which part of the left lung corresponds to the right middle lobe?
+    choices:
+      - Apical segment of the left upper lobe
+      - Superior segment of the left lower lobe
+      - Cardiac notch
+      - Left lower lobe basal segments
+      - Lingula
+    answer: E
+    explanation: >-
+      The **lingula** of the left upper lobe is the counterpart of the right middle lobe. Lingular pneumonia obscures
+      the left heart border, just as right middle lobe pneumonia obscures the right heart border (silhouette sign).
 flashcards:
   - front: Right vs left lung lobes and fissures?
     back: "Right: 3 lobes, oblique + horizontal fissures. Left: 2 lobes + lingula, oblique fissure, cardiac notch"

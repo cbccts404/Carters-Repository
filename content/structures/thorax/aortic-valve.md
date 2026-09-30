@@ -110,6 +110,28 @@ quiz:
     explanation: >-
       The **aortic area** is the **right 2nd intercostal space** at the sternal border. The pulmonic area is the left
       2nd, the tricuspid area the left lower sternal border, and the mitral area the apex.
+  - stem: A girl with Turner syndrome is most likely to have which valve abnormality?
+    choices:
+      - Mitral valve prolapse
+      - Tricuspid atresia
+      - Bicuspid aortic valve
+      - Pulmonary stenosis
+      - Ebstein anomaly
+    answer: C
+    explanation: >-
+      A **bicuspid aortic valve**, the most common congenital heart anomaly, is associated with **Turner syndrome** and
+      **coarctation of the aorta**, and with aortic root dilation. It can cause aortic stenosis earlier in life.
+  - stem: How does sustained handgrip affect the murmurs of aortic stenosis and aortic regurgitation?
+    choices:
+      - Both murmurs get louder
+      - Both murmurs get softer
+      - AS gets louder; AR gets softer
+      - AR gets louder; AS gets softer
+      - Neither murmur changes
+    answer: D
+    explanation: >-
+      Handgrip **raises afterload**, which increases regurgitant flow (**AR louder**) and reduces the gradient across
+      the aortic valve (**AS softer**). Valsalva and standing reduce preload and soften the AS murmur.
 flashcards:
   - front: Aortic stenosis — classic triad?
     back: Syncope, angina, dyspnea (heart failure)

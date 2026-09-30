@@ -79,6 +79,41 @@ quiz:
     explanation: >-
       **HSV-1 encephalitis** favors the medial temporal lobes. Start **IV acyclovir** as soon as it is suspected; confirm
       with CSF HSV PCR.
+  - stem: In the Papez circuit, the mammillothalamic tract connects the mammillary bodies to which thalamic nucleus?
+    choices:
+      - Ventral posterolateral nucleus
+      - Lateral geniculate nucleus
+      - Anterior nucleus
+      - Pulvinar
+      - Medial geniculate nucleus
+    answer: C
+    explanation: >-
+      Papez circuit: hippocampus → fornix → **mammillary bodies** → mammillothalamic tract → **anterior nucleus of the
+      thalamus** → cingulate gyrus → parahippocampal cortex → hippocampus.
+  - stem: >-
+      After HSV encephalitis, a patient shows hyperorality, hypersexuality, placidity and failure to recognize objects
+      by sight. Which structures are damaged?
+    choices:
+      - Mammillary bodies
+      - Bilateral amygdalae (anterior temporal lobes)
+      - Cingulate gyrus
+      - Hippocampus only
+      - Occipital lobes
+    answer: B
+    explanation: >-
+      **Klüver–Bucy syndrome** results from **bilateral amygdala** (anterior temporal) damage, e.g. HSV encephalitis or
+      trauma.
+  - stem: Which structures show the earliest neuronal loss and atrophy in Alzheimer disease?
+    choices:
+      - Cerebellar vermis
+      - Basal ganglia
+      - Occipital cortex
+      - Hippocampus and entorhinal cortex
+      - Mammillary bodies
+    answer: D
+    explanation: >-
+      Alzheimer disease starts in the **hippocampus and entorhinal cortex**, which is why **short-term memory loss**
+      comes first; MRI shows medial temporal atrophy.
 flashcards:
   - front: Papez circuit sequence?
     back: Hippocampus → fornix → mammillary bodies → mammillothalamic tract → anterior thalamic nucleus → cingulate gyrus → entorhinal cortex → hippocampus

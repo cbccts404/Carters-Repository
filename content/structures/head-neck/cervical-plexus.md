@@ -84,6 +84,42 @@ quiz:
     explanation: >-
       Irritation of the diaphragm (by residual CO₂ or blood) is carried by the **phrenic nerve (C3–C5)** and felt in the
       **C3–C4** dermatome over the shoulder (supraclavicular nerves).
+  - stem: Where do the cutaneous branches of the cervical plexus emerge (the "nerve point" of the neck)?
+    choices:
+      - At the angle of the mandible
+      - At the suprasternal notch
+      - At the midpoint of the posterior border of sternocleidomastoid
+      - At the anterior border of trapezius
+      - Behind the clavicle
+    answer: C
+    explanation: >-
+      The **lesser occipital, great auricular, transverse cervical and supraclavicular** nerves emerge around the
+      **midpoint of the posterior border of SCM** (the nerve point, Erb point), where a superficial cervical plexus
+      block is placed. The spinal accessory nerve emerges nearby.
+  - stem: >-
+      After a parotidectomy, a patient has numbness of the earlobe and the skin over the angle of the jaw. Which nerve
+      was injured?
+    choices:
+      - Auriculotemporal nerve
+      - Facial nerve
+      - Lesser occipital nerve
+      - Transverse cervical nerve
+      - Great auricular nerve
+    answer: E
+    explanation: >-
+      The **great auricular nerve (C2–C3)** supplies the skin over the parotid, the angle of the jaw and the lower
+      auricle, and is at risk in parotid surgery and facelifts.
+  - stem: The ansa cervicalis supplies which muscles?
+    choices:
+      - Infrahyoid (strap) muscles
+      - Muscles of mastication
+      - Suprahyoid muscles including digastric
+      - Sternocleidomastoid and trapezius
+      - The diaphragm
+    answer: A
+    explanation: >-
+      The **ansa cervicalis (C1–C3)**, lying on the carotid sheath, supplies the **infrahyoid (strap) muscles**:
+      sternohyoid, sternothyroid and omohyoid. The diaphragm is supplied by the phrenic nerve (C3–C5).
 flashcards:
   - front: Roots of the phrenic nerve?
     back: C3–C5

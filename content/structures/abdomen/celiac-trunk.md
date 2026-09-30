@@ -79,6 +79,30 @@ quiz:
       - Superior mesenteric artery
     answer: B
     explanation: The **short gastric arteries** (supplying the fundus) and the left gastro-omental artery are branches of the **splenic artery**.
+  - stem: >-
+      A thin 28-year-old woman has postprandial epigastric pain and weight loss. There is an epigastric bruit that
+      changes with respiration, and other causes have been excluded. What is the most likely diagnosis?
+    choices:
+      - Chronic mesenteric ischemia from atherosclerosis
+      - Superior mesenteric artery syndrome
+      - Gastric ulcer
+      - Median arcuate ligament syndrome
+      - Splenic artery aneurysm
+    answer: D
+    explanation: >-
+      **Median arcuate ligament syndrome** is compression of the celiac trunk by the median arcuate ligament of the
+      diaphragm (worse in expiration), typically in young thin women. It is a diagnosis of exclusion.
+  - stem: What is the most common visceral artery aneurysm, notable for its risk of rupture in pregnancy?
+    choices:
+      - Superior mesenteric artery aneurysm
+      - Splenic artery aneurysm
+      - Hepatic artery aneurysm
+      - Renal artery aneurysm
+      - Left gastric artery aneurysm
+    answer: B
+    explanation: >-
+      The **splenic artery aneurysm** is the most common visceral artery aneurysm, more common in women and associated
+      with pregnancy and portal hypertension. Rupture in pregnancy carries high maternal and fetal mortality.
 flashcards:
   - front: Celiac trunk branches?
     back: Left gastric, splenic, common hepatic

@@ -96,6 +96,28 @@ quiz:
       - C1
     answer: B
     explanation: It usually enters at **C6** (C7's transverse foramen normally transmits only veins) and ascends through C6–C1.
+  - stem: Which branch of the vertebral artery supplies the lateral medulla and inferior cerebellum?
+    choices:
+      - Anterior spinal artery
+      - Anterior inferior cerebellar artery
+      - Posterior inferior cerebellar artery
+      - Superior cerebellar artery
+      - Posterior cerebral artery
+    answer: C
+    explanation: >-
+      **PICA** is a branch of the vertebral artery; its occlusion (or vertebral dissection) causes **lateral medullary
+      (Wallenberg) syndrome**. AICA, SCA and PCA arise from the basilar artery.
+  - stem: Where do the two vertebral arteries join to form the basilar artery?
+    choices:
+      - At the transverse foramen of C1
+      - At the pontomedullary junction
+      - At the level of the midbrain
+      - At the foramen magnum
+      - In the suboccipital triangle
+    answer: B
+    explanation: >-
+      The vertebral arteries pass through the foramen magnum and unite at the **pontomedullary junction** to form the
+      **basilar artery**, which ends by dividing into the posterior cerebral arteries.
 flashcards:
   - front: Vertebral artery course?
     back: Subclavian → C6–C1 transverse foramina → posterior arch of atlas → foramen magnum → joins other side to form the basilar artery

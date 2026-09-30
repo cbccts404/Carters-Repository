@@ -108,6 +108,28 @@ quiz:
     explanation: >-
       **Internal oblique** → cremasteric muscle and fascia. External oblique → external spermatic fascia. Transversalis
       fascia → internal spermatic fascia.
+  - stem: A painless scrotal swelling transilluminates brightly. What is the most likely diagnosis?
+    choices:
+      - Varicocele
+      - Testicular torsion
+      - Hydrocele
+      - Testicular tumor
+      - Indirect inguinal hernia containing bowel
+    answer: C
+    explanation: >-
+      A **hydrocele** is fluid in the tunica vaginalis and **transilluminates**. A varicocele feels like a "bag of
+      worms"; testicular tumors are solid and don't transilluminate.
+  - stem: A testicular cancer first spreads to which lymph nodes?
+    choices:
+      - Superficial inguinal nodes
+      - Deep inguinal nodes
+      - Internal iliac nodes
+      - Axillary nodes
+      - Lumbar (para-aortic) nodes
+    answer: E
+    explanation: >-
+      The testis develops on the posterior abdominal wall and descends with its vessels, so testicular lymph drains to
+      the **lumbar (para-aortic) nodes**. Scrotal **skin** drains to the superficial inguinal nodes.
 flashcards:
   - front: Contents of the spermatic cord?
     back: Ductus deferens, testicular artery, pampiniform plexus, artery of ductus, cremasteric vessels, genital branch of genitofemoral nerve, lymphatics, autonomic nerves

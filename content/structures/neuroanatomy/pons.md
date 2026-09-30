@@ -71,6 +71,41 @@ quiz:
     explanation: >-
       Correcting chronic hyponatremia by **20 mEq/L in 24 hours** is far too fast and causes **osmotic demyelination
       (central pontine myelinolysis)** — dysarthria, dysphagia and quadriparesis days later.
+  - stem: >-
+      A comatose patient has pinpoint but reactive pupils and quadriplegia after sudden collapse. Where is the likely
+      lesion (if opioids are excluded)?
+    choices:
+      - Midbrain
+      - Pons (hemorrhage)
+      - Medulla
+      - Occipital lobe
+      - Thalamus
+    answer: B
+    explanation: >-
+      **Pontine hemorrhage** causes coma, quadriplegia and **pinpoint reactive pupils** (interrupted descending
+      sympathetic fibers). Opioid overdose is the main mimic.
+  - stem: The locus coeruleus in the pons is the main source of which neurotransmitter?
+    choices:
+      - Dopamine
+      - Serotonin
+      - Acetylcholine
+      - Norepinephrine
+      - GABA
+    answer: D
+    explanation: >-
+      The **locus coeruleus** is the brain's main source of **norepinephrine**. The substantia nigra supplies dopamine
+      and the raphe nuclei serotonin.
+  - stem: What is the function of the paramedian pontine reticular formation (PPRF)?
+    choices:
+      - Horizontal gaze center
+      - Vertical gaze center
+      - Respiratory rhythm generator
+      - Chemoreceptor trigger zone
+      - Taste relay
+    answer: A
+    explanation: >-
+      The **PPRF** is the **horizontal gaze center**, driving the ipsilateral abducens nucleus. Vertical gaze is
+      controlled in the midbrain.
 flashcards:
   - front: Cranial nerve nuclei in the pons?
     back: V, VI, VII, VIII

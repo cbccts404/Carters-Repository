@@ -113,6 +113,20 @@ quiz:
       - S2
     answer: C
     explanation: The **conus medullaris** ends at about **L1–L2** in adults, so lumbar puncture is performed at L3–L4 or L4–L5.
+  - stem: >-
+      After a stab wound to the right side of the thoracic spine, which pattern of deficits is expected below the
+      lesion?
+    choices:
+      - Bilateral loss of pain and temperature with preserved vibration
+      - Weakness greater in the arms than the legs
+      - Loss of all sensation and movement on the left only
+      - Right weakness and loss of vibration/proprioception; left loss of pain and temperature
+      - Left weakness and loss of vibration; right loss of pain and temperature
+    answer: D
+    explanation: >-
+      **Brown-Séquard** (hemisection) causes **ipsilateral** weakness (corticospinal) and loss of
+      vibration/proprioception (dorsal columns), with **contralateral** loss of pain and temperature because the
+      spinothalamic fibers have already crossed.
 flashcards:
   - front: Where does the adult spinal cord end?
     back: Conus medullaris at about L1–L2

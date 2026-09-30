@@ -83,6 +83,42 @@ quiz:
       The membranous layer of superficial fascia (**Scarpa** in the abdomen, **Colles** in the perineum) **fuses with
       the fascia lata** just below the inguinal ligament, closing off the thigh; it also fuses with the perineal
       membrane posteriorly, closing off the anal triangle.
+  - stem: In a woman, the greater vestibular (Bartholin) glands lie in which compartment?
+    choices:
+      - Deep perineal pouch
+      - Superficial perineal pouch
+      - Ischioanal fossa
+      - Retropubic space
+      - Rectouterine pouch
+    answer: B
+    explanation: >-
+      The **superficial perineal pouch** in women contains the crura of the clitoris, the bulbs of the vestibule, the
+      **greater vestibular (Bartholin) glands** and the superficial perineal muscles. In men, the bulbourethral (Cowper)
+      glands are in the **deep** pouch.
+  - stem: Colles fascia of the perineum is continuous with which layer of the anterior abdominal wall?
+    choices:
+      - Transversalis fascia
+      - Fatty (Camper) layer of superficial fascia
+      - External oblique aponeurosis
+      - Deep (Buck) fascia
+      - Membranous (Scarpa) layer of superficial fascia
+    answer: E
+    explanation: >-
+      **Colles fascia** (the membranous layer of the superficial perineal fascia) forms the floor of the superficial
+      pouch and is continuous with the dartos fascia and the **membranous (Scarpa) layer** of the abdominal wall. This
+      is why urine from a bulbar urethral rupture, or Fournier gangrene, can spread up onto the abdominal wall.
+  - stem: A pelvic fracture tears the membranous urethra. Where does the urine extravasate?
+    choices:
+      - Into the scrotum, penis and anterior abdominal wall deep to Scarpa fascia
+      - Into the thighs
+      - Into the ischioanal fossa only
+      - Into the deep perineal pouch and the retropubic (extraperitoneal) space
+      - Into the peritoneal cavity
+    answer: D
+    explanation: >-
+      The membranous urethra lies in the **deep pouch**, so a pelvic-fracture injury leaks into the deep pouch and the
+      **retropubic space** around the bladder. Spread into the scrotum, penis and abdominal wall is typical of a
+      **bulbar** (straddle) injury in the superficial pouch. Obtain a retrograde urethrogram before catheterization.
 flashcards:
   - front: Boundaries of the superficial perineal pouch?
     back: Colles fascia (below) and perineal membrane (above)

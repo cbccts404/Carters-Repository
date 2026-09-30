@@ -127,6 +127,17 @@ quiz:
     explanation: >-
       **Achalasia** is confirmed by **esophageal manometry** (incomplete LES relaxation, absent peristalsis). Endoscopy is
       done to exclude pseudoachalasia from a tumor at the GE junction.
+  - stem: Adenocarcinoma of the distal esophagus is most strongly associated with which condition?
+    choices:
+      - Achalasia
+      - Plummer–Vinson syndrome
+      - Esophageal varices
+      - Barrett esophagus from chronic GERD
+      - Mallory–Weiss tear
+    answer: D
+    explanation: >-
+      **Adenocarcinoma** arises in the **distal third**, linked to **GERD → Barrett esophagus** and obesity. **Squamous
+      cell carcinoma** affects the upper and middle thirds and is linked to smoking, alcohol and hot beverages.
 flashcards:
   - front: Esophagus — start and end levels?
     back: C6 (cricoid) → T11 (cardia); passes the diaphragm at T10

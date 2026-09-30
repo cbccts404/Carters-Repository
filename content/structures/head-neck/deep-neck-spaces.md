@@ -86,6 +86,41 @@ quiz:
     explanation: >-
       **Ludwig angina** — bilateral submandibular space cellulitis from a lower molar — can obstruct the airway quickly.
       **Airway control** comes first, then IV antibiotics and drainage.
+  - stem: Infection in which deep neck space can spread all the way down to the diaphragm?
+    choices:
+      - Submandibular space
+      - Parapharyngeal space
+      - Peritonsillar space
+      - Danger space
+      - Parotid space
+    answer: D
+    explanation: >-
+      The **danger space**, between the alar and prevertebral fascia, runs from the skull base **down to the
+      diaphragm**, so infection can spread into the posterior mediastinum. The retropharyngeal space reaches only the
+      upper mediastinum.
+  - stem: Ludwig angina most commonly arises from which source?
+    choices:
+      - Peritonsillar abscess
+      - Infected lower molars
+      - Parotitis
+      - Sinusitis
+      - Otitis media
+    answer: B
+    explanation: >-
+      **Ludwig angina** is a rapidly spreading bilateral cellulitis of the **submandibular space**, usually from
+      **infected lower molars** whose roots lie below the mylohyoid line. The airway is the first priority.
+  - stem: Why is retropharyngeal abscess mainly a disease of young children?
+    choices:
+      - Children have a wider retropharyngeal space
+      - Children have no prevertebral fascia
+      - Their tonsils are smaller
+      - The danger space closes after childhood
+      - Retropharyngeal lymph nodes are prominent in young children and regress by about age 5–6
+    answer: E
+    explanation: >-
+      The **retropharyngeal nodes** are prominent in young children and usually **regress by about age 5–6**;
+      suppuration of these nodes after a URI causes the abscess. In adults it follows penetrating trauma (fish bone,
+      instrumentation).
 flashcards:
   - front: Extent of the danger space?
     back: Skull base to diaphragm (posterior mediastinum)

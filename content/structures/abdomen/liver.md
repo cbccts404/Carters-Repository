@@ -127,6 +127,17 @@ quiz:
     explanation: >-
       **Cantlie line** runs from the gallbladder fossa to the **IVC**, following the middle hepatic vein. The falciform
       ligament marks the anatomical (not functional) division.
+  - stem: The ligamentum teres in the free edge of the falciform ligament is the remnant of which fetal structure?
+    choices:
+      - Ductus venosus
+      - Umbilical vein
+      - Umbilical artery
+      - Ductus arteriosus
+      - Vitelline duct
+    answer: B
+    explanation: >-
+      The **ligamentum teres** is the remnant of the **umbilical vein**; the **ligamentum venosum** is the remnant of
+      the ductus venosus. The paraumbilical veins run with the ligamentum teres, which is how caput medusae forms.
 flashcards:
   - front: Liver blood supply?
     back: Portal vein (~75%) + hepatic artery proper (~25%); drains via hepatic veins to IVC

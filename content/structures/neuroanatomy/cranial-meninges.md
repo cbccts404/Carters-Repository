@@ -99,6 +99,27 @@ quiz:
     explanation: >-
       A **crescent** collection crossing sutures is **subdural**; hypodensity after weeks means it is **chronic**. Elderly
       anticoagulated patients are at high risk from bridging vein tears.
+  - stem: Which drug is given after aneurysmal subarachnoid hemorrhage to reduce the risk of ischemia from vasospasm?
+    choices:
+      - Nimodipine
+      - Nitroprusside
+      - Heparin
+      - Alteplase
+      - Mannitol
+    answer: A
+    explanation: >-
+      **Nimodipine** is given after SAH to reduce ischemic complications of **vasospasm**, which peaks at days 3–14.
+  - stem: Which nerve carries pain from the supratentorial dura?
+    choices:
+      - Facial nerve
+      - Vagus nerve
+      - C2–C3 spinal nerves
+      - Trigeminal nerve
+      - Glossopharyngeal nerve
+    answer: D
+    explanation: >-
+      The **supratentorial** dura is supplied by the **trigeminal nerve**; the **infratentorial** dura by **C2–C3** (and
+      CN X), which is why posterior fossa lesions cause occipital and neck pain. The brain itself has no pain fibers.
 flashcards:
   - front: Source of epidural vs subdural bleeding?
     back: Epidural — middle meningeal artery; subdural — bridging veins

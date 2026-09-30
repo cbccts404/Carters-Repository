@@ -78,6 +78,39 @@ quiz:
     explanation: >-
       Each SCM rotates the face to the **opposite** side, so turning the head to the **left** tests the **right** SCM
       (CN XI).
+  - stem: An infant with congenital muscular torticollis should also be examined for which associated condition?
+    choices:
+      - Cleft palate
+      - Clubfoot only
+      - Congenital heart disease
+      - Developmental dysplasia of the hip
+      - Hypothyroidism
+    answer: D
+    explanation: >-
+      Congenital muscular torticollis is associated with intrauterine positioning and birth trauma, and with
+      **developmental dysplasia of the hip**, so the hips should be examined. Most torticollis responds to stretching.
+  - stem: What does bilateral contraction of the sternocleidomastoids produce?
+    choices:
+      - Flexion of the neck
+      - Rotation of the face to one side
+      - Elevation of the scapulae
+      - Lateral flexion to one side
+      - Depression of the mandible only
+    answer: A
+    explanation: >-
+      **Both** SCMs together **flex the neck** (and extend the head at the atlanto-occipital joint). **One** SCM tilts
+      the head to the same side and rotates the face to the opposite side.
+  - stem: What is the usual treatment for adult cervical dystonia (spasmodic torticollis)?
+    choices:
+      - Surgical division of sternocleidomastoid
+      - Oral antibiotics
+      - Botulinum toxin injections
+      - Cervical collar indefinitely
+      - Spinal accessory nerve ligation
+    answer: C
+    explanation: >-
+      **Cervical dystonia** (involuntary contraction of neck muscles including SCM) is treated with **botulinum toxin
+      injections**.
 flashcards:
   - front: Nerve supply of sternocleidomastoid?
     back: Spinal accessory nerve (CN XI); C2–C3 proprioception

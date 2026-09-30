@@ -80,6 +80,30 @@ quiz:
     explanation: >-
       The **left coronary artery** arises from the **left aortic sinus**, the RCA from the right, and the posterior sinus
       has no coronary artery ("non-coronary cusp").
+  - stem: >-
+      The left coronary artery sometimes has a third branch arising between the LAD and circumflex. What is it called?
+    choices:
+      - Conus artery
+      - Acute marginal artery
+      - Ramus intermedius
+      - Posterior interventricular artery
+      - SA nodal artery
+    answer: C
+    explanation: >-
+      A **ramus intermedius** arises between the LAD and circumflex in some hearts. The conus and acute marginal
+      arteries are branches of the RCA.
+  - stem: Where does the short left main coronary trunk run before it divides?
+    choices:
+      - In the posterior interventricular groove
+      - Behind the superior vena cava
+      - In the right atrioventricular groove
+      - Between the pulmonary trunk and the left auricle
+      - Between the ascending aorta and the right auricle
+    answer: D
+    explanation: >-
+      The left coronary artery arises from the **left aortic sinus** and passes **between the pulmonary trunk and the
+      left auricle** before dividing into the LAD and circumflex. The RCA passes between the right auricle and the
+      pulmonary trunk.
 flashcards:
   - front: Left coronary artery — origin and branches?
     back: Left aortic sinus; LAD (anterior interventricular) + circumflex (± ramus intermedius)

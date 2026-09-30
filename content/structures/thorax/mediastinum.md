@@ -106,6 +106,31 @@ quiz:
       The **middle mediastinum** contains the **heart and pericardium**, the roots of the great vessels, the lower SVC,
       and the main bronchi. The descending aorta, sympathetic trunks and thoracic duct are posterior; the thymus is
       superior and anterior.
+  - stem: A 3-year-old has a posterior mediastinal mass. What is the most likely diagnosis?
+    choices:
+      - Thymoma
+      - Teratoma
+      - Neuroblastoma
+      - Bronchogenic cyst
+      - Retrosternal goiter
+    answer: C
+    explanation: >-
+      **Posterior** mediastinal masses are mostly **neurogenic tumors**: neuroblastoma in children, schwannoma and
+      neurofibroma in adults. Thymoma, teratoma and goiter are anterior; bronchogenic cysts are usually middle
+      mediastinal.
+  - stem: >-
+      After a high-speed motor vehicle collision, a patient's chest radiograph shows a widened mediastinum. What is the
+      most appropriate next step?
+    choices:
+      - Repeat chest radiograph in 24 hours
+      - Echocardiography only
+      - Bronchoscopy
+      - CT angiography of the chest
+      - Barium swallow
+    answer: D
+    explanation: >-
+      A **widened mediastinum** after deceleration trauma (or with tearing chest pain) suggests **aortic injury or
+      dissection** until proven otherwise and needs **CT angiography**.
 flashcards:
   - front: Divisions of the mediastinum?
     back: Superior (above T4/T5 plane) and inferior (anterior, middle, posterior)

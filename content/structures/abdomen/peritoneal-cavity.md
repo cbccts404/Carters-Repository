@@ -118,6 +118,28 @@ quiz:
     explanation: >-
       The **2nd–4th parts of the duodenum** are retroperitoneal (SAD PUCKER). The stomach, transverse colon, spleen and
       sigmoid colon are intraperitoneal.
+  - stem: In an upright woman, which is the most dependent part of the peritoneal cavity?
+    choices:
+      - Hepatorenal recess (Morison pouch)
+      - Left paracolic gutter
+      - Rectouterine pouch (of Douglas)
+      - Lesser sac
+      - Subphrenic space
+    answer: C
+    explanation: >-
+      The **rectouterine pouch** (rectovesical pouch in males) is the lowest point when upright, so fluid collects
+      there. The hepatorenal recess (Morison pouch) is the most dependent part of the upper abdomen when supine.
+  - stem: A serum–ascites albumin gradient (SAAG) of 1.1 g/dL or more indicates what?
+    choices:
+      - Portal hypertension as the cause of ascites
+      - Peritoneal carcinomatosis
+      - Tuberculous peritonitis
+      - Pancreatic ascites
+      - Nephrotic syndrome
+    answer: A
+    explanation: >-
+      A **SAAG ≥ 1.1 g/dL** indicates **portal hypertension** (most often cirrhosis). A low SAAG suggests peritoneal
+      causes such as carcinomatosis, TB or pancreatitis. SBP is diagnosed by an ascitic PMN count of 250/mm³ or more.
 flashcards:
   - front: Retroperitoneal organs mnemonic?
     back: "SAD PUCKER: Suprarenals, Aorta/IVC, Duodenum (2–4), Pancreas (not tail), Ureters, Colon (asc/desc), Kidneys, Esophagus, Rectum"

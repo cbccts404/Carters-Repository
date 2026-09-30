@@ -127,6 +127,18 @@ quiz:
     explanation: >-
       The apex beat is normally at the **left 5th intercostal space, midclavicular line**. Displacement laterally or
       inferiorly suggests left ventricular enlargement.
+  - stem: On a PA chest radiograph, which structures form the left heart border from top to bottom?
+    choices:
+      - Left ventricle, left atrium, pulmonary trunk, aortic knob
+      - SVC, right atrium, right ventricle
+      - Aortic knob, pulmonary trunk, left atrial appendage, left ventricle
+      - Aortic knob, right ventricle, left ventricle
+      - Pulmonary trunk, left atrium, right ventricle
+    answer: C
+    explanation: >-
+      The left border, from top to bottom, is the **aortic knob, pulmonary trunk, left atrial appendage and left
+      ventricle**. The right border is the SVC and right atrium. The right ventricle forms the anterior surface and
+      doesn't form a border on a PA film.
 flashcards:
   - front: Chamber forming the anterior surface of the heart?
     back: Right ventricle

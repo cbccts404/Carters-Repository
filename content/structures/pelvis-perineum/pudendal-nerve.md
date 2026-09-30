@@ -101,6 +101,32 @@ quiz:
     explanation: >-
       The pudendal nerve leaves the pelvis through the **greater** sciatic foramen below piriformis, curves around the
       ischial spine, and enters the perineum through the **lesser** sciatic foramen into the pudendal canal.
+  - stem: >-
+      A 45-year-old competitive cyclist has burning perineal pain that is worse when sitting and relieved by standing or
+      sitting on a toilet seat. Sensation is normal on exam. What is the most likely diagnosis?
+    choices:
+      - Cauda equina syndrome
+      - Anal fissure
+      - Sacroiliac joint dysfunction
+      - L5 radiculopathy
+      - Pudendal neuralgia
+    answer: E
+    explanation: >-
+      **Pudendal neuralgia** (entrapment between the sacrotuberous and sacrospinous ligaments or in the pudendal canal)
+      causes burning perineal, genital or rectal pain that is **worse sitting**, with no objective sensory loss. It is
+      associated with prolonged cycling. A diagnostic pudendal block helps confirm it.
+  - stem: What forms the pudendal (Alcock) canal?
+    choices:
+      - A split in the sacrotuberous ligament
+      - A split in the obturator internus fascia
+      - The perineal membrane
+      - Fibers of levator ani
+      - Colles fascia
+    answer: B
+    explanation: >-
+      The **pudendal canal** is a split in the **obturator internus fascia** on the lateral wall of the ischioanal
+      fossa. The pudendal nerve runs in it with the internal pudendal vessels after re-entering through the lesser
+      sciatic foramen.
 flashcards:
   - front: Roots of the pudendal nerve?
     back: S2–S4

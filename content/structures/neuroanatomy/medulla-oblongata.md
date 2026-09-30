@@ -77,6 +77,42 @@ quiz:
     explanation: >-
       The **Cushing triad** signals raised ICP with **brainstem (medullary) compression** — impending tonsillar
       herniation. Posterior fossa masses need urgent neurosurgical decompression.
+  - stem: The area postrema of the medulla has which function?
+    choices:
+      - Chemoreceptor trigger zone for vomiting
+      - Control of voluntary swallowing
+      - Relay for hearing
+      - Pain modulation
+      - Horizontal gaze center
+    answer: A
+    explanation: >-
+      The **area postrema** lies outside the blood–brain barrier and acts as the **chemoreceptor trigger zone** for
+      vomiting.
+  - stem: >-
+      A 30-year-old has occipital headaches worse with coughing and a cape-like loss of pain and temperature over the
+      shoulders. MRI shows the cerebellar tonsils below the foramen magnum. What is the diagnosis?
+    choices:
+      - Tonsillar herniation from a tumor
+      - Dandy–Walker malformation
+      - Multiple sclerosis
+      - Normal pressure hydrocephalus
+      - Chiari I malformation with syringomyelia
+    answer: E
+    explanation: >-
+      **Chiari I malformation** is congenital descent of the cerebellar tonsils, causing occipital headache with
+      cough/Valsalva and often a **syrinx** (cape-like pain/temperature loss).
+  - stem: In lateral medullary syndrome, damage to which nucleus causes dysphagia and hoarseness?
+    choices:
+      - Hypoglossal nucleus
+      - Nucleus of the solitary tract
+      - Nucleus ambiguus
+      - Dorsal motor nucleus of the vagus
+      - Spinal trigeminal nucleus
+    answer: C
+    explanation: >-
+      The **nucleus ambiguus** supplies the pharyngeal and laryngeal muscles (CN IX, X), so its damage causes
+      **dysphagia, hoarseness** and a reduced gag. The spinal trigeminal nucleus causes the ipsilateral face
+      pain/temperature loss.
 flashcards:
   - front: Where do the corticospinal tracts decussate?
     back: Pyramidal decussation at the lower medulla

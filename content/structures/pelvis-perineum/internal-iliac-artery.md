@@ -105,6 +105,33 @@ quiz:
       The distal part of each **umbilical artery** becomes a medial umbilical ligament; the proximal part stays patent
       and gives the superior vesical arteries. The urachus becomes the median umbilical ligament, and the umbilical vein
       the ligamentum teres.
+  - stem: Which artery is a branch of the posterior division of the internal iliac artery?
+    choices:
+      - Obturator artery
+      - Internal pudendal artery
+      - Inferior gluteal artery
+      - Uterine artery
+      - Iliolumbar artery
+    answer: E
+    explanation: >-
+      The posterior division gives the **iliolumbar**, **lateral sacral** and **superior gluteal** arteries (mnemonic "I
+      Love Sex"). The obturator, internal pudendal, inferior gluteal and uterine arteries come from the anterior
+      division.
+  - stem: >-
+      Which artery leaves the pelvis through the greater sciatic foramen, re-enters through the lesser sciatic foramen,
+      and runs in the pudendal canal to supply the perineum and erectile tissue?
+    choices:
+      - Internal pudendal artery
+      - Superior gluteal artery
+      - Obturator artery
+      - Middle rectal artery
+      - Inferior vesical artery
+    answer: A
+    explanation: >-
+      The **internal pudendal artery** (anterior division) exits through the greater sciatic foramen, re-enters through
+      the lesser sciatic foramen, and runs in the pudendal (Alcock) canal to supply the perineum, the anal canal below
+      the pectinate line and the erectile tissue. Reduced flow in it contributes to erectile dysfunction in Leriche
+      syndrome.
 flashcards:
   - front: Branches of the posterior division of the internal iliac?
     back: Iliolumbar, lateral sacral, superior gluteal ("I Love Sex")
