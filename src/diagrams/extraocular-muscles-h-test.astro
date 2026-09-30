@@ -1,0 +1,76 @@
+---
+/* Original schematic: the H-pattern test of the extraocular muscles for the patient's RIGHT eye, drawn as
+   the examiner sees it (patient's right = viewer's left). Each end-point shows the muscle mainly
+   responsible for moving the eye into that position and the cranial nerve that supplies it. */
+import Label from '../components/Label.astro';
+
+const L = 170; // lateral (temporal) column — patient's right
+const M = 550; // medial (nasal) column
+const U = 100;
+const MID = 220;
+const D = 340;
+const cards = [
+  { x: L, y: U, name: 'Superior rectus', cn: 'CN III', dy: -40 },
+  { x: L, y: MID, name: 'Lateral rectus', cn: 'CN VI', side: 'left' },
+  { x: L, y: D, name: 'Inferior rectus', cn: 'CN III', dy: 36 },
+  { x: M, y: U, name: 'Inferior oblique', cn: 'CN III', dy: -40 },
+  { x: M, y: MID, name: 'Medial rectus', cn: 'CN III', side: 'right' },
+  { x: M, y: D, name: 'Superior oblique', cn: 'CN IV', dy: 36 },
+];
+---
+
+<div class="scroll">
+  <svg viewBox="-20 20 760 440" role="img" aria-labelledby="h-title h-desc">
+    <title id="h-title">H-pattern test of the extraocular muscles (right eye)</title>
+    <desc id="h-desc">
+      The examiner traces an H in front of the patient. For the right eye: looking laterally (temporally) tests the
+      lateral rectus (CN VI); lateral and up tests the superior rectus; lateral and down tests the inferior rectus;
+      looking medially (toward the nose) tests the medial rectus; medial and up tests the inferior oblique; medial and
+      down tests the superior oblique (CN IV). All but the lateral rectus and superior oblique are supplied by CN III.
+    </desc>
+    <style>
+      .h-path { stroke: var(--muted); stroke-width: 3; fill: none; stroke-linecap: round; }
+      .h-end { fill: var(--t-muscle); }
+      .h-end6 { fill: var(--t-nerve); }
+      .h-sclera { fill: var(--surface); stroke: var(--text); stroke-width: 2; }
+      .h-iris { fill: color-mix(in srgb, var(--t-space) 60%, var(--surface)); stroke: var(--text); stroke-width: 1; }
+      .h-pupil { fill: #111; }
+    </style>
+
+    <!-- the H -->
+    <path class="h-path" d={`M${L} ${MID} L${M} ${MID} M${L} ${U} L${L} ${D} M${M} ${U} L${M} ${D}`}></path>
+    {cards.map((c) => (
+      <circle cx={c.x} cy={c.y} r="9" class={c.cn === 'CN III' ? 'h-end' : 'h-end6'}></circle>
+    ))}
+
+    <!-- the eye at primary gaze -->
+    <path class="h-sclera" d="M300 220 Q360 172 420 220 Q360 268 300 220 Z"></path>
+    <circle class="h-iris" cx="360" cy="220" r="21"></circle>
+    <circle class="h-pupil" cx="360" cy="220" r="8"></circle>
+
+    <!-- labels -->
+    {cards.map((c) =>
+      c.side === 'left' ? (
+        <>
+          <Label x={c.x - 18} y={c.y - 4} anchor="end" to="extraocular-muscles">{c.name}</Label>
+          <Label x={c.x - 18} y={c.y + 14} anchor="end" size="sm">{c.cn}</Label>
+        </>
+      ) : c.side === 'right' ? (
+        <>
+          <Label x={c.x + 18} y={c.y - 4} to="extraocular-muscles">{c.name}</Label>
+          <Label x={c.x + 18} y={c.y + 14} size="sm">{c.cn}</Label>
+        </>
+      ) : (
+        <>
+          <Label x={c.x} y={c.y + (c.dy ?? 0)} anchor="middle" to="extraocular-muscles">{c.name}</Label>
+          <Label x={c.x} y={c.y + (c.dy ?? 0) + 16} anchor="middle" size="sm">{c.cn}</Label>
+        </>
+      )
+    )}
+
+    <Label x={L} y={412} anchor="middle" size="sm">← Temporal (patient's right)</Label>
+    <Label x={M} y={412} anchor="middle" size="sm">Nasal (toward the nose) →</Label>
+    <Label x={360} y={446} anchor="middle" size="sm">LR6 · SO4 · all others CN III — examiner's view of the patient's right eye</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

@@ -1,0 +1,157 @@
+---
+/* Original schematic: right side of the neck, lateral view (face toward the right). Sternocleidomastoid
+   divides the anterior triangle (subdivided by digastric and omohyoid) from the posterior triangle
+   (subdivided by the inferior belly of omohyoid). Not to scale. */
+import Label from '../components/Label.astro';
+
+const MAST = [318, 110]; // mastoid process
+const CHIN = [598, 128];
+const ANGLE = [404, 154]; // angle of mandible
+const HYOID = [596, 252];
+const DIG_T = [572, 246]; // digastric intermediate tendon at the hyoid
+const OMO_T = [455, 375]; // omohyoid intermediate tendon (deep to SCM)
+// SCM borders
+const scmAnt = [[336, 118], [580, 478]];
+const scmPost = [[304, 116], [440, 478]];
+// anterior border of trapezius
+const trap = [[290, 108], [300, 468]];
+const clav = [[572, 480], [170, 462]];
+---
+
+<div class="scroll">
+  <svg viewBox="-60 20 880 520" role="img" aria-labelledby="nt-title nt-desc">
+    <title id="nt-title">Triangles of the neck (right lateral view)</title>
+    <desc id="nt-desc">
+      Right side of the neck with the face to the right. Sternocleidomastoid runs from the mastoid process to the
+      sternum and clavicle, separating the anterior triangle in front from the posterior triangle behind. The anterior
+      triangle is divided by the digastric and the superior belly of omohyoid into the submandibular, carotid and
+      muscular triangles, with the submental triangle in the midline under the chin. The posterior triangle, bounded by
+      sternocleidomastoid, trapezius and the middle third of the clavicle, is divided by the inferior belly of omohyoid
+      into the occipital and omoclavicular triangles. The spinal accessory nerve crosses the posterior triangle to
+      trapezius, and the carotid bifurcation lies in the carotid triangle.
+    </desc>
+    <style>
+      .nt-bone { stroke: var(--t-bone); stroke-width: 7; stroke-linecap: round; fill: none; }
+      .nt-hyoid { stroke: var(--t-bone); stroke-width: 5; stroke-linecap: round; }
+      .nt-mus { stroke: var(--t-muscle); stroke-width: 5; stroke-linecap: round; fill: none; }
+      .nt-scm { fill: color-mix(in srgb, var(--t-muscle) 30%, transparent); stroke: var(--t-muscle); stroke-width: 2; }
+      .nt-trap { fill: color-mix(in srgb, var(--t-muscle) 18%, transparent); stroke: var(--t-muscle); stroke-width: 2; }
+      .nt-mid { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 6 5; }
+      .nt-art { stroke: var(--t-artery); stroke-width: 4; stroke-linecap: round; fill: none; }
+      .nt-art-deep { stroke: var(--t-artery); stroke-width: 4; stroke-dasharray: 5 5; fill: none; }
+      .nt-nerve { stroke: var(--t-nerve); stroke-width: 2.5; fill: none; }
+      .nt-cut { stroke: var(--t-nerve); stroke-width: 1.3; fill: none; opacity: 0.85; }
+      .nt-trunk { stroke: var(--t-nerve); stroke-width: 2.5; stroke-linecap: round; }
+      .nt-gland { fill: color-mix(in srgb, var(--t-organ) 55%, var(--surface)); stroke: var(--t-organ); stroke-width: 1.5; }
+      .nt-t1 { fill: color-mix(in srgb, var(--t-organ) 14%, transparent); }
+      .nt-t2 { fill: color-mix(in srgb, var(--t-artery) 14%, transparent); }
+      .nt-t3 { fill: color-mix(in srgb, var(--t-space) 16%, transparent); }
+      .nt-t4 { fill: color-mix(in srgb, var(--t-nerve) 14%, transparent); }
+      .nt-t5 { fill: color-mix(in srgb, var(--t-lymphatic) 16%, transparent); }
+    </style>
+
+    <!-- triangle fills -->
+    <polygon class="nt-t1" points={`${CHIN} ${ANGLE} ${DIG_T}`}></polygon>
+    <polygon class="nt-t2" points="338,124 572,246 488,345"></polygon>
+    <polygon class="nt-t3" points="590,256 600,256 600,478 578,478 488,345"></polygon>
+    <polygon class="nt-t4" points="296,112 306,118 409,391 299,430"></polygon>
+    <polygon class="nt-t5" points="409,391 440,476 300,468 299,430"></polygon>
+
+    <!-- trapezius (seen from the side) and sternocleidomastoid -->
+    <polygon class="nt-trap" points={`170,96 ${trap[0]} ${trap[1]} 176,462`}></polygon>
+    <polygon class="nt-scm" points={`${scmPost[0]} ${scmAnt[0]} ${scmAnt[1]} 552,480 490,478 ${scmPost[1]}`}></polygon>
+
+    <!-- bones: occiput/mastoid, mandible, hyoid, clavicle -->
+    <path class="nt-bone" d={`M150 92 Q240 96 ${MAST}`}></path>
+    <circle cx={MAST[0]} cy={MAST[1]} r="11" fill="var(--t-bone)"></circle>
+    <path class="nt-bone" d={`M392 40 L${ANGLE} L${CHIN}`}></path>
+    <line class="nt-hyoid" x1={HYOID[0]} y1={HYOID[1]} x2="550" y2="244"></line>
+    <line class="nt-bone" x1={clav[0][0]} y1={clav[0][1]} x2={clav[1][0]} y2={clav[1][1]}></line>
+
+    <!-- anterior midline -->
+    <line class="nt-mid" x1="600" y1="128" x2="600" y2="484"></line>
+
+    <!-- digastric and omohyoid -->
+    <path class="nt-mus" d={`M594 138 L${DIG_T} L324 118`}></path>
+    <path class="nt-mus" d={`M590 258 L${OMO_T} L299 430`}></path>
+
+    <!-- submandibular gland and thyroid -->
+    <ellipse class="nt-gland" cx="515" cy="184" rx="34" ry="16"></ellipse>
+    <ellipse class="nt-gland" cx="578" cy="408" rx="11" ry="26"></ellipse>
+
+    <!-- carotid arteries: common (deep to SCM, dashed), bifurcation, ICA and ECA -->
+    <path class="nt-art-deep" d="M548 470 L482 306"></path>
+    <path class="nt-art" d="M482 306 Q462 262 434 206"></path>
+    <path class="nt-art" d="M482 306 Q500 272 510 236"></path>
+
+    <!-- spinal accessory nerve crossing the posterior triangle -->
+    <path class="nt-nerve" d="M358 248 Q326 300 298 364"></path>
+
+    <!-- nerve point and cutaneous branches of the cervical plexus -->
+    <path class="nt-cut" d="M376 298 Q370 230 392 170"></path>
+    <path class="nt-cut" d="M376 298 Q420 300 462 312"></path>
+    <path class="nt-cut" d="M376 298 Q390 380 404 456"></path>
+    <path class="nt-cut" d="M376 298 Q340 220 322 150"></path>
+    <circle cx="376" cy="298" r="5" fill="var(--t-nerve)"></circle>
+
+    <!-- brachial plexus trunks emerging in the lower posterior triangle -->
+    <line class="nt-trunk" x1="408" y1="418" x2="338" y2="456"></line>
+    <line class="nt-trunk" x1="414" y1="428" x2="346" y2="462"></line>
+    <line class="nt-trunk" x1="420" y1="438" x2="354" y2="468"></line>
+
+    <!-- leader lines -->
+    <g stroke="var(--muted)" stroke-width="1">
+      <line x1="646" y1="96" x2="540" y2="136"></line>
+      <line x1="646" y1="134" x2="470" y2="194"></line>
+      <line x1="646" y1="170" x2="560" y2="206"></line>
+      <line x1="646" y1="214" x2="549" y2="186"></line>
+      <line x1="646" y1="244" x2="598" y2="194"></line>
+      <line x1="646" y1="270" x2="604" y2="252"></line>
+      <line x1="646" y1="306" x2="524" y2="282"></line>
+      <line x1="646" y1="362" x2="566" y2="352"></line>
+      <line x1="646" y1="410" x2="590" y2="408"></line>
+      <line x1="646" y1="458" x2="500" y2="440"></line>
+      <line x1="132" y1="116" x2="306" y2="108"></line>
+      <line x1="132" y1="186" x2="318" y2="206"></line>
+      <line x1="132" y1="244" x2="334" y2="290"></line>
+      <line x1="132" y1="292" x2="372" y2="298"></line>
+      <line x1="132" y1="340" x2="230" y2="340"></line>
+      <line x1="132" y1="392" x2="360" y2="408"></line>
+      <line x1="132" y1="446" x2="368" y2="444"></line>
+      <line x1="424" y1="508" x2="420" y2="476"></line>
+    </g>
+
+    <!-- labels: anterior triangle (right) -->
+    <Label x={652} y={100} to="mandible">Mandible</Label>
+    <Label x={652} y={138} size="sm">Digastric (2 bellies)</Label>
+    <Label x={652} y={174}>Submandibular triangle</Label>
+    <Label x={652} y={218} size="sm" to="submandibular-gland">Submandibular gland</Label>
+    <Label x={652} y={248} size="sm">Submental triangle (midline)</Label>
+    <Label x={652} y={274} size="sm">Hyoid bone (C3)</Label>
+    <Label x={652} y={306}>Carotid triangle</Label>
+    <Label x={652} y={320} size="sm" to="carotid-arteries">Carotid bifurcation, IJV,</Label>
+    <Label x={652} y={334} size="sm">CN X, CN XII</Label>
+    <Label x={652} y={362}>Muscular triangle</Label>
+    <Label x={652} y={376} size="sm">Strap muscles, larynx, trachea</Label>
+    <Label x={652} y={414} size="sm" to="thyroid-gland">Thyroid gland</Label>
+    <Label x={652} y={462} to="sternocleidomastoid">Sternocleidomastoid</Label>
+
+    <!-- labels: posterior triangle (left) -->
+    <Label x={126} y={120} anchor="end" size="sm" to="skull">Mastoid process</Label>
+    <Label x={126} y={186} anchor="end">Occipital triangle</Label>
+    <Label x={126} y={248} anchor="end" size="sm">Spinal accessory n.</Label>
+    <Label x={126} y={262} anchor="end" size="sm">(CN XI) → trapezius</Label>
+    <Label x={126} y={292} anchor="end" size="sm" to="cervical-plexus">Nerve point</Label>
+    <Label x={126} y={306} anchor="end" size="sm">(cervical plexus)</Label>
+    <Label x={126} y={344} anchor="end" to="trapezius">Trapezius</Label>
+    <Label x={126} y={396} anchor="end" size="sm">Omohyoid (inferior belly)</Label>
+    <Label x={126} y={444} anchor="end">Omoclavicular triangle</Label>
+    <Label x={126} y={458} anchor="end" size="sm" to="brachial-plexus">Brachial plexus trunks,</Label>
+    <Label x={126} y={472} anchor="end" size="sm">subclavian artery</Label>
+    <Label x={424} y={522} anchor="middle" to="clavicle">Clavicle (middle third = base)</Label>
+
+    <Label x={-50} y={40} size="sm">Right side · face → · not to scale</Label>
+    <Label x={600} y={500} anchor="middle" size="sm">midline</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

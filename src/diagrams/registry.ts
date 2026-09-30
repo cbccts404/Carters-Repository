@@ -83,4 +83,16 @@ export const diagrams: Record<string, DiagramMeta> = {
     description:
       'Schematic mid-leg cross-section: four compartments separated by bone, the interosseous membrane and intermuscular septa, each with its own nerve. Compartment syndrome most often affects the anterior compartment.',
   },
+  'extraocular-muscles-h-test': {
+    title: 'H-pattern test of the extraocular muscles',
+    region: 'head-neck',
+    description:
+      "Examiner's view of the patient's right eye (patient's right = your left). Each end-point is the gaze position that isolates one muscle; gold dots = CN VI and CN IV, red dots = CN III. The obliques are tested with the eye adducted, the superior and inferior recti with it abducted.",
+  },
+  'neck-triangles': {
+    title: 'Triangles of the neck',
+    region: 'head-neck',
+    description:
+      'Right lateral view, face to the right (schematic, not to scale). Sternocleidomastoid separates the anterior triangle (submandibular, carotid, muscular; submental in the midline) from the posterior triangle (occipital, omoclavicular). The dashed common carotid runs deep to sternocleidomastoid.',
+  },
 };
