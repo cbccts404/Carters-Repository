@@ -91,4 +91,11 @@ flashcards:
     back: Bartholin (greater vestibular) — superficial pouch; Cowper (bulbourethral) — deep pouch
 diagrams: [perineum-triangles]
 related: [urethra, perineum, penis, vulva]
+images:
+  - image: gray-407-pelvis-coronal-urogenital
+    caption: "Coronal section: the fascial layers of the urogenital region, with bulbospongiosus and ischiocavernosus in the superficial pouch."
+  - image: gray-543-male-perineum-deep
+    caption: "Deep dissection of the male perineum: bulb, bulbourethral glands and internal pudendal artery."
+  - image: gray-405-male-perineum-fascia
+    caption: "Layers of the superficial perineal fascia reflected (male)."
 ---

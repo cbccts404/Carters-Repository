@@ -127,4 +127,7 @@ flashcards:
     back: Bladder bulging through the anterior vaginal wall vs rectum through the posterior wall
 diagrams: [perineum-triangles]
 related: [perineum, urinary-bladder, rectum, vagina]
+images:
+  - image: gray-404-levator-ani
+    caption: "Left levator ani and coccygeus seen from inside the pelvis."
 ---

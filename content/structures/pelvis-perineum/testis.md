@@ -150,4 +150,9 @@ flashcards:
   - front: Cremasteric reflex — nerve and roots?
     back: Genitofemoral nerve (genital branch), L1–L2
 related: [spermatic-cord, ductus-deferens, inguinal-canal]
+images:
+  - image: gray-1144-scrotum-testis
+    caption: "Scrotum opened from the front: spermatic cords, tunica vaginalis, epididymis and testis."
+  - image: gray-1145-testis-transverse
+    caption: "Transverse section through the scrotum and testis."
 ---

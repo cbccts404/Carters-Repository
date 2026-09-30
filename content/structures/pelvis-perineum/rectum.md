@@ -122,4 +122,9 @@ flashcards:
   - front: Transverse rectal folds — how many and which side?
     back: Usually 3; two on the left, the largest (middle) on the right
 related: [anal-canal, colon, rectouterine-pouch, pelvic-diaphragm]
+images:
+  - image: gray-1076-sigmoid-rectum
+    caption: "Sigmoid colon and rectum from the front, pubic bones and bladder removed."
+  - image: gray-1083-rectal-vessels
+    caption: "Blood vessels of the rectum and anus: superior, middle and inferior rectal (hemorrhoidal) vessels."
 ---

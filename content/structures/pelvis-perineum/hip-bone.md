@@ -132,4 +132,11 @@ flashcards:
   - front: True leg length is measured from where to where?
     back: ASIS to medial malleolus
 related: [bony-pelvis, sacroiliac-joint, pubic-symphysis]
+images:
+  - image: gray-235-hip-bone-external
+    caption: "Right hip bone, lateral surface: iliac spines, acetabulum, obturator foramen and ischial tuberosity, with muscle attachments in red."
+  - image: gray-236-hip-bone-internal
+    caption: "Medial surface: iliac fossa and the auricular surface for the sacrum."
+  - image: gray-237-hip-bone-ossification
+    caption: "Ossification: three primary centers meet at the Y-shaped (triradiate) cartilage in the acetabulum."
 ---

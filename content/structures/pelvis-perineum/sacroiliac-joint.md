@@ -143,4 +143,9 @@ flashcards:
   - front: FABER stands for?
     back: Flexion, ABduction, External Rotation (Patrick test)
 related: [sacrum, hip-bone, bony-pelvis]
+images:
+  - image: gray-320-pelvic-ligaments-posterior
+    caption: "Posterior view: the posterior sacroiliac ligaments over the joint."
+  - image: gray-319-pelvic-ligaments-anterior
+    caption: "Anterior view: the thin anterior sacroiliac ligament and the iliolumbar ligament."
 ---

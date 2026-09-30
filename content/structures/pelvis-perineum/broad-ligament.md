@@ -81,4 +81,9 @@ flashcards:
   - front: Contents of the broad ligament?
     back: Uterine tube, round ligament, ovarian ligament, uterine vessels (base), ovarian vessels (laterally), nerves, lymphatics
 related: [uterus, uterine-artery, ureter, ovary]
+images:
+  - image: gray-1161-uterus-broad-ligament
+    caption: "Right broad ligament spread out, seen from behind."
+  - image: gray-1165-female-pelvis-above
+    caption: "Female pelvic viscera from above: the broad ligaments dividing the pelvis into anterior and posterior pouches."
 ---

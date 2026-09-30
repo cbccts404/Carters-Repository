@@ -126,4 +126,7 @@ flashcards:
   - front: Autonomic dysreflexia — level and trigger?
     back: SCI at or above T6; most often a distended bladder or fecal impaction
 related: [urinary-bladder, prostate, penis, rectum, spinal-cord]
+images:
+  - image: gray-829-pelvic-wall-nerves
+    caption: "Lateral pelvic wall showing the sympathetic trunk and the visceral branches of the sacral nerves."
 ---

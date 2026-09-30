@@ -101,4 +101,9 @@ flashcards:
   - front: Function of the sacrotuberous and sacrospinous ligaments?
     back: Resist upward tilting of the lower sacrum; convert sciatic notches into foramina
 related: [pudendal-nerve, sacral-plexus, sacroiliac-joint]
+images:
+  - image: gray-320-pelvic-ligaments-posterior
+    caption: "Posterior view: the sacrotuberous and sacrospinous ligaments converting the sciatic notches into foramina."
+  - image: gray-319-pelvic-ligaments-anterior
+    caption: "Anterior view of the same ligaments."
 ---

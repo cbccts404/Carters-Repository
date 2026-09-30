@@ -93,4 +93,7 @@ flashcards:
   - front: Absent vas deferens — associated condition?
     back: Cystic fibrosis (CFTR mutation)
 related: [testis, prostate, spermatic-cord, urethra]
+images:
+  - image: gray-1160-prostate-seminal-vesicles
+    caption: "Ductus deferens, ampullae and seminal vesicles joining to form the ejaculatory ducts."
 ---

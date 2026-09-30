@@ -137,4 +137,9 @@ flashcards:
   - front: DRE findings — BPH vs cancer vs prostatitis?
     back: Smooth rubbery symmetric; hard nodular; exquisitely tender boggy
 related: [urethra, urinary-bladder, ductus-deferens, rectum]
+images:
+  - image: gray-1160-prostate-seminal-vesicles
+    caption: "Prostate with the ductus deferens, seminal vesicles and ejaculatory ducts (from in front and above)."
+  - image: gray-1136-male-pelvic-organs
+    caption: "The prostate below the bladder and in front of the rectum (right lateral view)."
 ---

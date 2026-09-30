@@ -129,4 +129,9 @@ flashcards:
     back: Inferior rectal nerve (pudendal, S4)
 diagrams: [perineum-triangles]
 related: [rectum, ischioanal-fossa, perineum, pudendal-nerve]
+images:
+  - image: gray-1080-anal-canal-interior
+    caption: "Interior of the anal canal: anal columns (of Morgagni) and anal valves at the pectinate line."
+  - image: gray-1078-rectum-anal-canal-coronal
+    caption: "Coronal section of the rectum and anal canal with the internal and external sphincters."
 ---

@@ -115,4 +115,7 @@ flashcards:
     back: Buttock/thigh claudication, erectile dysfunction, diminished femoral pulses
 diagrams: [internal-iliac-branches]
 related: [uterine-artery, abdominal-aorta, bony-pelvis]
+images:
+  - image: gray-539-pelvic-arteries
+    caption: "Arteries of the male pelvis: the internal iliac artery and its branches."
 ---

@@ -109,4 +109,9 @@ flashcards:
     back: Pudendal (Alcock) canal in the obturator internus fascia (lateral wall of the ischioanal fossa)
 diagrams: [perineum-triangles]
 related: [sacral-plexus, perineum, ischioanal-fossa, anal-canal]
+images:
+  - image: gray-837-sacral-plexus-right
+    caption: "Sacral plexus and pudendal nerve (right side) with its inferior rectal, perineal and dorsal penile branches."
+  - image: gray-829-pelvic-wall-nerves
+    caption: "Lateral pelvic wall showing the pudendal nerve leaving the sacral plexus."
 ---

@@ -132,4 +132,9 @@ flashcards:
     back: Failure of the urethral folds to fuse (ventral meatus)
 diagrams: [perineum-triangles]
 related: [urinary-bladder, prostate, penis, perineal-pouches]
+images:
+  - image: gray-1142-male-urethra-opened
+    caption: "The male urethra laid open: prostatic part (urethral crest, ejaculatory duct openings), membranous part and spongy part."
+  - image: gray-407-pelvis-coronal-urogenital
+    caption: "Coronal section: the urethra passing from the bladder through the prostate and the urogenital region."
 ---

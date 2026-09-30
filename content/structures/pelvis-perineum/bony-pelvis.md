@@ -138,4 +138,11 @@ flashcards:
     back: Diagonal conjugate (promontory to lower symphysis); obstetric conjugate ≈ diagonal − 1.5–2 cm
 diagrams: [internal-iliac-branches]
 related: [hip-bone, sacrum, sacroiliac-joint, pubic-symphysis]
+images:
+  - image: gray-241-male-pelvis
+    caption: "Male pelvis: narrow pubic arch and heart-shaped inlet."
+  - image: gray-242-female-pelvis
+    caption: "Female pelvis: rounder inlet and wider pubic arch."
+  - image: gray-238-female-pelvic-inlet
+    caption: "Diameters of the female pelvic inlet."
 ---

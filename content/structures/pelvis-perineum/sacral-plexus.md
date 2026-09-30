@@ -115,4 +115,9 @@ flashcards:
   - front: Safe site for a gluteal IM injection?
     back: Upper outer quadrant (or ventrogluteal site)
 related: [pudendal-nerve, lumbar-plexus, spinal-nerves, cauda-equina]
+images:
+  - image: gray-828-sacral-plexus-plan
+    caption: "Plan of the sacral and pudendal plexuses."
+  - image: gray-829-pelvic-wall-nerves
+    caption: "The sacral plexus on the lateral pelvic wall (after Testut)."
 ---

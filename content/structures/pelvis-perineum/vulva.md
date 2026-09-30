@@ -95,4 +95,7 @@ flashcards:
     back: High-potency topical steroid (clobetasol); monitor for SCC
 diagrams: [perineum-triangles]
 related: [vagina, perineum, perineal-pouches, pudendal-nerve]
+images:
+  - image: gray-408-female-perineum-muscles
+    caption: "Muscles of the female perineum with the clitoris and the urethral and vaginal orifices."
 ---

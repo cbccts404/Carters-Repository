@@ -139,4 +139,9 @@ flashcards:
   - front: Why is the trigone smooth?
     back: Derived from mesonephric ducts; firmly attached to the underlying muscle
 related: [ureter, urethra, prostate, pelvic-autonomic-nerves]
+images:
+  - image: gray-1136-male-pelvic-organs
+    caption: "Male pelvic organs from the right: the distended bladder, prostate, seminal vesicle and rectum."
+  - image: gray-539-pelvic-arteries
+    caption: "Arteries of the male pelvis supplying the bladder."
 ---

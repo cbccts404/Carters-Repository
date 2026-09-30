@@ -104,4 +104,7 @@ flashcards:
   - front: Osteitis pubis — typical patient?
     back: Athlete in kicking/running sports; midline pubic pain worse with kicking and sit-ups
 related: [bony-pelvis, hip-bone]
+images:
+  - image: gray-321-pubic-symphysis-coronal
+    caption: "Coronal section through the symphysis showing the interpubic fibrocartilage."
 ---

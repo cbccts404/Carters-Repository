@@ -672,3 +672,353 @@
   license: Public domain
   licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
   alt: "Posterior trunk showing the cutaneous territories of the dorsal rami of the spinal nerves by segment"
+
+- id: gray-235-hip-bone-external
+  file: images/gray-235-hip-bone-external.png
+  title: "Right hip bone (os innominatum), external surface"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 235"
+  source: https://commons.wikimedia.org/wiki/File:Gray235.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Right hip bone from the lateral side with muscle attachments outlined in red and the acetabulum, obturator foramen, iliac spines and ischial tuberosity labelled"
+
+- id: gray-236-hip-bone-internal
+  file: images/gray-236-hip-bone-internal.png
+  title: "Right hip bone, internal surface"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 236"
+  source: https://commons.wikimedia.org/wiki/File:Gray236.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Right hip bone from the medial side showing the iliac fossa, auricular surface for the sacrum and muscle attachments"
+
+- id: gray-237-hip-bone-ossification
+  file: images/gray-237-hip-bone-ossification.png
+  title: "Plan of ossification of the hip bone"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 237"
+  source: https://commons.wikimedia.org/wiki/File:Gray237.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Hip bone showing the three primary centers (ilium, ischium, pubis) meeting at the Y-shaped cartilage in the acetabulum, and the secondary centers in blue"
+
+- id: gray-238-female-pelvic-inlet
+  file: images/gray-238-female-pelvic-inlet.png
+  title: "Diameters of the superior aperture of the lesser pelvis (female)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 238"
+  source: https://commons.wikimedia.org/wiki/File:Gray238.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Female pelvis from above with the transverse, oblique and anteroposterior diameters of the pelvic inlet drawn in"
+
+- id: gray-241-male-pelvis
+  file: images/gray-241-male-pelvis.png
+  title: "Male pelvis, anterior view"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 241"
+  source: https://commons.wikimedia.org/wiki/File:Gray241.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the male pelvis: ilium, sacrum, pubis, ischium and a narrow pubic arch"
+
+- id: gray-242-female-pelvis
+  file: images/gray-242-female-pelvis.png
+  title: "Female pelvis, anterior view"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 242"
+  source: https://commons.wikimedia.org/wiki/File:Gray242.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the female pelvis showing the wider, rounder pelvic brim and broader pubic arch"
+
+- id: gray-319-pelvic-ligaments-anterior
+  file: images/gray-319-pelvic-ligaments-anterior.png
+  title: "Anterior articulations of the pelvis (after Quain)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 319"
+  source: https://commons.wikimedia.org/wiki/File:Gray319.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the right half of the pelvis showing the anterior sacroiliac, iliolumbar, sacrospinous, sacrotuberous and inguinal ligaments"
+
+- id: gray-320-pelvic-ligaments-posterior
+  file: images/gray-320-pelvic-ligaments-posterior.png
+  title: "Posterior articulations of the pelvis (after Quain)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 320"
+  source: https://commons.wikimedia.org/wiki/File:Gray320.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the right half of the pelvis showing the posterior sacroiliac, sacrotuberous, sacrospinous and iliolumbar ligaments"
+
+- id: gray-321-pubic-symphysis-coronal
+  file: images/gray-321-pubic-symphysis-coronal.png
+  title: "Symphysis pubis exposed by a coronal section"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 321"
+  source: https://commons.wikimedia.org/wiki/File:Gray321.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Coronal section through the pubic symphysis showing the interpubic fibrocartilaginous lamina, with the obturator membrane, acetabulum and inguinal ligament"
+
+- id: gray-404-levator-ani
+  file: images/gray-404-levator-ani.png
+  title: "Left levator ani from within"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 404"
+  source: https://commons.wikimedia.org/wiki/File:Gray404.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Medial view of the left half of the pelvis showing levator ani and coccygeus forming the pelvic floor, with piriformis and obturator fascia"
+
+- id: gray-405-male-perineum-fascia
+  file: images/gray-405-male-perineum-fascia.png
+  title: "Male perineum: superficial fascia reflected"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 405"
+  source: https://commons.wikimedia.org/wiki/File:Gray405.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Male perineum from below with the layers of superficial perineal fascia reflected, showing the inferior rectal vessels and nerve crossing the ischioanal fossa"
+
+- id: gray-406-male-perineum-muscles
+  file: images/gray-406-male-perineum-muscles.png
+  title: "Muscles of the male perineum"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 406"
+  source: https://commons.wikimedia.org/wiki/File:Gray406.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Male perineum from below showing bulbospongiosus, ischiocavernosus, the transverse perineal muscles, levator ani and the external anal sphincter"
+
+- id: gray-407-pelvis-coronal-urogenital
+  file: images/gray-407-pelvis-coronal-urogenital.png
+  title: "Coronal section of the anterior pelvis through the pubic arch"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 407"
+  source: https://commons.wikimedia.org/wiki/File:Gray407.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Coronal section through the bladder, prostate and urethra showing levator ani, the fascial layers of the urogenital region, bulbospongiosus, ischiocavernosus and the ischioanal fossae"
+
+- id: gray-408-female-perineum-muscles
+  file: images/gray-408-female-perineum-muscles.png
+  title: "Muscles of the female perineum"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 408"
+  source: https://commons.wikimedia.org/wiki/File:Gray408.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Female perineum from below showing the clitoris, urethral and vaginal orifices, bulbospongiosus, ischiocavernosus, levator ani and the external anal sphincter"
+
+- id: gray-539-pelvic-arteries
+  file: images/gray-539-pelvic-arteries.png
+  title: "The arteries of the pelvis (male)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 539"
+  source: https://commons.wikimedia.org/wiki/File:Gray539.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Medial view of the male pelvis showing the common, external and internal iliac arteries and their branches to the bladder, prostate and rectum"
+
+- id: gray-828-sacral-plexus-plan
+  file: images/gray-828-sacral-plexus-plan.png
+  title: "Plan of the sacral and pudendal plexuses"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 828"
+  source: https://commons.wikimedia.org/wiki/File:Gray828.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Schematic of the sacral plexus roots L4 to S5 and coccygeal, with the sciatic, gluteal, pudendal and other branches"
+
+- id: gray-829-pelvic-wall-nerves
+  file: images/gray-829-pelvic-wall-nerves.png
+  title: "Side wall of the pelvis showing the sacral and pudendal plexuses (after Testut)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 829"
+  source: https://commons.wikimedia.org/wiki/File:Gray829.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Dissection of the lateral pelvic wall showing the sacral plexus, pudendal nerve, sympathetic trunk and visceral branches beside the bladder, prostate and rectum"
+
+- id: gray-837-sacral-plexus-right
+  file: images/gray-837-sacral-plexus-right.png
+  title: "Sacral plexus of the right side (after Testut)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 837"
+  source: https://commons.wikimedia.org/wiki/File:Gray837.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral view of the right pelvis showing the sacral plexus and the pudendal nerve with its perineal, inferior rectal and dorsal penile branches"
+
+- id: gray-1076-sigmoid-rectum
+  file: images/gray-1076-sigmoid-rectum.png
+  title: "Sigmoid colon and rectum seen from the front"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1076"
+  source: https://commons.wikimedia.org/wiki/File:Gray1076.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the sigmoid colon and rectum after removal of the pubic bones and bladder, with levator ani and the peritoneal reflection"
+
+- id: gray-1078-rectum-anal-canal-coronal
+  file: images/gray-1078-rectum-anal-canal-coronal.png
+  title: "Coronal section of the rectum and anal canal"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1078"
+  source: https://commons.wikimedia.org/wiki/File:Gray1078.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Coronal section showing the transverse rectal folds, rectal (anal) columns and the internal and external anal sphincters"
+
+- id: gray-1080-anal-canal-interior
+  file: images/gray-1080-anal-canal-interior.png
+  title: "Interior of the anal canal and lower rectum"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1080"
+  source: https://commons.wikimedia.org/wiki/File:Gray1080.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Opened anal canal showing the anal columns, anal valves and the surrounding internal sphincter and levator ani"
+
+- id: gray-1083-rectal-vessels
+  file: images/gray-1083-rectal-vessels.png
+  title: "Blood vessels of the rectum and anus (posterior surface)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1083"
+  source: https://commons.wikimedia.org/wiki/File:Gray1083.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the rectum showing the superior, middle and inferior rectal (hemorrhoidal) arteries and veins"
+
+- id: gray-1136-male-pelvic-organs
+  file: images/gray-1136-male-pelvic-organs.png
+  title: "Male pelvic organs seen from the right side"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1136"
+  source: https://commons.wikimedia.org/wiki/File:Gray1136.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Right lateral view of the male pelvis with the bladder and rectum distended, showing the prostate, seminal vesicle, levator ani, bulbourethral gland and peritoneal reflections"
+
+- id: gray-1139-female-pelvis-sagittal
+  file: images/gray-1139-female-pelvis-sagittal.png
+  title: "Median sagittal section of the female pelvis"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1139"
+  source: https://commons.wikimedia.org/wiki/File:Gray1139.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Median sagittal section of the female pelvis showing the uterus, bladder, rectum, vagina, urethra, rectouterine (rectovaginal) and vesicouterine pouches and the anal canal"
+
+- id: gray-1142-male-urethra-opened
+  file: images/gray-1142-male-urethra-opened.png
+  title: "The male urethra laid open on its anterior surface"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1142"
+  source: https://commons.wikimedia.org/wiki/File:Gray1142.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Male urethra opened from the bladder to the external orifice showing the prostatic part with the urethral crest and ejaculatory duct openings, the membranous part and the spongy part"
+
+- id: gray-1144-scrotum-testis
+  file: images/gray-1144-scrotum-testis.png
+  title: "The scrotum and testes, anterior view"
+  author: "Unknown (Gray's Anatomy, 1918; author not recorded on Commons)"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1144"
+  source: https://commons.wikimedia.org/wiki/File:Gray1144.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Scrotum opened from the front showing the spermatic cords, cremaster, tunica vaginalis, epididymis and left testis"
+
+- id: gray-1145-testis-transverse
+  file: images/gray-1145-testis-transverse.png
+  title: "Transverse section through the left scrotum and testis"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1145"
+  source: https://commons.wikimedia.org/wiki/File:Gray1145.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Transverse section of the scrotum and testis showing the scrotal layers, tunica vaginalis, tunica albuginea, lobules, mediastinum testis and epididymis"
+
+- id: gray-1154-penis-corpora
+  file: images/gray-1154-penis-corpora.png
+  title: "The corpora of the penis"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1154"
+  source: https://commons.wikimedia.org/wiki/File:Gray1154.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Penis with the corpus spongiosum separated from the corpora cavernosa, showing the glans, crura and bulb"
+
+- id: gray-1155-penis-cross-section
+  file: images/gray-1155-penis-cross-section.png
+  title: "Cross-section of the penis"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1155"
+  source: https://commons.wikimedia.org/wiki/File:Gray1155.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Transverse section of the penis showing the two corpora cavernosa, the corpus spongiosum with the urethra, the fibrous envelope and the dorsal vessels and nerves"
+
+- id: gray-1160-prostate-seminal-vesicles
+  file: images/gray-1160-prostate-seminal-vesicles.png
+  title: "Prostate with seminal vesicles and seminal ducts (after Spalteholz)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1160"
+  source: https://commons.wikimedia.org/wiki/File:Gray1160.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Prostate from in front and above with the ductus deferens, ampullae, seminal vesicles and ejaculatory ducts"
+
+- id: gray-1161-uterus-broad-ligament
+  file: images/gray-1161-uterus-broad-ligament.png
+  title: "Uterus and right broad ligament, seen from behind"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1161"
+  source: https://commons.wikimedia.org/wiki/File:Gray1161.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the uterus with the right broad ligament spread out, showing the uterine tube, ovary, ligament of the ovary, fimbriae and ovarian vessels"
+
+- id: gray-1165-female-pelvis-above
+  file: images/gray-1165-female-pelvis-above.png
+  title: "Female pelvis and its contents, seen from above and in front"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1165"
+  source: https://commons.wikimedia.org/wiki/File:Gray1165.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Female pelvis from above showing the uterus, bladder, ovaries, uterine tubes, round ligaments, ureter and sigmoid colon"
+
+- id: gray-1166-female-trunk-sagittal
+  file: images/gray-1166-female-trunk-sagittal.png
+  title: "Sagittal section of the lower female trunk, right segment (after Testut)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1166"
+  source: https://commons.wikimedia.org/wiki/File:Gray1166.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Sagittal section showing the bladder, uterus, vagina with anterior and posterior fornices, rectum, symphysis, clitoris and labia"
+
+- id: gray-1170-uterine-artery
+  file: images/gray-1170-uterine-artery.png
+  title: "Arteries of the uterus and ovary"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1170"
+  source: https://commons.wikimedia.org/wiki/File:Gray1170.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Uterine artery ascending along the side of the uterus with branches to the cervix, body and fundus, anastomosing with the ovarian artery, and vaginal arteries below"
+
+- id: gray-543-male-perineum-deep
+  file: images/gray-543-male-perineum-deep.png
+  title: "Deep dissection of the male perineum"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 543"
+  source: https://commons.wikimedia.org/wiki/File:Gray543.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Male perineum with the superficial structures removed showing the bulb, prostate, bulbourethral glands and the internal pudendal artery with its branches to the penis"

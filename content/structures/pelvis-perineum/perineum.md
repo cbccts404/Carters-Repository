@@ -118,4 +118,9 @@ flashcards:
     back: 1st skin; 2nd perineal muscles; 3rd anal sphincter (a/b/c); 4th anorectal mucosa
 diagrams: [perineum-triangles]
 related: [perineal-pouches, ischioanal-fossa, anal-canal, pudendal-nerve]
+images:
+  - image: gray-406-male-perineum-muscles
+    caption: "Muscles of the male perineum."
+  - image: gray-408-female-perineum-muscles
+    caption: "Muscles of the female perineum."
 ---

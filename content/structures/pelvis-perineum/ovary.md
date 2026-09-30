@@ -122,4 +122,9 @@ flashcards:
   - front: Torsion with normal Doppler flow — can it still be torsion?
     back: Yes — dual blood supply; operate on clinical suspicion
 related: [uterine-tubes, uterus, broad-ligament]
+images:
+  - image: gray-1161-uterus-broad-ligament
+    caption: "Ovary on the back of the broad ligament, with the ligament of the ovary and the ovarian vessels."
+  - image: gray-1165-female-pelvis-above
+    caption: "Female pelvis from above: ovaries, uterine tubes and round ligaments."
 ---

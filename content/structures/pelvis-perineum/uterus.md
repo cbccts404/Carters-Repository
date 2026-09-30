@@ -142,4 +142,11 @@ flashcards:
     back: 12 weeks — pubic symphysis; 20 weeks — umbilicus
 diagrams: [internal-iliac-branches]
 related: [uterine-artery, broad-ligament, uterine-tubes, ovary, vagina]
+images:
+  - image: gray-1161-uterus-broad-ligament
+    caption: "Uterus and right broad ligament from behind."
+  - image: gray-1166-female-trunk-sagittal
+    caption: "Sagittal section of the female pelvis showing the anteverted uterus between bladder and rectum."
+  - image: gray-1170-uterine-artery
+    caption: "Arteries of the uterus: the uterine artery anastomosing with the ovarian artery."
 ---

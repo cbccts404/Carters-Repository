@@ -78,4 +78,7 @@ flashcards:
   - front: Sequence of uterine artery branches to the endometrium?
     back: Arcuate → radial → spiral (functional layer) and straight/basal
 related: [internal-iliac-artery, uterus, ureter, broad-ligament]
+images:
+  - image: gray-1170-uterine-artery
+    caption: "The uterine artery ascending beside the uterus, anastomosing with the ovarian artery."
 ---

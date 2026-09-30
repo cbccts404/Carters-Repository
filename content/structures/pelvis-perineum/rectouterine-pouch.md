@@ -94,4 +94,9 @@ flashcards:
   - front: Which exam best palpates the rectouterine pouch?
     back: Rectovaginal exam
 related: [uterus, rectum, vagina, peritoneal-cavity]
+images:
+  - image: gray-1139-female-pelvis-sagittal
+    caption: "Median sagittal section: the rectouterine pouch (labelled rectovaginal excavation) behind the uterus, and the vesicouterine pouch in front."
+  - image: gray-1166-female-trunk-sagittal
+    caption: "Sagittal section showing the posterior fornix beneath the rectouterine pouch."
 ---

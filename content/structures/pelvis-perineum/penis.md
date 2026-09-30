@@ -135,4 +135,9 @@ flashcards:
   - front: Bulbocavernosus reflex tests which segments?
     back: S2–S4
 related: [urethra, perineal-pouches, pudendal-nerve, pelvic-autonomic-nerves]
+images:
+  - image: gray-1155-penis-cross-section
+    caption: "Cross-section of the penis: corpora cavernosa, corpus spongiosum with the urethra, and the dorsal vessels and nerves."
+  - image: gray-1154-penis-corpora
+    caption: "The corpora of the penis separated, showing the glans, crura and bulb."
 ---

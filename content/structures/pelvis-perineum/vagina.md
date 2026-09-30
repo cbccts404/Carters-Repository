@@ -111,4 +111,9 @@ flashcards:
     back: Mesonephric (Wolffian) duct
 diagrams: [perineum-triangles]
 related: [uterus, vulva, rectouterine-pouch, pelvic-diaphragm]
+images:
+  - image: gray-1166-female-trunk-sagittal
+    caption: "Sagittal section: the vagina with its anterior and posterior fornices between bladder and rectum."
+  - image: gray-1139-female-pelvis-sagittal
+    caption: "Median sagittal section of the female pelvis."
 ---

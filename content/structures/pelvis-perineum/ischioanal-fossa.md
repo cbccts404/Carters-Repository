@@ -90,4 +90,9 @@ flashcards:
     back: Anterior external openings → straight radial tract; posterior → curved tract to posterior midline
 diagrams: [perineum-triangles]
 related: [anal-canal, perineum, pudendal-nerve]
+images:
+  - image: gray-407-pelvis-coronal-urogenital
+    caption: "Coronal section through the pubic arch: the ischioanal (ischiorectal) fossae on each side, lateral to levator ani."
+  - image: gray-405-male-perineum-fascia
+    caption: "Male perineum with superficial fascia reflected: the inferior rectal vessels and nerve cross the ischioanal fossa."
 ---

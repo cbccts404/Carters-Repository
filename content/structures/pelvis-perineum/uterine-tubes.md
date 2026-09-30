@@ -119,4 +119,7 @@ flashcards:
   - front: CDC minimum criteria for PID?
     back: Cervical motion, uterine or adnexal tenderness (in a sexually active woman with pelvic pain)
 related: [ovary, uterus, broad-ligament, rectouterine-pouch]
+images:
+  - image: gray-1161-uterus-broad-ligament
+    caption: "Uterine tube in the free edge of the broad ligament, with its fimbriae and abdominal ostium near the ovary."
 ---
