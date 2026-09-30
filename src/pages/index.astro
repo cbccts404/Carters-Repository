@@ -21,6 +21,10 @@ const cardCount = atlas.structures.reduce((n, s) => n + s.data.flashcards.length
       <span><b>{cardCount}</b> flashcards</span>
       <span><a href={url('review/')}><b>{atlas.verifyFlags.length}</b> verify flags</a></span>
     </div>
+    <p class="btn-row">
+      <a class="btn primary" href={url('quiz/')}>Start a quiz</a>
+      <a class="btn" href={url('flashcards/')}>Study flashcards</a>
+    </p>
   </div>
 
   <div class="grid">
@@ -36,4 +40,109 @@ const cardCount = atlas.structures.reduce((n, s) => n + s.data.flashcards.length
       ))
     }
   </div>
+
+  <section class="offline-box" id="offline-box" aria-labelledby="offline-h">
+    <h2 id="offline-h">Offline use</h2>
+    <p class="muted" id="offline-status">
+      Pages you open are saved on this device automatically. Save everything now to study without an internet connection.
+    </p>
+    <p class="btn-row">
+      <button type="button" class="btn" id="save-pages" disabled>Save all pages</button>
+      <button type="button" class="btn" id="save-all" disabled>Save pages and images</button>
+    </p>
+    <div class="meter" id="save-meter" hidden aria-hidden="true"><span></span></div>
+    <p class="small muted" id="save-msg" aria-live="polite"></p>
+  </section>
 </Base>
+
+<script>
+  const $ = (id: string) => document.getElementById(id)!;
+  const base = document.body.dataset.base ?? '/';
+  const KEY = 'atlas.offline';
+  const mb = (n: number) => `${Math.max(1, Math.round(n / 1e6))} MB`;
+  const pagesBtn = $('save-pages') as HTMLButtonElement;
+  const allBtn = $('save-all') as HTMLButtonElement;
+
+  interface OfflineList {
+    version: string;
+    pages: string[];
+    pagesBytes: number;
+    images: string[];
+    imagesBytes: number;
+  }
+
+  function lastSaved() {
+    try {
+      return JSON.parse(localStorage.getItem(KEY) ?? 'null') as { t: number; images: boolean } | null;
+    } catch {
+      return null;
+    }
+  }
+
+  async function save(list: OfflineList, withImages: boolean) {
+    const urls = [...list.pages, ...(withImages ? list.images : [])].map((p) => base + p);
+    pagesBtn.disabled = allBtn.disabled = true;
+    const meter = $('save-meter');
+    meter.hidden = false;
+    const bar = meter.querySelector('span') as HTMLElement;
+    try {
+      await navigator.storage?.persist?.();
+    } catch {}
+    const cache = await caches.open('atlas-runtime');
+    let done = 0;
+    let failed = 0;
+    const next = async () => {
+      while (urls.length) {
+        const u = urls.shift()!;
+        try {
+          const res = await fetch(u, { cache: 'no-cache' });
+          if (res.ok && !res.redirected) await cache.put(u, res);
+          else failed++;
+        } catch {
+          failed++;
+        }
+        done++;
+        bar.style.width = `${Math.round((100 * done) / total)}%`;
+        $('save-msg').textContent = `Saving… ${done} of ${total}`;
+      }
+    };
+    const total = urls.length;
+    await Promise.all(Array.from({ length: 6 }, next));
+    if (failed) {
+      $('save-msg').textContent = `Saved ${total - failed} of ${total} files; ${failed} failed. Check your connection and try again.`;
+    } else {
+      $('save-msg').textContent = `Done — ${withImages ? 'all pages and images are' : 'all pages are'} saved for offline use.`;
+      try {
+        localStorage.setItem(KEY, JSON.stringify({ t: Date.now(), images: withImages }));
+      } catch {}
+    }
+    pagesBtn.disabled = allBtn.disabled = false;
+    showStatus();
+  }
+
+  function showStatus() {
+    const s = lastSaved();
+    if (s)
+      $('offline-status').textContent = `Last saved ${new Date(s.t).toLocaleDateString()} (${
+        s.images ? 'pages and images' : 'pages only'
+      }). Save again after the atlas is updated to refresh your offline copy.`;
+  }
+
+  if (!('caches' in window) || !('serviceWorker' in navigator)) {
+    $('offline-status').textContent = "This browser doesn't support offline saving.";
+  } else {
+    showStatus();
+    fetch(base + 'offline.json')
+      .then((r) => r.json())
+      .then((list: OfflineList) => {
+        pagesBtn.textContent = `Save all pages (${mb(list.pagesBytes)})`;
+        allBtn.textContent = `Save pages and images (${mb(list.pagesBytes + list.imagesBytes)})`;
+        pagesBtn.disabled = allBtn.disabled = false;
+        pagesBtn.onclick = () => save(list, false);
+        allBtn.onclick = () => save(list, true);
+      })
+      .catch(() => {
+        $('save-msg').textContent = 'Offline saving is available on the published site.';
+      });
+  }
+</script>

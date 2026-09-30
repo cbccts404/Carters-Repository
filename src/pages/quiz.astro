@@ -1,0 +1,414 @@
+---
+import Base from '../layouts/Base.astro';
+import { loadAtlas, url } from '../lib/atlas';
+
+const atlas = await loadAtlas();
+const regions = atlas.regions
+  .map((r) => {
+    const entries = atlas.structures.filter((s) => s.data.region === r.id);
+    return {
+      id: r.id,
+      name: r.data.name,
+      total: entries.reduce((n, s) => n + s.data.quiz.length, 0),
+      hy: entries.filter((s) => s.data.highYield).reduce((n, s) => n + s.data.quiz.length, 0),
+    };
+  })
+  .filter((r) => r.total > 0);
+const total = regions.reduce((n, r) => n + r.total, 0);
+---
+
+<Base title="Quiz mode" description="Board-style anatomy questions with score tracking.">
+  <p class="crumbs"><a href={url()}>Home</a> / Quiz</p>
+  <h1>Quiz mode</h1>
+
+  <noscript><p class="note">Quiz mode needs JavaScript. Each entry page also has its own self-quiz.</p></noscript>
+
+  <section id="setup">
+    <p class="muted">
+      {total} board-style questions from every entry. Your answers are saved on this device only, and answers you give in
+      an entry's own self-quiz count too.
+    </p>
+
+    <form id="quiz-form" class="quiz-setup">
+      <fieldset>
+        <legend>Regions</legend>
+        <div class="region-picks">
+          {
+            regions.map((r) => (
+              <label class="pick">
+                <input type="checkbox" name="region" value={r.id} checked />
+                <span>{r.name}</span>
+                <span class="muted small" data-count={r.id}>
+                  {r.total}
+                </span>
+              </label>
+            ))
+          }
+        </div>
+        <p class="small">
+          <button type="button" class="linkish" data-all="1">Select all</button>
+          <span class="muted" aria-hidden="true">&nbsp;·&nbsp;</span>
+          <button type="button" class="linkish" data-all="0">Clear</button>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Questions</legend>
+        <label class="pick"><input type="radio" name="mode" value="smart" checked /> <span>Smart — missed and unseen first</span></label>
+        <label class="pick"><input type="radio" name="mode" value="random" /> <span>Random</span></label>
+        <label class="pick"><input type="radio" name="mode" value="missed" /> <span>Only ones I got wrong last time</span></label>
+        <label class="pick"><input type="checkbox" name="hy" /> <span>High-yield entries only</span></label>
+        <label class="pick">
+          <span>How many</span>
+          <select name="n">
+            <option value="10">10</option>
+            <option value="20" selected>20</option>
+            <option value="40">40</option>
+            <option value="0">All</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <p class="btn-row" style="align-items:center">
+        <button class="btn primary" type="submit" id="start-btn">Start quiz</button>
+        <span class="muted small" id="avail" aria-live="polite"></span>
+      </p>
+    </form>
+
+    <section class="quiz-stats" id="stats" aria-labelledby="stats-h">
+      <h2 id="stats-h">Your progress</h2>
+      <p id="stats-summary" class="muted">No questions answered yet on this device.</p>
+      <table class="qa" id="stats-table" hidden>
+        <thead>
+          <tr><th>Region</th><th>Answered</th><th>Accuracy</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div id="sessions"></div>
+      <p><button type="button" class="linkish danger" id="reset-btn" hidden>Reset quiz progress</button></p>
+    </section>
+  </section>
+
+  <section id="run" hidden aria-live="polite">
+    <div class="quiz-bar">
+      <span id="run-pos"></span>
+      <span id="run-score" class="muted"></span>
+      <button type="button" class="linkish" id="end-btn">End quiz</button>
+    </div>
+    <div class="meter" aria-hidden="true"><span id="run-meter"></span></div>
+    <div class="q js" id="qbox">
+      <p class="small muted" id="q-source"></p>
+      <div class="stem" id="q-stem"></div>
+      <ol id="q-choices"></ol>
+      <div class="explain" id="q-explain" hidden>
+        <p><strong class="verdict" id="q-verdict"></strong> <span class="muted" id="q-correct"></span></p>
+        <div id="q-expl"></div>
+        <p class="small"><a id="q-link" href="#">Open this entry →</a></p>
+        <button type="button" class="btn primary" id="next-btn">Next question</button>
+      </div>
+    </div>
+    <p class="small muted">Keys: 1–5 or A–E to answer · Enter for next.</p>
+  </section>
+
+  <section id="done" hidden>
+    <h2 id="done-score"></h2>
+    <p id="done-note" class="muted"></p>
+    <table class="qa" id="done-table">
+      <thead><tr><th>Region</th><th>Score</th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <div id="done-missed"></div>
+    <p class="btn-row">
+      <button type="button" class="btn primary" id="retry-btn">Retry the ones I missed</button>
+      <button type="button" class="btn" id="new-btn">New quiz</button>
+    </p>
+  </section>
+</Base>
+
+<script>
+  import { loadProgress, recordAnswer, recordSession, resetQuizProgress } from '../scripts/progress';
+
+  interface Q {
+    id: string;
+    entry: string;
+    region: string;
+    highYield: boolean;
+    url: string;
+    stem: string;
+    choices: string[];
+    answer: number;
+    explanation: string;
+  }
+  interface Result {
+    q: Q;
+    ok: boolean;
+  }
+
+  const LETTERS = ['A', 'B', 'C', 'D', 'E'];
+  const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
+  const form = $<HTMLFormElement>('quiz-form');
+  const regionNames = new Map(
+    [...form.querySelectorAll<HTMLInputElement>('input[name=region]')].map((i) => [
+      i.value,
+      i.closest('label')!.querySelector('span')!.textContent!,
+    ]),
+  );
+  const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
+  const pct = (a: number, b: number) => (b ? Math.round((100 * a) / b) : 0);
+
+  let bank: Q[] = [];
+  let queue: Q[] = [];
+  let results: Result[] = [];
+  let pos = 0;
+  let answered = false;
+  let lastRegions: string[] = [];
+
+  function shuffle<T>(a: T[]) {
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function settings() {
+    const fd = new FormData(form);
+    return {
+      regions: fd.getAll('region') as string[],
+      mode: String(fd.get('mode')),
+      hy: fd.get('hy') === 'on',
+      n: Number(fd.get('n')),
+    };
+  }
+
+  function pool() {
+    const { regions, mode, hy } = settings();
+    const progress = loadProgress().quiz;
+    return bank.filter(
+      (q) =>
+        regions.includes(q.region) &&
+        (!hy || q.highYield) &&
+        (mode !== 'missed' || (progress[q.id] && progress[q.id].last === 0)),
+    );
+  }
+
+  function updateAvailable() {
+    if (!bank.length) return;
+    const n = pool().length;
+    $('avail').textContent = n ? `${n} question${n === 1 ? '' : 's'} match` : 'No questions match these settings.';
+    $<HTMLButtonElement>('start-btn').disabled = n === 0;
+  }
+
+  function renderStats() {
+    const progress = loadProgress();
+    const recs = Object.entries(progress.quiz);
+    const tbody = $('stats-table').querySelector('tbody')!;
+    $('reset-btn').hidden = recs.length === 0 && progress.sessions.length === 0;
+    if (!recs.length) {
+      $('stats-table').hidden = true;
+      $('sessions').innerHTML = '';
+      return;
+    }
+    const byRegion = new Map<string, { total: number; seen: number; lastOk: number }>();
+    for (const q of bank) {
+      const r = byRegion.get(q.region) ?? { total: 0, seen: 0, lastOk: 0 };
+      r.total++;
+      const rec = progress.quiz[q.id];
+      if (rec) {
+        r.seen++;
+        r.lastOk += rec.last;
+      }
+      byRegion.set(q.region, r);
+    }
+    let seen = 0;
+    let ok = 0;
+    tbody.innerHTML = [...byRegion]
+      .map(([id, r]) => {
+        seen += r.seen;
+        ok += r.lastOk;
+        const acc = pct(r.lastOk, r.seen);
+        return `<tr><td>${esc(regionNames.get(id) ?? id)}</td><td>${r.seen} / ${r.total}</td>
+          <td>${r.seen ? `<span class="bar"><span style="width:${acc}%"></span></span> ${acc}%` : '<span class="muted">—</span>'}</td></tr>`;
+      })
+      .join('');
+    $('stats-table').hidden = false;
+    $('stats-summary').textContent = `Answered ${seen} of ${bank.length} questions at least once. Most recent attempts: ${ok} correct (${pct(ok, seen)}%).`;
+    const recent = progress.sessions.slice(0, 5);
+    $('sessions').innerHTML = recent.length
+      ? `<h3>Recent quizzes</h3><ul class="plain">${recent
+          .map(
+            (s) =>
+              `<li>${new Date(s.t).toLocaleDateString()} — ${s.correct}/${s.n} (${pct(s.correct, s.n)}%) · ${esc(
+                s.regions.map((r) => regionNames.get(r) ?? r).join(', '),
+              )}</li>`,
+          )
+          .join('')}</ul>`
+      : '';
+  }
+
+  function show(section: 'setup' | 'run' | 'done') {
+    for (const s of ['setup', 'run', 'done']) $(s).hidden = s !== section;
+    window.scrollTo({ top: 0 });
+  }
+
+  function start(questions: Q[]) {
+    queue = questions;
+    results = [];
+    pos = 0;
+    lastRegions = [...new Set(questions.map((q) => q.region))];
+    show('run');
+    renderQuestion();
+  }
+
+  function buildQueue() {
+    const { mode, n } = settings();
+    const progress = loadProgress().quiz;
+    let qs = shuffle(pool());
+    if (mode === 'smart') {
+      const rank = (q: Q) => (progress[q.id] ? (progress[q.id].last === 0 ? 0 : 2) : 1);
+      qs = qs.sort((a, b) => rank(a) - rank(b));
+    }
+    return n ? qs.slice(0, n) : qs;
+  }
+
+  function renderQuestion() {
+    const q = queue[pos];
+    answered = false;
+    $('run-pos').textContent = `Question ${pos + 1} of ${queue.length}`;
+    const ok = results.filter((r) => r.ok).length;
+    $('run-score').textContent = results.length ? `${ok} / ${results.length} correct` : '';
+    $('run-meter').style.width = `${pct(pos, queue.length)}%`;
+    $('q-source').textContent = regionNames.get(q.region) ?? q.region; // entry name is revealed after answering
+    $('q-stem').innerHTML = q.stem;
+    $('q-choices').innerHTML = q.choices
+      .map((c, i) => `<li><button class="choice" type="button" data-i="${i}"><span class="letter">${LETTERS[i]}</span> <span>${c}</span></button></li>`)
+      .join('');
+    $('q-explain').hidden = true;
+    for (const b of $('q-choices').querySelectorAll<HTMLButtonElement>('.choice')) {
+      b.addEventListener('click', () => answer(Number(b.dataset.i)));
+    }
+    $('q-choices').querySelector<HTMLButtonElement>('.choice')?.focus({ preventScroll: true });
+  }
+
+  function answer(i: number) {
+    if (answered) return;
+    const q = queue[pos];
+    if (i >= q.choices.length) return;
+    answered = true;
+    const ok = i === q.answer;
+    results.push({ q, ok });
+    recordAnswer(q.id, ok);
+    const buttons = [...$('q-choices').querySelectorAll<HTMLButtonElement>('.choice')];
+    buttons.forEach((b) => (b.disabled = true));
+    buttons[q.answer].classList.add('correct');
+    if (!ok) buttons[i].classList.add('wrong');
+    $('q-verdict').textContent = ok ? '✓ Correct.' : '✗ Not quite.';
+    $('q-correct').textContent = ` Correct answer: ${LETTERS[q.answer]}`;
+    $('q-expl').innerHTML = q.explanation;
+    $<HTMLAnchorElement>('q-link').href = q.url;
+    $('q-link').textContent = `Open the ${q.entry} entry →`;
+    $('next-btn').textContent = pos + 1 < queue.length ? 'Next question' : 'See results';
+    $('q-explain').hidden = false;
+    $('run-score').textContent = `${results.filter((r) => r.ok).length} / ${results.length} correct`;
+    $('next-btn').focus({ preventScroll: true });
+  }
+
+  function next() {
+    if (!answered) return;
+    pos++;
+    if (pos < queue.length) renderQuestion();
+    else finish();
+  }
+
+  function finish() {
+    if (results.length) {
+      recordSession({ t: Date.now(), n: results.length, correct: results.filter((r) => r.ok).length, regions: lastRegions });
+    }
+    const ok = results.filter((r) => r.ok).length;
+    $('done-score').textContent = results.length ? `${ok} / ${results.length} correct (${pct(ok, results.length)}%)` : 'No questions answered';
+    $('done-note').textContent =
+      results.length < queue.length ? `Ended early after ${results.length} of ${queue.length} questions.` : '';
+    const by = new Map<string, { n: number; ok: number }>();
+    for (const r of results) {
+      const x = by.get(r.q.region) ?? { n: 0, ok: 0 };
+      x.n++;
+      x.ok += r.ok ? 1 : 0;
+      by.set(r.q.region, x);
+    }
+    $('done-table').hidden = by.size === 0;
+    $('done-table').querySelector('tbody')!.innerHTML = [...by]
+      .map(([id, x]) => `<tr><td>${esc(regionNames.get(id) ?? id)}</td><td>${x.ok} / ${x.n} (${pct(x.ok, x.n)}%)</td></tr>`)
+      .join('');
+    const missed = results.filter((r) => !r.ok);
+    $('done-missed').innerHTML = missed.length
+      ? `<h3>Review these</h3><ul class="plain">${missed
+          .map((r) => `<li><a href="${r.q.url}">${esc(r.q.entry)}</a> <span class="muted small">· ${esc(regionNames.get(r.q.region) ?? r.q.region)}</span></li>`)
+          .join('')}</ul>`
+      : results.length
+        ? '<p>No misses — nice work.</p>'
+        : '';
+    $('retry-btn').hidden = missed.length === 0;
+    show('done');
+    renderStats();
+  }
+
+  // ----- wiring -----
+  form.addEventListener('change', updateAvailable);
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const qs = buildQueue();
+    if (qs.length) start(qs);
+  });
+  for (const b of form.querySelectorAll<HTMLButtonElement>('[data-all]')) {
+    b.addEventListener('click', () => {
+      for (const i of form.querySelectorAll<HTMLInputElement>('input[name=region]')) i.checked = b.dataset.all === '1';
+      updateAvailable();
+    });
+  }
+  $('next-btn').addEventListener('click', next);
+  $('end-btn').addEventListener('click', finish);
+  $('retry-btn').addEventListener('click', () => start(shuffle(results.filter((r) => !r.ok).map((r) => r.q))));
+  $('new-btn').addEventListener('click', () => {
+    show('setup');
+    updateAvailable();
+  });
+  $('reset-btn').addEventListener('click', () => {
+    if (confirm('Erase all quiz scores saved on this device?')) {
+      resetQuizProgress();
+      renderStats();
+      $('stats-summary').textContent = 'No questions answered yet on this device.';
+      updateAvailable();
+    }
+  });
+  document.addEventListener('keydown', (e) => {
+    if ($('run').hidden || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
+    const k = e.key.toUpperCase();
+    if (!answered) {
+      const i = /^[1-5]$/.test(k) ? Number(k) - 1 : LETTERS.indexOf(k);
+      if (i >= 0) {
+        e.preventDefault();
+        answer(i);
+      }
+    } else if (e.key === 'Enter' && document.activeElement?.id !== 'next-btn') {
+      e.preventDefault();
+      next();
+    } else if (e.key === 'ArrowRight') {
+      next();
+    }
+  });
+
+  // ----- load the bank -----
+  $('avail').textContent = 'Loading questions…';
+  $<HTMLButtonElement>('start-btn').disabled = true;
+  fetch((document.body.dataset.base ?? '/') + 'quiz-bank.json')
+    .then((r) => r.json())
+    .then((data: Q[]) => {
+      bank = data;
+      updateAvailable();
+      renderStats();
+    })
+    .catch(() => {
+      $('avail').textContent = 'Could not load the questions. Check your connection and reload.';
+    });
+</script>

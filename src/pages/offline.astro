@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/atlas';
+---
+
+<Base title="Offline" description="This page is not saved for offline use yet.">
+  <h1>You're offline</h1>
+  <p>This page hasn't been saved on this device yet, so it can't be shown without an internet connection.</p>
+  <p>
+    Pages you have opened before still work offline. To study everything without internet, go back online and use
+    <b>Save for offline</b> on the <a href={url()}>home page</a>.
+  </p>
+  <p class="btn-row">
+    <a class="btn primary" href={url()}>Home</a>
+    <a class="btn" href={url('quiz/')}>Quiz</a>
+    <a class="btn" href={url('flashcards/')}>Flashcards</a>
+  </p>
+</Base>
