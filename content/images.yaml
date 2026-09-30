@@ -1442,3 +1442,373 @@
   license: Public domain
   licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
   alt: "Surface projection of the femoral artery and femoral nerve on the front of the thigh from the inguinal ligament to the adductor tubercle"
+
+- id: gray-188-skull-lateral
+  file: images/gray-188-skull-lateral.png
+  title: "Side view of the skull"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 188"
+  source: https://commons.wikimedia.org/wiki/File:Gray188.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral view of the skull with the frontal, parietal, temporal, sphenoid, zygomatic, maxilla and mandible tinted, and the coronal and squamosal sutures"
+
+- id: gray-190-skull-anterior
+  file: images/gray-190-skull-anterior.png
+  title: "The skull from the front"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 190"
+  source: https://commons.wikimedia.org/wiki/File:Gray190.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view of the skull showing the frontal bone, orbits with the superior and inferior orbital fissures, nasal cavity, maxillae and mandible"
+
+- id: gray-176-mandible-lateral
+  file: images/gray-176-mandible-lateral.png
+  title: "Mandible, outer surface, side view"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 176"
+  source: https://commons.wikimedia.org/wiki/File:Gray176.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral view of the mandible showing the body, ramus, angle, coronoid process, condyle, mandibular notch and mental foramen, with muscle attachments outlined"
+
+- id: gray-309-tmj-lateral
+  file: images/gray-309-tmj-lateral.png
+  title: "Articulation of the mandible, lateral aspect"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 309"
+  source: https://commons.wikimedia.org/wiki/File:Gray309.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral view of the temporomandibular joint showing the capsule and the lateral (temporomandibular) ligament between the zygomatic process and the mandibular neck"
+
+- id: gray-311-tmj-sagittal
+  file: images/gray-311-tmj-sagittal.png
+  title: "Sagittal section of the articulation of the mandible"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 311"
+  source: https://commons.wikimedia.org/wiki/File:Gray311.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Sagittal section of the temporomandibular joint showing the articular disc dividing the joint into upper and lower cavities between the mandibular fossa, articular tubercle and condyle, with lateral pterygoid attaching in front"
+
+- id: gray-382-temporalis
+  file: images/gray-382-temporalis.png
+  title: "The temporalis muscle"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 382"
+  source: https://commons.wikimedia.org/wiki/File:Gray382.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral view of the skull showing the fan-shaped temporalis muscle converging on the coronoid process of the mandible"
+
+- id: gray-383-pterygoid-muscles
+  file: images/gray-383-pterygoid-muscles.png
+  title: "The pterygoid muscles"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 383"
+  source: https://commons.wikimedia.org/wiki/File:Gray383.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral view with the zygomatic arch and part of the mandible removed, showing the lateral (external) and medial (internal) pterygoid muscles"
+
+- id: gray-378-muscles-head-face-neck
+  file: images/gray-378-muscles-head-face-neck.png
+  title: "Muscles of the head, face and neck"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 378"
+  source: https://commons.wikimedia.org/wiki/File:Gray378.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral view of the muscles of facial expression, the epicranius (occipitofrontalis) with the galea aponeurotica, and the superficial neck muscles"
+
+- id: gray-1198-middle-meningeal-surface
+  file: images/gray-1198-middle-meningeal-surface.png
+  title: "Relations of the brain and middle meningeal artery to the surface of the skull"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1198"
+  source: https://commons.wikimedia.org/wiki/File:Gray1198.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral skull outline with the course of the middle meningeal artery branches (red) and the brain outline (blue) projected onto the surface"
+
+- id: gray-511-maxillary-artery-plan
+  file: images/gray-511-maxillary-artery-plan.png
+  title: "Plan of the branches of the maxillary artery"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 511"
+  source: https://commons.wikimedia.org/wiki/File:Gray511.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Diagram of the maxillary artery arising from the external carotid, with its middle meningeal, inferior alveolar, deep temporal, pterygoid, masseteric, buccinator, posterior superior alveolar, infraorbital and sphenopalatine branches"
+
+- id: gray-1022-parotid-gland
+  file: images/gray-1022-parotid-gland.png
+  title: "Right parotid gland, posterior and deep aspects"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1022"
+  source: https://commons.wikimedia.org/wiki/File:Gray1022.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Right parotid gland from behind and deep, showing the parotid duct, the external carotid artery and posterior facial (retromandibular) vein entering it, and impressions for the styloid and mastoid processes"
+
+- id: gray-1024-salivary-glands
+  file: images/gray-1024-salivary-glands.png
+  title: "Dissection showing the salivary glands of the right side"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1024"
+  source: https://commons.wikimedia.org/wiki/File:Gray1024.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Right side of the face with the parotid gland over the masseter and its duct, the submandibular (submaxillary) gland and duct, and the sublingual gland in the floor of the mouth"
+
+- id: gray-869-eyeball-section
+  file: images/gray-869-eyeball-section.png
+  title: "Horizontal section of the eyeball"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 869"
+  source: https://commons.wikimedia.org/wiki/File:Gray869.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Horizontal section of the eyeball showing the cornea, anterior and posterior chambers, iris, ciliary body, lens, vitreous body, sclera, choroid, retina, fovea centralis and optic nerve"
+
+- id: gray-889-orbit-muscles-lateral
+  file: images/gray-889-orbit-muscles-lateral.png
+  title: "Muscles of the right orbit, lateral view"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 889"
+  source: https://commons.wikimedia.org/wiki/File:Gray889.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral view of the right orbit showing levator palpebrae superioris, the superior, lateral and inferior recti, and the obliques attached to the eyeball"
+
+- id: gray-890-orbit-apex
+  file: images/gray-890-orbit-apex.png
+  title: "The right orbit from the front with the eyeball removed"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 890"
+  source: https://commons.wikimedia.org/wiki/File:Gray890.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior view into the right orbit showing the common tendinous ring and origins of the recti, with the oculomotor, trochlear, abducent, frontal, lacrimal and nasociliary nerves at the superior orbital fissure"
+
+- id: gray-907-ear-section
+  file: images/gray-907-ear-section.png
+  title: "Coronal section through the right ear"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 907"
+  source: https://commons.wikimedia.org/wiki/File:Gray907.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Section through the external acoustic meatus, tympanic membrane, tympanic cavity with the malleus and incus, auditory (pharyngotympanic) tube and the petrous temporal bone"
+
+- id: gray-913-tympanic-medial-wall
+  file: images/gray-913-tympanic-medial-wall.png
+  title: "Medial wall of the tympanic cavity"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 913"
+  source: https://commons.wikimedia.org/wiki/File:Gray913.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Medial wall of the right tympanic cavity showing the promontory, oval window (fenestra vestibuli), round window (fenestra cochleae), prominence of the facial canal, tympanic antrum and mastoid cells"
+
+- id: gray-920-bony-labyrinth
+  file: images/gray-920-bony-labyrinth.png
+  title: "Right osseous labyrinth, lateral view"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 920"
+  source: https://commons.wikimedia.org/wiki/File:Gray920.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "The bony labyrinth: the cochlea, the vestibule with the oval and round windows, and the superior, posterior and lateral semicircular canals with their ampullae"
+
+- id: gray-855-nasal-lateral-wall
+  file: images/gray-855-nasal-lateral-wall.png
+  title: "Lateral wall of the nasal cavity"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 855"
+  source: https://commons.wikimedia.org/wiki/File:Gray855.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral nasal wall showing the superior, middle and inferior conchae and meatuses, the sphenoethmoidal recess, frontal and sphenoidal sinuses, and the pharyngeal opening of the auditory tube"
+
+- id: gray-1014-mouth-cavity
+  file: images/gray-1014-mouth-cavity.png
+  title: "The mouth cavity"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1014"
+  source: https://commons.wikimedia.org/wiki/File:Gray1014.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "The open mouth with the tongue pulled forward, showing the palatine tonsils between the palatoglossal and palatopharyngeal arches, the soft palate and uvula, and the vallate and fungiform papillae"
+
+- id: gray-994-sagittal-head-neck
+  file: images/gray-994-sagittal-head-neck.png
+  title: "Sagittal section of the nose, mouth, pharynx and larynx"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 994"
+  source: https://commons.wikimedia.org/wiki/File:Gray994.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Midline sagittal section showing the nasal cavity, pharyngeal tonsil, opening of the auditory tube, the nasal, oral and laryngeal parts of the pharynx, tongue, epiglottis, larynx with vocal and ventricular folds, and the esophagus"
+
+- id: gray-1031-pharynx-posterior
+  file: images/gray-1031-pharynx-posterior.png
+  title: "Muscles of the pharynx from behind"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1031"
+  source: https://commons.wikimedia.org/wiki/File:Gray1031.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the pharyngeal constrictors with the internal carotid arteries, internal jugular veins and the vagus, glossopharyngeal and sympathetic nerves on each side"
+
+- id: gray-950-laryngeal-cartilages
+  file: images/gray-950-laryngeal-cartilages.png
+  title: "The cartilages of the larynx, posterior view"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 950"
+  source: https://commons.wikimedia.org/wiki/File:Gray950.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "The epiglottis, thyroid, arytenoid, corniculate, cuneiform and cricoid cartilages shown separately from behind, with muscle attachments"
+
+- id: gray-956-laryngoscopic-view
+  file: images/gray-956-laryngoscopic-view.png
+  title: "Laryngoscopic view of the interior of the larynx"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 956"
+  source: https://commons.wikimedia.org/wiki/File:Gray956.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "View from above of the vocal and ventricular folds, epiglottis, vallecula, aryepiglottic folds and the cuneiform and corniculate cartilages, with the trachea visible through the glottis"
+
+- id: gray-959-laryngeal-muscles
+  file: images/gray-959-laryngeal-muscles.png
+  title: "Muscles of the larynx, side view"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 959"
+  source: https://commons.wikimedia.org/wiki/File:Gray959.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral view with the right thyroid lamina removed, showing the intrinsic laryngeal muscles including the posterior and lateral cricoarytenoid and thyroarytenoid, and the site of cricothyroid"
+
+- id: gray-1175-pharyngeal-pouches
+  file: images/gray-1175-pharyngeal-pouches.png
+  title: "Pharyngeal pouches and their derivatives"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1175"
+  source: https://commons.wikimedia.org/wiki/File:Gray1175.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Schematic of the pharyngeal pouches I–IV showing the parathyroids arising from the third and fourth pouches, the thymus from the third pouch, the thyroid and the ultimobranchial body"
+
+- id: gray-1177-parathyroids-posterior
+  file: images/gray-1177-parathyroids-posterior.png
+  title: "Parathyroid glands (Halsted and Evans)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1177"
+  source: https://commons.wikimedia.org/wiki/File:Gray1177.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the larynx, pharynx and thyroid lobes showing the parathyroid glands, the common carotid and inferior thyroid arteries"
+
+- id: gray-385-neck-muscles-lateral
+  file: images/gray-385-neck-muscles-lateral.png
+  title: "Muscles of the neck, lateral view"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 385"
+  source: https://commons.wikimedia.org/wiki/File:Gray385.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral view of the neck showing sternocleidomastoid from the mastoid process to the sternum and clavicle, trapezius, the scalenes, levator scapulae, omohyoid and the suprahyoid and infrahyoid muscles"
+
+- id: gray-512-neck-triangles
+  file: images/gray-512-neck-triangles.png
+  title: "Triangles of the neck"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 512"
+  source: https://commons.wikimedia.org/wiki/File:Gray512.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Outline of the neck showing sternocleidomastoid, trapezius, digastric and omohyoid dividing the neck into its triangles, labelled with the older names (superior and inferior carotid, submaxillary, suprahyoid, occipital and subclavian triangles)"
+
+- id: gray-508-face-scalp-arteries
+  file: images/gray-508-face-scalp-arteries.png
+  title: "The arteries of the face and scalp"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 508"
+  source: https://commons.wikimedia.org/wiki/File:Gray508.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Superficial arteries of the face and scalp: the facial artery crossing the mandible and ending as the angular artery, the superficial temporal, occipital and posterior auricular arteries"
+
+- id: gray-562-thyroid-veins
+  file: images/gray-562-thyroid-veins.png
+  title: "The thyroid gland and its veins"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 562"
+  source: https://commons.wikimedia.org/wiki/File:Gray562.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Anterior dissection of the neck with the strap muscles retracted, showing the thyroid gland, superior thyroid artery, middle and inferior thyroid veins, internal jugular veins, common carotid arteries and the left brachiocephalic (innominate) vein"
+
+- id: gray-602-head-neck-lymph-superficial
+  file: images/gray-602-head-neck-lymph-superficial.png
+  title: "Superficial lymph glands and vessels of the head and neck"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 602"
+  source: https://commons.wikimedia.org/wiki/File:Gray602.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral view of the head and neck showing the occipital, posterior auricular, parotid, buccinator, submandibular, submental and superficial and deep cervical lymph nodes"
+
+- id: gray-603-retropharyngeal-nodes
+  file: images/gray-603-retropharyngeal-nodes.png
+  title: "Lymph glands of the pharynx from behind"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 603"
+  source: https://commons.wikimedia.org/wiki/File:Gray603.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Posterior view of the pharynx showing the retropharyngeal lymph nodes and their drainage to the deep cervical chain"
+
+- id: gray-804-cervical-plexus-plan
+  file: images/gray-804-cervical-plexus-plan.png
+  title: "Plan of the cervical plexus (Gerrish)"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 804"
+  source: https://commons.wikimedia.org/wiki/File:Gray804.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Diagram of the C1–C4 loops giving the lesser occipital, great auricular, transverse cervical and supraclavicular nerves, the ansa cervicalis (with the hypoglossal nerve), the phrenic nerve, and communications with the accessory nerve"
+
+- id: gray-794-hypoglossal-cervical-plexus
+  file: images/gray-794-hypoglossal-cervical-plexus.png
+  title: "Hypoglossal nerve, cervical plexus and their branches"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 794"
+  source: https://commons.wikimedia.org/wiki/File:Gray794.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Lateral dissection of the neck showing the hypoglossal nerve, the ansa cervicalis on the carotid sheath, the cervical plexus, the common carotid artery and internal jugular vein"
+
+- id: gray-384-neck-cross-section-c6
+  file: images/gray-384-neck-cross-section-c6.png
+  title: "Section of the neck at about the level of the sixth cervical vertebra"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 384"
+  source: https://commons.wikimedia.org/wiki/File:Gray384.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Cross-section of the neck at C6 showing the layers of deep cervical fascia around the trachea, esophagus, thyroid gland, the carotid sheath (common carotid artery, internal jugular vein, vagus nerve), the prevertebral muscles, sternocleidomastoid and trapezius"
+
+- id: gray-1196-scalp-layers
+  file: images/gray-1196-scalp-layers.png
+  title: "Layers of the scalp, skull and meninges"
+  author: "Henry Vandyke Carter"
+  work: "Gray's Anatomy of the Human Body, 20th ed. (1918), Fig. 1196"
+  source: https://commons.wikimedia.org/wiki/File:Gray1196.png
+  license: Public domain
+  licenseNote: "Public domain in the US: published before January 1, 1931 (per Wikimedia Commons)"
+  alt: "Coronal section through the vertex: skin, subcutaneous tissue, galea aponeurotica, loose areolar tissue, pericranium, skull, dura, arachnoid, pia and the superior sagittal sinus"

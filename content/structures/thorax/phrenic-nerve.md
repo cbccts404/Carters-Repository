@@ -11,7 +11,7 @@ status: draft
 anatomy:
   location: Neck (on anterior scalene) → superior mediastinum → middle mediastinum (on the pericardium) → diaphragm.
   roots: C3, C4, C5 (mainly C4)
-  origin: Ventral rami of C3–C5 (cervical plexus, with a contribution from C5).
+  origin: Ventral rami of C3–C5 ([[cervical-plexus]], with a contribution from C5).
   course: >-
     Descends on the **anterior surface of anterior scalene**, deep to the prevertebral fascia, crossing it from lateral
     to medial. Enters the thorax **between the subclavian artery and vein**. In the thorax both nerves pass **anterior to
