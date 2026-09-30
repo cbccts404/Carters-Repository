@@ -102,6 +102,31 @@ quiz:
     explanation: >-
       A TIPS diverts portal blood (with ammonia and other toxins) around the liver, so **hepatic encephalopathy** is the
       main complication.
+  - stem: Caput medusae forms at the portosystemic anastomosis between which veins?
+    choices:
+      - Left gastric and esophageal veins
+      - Paraumbilical and superficial epigastric veins
+      - Superior rectal and inferior rectal veins
+      - Splenic and left renal veins
+      - Colic and lumbar veins
+    answer: B
+    explanation: >-
+      **Caput medusae** is dilation of the **paraumbilical veins** (portal, via the ligamentum teres) anastomosing with
+      the **superficial and inferior epigastric veins** (systemic). The left gastric–esophageal anastomosis forms
+      varices, and the superior–inferior rectal anastomosis forms rectal varices.
+  - stem: >-
+      In the hepatoduodenal ligament, where does the portal vein lie relative to the common bile duct and hepatic
+      artery?
+    choices:
+      - Anterior to both
+      - Between them
+      - To the left of both
+      - Outside the ligament entirely
+      - Posterior to both
+    answer: E
+    explanation: >-
+      In the free edge of the hepatoduodenal ligament, the **portal vein lies posterior**, with the **common bile duct**
+      to the right and the **hepatic artery proper** to the left in front of it.
 flashcards:
   - front: Portal vein formation?
     back: SMV + splenic vein behind the neck of the pancreas (IMV usually joins the splenic)

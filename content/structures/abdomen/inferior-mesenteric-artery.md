@@ -73,6 +73,28 @@ quiz:
       - Middle colic artery
     answer: C
     explanation: The IMA continues as the **superior rectal artery** into the pelvis. The middle rectal artery comes from the internal iliac; the middle colic from the SMA.
+  - stem: Which artery is NOT a branch of the inferior mesenteric artery?
+    choices:
+      - Left colic artery
+      - Middle colic artery
+      - Sigmoid arteries
+      - Superior rectal artery
+    answer: B
+    explanation: >-
+      The IMA gives the **left colic, sigmoid and superior rectal** arteries. The **middle colic** artery is a branch of
+      the **SMA**; the marginal artery connects the two territories.
+  - stem: The IMA supplies which part of the gut?
+    choices:
+      - Stomach to the major duodenal papilla
+      - Distal duodenum to the proximal two-thirds of the transverse colon
+      - Anal canal below the pectinate line
+      - Distal third of the transverse colon to the upper rectum
+      - Jejunum and ileum
+    answer: D
+    explanation: >-
+      The IMA (L3) supplies the **hindgut**: distal third of the transverse colon, descending and sigmoid colon, and
+      upper rectum. The SMA supplies the midgut; the anal canal below the pectinate line is supplied by the inferior
+      rectal arteries.
 flashcards:
   - front: IMA branches?
     back: Left colic, sigmoid, superior rectal

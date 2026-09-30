@@ -121,6 +121,17 @@ quiz:
       - Superior mesenteric artery
     answer: C
     explanation: The **left gastric artery** arises directly from the celiac trunk and runs along the lesser curvature, anastomosing with the right gastric artery.
+  - stem: A patient with gastric adenocarcinoma has a hard nodule at the umbilicus. What is this called?
+    choices:
+      - Virchow node
+      - Krukenberg tumor
+      - Sister Mary Joseph nodule
+      - Blumer shelf
+      - Caput medusae
+    answer: C
+    explanation: >-
+      A **Sister Mary Joseph nodule** is a **periumbilical** metastasis. Other signs of spread: **Virchow node** (left
+      supraclavicular), **Krukenberg tumor** (ovary) and **Blumer shelf** (rectouterine pouch).
 flashcards:
   - front: Parts of the stomach?
     back: Cardia, fundus, body, pyloric antrum, pyloric canal, pylorus

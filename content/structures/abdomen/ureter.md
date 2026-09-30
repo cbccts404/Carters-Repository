@@ -86,6 +86,29 @@ quiz:
     explanation: >-
       An **infected obstructed kidney** is a urologic emergency requiring **urgent decompression** and IV antibiotics.
       Medical expulsive therapy is only for uncomplicated stones.
+  - stem: At the pelvic brim, the ureter crosses which structure?
+    choices:
+      - Uterine artery
+      - Ductus deferens
+      - Gonadal vein
+      - Bifurcation of the common iliac artery
+      - Inferior epigastric artery
+    answer: D
+    explanation: >-
+      The ureter enters the pelvis by crossing the **bifurcation of the common iliac artery** at the pelvic brim, one of
+      its three narrow points (with the UPJ and UVJ). Lower in the pelvis it passes under the uterine artery or ductus
+      deferens.
+  - stem: What is the most common cause of hydronephrosis detected on prenatal ultrasound?
+    choices:
+      - Posterior urethral valves
+      - Ureteropelvic junction obstruction
+      - Ureteral stone
+      - Neurogenic bladder
+      - Horseshoe kidney
+    answer: B
+    explanation: >-
+      **Ureteropelvic junction obstruction** (congenital narrowing or a crossing lower-pole vessel) is the most common
+      cause of prenatal hydronephrosis. In adults it can cause intermittent flank pain after high fluid intake.
 flashcards:
   - front: Three constrictions of the ureter?
     back: Ureteropelvic junction, pelvic brim (iliac vessels), ureterovesical junction (narrowest)

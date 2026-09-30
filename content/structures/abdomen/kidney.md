@@ -127,6 +127,17 @@ quiz:
       - Squamous epithelial cells
     answer: C
     explanation: '**WBC casts** form in the renal tubules and indicate upper tract (kidney) involvement such as pyelonephritis.'
+  - stem: Which kidney usually lies lower, and why?
+    choices:
+      - The left, because of the spleen
+      - Neither; they are always level
+      - The left, because of the heart
+      - The right, because of the liver
+      - The right, because of the IVC
+    answer: D
+    explanation: >-
+      The **right kidney** sits slightly **lower** because the **liver** displaces it. The kidneys lie from about T12 to
+      L3, with the hila at about L1 (transpyloric plane).
 flashcards:
   - front: Kidney vertebral levels and hilum level?
     back: T12–L3 (right lower); hila at L1

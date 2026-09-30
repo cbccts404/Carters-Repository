@@ -124,6 +124,20 @@ quiz:
       - Left hepatic duct
     answer: B
     explanation: The triangle (cystic duct, common hepatic duct, inferior liver surface) contains the **cystic artery**, which is ligated during cholecystectomy.
+  - stem: >-
+      An 80-year-old woman has small bowel obstruction. CT shows air in the biliary tree and a large gallstone in the
+      bowel. Where is the stone most likely lodged?
+    choices:
+      - Duodenal bulb
+      - Ligament of Treitz
+      - Mid-jejunum
+      - Terminal ileum
+      - Sigmoid colon
+    answer: D
+    explanation: >-
+      In **gallstone ileus**, a large stone erodes through a cholecystoenteric fistula (gallbladder body to the
+      duodenum) and obstructs the **terminal ileum**, the narrowest part. Pneumobilia, obstruction and an ectopic stone
+      form Rigler triad.
 flashcards:
   - front: Calot triangle boundaries and contents?
     back: Cystic duct, common hepatic duct, inferior liver surface; contains the cystic artery

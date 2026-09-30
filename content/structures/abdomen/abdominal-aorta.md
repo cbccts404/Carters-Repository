@@ -101,6 +101,31 @@ quiz:
       - S1
     answer: D
     explanation: The aorta bifurcates into the common iliac arteries at about **L4**. The IVC forms at about L5.
+  - stem: >-
+      A 58-year-old smoker has cramping pain in both buttocks and thighs when walking, erectile dysfunction, and
+      diminished femoral pulses. What is the most likely diagnosis?
+    choices:
+      - Lumbar spinal stenosis
+      - Superficial femoral artery stenosis
+      - Bilateral sciatica
+      - Aortoiliac occlusive disease (Leriche syndrome)
+      - Abdominal aortic aneurysm
+    answer: D
+    explanation: >-
+      **Leriche syndrome** (atherosclerotic occlusion of the distal aorta and/or iliac arteries) causes the triad of
+      **buttock/thigh claudication, erectile dysfunction and absent or diminished femoral pulses**. Superficial femoral
+      disease causes calf claudication with normal femoral pulses.
+  - stem: Which vessel crosses anterior to the abdominal aorta, just below the origin of the superior mesenteric artery?
+    choices:
+      - Left renal vein
+      - Right renal artery
+      - Inferior mesenteric vein
+      - Splenic artery
+      - Right gonadal vein
+    answer: A
+    explanation: >-
+      The **left renal vein** crosses anterior to the aorta, between it and the **SMA**. Compression there
+      ("nutcracker") can cause hematuria and a left varicocele. The right renal artery passes behind the IVC.
 flashcards:
   - front: Abdominal aorta — start and bifurcation levels?
     back: Aortic hiatus T12 → bifurcation L4
