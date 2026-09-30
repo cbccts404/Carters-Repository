@@ -82,6 +82,27 @@ quiz:
       - Superior displacement of the scapula
     answer: B
     explanation: Trapezius paralysis (CN XI) produces **lateral winging** with a drooping shoulder. Serratus anterior paralysis produces medial winging.
+  - stem: Which part of trapezius retracts the scapula?
+    choices:
+      - Middle (transverse) fibers
+      - Upper (descending) fibers
+      - Lower (ascending) fibers
+      - None; trapezius only elevates the scapula
+    answer: A
+    explanation: >-
+      The **middle fibers retract** the scapula, the **upper fibers elevate** it (shrug) and the **lower fibers
+      depress** it. Upper and lower fibers together rotate the glenoid upward.
+  - stem: Trapezius receives motor supply from CN XI. Which spinal nerves carry its pain and proprioception?
+    choices:
+      - C1–C2
+      - C5–C6
+      - T1–T2
+      - Dorsal rami of C7–T12
+      - C3–C4 (cervical plexus)
+    answer: E
+    explanation: >-
+      Trapezius is motor-supplied by the **spinal accessory nerve (CN XI)**, with pain and proprioception from **C3–C4**
+      through the cervical plexus. It is an extrinsic back muscle, so it isn't supplied by dorsal rami.
 flashcards:
   - front: Trapezius — innervation?
     back: Spinal accessory nerve (CN XI); C3–C4 proprioception

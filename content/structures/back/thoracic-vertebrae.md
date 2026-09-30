@@ -87,6 +87,31 @@ quiz:
       - Mammillary processes
     answer: C
     explanation: Thoracic vertebrae have **costal facets** on their bodies (and most on their transverse processes) for articulation with the ribs.
+  - stem: >-
+      A man from a TB-endemic region has back pain, night sweats and a sharp angular kyphosis of the lower thoracic
+      spine. Imaging shows destruction of adjacent vertebral bodies and the disc with a psoas abscess. What is the
+      diagnosis?
+    choices:
+      - Scheuermann disease
+      - Pott disease (spinal tuberculosis)
+      - Ankylosing spondylitis
+      - Osteoporotic compression fracture
+      - Multiple myeloma
+    answer: B
+    explanation: >-
+      **Pott disease** (TB spondylitis) usually affects the lower thoracic and upper lumbar spine, destroying adjacent
+      bodies and the disc, causing a **gibbus deformity**, possible paraspinal/psoas cold abscess and paraplegia.
+  - stem: Where do traumatic spinal fractures most commonly occur?
+    choices:
+      - Upper thoracic spine (T1–T4)
+      - Mid-cervical spine (C3–C5)
+      - Sacrum
+      - Thoracolumbar junction (T11–L2)
+      - Mid-thoracic spine (T5–T8)
+    answer: D
+    explanation: >-
+      The **thoracolumbar junction (T11–L2)**, where the stiff, rib-supported thoracic spine meets the mobile lumbar
+      spine, is the most common site of traumatic fractures.
 flashcards:
   - front: Distinguishing features of thoracic vertebrae?
     back: Costal facets, heart-shaped bodies, long downward-sloping spinous processes

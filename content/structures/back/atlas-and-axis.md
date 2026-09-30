@@ -91,6 +91,30 @@ quiz:
       - None; it is a fibrous joint
     answer: B
     explanation: The **atlantoaxial joints** provide about half of cervical **rotation**; the atlanto-occipital joints allow nodding.
+  - stem: >-
+      After a head-on collision with neck hyperextension, CT shows bilateral fractures through the pars interarticularis
+      of C2 with anterior slip of C2 on C3. What is this injury called?
+    choices:
+      - Jefferson fracture
+      - Clay-shoveler fracture
+      - Hangman fracture
+      - Type II odontoid fracture
+      - Chance fracture
+    answer: C
+    explanation: >-
+      A **hangman fracture** is a bilateral fracture of the **C2 pars interarticularis/pedicles** from
+      **hyperextension** with distraction, producing traumatic spondylolisthesis of C2 on C3. The canal widens, so
+      neurologic injury is less common. A Jefferson fracture is a C1 burst from axial load.
+  - stem: Which odontoid (dens) fracture is most common and most prone to nonunion?
+    choices:
+      - Type I (tip of the dens)
+      - Type II (base of the dens)
+      - Type III (extending into the body of C2)
+      - All types heal equally well
+    answer: B
+    explanation: >-
+      **Type II** fractures through the **base of the dens** are the most common and have a high risk of **nonunion**
+      because of poor blood supply. They are common after falls in older adults.
 flashcards:
   - front: Atlas (C1) distinguishing features?
     back: No body, no spinous process; anterior and posterior arches with lateral masses

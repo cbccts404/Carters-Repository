@@ -116,6 +116,17 @@ quiz:
       - The ligamentum flavum is absent in the lumbar spine
     answer: B
     explanation: The **posterior longitudinal ligament** is narrow in the lumbar region, leaving the posterolateral anulus relatively unsupported.
+  - stem: A far-lateral (foraminal) disc herniation at L4–L5 compresses which nerve root?
+    choices:
+      - L2
+      - L3
+      - S1
+      - L5
+      - L4
+    answer: E
+    explanation: >-
+      A typical **posterolateral** L4–L5 herniation compresses the **traversing L5 root**, but a **far-lateral
+      (foraminal)** herniation compresses the **exiting root**, numbered for the upper vertebra: **L4**.
 flashcards:
   - front: Disc components?
     back: Anulus fibrosus (outer fibrocartilage) + nucleus pulposus (notochord remnant)

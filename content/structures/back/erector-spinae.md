@@ -75,6 +75,28 @@ quiz:
       - Semispinalis
     answer: C
     explanation: "From lateral to medial: **iliocostalis, longissimus, spinalis**."
+  - stem: What does bilateral contraction of erector spinae produce?
+    choices:
+      - Lateral flexion of the vertebral column
+      - Extension of the vertebral column and head
+      - Rotation of the trunk to the same side
+      - Flexion of the trunk
+      - Elevation of the scapulae
+    answer: B
+    explanation: >-
+      Acting **bilaterally**, erector spinae **extends** the vertebral column and head and controls flexion
+      eccentrically when bending forward. Acting **unilaterally**, it laterally flexes the column.
+  - stem: Which fascia encloses erector spinae and the other intrinsic back muscles?
+    choices:
+      - Prevertebral fascia
+      - Transversalis fascia
+      - Fascia lata
+      - Thoracolumbar fascia
+      - Endothoracic fascia
+    answer: D
+    explanation: >-
+      The **thoracolumbar fascia** encloses erector spinae and the other intrinsic back muscles. The intrinsic back
+      muscles are supplied by **dorsal rami**.
 flashcards:
   - front: Erector spinae columns?
     back: Iliocostalis (lateral), longissimus (intermediate), spinalis (medial)

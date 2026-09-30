@@ -84,6 +84,32 @@ quiz:
       - Intertransverse ligament
     answer: C
     explanation: The elastic **ligamentum flavum** joins adjacent **laminae**, forming part of the posterior wall of the canal.
+  - stem: >-
+      A 70-year-old man with diabetes has spinal stiffness. Radiographs show flowing ossification along the front of at
+      least four contiguous vertebrae, with preserved disc spaces and normal sacroiliac joints. Which ligament is
+      ossified?
+    choices:
+      - Posterior longitudinal ligament
+      - Anterior longitudinal ligament
+      - Ligamentum flavum
+      - Interspinous ligament
+      - Nuchal ligament
+    answer: B
+    explanation: >-
+      **DISH** is flowing ossification of the **anterior longitudinal ligament** over at least four contiguous
+      vertebrae, associated with diabetes and obesity, with preserved discs and SI joints (unlike ankylosing
+      spondylitis). Ossification of the PLL (OPLL) causes cervical myelopathy.
+  - stem: The supraspinous ligament expands in the neck as which structure?
+    choices:
+      - Tectorial membrane
+      - Transverse ligament of the atlas
+      - Nuchal ligament (ligamentum nuchae)
+      - Alar ligament
+      - Anterior atlanto-occipital membrane
+    answer: C
+    explanation: >-
+      The **supraspinous ligament** runs along the tips of the spinous processes and expands in the neck as the **nuchal
+      ligament**. The PLL continues above as the tectorial membrane.
 flashcards:
   - front: Needle layers in lumbar puncture?
     back: Skin, subcutaneous tissue, supraspinous ligament, interspinous ligament, ligamentum flavum, epidural space, dura, arachnoid, subarachnoid space

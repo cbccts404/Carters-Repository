@@ -109,6 +109,18 @@ quiz:
       - Tip of coccyx
     answer: D
     explanation: The dural sac and subarachnoid space extend to about **S2**, well below the end of the cord (L1–L2).
+  - stem: Before a lumbar puncture, which finding means a head CT should be done first?
+    choices:
+      - Neck stiffness
+      - Papilledema
+      - Fever
+      - Photophobia
+      - Headache
+    answer: B
+    explanation: >-
+      Obtain a **head CT before LP** when there are signs of raised intracranial pressure or a mass: **papilledema**,
+      focal deficits, altered consciousness, new seizure or immunocompromise. Don't delay antibiotics for imaging when
+      bacterial meningitis is suspected.
 flashcards:
   - front: Spinal epidural space contents?
     back: Fat and the internal vertebral venous plexus

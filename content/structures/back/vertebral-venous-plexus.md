@@ -77,6 +77,28 @@ quiz:
       - Melanoma
     answer: B
     explanation: '**Prostate cancer** classically produces **osteoblastic** (sclerotic) metastases; renal, thyroid and myeloma lesions are typically lytic.'
+  - stem: Which veins drain the vertebral bodies into the internal vertebral venous plexus?
+    choices:
+      - Intercostal veins
+      - Lumbar veins
+      - Azygos vein
+      - Basivertebral veins
+      - Hemiazygos vein
+    answer: D
+    explanation: >-
+      The **basivertebral veins** drain the vertebral bodies backward into the **internal (epidural) plexus**. The
+      intervertebral veins then carry blood out to the posterior intercostal (azygos), lumbar and lateral sacral veins.
+  - stem: Superiorly, the vertebral venous plexus communicates with which veins?
+    choices:
+      - Dural venous sinuses, through the foramen magnum
+      - Pulmonary veins
+      - Coronary sinus
+      - Portal vein directly
+      - Internal jugular vein only
+    answer: A
+    explanation: >-
+      The plexus extends from the sacrum to the skull and connects with the **dural venous sinuses through the foramen
+      magnum**. Because it is valveless, tumor cells can reach the spine and brain without passing through the lungs.
 flashcards:
   - front: Batson plexus?
     back: Valveless vertebral venous plexus connecting pelvic, abdominal, thoracic and cranial veins

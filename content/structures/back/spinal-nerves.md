@@ -81,6 +81,29 @@ quiz:
       - Plantar reflex
     answer: B
     explanation: The **patellar reflex** tests **L4** (with L3). The Achilles reflex tests S1.
+  - stem: White rami communicantes are found at which spinal levels?
+    choices:
+      - All levels, C1–Co1
+      - C1–C8 only
+      - T1–L2 only
+      - S2–S4 only
+      - L1–S5 only
+    answer: C
+    explanation: >-
+      **White rami** carry **preganglionic sympathetic** fibers and exist only at **T1–L2**, where the lateral horn is
+      present. **Gray rami** (postganglionic) join every spinal nerve.
+  - stem: What does the dorsal (posterior) ramus of a typical spinal nerve supply?
+    choices:
+      - The limb muscles
+      - The intercostal muscles
+      - The anterolateral abdominal wall
+      - The diaphragm
+      - The deep back muscles, facet joints and a strip of skin of the back
+    answer: E
+    explanation: >-
+      The **dorsal ramus** supplies the **intrinsic back muscles** (e.g. erector spinae), the **facet joints** and a
+      strip of skin of the back. The **ventral ramus** supplies the limbs and anterolateral trunk and forms the
+      plexuses.
 flashcards:
   - front: Spinal nerve count?
     back: 31 pairs — 8 C, 12 T, 5 L, 5 S, 1 Co

@@ -105,6 +105,31 @@ quiz:
       - Vertebral body
     answer: C
     explanation: The Scottie dog's **neck is the pars interarticularis**; a lucent "collar" indicates **spondylolysis**.
+  - stem: >-
+      A 68-year-old woman has back pain and neurogenic claudication. Lateral radiographs show a degenerative
+      spondylolisthesis. At which level is this most typical?
+    choices:
+      - L1 on L2
+      - L3 on L4
+      - L4 on L5
+      - L5 on S1
+      - T12 on L1
+    answer: C
+    explanation: >-
+      **Degenerative** spondylolisthesis (from facet arthropathy) typically occurs at **L4 on L5** in older adults,
+      especially women. **Isthmic** spondylolisthesis (from bilateral spondylolysis) typically occurs at **L5 on S1** in
+      younger patients.
+  - stem: The roughly sagittal orientation of the lumbar facet joints allows which movements?
+    choices:
+      - Flexion and extension, with little rotation
+      - Mostly rotation
+      - Rotation and lateral flexion only
+      - No movement
+      - Circumduction
+    answer: A
+    explanation: >-
+      Lumbar facets are oriented roughly **sagittally**, allowing **flexion and extension** but little rotation.
+      Thoracic facets lie roughly in the coronal plane, favoring rotation (limited by the ribs).
 flashcards:
   - front: Spondylolysis vs spondylolisthesis?
     back: "Spondylolysis: pars defect (stress fracture). Spondylolisthesis: forward slip of a vertebra"
