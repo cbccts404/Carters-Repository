@@ -1,0 +1,142 @@
+---
+/* Original schematic: common sites of referred visceral pain on simplified anterior and posterior body outlines.
+   Zones are approximate and overlap between people. Not to scale. */
+import Label from '../components/Label.astro';
+
+const A = 220; // anterior figure midline (patient's right on the viewer's left)
+const P = 580; // posterior figure midline (patient's right on the viewer's right)
+
+const torso = (c: number) =>
+  `M${c - 60} 132 Q${c} 124 ${c + 60} 132 Q${c + 76} 140 ${c + 76} 160 L${c + 68} 300 Q${c + 66} 380 ${c + 80} 430
+   L${c - 80} 430 Q${c - 66} 380 ${c - 68} 300 L${c - 76} 160 Q${c - 76} 140 ${c - 60} 132 Z`;
+const arm = (c: number, s: number) =>
+  `M${c + s * 74} 140 Q${c + s * 94} 146 ${c + s * 100} 170 L${c + s * 112} 300 L${c + s * 120} 400
+   Q${c + s * 112} 410 ${c + s * 104} 400 L${c + s * 90} 300 L${c + s * 72} 200 Z`;
+const leg = (c: number, s: number) => `M${c + s * 4} 430 L${c + s * 78} 430 L${c + s * 66} 500 L${c + s * 12} 500 Z`;
+
+// zones: [cx, cy, rx, ry] ellipses, or a path; n = legend number
+type Zone = { n: number; e?: [number, number, number, number]; d?: string };
+const zones: Zone[] = [
+  { n: 1, e: [A + 12, 192, 26, 30] },
+  { n: 1, e: [A, 98, 20, 7] },
+  { n: 1, d: `M${A + 88} 200 L${A + 98} 200 L${A + 114} 330 L${A + 104} 332 Z` },
+  { n: 2, e: [A - 60, 134, 16, 9] },
+  { n: 2, e: [A + 60, 134, 16, 9] },
+  { n: 2, e: [P - 60, 134, 16, 9] },
+  { n: 2, e: [P + 60, 134, 16, 9] },
+  { n: 3, e: [A, 246, 30, 18] },
+  { n: 4, e: [A - 38, 262, 20, 17] },
+  { n: 4, e: [P + 36, 204, 20, 22] },
+  { n: 5, e: [P, 252, 42, 13] },
+  { n: 6, e: [A, 302, 26, 17] },
+  { n: 7, e: [A - 36, 356, 14, 13] },
+  { n: 8, e: [A, 398, 32, 15] },
+  { n: 9, e: [P - 34, 292, 17, 17] },
+  { n: 9, e: [P + 34, 292, 17, 17] },
+  { n: 10, d: `M${A - 70} 300 L${A - 58} 298 L${A - 26} 424 L${A - 38} 428 Z` },
+];
+// where each number badge sits
+const badges: [number, number, number][] = [
+  [1, A + 46, 176], [1, A + 124, 318],
+  [2, A - 60, 116], [2, P + 60, 116],
+  [3, A + 40, 238], [4, A - 72, 256], [4, P + 70, 200], [5, P + 56, 252],
+  [6, A + 38, 304], [7, A - 62, 366], [8, A + 46, 404], [9, P - 66, 300], [10, A - 82, 330],
+];
+const legend = [
+  { n: 1, name: 'Heart (angina, MI)', where: 'Substernal, left arm, jaw (T1–T4)', to: 'heart' },
+  { n: 2, name: 'Diaphragm', where: 'Shoulder tip (C3–C5, phrenic n.); left = Kehr sign', to: 'diaphragm' },
+  { n: 3, name: 'Stomach, duodenum (foregut)', where: 'Epigastric', to: 'stomach' },
+  { n: 4, name: 'Gallbladder', where: 'RUQ or epigastric → right scapula', to: 'gallbladder' },
+  { n: 5, name: 'Pancreas', where: 'Epigastric, boring through to the back', to: 'pancreas' },
+  { n: 6, name: 'Small intestine, early appendicitis', where: 'Periumbilical (midgut)', to: 'small-intestine' },
+  { n: 7, name: 'Appendicitis, later', where: 'RLQ (McBurney point) once parietal peritoneum is inflamed', to: 'appendix' },
+  { n: 8, name: 'Distal colon (hindgut), bladder', where: 'Suprapubic', to: 'colon' },
+  { n: 9, name: 'Kidney', where: 'Flank, costovertebral angle', to: 'kidney' },
+  { n: 10, name: 'Ureter (stone)', where: 'Loin to groin (testis or labium)', to: 'ureter' },
+];
+const LX = 780;
+---
+
+<div class="scroll">
+  <svg viewBox="40 20 1270 520" role="img" aria-labelledby="rp-title rp-desc">
+    <title id="rp-title">Referred visceral pain</title>
+    <desc id="rp-desc">
+      Front and back body outlines with numbered zones of referred pain. 1: the heart refers pain to the substernal
+      region, left arm and jaw. 2: diaphragmatic irritation refers to the shoulder tip through C3–C5; on the left this
+      is the Kehr sign of splenic rupture. 3: the stomach and duodenum (foregut) refer to the epigastrium. 4: the
+      gallbladder refers to the right upper quadrant or epigastrium and to the right scapula. 5: the pancreas refers
+      to the epigastrium and through to the back. 6: the small intestine and early appendicitis refer to the
+      periumbilical region (midgut). 7: later appendicitis localizes to the right lower quadrant at McBurney point
+      once the parietal peritoneum is inflamed. 8: the distal colon (hindgut) and bladder refer to the suprapubic
+      region. 9: the kidney refers to the flank and costovertebral angle. 10: a ureteric stone causes pain from loin
+      to groin.
+    </desc>
+    <style>
+      .rp-body { fill: color-mix(in srgb, var(--text) 7%, var(--surface)); stroke: var(--muted); stroke-width: 1.5; }
+      .rp-zone { fill: color-mix(in srgb, var(--t-artery) 34%, transparent); stroke: var(--t-artery); stroke-width: 1.5; }
+      .rp-badge { fill: var(--t-artery); }
+      .rp-num { font-size: 11px; font-weight: 700; fill: var(--bg); text-anchor: middle; pointer-events: none; }
+      .rp-mid { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 4 5; }
+    </style>
+
+    <!-- body outlines -->
+    {
+      [A, P].map((c) => (
+        <g>
+          <circle class="rp-body" cx={c} cy="70" r="34" />
+          <rect class="rp-body" x={c - 14} y="100" width="28" height="30" />
+          <path class="rp-body" d={arm(c, -1)} />
+          <path class="rp-body" d={arm(c, 1)} />
+          <path class="rp-body" d={leg(c, -1)} />
+          <path class="rp-body" d={leg(c, 1)} />
+          <path class="rp-body" d={torso(c)} />
+          <line class="rp-mid" x1={c} y1="140" x2={c} y2="428" />
+        </g>
+      ))
+    }
+    <!-- scapulae and 12th ribs on the back, umbilicus on the front -->
+    {[-1, 1].map((s) => <path d={`M${P + s * 22} 160 L${P + s * 58} 156 L${P + s * 40} 226 Z`} fill="none" stroke="var(--muted)" stroke-width="1.2" />)}
+    {[-1, 1].map((s) => <path d={`M${P + s * 8} 282 Q${P + s * 40} 280 ${P + s * 60} 300`} fill="none" stroke="var(--muted)" stroke-width="1.2" />)}
+    <circle cx={A} cy="310" r="3" fill="var(--muted)"></circle>
+
+    <!-- zones -->
+    {zones.map((z) => (z.e ? <ellipse class="rp-zone" cx={z.e[0]} cy={z.e[1]} rx={z.e[2]} ry={z.e[3]} /> : <path class="rp-zone" d={z.d} />))}
+
+    <!-- number badges -->
+    {
+      badges.map(([n, x, y]) => (
+        <g>
+          <circle class="rp-badge" cx={x} cy={y} r="10" />
+          <text class="rp-num" x={x} y={y + 4}>
+            {n}
+          </text>
+        </g>
+      ))
+    }
+
+    <Label x={A} y={530} anchor="middle" size="sm">Anterior · patient's right ←</Label>
+    <Label x={P} y={530} anchor="middle" size="sm">Posterior · patient's right →</Label>
+
+    <!-- legend -->
+    {
+      legend.map((l, i) => {
+        const y = 56 + i * 46;
+        return (
+          <g>
+            <circle class="rp-badge" cx={LX - 18} cy={y - 4} r="10" />
+            <text class="rp-num" x={LX - 18} y={y}>
+              {l.n}
+            </text>
+            <Label x={LX} y={y} to={l.to}>
+              {l.name}
+            </Label>
+            <Label x={LX} y={y + 15} size="sm">
+              {l.where}
+            </Label>
+          </g>
+        );
+      })
+    }
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

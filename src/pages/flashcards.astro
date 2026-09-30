@@ -55,7 +55,10 @@ const total = atlas.structures.reduce((n, s) => n + s.data.flashcards.length, 0)
         <tbody></tbody>
       </table>
       <p class="small muted">Mastered = marked "know it" at least three times in a row.</p>
-      <p><button type="button" class="linkish danger" id="reset-btn" hidden>Reset flashcard progress</button></p>
+      <p class="small">
+        <a href={url('progress/')}>Back up or move progress</a>
+        <button type="button" class="linkish danger" id="reset-btn" hidden>Reset flashcard progress</button>
+      </p>
     </section>
   </section>
 

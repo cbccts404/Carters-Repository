@@ -75,6 +75,42 @@ quiz:
     explanation: >-
       The tibial nerve supplies the posterior leg muscles — **plantarflexion** (triceps surae) and **inversion** (tibialis
       posterior) — and the sole. Dorsiflexion and eversion are fibular nerve functions.
+  - stem: Which structure is the most posterior in the tarsal tunnel behind the medial malleolus?
+    choices:
+      - Tibialis posterior tendon
+      - Flexor digitorum longus tendon
+      - Posterior tibial artery
+      - Tibial nerve
+      - Flexor hallucis longus tendon
+    answer: E
+    explanation: >-
+      From anterior to posterior: **T**ibialis posterior, flexor **D**igitorum longus, posterior tibial **A**rtery and
+      **V**eins, tibial **N**erve, flexor **H**allucis longus ("Tom, Dick And Very Nervous Harry").
+  - stem: >-
+      A purely sensory nerve, found beside the small saphenous vein behind the lateral malleolus, is commonly used for
+      nerve biopsy. Which nerve is it?
+    choices:
+      - Saphenous nerve
+      - Superficial fibular nerve
+      - Sural nerve
+      - Medial plantar nerve
+      - Deep fibular nerve
+    answer: C
+    explanation: >-
+      The **sural nerve** (formed by the medial sural cutaneous branch of the tibial nerve and the fibular communicating
+      branch) is purely sensory to the lateral foot and heel, so it is used for **biopsy** (e.g. vasculitic neuropathy)
+      and as a nerve graft, leaving only a numb patch.
+  - stem: In tarsal tunnel syndrome, sensation over the heel is often preserved. Why?
+    choices:
+      - The heel is supplied by the saphenous nerve
+      - The medial calcaneal branches arise proximal to the tunnel
+      - The sural nerve supplies the entire heel
+      - The plantar nerves are purely motor
+      - Heel skin has no sensory innervation
+    answer: B
+    explanation: >-
+      The **medial calcaneal branches** of the tibial nerve arise **before** it passes under the flexor retinaculum, so
+      heel sensation can be spared while the sole and toes (medial and lateral plantar nerves) are numb.
 flashcards:
   - front: Terminal branches of the tibial nerve?
     back: Medial and lateral plantar nerves

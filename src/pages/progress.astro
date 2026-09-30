@@ -1,0 +1,132 @@
+---
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/atlas';
+---
+
+<Base title="Your progress" description="See your study progress and back it up or move it to another device.">
+  <p class="crumbs"><a href={url()}>Home</a> / Your progress</p>
+  <h1>Your progress</h1>
+  <p class="muted">
+    Quiz scores, flashcard reviews and your verify checklist are saved in this browser only. Back them up to a file
+    to keep them safe, or to move them to another phone or computer.
+  </p>
+
+  <div class="pg-stats" id="pg-stats" aria-live="polite">
+    <div class="card"><b id="s-q">0</b><span>questions answered</span></div>
+    <div class="card"><b id="s-acc">–</b><span>accuracy (latest attempt)</span></div>
+    <div class="card"><b id="s-sess">0</b><span>quiz sessions</span></div>
+    <div class="card"><b id="s-cards">0</b><span>flashcards studied</span></div>
+    <div class="card"><b id="s-mast">0</b><span>flashcards mastered</span></div>
+    <div class="card"><b id="s-checks">0</b><span>verify checks</span></div>
+  </div>
+  <p class="small">
+    <a href={url('quiz/')}>Quiz stats by region and system →</a>
+    <span class="muted" aria-hidden="true">&nbsp;·&nbsp;</span>
+    <a href={url('review/')}>Verify checklist →</a>
+  </p>
+
+  <h2>Back up</h2>
+  <p class="muted small">Downloads a small file you can keep, email to yourself, or import on another device.</p>
+  <p class="btn-row">
+    <button type="button" class="btn primary" id="export">Download backup</button>
+    <button type="button" class="btn" id="copy">Copy as text</button>
+  </p>
+  <p class="small" id="export-msg" role="status"></p>
+
+  <h2>Restore or move</h2>
+  <form id="import-form" class="pg-import">
+    <label class="small" for="file">Choose a backup file</label>
+    <input type="file" id="file" accept="application/json,.json" />
+    <details>
+      <summary class="small">…or paste the backup text</summary>
+      <textarea id="paste" rows="4" placeholder="Paste the copied backup here" aria-label="Backup text"></textarea>
+    </details>
+    <fieldset>
+      <legend class="small">When importing</legend>
+      <label class="pick">
+        <input type="radio" name="mode" value="merge" checked />
+        <span><b>Merge</b> with what's here — the newer result wins for each question, card or check</span>
+      </label>
+      <label class="pick">
+        <input type="radio" name="mode" value="replace" />
+        <span><b>Replace</b> everything here with the backup</span>
+      </label>
+    </fieldset>
+    <p><button type="submit" class="btn primary">Import</button></p>
+    <p class="small" id="import-msg" role="status"></p>
+  </form>
+</Base>
+
+<script>
+  import { applyBackup, countsOf, currentData, parseBackup, type Backup } from '../scripts/backup';
+  import { MASTERED_BOX } from '../scripts/progress';
+
+  const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
+  const plural = (n: number, w: string) => `${n} ${w}${n === 1 ? '' : 's'}`;
+
+  function showStats() {
+    const d = currentData();
+    const quiz = Object.values(d.progress.quiz) as unknown as { last: number }[];
+    const cards = Object.values(d.progress.cards) as unknown as { box: number }[];
+    $('s-q').textContent = String(quiz.length);
+    $('s-acc').textContent = quiz.length ? `${Math.round((100 * quiz.filter((r) => r.last === 1).length) / quiz.length)}%` : '–';
+    $('s-sess').textContent = String(d.progress.sessions.length);
+    $('s-cards').textContent = String(cards.length);
+    $('s-mast').textContent = String(cards.filter((c) => c.box >= MASTERED_BOX).length);
+    $('s-checks').textContent = String(Object.keys(d.verify).length);
+  }
+
+  const summary = (b: Pick<Backup, 'progress' | 'verify'>) => {
+    const c = countsOf(b);
+    return `${plural(c.questions, 'question')}, ${plural(c.cards, 'flashcard')} and ${plural(c.checks, 'verify check')}`;
+  };
+
+  $('export').addEventListener('click', () => {
+    const data = currentData();
+    const blob = new Blob([JSON.stringify(data, null, 1)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `anatomy-atlas-progress-${data.exported.slice(0, 10)}.json`;
+    document.body.append(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    $('export-msg').textContent = `Saved a backup of ${summary(data)}.`;
+  });
+
+  $('copy').addEventListener('click', async () => {
+    const data = currentData();
+    try {
+      await navigator.clipboard.writeText(JSON.stringify(data));
+      $('export-msg').textContent = `Copied ${summary(data)}. Paste it into "Restore or move" on the other device.`;
+    } catch {
+      $('export-msg').textContent = "Couldn't copy here — use Download backup instead.";
+    }
+  });
+
+  $('import-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const msg = $('import-msg');
+    const file = $<HTMLInputElement>('file').files?.[0];
+    const pasted = $<HTMLTextAreaElement>('paste').value.trim();
+    const mode = (new FormData(e.target as HTMLFormElement).get('mode') as 'merge' | 'replace') ?? 'merge';
+    if (!file && !pasted) {
+      msg.textContent = 'Choose a backup file or paste the backup text first.';
+      return;
+    }
+    try {
+      const backup = parseBackup(file ? await file.text() : pasted);
+      if (mode === 'replace' && !confirm(`Replace everything on this device with the backup (${summary(backup)})?`)) return;
+      const now = applyBackup(backup, mode);
+      const when = backup.exported ? ` from ${new Date(backup.exported).toLocaleDateString()}` : '';
+      msg.textContent = `Imported the backup${when}. This device now has ${plural(now.questions, 'question')}, ${plural(now.cards, 'flashcard')} and ${plural(now.checks, 'verify check')}.`;
+      $<HTMLInputElement>('file').value = '';
+      $<HTMLTextAreaElement>('paste').value = '';
+      showStats();
+    } catch (err) {
+      msg.textContent = (err as Error).message;
+    }
+  });
+
+  showStats();
+</script>

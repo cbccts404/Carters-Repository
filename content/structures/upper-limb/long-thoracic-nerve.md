@@ -99,6 +99,29 @@ quiz:
     explanation: >-
       The long thoracic nerve (C5–C7) and the dorsal scapular nerve (C5) arise **directly from the roots**. The
       superior trunk gives the suprascapular nerve and the nerve to subclavius.
+  - stem: Why is the long thoracic nerve so easily injured by blows to the lateral chest or during axillary surgery?
+    choices:
+      - It runs deep to serratus anterior, pressed against the ribs
+      - It passes through the quadrangular space
+      - It runs in the costal groove with the intercostal vessels
+      - It lies on the superficial (external) surface of serratus anterior
+      - It pierces pectoralis minor
+    answer: D
+    explanation: >-
+      The long thoracic nerve descends on the **superficial surface of serratus anterior** on the lateral chest wall, so
+      it is exposed to direct blows, heavy straps, chest tubes and axillary surgery.
+  - stem: A patient has an isolated long thoracic nerve injury. Which sensory deficit is expected?
+    choices:
+      - Numbness over the lateral chest wall
+      - No sensory loss
+      - Numbness of the medial arm
+      - Numbness over the inferior angle of the scapula
+      - Numbness of the axilla
+    answer: B
+    explanation: >-
+      The long thoracic nerve is **purely motor** (serratus anterior only), so injury causes medial scapular winging
+      without sensory loss. Medial arm and axillary numbness after axillary surgery comes from the **intercostobrachial
+      nerve**.
 flashcards:
   - front: Long thoracic nerve — roots and muscle?
     back: C5–C7 (from the roots); serratus anterior

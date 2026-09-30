@@ -99,6 +99,29 @@ quiz:
     explanation: >-
       From superior to inferior on the greater tubercle the insertions are supraspinatus (superior facet),
       **infraspinatus (middle facet)** and teres minor (inferior facet). Subscapularis inserts on the lesser tubercle.
+  - stem: Which nerve supplies infraspinatus?
+    choices:
+      - Suprascapular nerve
+      - Axillary nerve
+      - Upper subscapular nerve
+      - Thoracodorsal nerve
+      - Dorsal scapular nerve
+    answer: A
+    explanation: >-
+      The **suprascapular nerve (C5, C6)** supplies supraspinatus, then passes through the spinoglenoid notch to
+      infraspinatus. Teres minor, the other external rotator, is supplied by the axillary nerve.
+  - stem: Which bedside test best isolates infraspinatus?
+    choices:
+      - Empty-can (Jobe) test
+      - Lift-off (Gerber) test
+      - Resisted external rotation with the elbow at the side
+      - Speed test
+      - Hawkins–Kennedy test
+    answer: C
+    explanation: >-
+      Infraspinatus is the main **external rotator** and is tested by **resisted external rotation with the elbow at the
+      side**; a positive external rotation lag sign suggests a posterosuperior cuff tear. Empty-can tests supraspinatus,
+      lift-off tests subscapularis, Speed tests the biceps tendon, and Hawkins–Kennedy is an impingement sign.
 flashcards:
   - front: Infraspinatus — origin, insertion?
     back: Infraspinous fossa → middle facet of greater tubercle
@@ -106,6 +129,7 @@ flashcards:
     back: Suprascapular nerve (C5–C6); lateral rotation, stabilizes humeral head
   - front: Suprascapular notch vs spinoglenoid notch lesion?
     back: "Suprascapular notch: supraspinatus + infraspinatus. Spinoglenoid notch: infraspinatus only"
+diagrams: [rotator-cuff]
 related: [supraspinatus, teres-minor, subscapularis]
 images:
   - image: gray-412-scapular-muscles

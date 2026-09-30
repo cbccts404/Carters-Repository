@@ -1,0 +1,147 @@
+---
+/* Original schematic: right inguinal region seen from inside the abdomen (posterior view of the anterior wall,
+   peritoneum removed), as at laparoscopy. Midline on the viewer's left, lateral on the right. Not to scale. */
+import Label from '../components/Label.astro';
+
+type P = [number, number];
+const MID = 170;
+const ASIS: P = [700, 180];
+const TUB: P = [250, 440]; // pubic tubercle
+const lig = (x: number) => ASIS[1] + ((ASIS[0] - x) / (ASIS[0] - TUB[0])) * (TUB[1] - ASIS[1]); // y on the ligament
+const RECT = 282; // lateral border of rectus abdominis
+const ART_X = 458; // femoral artery at the ligament (mid-inguinal point)
+const VEIN_X = 420;
+const IEV_TOP: P = [RECT + 2, 170];
+const IEV_BASE: P = [ART_X + 2, lig(ART_X) - 12];
+const RING: P = [540, 244]; // deep inguinal ring
+const FEM: P = [396, lig(396) + 22]; // femoral ring
+const tri: P[] = [IEV_TOP, [IEV_BASE[0] - 4, lig(IEV_BASE[0] - 4)], [RECT, lig(RECT)]];
+const SUP: P = [TUB[0] + 42, TUB[1] - 40]; // superficial ring (projected)
+---
+
+<div class="scroll">
+  <svg viewBox="-230 20 1250 510" role="img" aria-labelledby="ig-title ig-desc">
+    <title id="ig-title">Inguinal region from inside (Hesselbach triangle)</title>
+    <desc id="ig-desc">
+      The right inguinal region viewed from inside the abdomen, with the midline on the left. The inguinal ligament
+      runs from the anterior superior iliac spine down to the pubic tubercle. The inferior epigastric vessels arise
+      from the external iliac artery just above the ligament and ascend medially to the lateral border of rectus
+      abdominis. The inguinal (Hesselbach) triangle is bounded by the inferior epigastric vessels laterally, the
+      rectus abdominis medially and the inguinal ligament inferiorly; direct hernias pass through it. The deep
+      inguinal ring lies lateral to the inferior epigastric vessels, above the middle of the ligament, where the
+      ductus deferens and testicular vessels enter; indirect hernias enter here. Below the ligament, the femoral ring
+      lies medial to the femoral vein; femoral hernias pass through it.
+    </desc>
+    <style>
+      .ig-bone { fill: color-mix(in srgb, var(--t-bone) 28%, var(--surface)); stroke: var(--t-bone); stroke-width: 2; }
+      .ig-lig { stroke: var(--t-ligament); stroke-width: 7; stroke-linecap: round; fill: none; }
+      .ig-rect { fill: color-mix(in srgb, var(--t-muscle) 16%, transparent); stroke: var(--t-muscle); stroke-width: 1.8; }
+      .ig-tri { fill: color-mix(in srgb, var(--t-space) 22%, transparent); stroke: var(--t-space); stroke-width: 1.6; stroke-dasharray: 6 4; }
+      .ig-art { stroke: var(--t-artery); stroke-width: 7; stroke-linecap: round; fill: none; }
+      .ig-vein { stroke: var(--t-vein); stroke-width: 9; stroke-linecap: round; fill: none; }
+      .ig-iea { stroke: var(--t-artery); stroke-width: 3.5; stroke-linecap: round; fill: none; }
+      .ig-iev { stroke: var(--t-vein); stroke-width: 2.5; stroke-linecap: round; fill: none; }
+      .ig-ring { fill: color-mix(in srgb, var(--bg) 75%, transparent); stroke: var(--t-space); stroke-width: 2.2; }
+      .ig-dd { stroke: var(--t-organ); stroke-width: 4; stroke-linecap: round; fill: none; }
+      .ig-tv { stroke: var(--t-vein); stroke-width: 2; fill: none; }
+      .ig-canal { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 3 5; fill: none; }
+      .ig-hernia { stroke: var(--bad); stroke-width: 3; fill: none; }
+      .ig-mid { stroke: var(--muted); stroke-width: 1.2; stroke-dasharray: 6 5; }
+    </style>
+    <defs>
+      <marker id="ig-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+        <path d="M0 0 L10 5 L0 10 Z" fill="var(--bad)"></path>
+      </marker>
+    </defs>
+
+    <line class="ig-mid" x1={MID} y1="30" x2={MID} y2="500"></line>
+
+    <!-- rectus abdominis and the superior pubic ramus -->
+    <path class="ig-rect" d={`M${MID + 2} 30 L${RECT} 30 L${RECT} ${lig(RECT) - 6} Q${RECT - 20} ${TUB[1] - 8} ${TUB[0] - 30} ${TUB[1] - 4} L${MID + 2} ${TUB[1] - 4} Z`}></path>
+    <path class="ig-bone" d={`M${MID} ${TUB[1] + 2} L${TUB[0]} ${TUB[1] + 4} Q380 ${FEM[1] + 20} 520 ${lig(520) + 60} L530 ${lig(530) + 86} Q390 ${FEM[1] + 50} ${TUB[0]} ${TUB[1] + 34} L${MID} ${TUB[1] + 34} Z`}></path>
+
+    <!-- Hesselbach triangle -->
+    <polygon class="ig-tri" points={tri.map((p) => p.join(',')).join(' ')}></polygon>
+
+    <!-- inguinal ligament and ASIS (farther from the viewer than the vessels) -->
+    <path class="ig-lig" d={`M${ASIS} L${TUB}`}></path>
+    <circle cx={ASIS[0]} cy={ASIS[1]} r="12" fill="var(--t-bone)"></circle>
+    <circle cx={TUB[0]} cy={TUB[1]} r="7" fill="var(--t-bone)"></circle>
+
+    <!-- external iliac vessels passing under the ligament to become the femoral vessels -->
+    <path class="ig-vein" d={`M${VEIN_X + 50} 30 Q${VEIN_X + 20} 200 ${VEIN_X} ${lig(VEIN_X)} L${VEIN_X - 14} 500`}></path>
+    <path class="ig-art" d={`M${ART_X + 52} 30 Q${ART_X + 24} 190 ${ART_X} ${lig(ART_X)} L${ART_X - 12} 500`}></path>
+
+    <!-- femoral ring -->
+    <ellipse class="ig-ring" cx={FEM[0]} cy={FEM[1]} rx="16" ry="11"></ellipse>
+
+
+    <!-- inguinal canal (in front of this plane) and superficial ring -->
+    <path class="ig-canal" d={`M${RING[0] - 16} ${RING[1] + 12} Q420 300 ${SUP[0] + 16} ${SUP[1] - 4}`}></path>
+    <ellipse cx={SUP[0]} cy={SUP[1]} rx="18" ry="10" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="3 3"></ellipse>
+
+    <!-- testicular vessels and ductus deferens meeting at the deep ring -->
+    <path class="ig-tv" d={`M640 30 Q610 150 ${RING[0] + 10} ${RING[1] - 8}`}></path>
+    <path class="ig-tv" d={`M652 30 Q622 154 ${RING[0] + 14} ${RING[1] - 3}`}></path>
+    <path class="ig-dd" d={`M${RING[0] - 8} ${RING[1] + 6} Q490 258 450 290 Q400 330 352 360 Q316 400 300 500`}></path>
+    <ellipse class="ig-ring" cx={RING[0]} cy={RING[1]} rx="22" ry="15"></ellipse>
+
+    <!-- inferior epigastric artery and vein -->
+    <path class="ig-iea" d={`M${IEV_BASE[0]} ${IEV_BASE[1]} Q400 220 ${IEV_TOP[0] + 4} ${IEV_TOP[1]}`}></path>
+    <path class="ig-iev" d={`M${IEV_BASE[0] - 12} ${IEV_BASE[1] + 10} Q392 230 ${IEV_TOP[0] - 2} ${IEV_TOP[1] + 6}`}></path>
+
+    <!-- hernia routes -->
+    <path class="ig-hernia" d={`M${RING[0] + 70} ${RING[1] - 70} Q${RING[0] + 30} ${RING[1] - 40} ${RING[0] + 8} ${RING[1] - 6}`} marker-end="url(#ig-arrow)"></path>
+    <path class="ig-hernia" d="M300 230 Q312 280 322 320" marker-end="url(#ig-arrow)"></path>
+    <path class="ig-hernia" d={`M${FEM[0] - 70} ${FEM[1] + 70} Q${FEM[0] - 30} ${FEM[1] + 50} ${FEM[0] - 8} ${FEM[1] + 8}`} marker-end="url(#ig-arrow)"></path>
+
+    <!-- leader lines -->
+    <g stroke="var(--muted)" stroke-width="1">
+      <line x1="754" y1="160" x2={ASIS[0] + 12} y2={ASIS[1] - 4}></line>
+      <line x1="754" y1="98" x2={RING[0] + 72} y2={RING[1] - 72}></line>
+      <line x1="754" y1="232" x2={RING[0] + 24} y2={RING[1]}></line>
+      <line x1="754" y1="48" x2="646" y2="44"></line>
+      <line x1="754" y1="286" x2={620} y2={lig(620)}></line>
+      <line x1="754" y1="330" x2="420" y2="234"></line>
+      <line x1="754" y1="380" x2={ART_X - 6} y2="420"></line>
+      <line x1="754" y1="428" x2={VEIN_X - 10} y2="460"></line>
+      <line x1="136" y1="70" x2="230" y2="70"></line>
+      <line x1="136" y1="210" x2="298" y2="226"></line>
+      <line x1="136" y1="278" x2="320" y2="300"></line>
+      <line x1="136" y1="360" x2="352" y2="394"></line>
+      <line x1="136" y1="408" x2={SUP[0] - 18} y2={SUP[1]}></line>
+      <line x1="136" y1="452" x2={TUB[0] - 6} y2={TUB[1]}></line>
+      <line x1="136" y1="498" x2={FEM[0] - 72} y2={FEM[1] + 72}></line>
+    </g>
+
+    <!-- labels (lateral) -->
+    <Label x={760} y={52} size="sm" to="spermatic-cord">Testicular vessels</Label>
+    <Label x={760} y={96} size="sm">Indirect hernia: through the</Label>
+    <Label x={760} y={110} size="sm">deep ring, lateral to the IEV</Label>
+    <Label x={760} y={164} size="sm" to="hip-bone">Anterior superior iliac spine</Label>
+    <Label x={760} y={236} to="inguinal-canal">Deep inguinal ring</Label>
+    <Label x={760} y={290} size="sm">Inguinal ligament</Label>
+    <Label x={760} y={334} size="sm" to="inferior-epigastric-artery">Inferior epigastric vessels (IEV)</Label>
+    <Label x={760} y={384} size="sm" to="femoral-artery">External iliac → femoral artery</Label>
+    <Label x={760} y={432} size="sm">External iliac → femoral vein</Label>
+
+    <!-- labels (medial) -->
+    <Label x={130} y={74} anchor="end" size="sm" to="rectus-abdominis">Rectus abdominis</Label>
+    <Label x={130} y={206} anchor="end" size="sm">Direct hernia: through the</Label>
+    <Label x={130} y={220} anchor="end" size="sm">triangle, medial to the IEV</Label>
+    <Label x={130} y={282} anchor="end" to="inguinal-triangle">Inguinal (Hesselbach) triangle</Label>
+    <Label x={130} y={298} anchor="end" size="sm">"RIP": Rectus, Inferior epigastrics,</Label>
+    <Label x={130} y={312} anchor="end" size="sm">Poupart (inguinal) ligament</Label>
+    <Label x={130} y={364} anchor="end" size="sm" to="ductus-deferens">Ductus deferens (to the pelvis)</Label>
+    <Label x={130} y={406} anchor="end" size="sm">Superficial ring</Label>
+    <Label x={130} y={420} anchor="end" size="sm">(in front of this plane)</Label>
+    <Label x={130} y={456} anchor="end" size="sm" to="bony-pelvis">Pubic tubercle</Label>
+    <Label x={130} y={492} anchor="end" size="sm">Femoral hernia: through the femoral</Label>
+    <Label x={130} y={506} anchor="end" size="sm">ring, medial to the femoral vein</Label>
+
+    <Label x={-220} y={40} size="sm">Right side, seen from inside the</Label>
+    <Label x={-220} y={54} size="sm">abdomen · midline ← · not to scale</Label>
+    <Label x={MID} y={522} anchor="middle" size="sm">midline</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

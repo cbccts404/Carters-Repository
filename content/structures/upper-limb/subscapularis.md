@@ -99,6 +99,30 @@ quiz:
     explanation: >-
       The **upper and lower subscapular nerves** (posterior cord) supply subscapularis. The lower subscapular nerve also
       supplies teres major, and the thoracodorsal nerve supplies latissimus dorsi.
+  - stem: >-
+      Ultrasound of a patient with a complete subscapularis tear shows the long head of biceps tendon out of the
+      intertubercular groove. In which direction is it usually displaced?
+    choices:
+      - Medially
+      - Laterally, over the greater tubercle
+      - Posteriorly, into the infraspinous fossa
+      - Distally, into the forearm
+    answer: A
+    explanation: >-
+      The subscapularis tendon forms part of the sling that holds the biceps tendon at the entrance of the groove. When
+      it tears, the long head of biceps can **subluxate or dislocate medially**.
+  - stem: Which exam finding suggests a subscapularis tear?
+    choices:
+      - Reduced passive external rotation
+      - Painful arc between 60° and 120° of abduction
+      - Positive drop-arm sign
+      - Increased passive external rotation compared with the other side
+      - Loss of both active and passive abduction
+    answer: D
+    explanation: >-
+      With subscapularis (the main internal rotator) torn, the shoulder shows **increased passive external rotation**,
+      weak internal rotation, and positive **lift-off** and **belly-press** tests. Reduced passive external rotation
+      suggests adhesive capsulitis.
 flashcards:
   - front: Subscapularis — origin, insertion?
     back: Subscapular fossa → lesser tubercle
@@ -106,6 +130,7 @@ flashcards:
     back: Upper and lower subscapular nerves (posterior cord); medial rotation and adduction
   - front: Tests for subscapularis?
     back: Lift-off (Gerber), belly-press, bear-hug
+diagrams: [rotator-cuff]
 related: [supraspinatus, infraspinatus, teres-minor]
 images:
   - image: gray-411-deep-chest-front-arm

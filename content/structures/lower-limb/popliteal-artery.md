@@ -79,6 +79,44 @@ quiz:
     explanation: >-
       **Popliteal aneurysms** are often **bilateral** and frequently associated with **abdominal aortic aneurysm**, so
       both should be screened.
+  - stem: Why is the popliteal artery so often injured in knee dislocations?
+    choices:
+      - It lies superficial to the tibial nerve
+      - It has no branches around the knee
+      - It is tethered above at the adductor hiatus and below at the soleal arch
+      - It passes through the knee joint cavity
+      - It is thin-walled like a vein
+    answer: C
+    explanation: >-
+      The popliteal artery is **fixed above (adductor hiatus) and below (soleal arch)**, so tibiofemoral dislocation
+      stretches or tears it, often as an intimal tear with thrombosis. It is also the **deepest** structure in the
+      fossa, against the femur and capsule.
+  - stem: The dorsalis pedis artery is the continuation of which artery?
+    choices:
+      - Anterior tibial artery
+      - Posterior tibial artery
+      - Fibular artery
+      - Lateral plantar artery
+      - Popliteal artery directly
+    answer: A
+    explanation: >-
+      The **anterior tibial artery** passes through the interosseous membrane into the anterior compartment and
+      continues on the dorsum of the foot as the **dorsalis pedis**. The posterior tibial pulse is felt behind the
+      medial malleolus.
+  - stem: >-
+      A 22-year-old runner has calf claudication with exercise. His pedal pulses weaken when he actively plantarflexes
+      against resistance. What is the most likely diagnosis?
+    choices:
+      - Chronic exertional compartment syndrome
+      - Atherosclerotic PAD of the superficial femoral artery
+      - Popliteal artery aneurysm
+      - Deep vein thrombosis
+      - Popliteal artery entrapment syndrome
+    answer: E
+    explanation: >-
+      In **popliteal artery entrapment**, an abnormal relationship with the **medial head of gastrocnemius** compresses
+      the artery, causing exertional claudication in young athletes, with pulses that diminish during active
+      plantarflexion.
 flashcards:
   - front: Popliteal artery begins and ends where?
     back: Adductor hiatus → lower border of popliteus (divides into anterior and posterior tibial)

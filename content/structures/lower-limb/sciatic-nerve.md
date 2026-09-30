@@ -83,6 +83,40 @@ quiz:
     explanation: >-
       Pain in the affected leg when the **opposite** leg is raised is **specific** for a herniated lumbar disc (usually a
       large central/axillary herniation); the ordinary SLR is sensitive but less specific.
+  - stem: Through which opening, and in relation to which muscle, does the sciatic nerve usually leave the pelvis?
+    choices:
+      - Greater sciatic foramen, below piriformis
+      - Greater sciatic foramen, above piriformis
+      - Lesser sciatic foramen, below obturator internus
+      - Obturator canal
+      - Under the inguinal ligament
+    answer: A
+    explanation: >-
+      The sciatic nerve (L4–S3) leaves the pelvis through the **greater sciatic foramen below piriformis**, then
+      descends deep to gluteus maximus midway between the greater trochanter and ischial tuberosity. The superior
+      gluteal nerve passes above piriformis.
+  - stem: To avoid the sciatic nerve, gluteal intramuscular injections should be given in which quadrant of the buttock?
+    choices:
+      - Lower medial
+      - Lower lateral
+      - Upper medial
+      - Upper outer
+    answer: D
+    explanation: >-
+      The sciatic nerve runs through the **lower medial** buttock, so gluteal injections go in the **upper outer
+      quadrant**. Injections placed low and medially can injure the nerve, often its common fibular division.
+  - stem: After complete transection of the sciatic nerve in the mid-thigh, which function remains intact?
+    choices:
+      - Ankle plantarflexion
+      - Sensation over the sole
+      - Sensation over the medial leg
+      - The ankle reflex
+      - Toe extension
+    answer: C
+    explanation: >-
+      Through its branches the sciatic nerve supplies **all muscles below the knee** and the skin of the leg and foot
+      **except the medial side**, which is supplied by the **saphenous nerve** (femoral). A complete lesion causes a
+      flail foot and loss of the ankle reflex.
 flashcards:
   - front: Roots of the sciatic nerve?
     back: L4–S3

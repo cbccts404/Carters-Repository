@@ -85,6 +85,45 @@ quiz:
     explanation: >-
       The **deep femoral (profunda) artery** gives the **medial circumflex femoral artery**, whose retinacular branches
       supply most of the femoral head.
+  - stem: A patient with long-standing diabetes has an ankle–brachial index of 1.5. How should this be interpreted?
+    choices:
+      - Normal arterial flow
+      - Mild peripheral artery disease
+      - Severe peripheral artery disease
+      - Noncompressible (calcified) vessels, so the test is unreliable
+      - Critical limb ischemia
+    answer: D
+    explanation: >-
+      An ABI above about **1.3–1.4** means the tibial arteries are **calcified and noncompressible**, common in diabetes
+      and CKD, so the ABI can't be interpreted. An ABI **≤ 0.90** confirms PAD.
+  - stem: >-
+      The day after a cardiac catheterization through the right femoral artery, a patient has a pulsatile groin mass
+      with a bruit. What is the most likely diagnosis?
+    choices:
+      - Femoral artery pseudoaneurysm
+      - Simple groin hematoma
+      - Inguinal lymphadenopathy
+      - Femoral hernia
+      - Lymphocele
+    answer: A
+    explanation: >-
+      A **pulsatile mass with a bruit** after femoral access is a **pseudoaneurysm**, usually treated with
+      ultrasound-guided thrombin injection. A simple hematoma isn't expansile or pulsatile; an AV fistula gives a
+      continuous bruit.
+  - stem: >-
+      Hours after femoral artery access, a patient develops back and flank pain and hypotension without an obvious groin
+      hematoma. What was the most likely problem with the puncture?
+    choices:
+      - It entered the femoral vein
+      - It was placed over the femoral head
+      - It was above the inguinal ligament
+      - It was lateral to the femoral nerve
+      - It entered the profunda femoris
+    answer: C
+    explanation: >-
+      A **high puncture above the inguinal ligament** enters the external iliac artery, where bleeding tracks into the
+      **retroperitoneum** and can't be compressed, causing back or flank pain and hypotension. Puncture below the
+      ligament allows compression against the femoral head.
 flashcards:
   - front: Where does the external iliac become the femoral artery?
     back: At the inguinal ligament (mid-inguinal point)

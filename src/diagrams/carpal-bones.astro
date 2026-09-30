@@ -1,0 +1,124 @@
+---
+/* Original schematic: right carpus, palmar (anterior) view, thumb on the viewer's left. Shapes are simplified.
+   Not to scale. */
+import Label from '../components/Label.astro';
+---
+
+<div class="scroll">
+  <svg viewBox="-230 20 1000 600" role="img" aria-labelledby="cb-title cb-desc">
+    <title id="cb-title">Carpal bones (right hand, palmar view)</title>
+    <desc id="cb-desc">
+      Palmar view of the right wrist with the thumb on the left. The proximal row, from lateral to medial, is the
+      scaphoid, lunate, triquetrum and pisiform; the distal row is the trapezium, trapezoid, capitate and hamate. The
+      radius articulates with the scaphoid and lunate; the ulna is separated from the carpus by the triangular
+      fibrocartilage complex. The flexor retinaculum spans from the scaphoid tubercle and trapezium to the pisiform
+      and hook of hamate, roofing the carpal tunnel, through which the median nerve passes. The ulnar nerve passes
+      through Guyon canal, between the pisiform and the hook of hamate, superficial to the retinaculum.
+    </desc>
+    <style>
+      .cb-bone { fill: color-mix(in srgb, var(--t-bone) 26%, var(--surface)); stroke: var(--t-bone); stroke-width: 2; }
+      .cb-prox { fill: color-mix(in srgb, var(--t-bone) 40%, var(--surface)); }
+      .cb-key { fill: color-mix(in srgb, var(--t-artery) 26%, var(--surface)); }
+      .cb-disc { fill: color-mix(in srgb, var(--t-joint) 45%, var(--surface)); stroke: var(--t-joint); stroke-width: 1.5; }
+      .cb-ret { fill: none; stroke: var(--t-ligament); stroke-width: 5; stroke-dasharray: 10 6; stroke-linecap: round; }
+      .cb-nerve { stroke: var(--t-nerve); stroke-width: 3; stroke-linecap: round; fill: none; opacity: 0.9; }
+      .cb-letter { font-size: 15px; font-weight: 700; fill: var(--text); text-anchor: middle; pointer-events: none; }
+    </style>
+
+    <!-- metacarpals -->
+    <path class="cb-bone" d="M104 300 L134 314 L92 170 Q86 150 70 156 Q58 162 62 178 Z"></path>
+    <path class="cb-bone" d="M198 288 L236 288 L222 72 Q216 56 204 60 Q194 64 196 80 Z"></path>
+    <path class="cb-bone" d="M254 280 L298 280 L290 52 Q282 38 270 42 Q260 46 262 62 Z"></path>
+    <path class="cb-bone" d="M310 284 L344 288 L346 70 Q342 56 332 58 Q322 62 324 76 Z"></path>
+    <path class="cb-bone" d="M354 292 L388 300 L408 96 Q408 80 396 80 Q386 82 384 96 Z"></path>
+
+    <!-- radius, ulna and the TFCC -->
+    <path class="cb-bone" d="M112 452 Q110 470 134 480 L326 482 L330 600 L166 600 Q150 540 118 500 Q100 476 112 452 Z"></path>
+    <path class="cb-bone" d="M356 500 L430 496 Q446 484 448 470 Q460 480 452 504 L446 600 L366 600 Z"></path>
+    <path class="cb-disc" d="M332 482 L440 474 L432 494 L352 498 Z"></path>
+
+    <!-- distal row: trapezium, trapezoid, capitate, hamate -->
+    <path class="cb-bone cb-prox" d="M102 318 Q98 300 118 294 L178 302 Q192 312 188 336 L180 372 Q150 380 128 366 Q108 352 102 318 Z"></path>
+    <path class="cb-bone cb-prox" d="M192 296 L240 294 Q248 318 242 346 L196 350 Q186 324 192 296 Z"></path>
+    <path class="cb-bone cb-prox" d="M250 288 L304 290 Q312 330 300 360 Q296 388 276 396 Q252 396 246 372 Q240 330 250 288 Z"></path>
+    <path class="cb-bone cb-key" d="M310 292 L378 304 Q390 330 380 360 L332 392 Q306 384 306 356 Z"></path>
+    <!-- hook of hamate (projects palmarward) -->
+    <ellipse cx="344" cy="354" rx="13" ry="11" fill="none" stroke="var(--t-bone)" stroke-width="3"></ellipse>
+
+    <!-- proximal row: scaphoid, lunate, triquetrum, pisiform -->
+    <path class="cb-bone cb-key" d="M128 440 Q116 420 134 398 Q150 380 170 378 Q188 372 196 356 Q212 350 232 366 Q238 388 222 410 Q198 426 186 446 Q164 462 128 440 Z"></path>
+    <path class="cb-bone cb-key" d="M232 412 Q250 388 286 396 Q300 420 296 452 Q268 470 238 458 Q226 436 232 412 Z"></path>
+    <path class="cb-bone" d="M302 400 Q336 382 372 402 Q382 430 360 456 Q330 466 304 456 Q296 430 302 400 Z"></path>
+    <circle class="cb-bone cb-prox" cx="376" cy="428" r="21"></circle>
+
+    <!-- flexor retinaculum (roof of the carpal tunnel) from scaphoid tubercle/trapezium to pisiform/hook of hamate -->
+    <path class="cb-ret" d="M142 372 Q250 340 356 372"></path>
+
+    <!-- median nerve through the tunnel; ulnar nerve through Guyon canal -->
+    <path class="cb-nerve" d="M254 610 Q256 480 252 380 Q250 330 246 260"></path>
+    <path class="cb-nerve" d="M396 610 Q372 500 358 420 Q352 380 360 340 Q366 300 376 262"></path>
+
+    <!-- initials on the bones -->
+    <text class="cb-letter" x="176" y="414">S</text>
+    <text class="cb-letter" x="264" y="434">L</text>
+    <text class="cb-letter" x="330" y="432">T</text>
+    <text class="cb-letter" x="382" y="433">P</text>
+    <text class="cb-letter" x="144" y="344">T</text>
+    <text class="cb-letter" x="218" y="330">T</text>
+    <text class="cb-letter" x="274" y="344">C</text>
+    <text class="cb-letter" x="360" y="324">H</text>
+
+    <!-- leader lines -->
+    <g stroke="var(--muted)" stroke-width="1">
+      <line x1="40" y1="420" x2="150" y2="420"></line>
+      <line x1="40" y1="330" x2="112" y2="330"></line>
+      <line x1="40" y1="262" x2="208" y2="318"></line>
+      <line x1="40" y1="560" x2="150" y2="560"></line>
+      <line x1="40" y1="200" x2="244" y2="280"></line>
+      <line x1="40" y1="382" x2="150" y2="372"></line>
+      <line x1="40" y1="490" x2="244" y2="448"></line>
+      <line x1="460" y1="400" x2="352" y2="410"></line>
+      <line x1="460" y1="452" x2="396" y2="436"></line>
+      <line x1="460" y1="340" x2="296" y2="340"></line>
+      <line x1="460" y1="296" x2="370" y2="310"></line>
+      <line x1="460" y1="370" x2="356" y2="358"></line>
+      <line x1="460" y1="508" x2="400" y2="486"></line>
+      <line x1="460" y1="560" x2="444" y2="560"></line>
+      <line x1="460" y1="250" x2="372" y2="274"></line>
+    </g>
+
+    <!-- labels (lateral / thumb side) -->
+    <Label x={34} y={424} anchor="end" to="scaphoid">Scaphoid</Label>
+    <Label x={34} y={438} anchor="end" size="sm">most fractured carpal; snuffbox</Label>
+    <Label x={34} y={452} anchor="end" size="sm">tenderness; proximal pole AVN risk</Label>
+    <Label x={34} y={334} anchor="end">Trapezium</Label>
+    <Label x={34} y={266} anchor="end">Trapezoid</Label>
+    <Label x={34} y={204} anchor="end" size="sm" to="median-nerve">Median nerve (in the tunnel)</Label>
+    <Label x={34} y={378} anchor="end" size="sm" to="carpal-tunnel">Flexor retinaculum</Label>
+    <Label x={34} y={392} anchor="end" size="sm">(roof of the carpal tunnel)</Label>
+    <Label x={34} y={564} anchor="end" to="radius">Radius</Label>
+    <Label x={34} y={578} anchor="end" size="sm">radial styloid is the more distal</Label>
+
+    <!-- labels (medial / little finger side) -->
+    <Label x={34} y={494} anchor="end">Lunate</Label>
+    <Label x={34} y={508} anchor="end" size="sm">most dislocated carpal (palmar);</Label>
+    <Label x={34} y={522} anchor="end" size="sm">AVN = Kienböck disease</Label>
+    <Label x={466} y={404}>Triquetrum</Label>
+    <Label x={466} y={456} size="sm">Pisiform (sesamoid in FCU)</Label>
+    <Label x={466} y={344}>Capitate</Label>
+    <Label x={466} y={300}>Hamate</Label>
+    <Label x={466} y={374} size="sm">Hook of hamate: fractures in</Label>
+    <Label x={466} y={388} size="sm">golf, baseball; Guyon canal edge</Label>
+    <Label x={466} y={512} size="sm">TFCC (triangular fibrocartilage)</Label>
+    <Label x={466} y={564} to="ulna">Ulna</Label>
+    <Label x={466} y={254} size="sm" to="ulnar-nerve">Ulnar nerve (Guyon canal,</Label>
+    <Label x={466} y={268} size="sm">between pisiform and hook)</Label>
+
+    <Label x={-220} y={40} size="sm">Right hand, palmar view · thumb ←</Label>
+    <Label x={-220} y={54} size="sm">Not to scale</Label>
+    <Label x={466} y={40} size="sm">Lateral → medial: proximal row S L T P,</Label>
+    <Label x={466} y={54} size="sm">distal row T T C H ("Some Lovers Try</Label>
+    <Label x={466} y={68} size="sm">Positions That They Can't Handle")</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

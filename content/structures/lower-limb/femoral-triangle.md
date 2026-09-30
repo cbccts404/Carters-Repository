@@ -81,6 +81,41 @@ quiz:
       A lump **below the inguinal ligament** and **inferolateral to the pubic tubercle** in an older woman with bowel
       obstruction is an **incarcerated femoral hernia** — the groin hernia most prone to strangulation, needing urgent
       surgery.
+  - stem: Which muscle forms the medial boundary of the femoral triangle?
+    choices:
+      - Adductor longus
+      - Sartorius
+      - Pectineus
+      - Gracilis
+      - Iliopsoas
+    answer: A
+    explanation: >-
+      The femoral triangle is bounded by the **inguinal ligament** (base), the medial border of **sartorius** (lateral)
+      and the medial border of **adductor longus** (medial). Iliopsoas, pectineus and adductor longus form its floor.
+  - stem: Which structure forms the medial boundary of the femoral ring, the opening of the femoral canal?
+    choices:
+      - Inguinal ligament
+      - Pectineal ligament
+      - Lacunar ligament
+      - Femoral vein
+      - Adductor longus
+    answer: C
+    explanation: >-
+      The femoral ring is bounded by the inguinal ligament (anterior), the pectineal ligament (posterior), the **lacunar
+      ligament (medial)** and the femoral vein (lateral). The rigid, narrow ring explains why femoral hernias
+      strangulate so often.
+  - stem: Where should the needle be placed to cannulate the femoral vein?
+    choices:
+      - Just lateral to the femoral pulse, above the inguinal ligament
+      - Directly through the femoral artery
+      - At the apex of the femoral triangle
+      - Just medial to the femoral pulse, below the inguinal ligament
+      - Lateral to the femoral nerve
+    answer: D
+    explanation: >-
+      From lateral to medial the triangle contains the **N**erve, **A**rtery, **V**ein, **E**mpty space (femoral canal)
+      and **L**ymphatics (NAVEL). The vein lies **just medial to the arterial pulse**, and puncture should be **below**
+      the inguinal ligament.
 flashcards:
   - front: Boundaries of the femoral triangle?
     back: Inguinal ligament (superior), sartorius (lateral), adductor longus (medial)

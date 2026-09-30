@@ -93,6 +93,7 @@ flashcards:
     back: Ureter passes under the uterine artery (female) or ductus deferens (male)
   - front: Obstructing stone with fever — management?
     back: Emergency decompression (stent or nephrostomy) + antibiotics
+diagrams: [referred-pain]
 related: [kidney, psoas-major]
 images:
   - image: gray-1121-posterior-abdominal-wall

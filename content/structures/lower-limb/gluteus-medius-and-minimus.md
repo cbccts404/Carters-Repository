@@ -76,6 +76,45 @@ quiz:
     explanation: >-
       Hip abduction is mainly **L5** (superior gluteal nerve L4–S1). An L5 radiculopathy can cause a Trendelenburg sign
       along with weak great toe extension and ankle dorsiflexion.
+  - stem: Which nerve supplies gluteus medius and gluteus minimus?
+    choices:
+      - Inferior gluteal nerve
+      - Femoral nerve
+      - Superior gluteal nerve
+      - Obturator nerve
+      - Sciatic nerve
+    answer: C
+    explanation: >-
+      The **superior gluteal nerve (L4–S1)** runs between gluteus medius and minimus and also supplies tensor fasciae
+      latae. The inferior gluteal nerve supplies gluteus maximus.
+  - stem: >-
+      A patient with a weak left gluteus medius walks by lurching the trunk sideways each time the left foot is on the
+      ground. Toward which side does the trunk lurch?
+    choices:
+      - Toward the left (affected) side
+      - Toward the right side
+      - Forward
+      - Backward
+    answer: A
+    explanation: >-
+      Leaning the trunk **toward the weak stance side** moves the center of gravity over the hip, reducing the abductor
+      force needed. This is the compensated Trendelenburg gait. The uncompensated sign is the **opposite** side of the
+      pelvis dropping.
+  - stem: >-
+      A 52-year-old woman has lateral hip pain that is worse when she lies on that side or stands on one leg. There is
+      tenderness over the greater trochanter, and groin pain and hip rotation are normal. What is the most likely
+      diagnosis?
+    choices:
+      - Hip osteoarthritis
+      - Meralgia paresthetica
+      - L5 radiculopathy
+      - Gluteal tendinopathy (greater trochanteric pain syndrome)
+      - Femoral neck stress fracture
+    answer: D
+    explanation: >-
+      **Gluteal tendinopathy** (greater trochanteric pain syndrome) affects the medius and minimus tendons at the
+      greater trochanter, often with bursitis, and is common in middle-aged women. Hip OA typically causes **groin**
+      pain with loss of internal rotation.
 flashcards:
   - front: Nerve to gluteus medius and minimus?
     back: Superior gluteal nerve (L4–S1)

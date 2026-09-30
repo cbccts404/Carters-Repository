@@ -132,6 +132,18 @@ quiz:
     explanation: >-
       The **recurrent branch** supplies abductor pollicis brevis, opponens pollicis and the superficial head of FPB.
       Injuring it causes loss of opposition. The palmar cutaneous branch is purely sensory.
+  - stem: In carpal tunnel syndrome, sensation over the thenar eminence is usually normal. Why?
+    choices:
+      - The thenar skin is supplied by the radial nerve
+      - The recurrent (thenar) branch is purely sensory
+      - The ulnar nerve supplies the thenar skin through Guyon's canal
+      - The palmar cutaneous branch of the median nerve passes superficial to the flexor retinaculum
+      - Sensory fibres are resistant to compression
+    answer: D
+    explanation: >-
+      The **palmar cutaneous branch** arises proximal to the flexor retinaculum and passes **superficial** to it, so it
+      isn't compressed in the tunnel. Reduced thenar sensation points to a more proximal lesion (e.g. pronator
+      syndrome). The recurrent branch is motor to the thenar muscles.
 flashcards:
   - front: Carpal tunnel contents?
     back: Median nerve + 9 tendons (4 FDS, 4 FDP, 1 FPL)
@@ -141,6 +153,7 @@ flashcards:
     back: Ulnar nerve and artery (Guyon's canal), palmar cutaneous branch of median nerve, palmaris longus tendon
   - front: Systemic conditions associated with carpal tunnel syndrome?
     back: Pregnancy, hypothyroidism, diabetes, rheumatoid arthritis, acromegaly, amyloidosis
+diagrams: [carpal-bones]
 related: [median-nerve, wrist-joint]
 images:
   - image: gray-1233-flexor-sheaths

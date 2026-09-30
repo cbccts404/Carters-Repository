@@ -130,6 +130,29 @@ quiz:
     explanation: >-
       The Y-shaped **iliofemoral ligament** is the strongest ligament in the body and resists hyperextension, which
       lets us stand upright with minimal muscle work.
+  - stem: Which newborn screening tests are used for developmental dysplasia of the hip?
+    choices:
+      - Thomas and FABER tests
+      - Barlow and Ortolani tests
+      - Trendelenburg test
+      - Log-roll test
+      - Straight-leg raise
+    answer: B
+    explanation: >-
+      **Barlow** (attempts to dislocate a reduced hip) and **Ortolani** (reduces a dislocated hip with a clunk) are the
+      newborn screening tests. Risk factors are breech presentation, female sex, being first-born and family history.
+      Ultrasound is used before about 4–6 months and a Pavlik harness is the usual treatment.
+  - stem: Which hip movement is usually lost first in hip osteoarthritis?
+    choices:
+      - Flexion
+      - Abduction
+      - Internal rotation
+      - Extension
+      - External rotation
+    answer: C
+    explanation: >-
+      **Loss of internal rotation** is the earliest and most characteristic finding in hip OA, along with groin (or
+      anterior thigh/knee) pain worse with activity.
 flashcards:
   - front: Position of the leg in posterior hip dislocation?
     back: Shortened, flexed, adducted, internally rotated

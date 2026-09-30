@@ -89,6 +89,45 @@ quiz:
       **Pain out of proportion** and **pain with passive stretch** (here of the anterior compartment muscles) are the
       earliest signs of **compartment syndrome**. Pulses are usually preserved until late, so their presence does not
       exclude it.
+  - stem: >-
+      A car bumper strikes the lateral side of a pedestrian's knee. A cross-table lateral radiograph shows a fat–fluid
+      level in the suprapatellar pouch. What injury is most likely?
+    choices:
+      - ACL tear without fracture
+      - Lateral tibial plateau fracture
+      - Patellar dislocation
+      - Osgood–Schlatter disease
+      - Popliteal cyst rupture
+    answer: B
+    explanation: >-
+      A **fat–fluid level (lipohemarthrosis)** means marrow fat has entered the joint through an **intra-articular
+      fracture**. A valgus "bumper" injury typically fractures the **lateral tibial plateau**; CT is used to plan
+      treatment.
+  - stem: >-
+      A military recruit has shin pain with running. Which finding suggests a tibial stress fracture rather than medial
+      tibial stress syndrome ("shin splints")?
+    choices:
+      - Diffuse tenderness along the posteromedial tibial border
+      - Pain that improves with rest
+      - Bilateral symptoms
+      - Focal, point tenderness on the tibia
+      - Pain only at the start of a run
+    answer: D
+    explanation: >-
+      **Shin splints** cause **diffuse** tenderness along the posteromedial border. **Focal** point tenderness,
+      especially over the anterior cortex, suggests a **stress fracture**, which may need MRI because early radiographs
+      can be normal.
+  - stem: Why are tibial shaft fractures so often open fractures?
+    choices:
+      - The anteromedial surface of the tibia is subcutaneous
+      - The tibia is surrounded by thick muscle
+      - The fibula displaces through the skin
+      - The tibia has a poor blood supply
+      - The tibial nerve lies directly under the skin
+    answer: A
+    explanation: >-
+      The **anteromedial surface and anterior border (shin) are subcutaneous**, so fragments easily breach the skin.
+      Open fractures need antibiotics, tetanus prophylaxis and surgical debridement.
 flashcards:
   - front: Insertion of the patellar ligament?
     back: Tibial tuberosity

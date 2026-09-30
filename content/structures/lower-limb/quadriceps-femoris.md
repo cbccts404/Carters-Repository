@@ -78,6 +78,44 @@ quiz:
     explanation: >-
       **Rectus femoris** arises from the pelvis (AIIS), so it crosses the hip as well as the knee; the vasti arise from
       the femur and act only on the knee.
+  - stem: The straight head of rectus femoris arises from which landmark?
+    choices:
+      - Anterior superior iliac spine
+      - Anterior inferior iliac spine
+      - Greater trochanter
+      - Linea aspera
+      - Ischial tuberosity
+    answer: B
+    explanation: >-
+      Rectus femoris arises by a **straight head from the AIIS** and a reflected head from above the acetabulum. Because
+      it crosses both the hip and knee, it flexes the hip as well as extending the knee. Sartorius arises from the ASIS.
+  - stem: >-
+      Six weeks after a hard knee to the anterior thigh, a soccer player has a firm, tender mass in the quadriceps.
+      Radiographs show calcification within it. What is the most likely diagnosis?
+    choices:
+      - Osteosarcoma
+      - Quadriceps tendon rupture
+      - Myositis ossificans
+      - Stress fracture of the femur
+      - Abscess
+    answer: C
+    explanation: >-
+      **Myositis ossificans** is heterotopic bone forming in the hematoma after a **quadriceps contusion** ("charley
+      horse"). Early gentle knee flexion helps prevent it.
+  - stem: >-
+      A 24-year-old basketball player lands from a jump, feels a pop, and can't do a straight-leg raise. There is a gap
+      below the patella, and the patella rides high. Which structure is ruptured?
+    choices:
+      - Quadriceps tendon
+      - Medial patellofemoral ligament
+      - Anterior cruciate ligament
+      - Patellar ligament
+      - Iliotibial band
+    answer: D
+    explanation: >-
+      A gap **below** the patella with a high-riding patella in a **younger athlete** indicates **patellar ligament
+      rupture**. Quadriceps tendon rupture (gap above the patella) is more typical after 40 and with risk factors such
+      as fluoroquinolones or steroids. Both need early surgical repair.
 flashcards:
   - front: Four heads of quadriceps?
     back: Rectus femoris, vastus lateralis, vastus medialis, vastus intermedius

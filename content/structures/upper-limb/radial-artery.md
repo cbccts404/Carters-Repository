@@ -110,6 +110,29 @@ quiz:
     explanation: >-
       The radial artery forms most of the **deep palmar arch**, joined by the deep palmar branch of the ulnar artery. The
       superficial arch is formed mainly by the [[ulnar-artery]].
+  - stem: At the wrist, the radial artery crosses the floor of which region?
+    choices:
+      - Carpal tunnel
+      - Guyon's canal
+      - Anatomical snuffbox
+      - Cubital fossa
+      - Thenar space
+    answer: C
+    explanation: >-
+      The radial artery curves dorsally around the lateral carpus and crosses the floor of the **anatomical snuffbox**
+      over the scaphoid and trapezium, then passes between the heads of the first dorsal interosseous muscle to form the
+      deep palmar arch.
+  - stem: In the proximal forearm, the radial artery lies deep to which muscle?
+    choices:
+      - Brachioradialis
+      - Pronator teres
+      - Flexor carpi radialis
+      - Flexor digitorum superficialis
+      - Supinator
+    answer: A
+    explanation: >-
+      The radial artery runs **deep to brachioradialis** proximally, then becomes superficial in the distal forearm,
+      where it lies lateral to the flexor carpi radialis tendon (the pulse point).
 flashcards:
   - front: Radial artery — origin and main palmar arch?
     back: Brachial artery (cubital fossa); deep palmar arch

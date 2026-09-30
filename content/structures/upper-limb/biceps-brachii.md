@@ -152,6 +152,17 @@ quiz:
     explanation: >-
       The long head arises from the **supraglenoid tubercle** and superior labrum. The short head arises from the
       coracoid process. The infraglenoid tubercle is the origin of the long head of triceps.
+  - stem: The biceps reflex tests which spinal segments and which peripheral nerve?
+    choices:
+      - C6–C7, radial nerve
+      - C5–C6, musculocutaneous nerve
+      - C7–C8, median nerve
+      - C8–T1, ulnar nerve
+      - C5–C6, axillary nerve
+    answer: B
+    explanation: >-
+      Biceps brachii is supplied by the **musculocutaneous nerve (C5, C6)**, and the biceps reflex tests **C5–C6**. The
+      triceps reflex tests C7 (radial nerve) and the brachioradialis reflex C6 (radial nerve).
 flashcards:
   - front: Biceps brachii — origins?
     back: "Long head: supraglenoid tubercle; short head: coracoid process"

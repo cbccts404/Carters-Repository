@@ -163,6 +163,20 @@ quiz:
     explanation: >-
       The **rotator cuff** muscles compress the humeral head into the glenoid throughout motion. The labrum,
       ligaments and arch are static stabilizers.
+  - stem: >-
+      After an anterior shoulder dislocation, MRI shows a tear of the anteroinferior glenoid labrum. What is this lesion
+      called?
+    choices:
+      - Hill–Sachs lesion
+      - SLAP lesion
+      - Bankart lesion
+      - Reverse Hill–Sachs lesion
+      - Calcific tendinitis
+    answer: C
+    explanation: >-
+      A **Bankart lesion** is an anteroinferior labral tear (± glenoid rim fracture, a "bony Bankart") after anterior
+      dislocation. The **Hill–Sachs lesion** is the matching impaction of the posterolateral humeral head. A reverse
+      Hill–Sachs follows posterior dislocation; a SLAP lesion is a superior labral tear.
 flashcards:
   - front: Most common direction of shoulder dislocation and mechanism?
     back: Anterior (~95%); abduction + external rotation
@@ -174,6 +188,7 @@ flashcards:
     back: "Capsulitis: active AND passive ROM lost. Cuff tear: active lost, passive preserved"
   - front: Weakest part of the shoulder capsule?
     back: Inferior (no rotator cuff support)
+diagrams: [rotator-cuff]
 related: [humerus, scapula, supraspinatus, axillary-nerve]
 images:
   - image: gray-326-shoulder-joint

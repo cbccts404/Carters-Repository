@@ -108,6 +108,46 @@ quiz:
     explanation: >-
       From anterior to posterior: **Tibialis posterior, flexor Digitorum longus, posterior tibial Artery and Vein, tibial
       Nerve, flexor Hallucis longus** — the pulse is felt between the tendons in front and the nerve behind.
+  - stem: In which position is the ankle joint most stable, and why?
+    choices:
+      - Plantarflexion, because tibialis posterior is taut
+      - Dorsiflexion, because the wider anterior part of the talus fills the mortise
+      - Inversion, because the anterior talofibular ligament is taut
+      - Eversion, because the deltoid ligament is slack
+      - Neutral, because the syndesmosis relaxes
+    answer: B
+    explanation: >-
+      The trochlea of the talus is **wider anteriorly**, so in **dorsiflexion** it wedges into the mortise and the joint
+      is most stable. In plantarflexion the narrower posterior talus sits loosely, which is why most sprains happen with
+      the foot plantarflexed and inverted.
+  - stem: >-
+      With an eversion injury of the ankle, the medial malleolus often fractures instead of the medial ligament tearing.
+      Which ligament is this?
+    choices:
+      - Anterior talofibular ligament
+      - Calcaneofibular ligament
+      - Deltoid (medial) ligament
+      - Posterior talofibular ligament
+      - Anterior inferior tibiofibular ligament
+    answer: C
+    explanation: >-
+      The **deltoid ligament** is strong and fan-shaped, running from the medial malleolus to the navicular, talus and
+      calcaneus, and resists **eversion**. Because it is so strong, the medial malleolus often fractures before it
+      tears. The lateral ligaments (ATFL, CFL, PTFL) resist inversion.
+  - stem: >-
+      A football player's foot is forcibly externally rotated. He has pain above the ankle over the front of the distal
+      tibia and fibula, and squeezing the calf at mid-leg reproduces the pain. Which structure is injured?
+    choices:
+      - Anterior talofibular ligament
+      - Calcaneofibular ligament
+      - Achilles tendon
+      - Deltoid ligament
+      - Distal tibiofibular syndesmosis
+    answer: E
+    explanation: >-
+      A **high ankle sprain** injures the **distal tibiofibular syndesmosis** (anterior inferior tibiofibular ligament)
+      with an external-rotation mechanism. The squeeze and external-rotation tests are positive, and recovery is slower
+      than for a lateral sprain.
 flashcards:
   - front: Ottawa ankle rules?
     back: Bony tenderness at the posterior edge/tip of either malleolus (distal 6 cm), or inability to bear weight for 4 steps

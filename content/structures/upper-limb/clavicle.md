@@ -105,6 +105,33 @@ quiz:
     explanation: >-
       The **cephalic-tilt AP view** projects the clavicle above the ribs and scapula, showing superior displacement and
       shortening. The scapular Y and axillary views are for the glenohumeral joint.
+  - stem: >-
+      A child can bring both shoulders together in front of the chest. He also has delayed closure of the fontanelles
+      and dental anomalies. Which process is primarily affected?
+    choices:
+      - Endochondral ossification of long bones (FGFR3)
+      - Intramembranous ossification (RUNX2)
+      - Type I collagen synthesis
+      - Osteoclast function
+      - Mineralization from vitamin D deficiency
+    answer: B
+    explanation: >-
+      **Cleidocranial dysplasia** is an autosomal dominant **RUNX2** disorder of **intramembranous ossification**,
+      giving hypoplastic or absent clavicles, delayed fontanelle closure and dental anomalies. FGFR3 mutations cause
+      achondroplasia; type I collagen defects cause osteogenesis imperfecta.
+  - stem: >-
+      A 24-year-old falls onto his shoulder and has a closed, minimally displaced midshaft clavicle fracture. The skin
+      is intact and the neurovascular exam is normal. What is the most appropriate management?
+    choices:
+      - Emergency open reduction and internal fixation
+      - Long arm cast
+      - Sling and non-operative management
+      - Skeletal traction
+      - CT angiography of the subclavian artery
+    answer: C
+    explanation: >-
+      Most midshaft clavicle fractures are managed **non-operatively with a sling**. Open fractures, skin tenting,
+      neurovascular injury or marked displacement/shortening prompt orthopedic referral.
 flashcards:
   - front: Most common site of clavicle fracture?
     back: Middle third

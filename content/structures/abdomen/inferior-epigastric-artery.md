@@ -92,6 +92,7 @@ flashcards:
     back: "Direct: medial. Indirect: lateral (through the deep ring)"
   - front: Anastomosis of the inferior epigastric artery?
     back: Superior epigastric artery (internal thoracic) within the rectus sheath
+diagrams: [inguinal-region]
 related: [inguinal-canal, inguinal-triangle, rectus-abdominis]
 images:
   - image: gray-1036-anterior-wall-posterior-view

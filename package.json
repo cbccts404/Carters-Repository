@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "check": "astro check",
     "sync": "astro sync",
-    "lint": "node scripts/lint-content.mjs"
+    "lint": "node scripts/lint-content.mjs",
+    "check:links": "node scripts/check-links.mjs"
   },
   "dependencies": {
     "astro": "^7.3.5",

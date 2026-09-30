@@ -100,6 +100,7 @@ flashcards:
     back: Lateral rotation of the arm; rotator cuff stabilization
   - front: Test for teres minor?
     back: Hornblower's sign (external rotation in 90° abduction)
+diagrams: [rotator-cuff]
 related: [infraspinatus, axillary-nerve]
 images:
   - image: gray-412-scapular-muscles

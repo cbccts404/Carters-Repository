@@ -1,0 +1,181 @@
+---
+/* Original schematic: vertebral column, left lateral view (anterior to the left). Vertebral bodies are laid
+   out along an S-shaped centre line; heights and offsets are illustrative, not to scale. */
+import Label from '../components/Label.astro';
+
+interface V {
+  name: string;
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  angle: number;
+  spine: number; // spinous process length
+  tilt: number; // spinous process angle below horizontal (deg)
+}
+const X0 = 300;
+const regions = [
+  { n: 7, prefix: 'C', h: 20, w: 34, bulge: -20, spine: 22, tilt: 12 },
+  { n: 12, prefix: 'T', h: 22, w: 40, bulge: 36, spine: 34, tilt: 48 },
+  { n: 5, prefix: 'L', h: 30, w: 52, bulge: -26, spine: 30, tilt: 8 },
+];
+const verts: V[] = [];
+let y = 60;
+for (const r of regions) {
+  for (let k = 0; k < r.n; k++) {
+    const x = X0 + r.bulge * Math.sin((Math.PI * (k + 0.5)) / r.n);
+    verts.push({ name: `${r.prefix}${k + 1}`, x, y: y + r.h / 2, w: r.w, h: r.h - 6, angle: 0, spine: r.spine, tilt: r.tilt });
+    y += r.h;
+  }
+}
+// tilt each body along the local tangent of the centre line
+for (let i = 0; i < verts.length; i++) {
+  const a = verts[Math.max(0, i - 1)];
+  const b = verts[Math.min(verts.length - 1, i + 1)];
+  verts[i].angle = (Math.atan2(b.x - a.x, b.y - a.y) * -180) / Math.PI;
+}
+const at = (name: string) => verts.find((v) => v.name === name)!;
+const back = (v: V, extra = 0) => [v.x + v.w / 2 + extra, v.y] as const; // point on the posterior surface
+const SAC_TOP = y; // top of the sacrum
+const L5 = at('L5');
+const sacrum = `M${L5.x - 26} ${SAC_TOP} L${L5.x + 30} ${SAC_TOP - 4} Q${X0 + 60} ${SAC_TOP + 60} ${X0 + 52} ${SAC_TOP + 118}
+  L${X0 + 30} ${SAC_TOP + 122} Q${X0 + 18} ${SAC_TOP + 58} ${L5.x - 26} ${SAC_TOP} Z`;
+const coccyx = `M${X0 + 32} ${SAC_TOP + 126} Q${X0 + 44} ${SAC_TOP + 150} ${X0 + 30} ${SAC_TOP + 166}`;
+
+// bracket spans for the regions (y ranges)
+const span = (a: string, b: string) => [at(a).y - at(a).h / 2 - 3, at(b).y + at(b).h / 2 + 3] as const;
+const brackets = [
+  { y: span('C1', 'C7'), title: 'Cervical (7)', note: 'Lordosis · secondary', to: 'cervical-vertebrae' },
+  { y: span('T1', 'T12'), title: 'Thoracic (12)', note: 'Kyphosis · primary', to: 'thoracic-vertebrae' },
+  { y: span('L1', 'L5'), title: 'Lumbar (5)', note: 'Lordosis · secondary', to: 'lumbar-vertebrae' },
+  { y: [SAC_TOP - 2, SAC_TOP + 122] as const, title: 'Sacrum (5 fused)', note: 'Kyphosis · primary', to: 'sacrum' },
+  { y: [SAC_TOP + 126, SAC_TOP + 168] as const, title: 'Coccyx (3–5 fused)', note: '', to: undefined },
+];
+const BX = 470; // bracket x
+
+// landmarks on the left (anterior) side: label y, target point
+const disc = (a: string, b: string) => [(at(a).x + at(b).x) / 2 - 10, (at(a).y + at(b).y) / 2] as const;
+const landmarks = [
+  { y: at('C2').y, target: [at('C2').x - 17, at('C2').y], text: 'C1–C2: atlas and axis', to: 'atlas-and-axis' },
+  { y: at('C7').y + 8, target: back(at('C7'), at('C7').spine), text: 'C7: vertebra prominens', to: undefined },
+  { y: disc('T4', 'T5')[1], target: disc('T4', 'T5'), text: 'T4–T5 disc: sternal angle', to: 'sternum' },
+  { y: disc('L1', 'L2')[1], target: [at('L1').x + 34, (at('L1').y + at('L2').y) / 2], text: 'L1–L2: conus medullaris (adult)', to: 'spinal-cord' },
+  { y: at('L4').y, target: back(at('L4'), 18), text: 'L4: iliac crests (supracristal plane)', to: undefined },
+  { y: disc('L4', 'L5')[1] + 16, target: disc('L4', 'L5'), text: 'L4–L5, L5–S1: commonest disc herniations', to: 'intervertebral-disc' },
+  { y: SAC_TOP + 34, target: [X0 + 40, SAC_TOP + 34], text: 'S2: dural sac ends', to: 'spinal-meninges' },
+];
+const LX = 150;
+---
+
+<div class="scroll">
+  <svg viewBox="-170 30 900 830" role="img" aria-labelledby="vc-title vc-desc">
+    <title id="vc-title">Vertebral column (left lateral view)</title>
+    <desc id="vc-desc">
+      Left lateral view of the vertebral column with anterior to the left: 7 cervical, 12 thoracic and 5 lumbar
+      vertebrae, the sacrum and the coccyx, separated by intervertebral discs. The cervical and lumbar regions curve
+      convex forward (lordoses, secondary curvatures that develop with head control and walking); the thoracic and
+      sacral regions curve convex backward (kyphoses, primary curvatures present in the fetus). Landmarks: the atlas
+      and axis at C1–C2, the vertebra prominens at C7, the sternal angle at the T4–T5 disc, the end of the spinal cord
+      at L1–L2 in adults, the iliac crests at L4, the commonest disc herniations at L4–L5 and L5–S1, and the end of the
+      dural sac at S2.
+    </desc>
+    <style>
+      .vc-body { fill: color-mix(in srgb, var(--t-bone) 30%, var(--surface)); stroke: var(--t-bone); stroke-width: 1.6; }
+      .vc-disc { fill: color-mix(in srgb, var(--t-joint) 45%, var(--surface)); }
+      .vc-spine { stroke: var(--t-bone); stroke-width: 5; stroke-linecap: round; }
+      .vc-sac { fill: color-mix(in srgb, var(--t-bone) 30%, var(--surface)); stroke: var(--t-bone); stroke-width: 1.6; }
+      .vc-cox { stroke: var(--t-bone); stroke-width: 9; stroke-linecap: round; fill: none; }
+      .vc-bracket { stroke: var(--muted); stroke-width: 1.5; fill: none; }
+      .vc-line { stroke: var(--t-space); stroke-width: 1.4; stroke-dasharray: 3 4; fill: none; }
+    </style>
+
+    <!-- discs: one band behind each pair of adjacent bodies -->
+    {
+      verts.slice(0, -1).map((v, i) => {
+        const n = verts[i + 1];
+        return (
+          <line
+            x1={v.x}
+            y1={v.y}
+            x2={n.x}
+            y2={n.y}
+            stroke="var(--t-joint)"
+            stroke-width={Math.min(v.w, n.w) - 4}
+            opacity="0.55"
+          />
+        );
+      })
+    }
+    <line x1={L5.x} y1={L5.y} x2={L5.x + 4} y2={SAC_TOP + 6} stroke="var(--t-joint)" stroke-width="46" opacity="0.55"></line>
+
+    <!-- vertebrae: body plus spinous process -->
+    {
+      verts.map((v) => (
+        <g transform={`rotate(${v.angle} ${v.x} ${v.y})`}>
+          <line
+            class="vc-spine"
+            x1={v.x + v.w / 2 - 2}
+            y1={v.y}
+            x2={v.x + v.w / 2 + v.spine * Math.cos((v.tilt * Math.PI) / 180)}
+            y2={v.y + v.spine * Math.sin((v.tilt * Math.PI) / 180)}
+          />
+          <rect class="vc-body" x={v.x - v.w / 2} y={v.y - v.h / 2} width={v.w} height={v.h} rx="4" />
+        </g>
+      ))
+    }
+    <path class="vc-sac" d={sacrum}></path>
+    <path class="vc-cox" d={coccyx}></path>
+
+    <!-- small level numbers on the bodies -->
+    {
+      verts.map((v) => (
+        <text x={v.x} y={v.y + 3.5} text-anchor="middle" font-size="9.5" fill="var(--text)" opacity="0.8">
+          {v.name}
+        </text>
+      ))
+    }
+
+    <!-- region brackets and labels (right) -->
+    {
+      brackets.map((b) => (
+        <path class="vc-bracket" d={`M${BX - 8} ${b.y[0]} H${BX} V${b.y[1]} H${BX - 8}`} />
+      ))
+    }
+    {
+      brackets.map((b) => (
+        <Label x={BX + 14} y={(b.y[0] + b.y[1]) / 2 - (b.note ? 2 : -4)} to={b.to}>
+          {b.title}
+        </Label>
+      ))
+    }
+    {
+      brackets
+        .filter((b) => b.note)
+        .map((b) => (
+          <Label x={BX + 14} y={(b.y[0] + b.y[1]) / 2 + 14} size="sm">
+            {b.note}
+          </Label>
+        ))
+    }
+
+    <!-- landmarks (left) -->
+    <g stroke="var(--muted)" stroke-width="1">
+      {landmarks.map((l) => <line x1={LX + 4} y1={l.y - 4} x2={l.target[0]} y2={l.target[1]} />)}
+    </g>
+    {landmarks.map((l) => l.target && <circle cx={l.target[0]} cy={l.target[1]} r="3" fill="var(--t-space)" />)}
+    {
+      landmarks.map((l) => (
+        <Label x={LX} y={l.y} anchor="end" size="sm" to={l.to}>
+          {l.text}
+        </Label>
+      ))
+    }
+
+    <Label x={-160} y={48} size="sm">Left lateral view · anterior ←</Label>
+    <Label x={-160} y={62} size="sm">Not to scale</Label>
+    <Label x={BX + 14} y={SAC_TOP + 196} size="sm">Primary curves (kyphoses) are present</Label>
+    <Label x={BX + 14} y={SAC_TOP + 210} size="sm">in the fetus; secondary curves (lordoses)</Label>
+    <Label x={BX + 14} y={SAC_TOP + 224} size="sm">appear with head control and walking.</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

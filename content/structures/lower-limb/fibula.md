@@ -79,6 +79,41 @@ quiz:
     explanation: >-
       A **Maisonneuve fracture** combines a medial ankle injury and syndesmotic disruption with a **proximal fibular
       fracture**. Palpate the whole fibula and X-ray it if tender.
+  - stem: >-
+      In the Weber classification of ankle fractures, what type is a lateral malleolus fracture above the level of the
+      syndesmosis?
+    choices:
+      - Weber A
+      - Weber B
+      - Weber C
+      - Salter–Harris type II
+    answer: C
+    explanation: >-
+      The Weber classification uses the level of the fibular fracture relative to the syndesmosis: **A below**, **B
+      at**, **C above**. Weber C fractures imply syndesmotic injury and need fixation.
+  - stem: Which tendons run in the groove behind the lateral malleolus?
+    choices:
+      - Tibialis posterior and flexor digitorum longus
+      - Extensor hallucis longus and extensor digitorum longus
+      - Flexor hallucis longus
+      - Tibialis anterior
+      - Fibularis longus and fibularis brevis
+    answer: E
+    explanation: >-
+      The **fibularis longus and brevis** tendons pass behind the **lateral** malleolus (with the sural nerve and small
+      saphenous vein). Tibialis posterior, FDL and FHL pass behind the **medial** malleolus.
+  - stem: The middle of the fibular shaft can be harvested as a vascularized bone flap. Why is this possible?
+    choices:
+      - The fibula has no blood supply of its own
+      - The fibula bears little body weight, and the distal fibula is kept to preserve ankle stability
+      - The fibula regrows completely within weeks
+      - The fibula isn't attached to any muscles
+      - The whole fibula can be removed without effect
+    answer: B
+    explanation: >-
+      The tibia carries almost all the weight through the leg, so the **middle fibular shaft** can be taken with the
+      fibular artery (e.g. to reconstruct the mandible). The **distal fibula is preserved** because the lateral
+      malleolus stabilizes the ankle.
 flashcards:
   - front: Nerve at risk at the fibular neck?
     back: Common fibular nerve (foot drop)

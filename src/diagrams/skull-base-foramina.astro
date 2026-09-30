@@ -1,0 +1,159 @@
+---
+/* Original schematic: internal surface of the cranial base seen from above, anterior at the top. Foramina are drawn
+   on both sides; each is labelled on one side only. Shapes and positions are simplified. Not to scale. */
+import Label from '../components/Label.astro';
+
+const C = 400; // midline
+const both = (dx: number) => [C - dx, C + dx];
+// foramina as offsets from the midline: [dx, y, rx, ry]
+const holes = {
+  optic: [30, 226, 7, 6],
+  rotundum: [52, 264, 6, 6],
+  ovale: [70, 300, 11, 7],
+  spinosum: [92, 318, 5, 5],
+  lacerum: [30, 318, 11, 9],
+  iam: [80, 378, 9, 7],
+  jugular: [76, 444, 14, 10],
+  hypoglossal: [48, 466, 6, 5],
+} as const;
+
+// label rows: [label y, target x, target y, name, contents, link]
+type Row = { y: number; tx: number; ty: number; name: string; what: string; to?: string };
+const right: Row[] = [
+  { y: 96, tx: C + 16, ty: 130, name: 'Cribriform plate', what: 'CN I (olfactory fibers)', to: 'olfactory-nerve' },
+  { y: 150, tx: C + 36, ty: 224, name: 'Optic canal', what: 'CN II · ophthalmic artery', to: 'optic-nerve' },
+  { y: 204, tx: C + 90, ty: 222, name: 'Superior orbital fissure', what: 'CN III, IV, V1, VI · superior ophthalmic v.', to: 'orbit' },
+  { y: 258, tx: C + 58, ty: 264, name: 'Foramen rotundum', what: 'V2 (maxillary)', to: 'trigeminal-nerve' },
+  { y: 306, tx: C + 81, ty: 300, name: 'Foramen ovale', what: 'V3 (mandibular) · lesser petrosal n.', to: 'trigeminal-nerve' },
+  { y: 354, tx: C + 97, ty: 318, name: 'Foramen spinosum', what: 'Middle meningeal artery', to: 'middle-meningeal-artery' },
+  { y: 402, tx: C + 40, ty: 322, name: 'Foramen lacerum', what: 'Cartilage-filled · ICA crosses above it', to: undefined },
+  { y: 450, tx: C + 104, ty: 346, name: 'Carotid canal (dashed)', what: 'Internal carotid a. · sympathetic plexus', to: 'carotid-arteries' },
+];
+const left: Row[] = [
+  { y: 150, tx: C - 14, ty: 254, name: 'Sella turcica', what: 'Pituitary gland', to: 'pituitary-gland' },
+  { y: 330, tx: C - 88, ty: 378, name: 'Internal acoustic meatus', what: 'CN VII, VIII · labyrinthine artery', to: 'facial-nerve' },
+  { y: 420, tx: C - 90, ty: 444, name: 'Jugular foramen', what: 'CN IX, X, XI · internal jugular vein', to: 'internal-jugular-vein' },
+  { y: 486, tx: C - 54, ty: 466, name: 'Hypoglossal canal', what: 'CN XII', to: 'hypoglossal-nerve' },
+  { y: 552, tx: C - 20, ty: 520, name: 'Foramen magnum', what: 'Medulla · vertebral aa. · spinal roots of CN XI', to: 'medulla-oblongata' },
+];
+const RX = 720; // right label x
+const LX = 80; // left label x (anchor end)
+---
+
+<div class="scroll">
+  <svg viewBox="-260 20 1320 600" role="img" aria-labelledby="sb-title sb-desc">
+    <title id="sb-title">Foramina of the cranial base (internal view)</title>
+    <desc id="sb-desc">
+      The floor of the cranial cavity seen from above, anterior at the top, divided into anterior, middle and
+      posterior cranial fossae. Anterior fossa: the cribriform plate transmits the olfactory nerve fibers. Middle
+      fossa: the optic canal transmits the optic nerve and ophthalmic artery; the superior orbital fissure transmits
+      cranial nerves III, IV, the ophthalmic division of V and VI with the superior ophthalmic vein; the foramen
+      rotundum transmits the maxillary nerve; the foramen ovale the mandibular nerve and lesser petrosal nerve; the
+      foramen spinosum the middle meningeal artery. The foramen lacerum is filled with cartilage, and the internal
+      carotid artery, emerging from the carotid canal in the petrous temporal bone, crosses above it. The sella
+      turcica holds the pituitary gland. Posterior fossa: the internal acoustic meatus transmits the facial and
+      vestibulocochlear nerves and labyrinthine artery; the jugular foramen transmits cranial nerves IX, X and XI and
+      the internal jugular vein; the hypoglossal canal transmits cranial nerve XII; the foramen magnum transmits the
+      medulla, the vertebral arteries and the spinal roots of the accessory nerve.
+    </desc>
+    <style>
+      .sb-outline { fill: color-mix(in srgb, var(--t-bone) 14%, var(--surface)); stroke: var(--t-bone); stroke-width: 3; }
+      .sb-ant { fill: color-mix(in srgb, var(--t-bone) 22%, var(--surface)); }
+      .sb-mid { fill: color-mix(in srgb, var(--t-bone) 32%, var(--surface)); }
+      .sb-post { fill: color-mix(in srgb, var(--t-bone) 42%, var(--surface)); }
+      .sb-ridge { stroke: var(--t-bone); stroke-width: 7; stroke-linecap: round; fill: none; }
+      .sb-hole { fill: var(--bg); stroke: var(--t-space); stroke-width: 2; }
+      .sb-crib { fill: none; stroke: var(--t-space); stroke-width: 2; stroke-dasharray: 2 3; }
+      .sb-carotid { stroke: var(--t-artery); stroke-width: 3; stroke-dasharray: 5 4; fill: none; }
+      .sb-sinus { stroke: var(--t-vein); stroke-width: 4; stroke-dasharray: 2 4; fill: none; opacity: 0.8; }
+      .sb-fossa { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; fill: var(--muted); text-transform: uppercase; }
+    </style>
+
+    <!-- overall floor, then the three fossae (deeper = darker) -->
+    <ellipse class="sb-outline" cx={C} cy="322" rx="262" ry="290"></ellipse>
+    <path class="sb-post" d={`M${C - 250} 400 Q${C - 190} 380 ${C - 34} 330 L${C} 300 L${C + 34} 330 Q${C + 190} 380 ${C + 250} 400 Q${C + 200} 590 ${C} 610 Q${C - 200} 590 ${C - 250} 400 Z`}></path>
+    <path class="sb-mid" d={`M${C - 240} 218 Q${C - 150} 186 ${C - 36} 214 L${C} 222 L${C + 36} 214 Q${C + 150} 186 ${C + 240} 218 Q${C + 262} 320 ${C + 250} 400 Q${C + 190} 380 ${C + 34} 330 L${C} 300 L${C - 34} 330 Q${C - 190} 380 ${C - 250} 400 Q${C - 262} 320 ${C - 240} 218 Z`}></path>
+    <path class="sb-ant" d={`M${C - 240} 218 Q${C - 150} 186 ${C - 36} 214 L${C} 222 L${C + 36} 214 Q${C + 150} 186 ${C + 240} 218 Q${C + 180} 50 ${C} 32 Q${C - 180} 50 ${C - 240} 218 Z`}></path>
+
+    <!-- lesser wings of the sphenoid (anterior/middle boundary) and petrous ridges (middle/posterior boundary) -->
+    <path class="sb-ridge" d={`M${C - 236} 216 Q${C - 150} 184 ${C - 40} 212`}></path>
+    <path class="sb-ridge" d={`M${C + 236} 216 Q${C + 150} 184 ${C + 40} 212`}></path>
+    <path class="sb-ridge" d={`M${C - 34} 334 Q${C - 150} 360 ${C - 246} 402`}></path>
+    <path class="sb-ridge" d={`M${C + 34} 334 Q${C + 150} 360 ${C + 246} 402`}></path>
+
+    <!-- crista galli and cribriform plates -->
+    <line x1={C} y1="92" x2={C} y2="170" stroke="var(--t-bone)" stroke-width="5" stroke-linecap="round"></line>
+    {both(16).map((x) => <ellipse class="sb-crib" cx={x} cy="130" rx="9" ry="34" />)}
+
+    <!-- sella turcica with anterior clinoids and dorsum sellae; clivus -->
+    <rect x={C - 26} y="236" width="52" height="38" rx="14" fill="var(--bg)" stroke="var(--t-organ)" stroke-width="2"></rect>
+    <line x1={C - 26} y1="286" x2={C + 26} y2="286" stroke="var(--t-bone)" stroke-width="6" stroke-linecap="round"></line>
+    <path d={`M${C - 24} 292 L${C - 30} 438 L${C + 30} 438 L${C + 24} 292 Z`} fill="color-mix(in srgb, var(--t-bone) 55%, var(--surface))" opacity="0.6"></path>
+
+    <!-- superior orbital fissures -->
+    {
+      [-1, 1].map((s) => (
+        <path
+          class="sb-hole"
+          d={`M${C + s * 40} 238 Q${C + s * 70} 220 ${C + s * 118} 210 Q${C + s * 74} 232 ${C + s * 46} 246 Z`}
+        />
+      ))
+    }
+
+    <!-- carotid canals inside the petrous bone, opening at the apex above foramen lacerum -->
+    {[-1, 1].map((s) => <path class="sb-carotid" d={`M${C + s * 150} 372 Q${C + s * 90} 360 ${C + s * 40} 322`} />)}
+
+    <!-- sigmoid sinus grooves leading to the jugular foramina -->
+    {[-1, 1].map((s) => <path class="sb-sinus" d={`M${C + s * 210} 470 Q${C + s * 150} 500 ${C + s * 90} 450`} />)}
+
+    <!-- foramina -->
+    {
+      Object.values(holes).map(([dx, y, rx, ry]) =>
+        both(dx).map((x) => <ellipse class="sb-hole" cx={x} cy={y} rx={rx} ry={ry} />),
+      )
+    }
+    <ellipse class="sb-hole" cx={C} cy="496" rx="38" ry="46"></ellipse>
+
+    <!-- fossa names -->
+    <text class="sb-fossa" x={C - 200} y="150">Anterior fossa</text>
+    <text class="sb-fossa" x={C - 232} y="290">Middle fossa</text>
+    <text class="sb-fossa" x={C} y="590" text-anchor="middle">Posterior fossa</text>
+
+    <!-- leader lines -->
+    <g stroke="var(--muted)" stroke-width="1">
+      {right.map((r) => <line x1={RX - 6} y1={r.y} x2={r.tx} y2={r.ty} />)}
+      {left.map((r) => <line x1={LX + 6} y1={r.y} x2={r.tx} y2={r.ty} />)}
+    </g>
+
+    {
+      right.map((r) => (
+        <>
+          <Label x={RX} y={r.y} to={r.to}>
+            {r.name}
+          </Label>
+          <Label x={RX} y={r.y + 15} size="sm">
+            {r.what}
+          </Label>
+        </>
+      ))
+    }
+    {
+      left.map((r) => (
+        <>
+          <Label x={LX} y={r.y} anchor="end" to={r.to}>
+            {r.name}
+          </Label>
+          <Label x={LX} y={r.y + 15} anchor="end" size="sm">
+            {r.what}
+          </Label>
+        </>
+      ))
+    }
+
+    <Label x={-250} y={40} size="sm">Cranial base from above · anterior ↑</Label>
+    <Label x={-250} y={54} size="sm">Not to scale</Label>
+    <Label x={RX} y={530} size="sm">"Standing Room Only": V1 → Superior orbital</Label>
+    <Label x={RX} y={544} size="sm">fissure, V2 → Rotundum, V3 → Ovale</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

@@ -1,0 +1,155 @@
+---
+/* Original schematic: right glenoid fossa seen from the lateral side with the humerus removed (anterior to the
+   viewer's right), showing how the four cuff tendons wrap the joint, plus a summary table. Not to scale. */
+import Label from '../components/Label.astro';
+
+const G = { x: 280, y: 280, rx: 62, ry: 98 }; // glenoid
+const R = 128;
+// pear-shaped glenoid: narrow above, wide below
+const pear = (rx: number, ry: number) => {
+  const { x, y } = G;
+  return `M${x} ${y - ry} C${x + rx * 0.62} ${y - ry} ${x + rx} ${y - ry * 0.25} ${x + rx} ${y + ry * 0.3}
+    C${x + rx} ${y + ry * 0.82} ${x + rx * 0.55} ${y + ry} ${x} ${y + ry} C${x - rx * 0.55} ${y + ry} ${x - rx} ${y + ry * 0.82}
+    ${x - rx} ${y + ry * 0.3} C${x - rx} ${y - ry * 0.25} ${x - rx * 0.62} ${y - ry} ${x} ${y - ry} Z`;
+}; // radius of the cuff arcs (as a circle around the glenoid centre)
+const rad = (deg: number) => (deg * Math.PI) / 180;
+const pt = (deg: number, r = R) => [G.x + r * Math.cos(rad(deg)), G.y + r * 1.12 * Math.sin(rad(deg))] as const;
+const arc = (a: number, b: number, r = R) => {
+  const [x1, y1] = pt(a, r);
+  const [x2, y2] = pt(b, r);
+  return `M${x1} ${y1} A${r} ${r * 1.12} 0 ${b - a > 180 ? 1 : 0} 1 ${x2} ${y2}`;
+};
+// SVG angles: 0 = anterior (right), 90 = inferior, 180 = posterior (left), 270 = superior
+const cuff = [
+  { id: 'supraspinatus', name: 'Supraspinatus', a: 244, b: 296, c: 'var(--t-muscle)', o: 0.95 },
+  { id: 'infraspinatus', name: 'Infraspinatus', a: 178, b: 238, c: 'var(--t-muscle)', o: 0.6 },
+  { id: 'teres-minor', name: 'Teres minor', a: 142, b: 173, c: 'var(--t-muscle)', o: 0.85 },
+  { id: 'subscapularis', name: 'Subscapularis', a: 306, b: 402, c: 'var(--t-muscle)', o: 0.7 },
+];
+const rows = [
+  ['supraspinatus', 'Supraspinatus', 'Greater tubercle (superior facet)', 'Suprascapular', 'Initiates abduction', 'Empty can'],
+  ['infraspinatus', 'Infraspinatus', 'Greater tubercle (middle facet)', 'Suprascapular', 'Lateral rotation', 'Resisted ER'],
+  ['teres-minor', 'Teres minor', 'Greater tubercle (inferior facet)', 'Axillary', 'Lateral rotation', 'Resisted ER, hornblower'],
+  ['subscapularis', 'Subscapularis', 'Lesser tubercle', 'Upper + lower subscapular', 'Medial rotation', 'Lift-off, belly press'],
+];
+const cols = [600, 718, 916, 1080, 1210]; // x of table columns
+---
+
+<div class="scroll">
+  <svg viewBox="-40 20 1430 500" role="img" aria-labelledby="rc-title rc-desc">
+    <title id="rc-title">Rotator cuff (SITS)</title>
+    <desc id="rc-desc">
+      Lateral view of the right glenoid fossa with the humerus removed, anterior to the right. Supraspinatus passes
+      over the top of the joint beneath the acromion, infraspinatus and teres minor lie behind it, and subscapularis
+      lies in front. The long head of biceps arises from the supraglenoid tubercle and the long head of triceps from
+      the infraglenoid tubercle. The inferior part of the capsule has no cuff support. The table lists each muscle:
+      supraspinatus to the superior facet of the greater tubercle, suprascapular nerve, initiates abduction, empty-can
+      test; infraspinatus to the middle facet, suprascapular nerve, lateral rotation; teres minor to the inferior
+      facet, axillary nerve, lateral rotation; subscapularis to the lesser tubercle, upper and lower subscapular
+      nerves, medial rotation, lift-off and belly-press tests. All are supplied mainly by C5–C6.
+    </desc>
+    <style>
+      .rc-bone { fill: color-mix(in srgb, var(--t-bone) 26%, var(--surface)); stroke: var(--t-bone); stroke-width: 2; }
+      .rc-glen { fill: color-mix(in srgb, var(--t-joint) 30%, var(--surface)); stroke: var(--t-joint); stroke-width: 2; }
+      .rc-labrum { fill: none; stroke: var(--t-ligament); stroke-width: 5; }
+      .rc-cuff { fill: none; stroke-width: 30; stroke-linecap: butt; }
+      .rc-tendon { stroke: var(--t-muscle); stroke-width: 6; stroke-linecap: round; }
+      .rc-gap { fill: none; stroke: var(--bad); stroke-width: 2; stroke-dasharray: 5 5; }
+      .rc-row { stroke: var(--border); stroke-width: 1; }
+      .rc-th { font-size: 11px; font-weight: 700; letter-spacing: 0.06em; fill: var(--muted); text-transform: uppercase; }
+    </style>
+
+    <!-- acromion (posterosuperior, over the top) and coracoid (anterosuperior) -->
+    <path class="rc-bone" d="M120 128 Q170 70 290 64 Q350 64 372 82 L364 104 Q300 92 240 104 Q180 118 146 150 Z"></path>
+    <path class="rc-bone" d="M392 150 Q420 96 474 92 Q500 94 498 112 Q470 114 446 132 Q428 156 420 184 Z"></path>
+
+    <!-- scapular neck behind the glenoid -->
+    <ellipse class="rc-bone" cx={G.x - 6} cy={G.y + 6} rx={G.rx + 22} ry={G.ry + 22}></ellipse>
+
+    <!-- rotator cuff arcs -->
+    {cuff.map((m) => <path class="rc-cuff" d={arc(m.a, m.b)} stroke={m.c} opacity={m.o} />)}
+    <!-- inferior capsule without cuff support -->
+    <path class="rc-gap" d={arc(52, 136, R + 4)}></path>
+
+    <!-- glenoid, labrum, long head of biceps and triceps -->
+    <path class="rc-labrum" d={pear(G.rx + 6, G.ry + 6)}></path>
+    <path class="rc-glen" d={pear(G.rx, G.ry)}></path>
+    <line class="rc-tendon" x1={G.x + 4} y1={G.y - G.ry - 4} x2={G.x + 40} y2={G.y - G.ry - 70}></line>
+    <line class="rc-tendon" x1={G.x - 2} y1={G.y + G.ry + 6} x2={G.x - 16} y2={G.y + G.ry + 70}></line>
+
+    <!-- muscle names on the arcs -->
+    {
+      cuff.map((m) => {
+        const [x, y] = pt((m.a + m.b) / 2, R + 44);
+        const anchor = x < G.x - 20 ? 'end' : x > G.x + 20 ? 'start' : 'middle';
+        return (
+          <Label x={x} y={y + 4} anchor={anchor} to={m.id}>
+            {m.name}
+          </Label>
+        );
+      })
+    }
+
+    <!-- other labels -->
+    <g stroke="var(--muted)" stroke-width="1">
+      <line x1="80" y1="96" x2="160" y2="110"></line>
+      
+      <line x1="440" y1="164" x2={G.x + 36} y2={G.y - G.ry - 58}></line>
+      <line x1="440" y1="470" x2={G.x - 14} y2={G.y + G.ry + 60}></line>
+      <line x1="80" y1="304" x2={G.x - G.rx + 10} y2={G.y + 20}></line>
+      <line x1="440" y1="424" x2={pt(94, R + 4)[0] + 20} y2={pt(94, R + 4)[1]}></line>
+      <line x1="440" y1="210" x2={pt(301, R)[0]} y2={pt(301, R)[1]}></line>
+    </g>
+    <Label x={76} y={100} anchor="end" size="sm">Acromion</Label>
+    <Label x={446} y={80} anchor="middle" size="sm" to="scapula">Coracoid process</Label>
+    <Label x={444} y={160} size="sm" to="biceps-brachii">Long head of biceps</Label>
+    <Label x={444} y={174} size="sm">(supraglenoid tubercle)</Label>
+    <Label x={444} y={210} size="sm">Rotator interval</Label>
+    <Label x={444} y={420} size="sm">Inferior capsule: no cuff</Label>
+    <Label x={444} y={434} size="sm">(dislocation is usually</Label>
+    <Label x={444} y={448} size="sm">anterior–inferior)</Label>
+    <Label x={444} y={474} size="sm" to="triceps-brachii">Long head of triceps</Label>
+    <Label x={444} y={488} size="sm">(infraglenoid tubercle)</Label>
+    <Label x={76} y={300} anchor="end" size="sm" to="glenohumeral-joint">Glenoid fossa</Label>
+    <Label x={76} y={314} anchor="end" size="sm">and labrum</Label>
+    <Label x={-30} y={40} size="sm">Right glenoid, lateral view, humerus removed</Label>
+    <Label x={-30} y={54} size="sm">posterior ← · → anterior · not to scale</Label>
+
+    <!-- summary table -->
+    <text x={cols[0]} y="96" class="rc-th">Muscle</text>
+    <text x={cols[1]} y="96" class="rc-th">Humerus</text>
+    <text x={cols[2]} y="96" class="rc-th">Nerve</text>
+    <text x={cols[3]} y="96" class="rc-th">Action</text>
+    <text x={cols[4]} y="96" class="rc-th">Exam test</text>
+    <line class="rc-row" x1={cols[0]} y1="106" x2="1385" y2="106"></line>
+    {
+      rows.map((r, i) => {
+        const y = 140 + i * 62;
+        return (
+          <>
+            <Label x={cols[0]} y={y} to={r[0]}>
+              {r[1]}
+            </Label>
+            <Label x={cols[1]} y={y} size="sm">
+              {r[2]}
+            </Label>
+            <Label x={cols[2]} y={y} size="sm">
+              {r[3]}
+            </Label>
+            <Label x={cols[3]} y={y} size="sm">
+              {r[4]}
+            </Label>
+            <Label x={cols[4]} y={y} size="sm">
+              {r[5]}
+            </Label>
+            <line class="rc-row" x1={cols[0]} y1={y + 24} x2="1385" y2={y + 24} />
+          </>
+        );
+      })
+    }
+    <Label x={cols[0]} y={400} size="sm">All four are supplied mainly by C5–C6. Supraspinatus initiates abduction (about the first 15°);</Label>
+    <Label x={cols[0]} y={414} size="sm">deltoid takes over after that. Supraspinatus is the tendon most often torn or impinged under the</Label>
+    <Label x={cols[0]} y={428} size="sm">acromion. Supraspinatus, infraspinatus and teres minor insert on the greater tubercle; subscapularis on the lesser.</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

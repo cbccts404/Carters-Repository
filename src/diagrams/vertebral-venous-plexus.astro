@@ -1,0 +1,178 @@
+---
+/* Original schematic. A: transverse section through a lumbar vertebra, viewed from below as on axial CT/MRI
+   (anterior up, the patient's right on the viewer's left). B: the plexus as a valveless channel linking the
+   skull to the pelvis. Not to scale. */
+import Label from '../components/Label.astro';
+
+const C = 280; // midline of panel A
+const BAR = 790; // x of the plexus channel in panel B
+const links = [
+  { y: 70, region: 'Skull', text: 'Dural venous sinuses (via foramen magnum)', to: 'dural-venous-sinuses' },
+  { y: 150, region: 'Neck', text: 'Vertebral veins', to: undefined },
+  { y: 230, region: 'Thorax', text: 'Posterior intercostal veins → azygos', to: 'azygos-vein' },
+  { y: 310, region: 'Abdomen', text: 'Lumbar veins → IVC', to: 'inferior-vena-cava' },
+  { y: 390, region: 'Pelvis', text: 'Pelvic veins (prostatic, lateral sacral)', to: 'prostate' },
+];
+---
+
+<div class="scroll">
+  <svg viewBox="-80 0 1220 500" role="img" aria-labelledby="vv-title vv-desc">
+    <title id="vv-title">Vertebral venous plexus</title>
+    <desc id="vv-desc">
+      Panel A is a cross-section through a lumbar vertebra, oriented as on axial CT. Basivertebral veins drain the
+      vertebral body backward into the anterior internal vertebral venous plexus, which lies in the epidural space on
+      the back of the body beside the posterior longitudinal ligament. A posterior internal plexus lies in front of the
+      laminae. External plexuses lie in front of the vertebral body and around the laminae and spinous process.
+      Intervertebral veins leave through the intervertebral foramina to the lumbar veins, which drain to the inferior
+      vena cava. Panel B shows the plexus as a valveless channel from the skull to the pelvis, connected to the dural
+      venous sinuses, vertebral veins, posterior intercostal veins and azygos system, lumbar veins and inferior vena
+      cava, and pelvic veins including the prostatic plexus. Flow can reverse with coughing or straining, so tumor
+      cells and bacteria from the pelvis can reach the spine without passing through the lungs or liver.
+    </desc>
+    <style>
+      .vv-bone { fill: color-mix(in srgb, var(--t-bone) 26%, var(--surface)); stroke: var(--t-bone); stroke-width: 2; }
+      .vv-proc { stroke: var(--t-bone); stroke-width: 16; stroke-linecap: round; fill: none; }
+      .vv-fat { fill: color-mix(in srgb, var(--t-nerve) 14%, var(--surface)); }
+      .vv-dura { fill: color-mix(in srgb, var(--t-space) 22%, var(--surface)); stroke: var(--t-space); stroke-width: 2; }
+      .vv-root { fill: var(--t-nerve); }
+      .vv-v { fill: color-mix(in srgb, var(--t-vein) 60%, var(--surface)); stroke: var(--t-vein); stroke-width: 1.5; }
+      .vv-vl { stroke: var(--t-vein); stroke-width: 3.5; stroke-linecap: round; fill: none; }
+      .vv-vd { stroke: var(--t-vein); stroke-width: 3; stroke-dasharray: 5 4; fill: none; }
+      .vv-art { fill: color-mix(in srgb, var(--t-artery) 55%, var(--surface)); stroke: var(--t-artery); stroke-width: 2; }
+      .vv-lig { fill: var(--t-ligament); }
+      .vv-bar { stroke: var(--t-vein); stroke-width: 14; stroke-linecap: round; }
+      .vv-met { stroke: var(--t-organ); stroke-width: 3; fill: none; }
+      .vv-div { stroke: var(--border); stroke-width: 1.5; }
+    </style>
+    <defs>
+      <marker id="vv-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0 0 L10 5 L0 10 Z" fill="var(--t-vein)"></path>
+      </marker>
+      <marker id="vv-met-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+        <path d="M0 0 L10 5 L0 10 Z" fill="var(--t-organ)"></path>
+      </marker>
+    </defs>
+
+    <!-- ===== Panel A: cross-section ===== -->
+    <Label x={20} y={28} class="lbl-head">A · Lumbar cross-section</Label>
+
+    <!-- lumbar veins: intervertebral veins → lumbar veins → IVC (the patient's left one passes behind the aorta) -->
+    <path class="vv-vl" d={`M${C - 62} 226 Q${C - 120} 190 ${C - 104} 120 Q${C - 96} 84 ${C - 72} 62`}></path>
+    <path class="vv-vl" d={`M${C + 62} 226 Q${C + 120} 190 ${C + 104} 120 Q${C + 70} 70 ${C - 40} 58`}></path>
+
+    <!-- IVC (patient's right = viewer's left) and aorta -->
+    <ellipse class="vv-v" cx={C - 64} cy="52" rx="30" ry="19"></ellipse>
+    <circle class="vv-art" cx={C + 58} cy="50" r="22"></circle>
+
+    <!-- vertebral body with basivertebral veins -->
+    <ellipse class="vv-bone" cx={C} cy="150" rx="88" ry="62"></ellipse>
+    <path class="vv-vl" d={`M${C - 40} 128 Q${C} 160 ${C} 208 M${C + 40} 128 Q${C} 160 ${C} 208 M${C} 140 V208`}></path>
+
+    <!-- anterior external plexus -->
+    <circle class="vv-v" cx={C - 44} cy="87" r="6"></circle>
+    <circle class="vv-v" cx={C + 2} cy="82" r="6"></circle>
+    <circle class="vv-v" cx={C + 42} cy="87" r="6"></circle>
+
+    <!-- posterior elements: pedicles, transverse processes, laminae, spinous process -->
+    <path class="vv-fat" d={`M${C - 70} 204 Q${C} 222 ${C + 70} 204 L${C + 70} 246 L${C} 322 L${C - 70} 246 Z`}></path>
+    <path class="vv-proc" d={`M${C - 72} 200 V246 L${C} 322 L${C + 72} 246 V200`}></path>
+    <path class="vv-proc" d={`M${C - 74} 226 L${C - 170} 240 M${C + 74} 226 L${C + 170} 240`}></path>
+    <path class="vv-proc" d={`M${C} 322 V398`}></path>
+
+    <!-- dural sac with roots of the cauda equina -->
+    <circle class="vv-dura" cx={C} cy="262" r="30"></circle>
+    {
+      [
+        [-12, -12], [8, -14], [-18, 4], [16, 2], [-4, 6], [4, 18], [-10, 20], [18, 16], [0, -4],
+      ].map(([dx, dy]) => <circle class="vv-root" cx={C + dx} cy={262 + dy} r="3" />)
+    }
+
+    <!-- posterior longitudinal ligament, anterior and posterior internal plexuses -->
+    <rect class="vv-lig" x={C - 9} y="212" width="18" height="6" rx="2"></rect>
+    <ellipse class="vv-v" cx={C - 30} cy="222" rx="13" ry="7"></ellipse>
+    <ellipse class="vv-v" cx={C + 30} cy="222" rx="13" ry="7"></ellipse>
+    <ellipse class="vv-v" cx={C - 26} cy="298" rx="8" ry="6"></ellipse>
+    <ellipse class="vv-v" cx={C + 26} cy="298" rx="8" ry="6"></ellipse>
+
+    <!-- intervertebral veins out to the lumbar veins -->
+    <path class="vv-vd" d={`M${C - 42} 224 L${C - 62} 226 M${C + 42} 224 L${C + 62} 226`}></path>
+
+    <!-- posterior external plexus -->
+    <circle class="vv-v" cx={C - 30} cy="336" r="6"></circle>
+    <circle class="vv-v" cx={C + 30} cy="336" r="6"></circle>
+    <circle class="vv-v" cx={C - 18} cy="372" r="6"></circle>
+    <circle class="vv-v" cx={C + 18} cy="372" r="6"></circle>
+
+    <!-- leader lines, panel A -->
+    <g stroke="var(--muted)" stroke-width="1">
+      <line x1={C - 136} y1="62" x2={C - 92} y2="56"></line>
+      <line x1={C + 128} y1="36" x2={C + 80} y2="46"></line>
+      <line x1={C + 128} y1="84" x2={C + 48} y2="86"></line>
+      <line x1={C + 128} y1="134" x2={C + 20} y2="160"></line>
+      <line x1={C + 190} y1="192" x2={C + 42} y2="220"></line>
+      <line x1={C + 190} y1="276" x2={C + 26} y2="266"></line>
+      <line x1={C + 190} y1="310" x2={C + 34} y2="298"></line>
+      <line x1={C + 190} y1="350" x2={C + 36} y2="336"></line>
+      <line x1={C - 190} y1="184" x2={C - 112} y2="184"></line>
+      <line x1={C - 190} y1="266" x2={C - 64} y2="226"></line>
+      <line x1={C - 190} y1="310" x2={C - 50} y2="296"></line>
+      <line x1={C - 190} y1="398" x2={C - 6} y2="390"></line>
+    </g>
+    <Label x={C - 140} y={66} anchor="end" size="sm" to="inferior-vena-cava">IVC</Label>
+    <Label x={C + 132} y={40} size="sm" to="abdominal-aorta">Aorta</Label>
+    <Label x={C + 132} y={88} size="sm">Anterior external plexus</Label>
+    <Label x={C + 132} y={130} size="sm">Basivertebral veins</Label>
+    <Label x={C + 132} y={144} size="sm">(from the vertebral body)</Label>
+    <Label x={C + 194} y={188}>Anterior internal plexus</Label>
+    <Label x={C + 194} y={202} size="sm">(epidural, beside the PLL)</Label>
+    <Label x={C + 194} y={272} size="sm" to="spinal-meninges">Dural sac</Label>
+    <Label x={C + 194} y={286} size="sm" to="cauda-equina">(cauda equina)</Label>
+    <Label x={C + 194} y={314} size="sm">Posterior internal plexus</Label>
+    <Label x={C + 194} y={354} size="sm">Posterior external plexus</Label>
+    <Label x={C - 194} y={180} anchor="end" size="sm">Lumbar vein</Label>
+    <Label x={C - 194} y={194} anchor="end" size="sm">→ IVC</Label>
+    <Label x={C - 194} y={262} anchor="end" size="sm">Intervertebral vein</Label>
+    <Label x={C - 194} y={276} anchor="end" size="sm">(via the foramen)</Label>
+    <Label x={C - 194} y={314} anchor="end" size="sm">Epidural fat</Label>
+    <Label x={C - 194} y={402} anchor="end" size="sm" to="lumbar-vertebrae">Spinous process</Label>
+    <Label x={20} y={458} size="sm">Viewed from below as on axial CT/MRI · anterior ↑ ·</Label>
+    <Label x={20} y={472} size="sm">patient's right on the viewer's left · not to scale</Label>
+
+    <line class="vv-div" x1="630" y1="20" x2="630" y2="480"></line>
+
+    <!-- ===== Panel B: valveless connections ===== -->
+    <Label x={654} y={28} class="lbl-head">B · Valveless connections</Label>
+    <line class="vv-bar" x1={BAR} y1="60" x2={BAR} y2="410"></line>
+    <line
+      x1={BAR - 22}
+      y1="120"
+      x2={BAR - 22}
+      y2="360"
+      stroke="var(--t-vein)"
+      stroke-width="2.5"
+      marker-start="url(#vv-arrow)"
+      marker-end="url(#vv-arrow)"></line>
+    {links.map((l) => <line x1={BAR} y1={l.y} x2={BAR + 26} y2={l.y} stroke="var(--t-vein)" stroke-width="5" />)}
+    {
+      links.map((l) => (
+        <Label x={BAR - 34} y={l.y + 4} anchor="end" size="sm">
+          {l.region}
+        </Label>
+      ))
+    }
+    {
+      links.map((l) => (
+        <Label x={BAR + 32} y={l.y + 4} size="sm" to={l.to}>
+          {l.text}
+        </Label>
+      ))
+    }
+    <!-- route of prostate metastases: pelvic veins → plexus → lumbar vertebrae -->
+    <path class="vv-met" d={`M${BAR + 6} 386 Q${BAR + 40} 360 ${BAR + 12} 322`} marker-end="url(#vv-met-arrow)"></path>
+    <Label x={BAR + 32} y={350} size="sm">↑ prostate cancer → lumbar spine</Label>
+    <Label x={654} y={436} size="sm">No valves: coughing or straining can reverse flow,</Label>
+    <Label x={654} y={450} size="sm">so tumor cells or bacteria reach the spine (and even</Label>
+    <Label x={654} y={464} size="sm">the brain) without passing through the lungs or liver.</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

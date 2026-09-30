@@ -81,5 +81,6 @@ flashcards:
     back: Rectus capitis posterior major, obliquus capitis superior, obliquus capitis inferior
   - front: Suboccipital triangle contents?
     back: Vertebral artery (V3) and suboccipital nerve (C1 dorsal ramus)
+diagrams: [suboccipital-triangle]
 related: [vertebral-artery, greater-occipital-nerve, atlas-and-axis]
 ---

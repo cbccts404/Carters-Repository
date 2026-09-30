@@ -118,6 +118,29 @@ quiz:
     explanation: >-
       A ruptured **Baker cyst** and **DVT** look alike. **Compression (duplex) ultrasound** excludes DVT and can show the
       cyst. Treat for DVT only if a thrombus is seen.
+  - stem: Knee osteoarthritis most often affects which compartment, producing which deformity?
+    choices:
+      - Lateral compartment; valgus (knock-knee)
+      - Patellofemoral compartment; no angular deformity
+      - Lateral compartment; varus (bow-leg)
+      - Medial compartment; varus (bow-leg)
+      - Medial compartment; valgus (knock-knee)
+    answer: D
+    explanation: >-
+      Degenerative cartilage loss in the knee is most common in the **medial compartment**, producing a **varus**
+      (bow-legged) deformity.
+  - stem: Why does a knee effusion cause swelling above the patella?
+    choices:
+      - The prepatellar bursa fills with joint fluid
+      - The quadriceps tendon becomes inflamed
+      - The infrapatellar fat pad swells
+      - Fluid tracks along the iliotibial band
+      - The suprapatellar bursa communicates with the joint cavity
+    answer: E
+    explanation: >-
+      The synovial membrane forms the **suprapatellar bursa**, which **communicates with the joint**, so effusions fill
+      the space above the patella and obscure the dimples beside it. The prepatellar bursa lies in front of the patella
+      and does not communicate with the joint.
 flashcards:
   - front: Most common cause of acute traumatic hemarthrosis of the knee?
     back: ACL tear

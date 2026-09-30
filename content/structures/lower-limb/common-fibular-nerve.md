@@ -80,6 +80,43 @@ quiz:
     explanation: >-
       The **deep fibular nerve** supplies only the skin of the **first web space**; the superficial fibular nerve supplies
       most of the dorsum of the foot.
+  - stem: A patient has foot drop with weak ankle inversion and weak hip abduction. Where is the lesion most likely?
+    choices:
+      - Common fibular nerve at the fibular neck
+      - Deep fibular nerve in the anterior compartment
+      - L5 nerve root
+      - S1 nerve root
+      - Sciatic nerve in the thigh
+    answer: C
+    explanation: >-
+      Foot drop with weak **inversion** (tibialis posterior, tibial nerve) and weak **hip abduction** (gluteus medius,
+      superior gluteal nerve) points to the **L5 root**, which feeds several nerves. A common fibular lesion spares
+      inversion, and a sciatic lesion in the thigh spares the hip abductors.
+  - stem: Which gait is typical of foot drop from common fibular nerve palsy?
+    choices:
+      - Trendelenburg gait
+      - High-stepping (steppage) gait
+      - Antalgic gait
+      - Waddling gait
+      - Shuffling gait
+    answer: B
+    explanation: >-
+      With weak dorsiflexion the toes drag, so the patient lifts the knee high to clear the foot: a **high-stepping
+      (steppage) gait**. A Trendelenburg gait reflects hip abductor weakness.
+  - stem: >-
+      A patient has weak eversion of the foot and numbness over most of the dorsum of the foot, but dorsiflexion and toe
+      extension are normal. Which nerve is injured?
+    choices:
+      - Deep fibular nerve
+      - Tibial nerve
+      - Sural nerve
+      - Superficial fibular nerve
+      - Saphenous nerve
+    answer: D
+    explanation: >-
+      The **superficial fibular nerve** supplies the lateral compartment (fibularis longus and brevis → **eversion**)
+      and the skin of most of the **dorsum of the foot**. The deep fibular nerve supplies the dorsiflexors and the first
+      web space.
 flashcards:
   - front: Where is the common fibular nerve most often injured?
     back: At the neck of the fibula

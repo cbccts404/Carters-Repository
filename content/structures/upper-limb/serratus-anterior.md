@@ -89,6 +89,28 @@ quiz:
     explanation: >-
       The medial wall of the [[axilla]] is the thoracic wall covered by **serratus anterior**. Subscapularis forms most
       of the posterior wall and pectoralis major/minor the anterior wall.
+  - stem: Serratus anterior produces which movement of the scapula, as when throwing a punch?
+    choices:
+      - Retraction
+      - Elevation
+      - Protraction
+      - Depression
+      - Downward rotation
+    answer: C
+    explanation: >-
+      Serratus anterior **protracts** the scapula (draws it anterolaterally around the chest wall), holds it against the
+      thorax and **rotates it upward**. Retraction is done mainly by the rhomboids and trapezius.
+  - stem: Which muscle works with serratus anterior to rotate the scapula upward so the arm can be raised above 90°?
+    choices:
+      - Rhomboid major
+      - Trapezius
+      - Levator scapulae
+      - Pectoralis minor
+      - Latissimus dorsi
+    answer: B
+    explanation: >-
+      **Trapezius** (upper and lower fibres) and **serratus anterior** together rotate the scapula upward, turning the
+      glenoid to face superiorly. The rhomboids, levator scapulae and pectoralis minor rotate it downward.
 flashcards:
   - front: Serratus anterior — origin, insertion?
     back: Lateral upper ribs (1–8/9) → anterior surface of medial border of scapula

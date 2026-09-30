@@ -133,6 +133,7 @@ flashcards:
     back: Gallstones, wall thickening > ~3 mm, pericholecystic fluid, sonographic Murphy sign
   - front: Gallbladder surface landmark?
     back: Tip of right 9th costal cartilage at the lateral border of rectus abdominis
+diagrams: [referred-pain]
 related: [liver, pancreas, duodenum]
 images:
   - image: gray-532-celiac-artery

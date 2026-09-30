@@ -111,6 +111,7 @@ flashcards:
     back: Muscles of mastication, mylohyoid, anterior digastric, tensor tympani, tensor veli palatini
   - front: First-line drug for trigeminal neuralgia?
     back: Carbamazepine
+diagrams: [skull-base-foramina]
 related: [muscles-of-mastication, facial-nerve, pons, dural-venous-sinuses, scalp]
 images:
   - image: gray-778-maxillary-mandibular-nerves
