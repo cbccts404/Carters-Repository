@@ -1,0 +1,13 @@
+title: Foregut, midgut and hindgut
+region: abdomen
+summary: The three embryologic divisions of the gut — which artery supplies each, what they contain, their parasympathetic supply and where their visceral pain is felt.
+columns: [Division, Artery (level), Main branches, Supplies, Parasympathetic, Visceral pain]
+rows:
+  - ["Foregut", "[[celiac-trunk]] (T12)", "Left gastric, splenic, common hepatic", "Abdominal esophagus, [[stomach]], [[duodenum]] proximal to the major papilla, [[liver]], [[gallbladder]], [[pancreas]] (with the SMA); the [[spleen]] develops in the foregut mesentery", "Vagus nerve", "Epigastrium"]
+  - ["Midgut", "[[superior-mesenteric-artery]] (L1)", "Inferior pancreaticoduodenal, jejunal and ileal, middle colic, right colic, ileocolic", "Duodenum distal to the major papilla, jejunum, ileum, cecum, [[appendix]], ascending colon and the proximal two-thirds of the transverse colon", "Vagus nerve", "Periumbilical"]
+  - ["Hindgut", "[[inferior-mesenteric-artery]] (L3)", "Left colic, sigmoid, superior rectal", "Distal third of the transverse colon, descending and sigmoid [[colon]], upper [[rectum]]", "Pelvic splanchnic nerves (S2–S4)", "Suprapubic"]
+notes:
+  - "**Collaterals**: the pancreaticoduodenal arcades join the celiac trunk and SMA; the **marginal artery (of Drummond)** joins the SMA and IMA."
+  - "**Watershed zones** of the colon: the **splenic flexure** and the **rectosigmoid** — the usual sites of ischemic colitis."
+  - "The **foregut–midgut junction** lies just distal to the major papilla."
+  - "Early appendicitis pain is periumbilical because midgut afferents enter the cord at about T10, the dermatome of the umbilicus."

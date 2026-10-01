@@ -1,0 +1,16 @@
+title: Spinal cord syndromes
+region: back
+summary: Which tracts each cord syndrome hits, and the motor and sensory pattern that lets you name it at the bedside.
+columns: [Syndrome, Typical cause, Motor, Sensory, Other clues]
+rows:
+  - ["[[spinal-cord|Anterior cord]] (anterior spinal artery)", "Aortic surgery or dissection (loss of the artery of Adamkiewicz), hypotension, flexion injury", "Paraplegia or quadriplegia below the lesion", "Loss of pain and temperature; **vibration and proprioception preserved** (dorsal columns spared)", "Bladder dysfunction"]
+  - ["Central cord", "**Hyperextension** in an older patient with cervical spondylosis", "Weakness **greater in the arms than the legs**", "Variable", "Arms worse than legs is the giveaway"]
+  - ["Brown-Séquard (hemisection)", "Penetrating trauma, tumor, MS", "**Ipsilateral** UMN weakness below the lesion", "**Ipsilateral** loss of vibration and proprioception; **contralateral** loss of pain and temperature starting 1–2 levels below", "Follows from where each tract crosses (see notes)"]
+  - ["[[spinothalamic-tract|Syringomyelia]]", "Central cervical syrinx, often with **Chiari I malformation** or after trauma", "Later LMN weakness and wasting of the hands; UMN signs in the legs", "Bilateral **cape-like** loss of pain and temperature over the shoulders and arms, with **touch and vibration preserved**", "Painless burns of the hands; MRI of the cervical cord"]
+  - ["Subacute combined degeneration ([[dorsal-column-medial-lemniscus|dorsal columns]] + lateral corticospinal tracts)", "**Vitamin B12 deficiency**, nitrous oxide abuse, copper deficiency", "UMN signs (spasticity, Babinski) with reduced ankle reflexes", "Symmetric distal loss of vibration and proprioception; **positive Romberg**", "Macrocytic anemia, raised methylmalonic acid"]
+  - ["Tabes dorsalis", "**Tertiary syphilis** (dorsal roots and columns)", "Absent reflexes", "Sensory ataxia, positive Romberg, lightning pains", "**Argyll Robertson pupils**, Charcot joints"]
+  - ["Conus medullaris", "Fracture, tumor or disc at about L1–L2", "Mixed UMN and LMN (e.g. brisk knee jerk with absent ankle jerk)", "Perianal numbness", "Sudden and symmetric, with **early** bladder, bowel and sexual dysfunction"]
+  - ["[[cauda-equina|Cauda equina]]", "Large central disc herniation (L4–L5 or L5–S1), tumor, epidural abscess or hematoma", "**LMN** leg weakness with reduced reflexes", "**Saddle anesthesia**; bilateral (sometimes unilateral) sciatica", "**Urinary retention** with overflow, reduced anal tone — **emergency MRI and decompression**"]
+notes:
+  - "The [[dorsal-column-medial-lemniscus]] crosses in the **medulla**, so a cord lesion causes **ipsilateral** loss of vibration and proprioception. The [[spinothalamic-tract]] crosses within a level or two of entry, so cord lesions cause **contralateral** pain and temperature loss. The [[corticospinal-tract]] has already crossed in the medulla, so cord lesions cause **ipsilateral** weakness."
+  - "**Neurogenic shock** (hypotension with bradycardia) follows cervical or high thoracic cord injury, above about T6."

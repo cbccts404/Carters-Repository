@@ -1,0 +1,19 @@
+title: Lymph drainage of the pelvis and perineum
+region: pelvis-perineum
+summary: Where each pelvic organ and perineal surface drains first — with the classic contrasts that exam questions are built on.
+columns: [Structure, First nodes, Why it matters]
+rows:
+  - ["[[testis|Testis]]", "**Lumbar (para-aortic)** nodes, following the gonadal vessels", "Testicular cancer spreads to retroperitoneal, not inguinal, nodes — so orchiectomy is done through the groin, not the scrotum"]
+  - ["Scrotal skin", "**Superficial inguinal** nodes", "Testis and scrotum drain to different places"]
+  - ["[[ovary|Ovary]], [[uterine-tubes|uterine tube]] and uterine fundus", "**Lumbar (para-aortic)** nodes, following the ovarian vessels", "Some fundal lymph runs along the round ligament to the superficial inguinal nodes"]
+  - ["Cervix ([[uterus]])", "Internal and external iliac (obturator) and sacral nodes", "Obturator nodes are first-echelon; nodal spread upstages cervical cancer"]
+  - ["[[prostate|Prostate]] and [[urinary-bladder|bladder]]", "Internal and external iliac (obturator) nodes; sacral nodes for the prostate", "Obturator nodes are sampled in pelvic lymphadenectomy"]
+  - ["Upper [[rectum]]", "Pararectal and inferior mesenteric nodes along the superior rectal vessels", "Lower rectum drains to the internal iliac and sacral nodes instead"]
+  - ["[[anal-canal|Anal canal]] above the pectinate line", "Internal iliac (and inferior mesenteric) nodes", "See the pectinate line table"]
+  - ["Anal canal below the pectinate line", "**Superficial inguinal** nodes", "Anal squamous cell carcinoma can present with inguinal nodes"]
+  - ["[[vulva|Vulva]], lower [[vagina]], penile skin, perianal skin", "**Superficial inguinal** nodes", "Inguinal lymphadenopathy means examining the whole perineum"]
+  - ["Glans of the [[penis]] or clitoris", "Deep inguinal nodes (and internal iliac)", "Deep inguinal nodes lie medial to the femoral vein"]
+  - ["Lower limb", "Superficial inguinal nodes (vertical group)", "Examine the feet and legs as well"]
+notes:
+  - "Chain: superficial inguinal → deep inguinal → external iliac → common iliac → **lumbar (para-aortic) nodes** → cisterna chyli → [[thoracic-duct]]."
+  - "Key contrasts: **testis → para-aortic, scrotum → superficial inguinal**; **ovary/fundus → para-aortic, cervix → iliac and sacral**. See [[pelvic-lymph-nodes]]."
