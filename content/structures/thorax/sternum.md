@@ -134,6 +134,7 @@ flashcards:
     back: Start/end of aortic arch, carina (approx.), superior/inferior mediastinum boundary, azygos → SVC, pulmonary trunk bifurcation
   - front: Hand position for chest compressions?
     back: Lower half of the sternum (center of chest), avoiding the xiphoid
+diagrams: [mediastinum]
 related: [ribs, mediastinum]
 images:
   - image: gray-115-sternum

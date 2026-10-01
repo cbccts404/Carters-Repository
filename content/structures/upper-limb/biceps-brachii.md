@@ -172,6 +172,7 @@ flashcards:
     back: "Popeye: long head rupture (belly bulges distally). Reverse Popeye: distal tendon rupture (belly retracts proximally)"
   - front: Hook test?
     back: Can't hook the distal biceps tendon in the antecubital fossa → complete distal rupture
+diagrams: [cubital-fossa]
 related: [cubital-fossa, glenohumeral-joint]
 images:
   - image: gray-410-pectoralis-deltoid-biceps

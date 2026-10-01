@@ -118,6 +118,7 @@ flashcards:
     back: Upgaze palsy, light–near dissociation, convergence–retraction nystagmus, lid retraction
   - front: Where do the corticospinal fibers run in the midbrain?
     back: Cerebral peduncles (crus cerebri)
+diagrams: [cranial-nerve-exits]
 related: [pons, oculomotor-nerve, trochlear-nerve, basal-ganglia, ventricular-system]
 images:
   - image: gray-717-coronal-thalamus-midbrain

@@ -173,4 +173,52 @@ export const diagrams: Record<string, DiagramMeta> = {
     description:
       "Visceral pain is poorly localized and felt in the dermatomes that share spinal segments with the organ's afferent fibers. Pain becomes sharp and localized once the parietal peritoneum is involved (appendicitis: periumbilical → RLQ). Zones are approximate and vary between people.",
   },
+  'femoral-triangle': {
+    title: 'Femoral triangle (right, anterior view)',
+    region: 'lower-limb',
+    description:
+      "Lateral on your left. The base is the inguinal ligament, the borders are sartorius (lateral) and adductor longus (medial), and the floor is iliopsoas and pectineus. Lateral to medial: Nerve (outside the femoral sheath), Artery, Vein, Empty space (femoral canal), Lymphatics. The pulse is felt just below the mid-inguinal point, with the vein just medial to it; a femoral hernia comes through the femoral canal.",
+  },
+  'tibial-plateau': {
+    title: 'Right tibial plateau from above',
+    region: 'lower-limb',
+    description:
+      "Femur removed, anterior at the top, medial on your left. The medial meniscus is C-shaped and fixed to the MCL, so it moves less and tears more often; the lateral meniscus is nearly a ring and is separated from the LCL by the popliteus tendon. The cruciates are named for their tibial attachments: the ACL runs from the anterior intercondylar area to the lateral femoral condyle, the PCL from the posterior area to the medial condyle. Only the outer third (red zone) of each meniscus has a blood supply.",
+  },
+  'recurrent-laryngeal-nerve': {
+    title: 'Course of the recurrent laryngeal nerves',
+    region: 'head-neck',
+    description:
+      "Anterior view, patient's right on your left. The right RLN hooks under the right subclavian artery in the root of the neck; the left hooks under the aortic arch beside the ligamentum arteriosum, so it is longer and runs in the chest. Both climb in the tracheoesophageal groove past the inferior thyroid arteries to supply every intrinsic laryngeal muscle except cricothyroid (external laryngeal nerve). Hoarseness after thyroidectomy, or from a lung cancer or aortic aneurysm on the left, points to the RLN.",
+  },
+  'mediastinum': {
+    title: 'Divisions of the mediastinum',
+    region: 'thorax',
+    description:
+      "Sagittal view, anterior on your left. The plane through the sternal angle and the T4/T5 disc divides the superior from the inferior mediastinum; the pericardium splits the inferior part into anterior, middle and posterior. Masses follow the compartments: anterior = the 4 T's, middle = lymph nodes and cysts, posterior = neurogenic tumors. Radiologists increasingly use a three-compartment CT model (prevascular, visceral, paravertebral) that maps onto these.",
+  },
+  'csf-flow': {
+    title: 'Flow of cerebrospinal fluid',
+    region: 'neuroanatomy',
+    description:
+      "Lateral ventricles → foramina of Monro → third ventricle → cerebral aqueduct → fourth ventricle → Magendie and Luschka → subarachnoid space → arachnoid granulations → superior sagittal sinus. A block anywhere inside the ventricles causes noncommunicating (obstructive) hydrocephalus, with the ventricles dilated upstream of the block; failed absorption at the granulations causes communicating hydrocephalus.",
+  },
+  'facial-palsy': {
+    title: 'Upper vs lower motor neuron facial palsy',
+    region: 'neuroanatomy',
+    description:
+      "The forehead part of each facial nucleus gets corticobulbar input from both cortices; the lower-face part only from the opposite cortex. A stroke in the cortex or internal capsule (A) therefore weakens the opposite lower face and spares the forehead. A facial nerve lesion such as Bell palsy (B) weakens the whole of that side of the face, forehead included. Forehead involved = peripheral; forehead spared = central.",
+  },
+  'cubital-fossa': {
+    title: 'Cubital fossa (right, anterior view)',
+    region: 'upper-limb',
+    description:
+      "Lateral (thumb side) on your left. Borders: the line between the epicondyles above, brachioradialis laterally and pronator teres medially. Contents lateral to medial: biceps Tendon, brachial Artery, median Nerve (TAN), with the radial nerve deep at the lateral edge. The brachial pulse is just medial to the tendon, and the median cubital vein in the roof is the usual venipuncture site, superficial to the bicipital aponeurosis.",
+  },
+  'cranial-nerve-exits': {
+    title: 'Where the cranial nerves leave the brainstem',
+    region: 'neuroanatomy',
+    description:
+      "Ventral view. III leaves the interpeduncular fossa of the midbrain; IV is the only nerve to leave from the back (dashed); V leaves the lateral pons; VI the pontomedullary junction near the midline; VII and VIII the cerebellopontine angle; IX and X the postolivary sulcus; XII the preolivary sulcus between pyramid and olive; and XI rises from the upper cervical cord. Nuclei follow the same levels: III–IV midbrain, V–VIII pons, IX–XII medulla.",
+  },
 };

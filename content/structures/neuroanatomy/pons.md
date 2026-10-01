@@ -113,6 +113,7 @@ flashcards:
     back: Paramedian pontine reticular formation (PPRF)
   - front: What is preserved in locked-in syndrome?
     back: Consciousness, vertical eye movements and blinking
+diagrams: [cranial-nerve-exits]
 related: [midbrain, medulla-oblongata, cerebellum, vertebrobasilar-system, abducens-nerve]
 images:
   - image: gray-679-medulla-pons-anterior

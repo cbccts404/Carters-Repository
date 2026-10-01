@@ -146,6 +146,7 @@ flashcards:
     back: Cubital fossa, medial to the biceps tendon
   - front: Volkmann ischemic contracture?
     back: Wrist and finger flexion contracture after forearm ischemia (compartment syndrome), classically after supracondylar fracture
+diagrams: [cubital-fossa]
 related: [cubital-fossa, humerus]
 images:
   - image: gray-525-brachial-artery

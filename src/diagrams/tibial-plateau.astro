@@ -1,0 +1,118 @@
+---
+/* Original schematic: right tibial plateau from above, femur removed. Anterior at the top; for a right knee seen
+   from above, medial is on the viewer's left. Shapes are simplified and not to scale. */
+import Label from '../components/Label.astro';
+
+type P = [number, number];
+const rad = (d: number) => (d * Math.PI) / 180;
+const pt = (c: P, rx: number, ry: number, deg: number): P => [c[0] + rx * Math.cos(rad(deg)), c[1] + ry * Math.sin(rad(deg))];
+const fmt = (ps: P[]) => ps.map((p) => p.map((n) => n.toFixed(1)).join(' ')).join(' L');
+/** A ring segment between two ellipses (same centre), swept from a1 to a2 degrees. Width can change along the sweep. */
+function band(c: P, rx: number, ry: number, inner: (t: number) => number, a1: number, a2: number) {
+  const n = 48;
+  const outer: P[] = [];
+  const inn: P[] = [];
+  for (let i = 0; i <= n; i++) {
+    const t = i / n;
+    const a = a1 + (a2 - a1) * t;
+    outer.push(pt(c, rx, ry, a));
+    inn.push(pt(c, rx * inner(t), ry * inner(t), a));
+  }
+  return `M${fmt(outer)} L${fmt(inn.reverse())} Z`;
+}
+const MED: P = [270, 262];
+const LAT: P = [532, 258];
+// medial meniscus: C-shaped, open toward the intercondylar area, wider posteriorly (t → 1)
+const medInner = (t: number) => 0.66 - 0.16 * t;
+const medial = band(MED, 112, 128, medInner, -62, -292);
+const medialRed = band(MED, 112, 128, (t) => 1 - (1 - medInner(t)) / 3, -62, -292);
+// lateral meniscus: nearly a ring, horns close together medially
+const latInner = () => 0.56;
+const lateral = band(LAT, 100, 108, latInner, 206, 514);
+const lateralRed = band(LAT, 100, 108, () => 1 - (1 - 0.56) / 3, 206, 514);
+const plateau =
+  'M138 210 Q146 112 268 98 Q352 90 400 116 Q448 90 532 98 Q650 112 662 210 Q672 330 574 384 ' +
+  'Q486 424 440 398 Q404 380 360 398 Q314 424 226 384 Q128 330 138 210 Z';
+const medAnt = pt(MED, 112 * 0.83, 128 * 0.83, -62);
+const latAnt = pt(LAT, 100 * 0.78, 108 * 0.78, 206);
+---
+
+<div class="scroll">
+  <svg viewBox="20 20 840 500" role="img" aria-labelledby="tp-title tp-desc">
+    <title id="tp-title">Right tibial plateau from above: menisci and ligament attachments</title>
+    <desc id="tp-desc">
+      The upper surface of the right tibia with the femur removed, anterior at the top and medial on the left. The
+      medial meniscus is C-shaped and wider behind, and its outer edge is fixed to the medial collateral ligament. The
+      lateral meniscus is almost a complete ring and is separate from the lateral collateral ligament, with the
+      popliteus tendon passing between them; the LCL runs down to the head of the fibula. The transverse ligament joins
+      the two anterior horns. The anterior cruciate ligament attaches to the anterior intercondylar area and the
+      posterior cruciate ligament to the posterior intercondylar area. The outer third of each meniscus (red zone) has
+      a blood supply and can heal; the inner two-thirds does not.
+    </desc>
+    <style>
+      .tp-bone { fill: color-mix(in srgb, var(--t-bone) 26%, var(--surface)); stroke: var(--t-bone); stroke-width: 2; }
+      .tp-men { fill: color-mix(in srgb, var(--t-ligament) 30%, var(--surface)); stroke: var(--t-ligament); stroke-width: 2; }
+      .tp-edge { fill: none; stroke: var(--t-ligament); stroke-width: 2; }
+      .tp-red { fill: color-mix(in srgb, var(--t-artery) 38%, transparent); stroke: none; }
+      .tp-lig { fill: color-mix(in srgb, var(--t-ligament) 70%, var(--surface)); stroke: var(--t-ligament); stroke-width: 1.5; }
+      .tp-cru { fill: color-mix(in srgb, var(--t-ligament) 55%, var(--surface)); stroke: var(--text); stroke-width: 1.5; }
+      .tp-tl { stroke: var(--t-ligament); stroke-width: 5; stroke-linecap: round; fill: none; }
+      .tp-pop { stroke: var(--t-muscle); stroke-width: 6; stroke-linecap: round; fill: none; }
+      .tp-fib { fill: none; stroke: var(--t-bone); stroke-width: 2; stroke-dasharray: 5 4; }
+      .tp-lead { stroke: var(--muted); stroke-width: 1; fill: none; }
+    </style>
+
+    <path class="tp-bone" d={plateau}></path>
+    <circle class="tp-fib" cx="642" cy="378" r="34"></circle>
+
+    <path class="tp-men" d={medial}></path>
+    <path class="tp-red" d={medialRed}></path>
+    <path class="tp-men" d={lateral} ></path>
+    <path class="tp-red" d={lateralRed}></path>
+    <path class="tp-edge" d={medial}></path>
+    <path class="tp-edge" d={lateral}></path>
+
+    <!-- transverse ligament joining the anterior horns -->
+    <path class="tp-tl" d={`M${medAnt[0]} ${medAnt[1]} Q400 112 ${latAnt[0]} ${latAnt[1]}`}></path>
+
+    <!-- cruciate attachments (named for their tibial ends) -->
+    <ellipse class="tp-cru" cx="396" cy="186" rx="24" ry="14" transform="rotate(-12 396 186)"></ellipse>
+    <ellipse class="tp-cru" cx="402" cy="372" rx="26" ry="13"></ellipse>
+
+    <!-- MCL fused to the medial meniscus; LCL separate, with popliteus between -->
+    <rect class="tp-lig" x="138" y="196" width="22" height="118" rx="6"></rect>
+    <path class="tp-pop" d="M600 322 Q618 298 626 268"></path>
+    <rect class="tp-lig" x="650" y="238" width="18" height="96" rx="9"></rect>
+
+    <g class="tp-lead">
+      <line x1="226" y1="150" x2="190" y2="72"></line>
+      <line x1="596" y1="168" x2="640" y2="72"></line>
+      <line x1="380" y1="186" x2="270" y2="40"></line>
+      <line x1="430" y1="118" x2="480" y2="40"></line>
+      <line x1="390" y1="378" x2="330" y2="462"></line>
+      <line x1="138" y1="256" x2="96" y2="256"></line>
+      <line x1="668" y1="286" x2="700" y2="286"></line>
+      <line x1="612" y1="304" x2="700" y2="236"></line>
+      <line x1="664" y1="398" x2="700" y2="420"></line>
+      <line x1="166" y1="304" x2="96" y2="352"></line>
+      <line x1="198" y1="262" x2="96" y2="304"></line>
+    </g>
+
+    <Label x={190} y={64} anchor="middle" to="menisci">Medial meniscus (C)</Label>
+    <Label x={640} y={64} anchor="middle" to="menisci">Lateral meniscus (O)</Label>
+    <Label x={262} y={32} anchor="middle" to="cruciate-ligaments">ACL attachment</Label>
+    <Label x={500} y={32} anchor="middle" to="menisci">Transverse ligament</Label>
+    <Label x={330} y={478} anchor="middle" to="cruciate-ligaments">PCL attachment</Label>
+    <Label x={90} y={261} anchor="end" to="collateral-ligaments-of-knee">MCL</Label>
+    <Label x={706} y={291} to="collateral-ligaments-of-knee">LCL</Label>
+    <Label x={706} y={241}>Popliteus tendon</Label>
+    <Label x={706} y={425} to="fibula">Fibular head (below)</Label>
+    <Label x={90} y={357} anchor="end" size="sm">Red zone</Label>
+    <Label x={90} y={309} anchor="end" size="sm">White zone</Label>
+
+    <Label x={420} y={505} anchor="middle" size="sm">Anterior ↑ · medial ← → lateral (right knee)</Label>
+    <Label x={560} y={470} size="sm">ACL → lateral femoral condyle</Label>
+    <Label x={560} y={488} size="sm">PCL → medial femoral condyle</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

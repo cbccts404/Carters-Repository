@@ -134,6 +134,7 @@ flashcards:
     back: Outer third (red zone, vascular)
   - front: Classic mechanical symptom of a bucket-handle tear?
     back: Locking — inability to fully extend the knee
+diagrams: [tibial-plateau]
 related: [knee-joint, collateral-ligaments-of-knee, cruciate-ligaments]
 images:
   - image: gray-349-tibial-plateau-menisci

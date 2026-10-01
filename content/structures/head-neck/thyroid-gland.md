@@ -136,6 +136,7 @@ flashcards:
     back: Pretracheal fascia binds it to the larynx
   - front: First test for a thyroid nodule?
     back: TSH
+diagrams: [recurrent-laryngeal-nerve]
 related: [parathyroid-glands, recurrent-laryngeal-nerve, larynx, trachea]
 images:
   - image: gray-562-thyroid-veins

@@ -120,6 +120,7 @@ flashcards:
     back: Under the right subclavian artery
   - front: Laryngeal muscle not supplied by the recurrent laryngeal nerve?
     back: Cricothyroid (external laryngeal nerve)
+diagrams: [recurrent-laryngeal-nerve]
 related: [larynx, thyroid-gland, thoracic-aorta, trachea, esophagus]
 images:
   - image: gray-959-laryngeal-muscles

@@ -127,6 +127,7 @@ flashcards:
     back: Nucleus ambiguus
   - front: Palatal muscle not supplied by CN X?
     back: Tensor veli palatini (V3)
+diagrams: [recurrent-laryngeal-nerve]
 related: [recurrent-laryngeal-nerve, larynx, pharynx, glossopharyngeal-nerve, medulla-oblongata, esophagus]
 images:
   - image: gray-793-glossopharyngeal-vagus-accessory

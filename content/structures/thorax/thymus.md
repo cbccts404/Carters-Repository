@@ -120,6 +120,7 @@ flashcards:
     back: Myasthenia gravis (also pure red cell aplasia, hypogammaglobulinemia)
   - front: Anterior mediastinal mass — 4 T's?
     back: Thymoma, teratoma, thyroid (goiter), terrible lymphoma
+diagrams: [mediastinum]
 related: [mediastinum, sternum]
 images:
   - image: gray-1178-thymus

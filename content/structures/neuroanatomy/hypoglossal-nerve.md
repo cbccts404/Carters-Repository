@@ -109,6 +109,7 @@ flashcards:
     back: Toward the lesion
   - front: Where does CN XII emerge from the brainstem?
     back: Preolivary sulcus (between the pyramid and olive) of the medulla
+diagrams: [cranial-nerve-exits]
 related: [tongue, medulla-oblongata, carotid-arteries, cervical-plexus]
 images:
   - image: gray-794-hypoglossal-cervical-plexus

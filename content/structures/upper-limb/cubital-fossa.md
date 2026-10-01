@@ -133,6 +133,7 @@ flashcards:
     back: Biceps Tendon, brachial Artery, median Nerve (TAN); radial nerve deep at the lateral edge
   - front: Preferred vein for venipuncture and why?
     back: Median cubital vein; superficial, large, anchored, and separated from the artery/nerve by the bicipital aponeurosis
+diagrams: [cubital-fossa]
 related: [elbow-joint, brachial-artery, median-nerve]
 images:
   - image: gray-574-upper-limb-superficial-veins

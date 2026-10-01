@@ -1,0 +1,106 @@
+---
+/* Original schematic: ventral (anterior) view of the brainstem showing where cranial nerves II–XII leave it.
+   Nerves are drawn on both sides and labelled on one, alternating sides to keep the labels apart. Not to scale. */
+import Label from '../components/Label.astro';
+
+const C = 450; // midline
+type Nerve = { name: string; to: string; side: -1 | 1; d: string; tip: [number, number]; ly: number };
+// d is drawn for the right-hand copy (x > C) and mirrored; tip is where the leader starts (on the labelled side)
+const m = (x: number) => 2 * C - x;
+const nerves: Nerve[] = [
+  { name: 'Optic (II)', to: 'optic-nerve', side: -1, d: 'M470 72 L530 22', tip: [m(522), 30], ly: 34 },
+  { name: 'Oculomotor (III)', to: 'oculomotor-nerve', side: -1, d: 'M462 196 Q500 186 540 150', tip: [m(534), 156], ly: 132 },
+  { name: 'Trochlear (IV) — from the dorsal side', to: 'trochlear-nerve', side: 1, d: 'M520 222 Q560 196 580 160', tip: [574, 168], ly: 132 },
+  { name: 'Trigeminal (V)', to: 'trigeminal-nerve', side: -1, d: 'M574 296 L650 282 M574 310 L640 304', tip: [m(646), 284], ly: 230 },
+  { name: 'Abducens (VI)', to: 'abducens-nerve', side: 1, d: 'M466 384 Q478 340 492 270', tip: [490, 284], ly: 230 },
+  { name: 'Facial (VII)', to: 'facial-nerve', side: -1, d: 'M560 384 L640 368', tip: [m(636), 369], ly: 330 },
+  { name: 'Vestibulocochlear (VIII)', to: 'vestibulocochlear-nerve', side: 1, d: 'M568 396 L652 392', tip: [648, 392], ly: 330 },
+  { name: 'Glossopharyngeal (IX)', to: 'glossopharyngeal-nerve', side: -1, d: 'M526 420 L620 422', tip: [m(616), 422], ly: 420 },
+  { name: 'Vagus (X)', to: 'vagus-nerve', side: 1, d: 'M528 440 L624 446 M530 456 L622 462 M530 472 L620 478', tip: [620, 462], ly: 430 },
+  { name: 'Accessory (XI) — from C1–C5', to: 'accessory-nerve', side: -1, d: 'M520 680 Q560 600 600 500 M498 640 L534 640 M498 600 L548 600 M500 560 L562 560', tip: [m(590), 520], ly: 520 },
+  { name: 'Hypoglossal (XII)', to: 'hypoglossal-nerve', side: 1, d: 'M484 432 Q494 470 500 520 M484 452 Q492 486 500 520 M484 472 Q490 500 500 520 M500 520 L556 556', tip: [552, 554], ly: 560 },
+];
+const mirror = (d: string) => d.replace(/(-?\d+(\.\d+)?) (-?\d+(\.\d+)?)/g, (_, x, __, y) => `${m(+x)} ${y}`);
+const LX = { [-1]: 200, [1]: 700 } as const;
+---
+
+<div class="scroll">
+  <svg viewBox="-50 0 1090 720" role="img" aria-labelledby="cn-title cn-desc">
+    <title id="cn-title">Where the cranial nerves leave the brainstem (ventral view)</title>
+    <desc id="cn-desc">
+      The front of the brainstem. The optic nerves meet at the chiasm above. The oculomotor nerve emerges from the
+      interpeduncular fossa between the cerebral peduncles of the midbrain. The trochlear nerve is the only one to
+      leave from the back, just below the inferior colliculus, and winds forward around the peduncle. The trigeminal
+      nerve leaves the lateral pons. The abducens leaves at the pontomedullary junction near the midline; the facial
+      and vestibulocochlear nerves leave at the cerebellopontine angle. The glossopharyngeal and vagus nerves leave
+      the postolivary sulcus of the medulla, the hypoglossal leaves the preolivary sulcus between the pyramid and the
+      olive, and the accessory nerve rises from the upper cervical cord.
+    </desc>
+    <style>
+      .cn-bs { fill: color-mix(in srgb, var(--t-organ) 18%, var(--surface)); stroke: var(--t-organ); stroke-width: 1.8; }
+      .cn-pons { fill: color-mix(in srgb, var(--t-organ) 26%, var(--surface)); stroke: var(--t-organ); stroke-width: 1.8; }
+      .cn-part { fill: color-mix(in srgb, var(--t-organ) 34%, var(--surface)); stroke: var(--t-organ); stroke-width: 1.4; }
+      .cn-n { stroke: var(--t-nerve); stroke-width: 5; stroke-linecap: round; fill: none; }
+      .cn-n4 { stroke: var(--t-nerve); stroke-width: 4; stroke-linecap: round; fill: none; stroke-dasharray: 6 4; }
+      .cn-chiasm { stroke: var(--t-nerve); stroke-width: 9; stroke-linecap: round; fill: none; }
+      .cn-mid { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 4 5; }
+      .cn-dec { stroke: var(--t-organ); stroke-width: 1.5; }
+      .cn-lead { stroke: var(--muted); stroke-width: 1; fill: none; }
+    </style>
+
+    <!-- optic nerves, chiasm and tracts -->
+    <path class="cn-chiasm" d={`M${m(530)} 22 L${C} 72 L530 22 M${m(530)} 122 L${C} 72 L530 122`}></path>
+
+    <!-- midbrain: cerebral peduncles with the interpeduncular fossa -->
+    <path class="cn-bs" d={`M${m(532)} 118 L532 118 L524 232 L${m(524)} 232 Z`}></path>
+    <path class="cn-part" d={`M${m(530)} 122 Q${m(470)} 160 ${C - 8} 228 L${m(522)} 230 Z`}></path>
+    <path class="cn-part" d={`M530 122 Q470 160 ${C + 8} 228 L522 230 Z`}></path>
+    <circle class="cn-part" cx={C - 12} cy="140" r="8"></circle>
+    <circle class="cn-part" cx={C + 12} cy="140" r="8"></circle>
+
+    <!-- medulla and upper cord -->
+    <path class="cn-bs" d={`M${m(560)} 380 L560 380 Q540 470 506 560 L500 710 L${m(500)} 710 L${m(506)} 560 Q${m(540)} 470 ${m(560)} 380 Z`}></path>
+    <path class="cn-part" d={`M${C - 2} 386 L${C - 24} 386 L${C - 20} 540 L${C - 2} 548 Z`}></path>
+    <path class="cn-part" d={`M${C + 2} 386 L${C + 24} 386 L${C + 20} 540 L${C + 2} 548 Z`}></path>
+    <ellipse class="cn-part" cx={C - 52} cy="448" rx="17" ry="42"></ellipse>
+    <ellipse class="cn-part" cx={C + 52} cy="448" rx="17" ry="42"></ellipse>
+    <line class="cn-dec" x1={C - 18} y1="548" x2={C + 18} y2="572"></line>
+    <line class="cn-dec" x1={C + 18} y1="548" x2={C - 18} y2="572"></line>
+
+    <!-- pons -->
+    <ellipse class="cn-pons" cx={C} cy="306" rx="140" ry="82"></ellipse>
+    <line class="cn-mid" x1={C} y1="226" x2={C} y2="386"></line>
+
+    <!-- nerves, both sides -->
+    {nerves.slice(1).map((n) => (
+      <>
+        <path class={n.name.startsWith('Trochlear') ? 'cn-n4' : 'cn-n'} d={n.d}></path>
+        <path class={n.name.startsWith('Trochlear') ? 'cn-n4' : 'cn-n'} d={mirror(n.d)}></path>
+      </>
+    ))}
+
+    <!-- leaders and labels -->
+    {nerves.map((n) => (
+      <>
+        <line class="cn-lead" x1={n.tip[0]} y1={n.tip[1]} x2={LX[n.side] + (n.side === -1 ? 6 : -6)} y2={n.ly - 5}></line>
+        <Label x={LX[n.side]} y={n.ly} anchor={n.side === -1 ? 'end' : 'start'} to={n.to}>{n.name}</Label>
+      </>
+    ))}
+    <g class="cn-lead">
+      <line x1={m(510)} y1="200" x2="200" y2="190"></line>
+      <line x1={m(420)} y1="340" x2="200" y2="290"></line>
+      <line x1={C - 30} y1="500" x2="200" y2="610"></line>
+      <line x1={C + 66} y1="470" x2="700" y2="610"></line>
+      <line x1={C + 40} y1="660" x2="700" y2="660"></line>
+      <line x1={C + 30} y1="600" x2="700" y2="500"></line>
+    </g>
+    <Label x={194} y={195} anchor="end" to="midbrain">Midbrain (cerebral peduncle)</Label>
+    <Label x={194} y={295} anchor="end" to="pons">Pons</Label>
+    <Label x={194} y={615} anchor="end" to="corticospinal-tract">Pyramid</Label>
+    <Label x={706} y={615} to="medulla-oblongata">Olive</Label>
+    <Label x={706} y={665} to="spinal-cord">Spinal cord</Label>
+    <Label x={706} y={505} to="medulla-oblongata">Medulla</Label>
+    <Label x={C} y={704} anchor="middle" size="sm">Ventral view · dashed IV leaves from the back</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

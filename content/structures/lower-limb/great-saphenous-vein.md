@@ -128,6 +128,7 @@ flashcards:
     back: Popliteal vein
   - front: Location of venous ulcers?
     back: Gaiter area, typically above the medial malleolus
+diagrams: [femoral-triangle]
 related: [deep-veins-of-lower-limb, femoral-triangle]
 images:
   - image: gray-584-saphenofemoral-junction

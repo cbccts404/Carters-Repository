@@ -1,0 +1,125 @@
+---
+/* Original schematic: course of the vagus and recurrent laryngeal nerves, anterior view of the neck and superior
+   mediastinum (patient's right on the viewer's left). Structures behind the thyroid are dashed. Not to scale. */
+import Label from '../components/Label.astro';
+
+// right side (viewer's left)
+const rVagus = 'M332 22 L330 300 Q332 360 356 420 L372 548';
+const rRLN = 'M330 312 C331 344 296 346 298 318 C300 296 416 300 422 256 L424 182';
+const rSubcl = 'M362 320 Q300 288 112 304';
+const rCCA = 'M362 320 L350 24';
+const bct = 'M446 366 Q410 340 362 320';
+// left side (viewer's right)
+const lVagus = 'M584 22 L586 340 Q582 400 566 450 L556 548';
+const lRLN = 'M582 400 C584 454 548 466 548 430 C548 396 482 402 478 356 L478 182';
+const lCCA = 'M508 348 Q548 300 556 220 L560 24';
+const lSubcl = 'M532 356 Q560 300 600 296 L800 306';
+const arch = 'M430 548 L430 410 Q436 350 500 346 Q566 350 572 404 L572 548';
+const pt = 'M500 548 L528 456';
+---
+
+<div class="scroll">
+  <svg viewBox="-56 0 990 570" role="img" aria-labelledby="rln-title rln-desc">
+    <title id="rln-title">Course of the recurrent laryngeal nerves</title>
+    <desc id="rln-desc">
+      Anterior view of the neck and upper chest, patient's right on the left. Each vagus nerve descends beside the
+      common carotid artery. The right recurrent laryngeal nerve leaves the right vagus in the root of the neck and
+      hooks under the right subclavian artery. The left recurrent laryngeal nerve leaves the left vagus in the thorax
+      and hooks under the aortic arch, just lateral to the ligamentum arteriosum, so it is longer. Both ascend in the
+      groove between the trachea and oesophagus, pass close to the inferior thyroid arteries behind the thyroid gland,
+      and enter the larynx to supply all its intrinsic muscles except cricothyroid. The superior laryngeal nerve leaves
+      the vagus high in the neck: its internal branch is sensory above the vocal folds and its external branch supplies
+      cricothyroid.
+    </desc>
+    <style>
+      .rln-cart { fill: color-mix(in srgb, var(--t-joint) 30%, var(--surface)); stroke: var(--t-joint); stroke-width: 2; }
+      .rln-ring { stroke: var(--t-joint); stroke-width: 1.4; }
+      .rln-thy { fill: color-mix(in srgb, var(--t-organ) 30%, transparent); stroke: var(--t-organ); stroke-width: 2; }
+      .rln-art { stroke: var(--t-artery); stroke-width: 9; stroke-linecap: round; fill: none; }
+      .rln-arch { stroke: var(--t-artery); stroke-width: 20; stroke-linecap: round; fill: none; }
+      .rln-ita { stroke: var(--t-artery); stroke-width: 3.5; stroke-linecap: round; fill: none; }
+      .rln-pt { stroke: var(--t-vein); stroke-width: 18; stroke-linecap: round; fill: none; }
+      .rln-lig { stroke: var(--t-ligament); stroke-width: 4; stroke-linecap: round; }
+      .rln-vag { stroke: var(--t-nerve); stroke-width: 5; stroke-linecap: round; fill: none; }
+      .rln-rln { stroke: var(--t-nerve); stroke-width: 3.5; stroke-linecap: round; fill: none; }
+      .rln-back { stroke: var(--t-nerve); stroke-width: 3.5; stroke-dasharray: 6 4; fill: none; }
+      .rln-sln { stroke: var(--t-nerve); stroke-width: 2.5; stroke-linecap: round; fill: none; }
+      .rln-lead { stroke: var(--muted); stroke-width: 1; fill: none; }
+    </style>
+
+    <!-- airway: larynx and trachea -->
+    <path class="rln-cart" d="M412 70 L488 70 L482 138 L450 160 L418 138 Z"></path>
+    <rect class="rln-cart" x="422" y="162" width="56" height="18" rx="5"></rect>
+    <rect class="rln-cart" x="428" y="180" width="44" height="250" rx="6"></rect>
+    {Array.from({ length: 15 }, (_, i) => <line class="rln-ring" x1="430" x2="470" y1={194 + i * 16} y2={194 + i * 16}></line>)}
+
+    <!-- nerves deep to the thyroid and vessels (drawn first) -->
+    <path class="rln-rln" d={rRLN}></path>
+    <path class="rln-rln" d={lRLN}></path>
+
+    <!-- vessels -->
+    <path class="rln-pt" d={pt}></path>
+    <path class="rln-art" d={rSubcl}></path>
+    <path class="rln-art" d={bct}></path>
+    <path class="rln-art" d={rCCA}></path>
+    <path class="rln-art" d={lCCA}></path>
+    <path class="rln-art" d={lSubcl}></path>
+    <path class="rln-arch" d={arch}></path>
+    <line class="rln-lig" x1="532" y1="452" x2="540" y2="380"></line>
+    <path class="rln-ita" d="M296 300 Q318 258 376 246"></path>
+    <path class="rln-ita" d="M604 298 Q582 258 524 246"></path>
+
+    <!-- thyroid over the trachea; the nerves show through it, dashed -->
+    <ellipse class="rln-thy" cx="404" cy="218" rx="30" ry="52"></ellipse>
+    <ellipse class="rln-thy" cx="496" cy="218" rx="30" ry="52"></ellipse>
+    <rect class="rln-thy" x="428" y="206" width="44" height="20"></rect>
+    <path class="rln-back" d="M424 268 L424 182"></path>
+    <path class="rln-back" d="M478 268 L478 182"></path>
+
+    <!-- vagus nerves (anterior to the subclavian artery and arch) and the superior laryngeal nerve -->
+    <path class="rln-vag" d={rVagus}></path>
+    <path class="rln-vag" d={lVagus}></path>
+    <path class="rln-sln" d="M332 62 Q372 70 396 92 L412 98 M396 92 Q404 132 420 160"></path>
+
+    <g class="rln-lead">
+      <line x1="330" y1="40" x2="240" y2="40"></line>
+      <line x1="406" y1="96" x2="240" y2="96"></line>
+      <line x1="418" y1="158" x2="240" y2="150"></line>
+      <line x1="349" y1="200" x2="240" y2="200"></line>
+      <line x1="320" y1="270" x2="240" y2="262"></line>
+      <line x1="200" y1="300" x2="200" y2="330"></line>
+      <line x1="300" y1="336" x2="240" y2="380"></line>
+      <line x1="424" y1="300" x2="240" y2="430"></line>
+      <line x1="450" y1="110" x2="660" y2="72"></line>
+      <line x1="496" y1="180" x2="660" y2="150"></line>
+      <line x1="472" y1="400" x2="660" y2="214"></line>
+      <line x1="584" y1="200" x2="660" y2="262"></line>
+      <line x1="560" y1="456" x2="660" y2="330"></line>
+      <line x1="537" y1="410" x2="660" y2="392"></line>
+      <line x1="570" y1="368" x2="660" y2="440"></line>
+      <line x1="524" y1="500" x2="660" y2="500"></line>
+    </g>
+
+    <Label x={234} y={45} anchor="end" to="vagus-nerve">Right vagus</Label>
+    <Label x={234} y={101} anchor="end" to="larynx">Internal laryngeal n.</Label>
+    <Label x={234} y={155} anchor="end" to="larynx">External laryngeal n. → cricothyroid</Label>
+    <Label x={234} y={205} anchor="end" to="carotid-arteries">Common carotid artery</Label>
+    <Label x={234} y={267} anchor="end" to="thyroid-gland">Inferior thyroid artery</Label>
+    <Label x={200} y={346} anchor="middle" size="sm">Right subclavian artery</Label>
+    <Label x={234} y={385} anchor="end" to="recurrent-laryngeal-nerve">Right RLN (under subclavian)</Label>
+    <Label x={234} y={435} anchor="end">Tracheoesophageal groove</Label>
+    <Label x={666} y={77} to="larynx">Larynx (thyroid cartilage)</Label>
+    <Label x={666} y={155} to="thyroid-gland">Thyroid gland</Label>
+    <Label x={666} y={219} to="trachea">Trachea</Label>
+    <Label x={666} y={267} to="vagus-nerve">Left vagus</Label>
+    <Label x={666} y={335} to="recurrent-laryngeal-nerve">Left RLN (under the arch)</Label>
+    <Label x={666} y={397}>Ligamentum arteriosum</Label>
+    <Label x={666} y={445} to="thoracic-aorta">Aortic arch</Label>
+    <Label x={666} y={505} to="pulmonary-arteries">Pulmonary trunk</Label>
+
+    <Label x={-40} y={548} size="sm">Patient's right ←</Label>
+    <Label x={924} y={548} anchor="end" size="sm">→ Patient's left</Label>
+    <Label x={-40} y={500} size="sm">Dashed = behind the thyroid</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

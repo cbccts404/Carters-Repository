@@ -123,6 +123,7 @@ flashcards:
     back: Femoral artery, femoral vein, femoral canal (not the nerve)
   - front: Medial boundary of the femoral ring?
     back: Lacunar ligament
+diagrams: [femoral-triangle]
 related: [femoral-artery, femoral-nerve, great-saphenous-vein, inguinal-canal]
 images:
   - image: gray-549-femoral-triangle

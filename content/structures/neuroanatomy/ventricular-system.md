@@ -120,6 +120,7 @@ flashcards:
     back: About 150 mL; about 500 mL/day
   - front: NPH triad?
     back: Gait apraxia, urinary incontinence, dementia
+diagrams: [csf-flow]
 related: [cranial-meninges, dural-venous-sinuses, midbrain, spinal-meninges, cerebellum]
 images:
   - image: gray-736-ventricle-cast-side

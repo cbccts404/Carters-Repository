@@ -1,0 +1,119 @@
+---
+/* Original schematic: divisions of the mediastinum in a sagittal view (anterior on the viewer's left). The plane
+   through the sternal angle and the T4/T5 disc separates superior from inferior; the pericardium divides the
+   inferior mediastinum. Not to scale. */
+import Label from '../components/Label.astro';
+
+const top = (i: number) => 50 + (i - 1) * 42; // top of vertebral body Ti
+const vx = (i: number) => 560 + 34 * Math.sin(((i - 1) / 11) * Math.PI); // gentle kyphosis
+const PLANE = top(5) - 3; // T4/T5 disc
+const ANGLE: [number, number] = [180, PLANE];
+const inlet = `M160 110 L${vx(1)} ${top(1)}`;
+const diaphragm = `M232 470 Q400 438 ${vx(12) + 10} ${top(12) + 40}`;
+const front = (from: number, to: number) =>
+  Array.from({ length: to - from + 1 }, (_, k) => from + k).map((i) => `L${vx(i).toFixed(1)} ${top(i) + (i === to ? 36 : 0)}`).join(' ');
+const superior = `M160 110 L${vx(1)} ${top(1)} ${front(1, 4)} L${vx(5)} ${PLANE} L${ANGLE[0]} ${ANGLE[1]} Z`;
+const inferior = `M${ANGLE[0]} ${ANGLE[1]} L${vx(5)} ${PLANE} ${front(5, 12)} L${vx(12) + 10} ${top(12) + 40} Q400 438 232 470 L225 440 Z`;
+const anterior = `M${ANGLE[0]} ${ANGLE[1]} L262 ${PLANE} Q246 330 266 452 L232 470 L225 440 Z`;
+const rows = [
+  { key: 'sup', name: 'Superior', lines: ['Thymus, great veins, aortic arch and branches,', 'trachea, esophagus, thoracic duct, vagus and', 'phrenic nerves, left recurrent laryngeal nerve'] },
+  { key: 'ant', name: 'Anterior', lines: ['Thymic remnants, fat, lymph nodes', 'Masses: the 4 T’s — thymoma, teratoma,', 'thyroid, “terrible” lymphoma'] },
+  { key: 'mid', name: 'Middle', lines: ['Heart and pericardium, ascending aorta,', 'pulmonary trunk, lower SVC, main bronchi', 'Masses: lymph nodes, cysts'] },
+  { key: 'post', name: 'Posterior', lines: ['Descending aorta, esophagus, thoracic duct,', 'azygos veins, vagus nerves, sympathetic trunks', 'Masses: neurogenic tumors'] },
+];
+---
+
+<div class="scroll">
+  <svg viewBox="-20 20 1080 570" role="img" aria-labelledby="med-title med-desc">
+    <title id="med-title">Divisions of the mediastinum</title>
+    <desc id="med-desc">
+      A sagittal view of the chest with the sternum on the left and the thoracic vertebrae on the right. A plane from
+      the sternal angle to the T4/T5 intervertebral disc separates the superior mediastinum above from the inferior
+      mediastinum below. The pericardium and heart form the middle mediastinum; the narrow space between the sternum
+      and the pericardium is the anterior mediastinum, and the space between the pericardium and the vertebrae is the
+      posterior mediastinum. The superior mediastinum contains the thymus, great veins, aortic arch, trachea and
+      esophagus; the posterior contains the descending aorta, esophagus, thoracic duct, azygos veins and sympathetic
+      trunks. Anterior masses are the 4 T's, middle masses are lymph nodes and cysts, and posterior masses are
+      neurogenic tumors.
+    </desc>
+    <style>
+      .med-sup { fill: color-mix(in srgb, var(--t-space) 26%, var(--surface)); }
+      .med-ant { fill: color-mix(in srgb, var(--t-lymphatic) 34%, var(--surface)); }
+      .med-mid { fill: color-mix(in srgb, var(--t-organ) 34%, var(--surface)); stroke: var(--t-organ); stroke-width: 2; }
+      .med-post { fill: color-mix(in srgb, var(--t-nerve) 22%, var(--surface)); }
+      .med-bone { fill: color-mix(in srgb, var(--t-bone) 45%, var(--surface)); stroke: var(--t-bone); stroke-width: 1.5; }
+      .med-plane { stroke: var(--text); stroke-width: 1.6; stroke-dasharray: 8 5; }
+      .med-dia { stroke: var(--t-muscle); stroke-width: 6; fill: none; stroke-linecap: round; }
+      .med-inlet { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 3 4; fill: none; }
+      .med-heart { fill: color-mix(in srgb, var(--t-muscle) 40%, var(--surface)); stroke: var(--t-muscle); stroke-width: 1.5; }
+      .med-art { stroke: var(--t-artery); stroke-width: 12; fill: none; stroke-linecap: round; }
+      .med-tube { stroke: var(--t-joint); stroke-width: 12; fill: none; stroke-linecap: round; }
+      .med-eso { stroke: var(--t-organ); stroke-width: 9; fill: none; stroke-linecap: round; }
+      .med-thy { fill: color-mix(in srgb, var(--t-lymphatic) 55%, var(--surface)); stroke: var(--t-lymphatic); stroke-width: 1.5; }
+      .med-lead { stroke: var(--muted); stroke-width: 1; fill: none; }
+      .med-key { stroke: var(--border); stroke-width: 1; }
+    </style>
+
+    <!-- compartments -->
+    <path class="med-post" d={inferior}></path>
+    <path class="med-sup" d={superior}></path>
+    <path class="med-ant" d={anterior}></path>
+
+    <!-- contents -->
+    <path class="med-eso" d={`M${vx(1) - 26} ${top(1) + 4} Q${vx(6) - 40} ${top(7)} ${vx(11) - 50} ${top(11) + 30}`}></path>
+    <path class="med-tube" d={`M${vx(1) - 66} ${top(1) + 14} L${vx(4) - 92} ${PLANE + 4}`}></path>
+    <ellipse class="med-mid" cx="364" cy="346" rx="106" ry="114"></ellipse>
+    <path class="med-heart" d="M300 300 Q340 262 404 290 Q450 330 430 392 Q400 440 340 428 Q290 410 288 360 Z"></path>
+    <path class="med-art" d={`M386 252 Q392 160 470 168 Q${vx(5) - 30} 190 ${vx(6) - 26} ${top(6)} L${vx(11) - 28} ${top(11) + 20}`}></path>
+    <path class="med-thy" d="M196 150 Q240 140 252 190 Q258 250 246 290 Q226 300 214 270 Q200 220 196 150 Z"></path>
+
+    <!-- sternum, vertebrae, inlet, plane, diaphragm -->
+    <path class="med-bone" d="M150 108 L170 106 L190 213 L237 438 L242 472 L230 474 L220 442 L176 217 Z"></path>
+    {Array.from({ length: 12 }, (_, k) => k + 1).map((i) => (
+      <rect class="med-bone" x={vx(i)} y={top(i)} width="54" height="36" rx="4"></rect>
+    ))}
+    <path class="med-inlet" d={inlet}></path>
+    <line class="med-plane" x1={ANGLE[0] - 10} y1={ANGLE[1]} x2={vx(5) + 60} y2={PLANE}></line>
+    <path class="med-dia" d={diaphragm}></path>
+
+    <!-- region names -->
+    <Label x={340} y={120} anchor="middle" size="lg">Superior</Label>
+    <Label x={228} y={384} anchor="middle" size="sm">Ant.</Label>
+    <Label x={364} y={470 - 30} anchor="middle" size="lg" to="pericardium">Middle</Label>
+    <Label x={520} y={420} anchor="middle" size="lg">Posterior</Label>
+
+    <g class="med-lead">
+      <line x1="178" y1={ANGLE[1]} x2="110" y2="250"></line>
+      <line x1={vx(5) + 56} y1={PLANE} x2={vx(5) + 76} y2={PLANE}></line>
+      <line x1="224" y1="200" x2="110" y2="170"></line>
+      <line x1={vx(1) - 66} y1={top(1) + 30} x2="430" y2="70"></line>
+      <line x1={vx(3) - 40} y1={top(3) + 20} x2="500" y2="70"></line>
+      <line x1="420" y1="170" x2="330" y2="70"></line>
+      <line x1="300" y1="460" x2="200" y2="540"></line>
+      <line x1="160" y1="108" x2="110" y2="96"></line>
+    </g>
+
+    <Label x={104} y={255} anchor="end" to="sternum">Sternal angle</Label>
+    <Label x={vx(5) + 82} y={PLANE + 5} to="thoracic-vertebrae">T4/T5 disc</Label>
+    <Label x={104} y={175} anchor="end" to="thymus">Thymus</Label>
+    <Label x={430} y={62} anchor="middle" to="trachea">Trachea</Label>
+    <Label x={510} y={52} anchor="middle" to="esophagus">Esophagus</Label>
+    <Label x={318} y={62} anchor="middle" to="thoracic-aorta">Aortic arch</Label>
+    <Label x={364} y={350} anchor="middle" to="heart">Heart</Label>
+    <Label x={200} y={556} anchor="middle" to="diaphragm">Diaphragm</Label>
+    <Label x={104} y={100} anchor="end" size="sm">Thoracic inlet</Label>
+    <Label x={110} y={575} size="sm">Anterior ←  → posterior · sagittal view</Label>
+
+    <!-- key -->
+    {rows.map((r, i) => (
+      <>
+        <rect class={`med-${r.key}`} x="790" y={70 + i * 122} width="22" height="22" rx="4"></rect>
+        <text class="lbl lbl-head" x="822" y={87 + i * 122}>{r.name}</text>
+        {r.lines.map((l, j) => (
+          <text class="lbl lbl-sm" x="790" y={114 + i * 122 + j * 18}>{l}</text>
+        ))}
+      </>
+    ))}
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

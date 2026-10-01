@@ -1,0 +1,106 @@
+---
+/* Original schematic: right cubital fossa, anterior view (lateral/thumb side = viewer's left). Contents lateral to
+   medial: biceps Tendon, brachial Artery, median Nerve (TAN); the radial nerve lies deep at the lateral edge.
+   Not to scale. */
+import Label from '../components/Label.astro';
+
+type P = [number, number];
+const LAT: P = [150, 150]; // lateral epicondyle
+const MED: P = [480, 150]; // medial epicondyle
+const APEX: P = [318, 470];
+const T = 272; // biceps tendon
+const A = 330; // brachial artery
+const N = 380; // median nerve
+---
+
+<div class="scroll">
+  <svg viewBox="-150 20 990 570" role="img" aria-labelledby="cf-title cf-desc">
+    <title id="cf-title">Cubital fossa (right, anterior view)</title>
+    <desc id="cf-desc">
+      The right cubital fossa with lateral on the left. The superior boundary is a line between the medial and lateral
+      epicondyles; brachioradialis forms the lateral border and pronator teres the medial border, meeting at the apex.
+      The floor is brachialis above and supinator below. From lateral to medial lie the biceps tendon, the brachial
+      artery and the median nerve (TAN). The brachial artery divides at the apex into the radial and ulnar arteries.
+      The radial nerve lies deep at the lateral edge between brachialis and brachioradialis, where it divides into
+      superficial and deep branches. The bicipital aponeurosis spreads medially from the tendon over the artery and
+      nerve, and the median cubital vein crosses the roof superficial to it.
+    </desc>
+    <style>
+      .cf-floor { fill: color-mix(in srgb, var(--t-muscle) 14%, var(--surface)); stroke: var(--t-muscle); stroke-width: 1; stroke-dasharray: 4 4; }
+      .cf-mus { fill: color-mix(in srgb, var(--t-muscle) 32%, var(--surface)); stroke: var(--t-muscle); stroke-width: 1.6; }
+      .cf-ten { fill: color-mix(in srgb, var(--t-ligament) 60%, var(--surface)); stroke: var(--t-ligament); stroke-width: 1.5; }
+      .cf-apo { fill: color-mix(in srgb, var(--t-ligament) 30%, transparent); stroke: var(--t-ligament); stroke-width: 1.2; }
+      .cf-bone { fill: var(--t-bone); }
+      .cf-epi { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 6 5; }
+      .cf-art { stroke: var(--t-artery); stroke-width: 8; stroke-linecap: round; fill: none; }
+      .cf-nerve { stroke: var(--t-nerve); stroke-width: 6; stroke-linecap: round; fill: none; }
+      .cf-deep { stroke: var(--t-nerve); stroke-width: 5; stroke-linecap: round; fill: none; stroke-dasharray: 7 5; }
+      .cf-vein { stroke: var(--t-vein); stroke-width: 7; stroke-linecap: round; fill: none; opacity: 0.75; }
+      .cf-lead { stroke: var(--muted); stroke-width: 1; fill: none; }
+    </style>
+
+    <!-- floor: brachialis above, supinator below -->
+    <path class="cf-floor" d={`M${LAT[0] + 30} ${LAT[1]} L${MED[0] - 30} ${MED[1]} L${APEX[0] + 40} 330 L${APEX[0] - 50} 330 Z`}></path>
+    <path class="cf-floor" d={`M${APEX[0] - 50} 330 L${APEX[0] + 40} 330 L${APEX[0] + 6} ${APEX[1] - 20} L${APEX[0] - 14} ${APEX[1] - 20} Z`}></path>
+
+
+    <!-- biceps tendon and brachial artery dividing at the apex; median nerve most medial -->
+    <path class="cf-ten" d={`M${T - 22} 30 L${T + 22} 30 L${T + 12} 380 L${T - 4} 400 L${T - 14} 380 Z`}></path>
+    <path class="cf-art" d={`M${A + 6} 30 L${A} 400 Q${APEX[0] - 6} ${APEX[1] - 40} 250 560 M${A} 400 Q${A + 30} ${APEX[1] - 10} 420 560`}></path>
+    <path class="cf-nerve" d={`M${N + 6} 30 L${N} 420 L${N - 20} 560`}></path>
+    <path class="cf-apo" d={`M${T + 10} 300 L${T + 18} 360 Q${N} 380 ${MED[0] - 10} 400 L${MED[0] - 30} 340 Q${N} 320 ${T + 10} 300 Z`}></path>
+
+    <!-- borders: brachioradialis (lateral) and pronator teres (medial) -->
+    <path class="cf-mus" d={`M${LAT[0] - 40} 40 L${LAT[0] + 10} 40 L${LAT[0] + 30} ${LAT[1] + 40} L${APEX[0] + 10} ${APEX[1] + 30} L${APEX[0] - 26} ${APEX[1] + 60} L${LAT[0] - 30} ${LAT[1] + 80} Z`}></path>
+    <path class="cf-mus" d={`M${MED[0] + 4} ${MED[1] + 6} L${MED[0] + 34} ${MED[1] + 30} L${APEX[0] + 30} ${APEX[1] + 50} L${APEX[0] - 6} ${APEX[1] + 30} Z`}></path>
+
+    <!-- radial nerve (dashed: deep, between brachialis and brachioradialis), dividing -->
+    <path class="cf-deep" d={`M200 30 L212 290 L236 400 M212 290 L178 420`}></path>
+
+    <!-- intercondylar line and epicondyles -->
+    <line class="cf-epi" x1={LAT[0]} y1={LAT[1]} x2={MED[0]} y2={MED[1]}></line>
+    <circle class="cf-bone" cx={LAT[0]} cy={LAT[1]} r="11"></circle>
+    <circle class="cf-bone" cx={MED[0]} cy={MED[1]} r="11"></circle>
+
+    <!-- median cubital vein in the roof -->
+    <path class="cf-vein" d="M90 300 Q260 280 520 120"></path>
+
+    <g class="cf-lead">
+      <line x1={LAT[0] - 10} y1={LAT[1]} x2="20" y2="150"></line>
+      <line x1="120" y1="220" x2="20" y2="220"></line>
+      <line x1="210" y1="250" x2="20" y2="290"></line>
+      <line x1="184" y1="396" x2="20" y2="380"></line>
+      <line x1="234" y1="392" x2="20" y2="430"></line>
+      <line x1="262" y1="520" x2="20" y2="510"></line>
+      <line x1="240" y1="240" x2="20" y2="74"></line>
+      <line x1={T} y1="100" x2={T} y2="60"></line>
+      <line x1={A + 4} y1="100" x2="560" y2="70"></line>
+      <line x1={N + 4} y1="200" x2="560" y2="140"></line>
+      <line x1={MED[0] + 10} y1={MED[1]} x2="560" y2="200"></line>
+      <line x1="420" y1="372" x2="560" y2="270"></line>
+      <line x1={MED[0] + 6} y1="240" x2="560" y2="330"></line>
+      <line x1="410" y1="540" x2="560" y2="460"></line>
+      <line x1="300" y1="300" x2="560" y2="400"></line>
+      <line x1="320" y1="420" x2="560" y2="520"></line>
+    </g>
+    <Label x={14} y={155} anchor="end" to="humerus">Lateral epicondyle</Label>
+    <Label x={14} y={225} anchor="end">Brachioradialis</Label>
+    <Label x={14} y={295} anchor="end" to="radial-nerve">Radial nerve (deep)</Label>
+    <Label x={14} y={385} anchor="end" to="radial-nerve">Superficial branch</Label>
+    <Label x={14} y={435} anchor="end" to="radial-nerve">Deep branch (PIN)</Label>
+    <Label x={14} y={515} anchor="end" to="radial-artery">Radial artery</Label>
+    <Label x={14} y={79} anchor="end" size="sm">Median cubital vein (roof)</Label>
+    <Label x={T} y={52} anchor="middle" to="biceps-brachii">Biceps tendon</Label>
+    <Label x={566} y={75} to="brachial-artery">Brachial artery</Label>
+    <Label x={566} y={145} to="median-nerve">Median nerve</Label>
+    <Label x={566} y={205} to="humerus">Medial epicondyle</Label>
+    <Label x={566} y={275} to="biceps-brachii">Bicipital aponeurosis</Label>
+    <Label x={566} y={335} to="pronator-teres">Pronator teres</Label>
+    <Label x={566} y={465} to="ulnar-artery">Ulnar artery</Label>
+    <Label x={566} y={405}>Brachialis (floor)</Label>
+    <Label x={566} y={525}>Supinator (floor)</Label>
+    <Label x={-140} y={576} size="sm">Lateral (thumb side) ←</Label>
+    <Label x={830} y={576} anchor="end" size="sm">→ Medial · TAN: Tendon, Artery, Nerve</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

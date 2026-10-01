@@ -134,6 +134,7 @@ flashcards:
     back: Bone conduction > air conduction in the affected ear
   - front: Bilateral acoustic neuromas?
     back: Neurofibromatosis type 2
+diagrams: [cranial-nerve-exits]
 related: [inner-ear, middle-ear, facial-nerve, cerebellum, pons]
 images:
   - image: gray-920-bony-labyrinth

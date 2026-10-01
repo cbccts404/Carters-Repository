@@ -119,6 +119,7 @@ flashcards:
     back: Its long course along the clivus is stretched by raised ICP
   - front: Which cranial nerve runs inside (not in the wall of) the cavernous sinus?
     back: Abducens (CN VI), with the internal carotid artery
+diagrams: [cranial-nerve-exits]
 related: [extraocular-muscles, pons, dural-venous-sinuses, oculomotor-nerve, trochlear-nerve]
 images:
   - image: gray-786-cavernous-sinus-section
