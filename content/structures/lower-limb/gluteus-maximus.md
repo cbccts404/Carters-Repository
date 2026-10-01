@@ -71,6 +71,20 @@ quiz:
     explanation: >-
       Flexing the knee shortens the **hamstrings**, reducing their contribution, so resisted hip extension in the prone
       position with the knee bent mainly tests gluteus maximus.
+  - stem: >-
+      A 52-year-old woman has lateral hip pain that is worse lying on that side. The greater trochanter is tender and
+      hip range of motion is normal. What is the most likely diagnosis?
+    choices:
+      - Greater trochanteric pain syndrome
+      - Hip osteoarthritis
+      - Avascular necrosis of the femoral head
+      - Piriformis syndrome
+      - L4 radiculopathy
+    answer: A
+    explanation: >-
+      **Greater trochanteric pain syndrome** (gluteal tendinopathy and trochanteric bursitis beneath gluteus maximus and
+      the iliotibial tract) causes lateral hip pain with **trochanteric tenderness** and normal hip range of motion. Hip
+      osteoarthritis limits motion, especially internal rotation.
 flashcards:
   - front: Nerve to gluteus maximus?
     back: Inferior gluteal nerve (L5–S2)

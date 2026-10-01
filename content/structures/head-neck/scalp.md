@@ -72,6 +72,18 @@ quiz:
     explanation: >-
       In the **dense connective tissue layer**, vessel walls are attached to fibrous septa, so cut vessels can't retract
       and constrict — they gape and bleed profusely.
+  - stem: >-
+      A newborn has a firm scalp swelling over one parietal bone that stops sharply at the sutures. Which lesion is
+      this?
+    choices:
+      - Caput succedaneum
+      - Subgaleal hemorrhage
+      - Cephalohematoma
+      - Epidural hematoma
+    answer: C
+    explanation: >-
+      A **cephalohematoma** is subperiosteal, and the pericranium is attached at the sutures, so it is **limited to one
+      bone**. Caput succedaneum and subgaleal hemorrhage both cross suture lines.
 flashcards:
   - front: Scalp layers (SCALP)?
     back: Skin, Connective tissue (dense), Aponeurosis, Loose areolar tissue, Pericranium

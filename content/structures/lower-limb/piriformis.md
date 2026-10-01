@@ -70,6 +70,18 @@ quiz:
     explanation: >-
       Piriformis is one of the short **lateral rotators** of the hip (with the obturators, gemelli and quadratus
       femoris). With the hip flexed beyond about 60–90°, it acts as an abductor (and its rotation reverses).
+  - stem: Which structure leaves the pelvis through the greater sciatic foramen below piriformis in most people?
+    choices:
+      - Superior gluteal nerve
+      - Obturator nerve
+      - Femoral nerve
+      - Sciatic nerve
+      - Genitofemoral nerve
+    answer: D
+    explanation: >-
+      Piriformis is the landmark of the gluteal region: only the superior gluteal nerve and vessels pass **above** it.
+      The **sciatic nerve**, inferior gluteal nerve and vessels, posterior femoral cutaneous nerve and pudendal nerve
+      pass **below** it.
 flashcards:
   - front: What passes above piriformis?
     back: Superior gluteal nerve and vessels

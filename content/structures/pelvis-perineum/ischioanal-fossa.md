@@ -82,6 +82,16 @@ quiz:
     explanation: >-
       The **pudendal (Alcock) canal** is a split in the obturator internus fascia on the lateral wall of the ischioanal
       fossa; it carries the pudendal nerve and internal pudendal vessels.
+  - stem: How can an abscess in one ischioanal fossa spread to the other side?
+    choices:
+      - Through the deep postanal space behind the anal canal
+      - Through the urogenital hiatus
+      - Through the obturator canal
+      - Through the lesser sciatic foramen
+    answer: A
+    explanation: >-
+      The two ischioanal fossae **communicate behind the anal canal** through the deep postanal space, above the
+      anococcygeal body, so infection can spread from side to side — a **horseshoe abscess**.
 flashcards:
   - front: Contents of the ischioanal fossa?
     back: Fat, inferior rectal nerves/vessels, pudendal canal (lateral wall)

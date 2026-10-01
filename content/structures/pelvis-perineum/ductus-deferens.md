@@ -86,6 +86,17 @@ quiz:
     explanation: >-
       The ductus deferens passes **over (superior/anterior to) the ureter** — the ureter is "under the bridge", as with
       the uterine artery in females.
+  - stem: After vasectomy, why is ejaculate volume almost unchanged?
+    choices:
+      - The testes increase fluid production
+      - Most of the semen comes from the seminal glands and prostate
+      - The bulbourethral glands take over sperm production
+      - The ductus deferens regenerates within weeks
+      - The epididymis enlarges to compensate
+    answer: B
+    explanation: >-
+      The **seminal glands** (fructose-rich fluid) and the prostate supply most of the semen volume, so dividing the
+      scrotal ductus barely changes volume. Contraception continues until a semen analysis confirms azoospermia.
 flashcards:
   - front: Ductus deferens + seminal gland duct form?
     back: Ejaculatory duct (opens on the seminal colliculus)

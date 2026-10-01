@@ -76,6 +76,18 @@ quiz:
     explanation: >-
       Irritants like ammonia are sensed by **trigeminal** fibers, so a patient with complete anosmia may still react.
       Use a familiar, non-irritating scent.
+  - stem: >-
+      A man has a clear, watery nasal discharge after a fall onto his forehead. It increases when he leans forward and
+      he can no longer smell. Which test confirms the cause?
+    choices:
+      - Nasal swab culture
+      - Allergy skin testing
+      - Serum IgE
+      - Beta-2 transferrin in the fluid
+    answer: D
+    explanation: >-
+      A **cribriform plate** fracture can tear the dura (CSF rhinorrhea) and the olfactory fibers (anosmia). The fluid
+      is confirmed as CSF by **beta-2 transferrin**; there is a risk of meningitis.
 flashcards:
   - front: Bone the olfactory nerve fibers pass through?
     back: Cribriform plate of the ethmoid

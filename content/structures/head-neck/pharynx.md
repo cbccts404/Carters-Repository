@@ -85,6 +85,20 @@ quiz:
     explanation: >-
       **Stylopharyngeus** is the only muscle supplied by **CN IX**; all the other pharyngeal muscles are supplied by the
       vagus via the pharyngeal plexus.
+  - stem: >-
+      A 45-year-old man has a new unilateral middle ear effusion with no history of ear infections. What must be
+      excluded?
+    choices:
+      - Zenker diverticulum
+      - Adenoid hypertrophy
+      - Peritonsillar abscess
+      - Laryngeal papillomatosis
+      - Nasopharyngeal carcinoma
+    answer: E
+    explanation: >-
+      A new **unilateral serous otitis media in an adult** can result from a nasopharyngeal mass blocking the
+      pharyngotympanic tube — rule out **nasopharyngeal carcinoma** (EBV-associated). Adenoid hypertrophy causes
+      effusions in children.
 flashcards:
   - front: Three parts of the pharynx?
     back: Nasopharynx, oropharynx, laryngopharynx
