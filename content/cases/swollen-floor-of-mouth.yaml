@@ -1,0 +1,51 @@
+title: A swollen floor of the mouth after a toothache
+region: head-neck
+summary: Woody submandibular swelling after a dental infection — an airway emergency.
+vignette: >-
+  A 42-year-old man has had a painful lower back tooth for a week. Over the last day his neck under the jaw has become
+  hugely swollen and hard. He is drooling, can't swallow, and his tongue is pushed up and back. Temperature is 39.1 °C.
+steps:
+  - question: What is the most likely diagnosis?
+    choices:
+      - Submandibular sialolithiasis
+      - Retropharyngeal abscess
+      - Peritonsillar abscess
+      - Ludwig angina
+    answer: D
+    explanation: >-
+      **Brawny, woody submandibular swelling** with an **elevated, pushed-back tongue**, drooling and dysphagia after a
+      dental infection is **Ludwig angina** — rapidly spreading cellulitis of the submandibular space.
+  - question: What is the first priority?
+    choices:
+      - Secure the airway (awake fiberoptic intubation or tracheostomy)
+      - Extract the infected tooth
+      - Contrast CT of the neck
+      - Oral antibiotics and discharge
+    answer: A
+    explanation: >-
+      Ludwig angina is an **airway emergency**: secure the airway first, then give IV antibiotics and drain any
+      collection.
+  - question: Why do infected lower molars spread into the submandibular space?
+    choices:
+      - Their roots open into the maxillary sinus
+      - They drain into the parotid duct
+      - They are supplied by the facial nerve
+      - Their roots lie below the mylohyoid line
+    answer: D
+    explanation: >-
+      The roots of the lower molars lie **below the mylohyoid line**, so infection breaks out into the submandibular space
+      beneath mylohyoid (see [[deep-neck-spaces]]).
+  - question: Once the airway is secure, which imaging test defines the infection?
+    choices:
+      - Ultrasound of the thyroid
+      - Plain radiograph of the chest
+      - Contrast CT of the neck
+      - MRI of the brain
+    answer: C
+    explanation: >-
+      **Contrast CT of the neck** (± chest) defines the spaces involved, distinguishes abscess from cellulitis and
+      detects spread to the mediastinum.
+takeaways:
+  - "Woody submandibular swelling + raised tongue after a dental infection → Ludwig angina."
+  - "Airway first, then IV antibiotics; contrast CT once the airway is safe."
+entries: [deep-neck-spaces, submandibular-gland, mandible]

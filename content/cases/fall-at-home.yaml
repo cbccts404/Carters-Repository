@@ -1,0 +1,54 @@
+title: An older woman who can't stand after a fall
+region: lower-limb
+summary: A shortened, externally rotated leg after a fall. Confirm the fracture and understand why the head can die.
+vignette: >-
+  An 81-year-old woman with osteoporosis trips at home and can't get up. She has right groin pain and can't bear
+  weight. Her right leg is shortened and externally rotated.
+steps:
+  - question: What is the most likely injury?
+    choices:
+      - Femoral neck (hip) fracture
+      - Posterior hip dislocation
+      - Greater trochanteric bursitis
+      - Pubic ramus fracture
+    answer: A
+    explanation: >-
+      A low-energy fall in an older adult with osteoporosis and a **shortened, externally rotated** leg is a **hip
+      fracture**. A posterior hip dislocation (dashboard injury) leaves the leg shortened but **internally** rotated (see
+      [[femur]]).
+  - info: AP pelvis and lateral hip radiographs are read as normal, but she still can't bear weight.
+    question: What is the most appropriate next step?
+    choices:
+      - Repeat radiographs in 6 weeks
+      - MRI of the hip
+      - Discharge with analgesia
+      - Bone scan in 3 months
+    answer: B
+    explanation: >-
+      An **occult hip fracture** may not show on the first radiographs; **MRI** detects it.
+  - info: MRI shows a displaced intracapsular femoral neck fracture.
+    question: Why is the femoral head at risk of avascular necrosis?
+    choices:
+      - Retinacular branches of the medial circumflex femoral artery running up the neck are torn
+      - The fracture compresses the external iliac artery
+      - The obturator nerve is injured
+      - The femoral head is supplied only by the femoral vein
+    answer: A
+    explanation: >-
+      The head is supplied mainly by the **medial circumflex femoral artery** through retinacular branches that run up
+      the neck. A displaced intracapsular fracture tears them, causing **avascular necrosis** and nonunion.
+  - question: What is the usual treatment for this fracture in an older adult?
+    choices:
+      - Intramedullary nail, as for an intertrochanteric fracture
+      - Closed reduction and a hip spica cast
+      - Bed rest for 12 weeks
+      - Arthroplasty, ideally within 24–48 hours
+    answer: D
+    explanation: >-
+      Displaced intracapsular neck fractures in older adults are usually treated with **arthroplasty**. Intertrochanteric
+      (extracapsular) fractures keep their blood supply and are fixed with a nail or sliding hip screw. Surgery within
+      about **24–48 hours** reduces mortality.
+takeaways:
+  - "Fall + shortened, externally rotated leg → hip fracture; normal X-ray with high suspicion → MRI."
+  - "Medial circumflex femoral artery → AVN after a displaced intracapsular fracture → arthroplasty."
+entries: [femur, hip-joint, bony-pelvis]

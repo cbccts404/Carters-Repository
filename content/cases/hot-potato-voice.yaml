@@ -1,0 +1,54 @@
+title: A sore throat with a "hot potato" voice
+region: head-neck
+summary: A worsening sore throat with trismus and a deviated uvula. Name it, locate the pus and know where it can spread.
+vignette: >-
+  A 19-year-old has had a sore throat for 5 days that is now much worse on the right. He can barely open his mouth,
+  is drooling, and his voice sounds muffled, like he is talking with a hot potato in his mouth.
+steps:
+  - info: The right soft palate bulges and the uvula is pushed to the left.
+    question: What is the most likely diagnosis?
+    choices:
+      - Retropharyngeal abscess
+      - Infectious mononucleosis
+      - Left peritonsillar abscess
+      - Epiglottitis
+      - Right peritonsillar abscess
+    answer: E
+    explanation: >-
+      Severe unilateral throat pain, a **"hot potato" voice**, **trismus**, drooling and a **uvula deviated away** from the
+      affected side is a **peritonsillar abscess (quinsy)** — here on the right (see [[palatine-tonsils]]).
+  - question: Where does the pus collect?
+    choices:
+      - Inside the tonsil's lymphoid tissue only
+      - Between the tonsillar capsule and the superior constrictor
+      - Between the alar and prevertebral fascia
+      - In the submandibular space below mylohyoid
+    answer: B
+    explanation: >-
+      Tonsillitis spreads into the space **between the tonsillar capsule and the superior constrictor** (the tonsillar
+      bed).
+  - question: What is the appropriate treatment?
+    choices:
+      - Corticosteroids alone
+      - Oral antibiotics alone and review in a week
+      - Needle aspiration or incision and drainage, plus antibiotics
+      - Urgent tonsillectomy without antibiotics
+    answer: C
+    explanation: >-
+      A peritonsillar abscess is treated with **needle aspiration or incision and drainage plus antibiotics**. Ultrasound
+      can confirm it and guide aspiration; contrast CT is used if the diagnosis is unclear or a deeper infection is
+      suspected.
+  - question: If the infection spreads deeper, which space does it reach next?
+    choices:
+      - The pleural cavity directly
+      - The parapharyngeal space, which connects with the carotid sheath and the mediastinum
+      - The rectus sheath
+      - The subarachnoid space
+    answer: B
+    explanation: >-
+      The deep neck spaces communicate: tonsillar infection tracks **peritonsillar → parapharyngeal**, and from there can
+      reach the **carotid sheath** and down to the **mediastinum** (see [[deep-neck-spaces]]).
+takeaways:
+  - "Hot potato voice + trismus + uvula deviated away → peritonsillar abscess → drain + antibiotics."
+  - "Deep neck spaces communicate: peritonsillar → parapharyngeal → carotid sheath and mediastinum."
+entries: [palatine-tonsils, deep-neck-spaces, pharynx]

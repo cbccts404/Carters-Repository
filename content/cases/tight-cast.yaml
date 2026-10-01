@@ -1,0 +1,54 @@
+title: Severe pain under a new cast
+region: lower-limb
+summary: Pain out of proportion after a tibial fracture. Recognize compartment syndrome before the late signs appear.
+vignette: >-
+  A 24-year-old man had a closed tibial shaft fracture placed in a long-leg cast 6 hours ago. He now has severe,
+  worsening pain in his leg despite IV opioids.
+steps:
+  - question: What is the most likely diagnosis?
+    choices:
+      - Acute compartment syndrome
+      - Deep vein thrombosis
+      - Fat embolism syndrome
+      - Normal fracture pain
+    answer: A
+    explanation: >-
+      **Pain out of proportion** to the injury after a **tibial fracture** (the most common cause) is **acute compartment
+      syndrome** until proven otherwise (see [[leg-compartments]]).
+  - question: Which examination finding is one of the earliest signs?
+    choices:
+      - Cold, pale toes
+      - Pain on passive stretch of the compartment's muscles
+      - Absent dorsalis pedis pulse
+      - Complete paralysis of the foot
+    answer: B
+    explanation: >-
+      **Pain on passive stretch** and pain out of proportion are the earliest signs. **Pulselessness and paralysis are
+      late** — pulses are usually present.
+  - info: He has numbness of the first web space of the foot, and plantarflexing his toes is agony.
+    question: Which compartment is most involved?
+    choices:
+      - Superficial posterior compartment (sural nerve)
+      - Lateral compartment (superficial fibular nerve)
+      - Anterior compartment (deep fibular nerve)
+      - Deep posterior compartment (tibial nerve)
+    answer: C
+    explanation: >-
+      Plantarflexing the toes stretches the **anterior** compartment muscles, and the **deep fibular nerve** in that
+      compartment supplies the **first web space**. The anterior compartment is the one most often affected.
+  - question: What is the definitive management?
+    choices:
+      - Increase the opioid dose and wait for loss of pulses
+      - Apply a tighter cast to reduce swelling
+      - Elevate the leg as high as possible and reassess in 12 hours
+      - Remove the cast, keep the leg at heart level and perform emergency four-compartment fasciotomy
+    answer: D
+    explanation: >-
+      Remove casts and dressings, keep the limb **at heart level** (not elevated), and perform an emergency
+      **four-compartment fasciotomy**. If the diagnosis is uncertain, a delta pressure (diastolic minus compartment
+      pressure) **below 30 mm Hg** supports fasciotomy.
+takeaways:
+  - "Pain out of proportion + pain on passive stretch → compartment syndrome; pulses are often still present."
+  - "First web space numbness = deep fibular nerve = anterior compartment."
+  - "Treat with emergency fasciotomy; delta pressure < 30 mm Hg if measured."
+entries: [leg-compartments, tibia, common-fibular-nerve]

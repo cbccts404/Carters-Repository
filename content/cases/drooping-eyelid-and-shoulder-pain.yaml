@@ -1,0 +1,52 @@
+title: A drooping eyelid and shoulder pain in a smoker
+region: thorax
+summary: Shoulder pain, hand wasting and a small pupil — put the pieces of a lower plexus and sympathetic lesion together.
+vignette: >-
+  A 63-year-old man with a 45-pack-year smoking history has three months of right shoulder pain spreading down the inner
+  arm to the little finger. His right hand has become weak and thin.
+steps:
+  - info: His right upper eyelid droops, the right pupil is small, and the right side of his face doesn't sweat.
+    question: What is this eye-and-face finding called?
+    choices:
+      - Bell palsy
+      - Argyll Robertson pupil
+      - Third nerve palsy
+      - Horner syndrome
+    answer: D
+    explanation: >-
+      **Ptosis, miosis and anhidrosis** on one side is **Horner syndrome**, from interruption of the sympathetic supply to
+      the head. A third nerve palsy causes ptosis with a *dilated* pupil.
+  - question: Which part of the brachial plexus explains the hand weakness and inner-arm pain?
+    choices:
+      - Inferior trunk (C8–T1)
+      - Posterior cord
+      - Superior trunk (C5–C6)
+      - Musculocutaneous nerve
+    answer: A
+    explanation: >-
+      The **inferior trunk (C8–T1)** supplies the intrinsic hand muscles and carries sensation from the medial forearm and
+      hand. Superior trunk lesions (Erb palsy) affect the shoulder and elbow instead (see [[brachial-plexus]]).
+  - question: Which structure, damaged at the lung apex, explains the Horner syndrome?
+    choices:
+      - The oculomotor nerve
+      - The recurrent laryngeal nerve
+      - The phrenic nerve
+      - The cervical sympathetic chain and stellate ganglion
+    answer: D
+    explanation: >-
+      A tumor at the apex invades the **cervical sympathetic chain/stellate ganglion** as well as the inferior trunk. A
+      T1 root avulsion can also interrupt the sympathetic fibers to the head.
+  - question: What is the most likely underlying diagnosis?
+    choices:
+      - Apical lung carcinoma (Pancoast tumor)
+      - Rotator cuff tear
+      - Carpal tunnel syndrome
+      - Erb palsy (C5–C6)
+    answer: A
+    explanation: >-
+      Apical lung mass + **Horner syndrome** + ulnar-side arm pain and hand wasting in a smoker = **Pancoast (superior
+      sulcus) tumor**. Erb palsy involves the upper trunk (C5–C6) and spares the hand.
+takeaways:
+  - "Ptosis + miosis + anhidrosis → Horner syndrome."
+  - "Hand wasting + medial arm pain + Horner in a smoker → Pancoast tumor (C8–T1 + sympathetic chain)."
+entries: [brachial-plexus, lungs, ulnar-nerve]
