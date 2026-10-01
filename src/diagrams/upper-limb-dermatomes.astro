@@ -3,26 +3,9 @@
    position, thumb lateral = viewer's left). Dermatome maps differ between sources
    and adjacent dermatomes overlap; this follows the commonly taught pattern. */
 import Label from '../components/Label.astro';
+import { upperLimb } from '../lib/dermatome-shapes';
 
-const outline =
-  'M120 50 Q185 20 262 48 L258 110 L250 270 L240 440 L248 470 L250 520 ' +
-  'L252 585 Q244 596 236 585 L234 528 L232 605 Q223 616 214 605 L213 530 ' +
-  'L211 615 Q202 626 193 615 L192 530 L190 600 Q181 611 172 600 L171 522 ' +
-  'L168 500 L150 552 Q140 560 132 550 L142 485 L160 448 L170 440 L152 270 L118 110 Z';
-
-const regions = [
-  { id: 'C5', color: '#e07a5f', points: '90,0 190,0 201,272 90,272' },
-  { id: 'T2', color: '#c06c84', points: '190,0 300,0 300,180 196,180' },
-  { id: 'T1', color: '#9b72cf', points: '196,180 300,180 300,370 203,370' },
-  { id: 'C6', color: '#f2cc8f', points: '90,272 201,272 204,440 191,470 191,660 90,660' },
-  { id: 'C7', color: '#81b29a', points: '191,470 205,442 212,470 212,660 191,660' },
-  { id: 'C8', color: '#6fa8dc', points: '203,370 300,370 300,660 212,660 212,470 205,440' },
-  { id: 'C4', color: '#9aa5b8', points: '90,0 300,0 300,35 90,72' },
-];
-// ASIA key sensory points (C6–C8 are dorsal on the real exam; shown approximately here)
-const keyPoints = [
-  [165, 258], [240, 258], [142, 530], [202, 585], [243, 565], [252, 78],
-];
+const { outline, regions, keyPoints } = upperLimb;
 ---
 
 <svg viewBox="0 0 360 660" role="img" aria-labelledby="der-title der-desc">

@@ -288,4 +288,19 @@ const lesions = defineCollection({
   }),
 });
 
-export const collections = { structures, regions, images, tables, findings, lesions };
+// Nerve root map (content/roots/roots.yaml). Region ids in src/lib/dermatome-shapes.ts match these ids.
+const roots = defineCollection({
+  loader: file('./content/roots/roots.yaml'),
+  schema: z.strictObject({
+    id: z.string().regex(/^[CTLS]\d+(-S\d+)?$/, 'root ids look like "C5" or "S2-S4"'),
+    label: z.string().optional(), // display label when it differs from the id
+    group: z.enum(['Upper limb and neck', 'Trunk', 'Lower limb', 'Sacral']),
+    dermatome: z.string(),
+    muscle: z.string(),
+    reflex: z.string(),
+    clue: z.string(), // Markdown
+    entries: z.array(id).min(1),
+  }),
+});
+
+export const collections = { structures, regions, images, tables, findings, lesions, roots };

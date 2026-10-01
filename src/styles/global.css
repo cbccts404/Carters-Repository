@@ -496,3 +496,50 @@ table.cmp tbody th { font-weight: 600; }
 .pg-import .pick { display: flex; gap: 8px; align-items: flex-start; padding: 4px 0; }
 .pg-import textarea { width: 100%; margin-top: 6px; font: inherit; font-size: 0.85rem; padding: 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); }
 p > a + .linkish.danger { margin-left: 16px; }
+
+/* Nerve root map */
+.rt { display: grid; gap: 16px; }
+@media (min-width: 900px) {
+  .rt { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: start; }
+  .rt-panels { order: -1; }
+  .rt-side { position: sticky; top: calc(var(--header-h) + 12px); max-height: calc(100dvh - var(--header-h) - 24px); overflow-y: auto; }
+}
+.rt-mode { display: flex; gap: 8px; margin-bottom: 10px; }
+.rt-mode .btn[aria-pressed='true'] { background: var(--accent-soft); border-color: var(--accent); font-weight: 600; }
+.rt-group { margin-bottom: 8px; }
+.rt-group > span { display: block; margin-bottom: 3px; }
+.rt-chip {
+  font: inherit; font-size: 0.9rem; font-weight: 600; min-width: 48px; padding: 6px 10px; cursor: pointer;
+  border: 1px solid var(--border); border-radius: 999px; background: var(--surface); color: var(--text);
+}
+.rt-chip[aria-pressed='true'] { background: var(--accent-soft); border-color: var(--accent); }
+.rt-chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.rt-chip.right { border-color: var(--good); color: var(--good); }
+.rt-chip.wrong { border-color: var(--bad); color: var(--bad); text-decoration: line-through; }
+.rt-card h2 { margin: 0 0 4px; font-size: 1.2rem; }
+.rt-card[hidden], .rt-q[hidden], #rt-hint[hidden] { display: none; }
+.rt-q { margin-bottom: 12px; }
+.rt-prompt { font-weight: 600; margin: 4px 0 8px; color: var(--text); }
+#rt-look[hidden] { display: none; }
+#rt-look { display: block; margin-bottom: 8px; }
+.rt-score { margin: 0; }
+.rt-fb.good { color: var(--good); font-weight: 600; }
+.rt-fb.bad { color: var(--bad); font-weight: 600; }
+.rt-panels { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.rt-panel { margin: 0; padding: 8px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+.rt-panel svg { display: block; width: 100%; height: auto; max-height: 520px; }
+.rt-panel figcaption { margin-top: 4px; }
+.rt-skin { fill: var(--border); }
+.rt-ctx { opacity: 0.35; }
+.rt-r { opacity: 0.8; cursor: pointer; transition: opacity 0.15s; }
+.rt.has-sel .rt-r { opacity: 0.12; }
+.rt.has-sel .rt-r.on { opacity: 1; }
+.rt.quiz .rt-r { cursor: default; }
+.rt.quiz:not(.has-sel) .rt-r { opacity: 0.12; }
+.rt-outline { fill: none; stroke: var(--text); stroke-width: 1.5; stroke-linejoin: round; pointer-events: none; }
+.rt-mark { fill: var(--surface); stroke: var(--text); stroke-width: 1.5; pointer-events: none; }
+.rt-lbl {
+  fill: var(--text); font-size: 15px; font-weight: 700; pointer-events: none;
+  paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round;
+}
+.rt.quiz .rt-lbl { display: none; }

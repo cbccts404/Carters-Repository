@@ -3,25 +3,9 @@
    great toe medial), with ASIA key sensory points and a root / key muscle / reflex table.
    Dermatome maps differ between sources and adjacent dermatomes overlap. */
 import Label from '../components/Label.astro';
+import { lowerLimb } from '../lib/dermatome-shapes';
 
-const outline =
-  'M95 40 Q180 20 262 45 L250 200 L238 330 Q236 360 232 380 L222 560 L228 600 ' +
-  'L246 640 L262 690 Q258 706 240 706 L150 706 Q134 704 138 690 L150 640 L158 600 ' +
-  'L160 560 L170 380 Q168 360 162 330 L130 200 Z';
-
-const regions = [
-  { id: 'L1', color: '#9aa5b8', points: '60,0 300,0 300,62 60,88' },
-  { id: 'L2', color: '#e07a5f', points: '60,88 300,62 300,170 60,200' },
-  { id: 'L3', color: '#f2cc8f', points: '60,200 300,170 300,352 60,352' },
-  { id: 'L4', color: '#81b29a', points: '196,352 300,352 300,640 240,640 226,612 200,560' },
-  { id: 'L5', color: '#6fa8dc', points: '60,352 196,352 200,560 226,612 240,640 300,640 300,730 158,730 158,600 60,600' },
-  { id: 'S1', color: '#c06c84', points: '60,600 158,600 158,730 60,730' },
-];
-// ASIA key sensory points (L1 upper thigh, L2 mid-anterior thigh, L3 medial femoral condyle,
-// L4 medial malleolus, L5 dorsum at the 3rd MTP joint, S1 lateral heel — shown approximately)
-const keyPoints = [
-  [178, 70], [182, 130], [230, 322], [226, 598], [205, 676], [150, 650],
-];
+const { outline, regions, keyPoints } = lowerLimb;
 const table = [
   ['L2', 'Hip flexion', 'psoas-major', '—', undefined],
   ['L3', 'Knee extension', 'quadriceps-femoris', '—', undefined],

@@ -1,0 +1,127 @@
+# Nerve root map: one record per root. Every fact here is stated in the linked entries;
+# keep it that way when editing. `id` matches the region ids in src/lib/dermatome-shapes.ts.
+- id: C4
+  group: Upper limb and neck
+  dermatome: Top of the shoulder
+  muscle: Diaphragm (C3–C5, via the phrenic nerve)
+  reflex: None
+  clue: >-
+    Irritation of the diaphragm or pericardium refers pain to the C3–C5 dermatomes of the shoulder and neck — e.g. the
+    **Kehr sign** (left shoulder pain) with splenic rupture.
+  entries: [phrenic-nerve, diaphragm, cervical-plexus]
+- id: C5
+  group: Upper limb and neck
+  dermatome: Lateral arm
+  muscle: Elbow flexion (biceps); shoulder abduction (deltoid)
+  reflex: Biceps (C5–C6)
+  clue: >-
+    Upper trunk (C5–C6) injury is **Erb palsy** — e.g. shoulder dystocia — with the "waiter's tip" posture. Cervical
+    roots exit above their vertebra, so a C4–C5 disc compresses C5.
+  entries: [cervical-vertebrae, brachial-plexus, deltoid, biceps-brachii]
+- id: C6
+  group: Upper limb and neck
+  dermatome: Lateral forearm, thumb and index finger
+  muscle: Wrist extension
+  reflex: Brachioradialis (C6); biceps (C5–C6)
+  clue: A **C5–C6 disc** herniation compresses the **C6** root.
+  entries: [cervical-vertebrae, intervertebral-disc, spinal-nerves]
+- id: C7
+  group: Upper limb and neck
+  dermatome: Middle finger
+  muscle: Elbow extension (triceps)
+  reflex: Triceps (C7)
+  clue: A **C6–C7 disc** compresses **C7** — the most common cervical radiculopathy.
+  entries: [cervical-vertebrae, triceps-brachii]
+- id: C8
+  group: Upper limb and neck
+  dermatome: Ring and little fingers, medial hand and distal forearm
+  muscle: Finger flexion (flexor digitorum profundus of the middle finger)
+  reflex: None
+  clue: >-
+    Lower trunk (C8–T1) injury is **Klumpke palsy** (arm pulled upward, Pancoast tumor, cervical rib): claw hand,
+    sometimes with Horner syndrome.
+  entries: [brachial-plexus, ulnar-nerve]
+- id: T1
+  group: Upper limb and neck
+  dermatome: Medial forearm
+  muscle: Little-finger abduction (intrinsic hand muscles)
+  reflex: None
+  clue: >-
+    Klumpke palsy and Pancoast tumors involve C8–T1. If the T1 root is avulsed near the cord, sympathetic fibres to the
+    head are interrupted, causing ipsilateral **Horner syndrome**.
+  entries: [brachial-plexus]
+- id: T4
+  group: Trunk
+  dermatome: Nipple
+  muscle: Intercostal muscles (each intercostal nerve supplies the muscles and a band of skin of its space)
+  reflex: None
+  clue: >-
+    **Herpes zoster** reactivates in a dorsal root ganglion and causes a unilateral, dermatomal rash that doesn't cross
+    the midline.
+  entries: [intercostal-space, breast, spinal-nerves]
+- id: T10
+  group: Trunk
+  dermatome: Umbilicus
+  muscle: Anterior abdominal wall muscles (thoracoabdominal nerves T7–T11)
+  reflex: None
+  clue: >-
+    Early appendicitis pain is **periumbilical**: midgut visceral afferents enter the cord at about T10, the dermatome
+    of the umbilicus.
+  entries: [anterior-abdominal-wall, appendix, intercostal-space]
+- id: L1
+  group: Trunk
+  dermatome: Inguinal region
+  muscle: Internal oblique and transversus abdominis (iliohypogastric and ilioinguinal nerves)
+  reflex: Cremasteric (L1–L2)
+  clue: The iliohypogastric and ilioinguinal nerves (L1) can be injured during hernia repair.
+  entries: [lumbar-plexus, inguinal-canal]
+- id: L2
+  group: Lower limb
+  dermatome: Upper anterior thigh
+  muscle: Hip flexion (iliopsoas)
+  reflex: Cremasteric (L1–L2)
+  clue: Resisted hip flexion while sitting tests the L2–L3 myotome.
+  entries: [psoas-major, lumbar-plexus]
+- id: L3
+  group: Lower limb
+  dermatome: Lower anterior thigh and knee
+  muscle: Knee extension (quadriceps)
+  reflex: Patellar (L3–L4)
+  clue: Carried mainly by the femoral nerve (L2–L4).
+  entries: [femoral-nerve, quadriceps-femoris]
+- id: L4
+  group: Lower limb
+  dermatome: Medial leg and medial malleolus
+  muscle: Ankle dorsiflexion (tibialis anterior); knee extension
+  reflex: Patellar (L4)
+  clue: >-
+    A typical posterolateral herniation compresses the root numbered for the lower vertebra, so **L3–L4 → L4**; a
+    far-lateral (foraminal) **L4–L5** herniation also compresses L4.
+  entries: [intervertebral-disc, spinal-nerves, femoral-nerve]
+- id: L5
+  group: Lower limb
+  dermatome: Lateral leg, dorsum of the foot and first web space
+  muscle: Great-toe extension (extensor hallucis longus); hip abduction; heel walking
+  reflex: No reliable reflex
+  clue: >-
+    An **L4–L5** posterolateral herniation compresses **L5**. Foot drop with weak inversion points to the L5 root; with
+    normal inversion, to the common fibular nerve.
+  entries: [intervertebral-disc, common-fibular-nerve, gluteus-medius-and-minimus]
+- id: S1
+  group: Lower limb
+  dermatome: Lateral foot and sole
+  muscle: Plantarflexion and foot eversion; toe walking
+  reflex: Achilles (S1)
+  clue: An **L5–S1** posterolateral herniation compresses **S1**.
+  entries: [intervertebral-disc, triceps-surae, tibial-nerve]
+- id: S2-S4
+  label: S2–S4
+  group: Sacral
+  dermatome: Saddle area — perineum and perianal skin (S2–S5)
+  muscle: >-
+    External anal and urethral sphincters (pudendal nerve); detrusor contraction (pelvic splanchnic nerves)
+  reflex: Anal wink and bulbocavernosus (S2–S4)
+  clue: >-
+    **Cauda equina syndrome** — saddle anesthesia, urinary retention, reduced anal tone, bilateral sciatica — needs an
+    emergency MRI. "S2, 3, 4 keep the poop off the floor."
+  entries: [cauda-equina, pudendal-nerve, pelvic-autonomic-nerves, perineum]

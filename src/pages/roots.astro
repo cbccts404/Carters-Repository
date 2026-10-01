@@ -1,0 +1,331 @@
+---
+/**
+ * Nerve root map: tap a root to light up its dermatome on four schematic panels
+ * and see its key muscle, reflex and classic lesion. Quiz mode asks for the root
+ * from a highlighted area, a muscle, a reflex or a patch of numbness.
+ * Data: content/roots/roots.yaml. Geometry: src/lib/dermatome-shapes.ts.
+ */
+import { readFileSync } from 'node:fs';
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { loadAtlas, md, structureUrl, url } from '../lib/atlas';
+import { lowerLimb, saddle, trunk, upperLimb, type Region } from '../lib/dermatome-shapes';
+
+const atlas = await loadAtlas();
+// getCollection() sorts by id; keep the authored (head-to-tail) order instead.
+const authored = [...readFileSync('./content/roots/roots.yaml', 'utf8').matchAll(/^- id: (\S+)/gm)].map((m) => m[1]);
+const roots = (await getCollection('roots')).sort((a, b) => authored.indexOf(a.id) - authored.indexOf(b.id));
+const rootIds = new Set(roots.map((r) => r.id));
+
+type PanelDef = {
+  key: string;
+  title: string;
+  viewBox: string;
+  outline: string;
+  regions: Region[];
+  labels: [string, number, number][]; // root, x, y
+  marks?: { cx: number; cy: number; r: number }[];
+  note: string;
+};
+const panels: PanelDef[] = [
+  {
+    key: 'upper',
+    title: 'Right upper limb, anterior',
+    viewBox: '96 18 190 616',
+    ...upperLimb,
+    labels: [['C4', 190, 50], ['C5', 160, 190], ['T2', 228, 130], ['T1', 222, 320], ['C6', 172, 400], ['C7', 202, 512], ['C8', 232, 470]],
+    note: 'Thumb on the left',
+  },
+  {
+    key: 'trunk',
+    title: 'Trunk, anterior',
+    viewBox: '20 22 260 396',
+    ...trunk,
+    labels: [['C4', 150, 52], ['T4', 150, 125], ['T10', 112, 276], ['L1', 150, 370]],
+    marks: [...trunk.landmarks.nipples.map(([cx, cy]) => ({ cx, cy, r: 5 })), { cx: trunk.landmarks.umbilicus[0], cy: trunk.landmarks.umbilicus[1], r: 4 }],
+    note: 'Dots: nipples (T4) and umbilicus (T10)',
+  },
+  {
+    key: 'lower',
+    title: 'Right lower limb, anterior',
+    viewBox: '70 20 220 700',
+    ...lowerLimb,
+    labels: [['L1', 180, 58], ['L2', 190, 132], ['L3', 196, 268], ['L4', 230, 500], ['L5', 186, 460], ['S1', 112, 676]],
+    note: 'Great toe on the right; S1 is the lateral edge of the foot',
+  },
+  {
+    key: 'saddle',
+    title: 'Saddle area, from behind',
+    viewBox: '20 0 260 260',
+    ...saddle,
+    labels: [['S2-S4', 150, 100]],
+    marks: [{ cx: saddle.anus[0], cy: saddle.anus[1], r: 6 }],
+    note: 'Dot: anus',
+  },
+];
+
+// Every root needs somewhere to light up, and every linked entry must exist.
+const errors: string[] = [];
+const drawn = new Set(panels.flatMap((p) => p.regions.map((r) => r.id)));
+for (const r of roots) {
+  if (!drawn.has(r.id)) errors.push(`root "${r.id}" has no region in src/lib/dermatome-shapes.ts`);
+  for (const e of r.data.entries) if (!atlas.byId.has(e)) errors.push(`root "${r.id}": unknown entry "${e}"`);
+}
+if (errors.length) throw new Error('content/roots errors:\n  ' + errors.join('\n  '));
+
+const label = (id: string) => roots.find((r) => r.id === id)?.data.label ?? id;
+const groups = [...new Set(roots.map((r) => r.data.group))].map((g) => ({ name: g, items: roots.filter((r) => r.data.group === g) }));
+const cards = await Promise.all(
+  roots.map(async (r) => ({
+    ...r.data,
+    id: r.id,
+    label: label(r.id),
+    clue: await md(r.data.clue),
+    links: r.data.entries.map((e) => atlas.byId.get(e)!),
+  })),
+);
+// what the quiz needs, with the root numbers stripped out of the prompts
+const quizData = roots.map((r) => ({
+  id: r.id,
+  label: label(r.id),
+  trunk: r.data.group === 'Trunk',
+  dermatome: r.data.dermatome,
+  muscle: r.data.muscle,
+  reflex: r.data.reflex,
+}));
+---
+
+<Base title="Nerve root map" description="Tap a nerve root to see its dermatome, key muscle and reflex, then quiz yourself.">
+  <p class="crumbs"><a href={url()}>Home</a> / Nerve root map</p>
+  <h1>Nerve root map</h1>
+  <p class="muted">
+    Tap a root to light up its dermatome and see its key muscle, reflex and the classic lesion. Switch to the quiz to
+    drill them.
+  </p>
+  <p class="small muted">
+    Schematic, following the commonly taught pattern. Dermatome maps differ between sources and neighbouring
+    dermatomes overlap, so check the borders against your textbook.
+  </p>
+
+  <div class="rt" id="rt">
+    <div class="rt-side">
+      <div class="rt-mode" role="group" aria-label="Mode">
+        <button type="button" class="btn" id="rt-explore" aria-pressed="true">Explore</button>
+        <button type="button" class="btn" id="rt-quiz" aria-pressed="false">Quiz me</button>
+      </div>
+
+      <div class="rt-q card" id="rt-q" hidden aria-live="polite">
+        <p class="rt-score small muted" id="rt-score">0 / 0</p>
+        <p class="rt-prompt" id="rt-prompt"></p>
+        <button type="button" class="linkish small" id="rt-look" hidden>Show the highlighted area ↓</button>
+        <p class="rt-fb" id="rt-fb" hidden></p>
+        <button type="button" class="btn" id="rt-next" hidden>Next question</button>
+      </div>
+
+      <div class="rt-chips" id="rt-chips">
+        {
+          groups.map((g) => (
+            <div class="rt-group">
+              <span class="small muted">{g.name}</span>
+              <div class="chips">
+                {g.items.map((r) => (
+                  <button type="button" class="rt-chip" data-root={r.id} aria-pressed="false">
+                    {label(r.id)}
+                  </button>
+                ))}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <p class="small muted" id="rt-hint">Pick a root above, or tap a coloured area.</p>
+      {
+        cards.map((c) => (
+          <article class="card rt-card" data-card={c.id} hidden>
+            <h2>{c.label}</h2>
+            <dl class="loc-dl">
+              <dt>Dermatome</dt>
+              <dd>{c.dermatome}</dd>
+              <dt>Key muscle</dt>
+              <dd>{c.muscle}</dd>
+              <dt>Reflex</dt>
+              <dd>{c.reflex}</dd>
+            </dl>
+            <div class="loc-why" set:html={c.clue} />
+            <p class="small">
+              Study:{' '}
+              {c.links.map((e, i) => (
+                <>
+                  {i > 0 && ', '}
+                  <a href={structureUrl(e)}>{e.data.name}</a>
+                </>
+              ))}
+            </p>
+          </article>
+        ))
+      }
+    </div>
+
+    <div class="rt-panels">
+      {
+        panels.map((p) => (
+          <figure class="rt-panel">
+            <svg viewBox={p.viewBox} role="img" aria-label={`${p.title}: dermatomes`}>
+              <defs>
+                <clipPath id={`rt-clip-${p.key}`}>
+                  <path d={p.outline} />
+                </clipPath>
+              </defs>
+              <g clip-path={`url(#rt-clip-${p.key})`}>
+                <path d={p.outline} class="rt-skin" />
+                {p.regions.map((r) => {
+                  const live = rootIds.has(r.id);
+                  const attrs = { class: live ? 'rt-r' : 'rt-ctx', 'data-root': live ? r.id : undefined, fill: r.color };
+                  return r.d ? <path d={r.d} {...attrs} /> : <polygon points={r.points} {...attrs} />;
+                })}
+              </g>
+              <path d={p.outline} class="rt-outline" />
+              {(p.marks ?? []).map((m) => (
+                <circle cx={m.cx} cy={m.cy} r={m.r} class="rt-mark" />
+              ))}
+              {p.labels.map(([id, x, y]) => (
+                <text x={x} y={y} text-anchor="middle" class="rt-lbl" data-for={id}>
+                  {label(id)}
+                </text>
+              ))}
+            </svg>
+            <figcaption class="small muted">
+              <b>{p.title}.</b> {p.note}
+            </figcaption>
+          </figure>
+        ))
+      }
+    </div>
+  </div>
+
+  <script type="application/json" id="rt-data" set:html={JSON.stringify(quizData)} />
+</Base>
+
+<script>
+  type Root = { id: string; label: string; trunk: boolean; dermatome: string; muscle: string; reflex: string };
+  const roots: Root[] = JSON.parse(document.getElementById('rt-data')!.textContent!);
+  const byId = new Map(roots.map((r) => [r.id, r]));
+  const box = document.getElementById('rt')!;
+  const chips = [...document.querySelectorAll<HTMLButtonElement>('.rt-chip')];
+  const cards = [...document.querySelectorAll<HTMLElement>('.rt-card')];
+  const areas = [...document.querySelectorAll<SVGElement>('.rt-r')];
+  const hint = document.getElementById('rt-hint')!;
+  const q = {
+    box: document.getElementById('rt-q')!,
+    score: document.getElementById('rt-score')!,
+    prompt: document.getElementById('rt-prompt')!,
+    fb: document.getElementById('rt-fb')!,
+    next: document.getElementById('rt-next') as HTMLButtonElement,
+    look: document.getElementById('rt-look') as HTMLButtonElement,
+  };
+  const btnExplore = document.getElementById('rt-explore')!;
+  const btnQuiz = document.getElementById('rt-quiz')!;
+
+  let mode: 'explore' | 'quiz' = 'explore';
+  let current: { accept: string[]; answer: string; answered: boolean } | null = null;
+  let right = 0;
+  let asked = 0;
+
+  /** Light up one root's areas (or none) and show its card. */
+  function show(id: string | null, card = true) {
+    box.classList.toggle('has-sel', !!id);
+    for (const a of areas) a.classList.toggle('on', a.dataset.root === id);
+    for (const c of chips) c.setAttribute('aria-pressed', String(mode === 'explore' && c.dataset.root === id));
+    for (const c of cards) c.hidden = !card || c.dataset.card !== id;
+    hint.hidden = !!id || mode === 'quiz';
+  }
+
+  // Root numbers would give the answer away, so drop any bracketed text that names a root.
+  const strip = (s: string) => s.replace(/\s*\([^)]*\b[CTLS]\d[^)]*\)/g, '').replace(/\s*—.*$/, '').trim();
+  const lower = (s: string) => s.charAt(0).toLowerCase() + s.slice(1);
+  const reflexName = (s: string) => s.split(/\s*[(;]/)[0].trim();
+  const hasReflex = (r: Root) => !/^(none|no reliable)/i.test(r.reflex);
+  const pick = <T,>(xs: T[]) => xs[Math.floor(Math.random() * xs.length)];
+
+  function ask() {
+    const r = pick(roots);
+    // trunk muscles (intercostals, abdominal wall) span many roots, so they aren't asked
+    const kinds = ['area', 'dermatome', ...(r.trunk ? [] : ['muscle']), ...(hasReflex(r) ? ['reflex'] : [])];
+    const kind = pick(kinds);
+    let accept = [r.id];
+    let text = '';
+    if (kind === 'area') {
+      text = 'Which root supplies the highlighted skin?';
+      show(r.id, false);
+    } else {
+      show(null, false);
+      if (kind === 'dermatome') text = `Numbness over the ${lower(strip(r.dermatome))}. Which root?`;
+      if (kind === 'muscle') {
+        // ask about the first action only, and accept every root that lists it
+        const first = strip(r.muscle.split(';')[0]);
+        const action = first.split(' (')[0].toLowerCase();
+        text = `Key muscle: ${lower(first)}. Which root?`;
+        accept = roots.filter((x) => !x.trunk && x.muscle.toLowerCase().includes(action)).map((x) => x.id);
+      }
+      if (kind === 'reflex') {
+        const name = reflexName(r.reflex);
+        text = `Which root does the ${lower(name)} reflex test?`;
+        // shared reflexes (e.g. biceps C5–C6) accept every root that lists them
+        accept = roots.filter((x) => hasReflex(x) && x.reflex.toLowerCase().includes(name.toLowerCase())).map((x) => x.id);
+      }
+    }
+    current = { accept, answer: r.id, answered: false };
+    q.prompt.textContent = text;
+    // on narrow screens the panels sit below the chips, so offer a jump to the lit area
+    q.look.hidden = kind !== 'area' || matchMedia('(min-width: 900px)').matches;
+    q.fb.hidden = true;
+    q.next.hidden = true;
+    for (const c of chips) c.classList.remove('right', 'wrong');
+  }
+
+  function answer(id: string) {
+    if (!current || current.answered) return;
+    current.answered = true;
+    asked++;
+    const ok = current.accept.includes(id);
+    if (ok) right++;
+    for (const c of chips) {
+      if (current.accept.includes(c.dataset.root!)) c.classList.add('right');
+      else if (c.dataset.root === id) c.classList.add('wrong');
+    }
+    const names = current.accept.map((a) => byId.get(a)!.label).join(' or ');
+    q.fb.textContent = ok ? `Correct — ${names}.` : `Not quite — it's ${names}.`;
+    q.fb.className = `rt-fb ${ok ? 'good' : 'bad'}`;
+    q.fb.hidden = false;
+    q.score.textContent = `${right} / ${asked} correct`;
+    q.next.hidden = false;
+    q.look.hidden = true;
+    show(current.answer);
+    q.next.focus();
+  }
+
+  function setMode(m: typeof mode) {
+    mode = m;
+    btnExplore.setAttribute('aria-pressed', String(m === 'explore'));
+    btnQuiz.setAttribute('aria-pressed', String(m === 'quiz'));
+    box.classList.toggle('quiz', m === 'quiz');
+    q.box.hidden = m !== 'quiz';
+    for (const c of chips) c.classList.remove('right', 'wrong');
+    if (m === 'quiz') ask();
+    else show(null);
+  }
+
+  const choose = (id: string) => (mode === 'quiz' ? answer(id) : show(id));
+  for (const c of chips) c.addEventListener('click', () => choose(c.dataset.root!));
+  for (const a of areas) a.addEventListener('click', () => (mode === 'explore' ? show(a.dataset.root!) : undefined));
+  btnExplore.addEventListener('click', () => setMode('explore'));
+  btnQuiz.addEventListener('click', () => setMode('quiz'));
+  q.next.addEventListener('click', ask);
+  q.look.addEventListener('click', () =>
+    document.querySelector('.rt-r.on')?.closest('figure')?.scrollIntoView({ behavior: 'smooth', block: 'center' }),
+  );
+
+  const start = new URLSearchParams(location.search).get('root');
+  if (start && byId.has(start)) show(start);
+</script>
