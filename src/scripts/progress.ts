@@ -26,10 +26,18 @@ export interface CardRecord {
   seen: number;
   t: number; // last reviewed (ms)
 }
+/** Best and latest result for a clinical case. */
+export interface CaseRecord {
+  steps: number; // steps in the case
+  best: number; // most steps right in one attempt
+  last: number; // steps right last time
+  t: number; // last finished (ms)
+}
 interface Store {
   quiz: Record<string, QuizRecord>;
   sessions: QuizSession[];
   cards: Record<string, CardRecord>;
+  cases: Record<string, CaseRecord>;
 }
 
 const DAY = 86_400_000;
@@ -37,7 +45,7 @@ const DAY = 86_400_000;
 export const BOX_DAYS = [0, 1, 3, 7, 14, 30];
 export const MASTERED_BOX = 3;
 
-const empty = (): Store => ({ quiz: {}, sessions: [], cards: {} });
+const empty = (): Store => ({ quiz: {}, sessions: [], cards: {}, cases: {} });
 
 export function loadProgress(): Store {
   try {
@@ -45,7 +53,13 @@ export function loadProgress(): Store {
     if (!raw) return empty();
     const s = JSON.parse(raw);
     // keep any keys added by later versions intact when re-saving
-    return { ...s, quiz: s.quiz ?? {}, sessions: Array.isArray(s.sessions) ? s.sessions : [], cards: s.cards ?? {} };
+    return {
+      ...s,
+      quiz: s.quiz ?? {},
+      sessions: Array.isArray(s.sessions) ? s.sessions : [],
+      cards: s.cards ?? {},
+      cases: s.cases ?? {},
+    };
   } catch {
     return empty();
   }
@@ -101,5 +115,12 @@ export const isDue = (r: CardRecord | undefined, now = Date.now()) => !r || r.du
 export function resetCardProgress() {
   const s = loadProgress();
   s.cards = {};
+  save(s);
+}
+
+export function recordCase(id: string, right: number, steps: number) {
+  const s = loadProgress();
+  const r = s.cases[id];
+  s.cases[id] = { steps, best: Math.max(right, r?.best ?? 0), last: right, t: Date.now() };
   save(s);
 }

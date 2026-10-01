@@ -1,0 +1,55 @@
+title: Chest pain with a slow pulse
+region: thorax
+summary: An inferior STEMI with bradycardia, then hypotension, then a new murmur. Follow the right coronary artery.
+vignette: >-
+  A 61-year-old man has had crushing chest pain for an hour. His ECG shows ST elevation in leads II, III and aVF. His
+  heart rate is 44/min.
+steps:
+  - question: Which artery is most likely occluded?
+    choices:
+      - Left anterior descending artery
+      - Internal thoracic artery
+      - Left main coronary artery
+      - Right coronary artery
+    answer: D
+    explanation: >-
+      ST elevation in **II, III and aVF** is an inferior MI, usually from the [[right-coronary-artery]] in a
+      right-dominant heart (the circumflex in a left-dominant one).
+  - question: Why is he bradycardic?
+    choices:
+      - The RCA usually supplies the SA and AV nodes
+      - Bradycardia is a side effect of the chest pain itself
+      - The LAD supplies the bundle of His in everyone
+      - Vagal fibers run inside the RCA wall
+    answer: A
+    explanation: >-
+      The RCA usually gives the **SA nodal** and **AV nodal** arteries, so inferior MI causes bradycardia and AV block
+      (see [[cardiac-conduction-system]]).
+  - info: His blood pressure falls to 82/50 mm Hg. His lungs are clear and his JVP is raised.
+    question: What is the most appropriate next step?
+    choices:
+      - Give sublingual nitroglycerin
+      - Give IV furosemide
+      - Start a beta-blocker
+      - Obtain right-sided leads (V4R), give IV fluids and avoid nitrates
+    answer: D
+    explanation: >-
+      Hypotension with **clear lungs and a raised JVP** suggests a **right ventricular infarct** from a proximal RCA
+      occlusion. The RV is preload-dependent, so give fluids and **avoid nitrates** and other preload reducers.
+  - info: On day 4 he becomes suddenly breathless with pulmonary edema and a new holosystolic murmur.
+    question: What is the most likely cause?
+    choices:
+      - Rupture of the posteromedial papillary muscle
+      - Acute aortic dissection
+      - Pericarditis
+      - Rupture of the anterolateral papillary muscle
+    answer: A
+    explanation: >-
+      Papillary muscle rupture typically occurs about 2–7 days after an MI and causes acute mitral regurgitation. The
+      **posteromedial** papillary muscle has a single blood supply (from the posterior interventricular artery), so it
+      ruptures after inferior MI (see [[mitral-valve]]).
+takeaways:
+  - "Inferior MI (II, III, aVF) → RCA → bradycardia and AV block."
+  - "Hypotension + clear lungs + raised JVP → RV infarct: fluids, no nitrates."
+  - "New holosystolic murmur days after inferior MI → posteromedial papillary muscle rupture."
+entries: [right-coronary-artery, cardiac-conduction-system, mitral-valve, heart]

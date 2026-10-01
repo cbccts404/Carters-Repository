@@ -1,0 +1,55 @@
+title: A lucid interval after a blow to the head
+region: neuroanatomy
+summary: A young man talks normally after a head injury, then deteriorates. Identify the bleed and the herniation.
+vignette: >-
+  A 19-year-old is struck on the right side of the head by a baseball. He is knocked out briefly, then talks normally.
+  Two hours later he has a severe headache, vomits and becomes drowsy.
+steps:
+  - question: Which vessel is most likely bleeding?
+    choices:
+      - Bridging veins
+      - A berry aneurysm of the circle of Willis
+      - Superior sagittal sinus
+      - Lenticulostriate arteries
+      - Middle meningeal artery
+    answer: E
+    explanation: >-
+      Brief loss of consciousness, a **lucid interval** and then rapid decline is the classic story of an **epidural
+      hematoma** — arterial bleeding from the [[middle-meningeal-artery]] torn by a temporal bone (pterion) fracture.
+  - question: What would the noncontrast CT most likely show?
+    choices:
+      - Blood in the basal cisterns
+      - An empty delta sign
+      - A biconvex (lens-shaped) hyperdensity that does not cross suture lines
+      - A crescent-shaped collection that crosses suture lines
+    answer: C
+    explanation: >-
+      Arterial blood strips the dura from the skull and is stopped at the sutures, giving a **biconvex** bleed. A
+      crescent crossing sutures is subdural (bridging veins); cisternal blood is subarachnoid; the empty delta sign is
+      venous sinus thrombosis (see [[cranial-meninges]]).
+  - info: His right pupil is now fixed and dilated.
+    question: What does this sign indicate?
+    choices:
+      - Interruption of the cervical sympathetic chain
+      - Compression of the right abducens nerve
+      - Compression of the right oculomotor nerve by uncal herniation
+      - A lesion of the left optic nerve
+    answer: C
+    explanation: >-
+      An expanding supratentorial mass pushes the uncus over the tentorium, compressing the ipsilateral
+      [[oculomotor-nerve]]. Its parasympathetic fibers lie on the surface, so the pupil blows first. Contralateral
+      hemiparesis follows from compression of the cerebral peduncle.
+  - question: What is the definitive management?
+    choices:
+      - Emergency craniotomy and evacuation
+      - Anticoagulation with heparin
+      - Lumbar puncture
+      - Nimodipine and observation
+    answer: A
+    explanation: >-
+      An epidural hematoma with herniation needs **emergency craniotomy**. Lumbar puncture with a mass lesion risks
+      herniation; nimodipine is for subarachnoid hemorrhage; heparin treats venous sinus thrombosis.
+takeaways:
+  - "Epidural = arterial (middle meningeal), biconvex, stops at sutures, lucid interval."
+  - "Ipsilateral blown pupil after head injury → uncal herniation compressing CN III."
+entries: [middle-meningeal-artery, cranial-meninges, oculomotor-nerve, midbrain]

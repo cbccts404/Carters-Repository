@@ -543,3 +543,16 @@ p > a + .linkish.danger { margin-left: 16px; }
   paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round;
 }
 .rt.quiz .rt-lbl { display: none; }
+
+/* Clinical cases */
+.case-vignette { margin: 12px 0 4px; font-size: 1.02rem; }
+.case-vignette p { margin: 0; }
+.case-step[hidden], .case-end[hidden] { display: none; }
+.case-num { margin: 0 0 6px; }
+.case-info { border-left: 3px solid var(--accent); padding: 4px 0 4px 10px; margin-bottom: 10px; }
+.case-info p { margin: 0; }
+.case-step { scroll-margin-top: calc(var(--header-h) + 12px); }
+.case-step .explain .btn { margin-top: 6px; }
+.case-end { margin-top: 16px; }
+.case-end h2 { margin-top: 0; }
+.case-score { font-weight: 600; }

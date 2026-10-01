@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { loadAtlas, url } from '../../lib/atlas';
+
+const atlas = await loadAtlas();
+const order = atlas.regions.map((r) => r.id);
+const cases = (await getCollection('cases')).sort(
+  (a, b) => order.indexOf(a.data.region) - order.indexOf(b.data.region) || a.data.title.localeCompare(b.data.title),
+);
+const regionName = (id: string) => atlas.regionById.get(id)?.data.name ?? id;
+---
+
+<Base title="Clinical cases" description="Short cases worked through step by step: localize, examine, image and manage.">
+  <p class="crumbs"><a href={url()}>Home</a> / Clinical cases</p>
+  <h1>Clinical cases</h1>
+  <p class="muted">
+    Each case is a short vignette worked through in steps — where is the lesion, what will you find, which test, what
+    next. New findings appear as you go, and every explanation links to the entries behind it.
+  </p>
+  <div class="grid">
+    {
+      cases.map((c) => (
+        <a class="card case-tile" href={url(`cases/${c.id}/`)} data-case={c.id} data-steps={c.data.steps.length}>
+          <span class="small muted">{regionName(c.data.region)}</span>
+          <h3>{c.data.title}</h3>
+          <p>{c.data.summary}</p>
+          <p class="small case-result" style="margin-top:8px">{c.data.steps.length} steps</p>
+        </a>
+      ))
+    }
+  </div>
+</Base>
+
+<script>
+  import { loadProgress } from '../../scripts/progress';
+  const done = loadProgress().cases;
+  for (const tile of document.querySelectorAll<HTMLElement>('.case-tile')) {
+    const r = done[tile.dataset.case!];
+    if (r) tile.querySelector('.case-result')!.textContent = `${tile.dataset.steps} steps · best ${r.best}/${r.steps} ✓`;
+  }
+</script>

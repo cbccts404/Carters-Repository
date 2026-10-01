@@ -1,0 +1,57 @@
+title: Vertigo and hoarseness after neck manipulation
+region: neuroanatomy
+summary: Crossed sensory loss, hoarseness and Horner syndrome — a brainstem stroke with a classic cause.
+vignette: >-
+  A 52-year-old has severe vertigo, nausea, hoarseness and difficulty swallowing that began after a chiropractic neck
+  manipulation. She also has left-sided neck pain.
+steps:
+  - info: >-
+      Pain and temperature sensation are lost on the **left face** and the **right body**. She has a left ptosis and a
+      small left pupil, and left limb ataxia. **Limb strength is normal.**
+    question: Where is the lesion?
+    choices:
+      - Right internal capsule
+      - Left medial medulla
+      - Right lateral medulla
+      - Left lateral pons
+      - Left lateral medulla
+    answer: E
+    explanation: >-
+      Ipsilateral face and contralateral body pain/temperature loss, dysphagia and hoarseness, ipsilateral Horner
+      syndrome and limb ataxia with **no limb weakness** is the **lateral medullary (Wallenberg)** syndrome on the side
+      of the face findings (see [[medulla-oblongata]]).
+  - question: Which artery is most likely occluded?
+    choices:
+      - Anterior spinal artery
+      - Left vertebral artery or PICA
+      - Left middle cerebral artery
+      - Left AICA
+    answer: B
+    explanation: >-
+      Wallenberg syndrome comes from the **vertebral artery or PICA**. Neck pain after manipulation in a younger patient
+      suggests **vertebral artery dissection** (see [[vertebrobasilar-system]]). AICA causes a lateral pontine syndrome
+      with hearing loss; the anterior spinal artery causes the medial medullary syndrome.
+  - question: Damage to which nucleus explains the hoarseness and dysphagia?
+    choices:
+      - Hypoglossal nucleus
+      - Nucleus ambiguus
+      - Spinal trigeminal nucleus
+      - Vestibular nuclei
+    answer: B
+    explanation: >-
+      The **nucleus ambiguus** supplies the muscles of the pharynx and larynx through CN IX and X. The spinal trigeminal
+      nucleus explains the facial sensory loss and the vestibular nuclei the vertigo.
+  - question: Which imaging test is best for confirming this stroke?
+    choices:
+      - Lumbar puncture
+      - MRI of the brain
+      - Plain radiographs of the cervical spine
+      - Noncontrast CT alone
+    answer: B
+    explanation: >-
+      Posterior circulation strokes are easily missed on CT; **MRI** is the test. Vessel imaging (CTA or MRA) looks for
+      the dissection.
+takeaways:
+  - "Ipsilateral face + contralateral body pain/temperature loss + hoarseness + Horner → Wallenberg (vertebral/PICA)."
+  - "Neck pain + posterior circulation stroke in a younger patient → vertebral dissection."
+entries: [medulla-oblongata, vertebrobasilar-system, vertebral-artery, vagus-nerve]

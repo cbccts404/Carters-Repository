@@ -1,0 +1,54 @@
+title: Blood at the urethral meatus
+region: pelvis-perineum
+summary: Two urethral injuries — a straddle fall and a pelvic fracture — and where the urine goes in each.
+vignette: >-
+  A 12-year-old boy falls astride the top bar of his bicycle. He has blood at the urethral meatus, can't pass urine, and
+  develops swelling and bruising of the scrotum and penis.
+steps:
+  - question: Which part of the urethra is most likely injured?
+    choices:
+      - Intermediate (membranous) urethra
+      - Prostatic urethra
+      - Spongy (bulbar) urethra
+      - Preprostatic urethra
+    answer: C
+    explanation: >-
+      A **straddle injury** crushes the **bulbar (spongy) urethra** against the pubic arch (see [[urethra]]).
+  - question: Where can the extravasated urine and blood spread?
+    choices:
+      - Into the peritoneal cavity
+      - Into the thighs and down the legs
+      - Into the scrotum, penis and lower anterior abdominal wall, but not the thighs
+      - Into the ischioanal fossa and anal triangle
+    answer: C
+    explanation: >-
+      The fluid spreads in the **superficial perineal pouch**, deep to Colles fascia, which is continuous with the dartos
+      and **Scarpa fascia**. It can't enter the **thighs** because Scarpa/Colles fascia fuses with the fascia lata just
+      below the inguinal ligament, or the anal triangle because it fuses at the perineal body (see
+      [[perineal-pouches]]).
+  - info: A different patient, a 30-year-old man crushed in a car crash, has a pelvic fracture and blood at the meatus.
+    question: Which part of the urethra is usually injured in a pelvic fracture, and where does urine collect?
+    choices:
+      - Penile urethra — the glans
+      - Bulbar urethra — the scrotum and penis
+      - Membranous urethra — the deep perineal pouch and the retropubic space
+      - Prostatic urethra — the peritoneal cavity
+    answer: C
+    explanation: >-
+      A pelvic fracture shears the **membranous urethra** at the prostatomembranous junction. Urine extravasates into the
+      **deep perineal pouch** and the **retropubic (extraperitoneal) space**.
+  - question: What is the next step for his urinary tract?
+    choices:
+      - CT of the head
+      - Pass a Foley catheter immediately
+      - Retrograde urethrogram before any urethral catheter
+      - Observation and repeat examination in 24 hours
+    answer: C
+    explanation: >-
+      With a pelvic fracture and **blood at the meatus**, **do not pass a Foley** until a **retrograde urethrogram**
+      excludes urethral injury. A suprapubic catheter is used if the urethra is disrupted.
+takeaways:
+  - "Straddle injury → bulbar urethra → scrotum, penis and abdominal wall, not the thighs."
+  - "Pelvic fracture → membranous urethra → deep pouch and retropubic space."
+  - "Blood at the meatus → retrograde urethrogram before a Foley."
+entries: [urethra, perineal-pouches, bony-pelvis, perineum]
