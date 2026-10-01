@@ -1,0 +1,56 @@
+title: Numb fingers that wake her at night
+region: upper-limb
+summary: Night-time tingling relieved by shaking the hand. Localize it, explain the spared palm, and plan the work-up.
+vignette: >-
+  A 34-year-old woman, 30 weeks pregnant, wakes most nights with tingling and numbness in her right thumb, index and
+  middle fingers. Shaking her hand makes it better.
+steps:
+  - question: Where is the nerve most likely compressed?
+    choices:
+      - C8 nerve root
+      - Radial nerve at the arcade of Frohse
+      - Ulnar nerve in the Guyon canal
+      - Median nerve between the heads of pronator teres
+      - Median nerve in the carpal tunnel
+    answer: E
+    explanation: >-
+      Nocturnal paresthesias of the lateral 3½ digits relieved by shaking the hand ("flick sign") is **carpal tunnel
+      syndrome**, the most common entrapment neuropathy. **Pregnancy** is a classic association (fluid), along with
+      hypothyroidism, diabetes and rheumatoid arthritis (see [[median-nerve]]).
+  - info: Sensation over the thenar eminence is normal.
+    question: Why is the skin over the thenar eminence spared?
+    choices:
+      - Its nerve, the palmar cutaneous branch, passes superficial to the flexor retinaculum
+      - The thenar skin is supplied by the ulnar nerve
+      - Sensory fibers are spared before motor fibers in every compression
+      - The thenar skin is supplied by the radial nerve
+    answer: A
+    explanation: >-
+      The **palmar cutaneous branch** of the median nerve leaves before the wrist and runs **superficial to the flexor
+      retinaculum**, outside the [[carpal-tunnel]]. In **pronator syndrome** (compression at the elbow) thenar sensation
+      *is* reduced.
+  - question: Which test confirms the diagnosis and grades its severity?
+    choices:
+      - Nerve conduction studies and EMG
+      - Plain radiographs of the wrist
+      - MRI of the cervical spine
+      - Serum thyroid-stimulating hormone alone
+    answer: A
+    explanation: >-
+      The diagnosis is clinical (Tinel, Phalen and carpal compression tests); **nerve conduction studies/EMG** confirm
+      and grade it.
+  - question: Her symptoms are mild and she has no weakness. What is the most appropriate initial management?
+    choices:
+      - Immobilization in a long-arm cast
+      - Oral corticosteroids for 6 months
+      - Urgent carpal tunnel release
+      - A wrist splint in neutral, especially at night
+    answer: D
+    explanation: >-
+      Mild to moderate carpal tunnel syndrome is commonly managed first with a **wrist splint in neutral**, especially at
+      night. **Thenar atrophy** or a severe or progressive deficit prompts surgical referral.
+takeaways:
+  - "Night-time paresthesias of the lateral 3½ digits + flick sign → carpal tunnel syndrome."
+  - "Thenar sensation spared in CTS (palmar cutaneous branch); reduced in pronator syndrome."
+  - "Confirm with nerve conduction studies; start with a night splint; refer for atrophy."
+entries: [carpal-tunnel, median-nerve, wrist-joint]

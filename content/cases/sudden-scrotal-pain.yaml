@@ -1,0 +1,54 @@
+title: Sudden scrotal pain at night
+region: pelvis-perineum
+summary: A teenager woken by severe testicular pain. Tell torsion from epididymitis and act within hours.
+vignette: >-
+  A 15-year-old boy is woken at 4 a.m. by sudden, severe right scrotal pain and has vomited twice. He has no urinary
+  symptoms and is not sexually active.
+steps:
+  - info: The right testis lies high with a horizontal lie, and the right cremasteric reflex is absent.
+    question: What is the most likely diagnosis?
+    choices:
+      - Varicocele
+      - Testicular cancer
+      - Hydrocele
+      - Epididymitis
+      - Testicular torsion
+    answer: E
+    explanation: >-
+      **Sudden severe pain** that wakes him, vomiting, a **high-riding, horizontal** testis and an **absent cremasteric
+      reflex** is **testicular torsion**. Epididymitis starts gradually, with fever and dysuria, and the reflex is present
+      (see [[testis]]).
+  - question: What is the most appropriate next step?
+    choices:
+      - Antibiotics for presumed epididymitis
+      - Scrotal ultrasound and admission for observation
+      - Immediate surgical exploration
+      - Analgesia and outpatient review
+    answer: C
+    explanation: >-
+      Torsion is a **surgical emergency**: salvage falls sharply after about **6 hours**. With high suspicion, go straight
+      to **surgical exploration** rather than delaying for ultrasound. Manual detorsion is only a temporary measure.
+  - question: Which anatomic variant predisposes to torsion?
+    choices:
+      - An undescended testis in the inguinal canal
+      - Bell-clapper deformity — the tunica vaginalis attaches too high, leaving the testis free to rotate
+      - A left testicular vein draining into the left renal vein
+      - A patent urachus
+    answer: B
+    explanation: >-
+      In the **bell-clapper deformity** the tunica vaginalis attaches too high on the cord, so the testis hangs free and
+      can twist.
+  - question: At surgery the testis is viable after detorsion. What else should be done?
+    choices:
+      - Bilateral orchiopexy
+      - Nothing further
+      - Orchiectomy of the affected testis
+      - Fix only the affected testis
+    answer: A
+    explanation: >-
+      Detorsion is followed by **bilateral orchiopexy** — the other testis is fixed as well.
+takeaways:
+  - "Sudden pain + high horizontal testis + absent cremasteric reflex → torsion → OR, don't wait for ultrasound."
+  - "Gradual pain, fever, dysuria, reflex present, Prehn sign → epididymitis."
+  - "Bell-clapper deformity; fix both sides."
+entries: [testis, spermatic-cord]
