@@ -1,0 +1,54 @@
+title: Pain that moves to the right lower quadrant
+region: abdomen
+summary: Periumbilical pain that migrates — explain the pain, find the landmarks and pick the scan.
+vignette: >-
+  A 19-year-old has had dull pain around the umbilicus since last night. This morning it has moved to the right lower
+  quadrant, and he has lost his appetite and feels nauseated.
+steps:
+  - question: Why did the pain begin around the umbilicus?
+    choices:
+      - The pain came from the abdominal wall muscles
+      - The phrenic nerve supplies the appendix
+      - The appendix lies directly behind the umbilicus
+      - Visceral afferents from the appendix enter the cord at about T10, the dermatome of the umbilicus
+    answer: D
+    explanation: >-
+      The [[appendix]] is midgut; its visceral afferents travel with sympathetic fibers to about **T10**, so early pain is
+      poorly localized and **periumbilical**. When the parietal peritoneum becomes inflamed, the pain localizes to the
+      RLQ.
+  - question: Where is McBurney point?
+    choices:
+      - Midway between the umbilicus and the pubic symphysis
+      - At the midinguinal point
+      - Two-thirds of the way from the umbilicus to the right ASIS
+      - One-third of the way from the right ASIS to the umbilicus
+    answer: D
+    explanation: >-
+      **McBurney point** lies one-third of the distance from the right **ASIS** to the umbilicus and marks the base of
+      the appendix.
+  - info: Lying on his left side, he has right lower quadrant pain when the examiner passively extends his right hip.
+    question: What does this sign suggest?
+    choices:
+      - Perforation with generalized peritonitis
+      - Right ureteral colic
+      - A pelvic appendix against obturator internus
+      - A retrocecal appendix lying against the psoas
+    answer: D
+    explanation: >-
+      This is the **psoas sign**, typical of a **retrocecal** appendix against [[psoas-major]]. The obturator sign
+      (internal rotation of the flexed hip) suggests a pelvic appendix.
+  - question: He is not pregnant. Which imaging test is the most accurate?
+    choices:
+      - Graded-compression ultrasound as the only test
+      - Abdominal radiograph
+      - No imaging is ever needed
+      - CT of the abdomen and pelvis with IV contrast
+    answer: D
+    explanation: >-
+      **CT with IV contrast** is the most accurate test in adults. **Ultrasound comes first in children and in
+      pregnancy**, with MRI if ultrasound is non-diagnostic in pregnancy.
+takeaways:
+  - "Periumbilical (T10) pain → RLQ as the parietal peritoneum is involved."
+  - "Psoas sign → retrocecal; obturator sign → pelvic appendix."
+  - "CT in adults; ultrasound first in children and pregnancy."
+entries: [appendix, colon, psoas-major, superior-mesenteric-artery]

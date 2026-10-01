@@ -70,6 +70,19 @@ quiz:
     explanation: >-
       The obturator nerve and vessels leave the pelvis through the **obturator canal**, a gap at the top of the
       obturator membrane.
+  - stem: >-
+      A thin 82-year-old woman has small-bowel obstruction and pain down the inner thigh to the knee that worsens when
+      her hip is extended and internally rotated. What is the most likely cause?
+    choices:
+      - Femoral hernia
+      - Obturator hernia
+      - Indirect inguinal hernia
+      - Spigelian hernia
+    answer: B
+    explanation: >-
+      An **obturator hernia** passes through the obturator canal, typically in **thin elderly women**, and compresses
+      the obturator nerve: medial thigh and knee pain worsened by hip extension, abduction or medial rotation is the
+      **Howship–Romberg sign**.
 flashcards:
   - front: Roots of the obturator nerve?
     back: L2–L4 (anterior divisions)

@@ -36,8 +36,8 @@ clinical:
     highYield: true
     mechanism: >-
       Primary: mitral valve prolapse, endocarditis, rheumatic disease. Secondary (functional): LV dilation stretching the
-      annulus. **Acute**: **papillary muscle rupture** after MI (typically days 3–5, posteromedial muscle, inferior MI) or
-      chordal rupture. {{verify: commonly cited timing window after MI}}
+      annulus. **Acute**: **papillary muscle rupture** after MI (typically about 2–7 days after, posteromedial muscle, inferior MI) or
+      chordal rupture.
     presentation: >-
       **Holosystolic, blowing murmur at the apex radiating to the axilla**. Acute severe MR: sudden pulmonary edema and
       cardiogenic shock (the murmur may be soft).

@@ -108,6 +108,7 @@ flashcards:
     back: Away from the affected side
   - front: Most common acquired cause of CN IV palsy?
     back: Head trauma
+diagrams: [cranial-nerve-exits]
 related: [extraocular-muscles, midbrain, oculomotor-nerve, abducens-nerve]
 images:
   - image: gray-776-orbit-nerves-above

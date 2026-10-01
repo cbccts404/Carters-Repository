@@ -288,4 +288,45 @@ const lesions = defineCollection({
   }),
 });
 
-export const collections = { structures, regions, images, tables, findings, lesions };
+// Nerve root map (content/roots/roots.yaml). Region ids in src/lib/dermatome-shapes.ts match these ids.
+const roots = defineCollection({
+  loader: file('./content/roots/roots.yaml'),
+  schema: z.strictObject({
+    id: z.string().regex(/^[CTLS]\d+(-S\d+)?$/, 'root ids look like "C5" or "S2-S4"'),
+    label: z.string().optional(), // display label when it differs from the id
+    group: z.enum(['Upper limb and neck', 'Trunk', 'Lower limb', 'Sacral']),
+    dermatome: z.string(),
+    muscle: z.string(),
+    reflex: z.string(),
+    clue: z.string(), // Markdown
+    entries: z.array(id).min(1),
+  }),
+});
+
+// Clinical cases (content/cases/*.yaml): a vignette worked through in steps, each a question with an explanation.
+const caseStep = z
+  .strictObject({
+    info: md.optional(), // new findings revealed before this step's question
+    question: md,
+    choices: z.array(md).min(4).max(5),
+    answer: z.enum(LETTERS),
+    explanation: md,
+  })
+  .refine((s) => LETTERS.indexOf(s.answer) < s.choices.length, {
+    message: 'answer letter is beyond the number of choices',
+    path: ['answer'],
+  });
+const cases = defineCollection({
+  loader: glob({ pattern: '**/[^_]*.yaml', base: './content/cases' }),
+  schema: z.strictObject({
+    title: z.string(),
+    region: id,
+    summary: z.string(),
+    vignette: md,
+    steps: z.array(caseStep).min(2),
+    takeaways: z.array(md).default([]),
+    entries: z.array(id).min(1), // atlas entries the case draws on
+  }),
+});
+
+export const collections = { structures, regions, images, tables, findings, lesions, roots, cases };

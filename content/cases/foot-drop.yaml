@@ -1,0 +1,58 @@
+title: Back pain and foot drop
+region: back
+summary: Sciatica with a foot drop. Is it the L5 root or the common fibular nerve?
+vignette: >-
+  A 45-year-old man has had two weeks of low back pain radiating down the lateral leg to the top of the foot. He now
+  catches his toes when he walks.
+steps:
+  - info: >-
+      Dorsiflexion and great-toe extension are weak. **Inversion and hip abduction are also weak.** The dorsum of the
+      foot is numb. Patellar and ankle reflexes are normal.
+    question: Where is the lesion?
+    choices:
+      - Common fibular nerve at the fibular neck
+      - L4 root
+      - L5 root
+      - S1 root
+      - Tibial nerve
+    answer: C
+    explanation: >-
+      Both an L5 root lesion and a [[common-fibular-nerve]] lesion cause foot drop and dorsal foot numbness. **Weak
+      inversion and hip abduction** point to the **L5 root**, because inversion (tibial nerve) and hip abduction
+      (superior gluteal nerve) are spared in a fibular neck lesion.
+  - question: Which disc herniation most likely explains this?
+    choices:
+      - L3–L4 posterolateral
+      - L4–L5 posterolateral
+      - L5–S1 posterolateral
+      - L4–L5 far lateral (foraminal)
+    answer: B
+    explanation: >-
+      A typical posterolateral herniation compresses the **traversing** root, numbered for the lower vertebra: **L4–L5
+      → L5**. A far-lateral L4–L5 herniation compresses the exiting L4 root; L5–S1 posterolateral compresses S1 (see
+      [[intervertebral-disc]]).
+  - question: Which new finding would make this an emergency?
+    choices:
+      - Pain that is worse with sitting
+      - A positive straight leg raise at 45°
+      - Saddle anesthesia and urinary retention
+      - Pain radiating below the knee
+    answer: C
+    explanation: >-
+      **Saddle anesthesia with urinary retention** suggests [[cauda-equina]] syndrome, which needs an **emergency MRI
+      and decompression**. The other features are typical of an ordinary radiculopathy.
+  - question: Which bedside test is the most specific for lumbar disc herniation?
+    choices:
+      - Straight leg raise
+      - Crossed straight leg raise
+      - Spurling test
+      - Phalen test
+    answer: B
+    explanation: >-
+      The **straight leg raise** is sensitive but not specific; the **crossed straight leg raise** (raising the
+      asymptomatic leg reproduces pain in the symptomatic one) is highly specific.
+takeaways:
+  - "Foot drop + weak inversion and hip abduction → L5 root; normal inversion → common fibular nerve."
+  - "Posterolateral L4–L5 → L5; L5–S1 → S1."
+  - "Saddle anesthesia + retention → emergency MRI."
+entries: [intervertebral-disc, common-fibular-nerve, spinal-nerves, cauda-equina]

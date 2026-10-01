@@ -131,6 +131,7 @@ flashcards:
     back: Temporal, zygomatic, buccal, marginal mandibular, cervical
   - front: Bell palsy vs stroke — forehead?
     back: Bell — forehead involved; stroke — forehead spared
+diagrams: [facial-palsy]
 related: [parotid-gland, muscles-of-mastication, scalp]
 images:
   - image: gray-378-muscles-head-face-neck

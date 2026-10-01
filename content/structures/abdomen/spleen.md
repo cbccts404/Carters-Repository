@@ -36,7 +36,7 @@ clinical:
     mechanism: Portal hypertension (congestion), infection (**infectious mononucleosis**, malaria, endocarditis), hematologic malignancy (CML, myelofibrosis, lymphoma), hemolytic anemias, infiltrative disease.
     presentation: >-
       LUQ fullness, early satiety, cytopenias from hypersplenism. **Mononucleosis**: avoid contact sports until cleared,
-      commonly for at least 3–4 weeks, because of rupture risk. {{verify: return-to-play timing recommendations vary}}
+      commonly for at least 3–4 weeks, because of rupture risk.
   - title: Asplenia and post-splenectomy infection
     highYield: true
     mechanism: Loss of splenic filtering and opsonization (splenectomy, sickle cell autosplenectomy).

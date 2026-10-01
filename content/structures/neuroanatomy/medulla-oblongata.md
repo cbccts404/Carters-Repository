@@ -120,6 +120,7 @@ flashcards:
     back: PICA (and vertebral artery)
   - front: Cranial nerves emerging from the medulla?
     back: IX, X, XI, XII
+diagrams: [cranial-nerve-exits]
 related: [pons, cerebellum, vertebrobasilar-system, spinal-cord, vagus-nerve, hypoglossal-nerve]
 images:
   - image: gray-679-medulla-pons-anterior

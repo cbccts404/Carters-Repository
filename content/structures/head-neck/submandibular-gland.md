@@ -66,6 +66,16 @@ quiz:
     explanation: >-
       **Meal-related swelling and pain** that subsides is classic for a stone obstructing the duct (**sialolithiasis**),
       most often in the submandibular gland.
+  - stem: Where does the submandibular (Wharton) duct open?
+    choices:
+      - Opposite the upper second molar
+      - At the sublingual papilla beside the frenulum of the tongue
+      - Into the piriform recess
+      - On the posterior pharyngeal wall
+    answer: B
+    explanation: >-
+      The **Wharton duct** runs forward in the floor of the mouth, with the lingual nerve looping under it, to open at
+      the **sublingual papilla**. The parotid (Stensen) duct opens opposite the upper second molar.
 flashcards:
   - front: Where does Wharton duct open?
     back: Sublingual papilla, beside the lingual frenulum

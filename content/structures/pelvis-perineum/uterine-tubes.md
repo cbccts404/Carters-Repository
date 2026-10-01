@@ -36,7 +36,7 @@ clinical:
       mass. **Rupture**: severe pain, peritoneal signs, shoulder-tip pain, hemorrhagic shock.
     notes: >-
       Positive β-hCG with **no intrauterine pregnancy on TVUS** is ectopic until proven otherwise (especially above the
-      discriminatory level, about 1,500–3,500 mIU/mL {{verify: discriminatory zone}}). Stable, unruptured, meeting
+      discriminatory level; ACOG advises a conservatively high cutoff, up to about 3,500 mIU/mL). Stable, unruptured, meeting
       criteria → **methotrexate**; unstable or ruptured → **surgery** (salpingostomy or salpingectomy). Give anti-D to
       Rh-negative women.
   - title: Pelvic inflammatory disease (salpingitis)
@@ -46,7 +46,7 @@ clinical:
       Lower abdominal pain with **cervical motion, uterine or adnexal tenderness** (CDC minimum criteria), fever,
       discharge. Complications: **tubo-ovarian abscess**, infertility, ectopic pregnancy, chronic pelvic pain,
       **Fitz-Hugh–Curtis** perihepatitis (right upper quadrant pain).
-    notes: 'Outpatient treatment (CDC 2021): ceftriaxone IM + doxycycline + metronidazole for 14 days. {{verify: check current CDC regimen}}'
+    notes: 'Outpatient treatment (CDC 2021): ceftriaxone IM + doxycycline + metronidazole for 14 days.'
   - title: Tubal sterilization
     highYield: false
     mechanism: Ligation, occlusion or removal (salpingectomy) of the tubes; salpingectomy also lowers ovarian cancer risk, since many high-grade serous cancers begin in the fimbriae.

@@ -53,7 +53,7 @@ clinical:
       **osteoblastic** metastases (lumbar spine, pelvis) and raised alkaline phosphatase.
     notes: >-
       USPSTF: PSA screening for men **55–69** is an individual decision after shared decision-making; not recommended
-      at 70 or older. {{verify: check the current USPSTF recommendation}} Evaluation of a raised PSA: repeat PSA, then
+      at 70 or older. Evaluation of a raised PSA: repeat PSA, then
       **multiparametric MRI** and targeted biopsy.
   - title: Acute bacterial prostatitis
     highYield: true
@@ -61,7 +61,7 @@ clinical:
     presentation: >-
       Fever, chills, dysuria, perineal or low back pain, and obstructive symptoms. DRE: **exquisitely tender, warm,
       boggy prostate** — avoid vigorous massage (risk of bacteremia). Treat with a fluoroquinolone or TMP-SMX for
-      several weeks. {{verify: antibiotic choice and duration}}
+      **2–4 weeks**.
   - title: Erectile dysfunction and incontinence after radical prostatectomy
     highYield: false
     mechanism: Injury to the cavernous nerves (posterolateral neurovascular bundles) and the external sphincter.

@@ -148,6 +148,7 @@ flashcards:
     back: Phrenic nerve (referred pain to shoulder/trapezius ridge)
   - front: Transverse vs oblique pericardial sinus?
     back: "Transverse: behind aorta and pulmonary trunk (surgical clamp). Oblique: behind left atrium"
+diagrams: [mediastinum]
 related: [heart, phrenic-nerve]
 images:
   - image: gray-970-heart-lungs

@@ -1,0 +1,116 @@
+---
+/* Original schematic: corticobulbar input to the left facial nucleus, and why an upper motor neuron lesion spares
+   the forehead while a lower motor neuron lesion does not. The pathway is drawn with the patient's left on the
+   viewer's left; the faces are seen from the front (patient's left on the viewer's right). */
+import Label from '../components/Label.astro';
+
+const LCX: [number, number] = [176, 96]; // left motor cortex
+const RCX: [number, number] = [424, 96]; // right motor cortex
+const NUC = { x: 252, up: 262, low: 300 }; // left facial nucleus, upper and lower parts
+// a face seen from the front; side = which half (viewer's right) is weak, part = 'lower' or 'whole'
+const face = (cx: number, part: 'lower' | 'whole') => ({
+  cx,
+  shade:
+    part === 'whole'
+      ? `M${cx} 300 L${cx + 80} 300 L${cx + 80} 500 L${cx} 500 Z`
+      : `M${cx} 400 L${cx + 80} 400 L${cx + 80} 500 L${cx} 500 Z`,
+});
+const faces = [
+  { ...face(640, 'lower'), title: 'UMN lesion (A)', l1: 'Lower face weak', l2: 'forehead spared' },
+  { ...face(820, 'whole'), title: 'LMN lesion (B)', l1: 'Whole half of the', l2: 'face weak' },
+];
+---
+
+<div class="scroll">
+  <svg viewBox="40 0 900 560" role="img" aria-labelledby="fp-title fp-desc">
+    <title id="fp-title">Upper vs lower motor neuron facial palsy</title>
+    <desc id="fp-desc">
+      Each facial nucleus in the pons has an upper part supplying the forehead and a lower part supplying the lower
+      face. The upper part receives corticobulbar fibers from both motor cortices; the lower part only from the
+      opposite cortex. An upper motor neuron lesion in the right cortex or internal capsule therefore weakens only the
+      lower left face, sparing the forehead, which still receives input from the left cortex. A lesion of the left
+      facial nerve itself, as in Bell palsy, weakens the whole left side of the face including the forehead.
+    </desc>
+    <style>
+      .fp-brain { fill: color-mix(in srgb, var(--t-organ) 12%, var(--surface)); stroke: var(--t-organ); stroke-width: 1.8; }
+      .fp-cx { fill: color-mix(in srgb, var(--t-organ) 40%, var(--surface)); stroke: var(--t-organ); stroke-width: 1.5; }
+      .fp-stem { fill: color-mix(in srgb, var(--t-organ) 22%, var(--surface)); stroke: var(--t-organ); stroke-width: 1.5; }
+      .fp-nuc { fill: color-mix(in srgb, var(--t-nerve) 45%, var(--surface)); stroke: var(--t-nerve); stroke-width: 1.5; }
+      .fp-l { stroke: var(--t-vein); stroke-width: 3.5; fill: none; stroke-linecap: round; }
+      .fp-r { stroke: var(--t-artery); stroke-width: 3.5; fill: none; stroke-linecap: round; }
+      .fp-n { stroke: var(--t-nerve); stroke-width: 6; fill: none; stroke-linecap: round; }
+      .fp-mid { stroke: var(--muted); stroke-width: 1.2; stroke-dasharray: 5 5; }
+      .fp-x { stroke: var(--bad); stroke-width: 5; stroke-linecap: round; }
+      .fp-face { fill: color-mix(in srgb, var(--t-joint) 16%, var(--surface)); stroke: var(--text); stroke-width: 1.8; }
+      .fp-weak { fill: color-mix(in srgb, var(--bad) 30%, transparent); }
+      .fp-feat { stroke: var(--text); stroke-width: 2.5; fill: none; stroke-linecap: round; }
+      .fp-lead { stroke: var(--muted); stroke-width: 1; fill: none; }
+    </style>
+
+    <!-- brain, cortices and brainstem -->
+    <path class="fp-brain" d="M80 180 Q70 40 300 36 Q530 40 520 180 Q500 230 300 236 Q100 230 80 180 Z"></path>
+    <ellipse class="fp-cx" cx={LCX[0]} cy={LCX[1]} rx="54" ry="22"></ellipse>
+    <ellipse class="fp-cx" cx={RCX[0]} cy={RCX[1]} rx="54" ry="22"></ellipse>
+    <rect class="fp-stem" x="226" y="236" width="148" height="110" rx="14"></rect>
+    <line class="fp-mid" x1="300" y1="30" x2="300" y2="360"></line>
+    <rect class="fp-nuc" x={NUC.x - 2} y={NUC.up - 14} width="40" height="28" rx="6"></rect>
+    <rect class="fp-nuc" x={NUC.x - 2} y={NUC.low - 14} width="40" height="28" rx="6"></rect>
+
+    <!-- corticobulbar fibers: left cortex to the upper part only; right cortex to both parts -->
+    <path class="fp-l" d={`M${LCX[0]} ${LCX[1] + 20} Q${LCX[0] + 40} 200 ${NUC.x + 6} ${NUC.up - 4}`}></path>
+    <path class="fp-r" d={`M${RCX[0]} ${RCX[1] + 20} Q${RCX[0] - 30} 190 ${NUC.x + 34} ${NUC.up - 4}`}></path>
+    <path class="fp-r" d={`M${RCX[0] - 8} ${RCX[1] + 20} Q${RCX[0] - 10} 220 ${NUC.x + 36} ${NUC.low}`}></path>
+
+    <!-- left facial nerve to the face -->
+    <path class="fp-n" d={`M${NUC.x - 2} ${NUC.low + 4} Q190 330 120 400 L80 470`}></path>
+    <path class="fp-n" d={`M${NUC.x - 2} ${NUC.up} Q205 285 188 340`} opacity="0.7"></path>
+
+    <!-- lesions -->
+    <g>
+      <line class="fp-x" x1="384" y1="156" x2="404" y2="176"></line>
+      <line class="fp-x" x1="404" y1="156" x2="384" y2="176"></line>
+      <line class="fp-x" x1="110" y1="400" x2="130" y2="420"></line>
+      <line class="fp-x" x1="130" y1="400" x2="110" y2="420"></line>
+    </g>
+    <Label x={414} y={170} size="lg">A</Label>
+    <Label x={86} y={414} anchor="end" size="lg">B</Label>
+
+    <g class="fp-lead">
+      <line x1={LCX[0]} y1={LCX[1] - 22} x2={LCX[0]} y2="36"></line>
+      <line x1={RCX[0]} y1={RCX[1] - 22} x2={RCX[0]} y2="36"></line>
+      <line x1={NUC.x + 38} y1={NUC.up} x2="400" y2="262"></line>
+      <line x1={NUC.x + 38} y1={NUC.low} x2="400" y2="300"></line>
+      <line x1="372" y1="166" x2="460" y2="210"></line>
+    </g>
+    <Label x={LCX[0]} y={28} anchor="middle" to="cerebral-cortex">Left motor cortex</Label>
+    <Label x={RCX[0]} y={28} anchor="middle" to="cerebral-cortex">Right motor cortex</Label>
+    <Label x={406} y={258} size="sm" to="pons">Facial nucleus — forehead part</Label>
+    <Label x={406} y={276} size="sm">(input from both sides)</Label>
+    <Label x={406} y={304} size="sm" to="pons">Facial nucleus — lower face part</Label>
+    <Label x={406} y={322} size="sm">(input from the opposite side only)</Label>
+    <Label x={464} y={222} size="sm" to="internal-capsule">Cortex or internal capsule</Label>
+    <Label x={140} y={500} anchor="middle" to="facial-nerve">Left facial nerve</Label>
+    <Label x={300} y={384} anchor="middle" size="sm">Pons (patient's left ←  → right)</Label>
+
+    <!-- faces -->
+    {faces.map((f) => (
+      <>
+        <clipPath id={`fp-clip-${f.cx}`}>
+          <ellipse cx={f.cx} cy="400" rx="74" ry="92"></ellipse>
+        </clipPath>
+        <ellipse class="fp-face" cx={f.cx} cy="400" rx="74" ry="92"></ellipse>
+        <path class="fp-weak" d={f.shade} clip-path={`url(#fp-clip-${f.cx})`}></path>
+        <path class="fp-feat" d={`M${f.cx - 50} 352 Q${f.cx - 32} 342 ${f.cx - 16} 350`}></path>
+        <path class="fp-feat" d={`M${f.cx + 16} ${f.title.startsWith('LMN') ? 358 : 350} Q${f.cx + 32} ${f.title.startsWith('LMN') ? 356 : 342} ${f.cx + 50} ${f.title.startsWith('LMN') ? 360 : 352}`}></path>
+        <ellipse cx={f.cx - 32} cy="376" rx="10" ry="6" fill="var(--text)"></ellipse>
+        <ellipse cx={f.cx + 32} cy="376" rx="10" ry={f.title.startsWith('LMN') ? 9 : 6} fill="var(--text)"></ellipse>
+        <path class="fp-feat" d={`M${f.cx - 30} 440 Q${f.cx} 452 ${f.cx + 30} 452`}></path>
+        <text class="lbl lbl-md lbl-head" x={f.cx} y="284" text-anchor="middle">{f.title}</text>
+        <text class="lbl lbl-sm" x={f.cx} y="514" text-anchor="middle">{f.l1}</text>
+        <text class="lbl lbl-sm" x={f.cx} y="532" text-anchor="middle">{f.l2}</text>
+      </>
+    ))}
+    <Label x={730} y={552} anchor="middle" size="sm">Faces seen from the front · shaded = weak (patient's left)</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

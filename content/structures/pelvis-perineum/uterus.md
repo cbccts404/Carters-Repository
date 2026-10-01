@@ -56,7 +56,7 @@ clinical:
     presentation: >-
       Early disease is asymptomatic; later postcoital bleeding, discharge, pelvic pain. Screening (USPSTF 2018):
       cytology every 3 years at **21–29**; at **30–65**, cytology every 3 years, primary hrHPV testing every 5 years, or
-      co-testing every 5 years. {{verify: check the current USPSTF/ASCCP screening schedule}} HPV vaccination prevents
+      co-testing every 5 years. HPV vaccination prevents
       most cases.
   - title: Postpartum hemorrhage
     highYield: true

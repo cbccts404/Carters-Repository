@@ -1,0 +1,107 @@
+---
+/* Original schematic: the path of cerebrospinal fluid as a flow chart, with the sites where obstruction or failed
+   absorption causes hydrocephalus. */
+import Label from '../components/Label.astro';
+
+const X = 70; // left edge of the flow boxes
+const W = 330;
+type Step = { y: number; name: string; to: string; sub?: string };
+const steps: Step[] = [
+  { y: 40, name: 'Choroid plexus', to: 'ventricular-system', sub: 'makes about 500 mL a day' },
+  { y: 130, name: 'Lateral ventricles', to: 'ventricular-system' },
+  { y: 230, name: 'Third ventricle', to: 'ventricular-system' },
+  { y: 330, name: 'Fourth ventricle', to: 'ventricular-system' },
+  { y: 430, name: 'Subarachnoid space', to: 'cranial-meninges', sub: 'and cisterns (and central canal)' },
+  { y: 530, name: 'Superior sagittal sinus', to: 'dural-venous-sinuses' },
+  { y: 630, name: 'Internal jugular vein', to: 'internal-jugular-vein', sub: 'via the transverse and sigmoid sinuses' },
+];
+const H = 46;
+// the connections, each drawn between consecutive boxes
+const links: { name: string; to?: string }[] = [
+  { name: 'secretes into' },
+  { name: 'Interventricular foramina (Monro)' },
+  { name: 'Cerebral aqueduct (Sylvius)', to: 'midbrain' },
+  { name: 'Median (Magendie) and lateral (Luschka) apertures' },
+  { name: 'Arachnoid granulations', to: 'cranial-meninges' },
+  { name: 'drains to' },
+];
+// where things go wrong: index of the link they block
+const blocks = [
+  { at: 1, lines: ['Colloid cyst of the third ventricle', '(positional headache, drop attacks)'] },
+  { at: 2, lines: ['Aqueductal stenosis: lateral and third', 'ventricles dilated, fourth normal'] },
+  { at: 3, lines: ['Posterior fossa tumor, Chiari II,', 'Dandy–Walker'] },
+  { at: 4, lines: ['After subarachnoid hemorrhage or', 'meningitis; normal pressure hydrocephalus'] },
+];
+const mid = (i: number) => steps[i].y + H + (steps[i + 1].y - steps[i].y - H) / 2;
+---
+
+<div class="scroll">
+  <svg viewBox="40 20 900 680" role="img" aria-labelledby="csf-title csf-desc">
+    <title id="csf-title">Flow of cerebrospinal fluid and the causes of hydrocephalus</title>
+    <desc id="csf-desc">
+      Cerebrospinal fluid is made mainly by the choroid plexus, about 500 mL a day. It flows from the lateral
+      ventricles through the interventricular foramina of Monro into the third ventricle, through the cerebral aqueduct
+      into the fourth ventricle, and out through the median aperture of Magendie and the lateral apertures of Luschka
+      into the subarachnoid space and cisterns. It is absorbed through the arachnoid granulations into the superior
+      sagittal sinus and drains via the transverse and sigmoid sinuses to the internal jugular vein. A block within the
+      ventricular system causes noncommunicating hydrocephalus: a colloid cyst at the foramen of Monro, aqueductal
+      stenosis, or a posterior fossa tumor, Chiari II or Dandy–Walker malformation at the fourth ventricle. Failed
+      absorption at the arachnoid granulations, after subarachnoid hemorrhage or meningitis or in normal pressure
+      hydrocephalus, causes communicating hydrocephalus.
+    </desc>
+    <style>
+      .csf-box { fill: color-mix(in srgb, var(--t-space) 18%, var(--surface)); stroke: var(--t-space); stroke-width: 1.8; }
+      .csf-blood { fill: color-mix(in srgb, var(--t-vein) 18%, var(--surface)); stroke: var(--t-vein); stroke-width: 1.8; }
+      .csf-src { fill: color-mix(in srgb, var(--t-organ) 18%, var(--surface)); stroke: var(--t-organ); stroke-width: 1.8; }
+      .csf-arrow { stroke: var(--text); stroke-width: 2.2; fill: none; }
+      .csf-x { stroke: var(--bad); stroke-width: 4; stroke-linecap: round; }
+      .csf-lead { stroke: var(--bad); stroke-width: 1.2; stroke-dasharray: 4 3; fill: none; }
+      .csf-brace { stroke: var(--muted); stroke-width: 1.5; fill: none; }
+      .csf-note { fill: var(--muted); font-size: 13px; }
+      .csf-block { fill: var(--text); font-size: 13px; }
+    </style>
+    <defs>
+      <marker id="csf-arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+        <path d="M0 0 L10 5 L0 10 Z" fill="var(--text)"></path>
+      </marker>
+    </defs>
+
+    {steps.map((s, i) => (
+      <>
+        <rect class={i === 0 ? 'csf-src' : i >= 5 ? 'csf-blood' : 'csf-box'} x={X} y={s.y} width={W} height={H} rx="10"></rect>
+        <Label x={X + W / 2} y={s.y + (s.sub ? 20 : 29)} anchor="middle" to={s.to}>{s.name}</Label>
+        {s.sub && <text class="csf-note" x={X + W / 2} y={s.y + 38} text-anchor="middle">{s.sub}</text>}
+      </>
+    ))}
+    {links.map((l, i) => (
+      <>
+        <line class="csf-arrow" x1={X + W / 2} y1={steps[i].y + H} x2={X + W / 2} y2={steps[i + 1].y - 3} marker-end="url(#csf-arr)"></line>
+        {l.to ? (
+          <Label x={X + W / 2 + 14} y={mid(i) + 5} size="sm" to={l.to}>{l.name}</Label>
+        ) : (
+          <text class="csf-note" x={X + W / 2 + 14} y={mid(i) + 5}>{l.name}</text>
+        )}
+      </>
+    ))}
+
+    {blocks.map((b) => (
+      <>
+        <line class="csf-x" x1={X + W / 2 - 9} y1={mid(b.at) - 9} x2={X + W / 2 + 9} y2={mid(b.at) + 9}></line>
+        <line class="csf-x" x1={X + W / 2 + 9} y1={mid(b.at) - 9} x2={X + W / 2 - 9} y2={mid(b.at) + 9}></line>
+        <text class="csf-block" x="640" y={mid(b.at) - 4}>{b.lines[0]}</text>
+        <text class="csf-block" x="640" y={mid(b.at) + 14}>{b.lines[1]}</text>
+        <line class="csf-lead" x1="630" y1={mid(b.at)} x2="604" y2={mid(b.at)}></line>
+      </>
+    ))}
+
+    <!-- grouping braces on the right -->
+    <path class="csf-brace" d={`M612 ${mid(1) - 20} L620 ${mid(1) - 20} L620 ${mid(3) + 20} L612 ${mid(3) + 20}`}></path>
+    <path class="csf-brace" d={`M612 ${mid(4) - 20} L620 ${mid(4) - 20} L620 ${mid(4) + 20} L612 ${mid(4) + 20}`}></path>
+    <Label x={640} y={mid(1) - 40} size="sm" class="lbl-head" to="ventricular-system">Noncommunicating (obstructive)</Label>
+    <text class="csf-note" x="640" y={mid(1) - 24}>block inside the ventricles</text>
+    <Label x={640} y={mid(4) - 40} size="sm" class="lbl-head" to="ventricular-system">Communicating</Label>
+    <text class="csf-note" x="640" y={mid(4) - 24}>absorption fails</text>
+    <text class="csf-note" x={X} y="696">✕ = where hydrocephalus starts</text>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

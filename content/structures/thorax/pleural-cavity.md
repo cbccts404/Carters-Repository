@@ -90,7 +90,7 @@ exam:
     **Chest tube "triangle of safety"**: lateral border of pectoralis major, anterior border of latissimus dorsi, a
     horizontal line at the level of the nipple (about the 5th intercostal space), apex below the axilla.
     **Thoracentesis**: posteriorly, about one or two interspaces below the top of the effusion (ultrasound-guided),
-    above the diaphragm, and **over the superior border of the rib**. {{verify: check current ATLS edition for decompression site}}
+    above the diaphragm, and **over the superior border of the rib**.
   palpation: Tactile fremitus ("99") is decreased over effusion and pneumothorax and increased over consolidation. Check tracheal position in the suprasternal notch.
   testing: Percussion (dull vs hyperresonant), auscultation (breath sounds, friction rub, egophony at the top of an effusion).
 quiz:

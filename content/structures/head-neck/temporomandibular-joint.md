@@ -73,6 +73,18 @@ quiz:
     answer: B
     explanation: >-
       The fibrocartilaginous **articular disc** divides the joint into an upper (gliding) and lower (hinge) compartment.
+  - stem: >-
+      A man yawns widely and now can't close his mouth; his chin juts forward. What has happened, and how is it reduced?
+    choices:
+      - Posterior dislocation; push the chin backward
+      - Mandibular fracture; immediate wiring
+      - Anterior dislocation; press down and back on the lower molars
+      - Disc displacement; observe without treatment
+      - Masseter spasm; muscle relaxants only
+    answer: C
+    explanation: >-
+      Wide opening glides the condyle onto the articular tubercle; in an **anterior dislocation** it locks in front of
+      it, held by muscle spasm. Reduce it by pressing **down and back on the lower molars**, protecting the thumbs.
 flashcards:
   - front: Which muscle attaches to the TMJ disc?
     back: Lateral pterygoid

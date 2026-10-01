@@ -97,6 +97,20 @@ quiz:
       Repetitive shear stress in kicking sports causes **osteitis pubis**: pain and tenderness at the symphysis with
       parasymphyseal marrow edema. Femoral neck stress fractures cause groin pain with tenderness over the hip and pain
       on hip range of motion.
+  - stem: >-
+      A pregnant woman at 32 weeks has suprapubic pain that is worse when climbing stairs, standing on one leg and
+      rolling over in bed. What is the most likely cause?
+    choices:
+      - Osteitis pubis
+      - Open-book pelvic fracture
+      - Pubic ramus stress fracture
+      - Round ligament pain
+      - Symphysis pubis dysfunction (pregnancy-related pelvic girdle pain)
+    answer: E
+    explanation: >-
+      Increased mobility of the pelvic joints in pregnancy (relaxin) causes **symphysis pubis dysfunction**: suprapubic
+      pain with walking, stairs, single-leg stance or rolling over. It is managed with physical therapy and support
+      belts. Round ligament pain is brief, sharp groin pain with sudden movement.
 flashcards:
   - front: Joint type — pubic symphysis?
     back: Secondary cartilaginous (fibrocartilaginous interpubic disc)

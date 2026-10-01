@@ -1,6 +1,6 @@
 /**
- * Back up and restore everything the atlas keeps on this device: quiz and
- * flashcard progress, the verify checklist, and display settings. A backup is
+ * Back up and restore everything the atlas keeps on this device: quiz,
+ * flashcard and clinical case progress, the verify checklist, and display settings. A backup is
  * a small JSON file; importing it can merge with what is already here (the
  * newer record wins for each question, card or checklist item) or replace it.
  */
@@ -16,6 +16,7 @@ interface Progress {
   quiz: Records;
   sessions: Timed[];
   cards: Records;
+  cases: Records;
   [k: string]: unknown;
 }
 export interface Backup {
@@ -50,7 +51,7 @@ const records = (v: unknown): Records =>
 const progressOf = (v: unknown): Progress => {
   const p = isObj(v) ? v : {};
   const sessions = Array.isArray(p.sessions) ? p.sessions.filter((s) => isObj(s) && typeof s.t === 'number') : [];
-  return { ...p, quiz: records(p.quiz), cards: records(p.cards), sessions: sessions as Timed[] };
+  return { ...p, quiz: records(p.quiz), cards: records(p.cards), cases: records(p.cases), sessions: sessions as Timed[] };
 };
 
 export function currentData(): Backup {
@@ -107,12 +108,14 @@ export interface Counts {
   questions: number;
   sessions: number;
   cards: number;
+  cases: number;
   checks: number;
 }
 export const countsOf = (b: Pick<Backup, 'progress' | 'verify'>): Counts => ({
   questions: Object.keys(b.progress.quiz).length,
   sessions: b.progress.sessions.length,
   cards: Object.keys(b.progress.cards).length,
+  cases: Object.keys(b.progress.cases).length,
   checks: Object.keys(b.verify).length,
 });
 
@@ -135,6 +138,7 @@ export function applyBackup(b: Backup, mode: 'merge' | 'replace'): Counts {
       ...here.progress,
       quiz: mergeRecords(here.progress.quiz, b.progress.quiz),
       cards: mergeRecords(here.progress.cards, b.progress.cards),
+      cases: mergeRecords(here.progress.cases, b.progress.cases),
       sessions,
     };
     verify = mergeRecords(here.verify, b.verify);

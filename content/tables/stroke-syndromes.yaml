@@ -1,0 +1,17 @@
+title: Stroke syndromes by territory
+region: neuroanatomy
+summary: The deficits that point to each arterial territory, from the cortical strokes to the crossed brainstem syndromes.
+columns: [Territory, Lesion site, Key deficits, Clues]
+rows:
+  - ["[[cerebral-arteries|MCA]]", "Most of the lateral hemisphere — face and arm cortex, language areas", "Contralateral weakness and sensory loss of the **face and arm more than the leg**; contralateral homonymous hemianopia; gaze deviation **toward** the lesion", "Dominant (left): **aphasia**. Nondominant (right): **hemineglect**, anosognosia. The most common territory"]
+  - ["[[cerebral-arteries|ACA]]", "Medial frontal and parietal lobes — leg and foot cortex, bladder control", "Contralateral **leg more than arm** weakness and sensory loss", "**Urinary incontinence**, abulia or personality change"]
+  - ["[[cerebral-arteries|PCA]]", "Occipital lobe, inferior temporal lobe, thalamus", "Contralateral homonymous hemianopia **with macular sparing**", "Visual agnosia; dominant PCA + splenium → alexia without agraphia; thalamic involvement → sensory loss"]
+  - ["Lacunar (deep penetrating arteries)", "[[internal-capsule|Internal capsule]], thalamus, basis pontis", "Pure motor hemiparesis (face, arm and leg equally), pure sensory, sensorimotor, ataxic hemiparesis, dysarthria–clumsy hand", "**No cortical signs** (no aphasia, neglect or field loss); chronic hypertension and diabetes"]
+  - ["Weber (PCA/paramedian branches)", "Ventral [[midbrain]]", "**Ipsilateral CN III palsy** + **contralateral hemiparesis**", "Crossed signs = brainstem"]
+  - ["AICA ([[vertebrobasilar-system|vertebrobasilar]])", "Lateral [[pons]]", "Ipsilateral facial palsy, **hearing loss**, vertigo, ataxia and facial sensory loss; contralateral body pain and temperature loss", "Vertigo + sudden unilateral hearing loss"]
+  - ["PICA or vertebral (Wallenberg)", "Lateral [[medulla-oblongata|medulla]]", "Ipsilateral face and contralateral body pain/temperature loss; dysphagia, hoarseness, reduced gag; ipsilateral Horner syndrome; vertigo, nystagmus; ipsilateral limb ataxia", "**No limb weakness**; hiccups"]
+  - ["Anterior spinal artery (medial medullary)", "Medial [[medulla-oblongata|medulla]]", "Contralateral hemiparesis, contralateral loss of proprioception and vibration, **ipsilateral tongue deviation** (CN XII)", "Pyramid + medial lemniscus + hypoglossal"]
+  - ["Basilar", "Ventral [[pons]] and brainstem", "Coma or **locked-in syndrome** (quadriplegia and anarthria with vertical eye movements and blinking preserved); pinpoint pupils", "Emergency CTA and thrombectomy"]
+notes:
+  - "**Crossed signs** (an ipsilateral cranial nerve deficit with contralateral limb signs) localize to the brainstem."
+  - "Posterior circulation strokes cause the **5 Ds** — dizziness, diplopia, dysarthria, dysphagia, dystaxia — and are easily missed on CT; MRI is the test."

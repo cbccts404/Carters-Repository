@@ -82,6 +82,18 @@ quiz:
     explanation: >-
       Preganglionic fibers from the inferior salivatory nucleus travel in **CN IX** (tympanic → lesser petrosal nerves)
       to the **otic ganglion**; postganglionic fibers reach the parotid via the auriculotemporal nerve (V3).
+  - stem: >-
+      A tumor at the left jugular foramen causes loss of the left gag reflex, hoarseness, dysphagia and weak shoulder
+      shrug. Which cranial nerves are involved?
+    choices:
+      - CN VII and VIII
+      - CN V, VII and IX
+      - CN IX, X and XI
+      - CN X and XII
+    answer: C
+    explanation: >-
+      **CN IX, X and XI** leave the skull together through the **jugular foramen** (with the internal jugular vein), so
+      a mass there (glomus jugulare, schwannoma, metastasis) affects all three — **jugular foramen (Vernet) syndrome**.
 flashcards:
   - front: Only muscle supplied by CN IX?
     back: Stylopharyngeus

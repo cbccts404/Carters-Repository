@@ -1,0 +1,59 @@
+title: Wrist drop after a night on the sofa
+region: upper-limb
+summary: A man wakes unable to lift his wrist. Localize the lesion along the radial nerve.
+vignette: >-
+  A 24-year-old man wakes after a night of heavy drinking. He fell asleep with his right arm hanging over the back of a
+  chair, and now he can't lift his right wrist or straighten his fingers.
+steps:
+  - question: Which nerve is most likely injured?
+    choices:
+      - Median nerve
+      - Ulnar nerve
+      - Radial nerve
+      - Musculocutaneous nerve
+      - Axillary nerve
+    answer: C
+    explanation: >-
+      **Wrist drop** means the wrist and finger extensors are weak — all supplied by the [[radial-nerve]]. Compression
+      against the humerus with the arm over a chair back during deep sleep or intoxication is the classic "Saturday
+      night palsy".
+  - info: Elbow extension is strong and the triceps reflex is normal.
+    question: Where along the nerve is the lesion most likely?
+    choices:
+      - In the axilla, as with crutch compression
+      - In the radial (spiral) groove of the humerus
+      - At the arcade of Frohse, affecting the posterior interosseous nerve
+      - At the wrist, affecting only the superficial branch
+    answer: B
+    explanation: >-
+      The branches to [[triceps-brachii]] arise **proximal** to the radial groove, so wrist drop with triceps spared
+      puts the lesion at the groove. An axillary lesion also weakens triceps. A posterior interosseous lesion causes
+      finger drop **without** wrist drop and no sensory loss; the superficial branch is purely sensory.
+  - question: Where would you test sensation to confirm radial nerve involvement?
+    choices:
+      - Palmar tip of the index finger
+      - Hypothenar eminence
+      - Lateral forearm
+      - Dorsal first web space
+      - Skin over the lower deltoid
+    answer: D
+    explanation: >-
+      The most reliable radial sensory test site is the **dorsal first web space**. The palmar index tip is median, the
+      hypothenar eminence ulnar, the lateral forearm musculocutaneous, and the lower deltoid ("regimental badge")
+      axillary.
+  - question: Which pattern would point instead to a C7 radiculopathy?
+    choices:
+      - Weak finger extension with no sensory loss
+      - Numbness of the dorsoradial hand with normal strength
+      - Weak triceps, a reduced triceps reflex and middle-finger symptoms
+      - Clawing of the 4th and 5th digits
+      - Inability to oppose the thumb
+    answer: C
+    explanation: >-
+      **C7**: triceps weakness, a reduced **triceps reflex** and middle-finger symptoms (see [[cervical-vertebrae]]).
+      The other options describe posterior interosseous nerve syndrome, superficial radial neuropathy, an ulnar lesion
+      and injury to the recurrent branch of the median nerve.
+takeaways:
+  - "Triceps weak → axilla; triceps spared with wrist drop → radial groove; finger drop without wrist drop → PIN."
+  - "Radial sensory test site: the dorsal first web space."
+entries: [radial-nerve, triceps-brachii, cervical-vertebrae]

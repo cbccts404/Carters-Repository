@@ -130,6 +130,7 @@ flashcards:
     back: External branch of the superior laryngeal nerve (CN X)
   - front: Thumbprint vs steeple sign?
     back: Thumbprint — epiglottitis (lateral film); steeple — croup (AP film)
+diagrams: [recurrent-laryngeal-nerve]
 related: [recurrent-laryngeal-nerve, trachea, thyroid-gland, pharynx]
 images:
   - image: gray-950-laryngeal-cartilages

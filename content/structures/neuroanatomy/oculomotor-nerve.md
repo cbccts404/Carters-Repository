@@ -130,6 +130,7 @@ flashcards:
     back: Pupil-involving → compression (aneurysm, herniation); pupil-sparing → ischemia (diabetes)
   - front: Where does CN III exit the brainstem?
     back: Interpeduncular fossa of the midbrain
+diagrams: [cranial-nerve-exits]
 related: [extraocular-muscles, midbrain, circle-of-willis, dural-venous-sinuses, orbit]
 images:
   - image: gray-777-orbit-nerves-side

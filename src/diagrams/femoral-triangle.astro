@@ -1,0 +1,123 @@
+---
+/* Original schematic: right femoral triangle, anterior view (lateral = viewer's left, medial = viewer's right).
+   Contents in the NAVEL order. Not to scale. */
+import Label from '../components/Label.astro';
+
+type P = [number, number];
+const ASIS: P = [150, 96];
+const TUB: P = [500, 176]; // pubic tubercle
+const APEX: P = [392, 528];
+const lig = (x: number) => ASIS[1] + ((x - ASIS[0]) / (TUB[0] - ASIS[0])) * (TUB[1] - ASIS[1]); // y on the ligament
+const N = 300; // femoral nerve
+const A = 340; // femoral artery (mid-inguinal point)
+const V = 376; // femoral vein
+const C = 406; // femoral canal
+const L = 432; // deep inguinal nodes
+const SFJ: P = [V + 4, lig(V) + 80]; // saphenofemoral junction
+const sheath = `M${A - 22} ${lig(A - 22) - 2} L${C + 24} ${lig(C + 24) - 2} L${C + 18} ${lig(C) + 104} Q${V} ${lig(V) + 118} ${A - 18} ${lig(A) + 100} Z`;
+---
+
+<div class="scroll">
+  <svg viewBox="-40 30 860 560" role="img" aria-labelledby="ft-title ft-desc">
+    <title id="ft-title">Femoral triangle (right, anterior view)</title>
+    <desc id="ft-desc">
+      The femoral triangle of the right thigh, with lateral on the left. Its base is the inguinal ligament, from the
+      anterior superior iliac spine to the pubic tubercle; its lateral border is sartorius and its medial border
+      adductor longus, which meet at the apex, where the adductor canal begins. The floor is iliopsoas laterally and
+      pectineus medially. From lateral to medial lie the femoral nerve outside the femoral sheath, then inside the
+      sheath the femoral artery, the femoral vein and the femoral canal, with the deep inguinal lymph nodes most
+      medially (NAVEL). The great saphenous vein joins the femoral vein through the saphenous opening, below and
+      lateral to the pubic tubercle. The deep femoral artery leaves the femoral artery a few centimetres below the
+      ligament and runs posteriorly.
+    </desc>
+    <style>
+      .ft-bone { fill: var(--t-bone); }
+      .ft-lig { stroke: var(--t-ligament); stroke-width: 7; stroke-linecap: round; fill: none; }
+      .ft-mus { fill: color-mix(in srgb, var(--t-muscle) 30%, var(--surface)); stroke: var(--t-muscle); stroke-width: 1.6; }
+      .ft-floor { fill: color-mix(in srgb, var(--t-muscle) 12%, var(--surface)); stroke: var(--t-muscle); stroke-width: 1; stroke-dasharray: 4 4; }
+      .ft-nerve { stroke: var(--t-nerve); stroke-width: 6; stroke-linecap: round; fill: none; }
+      .ft-nb { stroke: var(--t-nerve); stroke-width: 2.5; stroke-linecap: round; fill: none; }
+      .ft-art { stroke: var(--t-artery); stroke-width: 7; stroke-linecap: round; fill: none; }
+      .ft-deep { stroke: var(--t-artery); stroke-width: 4.5; stroke-dasharray: 7 5; stroke-linecap: round; fill: none; }
+      .ft-vein { stroke: var(--t-vein); stroke-width: 9; stroke-linecap: round; fill: none; }
+      .ft-gsv { stroke: var(--t-vein); stroke-width: 5; stroke-linecap: round; fill: none; }
+      .ft-canal { fill: color-mix(in srgb, var(--bg) 70%, transparent); stroke: var(--t-space); stroke-width: 2; }
+      .ft-node { fill: color-mix(in srgb, var(--t-lymphatic) 45%, var(--surface)); stroke: var(--t-lymphatic); stroke-width: 1.5; }
+      .ft-sheath { fill: none; stroke: var(--text); stroke-width: 1.4; stroke-dasharray: 5 4; opacity: 0.7; }
+      .ft-lead { stroke: var(--muted); stroke-width: 1; fill: none; }
+    </style>
+
+    <!-- floor of the triangle: iliopsoas laterally, pectineus medially -->
+    <path class="ft-floor" d={`M${ASIS[0] + 30} ${lig(ASIS[0] + 30) + 4} L${A - 6} ${lig(A - 6) + 4} L${APEX[0] - 4} ${APEX[1] - 40} Z`}></path>
+    <path class="ft-floor" d={`M${A - 6} ${lig(A - 6) + 4} L${TUB[0] - 30} ${lig(TUB[0] - 30) + 4} L${APEX[0] + 10} ${APEX[1] - 40} L${APEX[0] - 4} ${APEX[1] - 40} Z`}></path>
+
+    <!-- adductor longus (medial border); sartorius is drawn after the contents, which pass deep to it -->
+    <path class="ft-mus" d={`M${TUB[0] - 22} ${TUB[1] + 10} L${TUB[0] + 16} ${TUB[1] + 14} L${APEX[0] + 40} ${APEX[1] + 50} L${APEX[0] + 2} ${APEX[1] + 44} Z`}></path>
+
+    <!-- femoral sheath (dashed): artery, vein and canal, not the nerve -->
+    <path class="ft-sheath" d={sheath}></path>
+
+    <!-- contents, lateral to medial -->
+    <path class="ft-nerve" d={`M${N + 10} 36 L${N} ${lig(N)} L${N - 4} ${lig(N) + 40}`}></path>
+    <path class="ft-nb" d={`M${N - 4} ${lig(N) + 40} L${N - 40} ${lig(N) + 120} M${N - 4} ${lig(N) + 40} L${N - 6} ${lig(N) + 140} M${N - 4} ${lig(N) + 40} L${N + 26} ${lig(N) + 130} M${N - 4} ${lig(N) + 40} L${A + 6} ${APEX[1] - 30}`}></path>
+    <path class="ft-art" d={`M${A + 22} 36 Q${A + 6} ${lig(A) - 40} ${A} ${lig(A)} L${APEX[0] - 12} ${APEX[1] + 6}`}></path>
+    <path class="ft-deep" d={`M${A + 3} ${lig(A) + 62} Q${A - 30} ${lig(A) + 130} ${A - 34} ${lig(A) + 250}`}></path>
+    <path class="ft-gsv" d={`M${SFJ[0]} ${SFJ[1]} Q${SFJ[0] + 60} ${SFJ[1] + 30} ${SFJ[0] + 120} ${SFJ[1] + 220} L${SFJ[0] + 150} 580`}></path>
+    <path class="ft-vein" d={`M${V + 26} 36 Q${V + 8} ${lig(V) - 40} ${V} ${lig(V)} L${APEX[0] + 2} ${APEX[1] + 6}`}></path>
+    <ellipse class="ft-canal" cx={C} cy={lig(C) + 14} rx="12" ry="9"></ellipse>
+    <circle class="ft-node" cx={L} cy={lig(L) + 22} r="8"></circle>
+    <circle class="ft-node" cx={L + 6} cy={lig(L) + 50} r="7"></circle>
+    <circle class="ft-node" cx={L - 2} cy={lig(L) + 76} r="6"></circle>
+
+    <!-- sartorius (lateral border) crosses over adductor longus and the vessels at the apex (adductor canal) -->
+    <path class="ft-mus" d={`M${ASIS[0] - 14} ${ASIS[1] + 6} L${ASIS[0] + 22} ${ASIS[1] + 2} L${APEX[0] + 34} ${APEX[1] + 28} L${APEX[0] - 2} ${APEX[1] + 50} Z`}></path>
+
+    <!-- inguinal ligament with ASIS and pubic tubercle -->
+    <path class="ft-lig" d={`M${ASIS} L${TUB}`}></path>
+    <circle class="ft-bone" cx={ASIS[0]} cy={ASIS[1]} r="11"></circle>
+    <circle class="ft-bone" cx={TUB[0]} cy={TUB[1]} r="8"></circle>
+
+    <!-- leader lines -->
+    <g class="ft-lead">
+      <line x1={ASIS[0] - 14} y1={ASIS[1]} x2="100" y2="96"></line>
+      <line x1="236" y1="128" x2="210" y2="70"></line>
+      <line x1={N - 2} y1={lig(N) + 20} x2="150" y2="210"></line>
+      <line x1={A - 34} y1={lig(A) + 220} x2="150" y2="380"></line>
+      <line x1="280" y1="252" x2="150" y2="300"></line>
+      <line x1="336" y1="440" x2="150" y2="458"></line>
+      <line x1={APEX[0] - 2} y1={APEX[1] + 12} x2="300" y2="566"></line>
+      <line x1={TUB[0] + 8} y1={TUB[1]} x2="590" y2="176"></line>
+      <line x1={A + 4} y1={lig(A) + 40} x2="590" y2="96"></line>
+      <line x1={V + 6} y1={lig(V) + 30} x2="590" y2="130"></line>
+      <line x1={C + 12} y1={lig(C) + 14} x2="590" y2="214"></line>
+      <line x1={L + 8} y1={lig(L) + 22} x2="590" y2="252"></line>
+      <line x1={SFJ[0] + 2} y1={SFJ[1] + 2} x2="590" y2="292"></line>
+      <line x1="430" y1="330" x2="590" y2="334"></line>
+      <line x1="452" y1="420" x2="590" y2="400"></line>
+      <line x1={SFJ[0] + 120} y1={SFJ[1] + 210} x2="590" y2="470"></line>
+    </g>
+
+    <Label x={94} y={101} anchor="end" to="hip-bone">ASIS</Label>
+    <Label x={210} y={62} anchor="middle" to="inguinal-canal">Inguinal ligament</Label>
+    <Label x={144} y={215} anchor="end" to="femoral-nerve">Femoral nerve</Label>
+    <Label x={144} y={385} anchor="end" to="femoral-artery">Deep femoral artery</Label>
+    <Label x={144} y={305} anchor="end" to="psoas-major">Iliopsoas (floor)</Label>
+    <Label x={144} y={463} anchor="end">Sartorius</Label>
+    <Label x={296} y={576} anchor="end" to="femoral-artery">Apex → adductor canal</Label>
+    <Label x={596} y={181} to="hip-bone">Pubic tubercle</Label>
+    <Label x={596} y={101} to="femoral-artery">Femoral artery</Label>
+    <Label x={596} y={135} to="deep-veins-of-lower-limb">Femoral vein</Label>
+    <Label x={596} y={219} to="femoral-triangle">Femoral canal (ring)</Label>
+    <Label x={596} y={257} to="pelvic-lymph-nodes">Deep inguinal nodes</Label>
+    <Label x={596} y={297} to="great-saphenous-vein">Saphenofemoral junction</Label>
+    <Label x={596} y={339}>Pectineus (floor)</Label>
+    <Label x={596} y={405} to="adductor-muscles">Adductor longus</Label>
+    <Label x={596} y={475} to="great-saphenous-vein">Great saphenous vein</Label>
+
+    <Label x={-30} y={560} size="sm">Lateral ←</Label>
+    <Label x={800} y={560} anchor="end" size="sm">→ Medial</Label>
+    <Label x={800} y={520} anchor="end" size="sm">NAVEL, lateral → medial</Label>
+    <Label x={800} y={538} anchor="end" size="sm">Dashed outline = femoral sheath</Label>
+  </svg>
+</div>
+<p class="scroll-hint">Swipe sideways to see the whole diagram →</p>

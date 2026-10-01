@@ -138,6 +138,7 @@ flashcards:
     back: Descending aorta, esophagus, thoracic duct, azygos/hemiazygos, vagus, sympathetic trunks
   - front: Mediastinal mass differential by compartment?
     back: "Anterior: 4 T's. Middle: lymph nodes, cysts. Posterior: neurogenic tumors"
+diagrams: [mediastinum]
 related: [sternum, thymus, heart, esophagus]
 images:
   - image: gray-968-thorax-section

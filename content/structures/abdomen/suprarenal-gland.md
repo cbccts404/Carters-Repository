@@ -40,7 +40,7 @@ clinical:
   - title: Adrenal incidentaloma and Cushing syndrome
     highYield: false
     mechanism: Adrenal masses are often found on imaging done for other reasons; some secrete cortisol (Cushing), aldosterone or catecholamines, and a few are malignant.
-    presentation: "Every incidentaloma is evaluated for **hormone excess** (cortisol, catecholamines, aldosterone if hypertensive) and **malignancy** (size, imaging features). Larger masses (commonly more than 4 cm) raise concern. {{verify: size thresholds for resection}}"
+    presentation: "Every incidentaloma is evaluated for **hormone excess** (cortisol, catecholamines, aldosterone if hypertensive) and **malignancy** (size, imaging features). Larger masses (commonly more than 4 cm) raise concern."
 pance:
   - "Cortex GFR: glomerulosa (aldosterone), fasciculata (cortisol), reticularis (androgens)."
   - "**Pheochromocytoma**: headache + sweating + tachycardia + HTN; **metanephrines**; **alpha before beta** blockade."
@@ -51,7 +51,7 @@ imaging:
   ct: >-
     **Adrenal-protocol CT**: an unenhanced attenuation of **10 HU or less** indicates a lipid-rich (benign) adenoma;
     contrast washout characteristics help with others. Pheochromocytomas are usually enhancing and higher in
-    attenuation. {{verify: HU and washout thresholds}}
+    attenuation.
   mri: Chemical-shift MRI shows signal loss in lipid-rich adenomas; pheochromocytomas are classically bright on T2.
   ultrasound: Limited for the adrenals (large masses may be seen); not a primary tool.
   keyViews:

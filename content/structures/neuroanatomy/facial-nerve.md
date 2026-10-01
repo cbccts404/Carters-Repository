@@ -131,6 +131,7 @@ flashcards:
     back: Central (UMN) spares the forehead; peripheral (LMN) involves the whole half-face
   - front: What does the chorda tympani carry?
     back: Taste from the anterior 2/3 of the tongue; parasympathetic to submandibular and sublingual glands
+diagrams: [facial-palsy]
 related: [muscles-of-facial-expression, parotid-gland, middle-ear, vestibulocochlear-nerve, trigeminal-nerve]
 images:
   - image: gray-788-facial-nerve-plan

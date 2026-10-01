@@ -1,0 +1,52 @@
+title: Fall on an outstretched hand
+region: upper-limb
+summary: Radial wrist pain after a fall, with normal X-rays. Don't miss the scaphoid.
+vignette: >-
+  A 22-year-old falls off a skateboard onto an outstretched hand with the wrist dorsiflexed. She has pain on the radial
+  side of the wrist.
+steps:
+  - question: Which examination finding most suggests a scaphoid fracture?
+    choices:
+      - Tenderness over the pisiform
+      - Tenderness in the anatomical snuffbox
+      - A positive Phalen test
+      - Tenderness at the medial epicondyle
+    answer: B
+    explanation: >-
+      The [[scaphoid]] forms the floor of the **anatomical snuffbox**. Snuffbox and scaphoid tubercle tenderness, and pain
+      on axial loading of the thumb, suggest a fracture. It is the most commonly fractured carpal bone.
+  - info: Radiographs, including a dedicated scaphoid view, are normal.
+    question: What is the most appropriate next step?
+    choices:
+      - Reassure her and discharge without follow-up
+      - Carpal tunnel release
+      - Immediate open reduction and internal fixation
+      - Diagnose a wrist sprain and allow full activity
+      - Thumb spica splint, then repeat imaging in 10–14 days or an early MRI
+    answer: E
+    explanation: >-
+      Scaphoid fractures can be **radiographically occult** at first. With clinical suspicion, immobilize in a **thumb
+      spica** splint and repeat imaging in 10–14 days, or get an MRI (or CT) early.
+  - question: Which test is the most sensitive for an occult scaphoid fracture?
+    choices:
+      - MRI
+      - Repeat PA radiograph
+      - Nerve conduction studies
+      - Ultrasound
+    answer: A
+    explanation: >-
+      **MRI** is the most sensitive modality (marrow edema, fracture line) and also assesses proximal pole viability.
+  - question: Why does a fracture through the scaphoid waist put the proximal pole at risk of avascular necrosis?
+    choices:
+      - The proximal pole is supplied only by the ulnar artery
+      - The proximal pole lies outside the joint capsule
+      - Its blood enters at the waist and distal pole and flows backward to the proximal pole
+      - The median nerve compresses its vessels
+    answer: C
+    explanation: >-
+      The scaphoid's blood supply is **retrograde**: vessels from the [[radial-artery]] enter at the waist and distal
+      pole. A waist fracture can cut off the proximal pole, causing **avascular necrosis** and **nonunion**.
+takeaways:
+  - "Snuffbox tenderness + normal X-ray → thumb spica splint and repeat imaging (or MRI)."
+  - "Retrograde blood supply → proximal pole AVN and nonunion."
+entries: [scaphoid, radial-artery, wrist-joint]

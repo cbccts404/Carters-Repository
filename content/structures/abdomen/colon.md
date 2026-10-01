@@ -45,7 +45,7 @@ clinical:
       **Right-sided** tumors: **iron-deficiency anemia**, occult bleeding, fatigue, weight loss. **Left-sided**
       tumors: **obstruction**, change in bowel habit, narrowed stool caliber, hematochezia. Iron-deficiency anemia in an
       older adult (or a postmenopausal woman) warrants colonoscopy. Screening typically starts at **age 45** for
-      average-risk adults. {{verify: check current USPSTF screening guidance}}
+      average-risk adults.
   - title: Volvulus
     highYield: true
     mechanism: Twisting of a mobile segment on its mesentery. **Sigmoid** volvulus is most common (older, institutionalized or constipated patients); **cecal** volvulus occurs in younger patients.

@@ -1,0 +1,174 @@
+---
+/**
+ * A clinical case: the vignette, then one step at a time. Answering a step shows
+ * its explanation and reveals the next step's new findings and question. The
+ * result is saved with the rest of the study progress on this device.
+ */
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { loadAtlas, md, mdInline, structureUrl, url } from '../../lib/atlas';
+
+export async function getStaticPaths() {
+  return (await getCollection('cases')).map((c) => ({ params: { id: c.id }, props: { c } }));
+}
+const { c } = Astro.props;
+const d = c.data;
+const atlas = await loadAtlas();
+const missing = d.entries.filter((e) => !atlas.byId.has(e));
+if (missing.length) throw new Error(`case "${c.id}": unknown entries ${missing.join(', ')}`);
+if (!atlas.regionById.has(d.region)) throw new Error(`case "${c.id}": unknown region "${d.region}"`);
+
+const LETTERS = ['A', 'B', 'C', 'D', 'E'];
+const steps = await Promise.all(
+  d.steps.map(async (s) => ({
+    info: s.info ? await md(s.info) : undefined,
+    question: await md(s.question),
+    choices: await Promise.all(s.choices.map((ch) => mdInline(ch))),
+    answer: LETTERS.indexOf(s.answer),
+    explanation: await md(s.explanation),
+  })),
+);
+const vignette = await md(d.vignette);
+const takeaways = await Promise.all(d.takeaways.map((t) => mdInline(t)));
+const links = d.entries.map((e) => atlas.byId.get(e)!);
+---
+
+<Base title={d.title} description={d.summary}>
+  <p class="crumbs"><a href={url()}>Home</a> / <a href={url('cases/')}>Clinical cases</a> / {d.title}</p>
+  <h1>{d.title}</h1>
+  <div class="case-vignette card" set:html={vignette} />
+
+  <div class="case" id="case" data-case={c.id} data-steps={steps.length}>
+    {
+      steps.map((s, i) => (
+        <section class="q case-step" data-answer={s.answer} data-step={i}>
+          <p class="small muted case-num">
+            Step {i + 1} of {steps.length}
+          </p>
+          {s.info && <div class="case-info" set:html={s.info} />}
+          <div class="stem" set:html={s.question} />
+          <ol>
+            {s.choices.map((ch, ci) => (
+              <li>
+                <button class="choice" type="button" data-i={ci}>
+                  <span class="letter">{LETTERS[ci]}</span>
+                  <span set:html={ch} />
+                </button>
+              </li>
+            ))}
+          </ol>
+          <div class="explain" hidden>
+            <p>
+              <strong class="verdict" />
+              <span class="muted"> Correct answer: {LETTERS[s.answer]}</span>
+            </p>
+            <Fragment set:html={s.explanation} />
+            {i < steps.length - 1 && (
+              <button type="button" class="btn case-next">
+                Next step →
+              </button>
+            )}
+          </div>
+          <details>
+            <summary>Show answer</summary>
+            <p>
+              <strong>{LETTERS[s.answer]}</strong>
+            </p>
+            <Fragment set:html={s.explanation} />
+          </details>
+        </section>
+      ))
+    }
+
+    <section class="case-end card" id="case-end">
+      <h2>Key points</h2>
+      <p class="case-score" id="case-score" hidden></p>
+      {
+        takeaways.length > 0 && (
+          <ul>
+            {takeaways.map((t) => (
+              <li set:html={t} />
+            ))}
+          </ul>
+        )
+      }
+      <p class="small">
+        Study:{' '}
+        {links.map((e, i) => (
+          <>
+            {i > 0 && ', '}
+            <a href={structureUrl(e)}>{e.data.name}</a>
+          </>
+        ))}
+      </p>
+      <p class="small">
+        <button type="button" class="linkish" id="case-again" hidden>Try this case again</button>
+        {' '}
+        <a href={url('cases/')}>All cases</a>
+      </p>
+    </section>
+  </div>
+</Base>
+
+<script>
+  import { recordCase } from '../../scripts/progress';
+
+  const box = document.getElementById('case')!;
+  const steps = [...box.querySelectorAll<HTMLElement>('.case-step')];
+  const end = document.getElementById('case-end')!;
+  const score = document.getElementById('case-score')!;
+  const again = document.getElementById('case-again')!;
+  let right = 0;
+
+  // Without JavaScript every step shows with a "Show answer" fold; with it, steps unlock one at a time.
+  function reset() {
+    right = 0;
+    steps.forEach((s, i) => {
+      s.classList.add('js');
+      s.hidden = i > 0;
+      s.querySelector<HTMLElement>('.explain')!.hidden = true;
+      for (const b of s.querySelectorAll<HTMLButtonElement>('.choice')) {
+        b.disabled = false;
+        b.classList.remove('correct', 'wrong');
+      }
+    });
+    end.hidden = true;
+    score.hidden = true;
+    again.hidden = true;
+  }
+
+  steps.forEach((s, i) => {
+    const answer = Number(s.dataset.answer);
+    const buttons = [...s.querySelectorAll<HTMLButtonElement>('.choice')];
+    const explain = s.querySelector<HTMLElement>('.explain')!;
+    for (const b of buttons) {
+      b.addEventListener('click', () => {
+        const ok = Number(b.dataset.i) === answer;
+        if (ok) right++;
+        buttons.forEach((x) => (x.disabled = true));
+        buttons[answer].classList.add('correct');
+        if (!ok) b.classList.add('wrong');
+        explain.querySelector('.verdict')!.textContent = ok ? '✓ Correct.' : '✗ Not quite.';
+        explain.hidden = false;
+        if (i === steps.length - 1) {
+          recordCase(box.dataset.case!, right, steps.length);
+          score.textContent = `You got ${right} of ${steps.length} steps right.`;
+          score.hidden = false;
+          again.hidden = false;
+          end.hidden = false;
+        }
+      });
+    }
+    s.querySelector('.case-next')?.addEventListener('click', () => {
+      const next = steps[i + 1];
+      next.hidden = false;
+      next.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      next.querySelector<HTMLButtonElement>('.choice')?.focus({ preventScroll: true });
+      s.querySelector('.case-next')!.remove();
+    });
+  });
+  again.addEventListener('click', () => {
+    location.reload();
+  });
+  reset();
+</script>

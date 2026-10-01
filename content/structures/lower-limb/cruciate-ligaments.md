@@ -134,6 +134,7 @@ flashcards:
     back: Lachman (sensitive); pivot shift (specific)
   - front: Segond fracture implies?
     back: ACL tear
+diagrams: [tibial-plateau]
 related: [knee-joint, collateral-ligaments-of-knee, menisci]
 images:
   - image: gray-347-knee-interior-front

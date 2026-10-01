@@ -47,7 +47,6 @@ clinical:
       within **4.5 hours** of last known well if no contraindications (BP must be < 185/110). **Mechanical
       thrombectomy** for large vessel occlusion (ICA, M1) — up to **24 hours** in selected patients with CT perfusion/MRI.
       Then antiplatelet therapy, statin and a search for the source (ECG/telemetry, echocardiogram, carotid imaging).
-      {{verify: time windows and BP thresholds per current AHA/ASA guideline}}
 pance:
   - "Face/arm > leg weakness + aphasia (left) or neglect (right) → **MCA**."
   - "Leg > arm weakness + incontinence → **ACA**."

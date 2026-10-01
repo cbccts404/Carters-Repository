@@ -37,7 +37,7 @@ clinical:
     mechanism: Thrombosis of a superficial vein (varicosities, IV cannulas, pregnancy, malignancy).
     presentation: >-
       A tender, red, **palpable cord**. Ultrasound because about a quarter have associated DVT; thrombus **within about
-      3 cm of the saphenofemoral junction** (or long segments) is treated with anticoagulation. {{verify: thresholds for anticoagulating superficial vein thrombosis}}
+      3 cm of the saphenofemoral junction** (or long segments) is treated with anticoagulation.
   - title: Saphenous vein graft
     highYield: false
     mechanism: Harvested for coronary artery bypass grafting and peripheral bypass (reversed so its valves don't block flow).
@@ -128,6 +128,7 @@ flashcards:
     back: Popliteal vein
   - front: Location of venous ulcers?
     back: Gaiter area, typically above the medial malleolus
+diagrams: [femoral-triangle]
 related: [deep-veins-of-lower-limb, femoral-triangle]
 images:
   - image: gray-584-saphenofemoral-junction

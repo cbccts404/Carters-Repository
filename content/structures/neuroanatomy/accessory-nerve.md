@@ -112,6 +112,7 @@ flashcards:
     back: Jugular foramen (after entering through the foramen magnum)
   - front: Type of winging with trapezius palsy?
     back: Lateral scapular winging
+diagrams: [cranial-nerve-exits]
 related: [sternocleidomastoid, trapezius, triangles-of-the-neck, vagus-nerve]
 images:
   - image: gray-793-glossopharyngeal-vagus-accessory

@@ -33,12 +33,13 @@ clinical:
     presentation: >-
       Usually asymptomatic, found on screening or incidental imaging. **Rupture** presents with the triad of **severe
       abdominal or back/flank pain, hypotension and a pulsatile abdominal mass**. Elective repair is generally
-      recommended at about **5.5 cm in men** (lower thresholds in women), with rapid growth, or when symptomatic.
-      {{verify: check current repair and surveillance thresholds}}
+      recommended at **5.5 cm or more in men** and **5.0 cm or more in women**, with rapid growth, or when
+      symptomatic. Surveillance ultrasound (SVS 2018): every 3 years at 3.0–3.9 cm, every 12 months at 4.0–4.9 cm and
+      every 6 months at 5.0–5.4 cm.
   - title: AAA screening
     highYield: true
     mechanism: Screening detects asymptomatic aneurysms before rupture.
-    presentation: '**USPSTF**: one-time **abdominal ultrasound for men aged 65–75 who have ever smoked**. {{verify: confirm current USPSTF recommendation}}'
+    presentation: '**USPSTF**: one-time **abdominal ultrasound for men aged 65–75 who have ever smoked**.'
   - title: Aortoiliac occlusive disease (Leriche syndrome)
     highYield: false
     mechanism: Atherosclerotic occlusion of the distal aorta and/or iliac arteries.

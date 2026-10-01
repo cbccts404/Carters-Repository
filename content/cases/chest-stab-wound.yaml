@@ -1,0 +1,53 @@
+title: Stab wound to the chest
+region: thorax
+summary: Hypotension after penetrating chest trauma — make the clinical diagnosis and place the needle and tube safely.
+vignette: >-
+  A 30-year-old man is brought in with a stab wound to the left chest. He is breathless, BP 78/40 mm Hg, his neck veins
+  are distended, breath sounds are absent on the left with hyperresonance, and the trachea is deviated to the right.
+steps:
+  - question: What is the most appropriate immediate step?
+    choices:
+      - CT of the chest
+      - Chest radiograph to confirm the diagnosis
+      - Pericardiocentesis
+      - Needle decompression or finger thoracostomy of the left chest
+    answer: D
+    explanation: >-
+      This is a **tension pneumothorax** — a **clinical diagnosis**. Decompress immediately and then place a chest tube,
+      without waiting for imaging (see [[pleural-cavity]]).
+  - question: Where does current ATLS guidance favor needle decompression in adults?
+    choices:
+      - 2nd intercostal space in the midclavicular line only
+      - Just below the clavicle at the sternal border
+      - 8th intercostal space in the posterior axillary line
+      - 4th or 5th intercostal space, just anterior to the mid-axillary line
+    answer: D
+    explanation: >-
+      Current ATLS guidance for adults favors the **4th/5th intercostal space in the anterior to mid-axillary line**;
+      the 2nd intercostal space in the midclavicular line is the older site.
+  - question: Which boundaries define the "triangle of safety" for the chest tube?
+    choices:
+      - Lateral border of pectoralis major, anterior border of latissimus dorsi, and a line at nipple level
+      - Sternal border, clavicle and the 4th rib
+      - Mid-clavicular line, costal margin and the umbilicus
+      - Medial border of the scapula, trapezius and the 7th rib
+    answer: A
+    explanation: >-
+      The **triangle of safety**: the lateral border of [[pectoralis-major]], the anterior border of
+      [[latissimus-dorsi]], a horizontal line at the nipple (about the 5th intercostal space), with its apex below the
+      axilla.
+  - question: Why is the needle or tube passed over the upper border of a rib?
+    choices:
+      - The pleura is absent at the upper border
+      - The diaphragm attaches to the lower border of every rib
+      - The intercostal vein, artery and nerve run in the costal groove along the lower border
+      - The upper border of each rib is thinner bone
+    answer: C
+    explanation: >-
+      The intercostal neurovascular bundle runs in the **costal groove along the inferior border** of each rib, so
+      passing just over the **superior border** of the rib below avoids it (see [[intercostal-space]]).
+takeaways:
+  - "Hypotension + JVD + absent breath sounds + tracheal deviation away → decompress now."
+  - "Adults: 4th/5th intercostal space, anterior to the mid-axillary line."
+  - "Go over the top of the rib — the bundle runs under each rib."
+entries: [pleural-cavity, intercostal-space, pectoralis-major, latissimus-dorsi]

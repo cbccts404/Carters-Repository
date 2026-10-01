@@ -1,0 +1,52 @@
+title: Sudden aphasia and arm weakness
+region: neuroanatomy
+summary: An older man with atrial fibrillation suddenly can't find his words. Localize the stroke and decide on treatment.
+vignette: >-
+  A 68-year-old right-handed man with atrial fibrillation suddenly develops weakness of the right face and arm and
+  can't find his words. His wife last saw him well an hour ago.
+steps:
+  - question: Which arterial territory is most likely affected?
+    choices:
+      - Left anterior cerebral artery
+      - Right middle cerebral artery
+      - Basilar artery
+      - Left posterior cerebral artery
+      - Left middle cerebral artery
+    answer: E
+    explanation: >-
+      Contralateral **face and arm** weakness with **aphasia** (dominant hemisphere) is a **left MCA** stroke. ACA
+      strokes affect the leg more than the arm; PCA strokes cause a homonymous hemianopia (see [[cerebral-arteries]]).
+  - question: Which way are his eyes most likely to deviate?
+    choices:
+      - The eyes stay midline in hemispheric stroke
+      - Toward the left — the side of the lesion
+      - Downward
+      - Toward the right — the weak side
+    answer: B
+    explanation: >-
+      In a hemispheric stroke the eyes deviate **toward the lesion**, away from the weak side.
+  - question: Which test comes first?
+    choices:
+      - Carotid ultrasound
+      - Noncontrast CT of the head
+      - MRI with contrast before anything else
+      - Lumbar puncture
+    answer: B
+    explanation: >-
+      A **noncontrast CT** comes first because hemorrhage must be excluded before thrombolysis. Check the glucose too.
+  - info: The CT shows no hemorrhage. His blood pressure is 170/95 mm Hg and he has no contraindications.
+    question: What is the most appropriate treatment?
+    choices:
+      - Full-dose heparin infusion
+      - Aspirin and observation only
+      - IV thrombolysis with alteplase or tenecteplase
+      - Wait for an MRI before deciding
+    answer: C
+    explanation: >-
+      He is within **4.5 hours** of last known well and his BP is below **185/110**, so IV thrombolysis is indicated.
+      If CT angiography shows a large vessel occlusion, mechanical thrombectomy is added.
+takeaways:
+  - "Face and arm > leg + aphasia → left (dominant) MCA."
+  - "Eyes look toward the lesion in hemispheric stroke."
+  - "Noncontrast CT first; IV thrombolysis within 4.5 h if BP < 185/110."
+entries: [cerebral-arteries, circle-of-willis, internal-capsule]

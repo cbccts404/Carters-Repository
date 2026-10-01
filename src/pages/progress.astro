@@ -17,6 +17,7 @@ import { url } from '../lib/atlas';
     <div class="card"><b id="s-sess">0</b><span>quiz sessions</span></div>
     <div class="card"><b id="s-cards">0</b><span>flashcards studied</span></div>
     <div class="card"><b id="s-mast">0</b><span>flashcards mastered</span></div>
+    <div class="card"><b id="s-cases">0</b><span>clinical cases finished</span></div>
     <div class="card"><b id="s-checks">0</b><span>verify checks</span></div>
   </div>
   <p class="small">
@@ -73,12 +74,13 @@ import { url } from '../lib/atlas';
     $('s-sess').textContent = String(d.progress.sessions.length);
     $('s-cards').textContent = String(cards.length);
     $('s-mast').textContent = String(cards.filter((c) => c.box >= MASTERED_BOX).length);
+    $('s-cases').textContent = String(Object.keys(d.progress.cases).length);
     $('s-checks').textContent = String(Object.keys(d.verify).length);
   }
 
   const summary = (b: Pick<Backup, 'progress' | 'verify'>) => {
     const c = countsOf(b);
-    return `${plural(c.questions, 'question')}, ${plural(c.cards, 'flashcard')} and ${plural(c.checks, 'verify check')}`;
+    return `${plural(c.questions, 'question')}, ${plural(c.cards, 'flashcard')}, ${plural(c.cases, 'case')} and ${plural(c.checks, 'verify check')}`;
   };
 
   $('export').addEventListener('click', () => {
@@ -119,7 +121,7 @@ import { url } from '../lib/atlas';
       if (mode === 'replace' && !confirm(`Replace everything on this device with the backup (${summary(backup)})?`)) return;
       const now = applyBackup(backup, mode);
       const when = backup.exported ? ` from ${new Date(backup.exported).toLocaleDateString()}` : '';
-      msg.textContent = `Imported the backup${when}. This device now has ${plural(now.questions, 'question')}, ${plural(now.cards, 'flashcard')} and ${plural(now.checks, 'verify check')}.`;
+      msg.textContent = `Imported the backup${when}. This device now has ${plural(now.questions, 'question')}, ${plural(now.cards, 'flashcard')}, ${plural(now.cases, 'case')} and ${plural(now.checks, 'verify check')}.`;
       $<HTMLInputElement>('file').value = '';
       $<HTMLTextAreaElement>('paste').value = '';
       showStats();

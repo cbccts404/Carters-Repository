@@ -1,0 +1,52 @@
+title: A pop in the knee on landing
+region: lower-limb
+summary: A basketball player's knee gives way on landing. Name the injury, the test and the triad.
+vignette: >-
+  A 20-year-old basketball player lands from a jump, her knee buckles inward, and she hears a pop. She can't continue,
+  and the knee is swollen within two hours.
+steps:
+  - question: Which structure is most likely torn?
+    choices:
+      - Posterior cruciate ligament
+      - Lateral collateral ligament
+      - Patellar tendon
+      - Anterior cruciate ligament
+    answer: D
+    explanation: >-
+      A **non-contact** pivot or landing near extension in valgus, a **pop** and **rapid hemarthrosis** within hours is
+      an **ACL tear** (see [[cruciate-ligaments]]). A PCL tear follows a dashboard injury to the flexed knee.
+  - question: Which examination test is the most sensitive for this injury?
+    choices:
+      - Posterior drawer test
+      - Valgus stress at 30° of flexion
+      - McMurray test
+      - Lachman test
+    answer: D
+    explanation: >-
+      The **Lachman** test is the most sensitive for an ACL tear; the anterior drawer and pivot-shift tests also help.
+      McMurray tests the menisci; valgus stress at 30° tests the MCL.
+  - question: Which test confirms the diagnosis?
+    choices:
+      - MRI of the knee
+      - Arthrocentesis alone
+      - Nerve conduction studies
+      - Plain radiographs alone
+    answer: A
+    explanation: >-
+      **MRI** confirms the tear and shows associated meniscal and ligament injuries. Young active patients usually have
+      ACL reconstruction.
+  - info: She also has medial joint-line pain and laxity on valgus stress at 30° of flexion.
+    question: Which combination makes up the "unhappy triad"?
+    choices:
+      - MCL, LCL and both menisci
+      - PCL, LCL and lateral meniscus
+      - ACL, MCL and medial meniscus
+      - ACL, PCL and patellar tendon
+    answer: C
+    explanation: >-
+      A valgus force can tear the **ACL, MCL and medial meniscus** together. The medial meniscus is torn more often than
+      the lateral because it is attached to the MCL (see [[menisci]] and [[collateral-ligaments-of-knee]]).
+takeaways:
+  - "Non-contact pivot + pop + rapid swelling → ACL; Lachman is the most sensitive test."
+  - "Unhappy triad: ACL + MCL + medial meniscus."
+entries: [cruciate-ligaments, collateral-ligaments-of-knee, menisci, knee-joint]

@@ -131,7 +131,7 @@ flashcards:
     back: Saphenous nerve (medial leg and foot)
   - front: Femoral triangle contents lateral to medial?
     back: Nerve, Artery, Vein, Empty space (canal), Lymphatics (NAVEL)
-diagrams: [lower-limb-dermatomes]
+diagrams: [lower-limb-dermatomes, femoral-triangle]
 related: [lumbar-plexus, quadriceps-femoris, femoral-triangle, femoral-artery]
 images:
   - image: gray-823-lumbar-plexus

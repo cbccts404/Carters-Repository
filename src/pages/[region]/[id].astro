@@ -141,6 +141,7 @@ const linkRe = new RegExp(`\\[\\[${entry.id}(\\||\\]\\])`);
 const inTables = (await getCollection('tables')).filter((t) =>
   [...t.data.rows.flat(), ...t.data.notes].some((c) => linkRe.test(c)),
 );
+const inCases = (await getCollection('cases')).filter((c) => c.data.entries.includes(entry.id));
 const { sections, done, total } = completeness(entry);
 const summary = await mdInline(d.summary);
 ---
@@ -351,7 +352,7 @@ const summary = await mdInline(d.summary);
   </section>
 
   {
-    (related.length > 0 || inTables.length > 0) && (
+    (related.length > 0 || inTables.length > 0 || inCases.length > 0) && (
       <section>
         <h2>See also</h2>
         <ul>
@@ -365,6 +366,11 @@ const summary = await mdInline(d.summary);
           {inTables.map((t) => (
             <li>
               <a href={url(`tables/${t.id}/`)}>{t.data.title}</a> <span class="muted small">(comparison table)</span>
+            </li>
+          ))}
+          {inCases.map((c) => (
+            <li>
+              <a href={url(`cases/${c.id}/`)}>{c.data.title}</a> <span class="muted small">(clinical case)</span>
             </li>
           ))}
         </ul>

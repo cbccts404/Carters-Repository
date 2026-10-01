@@ -68,6 +68,16 @@ quiz:
     explanation: >-
       The femoral triangle is bounded by the inguinal ligament (superior), **sartorius** (lateral) and the medial border
       of **adductor longus** (medial).
+  - stem: Through which opening do the femoral vessels pass from the thigh into the popliteal fossa?
+    choices:
+      - Obturator canal
+      - Saphenous opening
+      - Greater sciatic foramen
+      - Adductor hiatus in adductor magnus
+    answer: D
+    explanation: >-
+      The **adductor hiatus** in adductor magnus lets the femoral vessels pass into the [[popliteal-fossa]], where the
+      femoral artery becomes the popliteal artery.
 flashcards:
   - front: Most commonly strained adductor?
     back: Adductor longus

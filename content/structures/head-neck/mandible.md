@@ -81,6 +81,18 @@ quiz:
     explanation: >-
       The **inferior alveolar nerve** (V3) runs through the mandibular canal and exits at the **mental foramen** as the
       **mental nerve**, supplying the skin of the lower lip and chin.
+  - stem: >-
+      After a fist fight, a man has malocclusion and a bruise under his tongue. A tooth socket lies in the fracture
+      line. Besides fixation, what does this need?
+    choices:
+      - Nothing more, as these fractures heal without complications
+      - Antibiotics, because a fracture through a tooth socket is an open fracture
+      - A lumbar puncture to exclude meningitis
+      - Immediate extraction of all teeth on that side
+    answer: B
+    explanation: >-
+      A **sublingual hematoma** after facial trauma strongly suggests a mandibular fracture, and a fracture through a
+      tooth socket communicates with the mouth, so it is an **open fracture** that needs **antibiotics**.
 flashcards:
   - front: Nerve in the mandibular canal?
     back: Inferior alveolar nerve (V3) → exits as the mental nerve

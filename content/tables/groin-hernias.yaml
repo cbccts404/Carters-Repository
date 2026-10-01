@@ -1,0 +1,12 @@
+title: Groin hernias
+region: abdomen
+summary: Indirect, direct and femoral hernias — the route each takes, where it sits relative to the landmarks, and who gets it.
+columns: [Hernia, Route, Relation to landmarks, Typical patient, Clinical points]
+rows:
+  - ["[[inguinal-canal|Indirect inguinal]]", "Through the **deep ring** and along the inguinal canal, often via a **patent processus vaginalis**; can descend into the scrotum", "**Lateral** to the [[inferior-epigastric-artery|inferior epigastric vessels]]; above the inguinal ligament", "Congenital; the **most common hernia** in both sexes and in children", "In infants, an intermittent groin or scrotal swelling while crying"]
+  - ["[[inguinal-triangle|Direct inguinal]]", "Through a weak posterior wall (transversalis fascia) in the **inguinal (Hesselbach) triangle**", "**Medial** to the inferior epigastric vessels; above the inguinal ligament", "Acquired; **older men**", "Broad-necked, easily reducible, rarely enters the scrotum; lower strangulation risk than indirect or femoral hernias"]
+  - ["[[femoral-triangle|Femoral]]", "Through the **femoral ring** into the femoral canal", "**Below** the inguinal ligament and **medial to the femoral vein**; the bulge lies below and lateral to the pubic tubercle", "More common in **women**", "**Highest risk of incarceration and strangulation** (narrow, rigid ring), so repair is recommended"]
+notes:
+  - "Hesselbach triangle (**RIP**): **R**ectus abdominis medially, **I**nferior epigastric vessels laterally, **P**oupart (inguinal) ligament inferiorly."
+  - "**Dynamic ultrasound with Valsalva** is first-line imaging for an equivocal groin bulge: it locates the sac relative to the inferior epigastric vessels and picks up a femoral hernia below the ligament."
+  - "A tender, irreducible hernia with erythema or bowel obstruction (incarcerated or strangulated) needs emergency surgery."

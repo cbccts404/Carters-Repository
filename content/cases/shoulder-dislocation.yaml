@@ -1,0 +1,52 @@
+title: A shoulder forced back while blocking
+region: upper-limb
+summary: A volleyball player's shoulder dislocates. Name the direction, the nerve to check and the lesions to look for.
+vignette: >-
+  A 20-year-old volleyball player blocks a hard spike overhead, and his arm is forced into abduction and external
+  rotation. He holds the arm slightly abducted and externally rotated, and the shoulder looks squared off.
+steps:
+  - question: Which way has the shoulder dislocated?
+    choices:
+      - Anterior
+      - Superior
+      - Inferior (luxatio erecta)
+      - Posterior
+    answer: A
+    explanation: >-
+      **Abduction + external rotation** drives the humeral head anteroinferiorly. Anterior dislocation is by far the
+      most common; posterior dislocation classically follows seizures or electric shock (see [[glenohumeral-joint]]).
+  - question: Which nerve must be checked and documented before and after reduction?
+    choices:
+      - Axillary nerve — sensation over the lower deltoid and deltoid function
+      - Long thoracic nerve — scapular winging
+      - Suprascapular nerve — supraspinatus strength
+      - Radial nerve — dorsal first web space
+    answer: A
+    explanation: >-
+      The displaced head stretches the [[axillary-nerve]], which winds around the surgical neck. Test **regimental
+      badge** sensation and deltoid function before and after reduction.
+  - question: Which radiographs make up the shoulder trauma series?
+    choices:
+      - AP (or Grashey), scapular Y and axillary views
+      - AP views in internal and external rotation only
+      - A chest radiograph and a clavicle view
+      - A single AP view
+    answer: A
+    explanation: >-
+      The **trauma series** is an AP (or Grashey), a **scapular Y** and an **axillary** view. A single AP view can miss
+      a posterior dislocation.
+  - question: Which associated lesion is an impaction fracture of the posterolateral humeral head?
+    choices:
+      - Hill–Sachs lesion
+      - Reverse Hill–Sachs lesion
+      - Lightbulb sign
+      - Bankart lesion
+    answer: A
+    explanation: >-
+      The **Hill–Sachs lesion** is an impaction of the posterolateral head against the glenoid rim. The **Bankart
+      lesion** is an anteroinferior labral tear (± glenoid rim fracture). Reverse Hill–Sachs and the lightbulb sign go
+      with posterior dislocation.
+takeaways:
+  - "Abduction + external rotation → anterior dislocation; seizure or electrocution → posterior."
+  - "Check the axillary nerve (regimental badge) before and after reduction."
+entries: [glenohumeral-joint, axillary-nerve, humerus, deltoid]

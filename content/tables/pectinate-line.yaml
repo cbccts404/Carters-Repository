@@ -1,0 +1,16 @@
+title: Anal canal above vs below the pectinate line
+region: pelvis-perineum
+summary: The pectinate line is the junction of hindgut and ectoderm, so almost everything changes across it — epithelium, blood supply, lymph, nerves and the diseases that arise.
+columns: [Feature, Above the pectinate line, Below the pectinate line]
+rows:
+  - ["Origin", "Hindgut endoderm", "Ectodermal proctodeum"]
+  - ["Epithelium", "Columnar", "Stratified squamous (non-keratinized in the pecten, keratinized in the perianal skin)"]
+  - ["Arteries", "Superior rectal artery (from the [[inferior-mesenteric-artery]])", "Inferior rectal arteries (from the internal pudendal)"]
+  - ["Veins", "Superior rectal vein → inferior mesenteric vein → **portal** system", "Inferior rectal veins → internal pudendal → internal iliac (**systemic**)"]
+  - ["Lymph", "Internal iliac (and inferior mesenteric) nodes", "**Superficial inguinal** nodes"]
+  - ["Nerves", "**Visceral** (autonomic), sensitive only to stretch — lesions are **painless**", "**Somatic** (inferior rectal nerves from the [[pudendal-nerve]]) — lesions are **painful**"]
+  - ["Hemorrhoids", "**Internal**: painless bright-red bleeding, prolapse", "**External**: perianal swelling; a thrombosed one is an acutely painful blue lump"]
+  - ["Cancer", "Adenocarcinoma", "**Squamous cell carcinoma** (HPV-associated)"]
+notes:
+  - "The middle rectal arteries anastomose with both supplies, and the rectal venous plexus is a **portosystemic anastomosis**."
+  - "An **anal fissure** lies below the line (usually posterior midline), so it is very painful. See [[anal-canal]] and [[pelvic-lymph-nodes]]."

@@ -134,6 +134,7 @@ flashcards:
     back: Internal carotid artery and CN VI
   - front: Treatment of cerebral venous sinus thrombosis?
     back: Anticoagulation (heparin), even with hemorrhage
+diagrams: [csf-flow]
 related: [cranial-meninges, internal-jugular-vein, pituitary-gland, abducens-nerve, scalp, ventricular-system]
 images:
   - image: gray-568-dural-sinuses-sagittal

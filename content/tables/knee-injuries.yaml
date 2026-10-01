@@ -1,0 +1,13 @@
+title: Knee ligament and meniscal injuries
+region: lower-limb
+summary: Mechanism, findings, the test to do and the usual management for the five classic knee injuries.
+columns: [Injury, Mechanism, Findings, Key test, Management]
+rows:
+  - ["[[cruciate-ligaments|ACL]]", "**Non-contact** deceleration, cutting or pivoting, or landing near extension in valgus", "A **pop**, can't continue, **rapid hemarthrosis** within hours; later giving way", "**Lachman** (most sensitive); anterior drawer, pivot shift", "Confirm with MRI; reconstruction for young active patients"]
+  - ["[[cruciate-ligaments|PCL]]", "Posterior force on the proximal tibia with the knee flexed — **dashboard injury** or a fall onto the flexed knee", "Posterior sag of the tibia", "**Posterior drawer**, sag sign", "Often non-operative when isolated"]
+  - ["[[collateral-ligaments-of-knee|MCL]]", "**Valgus** blow to the lateral knee", "Medial knee pain and tenderness along the ligament", "Valgus stress at **30°** of flexion", "Hinged brace and rehab; look for ACL and medial meniscal tears"]
+  - ["[[collateral-ligaments-of-knee|LCL]] and posterolateral corner", "**Varus** blow to the medial knee, or hyperextension–varus", "Lateral knee pain, varus laxity; often with cruciate injury", "Varus stress at **30°**; check the [[common-fibular-nerve]] (foot drop)", "Often needs surgical repair"]
+  - ["[[menisci|Meniscal tear]]", "Twisting on a flexed, weight-bearing knee (young); minimal trauma such as squatting (older, degenerative)", "Joint-line tenderness, swelling **over a day**, catching or **locking**", "McMurray, Thessaly, Apley", "Degenerative: physical therapy first. Locked knee (bucket-handle tear): arthroscopy"]
+notes:
+  - "**Unhappy triad**: ACL + MCL + medial meniscus, from a contact valgus blow."
+  - "The **medial meniscus** is torn more often because it is attached to the MCL. Rapid swelling suggests a vascular structure (ACL); swelling over a day suggests a meniscus."

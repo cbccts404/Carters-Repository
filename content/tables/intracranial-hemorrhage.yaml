@@ -1,0 +1,12 @@
+title: Intracranial hemorrhage
+region: neuroanatomy
+summary: Epidural, subdural and subarachnoid bleeds — source, setting, course and CT appearance — with venous sinus thrombosis for contrast.
+columns: [Bleed, Source, Typical setting, Course, CT and work-up]
+rows:
+  - ["[[middle-meningeal-artery|Epidural]]", "**Arterial**: the middle meningeal artery torn by a temporal bone (pterion) fracture", "Head injury with a skull fracture", "Brief loss of consciousness, a **lucid interval**, then rapid decline — ipsilateral fixed dilated pupil and contralateral hemiparesis (uncal herniation). Emergency craniotomy", "**Biconvex (lens-shaped)** hyperdensity that **does not cross suture lines**"]
+  - ["[[cranial-meninges|Subdural]]", "**Venous**: torn bridging veins", "Elderly (brain atrophy), alcohol use disorder, anticoagulation, falls; infants (abusive head trauma, with retinal hemorrhages)", "Acute after major trauma, or **chronic** weeks after minor trauma — gradual headache, confusion, fluctuating consciousness, mild hemiparesis", "**Crescent** that crosses sutures but not the falx; hyperdense when acute, isodense subacute, hypodense chronic"]
+  - ["Subarachnoid", "Ruptured **saccular (berry) aneurysm** of the [[circle-of-willis]] in most nontraumatic cases; trauma, AVM", "Hypertension, smoking, ADPKD, connective tissue disorders, family history", "Sudden **thunderclap headache**, vomiting, neck stiffness, photophobia. Complications: rebleeding, **vasospasm** (days 3–14; nimodipine), hydrocephalus, hyponatremia", "**Noncontrast CT** first; if negative, **lumbar puncture** for xanthochromia; then CTA to find the aneurysm"]
+  - ["[[dural-venous-sinuses|Venous sinus thrombosis]] (for contrast)", "Thrombosed dural venous sinus", "Oral contraceptives, pregnancy and postpartum, thrombophilia, cancer, dehydration, mastoiditis", "Progressive headache worse lying down, papilledema, seizures, focal deficits. **Anticoagulate even if there is hemorrhage**", "Venous (often hemorrhagic) infarcts that do not match arterial territories; **empty delta sign**; MR or CT venography"]
+notes:
+  - "Epidural = **arterial**, biconvex, stops at sutures. Subdural = **venous**, crescent, crosses sutures."
+  - "**Hypertensive intracerebral hemorrhage** arises from lenticulostriate vessels in the putamen or thalamus (see [[internal-capsule]])."

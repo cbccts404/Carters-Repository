@@ -1,0 +1,54 @@
+title: Collapse in early pregnancy
+region: pelvis-perineum
+summary: Abdominal pain and shock with a positive pregnancy test — find the blood and the source.
+vignette: >-
+  A 27-year-old woman with a history of pelvic inflammatory disease has had 7 weeks of amenorrhea and light vaginal
+  bleeding. She develops sudden left lower abdominal pain and collapses. BP is 82/50 mm Hg and her urine pregnancy test
+  is positive.
+steps:
+  - question: Where would bedside ultrasound most likely show free fluid first?
+    choices:
+      - Lesser sac
+      - Rectouterine pouch
+      - Left paracolic gutter
+      - Vesicouterine pouch
+    answer: B
+    explanation: >-
+      The [[rectouterine-pouch]] (of Douglas) is the lowest part of the female peritoneal cavity when upright or supine,
+      so blood collects there first. Pregnant + pain + free fluid in the pouch = **ruptured ectopic** until proven
+      otherwise.
+  - question: What is the most common site of an ectopic pregnancy?
+    choices:
+      - Cervix
+      - Ampulla of the uterine tube
+      - Ovary
+      - Isthmus of the uterine tube
+    answer: B
+    explanation: >-
+      About 95% of ectopics are tubal, most in the **ampulla** — the widest part and the usual site of fertilization (see
+      [[uterine-tubes]]).
+  - question: Which part of her history is a risk factor?
+    choices:
+      - Her age of 27
+      - Previous pelvic inflammatory disease
+      - Light vaginal bleeding
+      - Regular menstrual cycles before this pregnancy
+    answer: B
+    explanation: >-
+      **Prior PID** scars the tubes. Other risk factors are a prior ectopic, tubal surgery or ligation, pregnancy with an
+      IUD in place, assisted reproduction and smoking.
+  - question: What is the most appropriate management?
+    choices:
+      - Repeat β-hCG in 48 hours
+      - Emergency surgery (salpingostomy or salpingectomy) with resuscitation
+      - Dilation and curettage
+      - Methotrexate and outpatient follow-up
+    answer: B
+    explanation: >-
+      A **ruptured** ectopic with **hemodynamic instability** needs **surgery**. Methotrexate is only for stable,
+      unruptured ectopics that meet criteria. Give anti-D if she is Rh-negative.
+takeaways:
+  - "Positive pregnancy test + pain + free fluid in the rectouterine pouch → ruptured ectopic."
+  - "Ampulla is the commonest site; prior PID is a key risk factor."
+  - "Unstable or ruptured → surgery; stable and unruptured → methotrexate if criteria are met."
+entries: [rectouterine-pouch, uterine-tubes, uterus]

@@ -127,6 +127,7 @@ flashcards:
     back: Epidural — biconvex, doesn't cross sutures; subdural — crescent, crosses sutures
   - front: Drug to prevent vasospasm after SAH?
     back: Nimodipine
+diagrams: [csf-flow]
 related: [middle-meningeal-artery, dural-venous-sinuses, circle-of-willis, ventricular-system, spinal-meninges]
 images:
   - image: gray-567-dura-tentorium-cranial-nerves

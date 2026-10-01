@@ -131,6 +131,7 @@ flashcards:
     back: At the adductor hiatus
   - front: ABI diagnostic of PAD?
     back: ≤ 0.90
+diagrams: [femoral-triangle]
 related: [femoral-triangle, popliteal-artery, femoral-nerve, internal-iliac-artery]
 images:
   - image: gray-548-femoral-artery-diagram

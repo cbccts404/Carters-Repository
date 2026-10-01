@@ -127,6 +127,7 @@ flashcards:
     back: 30°
   - front: Which collateral ligament is attached to its meniscus?
     back: MCL (to the medial meniscus); the LCL is separate
+diagrams: [tibial-plateau]
 related: [knee-joint, cruciate-ligaments, menisci]
 images:
   - image: gray-348-knee-interior-behind

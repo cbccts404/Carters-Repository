@@ -150,6 +150,7 @@ flashcards:
     back: Femur rotates medially on the tibia in terminal extension; popliteus unlocks
   - front: Tests for knee effusion?
     back: Bulge (wipe) test (small), patellar tap/ballottement (large)
+diagrams: [tibial-plateau]
 related: [cruciate-ligaments, collateral-ligaments-of-knee, menisci, patella, popliteal-fossa]
 images:
   - image: gray-345-knee-anterior

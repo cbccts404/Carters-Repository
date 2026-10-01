@@ -76,6 +76,17 @@ quiz:
     explanation: >-
       The **mesosalpinx** is the part of the broad ligament around the uterine tube; the mesovarium attaches the ovary
       and the mesometrium lies beside the uterus.
+  - stem: Which structure provides major support to the uterus at the base of the broad ligament?
+    choices:
+      - Cardinal (transverse cervical) ligament
+      - Round ligament of the uterus
+      - Mesosalpinx
+      - Suspensory ligament of the ovary
+    answer: A
+    explanation: >-
+      The dense connective tissue around the uterine vessels at the base of the broad ligament forms the **cardinal
+      (transverse cervical) ligaments**, a major uterine support. The broad ligament itself is a mesentery and gives
+      little mechanical support.
 flashcards:
   - front: Three parts of the broad ligament?
     back: Mesometrium, mesosalpinx, mesovarium

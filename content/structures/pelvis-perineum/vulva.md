@@ -38,7 +38,7 @@ clinical:
     presentation: >-
       Unilateral swelling of the posterior labium at 4 or 8 o'clock; an abscess is exquisitely painful, tender and
       fluctuant. Symptomatic abscesses need **incision and drainage with a Word catheter** or marsupialization.
-      A new Bartholin mass in a woman over about 40 is biopsied to exclude carcinoma. {{verify: age threshold for biopsy}}
+      A new Bartholin mass in a woman over about 40 is biopsied to exclude carcinoma.
   - title: Lichen sclerosus
     highYield: true
     mechanism: Chronic inflammatory skin disease of the anogenital area, most common in postmenopausal women.
@@ -87,6 +87,19 @@ quiz:
     explanation: >-
       The **labia majora** develop from the labioscrotal swellings, as does the scrotum. The labia minora correspond to
       the ventral penile skin (urethral folds) and the clitoris to the penis.
+  - stem: >-
+      A 68-year-old woman has intense vulvar itching. The skin is thin, white and wrinkled in a figure-of-eight pattern
+      around the vulva and anus. What is the most appropriate treatment?
+    choices:
+      - Topical estrogen alone
+      - Oral fluconazole
+      - Wide local excision
+      - Observation only
+      - High-potency topical steroid (clobetasol)
+    answer: E
+    explanation: >-
+      This is **lichen sclerosus**. Treat with a **high-potency topical steroid** such as clobetasol, with long-term
+      follow-up because of the increased risk of **squamous cell carcinoma**.
 flashcards:
   - front: Where do the Bartholin gland ducts open?
     back: Vestibule, posterolateral to the vaginal orifice (4 and 8 o'clock)
