@@ -29,7 +29,7 @@ clinical:
   - title: Osmotic demyelination syndrome (central pontine myelinolysis)
     highYield: true
     mechanism: '**Overly rapid correction of chronic hyponatremia** (risk: alcohol use disorder, malnutrition, liver disease, hypokalemia).'
-    presentation: 'Days after correction: dysarthria, dysphagia, **quadriparesis**, locked-in state. Prevent by correcting sodium no faster than about **8 mEq/L per 24 hours** in high-risk patients (10–12 limit otherwise). {{verify: exact correction limits vary between guidelines}}'
+    presentation: 'Days after correction: dysarthria, dysphagia, **quadriparesis**, locked-in state. Prevent by correcting sodium no faster than about **8 mEq/L per 24 hours** in high-risk patients (10–12 limit otherwise).'
   - title: Pontine hemorrhage and gaze palsies
     highYield: true
     mechanism: Hypertensive hemorrhage from paramedian perforators; lesions of the PPRF, abducens nucleus or MLF.

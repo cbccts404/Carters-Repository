@@ -35,8 +35,8 @@ clinical:
     mechanism: Division or occlusion of the scrotal ductus deferens bilaterally.
     presentation: >-
       Ejaculate volume is almost unchanged (most comes from the seminal glands and prostate). Sperm remain downstream for
-      weeks, so contraception continues until a **post-vasectomy semen analysis** confirms azoospermia (usually at
-      about 8–16 weeks). {{verify: timing of post-vasectomy semen analysis}}
+      weeks, so contraception continues until a **post-vasectomy semen analysis** confirms azoospermia (the AUA
+      allows testing from **8 weeks** after vasectomy).
   - title: Congenital bilateral absence of the vas deferens (CBAVD)
     highYield: true
     mechanism: Associated with **CFTR mutations** — present in almost all men with cystic fibrosis.

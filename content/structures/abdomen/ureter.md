@@ -26,9 +26,9 @@ clinical:
     mechanism: Stones lodge at the three narrow points, most often the **ureterovesical junction**.
     presentation: >-
       Colicky flank pain radiating to the groin, testis or labia; hematuria; nausea. Distal stones cause urinary urgency
-      and frequency. Most stones under about 5 mm pass spontaneously; **alpha-blockers** (tamsulosin) help pass distal
-      stones of about 5–10 mm. **Obstruction with infection, a solitary kidney, AKI or intractable pain** needs urgent
-      urology (stent or nephrostomy). {{verify: size thresholds for passage and medical expulsive therapy}}
+      and frequency. Most stones under about 5 mm pass spontaneously; **alpha-blockers** (tamsulosin) are offered to
+      help pass **distal ureteral stones up to 10 mm** (AUA). **Obstruction with infection, a solitary kidney, AKI or intractable pain** needs urgent
+      urology (stent or nephrostomy).
   - title: Iatrogenic ureteral injury
     highYield: true
     mechanism: Ligation, transection or thermal injury during **hysterectomy** (near the uterine artery), oophorectomy (near the gonadal vessels at the pelvic brim), or colorectal surgery.

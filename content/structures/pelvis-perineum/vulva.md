@@ -38,7 +38,7 @@ clinical:
     presentation: >-
       Unilateral swelling of the posterior labium at 4 or 8 o'clock; an abscess is exquisitely painful, tender and
       fluctuant. Symptomatic abscesses need **incision and drainage with a Word catheter** or marsupialization.
-      A new Bartholin mass in a woman over about 40 is biopsied to exclude carcinoma. {{verify: age threshold for biopsy}}
+      A new Bartholin mass in a woman over about 40 is biopsied to exclude carcinoma.
   - title: Lichen sclerosus
     highYield: true
     mechanism: Chronic inflammatory skin disease of the anogenital area, most common in postmenopausal women.

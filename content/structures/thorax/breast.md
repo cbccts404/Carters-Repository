@@ -67,8 +67,8 @@ imaging:
     **Mammography** is the main screening test, with two standard views per breast: **craniocaudal (CC)** and
     **mediolateral oblique (MLO)**. The MLO includes the axillary tail and low axilla. Suspicious findings: spiculated
     mass, clustered pleomorphic microcalcifications, architectural distortion. Findings are reported with BI-RADS
-    categories. Screening recommendations (starting age, interval) differ between organizations.
-    {{verify: check the current USPSTF/ACR/ACS screening recommendations}}
+    categories. Screening recommendations (starting age, interval) differ between organizations;
+    **USPSTF (2024)**: mammography **every 2 years from age 40 to 74**.
   mri: Used for high-risk screening (e.g. BRCA carriers), extent of disease, implant integrity, and problem-solving.
   ultrasound: >-
     First-line for a **palpable mass in women under about 30**, pregnant or lactating women, and to tell cystic from solid

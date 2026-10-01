@@ -35,7 +35,7 @@ clinical:
   - title: Infectious mononucleosis
     highYield: true
     mechanism: Epstein–Barr virus infection of B cells.
-    presentation: "Exudative tonsillitis, fever, **posterior cervical lymphadenopathy**, fatigue, splenomegaly, atypical lymphocytes, positive heterophile (Monospot) test. **Amoxicillin causes a rash**; avoid contact sports for at least 3–4 weeks (splenic rupture risk). {{verify: return-to-play timing}}"
+    presentation: "Exudative tonsillitis, fever, **posterior cervical lymphadenopathy**, fatigue, splenomegaly, atypical lymphocytes, positive heterophile (Monospot) test. **Amoxicillin causes a rash**; avoid contact sports for at least 3–4 weeks (splenic rupture risk)."
 pance:
   - "Centor: **fever, exudates, tender anterior nodes, no cough** → test for GAS → **penicillin/amoxicillin**."
   - "Treat strep throat to prevent **rheumatic fever** (not post-streptococcal glomerulonephritis)."

@@ -63,7 +63,7 @@ imaging:
   ct: >-
     **Contrast CT** is used when the diagnosis is unclear or to assess complications (necrosis, collections), best
     performed after 48–72 hours. A **pancreas-protocol CT** stages cancer (vascular involvement determines
-    resectability). {{verify: timing recommendations for CT in acute pancreatitis}}
+    resectability).
   mri: MRCP shows ductal anatomy, CBD stones, and pancreas divisum.
   ultrasound: >-
     Transabdominal **ultrasound is done in every case of acute pancreatitis to look for gallstones**. The pancreas itself

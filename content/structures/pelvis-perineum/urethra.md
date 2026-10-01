@@ -53,7 +53,7 @@ clinical:
     presentation: >-
       Dysuria and urethral discharge (purulent with gonorrhea). Diagnose with **NAAT** of first-catch urine. Treat
       gonorrhea with **ceftriaxone 500 mg IM** (plus **doxycycline** if chlamydia is not excluded) per CDC 2021 guidance;
-      treat partners. {{verify: check the current CDC STI treatment guidelines}}
+      treat partners.
   - title: Hypospadias
     highYield: true
     mechanism: Incomplete fusion of the **urethral folds**, so the meatus opens on the **ventral** penis, scrotum or perineum. (Epispadias, a dorsal opening, is associated with bladder exstrophy.)

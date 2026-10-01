@@ -52,7 +52,7 @@ clinical:
     presentation: >-
       **Gradual** onset of posterior scrotal pain and tenderness of the epididymis, fever, dysuria; cremasteric reflex
       present; pain may ease on elevation (**Prehn sign**).
-    notes: 'STI-related: ceftriaxone + doxycycline; enteric: levofloxacin (plus ceftriaxone if both are possible). {{verify: current CDC regimens}}'
+    notes: 'STI-related: ceftriaxone + doxycycline; enteric: levofloxacin (plus ceftriaxone if both are possible).'
   - title: Testicular cancer
     highYield: true
     mechanism: Germ cell tumors (seminoma most common) in men aged about **15–35**; risk factors — **cryptorchidism**, prior testicular cancer, family history.
@@ -70,7 +70,7 @@ clinical:
   - title: Cryptorchidism
     highYield: true
     mechanism: Failure of descent, most often in the inguinal canal; more common in preterm infants.
-    presentation: "Empty scrotum; increased risk of infertility and testicular cancer. Refer by about 6 months; **orchiopexy** is typically done by 18 months. {{verify: timing per current AUA guideline}}"
+    presentation: "Empty scrotum; increased risk of infertility and testicular cancer. Refer by about 6 months; **orchiopexy** is typically done by 18 months."
 pance:
   - "Sudden severe testicular pain, high-riding horizontal testis, **absent cremasteric reflex** → **torsion** → OR within 6 h."
   - "Gradual pain, fever, dysuria, positive Prehn sign, reflex present → **epididymitis**."
